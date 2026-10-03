@@ -13,6 +13,37 @@ Quality Code standard v3 uses the coding agent's native runtime to discover avai
 
 “Best fit” means the best supported choice from currently available evidence, not a guarantee of universal model optimality. A model catalog may list identifiers without exposing capability, cost, or comparative performance; do not infer those attributes from names or run speculative model benchmarks to fill the gaps.
 
+## How many helpers, and when
+
+Count **helpers separately from the primary agent**. Runtime limits may count total agents or only helpers; normalize the advertised limit before sizing the team. Use native agent-status and capacity tools when available, including existing helpers that can be reused. Do not infer additional capacity when it is not advertised; begin with the smallest justified delegation and respect native limits.
+
+First sketch the work units and dependencies. A unit qualifies for delegation only when it is ready, has a bounded outcome and clear ownership, and offers enough useful work to repay briefing, coordination, and validation. Group small related tasks; an agent per file is not a sizing strategy. Keep useful work with the primary agent where that allows genuine overlap.
+
+Select the smallest helpful set of remaining units. Its size is bounded by:
+
+- ready, worthwhile units that the primary agent is not already handling;
+- available native capacity after active agents and reusable helpers are considered;
+- remaining time/usage budget and the primary agent's ability to integrate and validate outputs;
+- shared resource constraints, such as a single browser session, overlapping files, or serialized test infrastructure.
+
+These are upper bounds, not goals or a claim of a mathematically optimal count. More work in the backlog does not justify more simultaneous agents if that work is blocked or dependent.
+
+| Current work shape | Sizing and timing decision |
+| --- | --- |
+| Short task, one execution path, or costly handoff | Primary agent handles the work; no implementation helpers |
+| Useful independent investigation alongside implementation | Delegate the investigation when ready; primary continues implementation |
+| Several substantial branches with distinct ownership | Assign primary work and a bounded helper to each selected ready branch, within capacity and budget |
+| Dependent pipeline | Reuse or start a helper when its inputs are ready; avoid idle speculative spawns |
+| Shared file, browser, or other exclusive resource | Serialize access or separate read-only evidence gathering from mutation |
+| Helpers have finished, duplicated work, or lost their purpose | Collect useful results and release redundant agents through native lifecycle tools |
+| Required independent audit | Schedule a fresh auditor after builder verification; account for that work separately from build helpers |
+
+Reassess at meaningful events: completion, a dependency becoming ready, changed scope, failed checks, resource contention, or budget changes. Add a helper only when its next unit has expected net benefit. Reuse an available helper with suitable context where independence permits it; stop or release one when useful parallel work disappears. All nested delegation follows the same task and budget constraints.
+
+Before a substantial delegation, briefly state the selected helper count and reason: which ready units justify it, what the primary agent will do, and any limiting resource. Estimates can be qualitative when measured cost or latency is unavailable. Do not run a new model benchmark or spend more coordination effort than the task warrants.
+
+Existing low-risk restrictions and unavailable-delegation fallbacks remain in force. A required independent audit cannot be replaced by a zero-helper build decision.
+
 ## Capability fallbacks
 
 | Native runtime capability | Action |
