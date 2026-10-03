@@ -2,6 +2,8 @@
 
 ## Test objectives
 
+Verify new and upgraded projects receive provider-neutral delegation instructions without losing custom context. Migration from standard v2 must preserve configured verification commands and update the local engine and version together. Instruction delivery is tested; actual model choices, compliance, and efficiency require evidence from the host runtime.
+
 Prove the CLI can bootstrap a usable project, preserve existing content during adoption, refuse wrapper collisions, route actual configured paths, produce scoped audit packets, and surface verification failures. Confirm installation in an isolated home directory and restrict skill distribution to intended files.
 
 ## Product risks
@@ -20,7 +22,7 @@ Stdlib `unittest` integration tests invoke real CLI processes with temporary dir
 
 ## Test data and environment
 
-Offline by default. Python 3.11+ and Git required. Fixtures contain synthetic project text; installer uses an isolated home. No credentials, customer data, live providers, or production environments. Unit tests must not mutate the repository.
+Offline by default. Python 3.11+ and Git required. Fixtures contain synthetic project text and a frozen, reviewed v2 bootstrap distribution from commit `1b421119e98bf7e13e0e94d3f976236f0046c37c`; installer uses an isolated home. No credentials, customer data, live providers, or production environments. Unit tests must not mutate the repository.
 
 ## Non-functional coverage
 

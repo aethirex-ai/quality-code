@@ -48,7 +48,13 @@ python3 /path/to/quality-code/scripts/quality_code.py upgrade --dry-run /path/to
 python3 /path/to/quality-code/scripts/quality_code.py upgrade /path/to/project
 ```
 
-The dry run reports intended actions. Upgrade refreshes managed instructions, the local engine, wrapper, schema, and accompanying license; it retains configured commands and custom map/testing sections. Review the diff afterward.
+The dry run preflights version migration and reports intended actions. Supported TOML assignment formatting, including inline comments, is retained; unsupported formatting is rejected before managed files are written. Upgrade refreshes managed instructions, the local engine, wrapper, schema, and accompanying license; it retains configured commands and custom map/testing sections. Review the diff afterward.
+
+## Adopt standard v3 delegation guidance
+
+Upgrade from this checkout to refresh the managed `AGENTS.md` block, project-local engine, and standard version. Your configured verification commands and custom documentation remain in place. The Python CLI distributes the instructions; it does not discover models, choose effort, or spawn helpers itself. The coding agent uses its own runtime's native capabilities when following the policy.
+
+Read [the delegation policy](DELEGATION.md). No provider account, API key, or model-routing dependency is added by this update. Existing global installations need an updated toolkit checkout or refreshed skill distribution before they can distribute v3 to projects.
 
 ## Custom routing
 

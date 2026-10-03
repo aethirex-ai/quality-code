@@ -16,7 +16,7 @@ import tomllib
 from typing import Any
 
 
-STANDARD_VERSION = 2
+STANDARD_VERSION = 3
 RISK_ORDER = {"low": 0, "normal": 1, "high": 2, "critical": 3}
 REQUIRED_PROJECT_FILES = (
     "AGENTS.md",
@@ -659,21 +659,31 @@ def bootstrap(root_arg: str, mode: str) -> None:
 
 
 def update_standard_version(text: str) -> str:
-    if re.search(r"^standard_version\s*=", text, re.MULTILINE):
-        return re.sub(
-            r"^standard_version\s*=\s*\d+\s*$",
-            f"standard_version = {STANDARD_VERSION}",
-            text,
-            count=1,
-            flags=re.MULTILINE,
-        )
-    return re.sub(
-        r"^(version\s*=\s*1\s*)$",
-        rf"\1\nstandard_version = {STANDARD_VERSION}",
-        text,
-        count=1,
-        flags=re.MULTILINE,
+    # Preserve formatting, but verify the complete parsed configuration rather
+    # than assuming that a textual match belongs to the root version setting.
+    try:
+        original = tomllib.loads(text)
+    except tomllib.TOMLDecodeError as exc:
+        raise QualityError(f"cannot parse quality.toml before migration: {exc}") from exc
+    expected = {**original, "standard_version": STANDARD_VERSION}
+    if "standard_version" not in original:
+        return f"standard_version = {STANDARD_VERSION}\n" + text
+    if type(original["standard_version"]) is not int:
+        raise QualityError("standard_version must be a TOML integer before migration")
+    pattern = (
+        r"^([ \t]*(?:standard_version|\"standard_version\"|'standard_version')[ \t]*=[ \t]*)"
+        r"[+-]?(?:0[xX][0-9A-Fa-f_]+|0[oO][0-7_]+|0[bB][01_]+|[0-9][0-9_]*)"
+        r"([ \t]*(?:#[^\r\n]*)?\r?)$"
     )
+    for match in re.finditer(pattern, text, re.MULTILINE):
+        candidate = (text[:match.start()] + match.group(1) + str(STANDARD_VERSION)
+                     + match.group(2) + text[match.end():])
+        try:
+            if tomllib.loads(candidate) == expected:
+                return candidate
+        except tomllib.TOMLDecodeError:
+            continue
+    raise QualityError("cannot safely migrate standard_version formatting; normalize its root assignment before upgrade")
 
 
 def ensure_audit_threshold(text: str) -> str:
@@ -709,6 +719,9 @@ def upgrade(root_arg: str, dry_run: bool) -> None:
     master = find_master_root()
     root = find_project_root(Path(root_arg).expanduser())
     rendered = render_project(master, root)
+    config_path = root / ".quality" / "quality.toml"
+    # Preflight migration before dry-run output or any managed-file writes.
+    config_text = ensure_audit_threshold(update_standard_version(config_path.read_text(encoding="utf-8")))
     actions = [
         "refresh managed AGENTS.md block",
         "ensure CLAUDE.md imports AGENTS.md",
@@ -742,9 +755,7 @@ def upgrade(root_arg: str, dry_run: bool) -> None:
         existing = migrate_project_policy(name, existing)
         write_text(path, merge_missing_sections(existing, rendered[name]) if existing else rendered[name])
 
-    config_path = root / ".quality" / "quality.toml"
-    config_text = update_standard_version(config_path.read_text(encoding="utf-8"))
-    write_text(config_path, ensure_audit_threshold(config_text))
+    write_text(config_path, config_text)
     shutil.copy2(master / "scripts" / "quality_code.py", root / ".quality" / "quality.py")
     (root / ".quality" / "quality.py").chmod(0o755)
     shutil.copy2(

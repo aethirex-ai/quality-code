@@ -1,6 +1,6 @@
 # Quality Code project map
 
-Last verified: 2026-10-03
+Last verified: 2026-10-04
 
 ## Product boundary
 
@@ -16,7 +16,7 @@ AethDesign maintains the standard and public edition. `scripts/` owns behavior; 
 
 ## Contracts and state
 
-CLI subcommands: init, adopt, upgrade, validate, verify, context, audit-packet. TOML configuration version 1, standard version 2. Audit result schema version 1. Project instructions preserve unmanaged text; map/testing merges preserve existing sections. Installer updates home configuration and creates a checkout-linked launcher.
+CLI subcommands: init, adopt, upgrade, validate, verify, context, audit-packet. TOML configuration version 1, standard version 3. Audit result schema version 1. Project instructions preserve unmanaged text; map/testing merges preserve existing sections. Installer updates home configuration and creates a checkout-linked launcher.
 
 ## Security, privacy, and safety
 
@@ -27,6 +27,7 @@ Verification runs configured executables with user permissions. No sandbox. Pres
 - Highest specific matched risk wins; fallback covers unmatched paths.
 - Missing required evidence is not a passing audit.
 - Builder verification cannot replace required independent review.
+- Delegation uses native discovery with safe fallbacks; model and effort choices remain provider-neutral.
 - Keep engine/local copy and schema/template copy identical.
 - Distribution copies retain LICENSE and exclude Git history, local state, tests, and public documentation.
 

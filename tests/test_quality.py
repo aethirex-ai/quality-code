@@ -211,9 +211,96 @@ class QualityIntegrationTests(unittest.TestCase):
             self.assertEqual({f.name for f in skill.iterdir()}, {'LICENSE', 'SKILL.md', 'agents', 'assets', 'references', 'scripts'})
             self.assertFalse((skill / '.git').exists())
             self.assertEqual((skill / 'LICENSE').read_bytes(), (ROOT / 'LICENSE').read_bytes())
+            self.assertEqual((skill / 'assets/project/AGENTS.md').read_bytes(),
+                             (ROOT / 'assets/project/AGENTS.md').read_bytes())
         self.assertTrue((home / '.local/bin/quality-code').is_symlink())
         settings = json.loads((home / '.claude/settings.json').read_text())
         self.assertEqual(settings['skillOverrides']['audit-code-change'], 'name-only')
+
+    def test_delegation_policy_delivered_by_init_and_adopt(self):
+        template = (ROOT / 'assets/project/AGENTS.md').read_text()
+        for command in ('init', 'adopt'):
+            with self.subTest(command=command):
+                project = Path(self.temp.name) / command
+                project.mkdir()
+                (project / 'AGENTS.md').write_text('# Local rules\nPreserve local instruction.\n')
+                self.cli(command, str(project))
+                delivered = (project / 'AGENTS.md').read_text()
+                self.assertIn(template.strip(), delivered)
+                self.assertIn('Preserve local instruction.', delivered)
+
+    def test_v2_upgrade_delivers_policy_and_preserves_custom_context(self):
+        self.init()
+        agents = self.project / 'AGENTS.md'
+        old = (ROOT / 'assets/project/AGENTS.md').read_text()
+        start = old.index('## Efficient delegation and model selection')
+        end = old.index('For review, diagnosis, or planning', start)
+        old = old[:start] + old[end:]
+        agents.write_text('Before managed block.\n\n' + old + '\nAfter managed block.\n')
+        config = self.project / '.quality/quality.toml'
+        config.write_text(config.read_text().replace('standard_version = 3', 'standard_version = 2'))
+        before_config = engine.load_config(self.project)
+        self.local('validate', expected=2)
+        before_agents = agents.read_bytes()
+        self.cli('upgrade', '--dry-run', str(self.project))
+        self.assertEqual(agents.read_bytes(), before_agents)
+        self.cli('upgrade', str(self.project))
+        after = agents.read_text()
+        self.assertIn((ROOT / 'assets/project/AGENTS.md').read_text().strip(), after)
+        self.assertIn('Before managed block.', after)
+        self.assertIn('After managed block.', after)
+        after_config = engine.load_config(self.project)
+        self.assertEqual(after_config['standard_version'], 3)
+        self.assertEqual(before_config['verify'], after_config['verify'])
+        self.assertEqual((self.project / '.quality/quality.py').read_bytes(),
+                         (ROOT / 'scripts/quality_code.py').read_bytes())
+        self.local('validate')
+
+
+    def v2_project_from_public_baseline(self):
+        # Frozen source from the published v2 commit works offline, including
+        # shallow CI checkouts with no historical Git objects.
+        baseline = ROOT / 'tests/fixtures/v2'
+        subprocess.run([sys.executable, '-B', str(baseline / 'scripts/quality_code.py'),
+                        'init', str(self.project)], capture_output=True, check=True)
+        return baseline
+
+    def test_real_v2_upgrade_preserves_commented_configuration(self):
+        self.v2_project_from_public_baseline()
+        config = self.project / '.quality/quality.toml'
+        config.write_text(config.read_text().replace('standard_version = 2',
+                                                    'standard_version = 2 # custom installation'))
+        original = engine.load_config(self.project)
+        self.cli('upgrade', str(self.project))
+        self.assertIn('standard_version = 3 # custom installation', config.read_text())
+        expected = {**original, 'standard_version': 3}
+        self.assertEqual(engine.load_config(self.project), expected)
+        result = subprocess.run([sys.executable, '-B', str(self.project / '.quality/quality.py'),
+                                 '--project', str(self.project), 'validate'], capture_output=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_upgrade_rejects_unsupported_assignment_before_writes(self):
+        self.v2_project_from_public_baseline()
+        config = self.project / '.quality/quality.toml'
+        # A valid escaped TOML key has the same parsed meaning, but cannot be
+        # safely located by this migration's supported textual assignment forms.
+        config.write_text(config.read_text().replace('standard_version = 2',
+                                                    r'"standard_\u0076ersion" = 2'))
+        self.assertEqual(engine.load_config(self.project)['standard_version'], 2)
+        before = {f: f.read_bytes() for f in self.project.rglob('*') if f.is_file() and '.git' not in f.parts}
+        self.cli('upgrade', str(self.project), expected=2)
+        self.assertEqual(before, {f: f.read_bytes() for f in before})
+
+    def test_version_migration_preserves_valid_assignment_formats(self):
+        for assignment in ('  standard_version = +2 # retain', '"standard_version" = 0x2 # retain',
+                           "'standard_version' = 0b10 # retain"):
+            with self.subTest(assignment=assignment):
+                original = 'version = 1\n' + assignment + '\n[verify]\nfast = [["true"]]\n'
+                updated = engine.update_standard_version(original)
+                self.assertEqual(engine.tomllib.loads(updated),
+                                 {**engine.tomllib.loads(original), 'standard_version': 3})
+                self.assertIn('# retain', updated)
+
 
     def test_global_merge_is_idempotent_and_retains_surrounding_text(self):
         first = installer.merge_block('My policy.\n')

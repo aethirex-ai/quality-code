@@ -1,6 +1,6 @@
 # The Quality Code standard
 
-A project’s quality contract should be readable by both people and coding agents. Standard version 2 combines a mandatory builder layer with an independent layer triggered by product risk.
+A project’s quality contract should be readable by both people and coding agents. Standard version 3 combines a mandatory builder layer with an independent layer triggered by product risk.
 
 ## 1. Define the outcome
 
@@ -44,6 +44,12 @@ The audit result follows [the JSON schema](../assets/project/.quality/audit-resu
 ## 6. Preserve trust boundaries
 
 Adoption preserves existing project text and refuses unmanaged wrapper and pre-existing runtime/schema/license collisions before project writes. Global installation modifies agent instruction files and copies an audit skill; review those changes before using it. Preserve secrets, customer data, local caches, and unrelated work outside public commits.
+
+## 7. Delegate efficiently
+
+Use [the delegation policy](DELEGATION.md) when independent implementation or investigation tasks justify helpers. Assess task difficulty separately from product risk. Use native runtime discovery and capability metadata to choose an accessible model and supported effort controls; this standard prescribes no provider or model identifiers.
+
+Optimize expected total completion cost, including coordination, retries, and rework. Give helpers bounded scope and concise context, avoid competing file ownership, and keep the primary agent responsible for integration and validation. Required audits retain their independence and evidence requirements.
 
 ## Scope and limitations
 

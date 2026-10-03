@@ -1,5 +1,5 @@
 version = 1
-standard_version = 3
+standard_version = 2
 project = "PROJECT_NAME"
 
 [policy]

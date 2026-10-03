@@ -8,4 +8,4 @@
 <text x="66" y="237" fill="#b9c1d8" font-family="Arial, sans-serif" font-size="25">Engineering discipline for coding agents.</text>
 <g font-family="Arial, sans-serif" font-size="15" letter-spacing="2" fill="#bac9ff"><text x="66" y="341">01 / DEFINE</text><text x="245" y="341">02 / VERIFY</text><text x="425" y="341">03 / AUDIT</text></g>
 <g transform="translate(940 100)" fill="none" stroke="#bac9ff" stroke-width="2"><path d="M90 0l100 44v84c0 69-100 106-100 106S-10 197-10 128V44z"/><path d="M45 114l30 30 66-73" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
-<text x="1028" y="377" text-anchor="middle" fill="#8995b6" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">STANDARD V2</text></svg>
+<text x="1028" y="377" text-anchor="middle" fill="#8995b6" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">STANDARD V3</text></svg>

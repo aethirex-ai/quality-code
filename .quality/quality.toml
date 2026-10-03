@@ -1,5 +1,5 @@
 version = 1
-standard_version = 2
+standard_version = 3
 project = "quality-code"
 [policy]
 map_word_limit = 900

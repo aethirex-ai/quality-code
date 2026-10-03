@@ -4,7 +4,7 @@
   <a href="https://github.com/aethirex-ai/quality-code/actions/workflows/verify.yml"><img alt="Verify toolkit" src="https://github.com/aethirex-ai/quality-code/actions/workflows/verify.yml/badge.svg"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-222222"></a>
   <img alt="Python 3.11 or newer" src="https://img.shields.io/badge/python-3.11%2B-222222">
-  <img alt="Standard version 2" src="https://img.shields.io/badge/standard-v2-222222">
+  <img alt="Standard version 3" src="https://img.shields.io/badge/standard-v3-222222">
   <a href="https://www.aethdesign.com/"><img alt="Built by AethDesign" src="https://img.shields.io/badge/by-AethDesign-BAC9FF"></a>
 </p>
 
@@ -75,6 +75,12 @@ Give the packet, explicit diff scope, and this repository’s audit skill to a f
 | `.quality/audit-result.schema.json` | Structured `PASS`, `FAIL`, or `BLOCKED` results |
 
 Existing instruction text is merged. Existing map and testing sections are preserved. An unrelated `quality` executable or pre-existing runtime/schema/license under `.quality/` is a collision, not permission to overwrite it. A parent Git repository is reused.
+
+## Efficient delegation
+
+Standard v3 adds provider-neutral subagent guidance. Agents use native runtime discovery and capability metadata to select accessible models and supported effort controls for each bounded task. No model names or fixed rankings are prescribed. Selection considers expected total usage, latency, retries, skill requirements, and product risk; unavailable discovery falls back to the current model.
+
+The primary agent owns integration and validation. Implementation helpers cannot supply the required independent audit. See [the delegation policy](docs/DELEGATION.md) for the decision process, fallbacks, and examples.
 
 ## Why AethDesign publishes this
 
