@@ -1,0 +1,37 @@
+version = 1
+standard_version = 2
+project = "PROJECT_NAME"
+
+[policy]
+map_word_limit = 900
+
+[audit]
+default_base = "HEAD"
+independent_audit_min_risk = "high"
+required_profiles_by_risk = { low = ["fast"], normal = ["changed"], high = ["full"], critical = ["full", "release"] }
+
+# Commands are argument arrays, never shell strings. The bootstrapper detects
+# conservative local commands; tailor them as the project gains tooling.
+# Multiple arrays run sequentially in the project root. They must be local and
+# non-destructive; deployment and other external writes are never verify commands.
+[verify]
+VERIFY_PROFILES
+
+# Keep a default route so every changed file receives a risk classification.
+[[areas]]
+name = "default"
+paths = ["**"]
+risk = "normal"
+fallback = true
+map_sections = ["Product boundary", "Verification"]
+tests = []
+required_profiles = []
+
+# Add narrower routes after the default. The highest matched risk wins.
+[[areas]]
+name = "security-sensitive-example"
+paths = ["src/auth/**", "src/security/**", "migrations/**"]
+risk = "critical"
+map_sections = ["Contracts and state", "Security, privacy, and safety", "Change invariants"]
+tests = ["tests/auth/**", "tests/security/**", "tests/migrations/**"]
+required_profiles = ["full", "release"]

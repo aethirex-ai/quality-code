@@ -1,0 +1,9 @@
+# Append to a project quality.toml after tailoring paths and test references.
+# These section names must exist in MAP.md.
+[[areas]]
+name = "session-security"
+paths = ["src/auth/**"]
+risk = "critical"
+map_sections = ["Contracts and state", "Security, privacy, and safety", "Change invariants"]
+tests = ["tests/auth/**"]
+required_profiles = ["full", "release"]

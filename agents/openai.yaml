@@ -1,0 +1,6 @@
+interface:
+  display_name: "Audit Code Change"
+  short_description: "Independently audit completed code changes"
+  default_prompt: "Use $audit-code-change to independently audit this completed code change and return a strict verdict."
+policy:
+  allow_implicit_invocation: false

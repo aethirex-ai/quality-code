@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+<title id="title">Quality Code by AethDesign</title><desc id="desc">Engineering discipline for coding agents. Define. Verify. Audit.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10131d"/><stop offset="1" stop-color="#202841"/></linearGradient></defs>
+<rect width="1280" height="420" rx="20" fill="url(#bg)"/>
+<g fill="none" stroke="#bac9ff" opacity=".12"><path d="M850 0v420M950 0v420M1050 0v420M1150 0v420M750 80h530M750 180h530M750 280h530M750 380h530"/></g>
+<rect x="64" y="57" width="6" height="22" fill="#bac9ff"/><text x="84" y="75" fill="#bac9ff" font-family="Arial, sans-serif" font-size="18" letter-spacing="4">AETHDESIGN / OPEN ENGINEERING</text>
+<text x="62" y="183" fill="#f5f7ff" font-family="Arial, sans-serif" font-weight="700" font-size="78" letter-spacing="-3">Quality Code</text>
+<text x="66" y="237" fill="#b9c1d8" font-family="Arial, sans-serif" font-size="25">Engineering discipline for coding agents.</text>
+<g font-family="Arial, sans-serif" font-size="15" letter-spacing="2" fill="#bac9ff"><text x="66" y="341">01 / DEFINE</text><text x="245" y="341">02 / VERIFY</text><text x="425" y="341">03 / AUDIT</text></g>
+<g transform="translate(940 100)" fill="none" stroke="#bac9ff" stroke-width="2"><path d="M90 0l100 44v84c0 69-100 106-100 106S-10 197-10 128V44z"/><path d="M45 114l30 30 66-73" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="1028" y="377" text-anchor="middle" fill="#8995b6" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">STANDARD V2</text></svg>

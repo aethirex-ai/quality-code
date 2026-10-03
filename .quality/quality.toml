@@ -1,0 +1,36 @@
+version = 1
+standard_version = 2
+project = "quality-code"
+[policy]
+map_word_limit = 900
+[audit]
+default_base = "HEAD"
+independent_audit_min_risk = "high"
+required_profiles_by_risk = { low = ["fast"], normal = ["changed"], high = ["full"], critical = ["full", "release"] }
+[verify]
+fast = [["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"]]
+changed = [["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"]]
+full = [["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"], ["python3", "-B", "scripts/check_repository.py"], ["git", "diff", "--check"]]
+release = [["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"], ["python3", "-B", "scripts/check_repository.py"], ["git", "diff", "--check"]]
+[[areas]]
+name = "default"
+paths = ["**"]
+risk = "normal"
+fallback = true
+map_sections = ["Product boundary", "Verification"]
+tests = ["tests/**"]
+required_profiles = []
+[[areas]]
+name = "toolkit-and-agent-policy"
+paths = ["scripts/**", "assets/**", "agents/**", "references/**", "SKILL.md", "AGENTS.md", "CLAUDE.md", ".quality/**", "quality"]
+risk = "high"
+map_sections = ["Contracts and state", "Security, privacy, and safety", "Change invariants"]
+tests = ["tests/**"]
+required_profiles = ["full"]
+[[areas]]
+name = "ci"
+paths = [".github/workflows/**"]
+risk = "critical"
+map_sections = ["Verification", "Security, privacy, and safety"]
+tests = ["tests/**"]
+required_profiles = ["full", "release"]

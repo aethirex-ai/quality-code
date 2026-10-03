@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+!.env.example
+.quality/audit-packet*.json
+.quality/audit-result*.json
+!.quality/audit-result.schema.json
