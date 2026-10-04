@@ -1,6 +1,12 @@
-# Case study: making coding-agent quality inspectable
+<p align="center"><img src="assets/quality-code-banner.svg" alt="Quality Code — engineering discipline for coding agents" width="100%"></p>
 
-**AethDesign · Engineering practice · Quality Code standard v2**
+# Quality Code / Making quality inspectable
+
+**AethDesign · Open engineering · Quality Code standard v3**
+
+[Open the branded reader edition →](https://aethirex-ai.github.io/quality-code/)
+
+The audit findings below describe the initial standard v2 public edition. Standard v3 adds provider-neutral delegation; it does not change that historical evidence.
 
 ## The problem
 

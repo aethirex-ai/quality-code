@@ -32,6 +32,8 @@ Preservation and fail-visible verification are covered. Ubuntu and macOS CI is c
 
 Review banner rendering, README readability, initial source inventory, secret filename/value-pattern scan, and large-file inventory before the first commit. A passing configured workflow is not implied until hosted Actions runs.
 
+Reader edition: check `docs/index.html` at desktop and 375px mobile widths. Confirm embedded fonts, visible keyboard focus, local section links and no horizontal overflow. Preserve technical caveats; there is no JavaScript or external font request. Markdown remains a source-readable alternative because GitHub strips custom CSS.
+
 ## Known gaps and residual risk
 
 The installer is not transactional. It refreshes managed skill copies and writes home settings before a potential launcher collision. Path routing and agent instructions require project-specific judgment. The tool does not enforce merge protection or validate a final auditor verdict. Documentation does not claim certification or measured outcome improvement.

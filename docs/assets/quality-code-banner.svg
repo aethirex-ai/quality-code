@@ -1,11 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
-<title id="title">Quality Code by AethDesign</title><desc id="desc">Engineering discipline for coding agents. Define. Verify. Audit.</desc>
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10131d"/><stop offset="1" stop-color="#202841"/></linearGradient></defs>
-<rect width="1280" height="420" rx="20" fill="url(#bg)"/>
-<g fill="none" stroke="#bac9ff" opacity=".12"><path d="M850 0v420M950 0v420M1050 0v420M1150 0v420M750 80h530M750 180h530M750 280h530M750 380h530"/></g>
-<rect x="64" y="57" width="6" height="22" fill="#bac9ff"/><text x="84" y="75" fill="#bac9ff" font-family="Arial, sans-serif" font-size="18" letter-spacing="4">AETHDESIGN / OPEN ENGINEERING</text>
-<text x="62" y="183" fill="#f5f7ff" font-family="Arial, sans-serif" font-weight="700" font-size="78" letter-spacing="-3">Quality Code</text>
-<text x="66" y="237" fill="#b9c1d8" font-family="Arial, sans-serif" font-size="25">Engineering discipline for coding agents.</text>
-<g font-family="Arial, sans-serif" font-size="15" letter-spacing="2" fill="#bac9ff"><text x="66" y="341">01 / DEFINE</text><text x="245" y="341">02 / VERIFY</text><text x="425" y="341">03 / AUDIT</text></g>
-<g transform="translate(940 100)" fill="none" stroke="#bac9ff" stroke-width="2"><path d="M90 0l100 44v84c0 69-100 106-100 106S-10 197-10 128V44z"/><path d="M45 114l30 30 66-73" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
-<text x="1028" y="377" text-anchor="middle" fill="#8995b6" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">STANDARD V3</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="640" viewBox="0 0 1440 640" role="img" aria-labelledby="title desc">
+<title id="title">Quality Code — AethDesign</title><desc id="desc">Engineering discipline for coding agents.. DEFINE THE OUTCOME · VERIFY THE CHANGE · REVIEW INDEPENDENTLY.</desc>
+<rect width="1440" height="640" fill="#0a0a0a"/><g fill="none" stroke="#969696" stroke-width="1" opacity=".16"><circle cx="1190" cy="320" r="245"/><circle cx="1190" cy="320" r="170"/><circle cx="1190" cy="320" r="96"/><path d="M1190 55v530M925 320h530"/><rect x="1095" y="225" width="190" height="190" transform="rotate(45 1190 320)"/></g>
+<g fill="#c0c0c0"><rect x="68" y="47" width="42" height="42" fill="none" stroke="#505050"/><text x="89" y="77" text-anchor="middle" font-family="Georgia,serif" font-size="23">AÐ</text><text x="128" y="75" font-family="Arial,sans-serif" font-size="12" letter-spacing="5">AETHDESIGN</text></g>
+<path d="M68 122h1304" stroke="#303030"/><text x="68" y="191" fill="#969696" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">OPEN ENGINEERING / CASE STUDY</text>
+<text x="64" y="325" fill="#e8e8e8" font-family="Georgia,serif" font-size="100" font-weight="400" letter-spacing="-4">Quality Code</text>
+<text x="68" y="399" fill="#969696" font-family="Arial,sans-serif" font-size="24">Engineering discipline for coding agents.</text>
+<path d="M68 498h1304" stroke="#303030"/><text x="68" y="555" fill="#c0c0c0" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">DEFINE THE OUTCOME · VERIFY THE CHANGE · REVIEW INDEPENDENTLY</text>
+<text x="1372" y="599" text-anchor="end" fill="#969696" font-family="Arial,sans-serif" font-size="11" letter-spacing="3">MARC KUBERNUS / AETHDESIGN</text></svg>

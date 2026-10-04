@@ -5,7 +5,7 @@
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-222222"></a>
   <img alt="Python 3.11 or newer" src="https://img.shields.io/badge/python-3.11%2B-222222">
   <img alt="Standard version 3" src="https://img.shields.io/badge/standard-v3-222222">
-  <a href="https://www.aethdesign.com/"><img alt="Built by AethDesign" src="https://img.shields.io/badge/by-AethDesign-BAC9FF"></a>
+  <a href="https://www.aethdesign.com/"><img alt="Built by AethDesign" src="https://img.shields.io/badge/by-AethDesign-C0C0C0"></a>
 </p>
 
 # Quality Code
@@ -16,7 +16,9 @@ Quality Code is AethDesign’s open workflow and bootstrap toolkit for agent-ass
 
 Small changes stay small. Higher-risk changes earn stronger evidence.
 
-[Read the standard](docs/STANDARD.md) · [Explore the case study](docs/CASE_STUDY.md) · [Start using it](#quick-start) · [About AethDesign](https://www.aethdesign.com/)
+[Read the visual case study](https://aethirex-ai.github.io/quality-code/) · [Read the standard](docs/STANDARD.md) · [Technical case study](docs/CASE_STUDY.md) · [Start using it](#quick-start)
+
+The reader edition uses AethDesign’s dark editorial design language, with self-hosted fonts and no tracking or scripting. GitHub renders this Markdown with its own interface; the styled edition lives in [docs/index.html](docs/index.html).
 
 ## The quality contract
 

@@ -4,7 +4,7 @@ Last verified: 2026-10-04
 
 ## Product boundary
 
-A Python bootstrap and verification toolkit plus reusable coding-agent instructions. Canonical engine: `scripts/quality_code.py`; installer: `scripts/install.py`; templates: `assets/project/`. Public explanation: `README.md` and `docs/`. No production service or customer data.
+A Python bootstrap and verification toolkit plus reusable coding-agent instructions. Canonical engine: `scripts/quality_code.py`; installer: `scripts/install.py`; templates: `assets/project/`. Public explanation: `README.md` and `docs/`; `docs/index.html` is the static branded reader edition. No production service or customer data.
 
 ## Runtime flow
 
