@@ -1,0 +1,1370 @@
+{
+  "date": "2026-10-11",
+  "design": {
+    "single": {
+      "elapsed_seconds": 908.4736380577087,
+      "exit_code": 0,
+      "timed_out": false,
+      "tokens": {
+        "input_tokens": 910043,
+        "cached_input_tokens": 828160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 35583,
+        "reasoning_output_tokens": 5766,
+        "total_tokens": 945626
+      },
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 910043,
+          "cached_input_tokens": 828160,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 35583,
+          "reasoning_output_tokens": 5766,
+          "total_tokens": 945626
+        }
+      },
+      "session_counts": {
+        "root": 1
+      },
+      "tree": [
+        {
+          "agent": "primary",
+          "depth": 0,
+          "parents": []
+        }
+      ],
+      "standard_short_estimated_usd": 0.602412,
+      "flags": [
+        "image_execution_ambiguous"
+      ],
+      "independent_decimal_standard_equivalent_usd": "0.602412",
+      "images": {
+        "pages": {
+          "hotel": {
+            "attempts": 2,
+            "successful_outputs": 2,
+            "failures": 0,
+            "missing_outputs": 0
+          },
+          "studio": {
+            "attempts": 2,
+            "successful_outputs": 2,
+            "failures": 0,
+            "missing_outputs": 0
+          },
+          "landscape": {
+            "attempts": 2,
+            "successful_outputs": 2,
+            "failures": 0,
+            "missing_outputs": 0
+          }
+        },
+        "self_reported_attempts": 6,
+        "native_image_calls": null,
+        "transcript_count_reconciled": false,
+        "backend_model": null,
+        "generation_tokens": null,
+        "image_price": null,
+        "probe_excluded": true
+      },
+      "objective": {
+        "passed": 58,
+        "total": 58,
+        "failed": []
+      },
+      "visual_page_totals": {
+        "hotel": 18.5,
+        "studio": 18.5,
+        "landscape": 20
+      },
+      "visual_total": 57.0,
+      "visual_mean": 3.8
+    },
+    "swarm": {
+      "elapsed_seconds": 567.0944068431854,
+      "exit_code": 0,
+      "timed_out": false,
+      "tokens": {
+        "input_tokens": 2594566,
+        "cached_input_tokens": 2464768,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41522,
+        "reasoning_output_tokens": 4558,
+        "total_tokens": 2636088
+      },
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 2594566,
+          "cached_input_tokens": 2464768,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 41522,
+          "reasoning_output_tokens": 4558,
+          "total_tokens": 2636088
+        }
+      },
+      "session_counts": {
+        "root": 1,
+        "descendant": 3
+      },
+      "tree": [
+        {
+          "agent": "primary",
+          "depth": 0,
+          "parents": []
+        },
+        {
+          "agent": "helper-1",
+          "depth": 1,
+          "parents": [
+            "primary"
+          ]
+        },
+        {
+          "agent": "helper-2",
+          "depth": 1,
+          "parents": [
+            "primary"
+          ]
+        },
+        {
+          "agent": "helper-3",
+          "depth": 1,
+          "parents": [
+            "primary"
+          ]
+        }
+      ],
+      "standard_short_estimated_usd": 0.9212928,
+      "flags": [],
+      "independent_decimal_standard_equivalent_usd": "0.9212928",
+      "images": {
+        "pages": {
+          "hotel": {
+            "attempts": 2,
+            "successful_outputs": 2,
+            "failures": 0,
+            "missing_outputs": 0
+          },
+          "studio": {
+            "attempts": 2,
+            "successful_outputs": 2,
+            "failures": 0,
+            "missing_outputs": 0
+          },
+          "landscape": {
+            "attempts": 2,
+            "successful_outputs": 2,
+            "failures": 0,
+            "missing_outputs": 0
+          }
+        },
+        "self_reported_attempts": 6,
+        "native_image_calls": 6,
+        "transcript_count_reconciled": true,
+        "backend_model": null,
+        "generation_tokens": null,
+        "image_price": null,
+        "probe_excluded": true
+      },
+      "objective": {
+        "passed": 58,
+        "total": 58,
+        "failed": []
+      },
+      "visual_page_totals": {
+        "hotel": 21.5,
+        "studio": 21.0,
+        "landscape": 19.5
+      },
+      "visual_total": 62.0,
+      "visual_mean": 4.133333333333334
+    },
+    "comparison_percent": {
+      "elapsed_seconds": -37.58,
+      "standard_short_estimated_usd": 52.93,
+      "input_tokens": 185.1
+    }
+  },
+  "errors": {
+    "single": {
+      "elapsed_seconds": 162.87759518623352,
+      "exit_code": 0,
+      "timed_out": false,
+      "tokens": {
+        "input_tokens": 198013,
+        "cached_input_tokens": 169728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7277,
+        "reasoning_output_tokens": 1337,
+        "total_tokens": 205290
+      },
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 198013,
+          "cached_input_tokens": 169728,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7277,
+          "reasoning_output_tokens": 1337,
+          "total_tokens": 205290
+        }
+      },
+      "session_counts": {
+        "root": 1
+      },
+      "tree": [
+        {
+          "agent": "primary",
+          "depth": 0,
+          "parents": []
+        }
+      ],
+      "standard_short_estimated_usd": 0.1463128,
+      "flags": [],
+      "independent_decimal_standard_equivalent_usd": "0.1463128",
+      "hidden_evaluation": {
+        "workspace": "error-outputs/single",
+        "resolvedSeedCount": 8,
+        "totalSeedCount": 8,
+        "seeds": [
+          {
+            "id": "H_PRICE",
+            "pass": true
+          },
+          {
+            "id": "H_INTERVAL",
+            "pass": true
+          },
+          {
+            "id": "H_HTML",
+            "pass": true
+          },
+          {
+            "id": "F_CAPACITY",
+            "pass": true
+          },
+          {
+            "id": "F_REFUND",
+            "pass": true
+          },
+          {
+            "id": "F_PURITY",
+            "pass": true
+          },
+          {
+            "id": "L_QUANTITY",
+            "pass": true
+          },
+          {
+            "id": "L_BUDGET",
+            "pass": true
+          }
+        ],
+        "healthyControls": [
+          {
+            "id": "record_validation",
+            "pass": true
+          },
+          {
+            "id": "hotel_dates_prices",
+            "pass": true
+          },
+          {
+            "id": "hotel_overlap",
+            "pass": true
+          },
+          {
+            "id": "hotel_encoding",
+            "pass": true
+          },
+          {
+            "id": "fitness_enrollment",
+            "pass": true
+          },
+          {
+            "id": "fitness_refunds",
+            "pass": true
+          },
+          {
+            "id": "fitness_ordering",
+            "pass": true
+          },
+          {
+            "id": "landscape_estimates",
+            "pass": true
+          },
+          {
+            "id": "landscape_budgets",
+            "pass": true
+          }
+        ],
+        "regressionCount": 0
+      }
+    },
+    "swarm": {
+      "elapsed_seconds": 177.64493489265442,
+      "exit_code": 0,
+      "timed_out": false,
+      "tokens": {
+        "input_tokens": 821969,
+        "cached_input_tokens": 750720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10437,
+        "reasoning_output_tokens": 1265,
+        "total_tokens": 832406
+      },
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 312594,
+          "cached_input_tokens": 285568,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6149,
+          "reasoning_output_tokens": 728,
+          "total_tokens": 318743
+        },
+        "gpt-6-luna": {
+          "input_tokens": 509375,
+          "cached_input_tokens": 465152,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4288,
+          "reasoning_output_tokens": 537,
+          "total_tokens": 513663
+        }
+      },
+      "session_counts": {
+        "root": 1,
+        "descendant": 2
+      },
+      "tree": [
+        {
+          "agent": "primary",
+          "depth": 0,
+          "parents": []
+        },
+        {
+          "agent": "helper-1",
+          "depth": 1,
+          "parents": [
+            "primary"
+          ]
+        },
+        {
+          "agent": "helper-2",
+          "depth": 1,
+          "parents": [
+            "primary"
+          ]
+        }
+      ],
+      "standard_short_estimated_usd": 0.15531662,
+      "flags": [],
+      "independent_decimal_standard_equivalent_usd": "0.15531662",
+      "hidden_evaluation": {
+        "workspace": "error-outputs/swarm",
+        "resolvedSeedCount": 8,
+        "totalSeedCount": 8,
+        "seeds": [
+          {
+            "id": "H_PRICE",
+            "pass": true
+          },
+          {
+            "id": "H_INTERVAL",
+            "pass": true
+          },
+          {
+            "id": "H_HTML",
+            "pass": true
+          },
+          {
+            "id": "F_CAPACITY",
+            "pass": true
+          },
+          {
+            "id": "F_REFUND",
+            "pass": true
+          },
+          {
+            "id": "F_PURITY",
+            "pass": true
+          },
+          {
+            "id": "L_QUANTITY",
+            "pass": true
+          },
+          {
+            "id": "L_BUDGET",
+            "pass": true
+          }
+        ],
+        "healthyControls": [
+          {
+            "id": "record_validation",
+            "pass": true
+          },
+          {
+            "id": "hotel_dates_prices",
+            "pass": true
+          },
+          {
+            "id": "hotel_overlap",
+            "pass": true
+          },
+          {
+            "id": "hotel_encoding",
+            "pass": true
+          },
+          {
+            "id": "fitness_enrollment",
+            "pass": true
+          },
+          {
+            "id": "fitness_refunds",
+            "pass": true
+          },
+          {
+            "id": "fitness_ordering",
+            "pass": true
+          },
+          {
+            "id": "landscape_estimates",
+            "pass": true
+          },
+          {
+            "id": "landscape_budgets",
+            "pass": true
+          }
+        ],
+        "regressionCount": 0
+      }
+    }
+  },
+  "limits": [
+    "One pair per workload; no general superiority or causal policy-effect claim.",
+    "Coding API equivalents exclude native image/tool charges and are not subscription consumption.",
+    "Cross-pilot briefs/styles and policy changed together."
+  ],
+  "visual_review": {
+    "rubric": {
+      "scale": {
+        "0": "Unusable",
+        "1": "Weak",
+        "2": "Needs substantial refinement",
+        "3": "Solid competent",
+        "4": "Polished professional",
+        "5": "Exceptional distinct portfolio quality"
+      },
+      "increments": 0.5,
+      "categories": [
+        "visual_hierarchy",
+        "identity_art_direction",
+        "typography_spacing",
+        "responsive_composition",
+        "professional_credibility"
+      ]
+    },
+    "sets": {
+      "A": {
+        "hotel": {
+          "scores": {
+            "visual_hierarchy": 4,
+            "identity_art_direction": 4,
+            "typography_spacing": 3.5,
+            "responsive_composition": 3.5,
+            "professional_credibility": 3.5
+          },
+          "evidence": {
+            "visual_hierarchy": "Large two-line sea headline and broad coastal image dominate desktop; section numbers, room titles and the dark closing form clearly establish successive levels. Mobile retains that sequence, although the small pleasures section becomes a long run of similar text blocks.",
+            "identity_art_direction": "Navy, muted sea green, restrained rules and serif headings coherently support a quiet coastal hotel. Exterior and room imagery share a calm palette; the small star and green italic sea add recognizable details, though the overall treatment is familiar.",
+            "typography_spacing": "Desktop has generous gutters and a clear serif/sans relationship. Mobile contains visibly joined heading words in 'Follow thecoastline.' and 'The last light.A front-row seat.', interrupting otherwise controlled reading rhythm.",
+            "responsive_composition": "Room imagery and listings stack cleanly, and the closing form becomes a readable single column. The mobile hero still shows sea and building, but the lower text-heavy section loses some desktop pacing; joined words are especially exposed in the stacked headings.",
+            "professional_credibility": "Consistent numbered sections, image captions, room metadata and a complete footer create a finished portfolio presentation. Visible mobile spacing defects in prominent editorial headings reduce its final polish. Fictional/demo wording is visibly present."
+          },
+          "limitations": [
+            "Judgment combines the supplied desktop and mobile screenshots only; no behavior or operational credibility was assessed."
+          ]
+        },
+        "studio": {
+          "scores": {
+            "visual_hierarchy": 4,
+            "identity_art_direction": 4,
+            "typography_spacing": 3.5,
+            "responsive_composition": 3.5,
+            "professional_credibility": 3.5
+          },
+          "evidence": {
+            "visual_hierarchy": "The oversized white/lime headline, athlete image and lime class action give the opening a clear focal order. Class rows, a black approach panel and three pricing cards provide distinct subsequent sections on desktop and mobile.",
+            "identity_art_direction": "Electric blue, acid lime, heavy uppercase type, arrows and star separators form a coherent energetic studio identity. The circular all-levels sticker adds character, but its mobile position obscures much of the athlete's face.",
+            "typography_spacing": "Strong headline contrast and ruled class rows create a disciplined desktop rhythm. Mobile hero body copy visibly joins 'company.Movement'; small descriptive text alongside the compact hero action feels cramped compared with the large heading.",
+            "responsive_composition": "Classes and pricing become coherent single-column blocks and the group photograph preserves multiple participants. The mobile hero sticker overlaps the face, and the lime category band wraps to a second line with community centered alone, weakening the desktop strip's rhythm.",
+            "professional_credibility": "Class metadata, a consistent pricing-card system and repeated arrow treatments suggest a considered portfolio presentation. The conspicuous joined body-copy words and face-covering sticker keep it below fully finished editorial quality; the footer discloses the fictional concept."
+          },
+          "limitations": [
+            "Only visible composition was graded; class addition, navigation and purchase behavior were not inferred."
+          ]
+        },
+        "landscape": {
+          "scores": {
+            "visual_hierarchy": 4,
+            "identity_art_direction": 4,
+            "typography_spacing": 4,
+            "responsive_composition": 4,
+            "professional_credibility": 4
+          },
+          "evidence": {
+            "visual_hierarchy": "An asymmetric desktop hero uses the large headline and garden photograph as the main anchors, with a narrow introductory rail. Alternating project layouts and a pale process band maintain clear separation before the enquiry section.",
+            "identity_art_direction": "Burgundy type and rules, leafy green photographs, understated sans headings and selective italic words create a coherent landscape-practice identity. The direction is restrained and consistent rather than highly unusual.",
+            "typography_spacing": "Desktop alignment, generous whitespace and quiet project metadata produce a measured reading rhythm. Mobile headings wrap naturally, captions stay adjacent to imagery and the process steps have consistent rule and text spacing.",
+            "responsive_composition": "The asymmetric desktop structure reorganizes into a clear mobile sequence with substantial images followed by project descriptions. The repeated quiet-garden image adds length, but cropping retains the path and planting and the stacked process/form sections remain orderly.",
+            "professional_credibility": "Project settings, scopes and ideas are presented consistently; captions, process details, form labels and footer form a complete editorial presentation. Fictional-work labels are visible and no prominent text collision is apparent at the supplied sizes."
+          },
+          "limitations": [
+            "Garden-image quality is judged visually; authenticity, horticultural accuracy and project provenance were not assessed."
+          ]
+        }
+      },
+      "B": {
+        "hotel": {
+          "scores": {
+            "visual_hierarchy": 4.5,
+            "identity_art_direction": 4,
+            "typography_spacing": 4.5,
+            "responsive_composition": 4,
+            "professional_credibility": 4.5
+          },
+          "evidence": {
+            "visual_hierarchy": "The large headline leads into an edge-to-edge coastal image and a narrow italic transition strip. The house introduction, three room listings, tinted small-pleasures band and enquiry block have clear and varied visual weights.",
+            "identity_art_direction": "A serif wordmark, navy and muted green, coastal photography and the italic sea/deep breath accents consistently evoke a slow seaside stay. The tinted amenities band and dark footer extend the palette without distracting from imagery.",
+            "typography_spacing": "Headline scale, room-title hierarchy and small caption treatment are consistently controlled. Mobile retains readable text relationships and natural heading breaks; the italic transition strip wraps deliberately within its narrow column.",
+            "responsive_composition": "Mobile room entries and enquiry fields stack clearly; the room photograph keeps the bed, windows and coastal view. The hero heading occupies three large lines and the overall page is long, but section spacing and the tinted band provide useful pauses.",
+            "professional_credibility": "Room dimensions, guest counts, rates, consistent captions, explicit illustrative/demo notes and a resolved dark footer create a polished and complete fictional portfolio presentation. No conspicuous editorial collision is visible at these widths."
+          },
+          "limitations": [
+            "Room rates and demo language were judged only as visible presentation; booking functionality and factual business accuracy were not assessed."
+          ]
+        },
+        "studio": {
+          "scores": {
+            "visual_hierarchy": 4.5,
+            "identity_art_direction": 4.5,
+            "typography_spacing": 4,
+            "responsive_composition": 4,
+            "professional_credibility": 4
+          },
+          "evidence": {
+            "visual_hierarchy": "A large make-room-to-move headline, coaching photograph and lime action anchor the hero. Compact class rows, a blue approach section, highlighted middle pricing card and large lime closing statement create strong full-page progression.",
+            "identity_art_direction": "Blue/lime color blocks, tight heavy uppercase headings, star separators, diagonal arrows and a taped-looking rectangular note give the studio a distinct coherent graphic language. Coaching and group images support the collective-energy message.",
+            "typography_spacing": "Desktop class rows balance titles, descriptions and action columns; cards share consistent internal spacing. Mobile has clear headline hierarchy and roomy actions, although the four-line hero heading and tiny navigation/metadata create a pronounced scale gap.",
+            "responsive_composition": "Mobile turns the timetable and pricing into orderly vertical blocks and retains the energetic color sequencing. The horizontal lime slogan strip visibly cuts off its continuation at the right edge, and the note overlaps the coach's face in the hero image.",
+            "professional_credibility": "Consistent class metadata, pricing presentation, photo caption strips and fictional/demo notes create a finished concept. The face-obscuring note and visibly truncated mobile slogan strip temper the editorial finish despite otherwise consistent execution."
+          },
+          "limitations": [
+            "The clipped strip was evaluated only in the supplied static state; animation or intentional marquee behavior was not assumed."
+          ]
+        },
+        "landscape": {
+          "scores": {
+            "visual_hierarchy": 4.5,
+            "identity_art_direction": 4.5,
+            "typography_spacing": 3.5,
+            "responsive_composition": 3.5,
+            "professional_credibility": 3.5
+          },
+          "evidence": {
+            "visual_hierarchy": "A large landscape-for-living statement opens into two oversized project photographs with alternating number/text rails. A deep burgundy approach band, enquiry section and monumental desktop wordmark provide a strong and memorable page sequence.",
+            "identity_art_direction": "Burgundy, neutral white, spare black text, numbered projects and architectural garden photography establish a confident practice identity. The large footer wordmark and burgundy process panel add graphic character beyond a conventional image grid.",
+            "typography_spacing": "Desktop uses generous whitespace, orderly project tables and a strong type-scale system. Mobile enquiry heading visibly joins 'placebecome?' into one word, creating an obvious editorial flaw in an otherwise clean typographic treatment.",
+            "responsive_composition": "Project rails reorganize into image-first mobile entries while preserving numbers and metadata, and the dark process band stacks effectively. The mobile closing heading's joined 'placebecome?' compromises its composition and dominates the otherwise tidy enquiry area.",
+            "professional_credibility": "Named project captions, scopes and areas, clear concept disclosure and a carefully composed footer give the work a professional portfolio frame. The prominent mobile enquiry word collision prevents the supplied pair from reading as fully finished."
+          },
+          "limitations": [
+            "No business claims, enquiry behavior, accessibility compliance or real-project provenance were inferred from the screenshots."
+          ]
+        }
+      }
+    },
+    "limitations": [
+      "One independent qualitative reviewer assessed exactly the twelve anonymous supplied full-page PNGs and the rubric; no source, mappings, builder conclusions, metrics or timings were inspected.",
+      "Each page score evaluates its supplied desktop/mobile pair. Other widths, interactive states and motion were not available.",
+      "All twelve full-page images were viewed; original-size mobile crops were additionally viewed where reduced previews made typography or overlaps unclear.",
+      "Scores are subjective ordinal judgments in half-point increments and do not establish statistical superiority or causal effects.",
+      "Fictional disclosed businesses were treated as intended portfolio concepts. Functionality, accessibility and conversion performance were outside scope."
+    ]
+  },
+  "error_findings_review": {
+    "scope": "Fresh independent read-only assessment of frozen submitted findings, source fixes, public contracts, and regression tests. No solver timing or agent metadata used.",
+    "risk": "normal contained deterministic fictional-client helpers",
+    "definitions": {
+      "seedRecall": "Distinct evidenced seeded causes reported / eight seeded causes. Count each cause once.",
+      "evidenceSupportedReportPrecision": "Reports whose submitted baseline observation and contract violation reproduce / all submitted reports. Duplicate manifestations remain evidence-supported.",
+      "uniqueActionableReportPrecision": "Distinct legitimate root causes reported / all submitted reports. Duplicate manifestations are removed from numerator.",
+      "falsePositive": "A submitted claimed defect contradicted by baseline reproduction or public contract.",
+      "unsupported": "Submitted baseline observation could not be confirmed."
+    },
+    "reviews": {
+      "single": {
+        "submittedReports": 8,
+        "distinctSeededCauses": 8,
+        "seedRecall": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1
+        },
+        "additionalDistinctLegitimateCauses": 0,
+        "duplicateReports": 0,
+        "falsePositiveReports": 0,
+        "unsupportedReports": 0,
+        "reportPrecision": {
+          "evidenceSupported": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1
+          },
+          "uniqueActionable": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1
+          }
+        },
+        "records": [
+          {
+            "reportNumber": 1,
+            "file": "src/hotel.mjs",
+            "function": "quoteStay",
+            "cause": "Math.floor truncates the final discounted cents instead of rounding half upward.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": {
+                  "checkIn": "2028-06-01",
+                  "checkOut": "2028-06-02",
+                  "nightlyCents": 1,
+                  "discountPercent": 50
+                },
+                "claimedObserved": 0,
+                "baselineObserved": 0,
+                "required": 1,
+                "correctedObserved": 1,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 2,
+            "file": "src/hotel.mjs",
+            "function": "staysOverlap",
+            "cause": "Inclusive endpoint comparisons treat adjoining half-open stays as overlapping.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": [
+                  {
+                    "checkIn": "2028-06-01",
+                    "checkOut": "2028-06-02"
+                  },
+                  {
+                    "checkIn": "2028-06-02",
+                    "checkOut": "2028-06-03"
+                  }
+                ],
+                "claimedObserved": true,
+                "baselineObserved": true,
+                "required": false,
+                "correctedObserved": false,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 3,
+            "file": "src/hotel.mjs",
+            "function": "guestBadge",
+            "cause": "The encoder omits single quotes, leaving the single-quoted attribute delimiter unescaped.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": "O'Brien",
+                "claimedObserved": "<span data-guest='O'Brien'>O'Brien</span>",
+                "baselineObserved": "<span data-guest='O'Brien'>O'Brien</span>",
+                "required": "<span data-guest='O&#39;Brien'>O&#39;Brien</span>",
+                "correctedObserved": "<span data-guest='O&#39;Brien'>O&#39;Brien</span>",
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 4,
+            "file": "src/fitness.mjs",
+            "function": "canEnroll",
+            "cause": "confirmed <= capacity admits enrollment when a class is already full, including zero capacity.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": {
+                  "confirmed": 6,
+                  "capacity": 6
+                },
+                "claimedObserved": true,
+                "baselineObserved": true,
+                "required": false,
+                "correctedObserved": false,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 5,
+            "file": "src/fitness.mjs",
+            "function": "cancellationRefund",
+            "cause": "A strict greater-than comparison excludes cancellation exactly 24 hours before the start.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": {
+                  "startMs": 172800000,
+                  "cancelledMs": 86400000,
+                  "paidCents": 2500
+                },
+                "claimedObserved": 0,
+                "baselineObserved": 0,
+                "required": 2500,
+                "correctedObserved": 2500,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 6,
+            "file": "src/fitness.mjs",
+            "function": "chronologicalClasses",
+            "cause": "Array.sort runs directly on the supplied array, mutating its order and returning the same array.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": [
+                  {
+                    "id": "later",
+                    "startMs": 2
+                  },
+                  {
+                    "id": "first",
+                    "startMs": 1
+                  },
+                  {
+                    "id": "tie",
+                    "startMs": 1
+                  }
+                ],
+                "claimedObserved": {
+                  "returnedIds": [
+                    "first",
+                    "tie",
+                    "later"
+                  ],
+                  "inputIdsAfter": [
+                    "first",
+                    "tie",
+                    "later"
+                  ],
+                  "sameArray": true
+                },
+                "baselineObserved": {
+                  "returnedIds": [
+                    "first",
+                    "tie",
+                    "later"
+                  ],
+                  "inputIdsAfter": [
+                    "first",
+                    "tie",
+                    "later"
+                  ],
+                  "sameArray": true
+                },
+                "required": {
+                  "returnedIds": [
+                    "first",
+                    "tie",
+                    "later"
+                  ],
+                  "inputIdsAfter": [
+                    "later",
+                    "first",
+                    "tie"
+                  ],
+                  "sameArray": false
+                },
+                "correctedObserved": {
+                  "returnedIds": [
+                    "first",
+                    "tie",
+                    "later"
+                  ],
+                  "inputIdsAfter": [
+                    "later",
+                    "first",
+                    "tie"
+                  ],
+                  "sameArray": false
+                },
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 7,
+            "file": "src/landscape.mjs",
+            "function": "estimateCents",
+            "cause": "The accumulator adds unitCents instead of the validated quantity * unitCents line amount, producing incorrect totals and invalid subsequent overflow checks.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": [
+                  {
+                    "quantity": 3,
+                    "unitCents": 125
+                  },
+                  {
+                    "quantity": 0,
+                    "unitCents": 999
+                  },
+                  {
+                    "quantity": 2,
+                    "unitCents": 50
+                  }
+                ],
+                "claimedObserved": 1174,
+                "baselineObserved": 1174,
+                "required": 475,
+                "correctedObserved": 475,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              },
+              {
+                "input": [
+                  {
+                    "quantity": 2,
+                    "unitCents": 4503599627370495
+                  },
+                  {
+                    "quantity": 1,
+                    "unitCents": 2
+                  }
+                ],
+                "claimedObserved": 4503599627370497,
+                "baselineObserved": 4503599627370497,
+                "required": "throw RangeError: the actual sum is 9007199254740992, exceeding Number.MAX_SAFE_INTEGER",
+                "correctedObserved": {
+                  "throws": "RangeError"
+                },
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              },
+              {
+                "input": [
+                  {
+                    "quantity": 0,
+                    "unitCents": 9007199254740991
+                  },
+                  {
+                    "quantity": 1,
+                    "unitCents": 1
+                  }
+                ],
+                "claimedObserved": "throw RangeError",
+                "baselineObserved": {
+                  "throws": "RangeError"
+                },
+                "required": 1,
+                "correctedObserved": 1,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 8,
+            "file": "src/landscape.mjs",
+            "function": "withinBudget",
+            "cause": "A strict less-than comparison rejects estimates equal to their budget.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": {
+                  "estimateCents": 500,
+                  "budgetCents": 500
+                },
+                "claimedObserved": false,
+                "baselineObserved": false,
+                "required": true,
+                "correctedObserved": true,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          }
+        ],
+        "hiddenEvaluator": {
+          "exitCode": 0,
+          "seedGroupsPassing": 8,
+          "seedGroupsTotal": 8,
+          "healthyGroupsPassing": 9,
+          "healthyGroupsTotal": 9,
+          "healthyRegressions": 0
+        },
+        "solverTests": {
+          "exitCode": 0,
+          "tests": 15,
+          "pass": 15,
+          "fail": 0,
+          "failedNames": []
+        },
+        "solverTestsAgainstBaseline": {
+          "exitCode": 1,
+          "tests": 15,
+          "pass": 6,
+          "fail": 9,
+          "failedNames": [
+            "quoteStay rounds the final discounted total half upward once",
+            "staysOverlap treats adjoining stays as disjoint in both orders",
+            "guestBadge encodes all five special characters without re-encoding replacements",
+            "canEnroll closes full and zero-capacity classes",
+            "cancellationRefund includes exactly 24 hours and rejects cancellation after start",
+            "chronologicalClasses returns a new stable array without changing input records or order",
+            "estimateCents adds quantity times unit price, including zero quantities",
+            "estimateCents checks overflow against the accumulated extended prices",
+            "withinBudget includes equal and zero budgets"
+          ]
+        }
+      },
+      "swarm": {
+        "submittedReports": 10,
+        "distinctSeededCauses": 8,
+        "seedRecall": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1
+        },
+        "additionalDistinctLegitimateCauses": 1,
+        "duplicateReports": 1,
+        "falsePositiveReports": 0,
+        "unsupportedReports": 0,
+        "reportPrecision": {
+          "evidenceSupported": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "uniqueActionable": {
+            "numerator": 9,
+            "denominator": 10,
+            "value": 0.9
+          }
+        },
+        "records": [
+          {
+            "reportNumber": 1,
+            "file": "src/hotel.mjs",
+            "function": "quoteStay",
+            "cause": "Floored the discounted total instead of rounding its fractional cents half upward.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": {
+                  "checkIn": "2028-06-01",
+                  "checkOut": "2028-06-02",
+                  "nightlyCents": 1,
+                  "discountPercent": 50
+                },
+                "claimedObserved": 0,
+                "baselineObserved": 0,
+                "required": 1,
+                "correctedObserved": 1,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 2,
+            "file": "src/hotel.mjs",
+            "function": "staysOverlap",
+            "cause": "Used inclusive endpoint comparisons for half-open stays, treating adjoining checkout and check-in as overlap.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": [
+                  {
+                    "checkIn": "2028-06-01",
+                    "checkOut": "2028-06-02"
+                  },
+                  {
+                    "checkIn": "2028-06-02",
+                    "checkOut": "2028-06-03"
+                  }
+                ],
+                "claimedObserved": true,
+                "baselineObserved": true,
+                "required": false,
+                "correctedObserved": false,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 3,
+            "file": "src/hotel.mjs",
+            "function": "guestBadge",
+            "cause": "Omitted single-quote encoding despite placing the guest name in a single-quoted attribute.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": "O'Reilly",
+                "claimedObserved": "<span data-guest='O'Reilly'>O'Reilly</span>",
+                "baselineObserved": "<span data-guest='O'Reilly'>O'Reilly</span>",
+                "required": "<span data-guest='O&#39;Reilly'>O&#39;Reilly</span>",
+                "correctedObserved": "<span data-guest='O&#39;Reilly'>O&#39;Reilly</span>",
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 4,
+            "file": "src/hotel.mjs",
+            "function": "quoteStay",
+            "cause": "The shared date parser classified non-string field types as RangeError rather than the contracted TypeError.",
+            "classification": "additional legitimate defect",
+            "evidence": [
+              {
+                "input": {
+                  "checkIn": null,
+                  "checkOut": "2028-06-02",
+                  "nightlyCents": 1
+                },
+                "claimedObserved": "RangeError",
+                "baselineObserved": {
+                  "throws": "RangeError"
+                },
+                "required": "TypeError",
+                "correctedObserved": {
+                  "throws": "TypeError"
+                },
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 5,
+            "file": "src/hotel.mjs",
+            "function": "staysOverlap",
+            "cause": "The shared date parser classified non-string field types as RangeError rather than the contracted TypeError.",
+            "classification": "duplicate manifestation",
+            "evidence": [
+              {
+                "input": [
+                  {
+                    "checkIn": null,
+                    "checkOut": "2028-06-02"
+                  },
+                  {
+                    "checkIn": "2028-06-02",
+                    "checkOut": "2028-06-03"
+                  }
+                ],
+                "claimedObserved": "RangeError",
+                "baselineObserved": {
+                  "throws": "RangeError"
+                },
+                "required": "TypeError",
+                "correctedObserved": {
+                  "throws": "TypeError"
+                },
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 6,
+            "file": "src/fitness.mjs",
+            "function": "canEnroll",
+            "cause": "Used confirmed <= capacity, allowing enrollment when the class was full, including zero capacity.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": {
+                  "confirmed": 1,
+                  "capacity": 1
+                },
+                "claimedObserved": true,
+                "baselineObserved": true,
+                "required": false,
+                "correctedObserved": false,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 7,
+            "file": "src/fitness.mjs",
+            "function": "cancellationRefund",
+            "cause": "Used a strict greater-than threshold, denying a refund exactly 24 hours before start.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": {
+                  "startMs": 86400000,
+                  "cancelledMs": 0,
+                  "paidCents": 500
+                },
+                "claimedObserved": 0,
+                "baselineObserved": 0,
+                "required": 500,
+                "correctedObserved": 500,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 8,
+            "file": "src/fitness.mjs",
+            "function": "chronologicalClasses",
+            "cause": "Sorted the caller's array in place and returned that same array.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": [
+                  {
+                    "id": "later",
+                    "startMs": 2
+                  },
+                  {
+                    "id": "first",
+                    "startMs": 1
+                  }
+                ],
+                "claimedObserved": {
+                  "returnedIds": [
+                    "first",
+                    "later"
+                  ],
+                  "inputIds": [
+                    "first",
+                    "later"
+                  ],
+                  "sameArray": true
+                },
+                "baselineObserved": {
+                  "returnedIds": [
+                    "first",
+                    "later"
+                  ],
+                  "inputIds": [
+                    "first",
+                    "later"
+                  ],
+                  "sameArray": true
+                },
+                "required": {
+                  "returnedIds": [
+                    "first",
+                    "later"
+                  ],
+                  "inputIds": [
+                    "later",
+                    "first"
+                  ],
+                  "sameArray": false
+                },
+                "correctedObserved": {
+                  "returnedIds": [
+                    "first",
+                    "later"
+                  ],
+                  "inputIds": [
+                    "later",
+                    "first"
+                  ],
+                  "sameArray": false
+                },
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 9,
+            "file": "src/landscape.mjs",
+            "function": "estimateCents",
+            "cause": "Validated quantity times unitCents but accumulated only unitCents, producing wrong totals and charging for zero quantities.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": [
+                  {
+                    "quantity": 3,
+                    "unitCents": 10
+                  },
+                  {
+                    "quantity": 0,
+                    "unitCents": 10
+                  }
+                ],
+                "claimedObserved": 20,
+                "baselineObserved": 20,
+                "required": 30,
+                "correctedObserved": 30,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          },
+          {
+            "reportNumber": 10,
+            "file": "src/landscape.mjs",
+            "function": "withinBudget",
+            "cause": "Used a strict less-than comparison, rejecting an estimate equal to its budget.",
+            "classification": "distinct seeded defect",
+            "evidence": [
+              {
+                "input": {
+                  "estimateCents": 10,
+                  "budgetCents": 10
+                },
+                "claimedObserved": false,
+                "baselineObserved": false,
+                "required": true,
+                "correctedObserved": true,
+                "baselineClaimConfirmed": true,
+                "fixConfirmed": true
+              }
+            ],
+            "actionVerified": true
+          }
+        ],
+        "hiddenEvaluator": {
+          "exitCode": 0,
+          "seedGroupsPassing": 8,
+          "seedGroupsTotal": 8,
+          "healthyGroupsPassing": 9,
+          "healthyGroupsTotal": 9,
+          "healthyRegressions": 0
+        },
+        "solverTests": {
+          "exitCode": 0,
+          "tests": 15,
+          "pass": 15,
+          "fail": 0,
+          "failedNames": []
+        },
+        "solverTestsAgainstBaseline": {
+          "exitCode": 1,
+          "tests": 15,
+          "pass": 4,
+          "fail": 11,
+          "failedNames": [
+            "enrollment closes at capacity and at zero capacity",
+            "cancellation exactly 24 hours before class earns the full refund",
+            "class ordering returns a new stable-sorted array without mutating inputs",
+            "stay discounts round the final total half upward once",
+            "stay arithmetic retains exact integer cents at the allowed limit",
+            "half-open stays exclude adjoining dates in either argument order",
+            "guest badge encodes all special characters once in attribute and text",
+            "date fields reject non-string types separately from invalid date strings",
+            "estimateCents sums each full line amount, including zero quantities",
+            "estimateCents rejects unsafe products and sums",
+            "withinBudget accepts zero estimates and exact budget equality"
+          ]
+        }
+      }
+    },
+    "evaluations": {
+      "baseline": {
+        "exitCode": 1,
+        "seedGroupsPassing": 0,
+        "seedGroupsTotal": 8,
+        "healthyGroupsPassing": 9,
+        "healthyGroupsTotal": 9
+      },
+      "oracle": {
+        "exitCode": 0,
+        "seedGroupsPassing": 8,
+        "seedGroupsTotal": 8,
+        "healthyGroupsPassing": 9,
+        "healthyGroupsTotal": 9
+      }
+    },
+    "isolationEvidence": {
+      "individualFixes": 8,
+      "eachResolvesOnlyOwnSeed": true,
+      "allRetainHealthyControls": true,
+      "note": "Frozen recorded isolation evidence inspected; judge not regenerated."
+    },
+    "worktreeUnchanged": true,
+    "materialGaps": [
+      {
+        "solver": "single",
+        "file": "src/hotel.mjs",
+        "function": "quoteStay and staysOverlap",
+        "issue": "Non-string date fields still throw RangeError, violating the public string type failure TypeError contract. Solver regression explicitly expects RangeError for null checkIn, locking in the defect. Hidden healthy checks do not cover non-string date fields.",
+        "repro": {
+          "input": {
+            "checkIn": null,
+            "checkOut": "2028-06-02",
+            "nightlyCents": 1
+          },
+          "expected": "TypeError",
+          "actual": "RangeError"
+        }
+      },
+      {
+        "solver": "swarm",
+        "issue": "Two additional report records describe one shared date-parser cause. Count as one distinct extra legitimate defect plus one duplicate manifestation, never as two false positives."
+      }
+    ],
+    "coverage": {
+      "single": "All eight seeded causes have baseline-failing regression cases; nine seed-focused test cases fail against baseline. Broader numeric validation, overflow, calendar, frozen-array, and healthy controls present. Date type expectation contradicts README.",
+      "swarm": "All eight seeded causes plus shared date type cause have baseline-failing regression cases. Eleven tests fail baseline and all fifteen pass corrected source. Integer rounding near safe limit uses independent BigInt reference. Stable sorting, healthy controls, calendar and overflow checks are present; estimate sum-overflow test detects the erroneous accumulator. Samples do not exhaust invalid numeric fields or input-purity combinations.",
+      "limits": "Hidden evaluator nine healthy groups and solver tests are sampled contract checks, not exhaustive proof of all safe integer combinations or JavaScript input shapes."
+    },
+    "assessmentComplete": true,
+    "verdictBySolver": {
+      "single": "FAIL: submitted findings and all seeded fixes are valid, but full public contract still fails non-string date-field error classification.",
+      "swarm": "PASS: all reported distinct causes reproduce and are fixed; one shared-cause duplicate report reduces unique actionable precision."
+    },
+    "acceptanceCriteria": [
+      "Every submitted observed defect reproduces against frozen baseline and violates public contract.",
+      "Distinct seeded causes counted once; legitimate extra defects distinguished from duplicates and false positives.",
+      "Actual fixes verified through exact submitted repros, independent hidden checks and solver tests.",
+      "Material public-contract gaps and test limitations disclosed; measured artifacts unchanged."
+    ],
+    "reproductionMethod": "Replay each FINDINGS.json input directly through the named public export on baseline and corrected modules. Capture returns or exception class; separately capture sorted ids, caller order and array identity for purity. Run hidden evaluator directly with native Node. Run solver Node test suites, then transplant unmodified solver tests into temporary copies of baseline source and run them to establish defect sensitivity."
+  }
+}

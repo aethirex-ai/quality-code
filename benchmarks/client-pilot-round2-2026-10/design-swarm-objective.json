@@ -1,0 +1,595 @@
+{
+  "condition": "swarm",
+  "pages": {
+    "studio": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "VOLT — Make room to move"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "MAKEROOMTO MOVE."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/movement-coaching.png",
+              "alt": "A coach guides a participant in a cobalt shirt through a lateral lunge in a bright movement studio.",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/group-mobility.png",
+              "alt": "Four adults sit on exercise mats during a relaxed, coach-led mobility class in a sunlit studio.",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: class shortlist increments 0→1→2",
+          "passed": true,
+          "evidence": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "BUTTON",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "VOLT — Make room to move"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "MAKEROOMTO MOVE."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/movement-coaching.png",
+              "alt": "A coach guides a participant in a cobalt shirt through a lateral lunge in a bright movement studio.",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/group-mobility.png",
+              "alt": "Four adults sit on exercise mats during a relaxed, coach-led mobility class in a sunlit studio.",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: class shortlist increments 0→1→2",
+          "passed": true,
+          "evidence": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "BUTTON",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "studio-desktop.png",
+        "studio-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/movement-coaching.png",
+          "alt": "A coach guides a participant in a cobalt shirt through a lateral lunge in a bright movement studio.",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "assets/group-mobility.png",
+          "alt": "Four adults sit on exercise mats during a relaxed, coach-led mobility class in a sunlit studio.",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    },
+    "landscape": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "FIELDWORK — Landscape for living"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Landscapefor living."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/birch-court.png",
+              "alt": "A pale stone garden path winds between birch trees, ornamental grasses and purple and white flowers.",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/mill-yard.png",
+              "alt": "A public pocket park with a curving stone path, low stone seats, mature trees and a planted gravel rain garden beside brick homes.",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "project",
+              "labeled": true
+            },
+            {
+              "name": "details",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "desktop: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thank you, Alex Example. Your landscape project enquiry is ready for alex@example.invalid. This is a local demo: nothing has been sent or stored."
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "FIELDWORK — Landscape for living"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Landscapefor living."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/birch-court.png",
+              "alt": "A pale stone garden path winds between birch trees, ornamental grasses and purple and white flowers.",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/mill-yard.png",
+              "alt": "A public pocket park with a curving stone path, low stone seats, mature trees and a planted gravel rain garden beside brick homes.",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "project",
+              "labeled": true
+            },
+            {
+              "name": "details",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "mobile: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thank you, Alex Example. Your landscape project enquiry is ready for alex@example.invalid. This is a local demo: nothing has been sent or stored."
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "landscape-desktop.png",
+        "landscape-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/birch-court.png",
+          "alt": "A pale stone garden path winds between birch trees, ornamental grasses and purple and white flowers.",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "assets/mill-yard.png",
+          "alt": "A public pocket park with a curving stone path, low stone seats, mature trees and a planted gravel rain garden beside brick homes.",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    },
+    "hotel": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "TIDE HOUSE — A little closer to the sea"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "A little closerto the sea."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.png",
+              "alt": "White coastal hotel with navy shutters beside a quiet blue Atlantic cove and granite shoreline",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/room.png",
+              "alt": "Sea-facing hotel room with a white linen king bed, navy headboard and pale green reading chair beside a large ocean-view window",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "date",
+              "labeled": true
+            },
+            {
+              "name": "guests",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "desktop: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thank you, Alex Example. Your demo stay for 2 guests arriving 2027-06-15 is ready to imagine. This is a local preview: nothing was sent and no room is booked."
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "TIDE HOUSE — A little closer to the sea"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "A little closerto the sea."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.png",
+              "alt": "White coastal hotel with navy shutters beside a quiet blue Atlantic cove and granite shoreline",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/room.png",
+              "alt": "Sea-facing hotel room with a white linen king bed, navy headboard and pale green reading chair beside a large ocean-view window",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "date",
+              "labeled": true
+            },
+            {
+              "name": "guests",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "mobile: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thank you, Alex Example. Your demo stay for 2 guests arriving 2027-06-15 is ready to imagine. This is a local preview: nothing was sent and no room is booked."
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "hotel-desktop.png",
+        "hotel-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/hero.png",
+          "alt": "White coastal hotel with navy shutters beside a quiet blue Atlantic cove and granite shoreline",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "assets/room.png",
+          "alt": "Sea-facing hotel room with a white linen king bed, navy headboard and pale green reading chair beside a large ocean-view window",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    }
+  },
+  "method": "frozen browser checks; objective assertions are separate from subjective visual quality",
+  "index_links": [
+    "#main",
+    "index.html",
+    "#work",
+    "hotel/index.html",
+    "studio/index.html",
+    "landscape/index.html"
+  ],
+  "summary": {
+    "passed": 58,
+    "total": 58,
+    "failed": []
+  }
+}

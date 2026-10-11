@@ -1,0 +1,29 @@
+{
+  "pages": {
+    "hotel": {
+      "attempts": 2,
+      "successful_outputs": 2,
+      "failures": 0,
+      "missing_outputs": 0
+    },
+    "studio": {
+      "attempts": 2,
+      "successful_outputs": 2,
+      "failures": 0,
+      "missing_outputs": 0
+    },
+    "landscape": {
+      "attempts": 2,
+      "successful_outputs": 2,
+      "failures": 0,
+      "missing_outputs": 0
+    }
+  },
+  "self_reported_attempts": 6,
+  "native_image_calls": 6,
+  "transcript_count_reconciled": true,
+  "backend_model": null,
+  "generation_tokens": null,
+  "image_price": null,
+  "probe_excluded": true
+}

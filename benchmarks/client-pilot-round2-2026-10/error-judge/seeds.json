@@ -1,0 +1,140 @@
+[
+  {
+    "id": "H_PRICE",
+    "file": "src/hotel.mjs",
+    "function": "quoteStay",
+    "line": 30,
+    "faultyExpression": "Math.floor(subtotal * (100 - discountPercent) / 100)",
+    "cause": "Discount calculation truncates fractional cents rather than rounding half upward.",
+    "repro": {
+      "checkIn": "2028-06-01",
+      "checkOut": "2028-06-02",
+      "nightlyCents": 105,
+      "discountPercent": 10
+    },
+    "baselineObserved": 94,
+    "requiredBehavior": 95,
+    "oracleReplacement": "Math.round(subtotal * (100 - discountPercent) / 100)"
+  },
+  {
+    "id": "H_INTERVAL",
+    "file": "src/hotel.mjs",
+    "function": "staysOverlap",
+    "line": 37,
+    "faultyExpression": "a <= d && c <= b",
+    "cause": "Inclusive overlap comparison treats adjoining exclusive checkout as occupied.",
+    "repro": {
+      "first": {
+        "checkIn": "2028-06-01",
+        "checkOut": "2028-06-03"
+      },
+      "second": {
+        "checkIn": "2028-06-03",
+        "checkOut": "2028-06-05"
+      }
+    },
+    "baselineObserved": true,
+    "requiredBehavior": false,
+    "oracleReplacement": "a < d && c < b"
+  },
+  {
+    "id": "H_HTML",
+    "file": "src/hotel.mjs",
+    "function": "guestBadge",
+    "line": 43,
+    "faultyExpression": ".replaceAll('\"', '&quot;')",
+    "cause": "Single quote is unescaped in a single-quoted HTML attribute.",
+    "repro": "O'Neil",
+    "baselineObserved": "<span data-guest='O'Neil'>O'Neil</span>",
+    "requiredBehavior": "<span data-guest='O&#39;Neil'>O&#39;Neil</span>",
+    "oracleReplacement": ".replaceAll('\"', '&quot;').replaceAll(\"'\", '&#39;')"
+  },
+  {
+    "id": "F_CAPACITY",
+    "file": "src/fitness.mjs",
+    "function": "canEnroll",
+    "line": 14,
+    "faultyExpression": "confirmed <= capacity",
+    "cause": "Inclusive capacity comparison allows one enrollment into a full class.",
+    "repro": {
+      "confirmed": 12,
+      "capacity": 12
+    },
+    "baselineObserved": true,
+    "requiredBehavior": false,
+    "oracleReplacement": "confirmed < capacity"
+  },
+  {
+    "id": "F_REFUND",
+    "file": "src/fitness.mjs",
+    "function": "cancellationRefund",
+    "line": 24,
+    "faultyExpression": "startMs - cancelledMs > 86400000",
+    "cause": "Strict cutoff denies the refund at exactly 24 hours.",
+    "repro": {
+      "startMs": 172800000,
+      "cancelledMs": 86400000,
+      "paidCents": 3900
+    },
+    "baselineObserved": 0,
+    "requiredBehavior": 3900,
+    "oracleReplacement": "startMs - cancelledMs >= 86400000"
+  },
+  {
+    "id": "F_PURITY",
+    "file": "src/fitness.mjs",
+    "function": "chronologicalClasses",
+    "line": 36,
+    "faultyExpression": "return classes.sort",
+    "cause": "Array.sort mutates caller array and returns it rather than a new array.",
+    "repro": [
+      {
+        "id": "late",
+        "startMs": 30
+      },
+      {
+        "id": "early",
+        "startMs": 10
+      }
+    ],
+    "baselineObserved": "input reordered and output === input",
+    "requiredBehavior": "input retains late/early order; output new early/late array",
+    "oracleReplacement": "return [...classes].sort"
+  },
+  {
+    "id": "L_QUANTITY",
+    "file": "src/landscape.mjs",
+    "function": "estimateCents",
+    "line": 19,
+    "faultyExpression": "total += item.unitCents",
+    "cause": "Accumulator ignores quantity despite computing line subtotal.",
+    "repro": [
+      {
+        "quantity": 3,
+        "unitCents": 12500
+      },
+      {
+        "quantity": 2,
+        "unitCents": 499
+      }
+    ],
+    "baselineObserved": 12999,
+    "requiredBehavior": 38498,
+    "oracleReplacement": "total += line"
+  },
+  {
+    "id": "L_BUDGET",
+    "file": "src/landscape.mjs",
+    "function": "withinBudget",
+    "line": 29,
+    "faultyExpression": "estimateCents < budgetCents",
+    "cause": "Strict affordability comparison rejects an estimate equal to budget.",
+    "repro": {
+      "estimateCents": 450000,
+      "budgetCents": 450000
+    },
+    "baselineObserved": false,
+    "requiredBehavior": true,
+    "oracleReplacement": "estimateCents <= budgetCents"
+  }
+]

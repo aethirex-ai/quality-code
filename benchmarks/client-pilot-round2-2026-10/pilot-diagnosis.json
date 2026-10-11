@@ -1,0 +1,670 @@
+{
+  "schema_version": 1,
+  "scope": "Original paired pilot roots and their three explicitly linked descendants only; raw bodies excluded from deliverable",
+  "sessions": [
+    {
+      "agent": "single_primary",
+      "source_sha256": "6575331d9c7b3ed279016e4de503b0f20693753b75f450977d1679ef34d4078d",
+      "input_tokens": 1654596,
+      "cached_input_tokens": 1530624,
+      "uncached_input_tokens": 123972,
+      "output_tokens": 31776,
+      "reasoning_output_tokens_included": 5210,
+      "request_snapshots": 31,
+      "task_started_events": 1,
+      "turn_context_records": 1,
+      "first_request": {
+        "input_tokens": 17549,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 169,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 17718
+      },
+      "max_request_input": 84063,
+      "initial_explicit_message_characters_by_role": {
+        "developer": 7586,
+        "user": 20277,
+        "assistant": 116
+      },
+      "initial_parts": [
+        {
+          "role": "developer",
+          "characters": 2591,
+          "label": "Skill catalog"
+        },
+        {
+          "role": "developer",
+          "characters": 618,
+          "label": "Sandbox permissions"
+        },
+        {
+          "role": "developer",
+          "characters": 920,
+          "label": "Collaboration mode"
+        },
+        {
+          "role": "developer",
+          "characters": 786,
+          "label": "Runtime model catalog"
+        },
+        {
+          "role": "developer",
+          "characters": 2400,
+          "label": "Primary collaboration instructions"
+        },
+        {
+          "role": "developer",
+          "characters": 271,
+          "label": "Delegation mode"
+        },
+        {
+          "role": "user",
+          "characters": 18642,
+          "label": "AGENTS instructions"
+        },
+        {
+          "role": "user",
+          "characters": 1222,
+          "label": "Environment context"
+        },
+        {
+          "role": "user",
+          "characters": 413,
+          "label": "Benchmark task prompt"
+        },
+        {
+          "role": "assistant",
+          "characters": 116,
+          "label": "Initial progress message"
+        }
+      ],
+      "base_instruction_characters": 21769,
+      "outer_tool_calls": {
+        "exec": 30
+      },
+      "spawns": [],
+      "broad_context_reads": [
+        {
+          "ordinal": 17,
+          "reads": [
+            "AGENTS.md",
+            "BRIEF.md",
+            "MAP.md",
+            "TESTING.md"
+          ],
+          "code_characters": 300
+        }
+      ],
+      "tool_output_text_characters": 87198,
+      "large_text_outputs": [
+        {
+          "ordinal": 21,
+          "text_characters": 20708
+        },
+        {
+          "ordinal": 27,
+          "text_characters": 20418
+        }
+      ],
+      "native_input_image_blocks": 6,
+      "base64_prints": [
+        {
+          "ordinal": 41,
+          "retained_text_characters": 6153,
+          "reported_pretruncation_tokens": 771641
+        }
+      ]
+    },
+    {
+      "agent": "swarm_primary",
+      "source_sha256": "f84b0381f5b08185269dbf07cca1ecc1462c930ebde389a3d5109c423112b599",
+      "input_tokens": 1412480,
+      "cached_input_tokens": 1350528,
+      "uncached_input_tokens": 61952,
+      "output_tokens": 18128,
+      "reasoning_output_tokens_included": 2309,
+      "request_snapshots": 31,
+      "task_started_events": 1,
+      "turn_context_records": 1,
+      "first_request": {
+        "input_tokens": 17634,
+        "cached_input_tokens": 6912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 172,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 17806
+      },
+      "max_request_input": 75299,
+      "initial_explicit_message_characters_by_role": {
+        "developer": 7585,
+        "user": 20731,
+        "assistant": 155
+      },
+      "initial_parts": [
+        {
+          "role": "developer",
+          "characters": 2591,
+          "label": "Skill catalog"
+        },
+        {
+          "role": "developer",
+          "characters": 617,
+          "label": "Sandbox permissions"
+        },
+        {
+          "role": "developer",
+          "characters": 920,
+          "label": "Collaboration mode"
+        },
+        {
+          "role": "developer",
+          "characters": 786,
+          "label": "Runtime model catalog"
+        },
+        {
+          "role": "developer",
+          "characters": 2400,
+          "label": "Primary collaboration instructions"
+        },
+        {
+          "role": "developer",
+          "characters": 271,
+          "label": "Delegation mode"
+        },
+        {
+          "role": "user",
+          "characters": 18641,
+          "label": "AGENTS instructions"
+        },
+        {
+          "role": "user",
+          "characters": 1215,
+          "label": "Environment context"
+        },
+        {
+          "role": "user",
+          "characters": 875,
+          "label": "Benchmark task prompt"
+        },
+        {
+          "role": "assistant",
+          "characters": 155,
+          "label": "Initial progress message"
+        }
+      ],
+      "base_instruction_characters": 21769,
+      "outer_tool_calls": {
+        "exec": 22,
+        "spawn_agent": 2,
+        "wait": 2,
+        "send_message": 3,
+        "followup_task": 1
+      },
+      "spawns": [
+        {
+          "task_name": "luma_lead",
+          "fork_turns": "none",
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "high",
+          "brief_storage": "encrypted",
+          "brief_ciphertext_characters": 2892,
+          "plaintext_length_available": false
+        },
+        {
+          "task_name": "kern",
+          "fork_turns": "none",
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "high",
+          "brief_storage": "encrypted",
+          "brief_ciphertext_characters": 2552,
+          "plaintext_length_available": false
+        }
+      ],
+      "broad_context_reads": [
+        {
+          "ordinal": 12,
+          "reads": [
+            "BRIEF.md",
+            "MAP.md",
+            "TESTING.md"
+          ],
+          "other_reads": [
+            ".quality/quality.toml"
+          ]
+        },
+        {
+          "ordinal": 20,
+          "reads": [
+            "AGENTS.md",
+            "imagegen/SKILL.md"
+          ]
+        }
+      ],
+      "tool_output_text_characters": 122298,
+      "large_text_outputs": [
+        {
+          "ordinal": 23,
+          "text_characters": 33364
+        },
+        {
+          "ordinal": 178,
+          "text_characters": 27482
+        },
+        {
+          "ordinal": 203,
+          "text_characters": 25120
+        }
+      ],
+      "native_input_image_blocks": 2,
+      "base64_prints": [
+        {
+          "ordinal": 85,
+          "retained_text_characters": 4152,
+          "reported_pretruncation_tokens": 747441
+        }
+      ]
+    },
+    {
+      "agent": "swarm_luma_lead",
+      "source_sha256": "b31d82a71f4b9769f60347b71a8bc489b8c11f71a6e439603fc95c8012e8d804",
+      "input_tokens": 487027,
+      "cached_input_tokens": 418176,
+      "uncached_input_tokens": 68851,
+      "output_tokens": 10784,
+      "reasoning_output_tokens_included": 1428,
+      "request_snapshots": 15,
+      "task_started_events": 1,
+      "turn_context_records": 1,
+      "first_request": {
+        "input_tokens": 19920,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 70,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 19990
+      },
+      "max_request_input": 43835,
+      "initial_explicit_message_characters_by_role": {
+        "developer": 17405,
+        "user": 19856
+      },
+      "initial_parts": [
+        {
+          "role": "developer",
+          "characters": 12358,
+          "label": "Skill catalog"
+        },
+        {
+          "role": "developer",
+          "characters": 617,
+          "label": "Sandbox permissions"
+        },
+        {
+          "role": "developer",
+          "characters": 920,
+          "label": "Collaboration mode"
+        },
+        {
+          "role": "developer",
+          "characters": 786,
+          "label": "Runtime model catalog"
+        },
+        {
+          "role": "developer",
+          "characters": 2453,
+          "label": "Helper collaboration instructions"
+        },
+        {
+          "role": "developer",
+          "characters": 271,
+          "label": "Delegation mode"
+        },
+        {
+          "role": "user",
+          "characters": 18641,
+          "label": "AGENTS instructions"
+        },
+        {
+          "role": "user",
+          "characters": 1215,
+          "label": "Environment context"
+        }
+      ],
+      "base_instruction_characters": 21769,
+      "outer_tool_calls": {
+        "exec": 9,
+        "list_agents": 1,
+        "spawn_agent": 1,
+        "send_message": 3
+      },
+      "spawns": [
+        {
+          "task_name": "reservation",
+          "fork_turns": "none",
+          "model": "gpt-6-luna",
+          "reasoning_effort": "medium",
+          "brief_storage": "encrypted",
+          "brief_ciphertext_characters": 2296,
+          "plaintext_length_available": false
+        }
+      ],
+      "broad_context_reads": [
+        {
+          "ordinal": 10,
+          "reads": [
+            "AGENTS.md",
+            "BRIEF.md",
+            "MAP.md",
+            "imagegen/SKILL.md"
+          ],
+          "code_characters": 214
+        }
+      ],
+      "tool_output_text_characters": 40232,
+      "large_text_outputs": [
+        {
+          "ordinal": 13,
+          "text_characters": 35221
+        }
+      ],
+      "native_input_image_blocks": 2,
+      "base64_prints": [
+        {
+          "ordinal": 55,
+          "retained_text_characters": 1425,
+          "reported_pretruncation_tokens": null
+        }
+      ]
+    },
+    {
+      "agent": "swarm_kern",
+      "source_sha256": "f20942178cfc918d161fa19f2f629b0137f4f939862011079bd356d756c10fd4",
+      "input_tokens": 640386,
+      "cached_input_tokens": 587392,
+      "uncached_input_tokens": 52994,
+      "output_tokens": 13733,
+      "reasoning_output_tokens_included": 2115,
+      "request_snapshots": 17,
+      "task_started_events": 2,
+      "turn_context_records": 2,
+      "first_request": {
+        "input_tokens": 19891,
+        "cached_input_tokens": 19328,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 71,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 19962
+      },
+      "max_request_input": 47769,
+      "initial_explicit_message_characters_by_role": {
+        "developer": 17405,
+        "user": 19856
+      },
+      "initial_parts": [
+        {
+          "role": "developer",
+          "characters": 12358,
+          "label": "Skill catalog"
+        },
+        {
+          "role": "developer",
+          "characters": 617,
+          "label": "Sandbox permissions"
+        },
+        {
+          "role": "developer",
+          "characters": 920,
+          "label": "Collaboration mode"
+        },
+        {
+          "role": "developer",
+          "characters": 786,
+          "label": "Runtime model catalog"
+        },
+        {
+          "role": "developer",
+          "characters": 2453,
+          "label": "Helper collaboration instructions"
+        },
+        {
+          "role": "developer",
+          "characters": 271,
+          "label": "Delegation mode"
+        },
+        {
+          "role": "user",
+          "characters": 18641,
+          "label": "AGENTS instructions"
+        },
+        {
+          "role": "user",
+          "characters": 1215,
+          "label": "Environment context"
+        }
+      ],
+      "base_instruction_characters": 21769,
+      "outer_tool_calls": {
+        "exec": 12,
+        "send_message": 3
+      },
+      "spawns": [],
+      "broad_context_reads": [
+        {
+          "ordinal": 10,
+          "reads": [
+            "AGENTS.md",
+            "BRIEF.md",
+            "MAP.md",
+            "imagegen/SKILL.md"
+          ],
+          "code_characters": 209
+        }
+      ],
+      "tool_output_text_characters": 44386,
+      "large_text_outputs": [
+        {
+          "ordinal": 13,
+          "text_characters": 38255
+        }
+      ],
+      "native_input_image_blocks": 2,
+      "base64_prints": []
+    },
+    {
+      "agent": "swarm_reservation",
+      "source_sha256": "db48a22f6dc01bf7af76dfb0e0b799f470ffc62f3a34775da3238c3c52d343f3",
+      "input_tokens": 361336,
+      "cached_input_tokens": 330496,
+      "uncached_input_tokens": 30840,
+      "output_tokens": 2786,
+      "reasoning_output_tokens_included": 604,
+      "request_snapshots": 13,
+      "task_started_events": 1,
+      "turn_context_records": 1,
+      "first_request": {
+        "input_tokens": 23383,
+        "cached_input_tokens": 6912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 135,
+        "reasoning_output_tokens": 28,
+        "total_tokens": 23518
+      },
+      "max_request_input": 29958,
+      "initial_explicit_message_characters_by_role": {
+        "developer": 35597,
+        "user": 19856
+      },
+      "initial_parts": [
+        {
+          "role": "developer",
+          "characters": 18192,
+          "label": "Model switch instructions"
+        },
+        {
+          "role": "developer",
+          "characters": 12358,
+          "label": "Skill catalog"
+        },
+        {
+          "role": "developer",
+          "characters": 617,
+          "label": "Sandbox permissions"
+        },
+        {
+          "role": "developer",
+          "characters": 920,
+          "label": "Collaboration mode"
+        },
+        {
+          "role": "developer",
+          "characters": 786,
+          "label": "Runtime model catalog"
+        },
+        {
+          "role": "developer",
+          "characters": 2453,
+          "label": "Helper collaboration instructions"
+        },
+        {
+          "role": "developer",
+          "characters": 271,
+          "label": "Delegation mode"
+        },
+        {
+          "role": "user",
+          "characters": 18641,
+          "label": "AGENTS instructions"
+        },
+        {
+          "role": "user",
+          "characters": 1215,
+          "label": "Environment context"
+        }
+      ],
+      "base_instruction_characters": 21769,
+      "outer_tool_calls": {
+        "exec": 8,
+        "send_message": 3,
+        "wait_agent": 1
+      },
+      "spawns": [],
+      "broad_context_reads": [
+        {
+          "ordinal": 17,
+          "reads": [
+            "AGENTS.md",
+            "BRIEF.md",
+            "MAP.md",
+            "TESTING.md"
+          ],
+          "code_characters": 291
+        }
+      ],
+      "tool_output_text_characters": 18447,
+      "large_text_outputs": [
+        {
+          "ordinal": 20,
+          "text_characters": 16966
+        }
+      ],
+      "native_input_image_blocks": 0,
+      "base64_prints": []
+    }
+  ],
+  "arithmetic": {
+    "input_increase": 1246633,
+    "cached_increase": 1155968,
+    "uncached_increase": 90665,
+    "output_increase": 13655,
+    "swarm_primary_input_change": -242116,
+    "descendant_input": 1488749,
+    "single_request_snapshots": 31,
+    "swarm_request_snapshots": 76
+  },
+  "observed_behaviors": [
+    {
+      "finding": "Fresh child history was requested on every spawn, yet runtime messages were substantially repeated.",
+      "evidence": "All three spawn args: fork_turns=none. Child initial messages still include AGENTS instruction block 18,641 chars and environment 1,215 chars, base instructions 21,769 chars, skills catalog 12,358 chars. Root skills catalog 2,591 chars. Reservation helper additionally receives model-switch block 18,192 chars. These are characters, not tokenizer-equivalent tokens.",
+      "classification": "observed runtime context; not evidence of inherited parent transcript"
+    },
+    {
+      "finding": "All children re-read broad project context; leads re-read image skill.",
+      "evidence": "LUMA lead ordinal 10 reads BRIEF/MAP/AGENTS/imagegen skill; KERN ordinal 10 reads BRIEF/AGENTS/MAP/imagegen skill; reservation ordinal 17 reads AGENTS/BRIEF/MAP/TESTING. The supplied AGENTS block already existed in each initial context.",
+      "classification": "observed retrieval duplication"
+    },
+    {
+      "finding": "Extra requests repeatedly process growing context.",
+      "evidence": "31 single snapshots versus 76 summed swarm snapshots. Swarm primary also has 31 snapshots despite offloading two pages. Descendants contribute 45 more. Total text tool output is 225,363 swarm characters versus 87,198 single. Request input sums include cached prefixes repeatedly, rather than 2.9 million tokens of unique prose.",
+      "classification": "observed counts plus interpretation of native input accounting"
+    },
+    {
+      "finding": "Nested helper work is small relative to its own request/context footprint.",
+      "evidence": "Reservation helper creates restaurant/script.js and restaurant/reservation.test.mjs, uses 8 exec calls, 3 send_message calls, 1 wait_agent call; 13 usage snapshots, 361,336 input and 2,786 output. It repeatedly inventories the restaurant directory while lead builds HTML.",
+      "classification": "observed scope; net benefit cannot be identified without direct-delegation/no-helper condition"
+    },
+    {
+      "finding": "Verification overlaps between owners and integration primary.",
+      "evidence": "Reservation helper runs its test; LUMA lead ordinal 99 runs restaurant/reservation.test.mjs and checks labels/fields/local images; primary ordinal 174 runs reservation test again, ordinal 184 syntax-checks restaurant JS, and later portfolio checks cover pages. KERN local HTML and form checks overlap primary static and interaction verification.",
+      "classification": "observed overlapping actions; some final integration checking is appropriate, so not all overlap is waste"
+    },
+    {
+      "finding": "Image base64 was printed as text in both conditions, but retained text was truncated.",
+      "evidence": "Single image-result text print reports 771,641 pretruncation tokens and retains 6,153 characters; swarm root reports 747,441 and retains 4,152 characters. LUMA lead separately prints only first 90 characters of image_url. Both conditions deliver six native input_image blocks for inspection. Multi-megabyte raw image blocks are image serialization, not evidence those bytes were ordinary text tokens.",
+      "classification": "Observed avoidable image-output handling; retained character counts and tool-reported pretruncation counts do not establish exact billed base64 token accounting or principal cause of token delta."
+    },
+    {
+      "finding": "Main extra input comes from child sessions, while primary input declines.",
+      "evidence": "Descendants add 1,488,749 input; swarm primary saves 242,116 input versus single; net +1,246,633. Cached delta +1,155,968, uncached delta +90,665; therefore most input growth is cached prefix processing. Output rises 13,655; root decreases 13,648 and children add 27,303.",
+      "classification": "proven arithmetic"
+    }
+  ],
+  "visual_evidence": {
+    "anonymous_set_mapping": "A=swarm, B=single, as RESULTS.md page totals identify; original blind-map not inspected",
+    "scores": "Single 65/75 total, swarm 61.5/75 total; restaurant tied 22/25; one reviewer only",
+    "weaknesses": [
+      {
+        "page": "swarm shop",
+        "source": "visual-review.json sets.A.shop professional_credibility/responsive_composition",
+        "evidence": "Lamp listing is illustrated chiefly by vase; lamp peripheral. Repeated hero/product scene limits specificity."
+      },
+      {
+        "page": "swarm craftsman",
+        "source": "sets.A.craftsman responsive_composition/typography_spacing",
+        "evidence": "Drawer photograph exceptionally tall on mobile with extensive blurred background; name/email fields remain side by side and cramped; narrow introductory paragraphs."
+      },
+      {
+        "page": "swarm restaurant",
+        "source": "sets.A.restaurant responsive_composition",
+        "evidence": "Date/guests row stays paired inside inset card; crowded slogan strip. Restaurant overall tied despite responsive 4 vs single 4.5."
+      }
+    ],
+    "inference": "These are concrete layout/asset-selection issues that token volume and 58 functional checks did not detect. No evidence they arise from model inferiority or delegation itself."
+  },
+  "recommendations": [
+    "Default to primary-only for tightly coupled or small changes; for independent pages compare a flat primary-plus-page-owners team before imposing a nested lead/helper hierarchy. Require enough ready work to amortize each helper context and coordination cost.",
+    "Choose capability and effort from supported runtime metadata and task acceptance needs. Assign capable visual owners to art direction and responsive composition; assign bounded interaction work only when its size warrants a separate agent. Do not infer a capability failure from this single helper or fix design by automatically increasing every effort setting.",
+    "Use fresh scoped briefs with explicit file ownership and interface contracts. Keep bootstrap instructions and catalog overhead distinguishable from authored brief content; reduce broad repeated project reads where targeted MAP and exact relevant files suffice. Ciphertext here prevents checking plaintext brief quality.",
+    "Emit image outputs through native image content, log only paths/keys/status, never text(result) when it contains image_url. Bound other tool output; return relevant excerpts and concise evidence rather than whole HTML/CSS/image manifests or repeated instruction files.",
+    "Let each owner run focused behavior checks and return commands/results; let primary run necessary integration checks once. Reserve a real browser screenshot pass at desktop/mobile for crop, pacing, narrow fields, product-to-image alignment; static/offline tests cannot establish those.",
+    "In round two, counterbalance run order and repeat paired runs with same fixed workload and grading. Compare single, flat team, and hierarchy while recording request counts, per-agent initial contexts, actual scopes, cached/uncached input, and tool output. Preserve risk/independent-audit requirements."
+  ],
+  "confounds_and_limits": [
+    "One paired workload, one visual reviewer, differing stochastic images and incidental implementation choices.",
+    "Single then swarm order; uncontrolled provider cache warmth and shared host/service load; alpha CLI.",
+    "Both solver browser attempts blocked by same sandbox, so no measured rendered-layout correction loop. Frozen Chromium evaluation passed 58/58 for both.",
+    "Prompt explicitly asked swarm to use a workstream lead delegating a bounded part where useful, so topology was partly induced by protocol rather than neutral planner choice.",
+    "Initial message character counts do not identify exact tokenizer cost of runtime blocks; hidden tool schema/injected material may contribute.",
+    "Spawn briefs and inter-agent payloads are encrypted in raw storage; their exact plaintext lengths/content cannot be inspected. Ciphertext lengths are not token estimates.",
+    "No actual invoice, subscription-limit conversion, image backend price, causal architecture advantage, or model-quality ranking inferred."
+  ],
+  "sources": [
+    "benchmarks/landing-pages-2026-10/single-telemetry.json",
+    "benchmarks/landing-pages-2026-10/swarm-telemetry.json",
+    "benchmarks/landing-pages-2026-10/visual-review.json",
+    "benchmarks/landing-pages-2026-10/RESULTS.md",
+    "benchmarks/landing-pages-2026-10/run.py",
+    "Original selected session hashes in sessions array; ordinal references point to those logs."
+  ],
+  "measurement_note": "Character counts describe retained textual outputs and explicit messages only. They are distinct from native token accounting; serialized native image bytes are excluded from textual character counts. Tool-reported pretruncation token counts are diagnostic metadata, not evidence of billed text input."
+}

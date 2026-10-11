@@ -1,0 +1,580 @@
+{
+  "schema_version": 1,
+  "scope": "Completed round-two native design benchmark only; exact root sessions and metadata-linked direct descendants. Public generic labels only.",
+  "sessions": [
+    {
+      "agent": "swarm_primary",
+      "source_sha256": "3aa39946987b46505d28638b5d5ff6a97b307370b91721553ffd05a336b2e9c0",
+      "usage": {
+        "input_tokens": 1179350,
+        "cached_input_tokens": 1133568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14819,
+        "reasoning_output_tokens": 2766,
+        "total_tokens": 1194169,
+        "uncached_input_tokens": 45782
+      },
+      "actual_turn_contexts": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high"
+        }
+      ],
+      "usage_records": 29,
+      "token_count_snapshots": 34,
+      "first_request": {
+        "input_tokens": 16536,
+        "cached_input_tokens": 6912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 209,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 16745
+      },
+      "max_request_input": 73270,
+      "initial_explicit_messages": [
+        {
+          "role": "developer",
+          "characters": 4903,
+          "labels": [
+            "AGENTS instructions",
+            "Skill catalog"
+          ]
+        },
+        {
+          "role": "developer",
+          "characters": 2400,
+          "labels": []
+        },
+        {
+          "role": "developer",
+          "characters": 271,
+          "labels": []
+        },
+        {
+          "role": "user",
+          "characters": 13275,
+          "labels": [
+            "AGENTS instructions"
+          ]
+        },
+        {
+          "role": "user",
+          "characters": 941,
+          "labels": []
+        },
+        {
+          "role": "assistant",
+          "characters": 228,
+          "labels": []
+        }
+      ],
+      "outer_tool_calls": {
+        "exec": 15,
+        "spawn_agent": 3,
+        "send_message": 6,
+        "followup_task": 3,
+        "list_agents": 1
+      },
+      "spawns": [
+        {
+          "task_name": "hotel",
+          "fork_turns": "none",
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "medium"
+        },
+        {
+          "task_name": "studio",
+          "fork_turns": "none",
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "medium"
+        },
+        {
+          "task_name": "landscape",
+          "fork_turns": "none",
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "medium"
+        }
+      ],
+      "project_reads": [
+        {
+          "ordinal": 17,
+          "files": [
+            "BRIEF.md",
+            "MAP.md",
+            "TESTING.md"
+          ]
+        },
+        {
+          "ordinal": 24,
+          "files": [
+            "imagegen/SKILL.md"
+          ]
+        }
+      ],
+      "tool_output_text_characters": 107195,
+      "large_text_outputs": [
+        {
+          "ordinal": 20,
+          "characters": 11605,
+          "base64_text_marker": false
+        },
+        {
+          "ordinal": 27,
+          "characters": 20954,
+          "base64_text_marker": false
+        },
+        {
+          "ordinal": 161,
+          "characters": 40053,
+          "base64_text_marker": false
+        },
+        {
+          "ordinal": 176,
+          "characters": 26554,
+          "base64_text_marker": false
+        }
+      ],
+      "base64_text_outputs": [],
+      "native_image_content_blocks": 6
+    },
+    {
+      "agent": "single_primary",
+      "source_sha256": "4edb3a90d75ebed1ec45574ac3715c5d84149f7682af23be9a8f851430066107",
+      "usage": {
+        "input_tokens": 910043,
+        "cached_input_tokens": 828160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 35583,
+        "reasoning_output_tokens": 5766,
+        "total_tokens": 945626,
+        "uncached_input_tokens": 81883
+      },
+      "actual_turn_contexts": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high"
+        }
+      ],
+      "usage_records": 19,
+      "token_count_snapshots": 19,
+      "first_request": {
+        "input_tokens": 16476,
+        "cached_input_tokens": 6912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 163,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 16639
+      },
+      "max_request_input": 76524,
+      "initial_explicit_messages": [
+        {
+          "role": "developer",
+          "characters": 4904,
+          "labels": [
+            "AGENTS instructions",
+            "Skill catalog"
+          ]
+        },
+        {
+          "role": "developer",
+          "characters": 2400,
+          "labels": []
+        },
+        {
+          "role": "developer",
+          "characters": 271,
+          "labels": []
+        },
+        {
+          "role": "user",
+          "characters": 13283,
+          "labels": [
+            "AGENTS instructions"
+          ]
+        },
+        {
+          "role": "user",
+          "characters": 601,
+          "labels": []
+        },
+        {
+          "role": "assistant",
+          "characters": 171,
+          "labels": []
+        }
+      ],
+      "outer_tool_calls": {
+        "exec": 17,
+        "wait": 1
+      },
+      "spawns": [],
+      "project_reads": [
+        {
+          "ordinal": 17,
+          "files": [
+            "BRIEF.md",
+            "MAP.md",
+            "TESTING.md"
+          ]
+        },
+        {
+          "ordinal": 28,
+          "files": [
+            "imagegen/SKILL.md"
+          ]
+        }
+      ],
+      "tool_output_text_characters": 57552,
+      "large_text_outputs": [
+        {
+          "ordinal": 22,
+          "characters": 12970,
+          "base64_text_marker": false
+        },
+        {
+          "ordinal": 31,
+          "characters": 19937,
+          "base64_text_marker": false
+        }
+      ],
+      "base64_text_outputs": [],
+      "native_image_content_blocks": 6
+    },
+    {
+      "agent": "swarm_hotel",
+      "source_sha256": "570426182dd24810d0009ea9337810068677e9879b164bc8ef37f798509f285c",
+      "usage": {
+        "input_tokens": 469403,
+        "cached_input_tokens": 429312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8482,
+        "reasoning_output_tokens": 683,
+        "total_tokens": 477885,
+        "uncached_input_tokens": 40091
+      },
+      "actual_turn_contexts": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "usage_records": 15,
+      "token_count_snapshots": 15,
+      "first_request": {
+        "input_tokens": 18784,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 52,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 18836
+      },
+      "max_request_input": 38300,
+      "initial_explicit_messages": [
+        {
+          "role": "developer",
+          "characters": 14670,
+          "labels": [
+            "AGENTS instructions",
+            "Skill catalog"
+          ]
+        },
+        {
+          "role": "developer",
+          "characters": 2453,
+          "labels": []
+        },
+        {
+          "role": "developer",
+          "characters": 271,
+          "labels": []
+        },
+        {
+          "role": "user",
+          "characters": 13275,
+          "labels": [
+            "AGENTS instructions"
+          ]
+        }
+      ],
+      "outer_tool_calls": {
+        "exec": 11,
+        "send_message": 2
+      },
+      "spawns": [],
+      "project_reads": [
+        {
+          "ordinal": 10,
+          "files": [
+            "BRIEF.md",
+            "imagegen/SKILL.md"
+          ]
+        },
+        {
+          "ordinal": 19,
+          "files": [
+            "MAP.md"
+          ]
+        }
+      ],
+      "tool_output_text_characters": 30135,
+      "large_text_outputs": [
+        {
+          "ordinal": 13,
+          "characters": 24633,
+          "base64_text_marker": false
+        }
+      ],
+      "base64_text_outputs": [],
+      "native_image_content_blocks": 2
+    },
+    {
+      "agent": "swarm_studio",
+      "source_sha256": "3d94523bd504241f58245bd169345e7f3f974f16c5999d62358fb176c7ca55d1",
+      "usage": {
+        "input_tokens": 400539,
+        "cached_input_tokens": 380288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9153,
+        "reasoning_output_tokens": 709,
+        "total_tokens": 409692,
+        "uncached_input_tokens": 20251
+      },
+      "actual_turn_contexts": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "usage_records": 13,
+      "token_count_snapshots": 14,
+      "first_request": {
+        "input_tokens": 18756,
+        "cached_input_tokens": 18176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 56,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 18812
+      },
+      "max_request_input": 39100,
+      "initial_explicit_messages": [
+        {
+          "role": "developer",
+          "characters": 14670,
+          "labels": [
+            "AGENTS instructions",
+            "Skill catalog"
+          ]
+        },
+        {
+          "role": "developer",
+          "characters": 2453,
+          "labels": []
+        },
+        {
+          "role": "developer",
+          "characters": 271,
+          "labels": []
+        },
+        {
+          "role": "user",
+          "characters": 13275,
+          "labels": [
+            "AGENTS instructions"
+          ]
+        }
+      ],
+      "outer_tool_calls": {
+        "exec": 10,
+        "send_message": 2
+      },
+      "spawns": [],
+      "project_reads": [
+        {
+          "ordinal": 10,
+          "files": [
+            "BRIEF.md",
+            "MAP.md",
+            "imagegen/SKILL.md"
+          ]
+        }
+      ],
+      "tool_output_text_characters": 31224,
+      "large_text_outputs": [
+        {
+          "ordinal": 13,
+          "characters": 26143,
+          "base64_text_marker": false
+        }
+      ],
+      "base64_text_outputs": [],
+      "native_image_content_blocks": 2
+    },
+    {
+      "agent": "swarm_landscape",
+      "source_sha256": "8d050f690a5e9618cece2c46683de53937aeae69abfa321d6fc769724c9a643a",
+      "usage": {
+        "input_tokens": 545274,
+        "cached_input_tokens": 521600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9068,
+        "reasoning_output_tokens": 400,
+        "total_tokens": 554342,
+        "uncached_input_tokens": 23674
+      },
+      "actual_turn_contexts": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "usage_records": 17,
+      "token_count_snapshots": 17,
+      "first_request": {
+        "input_tokens": 18760,
+        "cached_input_tokens": 18176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 52,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 18812
+      },
+      "max_request_input": 39276,
+      "initial_explicit_messages": [
+        {
+          "role": "developer",
+          "characters": 14670,
+          "labels": [
+            "AGENTS instructions",
+            "Skill catalog"
+          ]
+        },
+        {
+          "role": "developer",
+          "characters": 2453,
+          "labels": []
+        },
+        {
+          "role": "developer",
+          "characters": 271,
+          "labels": []
+        },
+        {
+          "role": "user",
+          "characters": 13275,
+          "labels": [
+            "AGENTS instructions"
+          ]
+        }
+      ],
+      "outer_tool_calls": {
+        "exec": 12,
+        "send_message": 2
+      },
+      "spawns": [],
+      "project_reads": [
+        {
+          "ordinal": 10,
+          "files": [
+            "BRIEF.md",
+            "imagegen/SKILL.md"
+          ]
+        },
+        {
+          "ordinal": 19,
+          "files": [
+            "MAP.md"
+          ]
+        }
+      ],
+      "tool_output_text_characters": 31511,
+      "large_text_outputs": [
+        {
+          "ordinal": 13,
+          "characters": 24633,
+          "base64_text_marker": false
+        }
+      ],
+      "base64_text_outputs": [],
+      "native_image_content_blocks": 2
+    }
+  ],
+  "arithmetic": {
+    "single": {
+      "input_tokens": 910043,
+      "cached_input_tokens": 828160,
+      "uncached_input_tokens": 81883,
+      "output_tokens": 35583
+    },
+    "swarm_tree": {
+      "input_tokens": 2594566,
+      "cached_input_tokens": 2464768,
+      "uncached_input_tokens": 129798,
+      "output_tokens": 41522
+    },
+    "swarm_minus_single": {
+      "input_tokens": 1684523,
+      "cached_input_tokens": 1636608,
+      "uncached_input_tokens": 47915,
+      "output_tokens": 5939
+    },
+    "swarm_primary_input_change": 269307,
+    "descendant_input": 1415216,
+    "coding_price_proxy_single": 0.602412,
+    "coding_price_proxy_swarm": 0.9212928,
+    "coding_price_proxy_increase_percent": 52.93400529869925
+  },
+  "facts": [
+    "Both roots used gpt-6.1-sol high; all three direct helpers used gpt-6.1-sol medium in every observed turn context.",
+    "All three root spawns explicitly set fork_turns=none. No helper spawned descendants. Fresh history does not eliminate repeated runtime instructions.",
+    "swarm_hotel, swarm_studio and swarm_landscape each owned complete page markup, styles, interaction, two images, manifest and focused checks. Coherent page ownership replaced pilot page-lead plus small nested reservation helper.",
+    "swarm_primary implemented the root portfolio, strengthened structural/resource integration checks and configured verification profiles, reviewed source and images, and requested whitespace-name and long-input fixes. This was useful integration work as well as coordination.",
+    "swarm_primary has six send_message calls, three followup_task calls and one list_agents call. Hotel has two task starts; landscape has three, including focused follow-up fixes.",
+    "Helpers read BRIEF and imagegen skill; hotel and studio also read project contracts in broad first retrievals. Initial AGENTS/runtime instructions are repeated across fresh sessions; character measurements are not tokenizer-equivalent.",
+    "Rendered browser inspection was blocked in both modes by browser launch restrictions. Native image inspection and source/interaction checks cannot establish rendered visual quality.",
+    "No retained tool text contains base64 image data markers. Image results were stored and metadata/files handled without the pilot full-result text print pattern. This does not by itself measure all serialization costs.",
+    "Retained textual tool outputs total 200,065 characters across the swarm versus 57,552 for single. Large outputs include a roughly 40k-character root client-source read; broad BRIEF/skill retrievals contribute roughly 25k per helper. These are retained text characters, not billed token counts."
+  ],
+  "inferences": [
+    "Swarm coding proxy is higher primarily because three additional sessions process their own repeatedly cached contexts; unlike pilot, even primary input grows. Arithmetic isolates contributions but does not causally identify why each request was needed.",
+    "Direct complete-page ownership and medium helper effort plausibly reduce coordination/capability overhead relative to pilot, but changed brief, artifacts, run conditions and stochastic behavior prevent a causal policy-gain claim.",
+    "Full-page helper ownership is substantial independent work; integration and follow-up checks have legitimate purpose. Their net value requires quality and time evidence, not token totals alone."
+  ],
+  "pilot_comparison": {
+    "pilot_arithmetic": {
+      "input_increase": 1246633,
+      "cached_increase": 1155968,
+      "uncached_increase": 90665,
+      "output_increase": 13655,
+      "swarm_primary_input_change": -242116,
+      "descendant_input": 1488749,
+      "single_request_snapshots": 31,
+      "swarm_request_snapshots": 76
+    },
+    "pilot_topology": "Two direct high-effort page owners; one medium-effort lower-capability nested reservation helper. Round two has three direct medium-effort same-model page owners.",
+    "pilot_spawns_fresh": true,
+    "causal_policy_gain_established": false
+  },
+  "limits": [
+    "Coding prices are public API-equivalent token proxies, not subscription billing. Cached input is a repeated processed-prefix count, not unique prose.",
+    "Briefs are encrypted in native function-call records; no plaintext brief or private history is reproduced.",
+    "Qualitative grading pending; no invented visual-quality explanation.",
+    "Snapshot counts can include duplicate reports; usage totals use final cumulative native token_count per exact session. Usage record count is also exposed."
+  ],
+  "sources": [
+    "runs/single/events.jsonl",
+    "runs/swarm/events.jsonl",
+    "Exact native root and explicitly metadata-linked descendant session bodies",
+    "pilot-diagnosis.json"
+  ]
+}

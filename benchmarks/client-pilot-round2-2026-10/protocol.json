@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-11",
+  "kind": "second exploratory paired workload, not causal policy ablation",
+  "previous_public_revision": "ad2cd4736a6666ce5545b86c66fa679df6220ed2",
+  "order": [
+    "swarm",
+    "single"
+  ],
+  "order_basis": "reverse first pilot order to reduce repeating one ordering; not adequate counterbalancing by itself",
+  "root_model": "gpt-6.1-sol",
+  "root_reasoning_effort": "high",
+  "shared_budget_seconds": 1200,
+  "swarm_active_helpers_cap": 3,
+  "native_generation_per_page_successes": 2,
+  "native_generation_attempt_cap_per_page": 3,
+  "fixture_sha256": {
+    ".quality/LICENSE": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+    ".quality/audit-result.schema.json": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+    ".quality/quality.py": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+    ".quality/quality.toml": "508d99144250e1224bfe5f69891ea2df671c09eebe4258a993ae80ee6fdde881",
+    "AGENTS.md": "0eed160fffda90cdd957ae554b918a085632baabdc38fa9d11c58c0cdf0a2d47",
+    "BRIEF.md": "568441a9b8790704613b6bb5aaac7614d684f747483ba9548acee5e6b28e9bdf",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "MAP.md": "5fcff49000e45f392b066c923fbe97d8dcc897be7446a23f6bda2aaf6520cdb2",
+    "TESTING.md": "5960b67e3287a5d4bb1ca9e15dccde1783407494ec23432d92c90cd78ffc9421",
+    "package.json": "af56e6ab0777715a49e2d771bc7c87716b519a1c6b5d0db1ca0e6e061e1abf4d",
+    "quality": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4",
+    "verify_site.py": "7a2ba41646176941a924b4049a88cd6ef50b310baa9e64c9923e9484b47f04d4"
+  },
+  "evaluator_sha256": "bec6f8d29ef7734887ee4d8a05672768a754d847e32fdda59b900acf64d70fdb",
+  "candidate_policy_sha256": "0eed160fffda90cdd957ae554b918a085632baabdc38fa9d11c58c0cdf0a2d47",
+  "limitations": [
+    "one pair per workload",
+    "new clients/style and revised policy together prevent isolating policy effects from original",
+    "different generated images",
+    "cache/service/shared-host load uncontrolled",
+    "native alpha CLI",
+    "image pricing/backend and subscription usage unexposed"
+  ],
+  "policy_revision": "b88c9f4",
+  "runner_sha256": "dc5ba3e02bdc290d2442d189c425c6dcef64fd7e59acdc69940965b7364eb8ba",
+  "quality_code_revision": "f97a221af556110c9d4d2d1d936bd255b2cac8f4",
+  "global_policy_delivery": "compact fallback routes to full project policy; same installed globals for all four solver runs",
+  "coding_usage_scope": "timed native solver roots and every descendant only; setup, external grading and audit excluded"
+}

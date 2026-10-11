@@ -1,0 +1,18 @@
+{
+  "method": "Independent Decimal arithmetic; all-root-rate reference decomposition is accounting, not causal savings proof",
+  "token_delta": {
+    "input_tokens": 1246633,
+    "cached_input_tokens": 1155968,
+    "output_tokens": 13655
+  },
+  "uncached_input_delta": 90665,
+  "coding_api_delta_usd": "0.31866916",
+  "accounting_components_usd": {
+    "incremental_uncached_input_at_root_rate": "0.18133",
+    "incremental_cached_input_at_root_rate": "0.1155968",
+    "incremental_output_at_root_rate": "0.13655",
+    "routing_offset_for_cheap_child_vs_all_root_rate": "-0.11480764"
+  },
+  "small_helper_actual_api_equivalent_usd": "0.00778196",
+  "limitations": "Cached input is subset of input. Price estimates exclude image/tools/orchestration and cannot infer subscription usage."
+}

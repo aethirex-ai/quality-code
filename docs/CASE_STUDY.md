@@ -69,13 +69,25 @@ These are observed toolkit defects and concrete corrections, not claims about de
 
 The repository demonstrates an implemented workflow, executable checks, preservation behavior, and explicit review requirements. It does not demonstrate measured changes in production defect rates, delivery speed, or customer outcomes. An exploratory three-page delegation pilot now records solver time, coding-session usage, image counts, functional checks and an anonymous visual review; it does not establish production or general efficiency gains.
 
-Agent compliance, project-specific test quality, live providers, Windows shell behavior, and production deployment controls remain outside the toolkit’s guarantees. A useful next measurement would compare escaped defects and review effort across similar changes while controlling for product risk.
+Agent compliance, project-specific test quality, live providers, Windows shell behavior, and production deployment controls remain outside the toolkit’s guarantees. The follow-up below separately measures concrete error discovery and repair on frozen synthetic contracts. Production escaped-defect rates and larger repository investigations remain unmeasured.
 
 ## A measured delegation pilot
 
 In one paired fictional-business workload, a bounded swarm finished in **9m 19s**, compared with **15m 52s** for a single agent. Both passed 58/58 identical browser checks. The swarm used more coding tokens and had a higher hypothetical Standard API coding subtotal: **$1.0374 versus $0.7188**, excluding image-generation and other tool charges. One anonymous reviewer rated the single agent higher visually, **4.33/5 versus 4.10/5**. Six native images were generated per subject, without retries.
 
 That is an observed trade-off from one run, not evidence of subscription savings or a general advantage. [Read the protocol, complete accounting, review and limitations](../benchmarks/landing-pages-2026-10/RESULTS.md), or [inspect all six fictional landing pages](benchmarks/landing-pages-2026-10/index.html). Raw provider logs and private paths are excluded.
+
+## Diagnosing the overhead, then testing again
+
+The first swarm's descendants added 1,488,749 input tokens while its primary saved 242,116, leaving 1,246,633 more input tokens overall. Native runtime context repeated full project and global delegation instructions; the hierarchy also repeated inspections and small interaction checks. The inexpensive nested helper cost only $0.0078 in the coding estimate. The lower visual rating centered on mobile pacing, crowded fields and image/content fit; these observations do not prove the hierarchy caused them.
+
+We revised the provider-neutral policy to favor coherent direct owners, the smallest useful team, one budget across descendants, scoped fresh context and milestone-based coordination. Global instructions now route to the supplied project policy instead of repeating it. Visual acceptance explicitly includes mobile composition and image/content fit. These instructions were delivered to 12 working project roots while preserving project configuration and custom guidance.
+
+The next pair uses three different client types and styles: an editorial boutique hotel, a bold fitness studio and a Swiss editorial landscape practice. A separate pair reviews JavaScript client helpers with explicit contracts, hidden defect checks and healthy controls. Timed outputs remain frozen before grading. Changing both policy and workload prevents attributing cross-pilot differences to the policy alone.
+
+The new adaptive portfolio finished 37.6% sooner and received a higher anonymous visual mean (4.13/5 versus 3.80/5), while its coding API equivalent was 52.9% higher. In the separate defect review, both found and repaired eight seeded causes; adaptive also fixed one verified additional date-type defect. That review was 9.1% slower and 6.2% higher in coding API equivalent. These are workload observations, not a general benefit or subscription savings claim.
+
+[Read the follow-up results and error-finding evidence](../benchmarks/client-pilot-round2-2026-10/RESULTS.md), or [inspect the new fictional portfolio concepts](benchmarks/client-pilot-round2-2026-10/index.html).
 
 ## The AethDesign connection
 

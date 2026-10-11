@@ -10,8 +10,8 @@ required_profiles_by_risk = { low = ["fast"], normal = ["changed"], high = ["ful
 [verify]
 fast = [["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"]]
 changed = [["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"]]
-full = [["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"], ["python3", "-B", "-m", "unittest", "discover", "-s", "benchmarks/landing-pages-2026-10", "-p", "test_telemetry.py", "-v"], ["python3", "-B", "scripts/check_repository.py"], ["git", "diff", "--check"]]
-release = [["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"], ["python3", "-B", "-m", "unittest", "discover", "-s", "benchmarks/landing-pages-2026-10", "-p", "test_telemetry.py", "-v"], ["python3", "-B", "scripts/check_repository.py"], ["git", "diff", "--check"]]
+full = [["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"], ["python3", "-B", "-m", "unittest", "discover", "-s", "benchmarks/landing-pages-2026-10", "-p", "test_telemetry.py", "-v"], ["python3", "-B", "-m", "unittest", "discover", "-s", "benchmarks/client-pilot-round2-2026-10", "-p", "test_*.py", "-v"], ["python3", "-B", "scripts/check_repository.py"], ["git", "diff", "--check"]]
+release = [["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"], ["python3", "-B", "-m", "unittest", "discover", "-s", "benchmarks/landing-pages-2026-10", "-p", "test_telemetry.py", "-v"], ["python3", "-B", "-m", "unittest", "discover", "-s", "benchmarks/client-pilot-round2-2026-10", "-p", "test_*.py", "-v"], ["python3", "-B", "scripts/check_repository.py"], ["git", "diff", "--check"]]
 [[areas]]
 name = "default"
 paths = ["**"]
@@ -34,3 +34,11 @@ risk = "critical"
 map_sections = ["Verification", "Security, privacy, and safety"]
 tests = ["tests/**"]
 required_profiles = ["full", "release"]
+
+[[areas]]
+name = "benchmark-integrity"
+paths = ["benchmarks/**", "docs/benchmarks/**"]
+risk = "high"
+map_sections = ["Security, privacy, and safety", "Verification"]
+tests = ["benchmarks/**/test_*.py"]
+required_profiles = ["full"]

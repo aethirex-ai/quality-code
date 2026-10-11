@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "session_counts": {
+    "root": 1
+  },
+  "models": {
+    "gpt-6.1-sol": {
+      "input_tokens": 198013,
+      "cached_input_tokens": 169728,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7277,
+      "reasoning_output_tokens": 1337,
+      "total_tokens": 205290
+    }
+  },
+  "tokens": {
+    "input_tokens": 198013,
+    "cached_input_tokens": 169728,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 7277,
+    "reasoning_output_tokens": 1337,
+    "total_tokens": 205290
+  },
+  "sessions": [
+    {
+      "role": "root",
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 198013,
+          "cached_input_tokens": 169728,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7277,
+          "reasoning_output_tokens": 1337,
+          "total_tokens": 205290
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 2,
+        "assistant": 5
+      },
+      "token_snapshots": 8,
+      "image_call_sites": 0,
+      "max_observed_request_input": 34024,
+      "flags": []
+    }
+  ],
+  "image_calls": 0,
+  "image_call_sites": 0,
+  "image_count_exact": true,
+  "cli_root_reconciliation": "matched",
+  "spawn_reconciliation": {
+    "successful_spawns": 0,
+    "matched_children": 0,
+    "status": "matched"
+  },
+  "standard_short_estimated_usd": 0.1463128,
+  "flags": [],
+  "tree": [
+    {
+      "agent": "primary",
+      "depth": 0,
+      "parents": []
+    }
+  ],
+  "observed_max_depth": 0
+}

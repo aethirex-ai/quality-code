@@ -1,0 +1,118 @@
+[
+  {
+    "file": "src/hotel.mjs",
+    "function": "quoteStay",
+    "cause": "Floored the discounted total instead of rounding its fractional cents half upward.",
+    "repro": {
+      "input": { "checkIn": "2028-06-01", "checkOut": "2028-06-02", "nightlyCents": 1, "discountPercent": 50 },
+      "observed": 0,
+      "required": 1
+    },
+    "action": "Round the final discounted integer hundredths using quotient and remainder, retaining the safe intermediate arithmetic guard."
+  },
+  {
+    "file": "src/hotel.mjs",
+    "function": "staysOverlap",
+    "cause": "Used inclusive endpoint comparisons for half-open stays, treating adjoining checkout and check-in as overlap.",
+    "repro": {
+      "inputs": [
+        { "checkIn": "2028-06-01", "checkOut": "2028-06-02" },
+        { "checkIn": "2028-06-02", "checkOut": "2028-06-03" }
+      ],
+      "observed": true,
+      "required": false
+    },
+    "action": "Use strict comparisons between each check-in and the other checkout."
+  },
+  {
+    "file": "src/hotel.mjs",
+    "function": "guestBadge",
+    "cause": "Omitted single-quote encoding despite placing the guest name in a single-quoted attribute.",
+    "repro": {
+      "input": "O'Reilly",
+      "observed": "<span data-guest='O'Reilly'>O'Reilly</span>",
+      "required": "<span data-guest='O&#39;Reilly'>O&#39;Reilly</span>"
+    },
+    "action": "Encode all five special characters in one replacement pass, including single quotes as &#39;."
+  },
+  {
+    "file": "src/hotel.mjs",
+    "function": "quoteStay",
+    "cause": "The shared date parser classified non-string field types as RangeError rather than the contracted TypeError.",
+    "repro": {
+      "input": { "checkIn": null, "checkOut": "2028-06-02", "nightlyCents": 1 },
+      "observed": "RangeError",
+      "required": "TypeError"
+    },
+    "action": "Check the date field's string type separately, retaining RangeError for malformed strings and impossible calendar dates."
+  },
+  {
+    "file": "src/hotel.mjs",
+    "function": "staysOverlap",
+    "cause": "The shared date parser classified non-string field types as RangeError rather than the contracted TypeError.",
+    "repro": {
+      "inputs": [
+        { "checkIn": null, "checkOut": "2028-06-02" },
+        { "checkIn": "2028-06-02", "checkOut": "2028-06-03" }
+      ],
+      "observed": "RangeError",
+      "required": "TypeError"
+    },
+    "action": "Use the corrected shared date parser for both stays; regressions cover both fields in both argument positions."
+  },
+  {
+    "file": "src/fitness.mjs",
+    "function": "canEnroll",
+    "cause": "Used confirmed <= capacity, allowing enrollment when the class was full, including zero capacity.",
+    "repro": {
+      "input": { "confirmed": 1, "capacity": 1 },
+      "observed": true,
+      "required": false
+    },
+    "action": "Use strict confirmed < capacity."
+  },
+  {
+    "file": "src/fitness.mjs",
+    "function": "cancellationRefund",
+    "cause": "Used a strict greater-than threshold, denying a refund exactly 24 hours before start.",
+    "repro": {
+      "input": { "startMs": 86400000, "cancelledMs": 0, "paidCents": 500 },
+      "observed": 0,
+      "required": 500
+    },
+    "action": "Use an inclusive >= 86400000 millisecond threshold."
+  },
+  {
+    "file": "src/fitness.mjs",
+    "function": "chronologicalClasses",
+    "cause": "Sorted the caller's array in place and returned that same array.",
+    "repro": {
+      "input": [ { "id": "later", "startMs": 2 }, { "id": "first", "startMs": 1 } ],
+      "observed": { "returnedIds": ["first", "later"], "inputIds": ["first", "later"], "sameArray": true },
+      "required": { "returnedIds": ["first", "later"], "inputIds": ["later", "first"], "sameArray": false }
+    },
+    "action": "Stable-sort a shallow array copy, preserving the caller's array and sharing existing records."
+  },
+  {
+    "file": "src/landscape.mjs",
+    "function": "estimateCents",
+    "cause": "Validated quantity times unitCents but accumulated only unitCents, producing wrong totals and charging for zero quantities.",
+    "repro": {
+      "input": [ { "quantity": 3, "unitCents": 10 }, { "quantity": 0, "unitCents": 10 } ],
+      "observed": 20,
+      "required": 30
+    },
+    "action": "Accumulate the validated line product, making the running-sum overflow check apply to the actual total."
+  },
+  {
+    "file": "src/landscape.mjs",
+    "function": "withinBudget",
+    "cause": "Used a strict less-than comparison, rejecting an estimate equal to its budget.",
+    "repro": {
+      "input": { "estimateCents": 10, "budgetCents": 10 },
+      "observed": false,
+      "required": true
+    },
+    "action": "Use estimateCents <= budgetCents, including zero and equality."
+  }
+]

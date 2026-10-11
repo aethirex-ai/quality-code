@@ -1,0 +1,22 @@
+version = 1
+standard_version = 3
+project = "error-fixture"
+[policy]
+map_word_limit = 900
+[audit]
+default_base = "HEAD"
+independent_audit_min_risk = "high"
+required_profiles_by_risk = { low = ["fast"], normal = ["changed"], high = ["full"], critical = ["full", "release"] }
+[verify]
+fast = [["node", "--test", "tests/controls.test.mjs"]]
+changed = [["npm", "test"]]
+full = [["npm", "test"], ["node", "--check", "src/hotel.mjs"], ["node", "--check", "src/fitness.mjs"], ["node", "--check", "src/landscape.mjs"]]
+release = [["npm", "test"]]
+[[areas]]
+name = "client-helpers"
+paths = ["**"]
+risk = "normal"
+fallback = true
+map_sections = ["Product boundary", "Contracts and state", "Verification"]
+tests = ["tests/*.test.mjs"]
+required_profiles = []

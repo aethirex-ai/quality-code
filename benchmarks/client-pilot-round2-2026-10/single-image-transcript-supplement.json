@@ -1,0 +1,103 @@
+{
+  "kind": "Read-only manual transcript supplement, separate from fail-closed automatic collector",
+  "condition": "single",
+  "automatic_collector": {
+    "image_calls": null,
+    "image_call_sites": 1,
+    "flag": "image_execution_ambiguous",
+    "reason": "One imagegen call is inside jobs.map(async j => ...); static scanner flags arrow/function control flow and does not execute JavaScript."
+  },
+  "reviewed_source": {
+    "scope": "Only the completed single native root and its image exec / matching cell completion",
+    "exec_source_sha256": "edc85b3be8babe047076addd547c827e5beae0fef1000f024db09094a6f30d5e",
+    "matched_completion_canonical_json_sha256": [
+      "26bd33d4e8e052a77114d501e9d44e243f77cc62cfa7b47bfffc30a72f6dc595"
+    ],
+    "sanitized_control_flow": "const jobs = [six literal job objects, two per page]; const pending = jobs.map(async j => { try { const result = await tools.image_gen__imagegen({prompt:j.prompt, transparent_background:false}); store(j.page+\"-\"+j.file,result); text({page:j.page,attempt:j.attempt,keys:Object.keys(result),metadata: sanitizedResult}); } catch(e) { store(...,{error:String(e)}); text({page:j.page,attempt:j.attempt,error:String(e)}); } }); await yield_control(); await Promise.all(pending);"
+  },
+  "manual_reconstruction": {
+    "calls": 6,
+    "successful_returns": 6,
+    "failed_returns": 0,
+    "basis": "Six literal jobs invoke the one call once each; matched completion emits exactly six unique page/attempt returns with image_url/output_hint keys; each native original matches its delivered original SHA-256.",
+    "observations": [
+      {
+        "page": "hotel",
+        "attempt": 1,
+        "return_keys": [
+          "image_url",
+          "output_hint"
+        ],
+        "native_saved_png_hint": true,
+        "returned_original_sha256": "cd4860d9213bca3af470c6386a9bccbd0a0fba9bb828501f25035357b3b1db74",
+        "delivered_original_sha256": "cd4860d9213bca3af470c6386a9bccbd0a0fba9bb828501f25035357b3b1db74",
+        "same_original_bytes": true
+      },
+      {
+        "page": "hotel",
+        "attempt": 2,
+        "return_keys": [
+          "image_url",
+          "output_hint"
+        ],
+        "native_saved_png_hint": true,
+        "returned_original_sha256": "e0e4768c23604d1631be940cbd275a5f4bef8ba9596336fd652e0da728855603",
+        "delivered_original_sha256": "e0e4768c23604d1631be940cbd275a5f4bef8ba9596336fd652e0da728855603",
+        "same_original_bytes": true
+      },
+      {
+        "page": "landscape",
+        "attempt": 1,
+        "return_keys": [
+          "image_url",
+          "output_hint"
+        ],
+        "native_saved_png_hint": true,
+        "returned_original_sha256": "2b3a764847fe80f533ee4ed29000ac59a9afd7867a5ea41682cedfce051b18fb",
+        "delivered_original_sha256": "2b3a764847fe80f533ee4ed29000ac59a9afd7867a5ea41682cedfce051b18fb",
+        "same_original_bytes": true
+      },
+      {
+        "page": "landscape",
+        "attempt": 2,
+        "return_keys": [
+          "image_url",
+          "output_hint"
+        ],
+        "native_saved_png_hint": true,
+        "returned_original_sha256": "bc1768957a69b49d92989182c25b142a787cf25ca45ed0a02084266fcbafb7b2",
+        "delivered_original_sha256": "bc1768957a69b49d92989182c25b142a787cf25ca45ed0a02084266fcbafb7b2",
+        "same_original_bytes": true
+      },
+      {
+        "page": "studio",
+        "attempt": 1,
+        "return_keys": [
+          "image_url",
+          "output_hint"
+        ],
+        "native_saved_png_hint": true,
+        "returned_original_sha256": "7c2cffbd7bfb35bd9594b8536b14b8359715885a94de3d5a54b97f2225d1b49e",
+        "delivered_original_sha256": "7c2cffbd7bfb35bd9594b8536b14b8359715885a94de3d5a54b97f2225d1b49e",
+        "same_original_bytes": true
+      },
+      {
+        "page": "studio",
+        "attempt": 2,
+        "return_keys": [
+          "image_url",
+          "output_hint"
+        ],
+        "native_saved_png_hint": true,
+        "returned_original_sha256": "6a77203834d8b8d5272a59dcac7fe7d7b4b6d5d3597a18ffaea84700bbf5b1fc",
+        "delivered_original_sha256": "6a77203834d8b8d5272a59dcac7fe7d7b4b6d5d3597a18ffaea84700bbf5b1fc",
+        "same_original_bytes": true
+      }
+    ]
+  },
+  "limits": [
+    "The general collector count remains null and its ambiguity flag is retained.",
+    "No verified image backend, generation tokens, image price or subscription consumption.",
+    "This supplement reconstructs only this literal finite completed batch; it is not a parser exemption for arbitrary maps, loops or callbacks."
+  ]
+}

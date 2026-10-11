@@ -1,0 +1,86 @@
+{
+  "rubric": {
+    "scale": {"0":"Unusable","1":"Weak","2":"Needs substantial refinement","3":"Solid competent","4":"Polished professional","5":"Exceptional distinct portfolio quality"},
+    "increments": 0.5,
+    "categories": ["visual_hierarchy","identity_art_direction","typography_spacing","responsive_composition","professional_credibility"]
+  },
+  "sets": {
+    "A": {
+      "hotel": {
+        "scores": {"visual_hierarchy":4,"identity_art_direction":4,"typography_spacing":3.5,"responsive_composition":3.5,"professional_credibility":3.5},
+        "evidence": {
+          "visual_hierarchy":"Large two-line sea headline and broad coastal image dominate desktop; section numbers, room titles and the dark closing form clearly establish successive levels. Mobile retains that sequence, although the small pleasures section becomes a long run of similar text blocks.",
+          "identity_art_direction":"Navy, muted sea green, restrained rules and serif headings coherently support a quiet coastal hotel. Exterior and room imagery share a calm palette; the small star and green italic sea add recognizable details, though the overall treatment is familiar.",
+          "typography_spacing":"Desktop has generous gutters and a clear serif/sans relationship. Mobile contains visibly joined heading words in 'Follow thecoastline.' and 'The last light.A front-row seat.', interrupting otherwise controlled reading rhythm.",
+          "responsive_composition":"Room imagery and listings stack cleanly, and the closing form becomes a readable single column. The mobile hero still shows sea and building, but the lower text-heavy section loses some desktop pacing; joined words are especially exposed in the stacked headings.",
+          "professional_credibility":"Consistent numbered sections, image captions, room metadata and a complete footer create a finished portfolio presentation. Visible mobile spacing defects in prominent editorial headings reduce its final polish. Fictional/demo wording is visibly present."
+        },
+        "limitations":["Judgment combines the supplied desktop and mobile screenshots only; no behavior or operational credibility was assessed."]
+      },
+      "studio": {
+        "scores":{"visual_hierarchy":4,"identity_art_direction":4,"typography_spacing":3.5,"responsive_composition":3.5,"professional_credibility":3.5},
+        "evidence": {
+          "visual_hierarchy":"The oversized white/lime headline, athlete image and lime class action give the opening a clear focal order. Class rows, a black approach panel and three pricing cards provide distinct subsequent sections on desktop and mobile.",
+          "identity_art_direction":"Electric blue, acid lime, heavy uppercase type, arrows and star separators form a coherent energetic studio identity. The circular all-levels sticker adds character, but its mobile position obscures much of the athlete's face.",
+          "typography_spacing":"Strong headline contrast and ruled class rows create a disciplined desktop rhythm. Mobile hero body copy visibly joins 'company.Movement'; small descriptive text alongside the compact hero action feels cramped compared with the large heading.",
+          "responsive_composition":"Classes and pricing become coherent single-column blocks and the group photograph preserves multiple participants. The mobile hero sticker overlaps the face, and the lime category band wraps to a second line with community centered alone, weakening the desktop strip's rhythm.",
+          "professional_credibility":"Class metadata, a consistent pricing-card system and repeated arrow treatments suggest a considered portfolio presentation. The conspicuous joined body-copy words and face-covering sticker keep it below fully finished editorial quality; the footer discloses the fictional concept."
+        },
+        "limitations":["Only visible composition was graded; class addition, navigation and purchase behavior were not inferred."]
+      },
+      "landscape": {
+        "scores":{"visual_hierarchy":4,"identity_art_direction":4,"typography_spacing":4,"responsive_composition":4,"professional_credibility":4},
+        "evidence": {
+          "visual_hierarchy":"An asymmetric desktop hero uses the large headline and garden photograph as the main anchors, with a narrow introductory rail. Alternating project layouts and a pale process band maintain clear separation before the enquiry section.",
+          "identity_art_direction":"Burgundy type and rules, leafy green photographs, understated sans headings and selective italic words create a coherent landscape-practice identity. The direction is restrained and consistent rather than highly unusual.",
+          "typography_spacing":"Desktop alignment, generous whitespace and quiet project metadata produce a measured reading rhythm. Mobile headings wrap naturally, captions stay adjacent to imagery and the process steps have consistent rule and text spacing.",
+          "responsive_composition":"The asymmetric desktop structure reorganizes into a clear mobile sequence with substantial images followed by project descriptions. The repeated quiet-garden image adds length, but cropping retains the path and planting and the stacked process/form sections remain orderly.",
+          "professional_credibility":"Project settings, scopes and ideas are presented consistently; captions, process details, form labels and footer form a complete editorial presentation. Fictional-work labels are visible and no prominent text collision is apparent at the supplied sizes."
+        },
+        "limitations":["Garden-image quality is judged visually; authenticity, horticultural accuracy and project provenance were not assessed."]
+      }
+    },
+    "B": {
+      "hotel": {
+        "scores":{"visual_hierarchy":4.5,"identity_art_direction":4,"typography_spacing":4.5,"responsive_composition":4,"professional_credibility":4.5},
+        "evidence": {
+          "visual_hierarchy":"The large headline leads into an edge-to-edge coastal image and a narrow italic transition strip. The house introduction, three room listings, tinted small-pleasures band and enquiry block have clear and varied visual weights.",
+          "identity_art_direction":"A serif wordmark, navy and muted green, coastal photography and the italic sea/deep breath accents consistently evoke a slow seaside stay. The tinted amenities band and dark footer extend the palette without distracting from imagery.",
+          "typography_spacing":"Headline scale, room-title hierarchy and small caption treatment are consistently controlled. Mobile retains readable text relationships and natural heading breaks; the italic transition strip wraps deliberately within its narrow column.",
+          "responsive_composition":"Mobile room entries and enquiry fields stack clearly; the room photograph keeps the bed, windows and coastal view. The hero heading occupies three large lines and the overall page is long, but section spacing and the tinted band provide useful pauses.",
+          "professional_credibility":"Room dimensions, guest counts, rates, consistent captions, explicit illustrative/demo notes and a resolved dark footer create a polished and complete fictional portfolio presentation. No conspicuous editorial collision is visible at these widths."
+        },
+        "limitations":["Room rates and demo language were judged only as visible presentation; booking functionality and factual business accuracy were not assessed."]
+      },
+      "studio": {
+        "scores":{"visual_hierarchy":4.5,"identity_art_direction":4.5,"typography_spacing":4,"responsive_composition":4,"professional_credibility":4},
+        "evidence": {
+          "visual_hierarchy":"A large make-room-to-move headline, coaching photograph and lime action anchor the hero. Compact class rows, a blue approach section, highlighted middle pricing card and large lime closing statement create strong full-page progression.",
+          "identity_art_direction":"Blue/lime color blocks, tight heavy uppercase headings, star separators, diagonal arrows and a taped-looking rectangular note give the studio a distinct coherent graphic language. Coaching and group images support the collective-energy message.",
+          "typography_spacing":"Desktop class rows balance titles, descriptions and action columns; cards share consistent internal spacing. Mobile has clear headline hierarchy and roomy actions, although the four-line hero heading and tiny navigation/metadata create a pronounced scale gap.",
+          "responsive_composition":"Mobile turns the timetable and pricing into orderly vertical blocks and retains the energetic color sequencing. The horizontal lime slogan strip visibly cuts off its continuation at the right edge, and the note overlaps the coach's face in the hero image.",
+          "professional_credibility":"Consistent class metadata, pricing presentation, photo caption strips and fictional/demo notes create a finished concept. The face-obscuring note and visibly truncated mobile slogan strip temper the editorial finish despite otherwise consistent execution."
+        },
+        "limitations":["The clipped strip was evaluated only in the supplied static state; animation or intentional marquee behavior was not assumed."]
+      },
+      "landscape": {
+        "scores":{"visual_hierarchy":4.5,"identity_art_direction":4.5,"typography_spacing":3.5,"responsive_composition":3.5,"professional_credibility":3.5},
+        "evidence": {
+          "visual_hierarchy":"A large landscape-for-living statement opens into two oversized project photographs with alternating number/text rails. A deep burgundy approach band, enquiry section and monumental desktop wordmark provide a strong and memorable page sequence.",
+          "identity_art_direction":"Burgundy, neutral white, spare black text, numbered projects and architectural garden photography establish a confident practice identity. The large footer wordmark and burgundy process panel add graphic character beyond a conventional image grid.",
+          "typography_spacing":"Desktop uses generous whitespace, orderly project tables and a strong type-scale system. Mobile enquiry heading visibly joins 'placebecome?' into one word, creating an obvious editorial flaw in an otherwise clean typographic treatment.",
+          "responsive_composition":"Project rails reorganize into image-first mobile entries while preserving numbers and metadata, and the dark process band stacks effectively. The mobile closing heading's joined 'placebecome?' compromises its composition and dominates the otherwise tidy enquiry area.",
+          "professional_credibility":"Named project captions, scopes and areas, clear concept disclosure and a carefully composed footer give the work a professional portfolio frame. The prominent mobile enquiry word collision prevents the supplied pair from reading as fully finished."
+        },
+        "limitations":["No business claims, enquiry behavior, accessibility compliance or real-project provenance were inferred from the screenshots."]
+      }
+    }
+  },
+  "limitations": [
+    "One independent qualitative reviewer assessed exactly the twelve anonymous supplied full-page PNGs and the rubric; no source, mappings, builder conclusions, metrics or timings were inspected.",
+    "Each page score evaluates its supplied desktop/mobile pair. Other widths, interactive states and motion were not available.",
+    "All twelve full-page images were viewed; original-size mobile crops were additionally viewed where reduced previews made typography or overlaps unclear.",
+    "Scores are subjective ordinal judgments in half-point increments and do not establish statistical superiority or causal effects.",
+    "Fictional disclosed businesses were treated as intended portfolio concepts. Functionality, accessibility and conversion performance were outside scope."
+  ]
+}

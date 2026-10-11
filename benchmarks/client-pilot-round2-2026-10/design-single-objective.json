@@ -1,0 +1,618 @@
+{
+  "condition": "single",
+  "pages": {
+    "studio": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "VOLT — Find your kind of movement"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "FIND YOURKIND OFMOVE."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Athlete in cobalt activewear stepping onto a low exercise box in a bright studio",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Small group and coach exploring standing mobility stretches in a daylight-filled studio",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: class shortlist increments 0→1→2",
+          "passed": true,
+          "evidence": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "BUTTON",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "VOLT — Find your kind of movement"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "FIND YOURKIND OFMOVE."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Athlete in cobalt activewear stepping onto a low exercise box in a bright studio",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Small group and coach exploring standing mobility stretches in a daylight-filled studio",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: class shortlist increments 0→1→2",
+          "passed": true,
+          "evidence": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "BUTTON",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "studio-desktop.png",
+        "studio-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/hero.jpg",
+          "alt": "Athlete in cobalt activewear stepping onto a low exercise box in a bright studio",
+          "loaded": true,
+          "width": 1800,
+          "height": 1200
+        },
+        {
+          "src": "assets/support.jpg",
+          "alt": "Small group and coach exploring standing mobility stretches in a daylight-filled studio",
+          "loaded": true,
+          "width": 1800,
+          "height": 1200
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    },
+    "landscape": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "FIELDWORK — Landscapes for life outside"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Landscapes forlife outside."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Limestone path through grasses and white flowers toward a quiet residential garden terrace",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            },
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Layered white perennials and ornamental grasses beside a limestone garden path",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Public pocket garden with birch trees, pale stone seating and a planted rain garden beside a gravel path",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "project",
+              "labeled": true
+            },
+            {
+              "name": "message",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "desktop: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Demo enquiry preview for Alex Example: A garden or landscape. A real first conversation would explore your site, priorities and scope before any estimate. Nothing has been sent or saved."
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "FIELDWORK — Landscapes for life outside"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Landscapes forlife outside."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Limestone path through grasses and white flowers toward a quiet residential garden terrace",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            },
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Layered white perennials and ornamental grasses beside a limestone garden path",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Public pocket garden with birch trees, pale stone seating and a planted rain garden beside a gravel path",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "project",
+              "labeled": true
+            },
+            {
+              "name": "message",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "mobile: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Demo enquiry preview for Alex Example: A garden or landscape. A real first conversation would explore your site, priorities and scope before any estimate. Nothing has been sent or saved."
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "landscape-desktop.png",
+        "landscape-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/hero.jpg",
+          "alt": "Limestone path through grasses and white flowers toward a quiet residential garden terrace",
+          "loaded": true,
+          "width": 1800,
+          "height": 1200
+        },
+        {
+          "src": "assets/hero.jpg",
+          "alt": "Layered white perennials and ornamental grasses beside a limestone garden path",
+          "loaded": true,
+          "width": 1800,
+          "height": 1200
+        },
+        {
+          "src": "assets/support.jpg",
+          "alt": "Public pocket garden with birch trees, pale stone seating and a planted rain garden beside a gravel path",
+          "loaded": true,
+          "width": 1800,
+          "height": 1200
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    },
+    "hotel": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "TIDE HOUSE — A little closer to the sea"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "A little closerto the sea."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "White coastal hotel above a rocky Atlantic cove and blue-green water",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Ocean-facing bedroom with white bedding, a navy throw and a sea-green armchair",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "date",
+              "labeled": true
+            },
+            {
+              "name": "guests",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "desktop: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Demo stay preview for Alex Example: arrival 2027-06-15, 2 guests. No room has been booked and no details have been sent. All rates are illustrative."
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "TIDE HOUSE — A little closer to the sea"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "A little closerto the sea."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "White coastal hotel above a rocky Atlantic cove and blue-green water",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Ocean-facing bedroom with white bedding, a navy throw and a sea-green armchair",
+              "loaded": true,
+              "width": 1800,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "date",
+              "labeled": true
+            },
+            {
+              "name": "guests",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "mobile: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Demo stay preview for Alex Example: arrival 2027-06-15, 2 guests. No room has been booked and no details have been sent. All rates are illustrative."
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "hotel-desktop.png",
+        "hotel-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/hero.jpg",
+          "alt": "White coastal hotel above a rocky Atlantic cove and blue-green water",
+          "loaded": true,
+          "width": 1800,
+          "height": 1200
+        },
+        {
+          "src": "assets/support.jpg",
+          "alt": "Ocean-facing bedroom with white bedding, a navy throw and a sea-green armchair",
+          "loaded": true,
+          "width": 1800,
+          "height": 1200
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    }
+  },
+  "method": "frozen browser checks; objective assertions are separate from subjective visual quality",
+  "index_links": [
+    "#main",
+    "index.html",
+    "#work",
+    "#work",
+    "hotel/index.html",
+    "studio/index.html",
+    "landscape/index.html",
+    "#main"
+  ],
+  "summary": {
+    "passed": 58,
+    "total": 58,
+    "failed": []
+  }
+}

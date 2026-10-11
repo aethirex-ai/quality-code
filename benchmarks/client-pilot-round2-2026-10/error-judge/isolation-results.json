@@ -1,0 +1,58 @@
+[
+  {
+    "singleFix": "H_PRICE",
+    "passingSeedGroups": [
+      "H_PRICE"
+    ],
+    "regressionCount": 0
+  },
+  {
+    "singleFix": "H_INTERVAL",
+    "passingSeedGroups": [
+      "H_INTERVAL"
+    ],
+    "regressionCount": 0
+  },
+  {
+    "singleFix": "H_HTML",
+    "passingSeedGroups": [
+      "H_HTML"
+    ],
+    "regressionCount": 0
+  },
+  {
+    "singleFix": "F_CAPACITY",
+    "passingSeedGroups": [
+      "F_CAPACITY"
+    ],
+    "regressionCount": 0
+  },
+  {
+    "singleFix": "F_REFUND",
+    "passingSeedGroups": [
+      "F_REFUND"
+    ],
+    "regressionCount": 0
+  },
+  {
+    "singleFix": "F_PURITY",
+    "passingSeedGroups": [
+      "F_PURITY"
+    ],
+    "regressionCount": 0
+  },
+  {
+    "singleFix": "L_QUANTITY",
+    "passingSeedGroups": [
+      "L_QUANTITY"
+    ],
+    "regressionCount": 0
+  },
+  {
+    "singleFix": "L_BUDGET",
+    "passingSeedGroups": [
+      "L_BUDGET"
+    ],
+    "regressionCount": 0
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "file": "src/hotel.mjs",
+    "function": "quoteStay",
+    "cause": "Math.floor truncates the final discounted cents instead of rounding half upward.",
+    "repro": {
+      "input": { "checkIn": "2028-06-01", "checkOut": "2028-06-02", "nightlyCents": 1, "discountPercent": 50 },
+      "observed": 0,
+      "required": 1
+    },
+    "action": "Use Math.round once on the final discounted total, preserving the pre-discount safe-integer checks. Added half-cent, neighboring percent and multi-night regressions."
+  },
+  {
+    "file": "src/hotel.mjs",
+    "function": "staysOverlap",
+    "cause": "Inclusive endpoint comparisons treat adjoining half-open stays as overlapping.",
+    "repro": {
+      "inputs": [
+        { "checkIn": "2028-06-01", "checkOut": "2028-06-02" },
+        { "checkIn": "2028-06-02", "checkOut": "2028-06-03" }
+      ],
+      "observed": true,
+      "required": false
+    },
+    "action": "Use strict endpoint comparisons. Added adjacency regressions in both argument orders and overlapping controls."
+  },
+  {
+    "file": "src/hotel.mjs",
+    "function": "guestBadge",
+    "cause": "The encoder omits single quotes, leaving the single-quoted attribute delimiter unescaped.",
+    "repro": {
+      "input": "O'Brien",
+      "observed": "<span data-guest='O'Brien'>O'Brien</span>",
+      "required": "<span data-guest='O&#39;Brien'>O&#39;Brien</span>"
+    },
+    "action": "Encode all five special characters with one replacement pass. Added exact-output regressions for apostrophes, all special characters and pre-existing entity text."
+  },
+  {
+    "file": "src/fitness.mjs",
+    "function": "canEnroll",
+    "cause": "confirmed <= capacity admits enrollment when a class is already full, including zero capacity.",
+    "repro": {
+      "input": { "confirmed": 6, "capacity": 6 },
+      "observed": true,
+      "required": false
+    },
+    "action": "Require confirmed < capacity. Added full, zero-capacity, over-capacity and available-capacity regressions."
+  },
+  {
+    "file": "src/fitness.mjs",
+    "function": "cancellationRefund",
+    "cause": "A strict greater-than comparison excludes cancellation exactly 24 hours before the start.",
+    "repro": {
+      "input": { "startMs": 172800000, "cancelledMs": 86400000, "paidCents": 2500 },
+      "observed": 0,
+      "required": 2500
+    },
+    "action": "Include the 86400000-millisecond boundary with >=. Added exact-boundary, adjacent-millisecond, equal-start and after-start cases."
+  },
+  {
+    "file": "src/fitness.mjs",
+    "function": "chronologicalClasses",
+    "cause": "Array.sort runs directly on the supplied array, mutating its order and returning the same array.",
+    "repro": {
+      "input": [{ "id": "later", "startMs": 2 }, { "id": "first", "startMs": 1 }, { "id": "tie", "startMs": 1 }],
+      "observed": { "returnedIds": ["first", "tie", "later"], "inputIdsAfter": ["first", "tie", "later"], "sameArray": true },
+      "required": { "returnedIds": ["first", "tie", "later"], "inputIdsAfter": ["later", "first", "tie"], "sameArray": false }
+    },
+    "action": "Sort a shallow array copy. Added stable-tie, input-order, record-sharing, frozen-input and empty/singleton new-array regressions."
+  },
+  {
+    "file": "src/landscape.mjs",
+    "function": "estimateCents",
+    "cause": "The accumulator adds unitCents instead of the validated quantity * unitCents line amount, producing incorrect totals and invalid subsequent overflow checks.",
+    "repro": [
+      {
+        "input": [{ "quantity": 3, "unitCents": 125 }, { "quantity": 0, "unitCents": 999 }, { "quantity": 2, "unitCents": 50 }],
+        "observed": 1174,
+        "required": 475
+      },
+      {
+        "input": [{ "quantity": 2, "unitCents": 4503599627370495 }, { "quantity": 1, "unitCents": 2 }],
+        "observed": 4503599627370497,
+        "required": "throw RangeError: the actual sum is 9007199254740992, exceeding Number.MAX_SAFE_INTEGER"
+      },
+      {
+        "input": [{ "quantity": 0, "unitCents": 9007199254740991 }, { "quantity": 1, "unitCents": 1 }],
+        "observed": "throw RangeError",
+        "required": 1
+      }
+    ],
+    "action": "Accumulate the validated extended line amount so sum checks use the actual running total. Added mixed/zero quantities, empty estimates, frozen records, safe boundary and product/sum overflow regressions."
+  },
+  {
+    "file": "src/landscape.mjs",
+    "function": "withinBudget",
+    "cause": "A strict less-than comparison rejects estimates equal to their budget.",
+    "repro": {
+      "input": { "estimateCents": 500, "budgetCents": 500 },
+      "observed": false,
+      "required": true
+    },
+    "action": "Use <= for affordability. Added equal, zero, below-budget and above-budget regressions."
+  }
+]

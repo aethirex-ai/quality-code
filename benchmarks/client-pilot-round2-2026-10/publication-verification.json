@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "verdict": "PASS",
+  "scope": {
+    "base": "f97a221af556110c9d4d2d1d936bd255b2cac8f4",
+    "changed_files": [
+      ".quality/quality.toml",
+      "MAP.md",
+      "README.md",
+      "TESTING.md",
+      "benchmarks/client-pilot-round2-2026-10/DIAGNOSIS.md",
+      "benchmarks/client-pilot-round2-2026-10/README.md",
+      "benchmarks/client-pilot-round2-2026-10/RESULTS.md",
+      "benchmarks/client-pilot-round2-2026-10/blind-map.json",
+      "benchmarks/client-pilot-round2-2026-10/collect.py",
+      "benchmarks/client-pilot-round2-2026-10/design-single-frozen-output-hashes.json",
+      "benchmarks/client-pilot-round2-2026-10/design-single-images.json",
+      "benchmarks/client-pilot-round2-2026-10/design-single-objective.json",
+      "benchmarks/client-pilot-round2-2026-10/design-single-telemetry.json",
+      "benchmarks/client-pilot-round2-2026-10/design-swarm-frozen-output-hashes.json",
+      "benchmarks/client-pilot-round2-2026-10/design-swarm-images.json",
+      "benchmarks/client-pilot-round2-2026-10/design-swarm-objective.json",
+      "benchmarks/client-pilot-round2-2026-10/design-swarm-telemetry.json",
+      "benchmarks/client-pilot-round2-2026-10/error-findings-review.json",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/.quality/LICENSE",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/.quality/audit-result.schema.json",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/.quality/quality.py",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/.quality/quality.toml",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/AGENTS.md",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/CLAUDE.md",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/MAP.md",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/README.md",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/TESTING.md",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/package.json",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/quality",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/src/fitness.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/src/hotel.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/src/landscape.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-fixture/tests/controls.test.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-judge/README.md",
+      "benchmarks/client-pilot-round2-2026-10/error-judge/baseline-manifest.json",
+      "benchmarks/client-pilot-round2-2026-10/error-judge/baseline-results.json",
+      "benchmarks/client-pilot-round2-2026-10/error-judge/evaluate.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-judge/isolation-results.json",
+      "benchmarks/client-pilot-round2-2026-10/error-judge/oracle-results.json",
+      "benchmarks/client-pilot-round2-2026-10/error-judge/prepare_oracle.py",
+      "benchmarks/client-pilot-round2-2026-10/error-judge/seeds.json",
+      "benchmarks/client-pilot-round2-2026-10/error-judge/verify-isolation.py",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/single/FINDINGS.json",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/single/package.json",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/single/src/fitness.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/single/src/hotel.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/single/src/landscape.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/single/tests/controls.test.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/single/tests/regressions.test.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/swarm/FINDINGS.json",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/swarm/package.json",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/swarm/src/fitness.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/swarm/src/hotel.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/swarm/src/landscape.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/swarm/tests/controls.test.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/swarm/tests/fitness.regression.test.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/swarm/tests/hotel.regression.test.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-outputs/swarm/tests/landscape.regression.test.mjs",
+      "benchmarks/client-pilot-round2-2026-10/error-protocol.json",
+      "benchmarks/client-pilot-round2-2026-10/error-usage-diagnosis.json",
+      "benchmarks/client-pilot-round2-2026-10/errors-single-frozen-output-hashes.json",
+      "benchmarks/client-pilot-round2-2026-10/errors-single-hidden-results.json",
+      "benchmarks/client-pilot-round2-2026-10/errors-single-telemetry.json",
+      "benchmarks/client-pilot-round2-2026-10/errors-swarm-frozen-output-hashes.json",
+      "benchmarks/client-pilot-round2-2026-10/errors-swarm-hidden-results.json",
+      "benchmarks/client-pilot-round2-2026-10/errors-swarm-telemetry.json",
+      "benchmarks/client-pilot-round2-2026-10/evaluate.mjs",
+      "benchmarks/client-pilot-round2-2026-10/fixture/.quality/LICENSE",
+      "benchmarks/client-pilot-round2-2026-10/fixture/.quality/audit-result.schema.json",
+      "benchmarks/client-pilot-round2-2026-10/fixture/.quality/quality.py",
+      "benchmarks/client-pilot-round2-2026-10/fixture/.quality/quality.toml",
+      "benchmarks/client-pilot-round2-2026-10/fixture/AGENTS.md",
+      "benchmarks/client-pilot-round2-2026-10/fixture/BRIEF.md",
+      "benchmarks/client-pilot-round2-2026-10/fixture/CLAUDE.md",
+      "benchmarks/client-pilot-round2-2026-10/fixture/MAP.md",
+      "benchmarks/client-pilot-round2-2026-10/fixture/TESTING.md",
+      "benchmarks/client-pilot-round2-2026-10/fixture/package.json",
+      "benchmarks/client-pilot-round2-2026-10/fixture/quality",
+      "benchmarks/client-pilot-round2-2026-10/fixture/verify_site.py",
+      "benchmarks/client-pilot-round2-2026-10/pilot-accounting-decomposition.json",
+      "benchmarks/client-pilot-round2-2026-10/pilot-diagnosis.json",
+      "benchmarks/client-pilot-round2-2026-10/prepare.py",
+      "benchmarks/client-pilot-round2-2026-10/prices.json",
+      "benchmarks/client-pilot-round2-2026-10/protocol.json",
+      "benchmarks/client-pilot-round2-2026-10/replay-source-provenance.json",
+      "benchmarks/client-pilot-round2-2026-10/results.json",
+      "benchmarks/client-pilot-round2-2026-10/round2-diagnosis.json",
+      "benchmarks/client-pilot-round2-2026-10/run.py",
+      "benchmarks/client-pilot-round2-2026-10/served-output-hashes.json",
+      "benchmarks/client-pilot-round2-2026-10/single-image-transcript-supplement.json",
+      "benchmarks/client-pilot-round2-2026-10/telemetry.py",
+      "benchmarks/client-pilot-round2-2026-10/test_prepare.py",
+      "benchmarks/client-pilot-round2-2026-10/test_telemetry.py",
+      "benchmarks/client-pilot-round2-2026-10/visual-review.json",
+      "docs/CASE_STUDY.md",
+      "docs/benchmarks/client-pilot-round2-2026-10/index.html",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/hotel/app.js",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/hotel/assets/hero-original.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/hotel/assets/hero.jpg",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/hotel/assets/support-original.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/hotel/assets/support.jpg",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/hotel/index.html",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/hotel/style.css",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/index.html",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/landscape/app.js",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/landscape/assets/hero-original.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/landscape/assets/hero.jpg",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/landscape/assets/support-original.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/landscape/assets/support.jpg",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/landscape/index.html",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/landscape/style.css",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/portfolio.css",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/screenshots/hotel-desktop.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/screenshots/hotel-mobile.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/screenshots/landscape-desktop.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/screenshots/landscape-mobile.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/screenshots/studio-desktop.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/screenshots/studio-mobile.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/studio/app.js",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/studio/assets/hero-original.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/studio/assets/hero.jpg",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/studio/assets/support-original.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/studio/assets/support.jpg",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/studio/index.html",
+      "docs/benchmarks/client-pilot-round2-2026-10/single/studio/style.css",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/hotel/app.js",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/hotel/assets/hero.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/hotel/assets/room.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/hotel/index.html",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/hotel/style.css",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/index.html",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/landscape/assets/birch-court.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/landscape/assets/mill-yard.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/landscape/index.html",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/landscape/script.js",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/landscape/style.css",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/screenshots/hotel-desktop.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/screenshots/hotel-mobile.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/screenshots/landscape-desktop.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/screenshots/landscape-mobile.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/screenshots/studio-desktop.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/screenshots/studio-mobile.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/studio/app.js",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/studio/assets/group-mobility.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/studio/assets/movement-coaching.png",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/studio/index.html",
+      "docs/benchmarks/client-pilot-round2-2026-10/swarm/studio/styles.css",
+      "docs/index.html"
+    ],
+    "acceptance_criteria": "Publish faithful frozen design and error-review outcomes with complete reconciled native descendant usage, dated conditional coding-price arithmetic, independent blind visual grades and independently reproduced findings, preserved parser ambiguity, original/public replay provenance, usable responsive gallery, privacy-safe sources and no unsupported causal/subscription claims. Required full verification passes; prior audited provider-neutral policy and preservation-safe 12-project rollout remain intact."
+  },
+  "risk": "high",
+  "checks": [
+    {
+      "command": [
+        "./quality",
+        "verify",
+        "full"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Required full profile independently passed: toolkit 30 tests, first-pilot 27 telemetry tests, round-two 29 regressions, distribution/local-reference checks and git diff --check. Log: <private audit artifact>"
+    },
+    {
+      "command": [
+        "independent-native-accounting",
+        "four-event-derived-roots",
+        "explicit-descendants-only"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "All four exact roots derived from runs/error-runs events; metadata-only unrelated discovery. Published session counters, cumulative model deltas, flags, completion/spawn reconciliation, times, model/effort and fresh scoped spawn histories match native evidence. Design tree 1/0 and 1/3; error tree 1/0 and 1/2. Decimal equivalents exactly 0.602412, 0.9212928, 0.1463128, 0.15531662. Automatic single image ambiguity retained."
+    },
+    {
+      "command": [
+        "independent-hash-provenance",
+        "original",
+        "public",
+        "served"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "42 replay source provenance entries match original and sanitized bytes; original protocol fixture/evaluator/runner hashes retain recorded source provenance. All four frozen timed-output hash manifests match private source. Served page source/assets match frozen timed bytes; all twelve served screenshots match original evaluation screenshots; submitted error code/findings/tests match original frozen outputs."
+    },
+    {
+      "command": [
+        "independent-image-reconstruction",
+        "exact-single-root"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Single literal finite image exec source and matching completion canonical hashes verified; all six native saved original image hashes match delivered originals. Six native returns are supported separately from the unchanged null general collector count and image_execution_ambiguous flag. Adaptive native count and manifest reconcile; no textual media base64 prints in these timed trees."
+    },
+    {
+      "command": [
+        "node",
+        "error-judge/evaluate.mjs",
+        "baseline/single/swarm"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Baseline intentionally exits 1 with 0/8 seed groups and 9/9 healthy groups; single and swarm exit 0 with 8/8 and 9/9. Corrected oracle and isolated-fix evaluator reproduced in an external temporary copy: every individual correction resolves exactly one corresponding seed group and preserves healthy controls."
+    },
+    {
+      "command": [
+        "node",
+        "<private audit artifact>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "All 18 submitted finding records and 20 concrete baseline/corrected cases independently reproduced. Eight distinct seeded causes per condition; swarm additional shared date-type cause confirmed in both exports, counted once plus one duplicate manifestation. Single additional date-type failure and incorrect RangeError assertion remain frozen and are explicitly disclosed."
+    },
+    {
+      "command": [
+        "npm",
+        "test",
+        "single-and-swarm"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Both suites independently pass 15/15. Transplanted test suites on baseline fail 9 and 11 test cases respectively, demonstrating fault-sensitive regressions rather than implementation-shaped execution alone."
+    },
+    {
+      "command": [
+        "node",
+        "<private audit artifact>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Independent local browser replay passed gallery and reader at 375/1440: no overflow/errors, one h1, loaded descriptive images, local destinations return successfully. Both gallery PNGs visually inspected. Sandbox Chromium launch initially denied by macOS; authorized localhost-only escalation succeeded."
+    },
+    {
+      "command": [
+        "node",
+        "<private audit artifact>",
+        "single-and-swarm"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Fresh local evaluator replay independently passed 58/58 assertions for each exact served frozen portfolio at 375/1440; generated audit screenshots remain outside the repository."
+    },
+    {
+      "command": [
+        "static-review",
+        "privacy",
+        "claims",
+        "rubric",
+        "protocols",
+        "failure-tests"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Raw tracked diff and new scope reviewed. One anonymous reviewer, same five-category half-step rubric; published grades match original anonymous artifact, mapping and totals. Telemetry negative regressions withhold missing/inconsistent prices/images and enforce lineage privacy. Replay rejects existing destinations, separates judge from committed fixtures and keeps original/public hashes distinct. Private-path/secret scan found only synthetic test UUIDs. No unsupported subscription, causal or general superiority claims found. Prior policy source is unchanged in this diff; delivery preservation log inspected."
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Initial/final status identical; no production/test/config/document edits by auditor. Parent separately changed reader section number 07 to 08 during audit; final static state and git diff --check confirmed."
+    }
+  ],
+  "findings": [],
+  "untested": [
+    "No live provider rerun, network, deployment or publication was performed; hosted URLs and actual billing are outside this offline audit.",
+    "Dated official pricing capture was not re-fetched under the explicit no-network scope; conditional arithmetic against the published captured rates was independently reproduced.",
+    "Prior policy commits and 12-project rollout were not re-implemented or re-run; they are unchanged in scope and supplied preservation verification was inspected."
+  ],
+  "residual_risk": "One pair per workload, one qualitative visual judge, uncontrolled cache/service/shared-host load, new policy and briefs changing together, unknown image backend/charges and unmeasured subscription consumption limit inference. Hidden checks are sampled deterministic boundaries rather than exhaustive contracts or broad repository debugging. Visible measured mobile defects and the single additional date-type contract failure remain honestly frozen/disclosed. Native history and hash provenance establish the recorded evidence, not third-party billing certification.",
+  "worktree_unchanged": true,
+  "publication_copy": {
+    "source_report_sha256": "85204e1dccc2ce2161dae30a5b4a2d61089414ee40df7e2499a5339ea5225a76",
+    "normalization": "Private temporary audit paths replaced with placeholders; verdict, findings, checks and residual risks preserved."
+  }
+}

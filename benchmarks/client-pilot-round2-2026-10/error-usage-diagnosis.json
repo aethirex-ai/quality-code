@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "scope": "Completed native error-finding benchmark only. Bodies limited to exact event roots and explicit metadata-linked descendants; public generic labels only.",
+  "sessions": [
+    {
+      "agent": "swarm_landscape",
+      "source_sha256": "419a03e5db9aa2558340e92a7ea278338472698ad903b323e174dde446018278",
+      "usage": {
+        "input_tokens": 283703,
+        "cached_input_tokens": 271616,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2352,
+        "reasoning_output_tokens": 314,
+        "total_tokens": 286055,
+        "uncached_input_tokens": 12087
+      },
+      "actual_turn_contexts": [
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium"
+        },
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium"
+        }
+      ],
+      "usage_records": 11,
+      "token_count_snapshots": 11,
+      "first_request": {
+        "input_tokens": 22287,
+        "cached_input_tokens": 21248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 119,
+        "reasoning_output_tokens": 20,
+        "total_tokens": 22406
+      },
+      "max_request_input": 27928,
+      "outer_tool_calls": {
+        "exec": 7,
+        "send_message": 2
+      },
+      "spawns": [],
+      "initial_explicit_messages": [
+        {
+          "role": "developer",
+          "text_characters": 32868
+        },
+        {
+          "role": "developer",
+          "text_characters": 2453
+        },
+        {
+          "role": "developer",
+          "text_characters": 271
+        },
+        {
+          "role": "user",
+          "text_characters": 13323
+        }
+      ],
+      "tool_output_text_characters": 12688,
+      "large_outputs": [],
+      "coding_price_proxy": 0.00510086
+    },
+    {
+      "agent": "single_primary",
+      "source_sha256": "f6be5e93caa43d66936ad95bb92c131917fc6969809d6843296981375240fad3",
+      "usage": {
+        "input_tokens": 198013,
+        "cached_input_tokens": 169728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7277,
+        "reasoning_output_tokens": 1337,
+        "total_tokens": 205290,
+        "uncached_input_tokens": 28285
+      },
+      "actual_turn_contexts": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high"
+        }
+      ],
+      "usage_records": 8,
+      "token_count_snapshots": 8,
+      "first_request": {
+        "input_tokens": 16525,
+        "cached_input_tokens": 6912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 124,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 16649
+      },
+      "max_request_input": 34024,
+      "outer_tool_calls": {
+        "exec": 7
+      },
+      "spawns": [],
+      "initial_explicit_messages": [
+        {
+          "role": "developer",
+          "text_characters": 4910
+        },
+        {
+          "role": "developer",
+          "text_characters": 2400
+        },
+        {
+          "role": "developer",
+          "text_characters": 271
+        },
+        {
+          "role": "user",
+          "text_characters": 13331
+        },
+        {
+          "role": "user",
+          "text_characters": 816
+        },
+        {
+          "role": "assistant",
+          "text_characters": 205
+        }
+      ],
+      "tool_output_text_characters": 37422,
+      "large_outputs": [
+        {
+          "ordinal": 21,
+          "text_characters": 16122
+        }
+      ],
+      "coding_price_proxy": 0.1463128
+    },
+    {
+      "agent": "swarm_primary",
+      "source_sha256": "18e418baed71573723f9bc5a138f03cee86ae8fa5c25ae1ce99a177a8b92e3b3",
+      "usage": {
+        "input_tokens": 312594,
+        "cached_input_tokens": 285568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6149,
+        "reasoning_output_tokens": 728,
+        "total_tokens": 318743,
+        "uncached_input_tokens": 27026
+      },
+      "actual_turn_contexts": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "high"
+        }
+      ],
+      "usage_records": 13,
+      "token_count_snapshots": 15,
+      "first_request": {
+        "input_tokens": 16585,
+        "cached_input_tokens": 6912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 144,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 16729
+      },
+      "max_request_input": 32818,
+      "outer_tool_calls": {
+        "exec": 9,
+        "spawn_agent": 2,
+        "followup_task": 1
+      },
+      "spawns": [
+        {
+          "task_name": "fitness",
+          "fork_turns": "none",
+          "model": "gpt-6-luna",
+          "reasoning_effort": "medium"
+        },
+        {
+          "task_name": "landscape",
+          "fork_turns": "none",
+          "model": "gpt-6-luna",
+          "reasoning_effort": "medium"
+        }
+      ],
+      "initial_explicit_messages": [
+        {
+          "role": "developer",
+          "text_characters": 4909
+        },
+        {
+          "role": "developer",
+          "text_characters": 2400
+        },
+        {
+          "role": "developer",
+          "text_characters": 271
+        },
+        {
+          "role": "user",
+          "text_characters": 13323
+        },
+        {
+          "role": "user",
+          "text_characters": 1156
+        },
+        {
+          "role": "assistant",
+          "text_characters": 226
+        }
+      ],
+      "tool_output_text_characters": 30445,
+      "large_outputs": [
+        {
+          "ordinal": 20,
+          "text_characters": 10854
+        }
+      ],
+      "coding_price_proxy": 0.1440988
+    },
+    {
+      "agent": "swarm_fitness",
+      "source_sha256": "f98a2b93a028a582ffbac0540c83906250983be6a744e8698be8e418bf90d843",
+      "usage": {
+        "input_tokens": 225672,
+        "cached_input_tokens": 193536,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1936,
+        "reasoning_output_tokens": 223,
+        "total_tokens": 227608,
+        "uncached_input_tokens": 32136
+      },
+      "actual_turn_contexts": [
+        {
+          "model": "gpt-6-luna",
+          "effort": "medium"
+        }
+      ],
+      "usage_records": 9,
+      "token_count_snapshots": 9,
+      "first_request": {
+        "input_tokens": 22265,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 129,
+        "reasoning_output_tokens": 26,
+        "total_tokens": 22394
+      },
+      "max_request_input": 27365,
+      "outer_tool_calls": {
+        "exec": 7,
+        "send_message": 1
+      },
+      "spawns": [],
+      "initial_explicit_messages": [
+        {
+          "role": "developer",
+          "text_characters": 32868
+        },
+        {
+          "role": "developer",
+          "text_characters": 2453
+        },
+        {
+          "role": "developer",
+          "text_characters": 271
+        },
+        {
+          "role": "user",
+          "text_characters": 13323
+        }
+      ],
+      "tool_output_text_characters": 13341,
+      "large_outputs": [],
+      "coding_price_proxy": 0.006116960000000001
+    }
+  ],
+  "reconciliation": {
+    "single": {
+      "input_tokens": 198013,
+      "cached_input_tokens": 169728,
+      "uncached_input_tokens": 28285,
+      "output_tokens": 7277
+    },
+    "adaptive_tree": {
+      "input_tokens": 821969,
+      "cached_input_tokens": 750720,
+      "uncached_input_tokens": 71249,
+      "output_tokens": 10437
+    },
+    "adaptive_minus_single": {
+      "input_tokens": 623956,
+      "cached_input_tokens": 580992,
+      "uncached_input_tokens": 42964,
+      "output_tokens": 3160
+    },
+    "reported_aggregate_matches_native": true,
+    "cost_decomposition": {
+      "per_agent": {
+        "swarm_landscape": 0.00510086,
+        "single_primary": 0.1463128,
+        "swarm_primary": 0.1440988,
+        "swarm_fitness": 0.006116960000000001
+      },
+      "adaptive_primary_minus_single": -0.0022139999999999938,
+      "adaptive_helpers": 0.01121782,
+      "adaptive_tree": 0.15531662,
+      "net_increase": 0.009003819999999996
+    }
+  },
+  "timing_and_cost_facts": {
+    "single_seconds": 162.877595,
+    "adaptive_seconds": 177.644935,
+    "adaptive_slower_percent": 9.06652630768523,
+    "single_coding_price_proxy": 0.1463128,
+    "adaptive_coding_price_proxy": 0.15531662,
+    "adaptive_proxy_increase_percent": 6.153815660694062
+  },
+  "facts": [
+    "Both primary sessions used gpt-6.1-sol high. Both direct helper sessions used gpt-6-luna medium, including the landscape follow-up turn.",
+    "Both direct spawn calls explicitly requested fork_turns=none, gpt-6-luna and medium effort. Neither helper spawned a descendant.",
+    "swarm_primary explicitly cited the native catalog as supporting gpt-6-luna medium before choosing it for small pure-function modules; it retained the more ambiguous hotel logic and integration.",
+    "swarm_fitness owned its complete module fixes and focused regression file; swarm_landscape owned its complete module fixes and focused regression file. Primary owned hotel, final FINDINGS.json, integrated tests and report consistency.",
+    "Primary detected inaccurate landscape reproduction evidence and requested correction. The landscape helper used original HEAD source to correct the observation in a second turn. That follow-up contributes genuine diagnostic verification work and extra coordination.",
+    "Fresh helpers still received repeated runtime and AGENTS instructions. Both re-read README, module source, MAP/TESTING and existing controls; initial-message characters and retained tool-text counts are exposed, not treated as tokenizer-equivalent.",
+    "Both runs reported passing all 15 tests and changed-profile verification. Report correctness and defect accuracy are graded separately; passing checks do not prove complete or accurate findings.",
+    "Helper initial combined runtime message is 32,868 characters versus primary 4,909\u20134,910; the lower-model helper context therefore has substantial startup instruction footprint. Public counters show input growth despite fresh forks; this is not evidence that parent transcript was inherited."
+  ],
+  "inferences": [
+    "Cheaper native helper models reduce the API-equivalent weight of helper tokens, but do not establish lower subscription usage or faster work. In this run adaptive elapsed time and coding proxy both increased.",
+    "This contained task has short modules and limited independent work. Additional helper context, retrieval and correction overlap plausibly account for coordination overhead, but a single pair cannot isolate causal policy effects.",
+    "Primary retained useful implementation and integration work rather than merely directing helpers. Exact quality benefit must come from the independent accuracy grading.",
+    "Adaptive primary token-price proxy saves only $0.002214 relative to single; helper proxies add $0.01121782, producing $0.00900382 net increase. Thus cheaper helpers nearly offset much larger processed token counts but do not make this run cheaper overall."
+  ],
+  "limits": [
+    "Public API-equivalent token proxy is not subscription billing. Reasoning output is included in output, not additive.",
+    "Native cumulative totals reconcile with provided aggregate; token snapshots can repeat, so usage-record and snapshot counts are separate.",
+    "Encrypted delegation briefs and all private IDs, paths and history are excluded.",
+    "No defect-quality or visual-quality causal claim is inferred from cost or timing."
+  ],
+  "sources": [
+    "error-runs/single/events.jsonl",
+    "error-runs/swarm/events.jsonl",
+    "Exact native root and explicit descendant session records",
+    "prices.json: recorded benchmark rates; no new price lookup performed"
+  ]
+}

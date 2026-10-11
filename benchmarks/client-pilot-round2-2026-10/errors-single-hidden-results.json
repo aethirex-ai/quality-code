@@ -1,0 +1,78 @@
+{
+  "workspace": "error-outputs/single",
+  "resolvedSeedCount": 8,
+  "totalSeedCount": 8,
+  "seeds": [
+    {
+      "id": "H_PRICE",
+      "pass": true
+    },
+    {
+      "id": "H_INTERVAL",
+      "pass": true
+    },
+    {
+      "id": "H_HTML",
+      "pass": true
+    },
+    {
+      "id": "F_CAPACITY",
+      "pass": true
+    },
+    {
+      "id": "F_REFUND",
+      "pass": true
+    },
+    {
+      "id": "F_PURITY",
+      "pass": true
+    },
+    {
+      "id": "L_QUANTITY",
+      "pass": true
+    },
+    {
+      "id": "L_BUDGET",
+      "pass": true
+    }
+  ],
+  "healthyControls": [
+    {
+      "id": "record_validation",
+      "pass": true
+    },
+    {
+      "id": "hotel_dates_prices",
+      "pass": true
+    },
+    {
+      "id": "hotel_overlap",
+      "pass": true
+    },
+    {
+      "id": "hotel_encoding",
+      "pass": true
+    },
+    {
+      "id": "fitness_enrollment",
+      "pass": true
+    },
+    {
+      "id": "fitness_refunds",
+      "pass": true
+    },
+    {
+      "id": "fitness_ordering",
+      "pass": true
+    },
+    {
+      "id": "landscape_estimates",
+      "pass": true
+    },
+    {
+      "id": "landscape_budgets",
+      "pass": true
+    }
+  ],
+  "regressionCount": 0
+}

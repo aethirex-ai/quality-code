@@ -1,0 +1,19 @@
+{
+  ".quality/LICENSE": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+  ".quality/audit-result.schema.json": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+  ".quality/quality.py": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+  ".quality/quality.toml": "e57265af1ef1947f63584ad2ec8790fb2491c96f890caedf8f2746ff17c90e03",
+  "AGENTS.md": "0eed160fffda90cdd957ae554b918a085632baabdc38fa9d11c58c0cdf0a2d47",
+  "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+  "FINDINGS.json": "44899534970fd0310fe510f0a4fb298dfe765a0b9d9d75cc9d8987edbff3ebb8",
+  "MAP.md": "b855e3fd13b18fdd3c1a6265e197622c6535ea99de7414304a09024be376f36d",
+  "README.md": "deec4aa72511b6f646d8462a647ba9d2488b9743aad5945bbd9df22197134e3b",
+  "TESTING.md": "f006a775bcd78790a9908880df61d041b061ae49c72f7c021299898465c79da3",
+  "package.json": "bf4bbe3d6d207341ebc6b8ccfa58576e21fc13019a83d44e83716fe9461559bf",
+  "quality": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4",
+  "src/fitness.mjs": "24b8c70e7a68dfc818850179fdcee68c520812559662a33ae77a2cc120d4f688",
+  "src/hotel.mjs": "eba999cc763c99a4b77a2598809fcb61cc5e048dc1b5ece8dcf12267f30f1ad2",
+  "src/landscape.mjs": "9f5aac55ffadf039150424a4dd9af82e4281947162c2a01782c852ea056de0fa",
+  "tests/controls.test.mjs": "72ccb466f8d76581edad7cc59ef73877ebfdfea5740d826f54b1045cb9a8b82c",
+  "tests/regressions.test.mjs": "eed12b31ce8232f5b3c00584d28e15ea683872b6ae9fd4d46011999486e58dc0"
+}

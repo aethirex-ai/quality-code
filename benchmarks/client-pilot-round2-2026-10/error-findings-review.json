@@ -1,0 +1,777 @@
+{
+  "scope": "Fresh independent read-only assessment of frozen submitted findings, source fixes, public contracts, and regression tests. No solver timing or agent metadata used.",
+  "risk": "normal contained deterministic fictional-client helpers",
+  "definitions": {
+    "seedRecall": "Distinct evidenced seeded causes reported / eight seeded causes. Count each cause once.",
+    "evidenceSupportedReportPrecision": "Reports whose submitted baseline observation and contract violation reproduce / all submitted reports. Duplicate manifestations remain evidence-supported.",
+    "uniqueActionableReportPrecision": "Distinct legitimate root causes reported / all submitted reports. Duplicate manifestations are removed from numerator.",
+    "falsePositive": "A submitted claimed defect contradicted by baseline reproduction or public contract.",
+    "unsupported": "Submitted baseline observation could not be confirmed."
+  },
+  "reviews": {
+    "single": {
+      "submittedReports": 8,
+      "distinctSeededCauses": 8,
+      "seedRecall": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1
+      },
+      "additionalDistinctLegitimateCauses": 0,
+      "duplicateReports": 0,
+      "falsePositiveReports": 0,
+      "unsupportedReports": 0,
+      "reportPrecision": {
+        "evidenceSupported": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1
+        },
+        "uniqueActionable": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1
+        }
+      },
+      "records": [
+        {
+          "reportNumber": 1,
+          "file": "src/hotel.mjs",
+          "function": "quoteStay",
+          "cause": "Math.floor truncates the final discounted cents instead of rounding half upward.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": {
+                "checkIn": "2028-06-01",
+                "checkOut": "2028-06-02",
+                "nightlyCents": 1,
+                "discountPercent": 50
+              },
+              "claimedObserved": 0,
+              "baselineObserved": 0,
+              "required": 1,
+              "correctedObserved": 1,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 2,
+          "file": "src/hotel.mjs",
+          "function": "staysOverlap",
+          "cause": "Inclusive endpoint comparisons treat adjoining half-open stays as overlapping.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": [
+                {
+                  "checkIn": "2028-06-01",
+                  "checkOut": "2028-06-02"
+                },
+                {
+                  "checkIn": "2028-06-02",
+                  "checkOut": "2028-06-03"
+                }
+              ],
+              "claimedObserved": true,
+              "baselineObserved": true,
+              "required": false,
+              "correctedObserved": false,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 3,
+          "file": "src/hotel.mjs",
+          "function": "guestBadge",
+          "cause": "The encoder omits single quotes, leaving the single-quoted attribute delimiter unescaped.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": "O'Brien",
+              "claimedObserved": "<span data-guest='O'Brien'>O'Brien</span>",
+              "baselineObserved": "<span data-guest='O'Brien'>O'Brien</span>",
+              "required": "<span data-guest='O&#39;Brien'>O&#39;Brien</span>",
+              "correctedObserved": "<span data-guest='O&#39;Brien'>O&#39;Brien</span>",
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 4,
+          "file": "src/fitness.mjs",
+          "function": "canEnroll",
+          "cause": "confirmed <= capacity admits enrollment when a class is already full, including zero capacity.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": {
+                "confirmed": 6,
+                "capacity": 6
+              },
+              "claimedObserved": true,
+              "baselineObserved": true,
+              "required": false,
+              "correctedObserved": false,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 5,
+          "file": "src/fitness.mjs",
+          "function": "cancellationRefund",
+          "cause": "A strict greater-than comparison excludes cancellation exactly 24 hours before the start.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": {
+                "startMs": 172800000,
+                "cancelledMs": 86400000,
+                "paidCents": 2500
+              },
+              "claimedObserved": 0,
+              "baselineObserved": 0,
+              "required": 2500,
+              "correctedObserved": 2500,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 6,
+          "file": "src/fitness.mjs",
+          "function": "chronologicalClasses",
+          "cause": "Array.sort runs directly on the supplied array, mutating its order and returning the same array.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": [
+                {
+                  "id": "later",
+                  "startMs": 2
+                },
+                {
+                  "id": "first",
+                  "startMs": 1
+                },
+                {
+                  "id": "tie",
+                  "startMs": 1
+                }
+              ],
+              "claimedObserved": {
+                "returnedIds": [
+                  "first",
+                  "tie",
+                  "later"
+                ],
+                "inputIdsAfter": [
+                  "first",
+                  "tie",
+                  "later"
+                ],
+                "sameArray": true
+              },
+              "baselineObserved": {
+                "returnedIds": [
+                  "first",
+                  "tie",
+                  "later"
+                ],
+                "inputIdsAfter": [
+                  "first",
+                  "tie",
+                  "later"
+                ],
+                "sameArray": true
+              },
+              "required": {
+                "returnedIds": [
+                  "first",
+                  "tie",
+                  "later"
+                ],
+                "inputIdsAfter": [
+                  "later",
+                  "first",
+                  "tie"
+                ],
+                "sameArray": false
+              },
+              "correctedObserved": {
+                "returnedIds": [
+                  "first",
+                  "tie",
+                  "later"
+                ],
+                "inputIdsAfter": [
+                  "later",
+                  "first",
+                  "tie"
+                ],
+                "sameArray": false
+              },
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 7,
+          "file": "src/landscape.mjs",
+          "function": "estimateCents",
+          "cause": "The accumulator adds unitCents instead of the validated quantity * unitCents line amount, producing incorrect totals and invalid subsequent overflow checks.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": [
+                {
+                  "quantity": 3,
+                  "unitCents": 125
+                },
+                {
+                  "quantity": 0,
+                  "unitCents": 999
+                },
+                {
+                  "quantity": 2,
+                  "unitCents": 50
+                }
+              ],
+              "claimedObserved": 1174,
+              "baselineObserved": 1174,
+              "required": 475,
+              "correctedObserved": 475,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            },
+            {
+              "input": [
+                {
+                  "quantity": 2,
+                  "unitCents": 4503599627370495
+                },
+                {
+                  "quantity": 1,
+                  "unitCents": 2
+                }
+              ],
+              "claimedObserved": 4503599627370497,
+              "baselineObserved": 4503599627370497,
+              "required": "throw RangeError: the actual sum is 9007199254740992, exceeding Number.MAX_SAFE_INTEGER",
+              "correctedObserved": {
+                "throws": "RangeError"
+              },
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            },
+            {
+              "input": [
+                {
+                  "quantity": 0,
+                  "unitCents": 9007199254740991
+                },
+                {
+                  "quantity": 1,
+                  "unitCents": 1
+                }
+              ],
+              "claimedObserved": "throw RangeError",
+              "baselineObserved": {
+                "throws": "RangeError"
+              },
+              "required": 1,
+              "correctedObserved": 1,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 8,
+          "file": "src/landscape.mjs",
+          "function": "withinBudget",
+          "cause": "A strict less-than comparison rejects estimates equal to their budget.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": {
+                "estimateCents": 500,
+                "budgetCents": 500
+              },
+              "claimedObserved": false,
+              "baselineObserved": false,
+              "required": true,
+              "correctedObserved": true,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        }
+      ],
+      "hiddenEvaluator": {
+        "exitCode": 0,
+        "seedGroupsPassing": 8,
+        "seedGroupsTotal": 8,
+        "healthyGroupsPassing": 9,
+        "healthyGroupsTotal": 9,
+        "healthyRegressions": 0
+      },
+      "solverTests": {
+        "exitCode": 0,
+        "tests": 15,
+        "pass": 15,
+        "fail": 0,
+        "failedNames": []
+      },
+      "solverTestsAgainstBaseline": {
+        "exitCode": 1,
+        "tests": 15,
+        "pass": 6,
+        "fail": 9,
+        "failedNames": [
+          "quoteStay rounds the final discounted total half upward once",
+          "staysOverlap treats adjoining stays as disjoint in both orders",
+          "guestBadge encodes all five special characters without re-encoding replacements",
+          "canEnroll closes full and zero-capacity classes",
+          "cancellationRefund includes exactly 24 hours and rejects cancellation after start",
+          "chronologicalClasses returns a new stable array without changing input records or order",
+          "estimateCents adds quantity times unit price, including zero quantities",
+          "estimateCents checks overflow against the accumulated extended prices",
+          "withinBudget includes equal and zero budgets"
+        ]
+      }
+    },
+    "swarm": {
+      "submittedReports": 10,
+      "distinctSeededCauses": 8,
+      "seedRecall": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1
+      },
+      "additionalDistinctLegitimateCauses": 1,
+      "duplicateReports": 1,
+      "falsePositiveReports": 0,
+      "unsupportedReports": 0,
+      "reportPrecision": {
+        "evidenceSupported": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1
+        },
+        "uniqueActionable": {
+          "numerator": 9,
+          "denominator": 10,
+          "value": 0.9
+        }
+      },
+      "records": [
+        {
+          "reportNumber": 1,
+          "file": "src/hotel.mjs",
+          "function": "quoteStay",
+          "cause": "Floored the discounted total instead of rounding its fractional cents half upward.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": {
+                "checkIn": "2028-06-01",
+                "checkOut": "2028-06-02",
+                "nightlyCents": 1,
+                "discountPercent": 50
+              },
+              "claimedObserved": 0,
+              "baselineObserved": 0,
+              "required": 1,
+              "correctedObserved": 1,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 2,
+          "file": "src/hotel.mjs",
+          "function": "staysOverlap",
+          "cause": "Used inclusive endpoint comparisons for half-open stays, treating adjoining checkout and check-in as overlap.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": [
+                {
+                  "checkIn": "2028-06-01",
+                  "checkOut": "2028-06-02"
+                },
+                {
+                  "checkIn": "2028-06-02",
+                  "checkOut": "2028-06-03"
+                }
+              ],
+              "claimedObserved": true,
+              "baselineObserved": true,
+              "required": false,
+              "correctedObserved": false,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 3,
+          "file": "src/hotel.mjs",
+          "function": "guestBadge",
+          "cause": "Omitted single-quote encoding despite placing the guest name in a single-quoted attribute.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": "O'Reilly",
+              "claimedObserved": "<span data-guest='O'Reilly'>O'Reilly</span>",
+              "baselineObserved": "<span data-guest='O'Reilly'>O'Reilly</span>",
+              "required": "<span data-guest='O&#39;Reilly'>O&#39;Reilly</span>",
+              "correctedObserved": "<span data-guest='O&#39;Reilly'>O&#39;Reilly</span>",
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 4,
+          "file": "src/hotel.mjs",
+          "function": "quoteStay",
+          "cause": "The shared date parser classified non-string field types as RangeError rather than the contracted TypeError.",
+          "classification": "additional legitimate defect",
+          "evidence": [
+            {
+              "input": {
+                "checkIn": null,
+                "checkOut": "2028-06-02",
+                "nightlyCents": 1
+              },
+              "claimedObserved": "RangeError",
+              "baselineObserved": {
+                "throws": "RangeError"
+              },
+              "required": "TypeError",
+              "correctedObserved": {
+                "throws": "TypeError"
+              },
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 5,
+          "file": "src/hotel.mjs",
+          "function": "staysOverlap",
+          "cause": "The shared date parser classified non-string field types as RangeError rather than the contracted TypeError.",
+          "classification": "duplicate manifestation",
+          "evidence": [
+            {
+              "input": [
+                {
+                  "checkIn": null,
+                  "checkOut": "2028-06-02"
+                },
+                {
+                  "checkIn": "2028-06-02",
+                  "checkOut": "2028-06-03"
+                }
+              ],
+              "claimedObserved": "RangeError",
+              "baselineObserved": {
+                "throws": "RangeError"
+              },
+              "required": "TypeError",
+              "correctedObserved": {
+                "throws": "TypeError"
+              },
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 6,
+          "file": "src/fitness.mjs",
+          "function": "canEnroll",
+          "cause": "Used confirmed <= capacity, allowing enrollment when the class was full, including zero capacity.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": {
+                "confirmed": 1,
+                "capacity": 1
+              },
+              "claimedObserved": true,
+              "baselineObserved": true,
+              "required": false,
+              "correctedObserved": false,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 7,
+          "file": "src/fitness.mjs",
+          "function": "cancellationRefund",
+          "cause": "Used a strict greater-than threshold, denying a refund exactly 24 hours before start.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": {
+                "startMs": 86400000,
+                "cancelledMs": 0,
+                "paidCents": 500
+              },
+              "claimedObserved": 0,
+              "baselineObserved": 0,
+              "required": 500,
+              "correctedObserved": 500,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 8,
+          "file": "src/fitness.mjs",
+          "function": "chronologicalClasses",
+          "cause": "Sorted the caller's array in place and returned that same array.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": [
+                {
+                  "id": "later",
+                  "startMs": 2
+                },
+                {
+                  "id": "first",
+                  "startMs": 1
+                }
+              ],
+              "claimedObserved": {
+                "returnedIds": [
+                  "first",
+                  "later"
+                ],
+                "inputIds": [
+                  "first",
+                  "later"
+                ],
+                "sameArray": true
+              },
+              "baselineObserved": {
+                "returnedIds": [
+                  "first",
+                  "later"
+                ],
+                "inputIds": [
+                  "first",
+                  "later"
+                ],
+                "sameArray": true
+              },
+              "required": {
+                "returnedIds": [
+                  "first",
+                  "later"
+                ],
+                "inputIds": [
+                  "later",
+                  "first"
+                ],
+                "sameArray": false
+              },
+              "correctedObserved": {
+                "returnedIds": [
+                  "first",
+                  "later"
+                ],
+                "inputIds": [
+                  "later",
+                  "first"
+                ],
+                "sameArray": false
+              },
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 9,
+          "file": "src/landscape.mjs",
+          "function": "estimateCents",
+          "cause": "Validated quantity times unitCents but accumulated only unitCents, producing wrong totals and charging for zero quantities.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": [
+                {
+                  "quantity": 3,
+                  "unitCents": 10
+                },
+                {
+                  "quantity": 0,
+                  "unitCents": 10
+                }
+              ],
+              "claimedObserved": 20,
+              "baselineObserved": 20,
+              "required": 30,
+              "correctedObserved": 30,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        },
+        {
+          "reportNumber": 10,
+          "file": "src/landscape.mjs",
+          "function": "withinBudget",
+          "cause": "Used a strict less-than comparison, rejecting an estimate equal to its budget.",
+          "classification": "distinct seeded defect",
+          "evidence": [
+            {
+              "input": {
+                "estimateCents": 10,
+                "budgetCents": 10
+              },
+              "claimedObserved": false,
+              "baselineObserved": false,
+              "required": true,
+              "correctedObserved": true,
+              "baselineClaimConfirmed": true,
+              "fixConfirmed": true
+            }
+          ],
+          "actionVerified": true
+        }
+      ],
+      "hiddenEvaluator": {
+        "exitCode": 0,
+        "seedGroupsPassing": 8,
+        "seedGroupsTotal": 8,
+        "healthyGroupsPassing": 9,
+        "healthyGroupsTotal": 9,
+        "healthyRegressions": 0
+      },
+      "solverTests": {
+        "exitCode": 0,
+        "tests": 15,
+        "pass": 15,
+        "fail": 0,
+        "failedNames": []
+      },
+      "solverTestsAgainstBaseline": {
+        "exitCode": 1,
+        "tests": 15,
+        "pass": 4,
+        "fail": 11,
+        "failedNames": [
+          "enrollment closes at capacity and at zero capacity",
+          "cancellation exactly 24 hours before class earns the full refund",
+          "class ordering returns a new stable-sorted array without mutating inputs",
+          "stay discounts round the final total half upward once",
+          "stay arithmetic retains exact integer cents at the allowed limit",
+          "half-open stays exclude adjoining dates in either argument order",
+          "guest badge encodes all special characters once in attribute and text",
+          "date fields reject non-string types separately from invalid date strings",
+          "estimateCents sums each full line amount, including zero quantities",
+          "estimateCents rejects unsafe products and sums",
+          "withinBudget accepts zero estimates and exact budget equality"
+        ]
+      }
+    }
+  },
+  "evaluations": {
+    "baseline": {
+      "exitCode": 1,
+      "seedGroupsPassing": 0,
+      "seedGroupsTotal": 8,
+      "healthyGroupsPassing": 9,
+      "healthyGroupsTotal": 9
+    },
+    "oracle": {
+      "exitCode": 0,
+      "seedGroupsPassing": 8,
+      "seedGroupsTotal": 8,
+      "healthyGroupsPassing": 9,
+      "healthyGroupsTotal": 9
+    }
+  },
+  "isolationEvidence": {
+    "individualFixes": 8,
+    "eachResolvesOnlyOwnSeed": true,
+    "allRetainHealthyControls": true,
+    "note": "Frozen recorded isolation evidence inspected; judge not regenerated."
+  },
+  "worktreeUnchanged": true,
+  "materialGaps": [
+    {
+      "solver": "single",
+      "file": "src/hotel.mjs",
+      "function": "quoteStay and staysOverlap",
+      "issue": "Non-string date fields still throw RangeError, violating the public string type failure TypeError contract. Solver regression explicitly expects RangeError for null checkIn, locking in the defect. Hidden healthy checks do not cover non-string date fields.",
+      "repro": {
+        "input": {
+          "checkIn": null,
+          "checkOut": "2028-06-02",
+          "nightlyCents": 1
+        },
+        "expected": "TypeError",
+        "actual": "RangeError"
+      }
+    },
+    {
+      "solver": "swarm",
+      "issue": "Two additional report records describe one shared date-parser cause. Count as one distinct extra legitimate defect plus one duplicate manifestation, never as two false positives."
+    }
+  ],
+  "coverage": {
+    "single": "All eight seeded causes have baseline-failing regression cases; nine seed-focused test cases fail against baseline. Broader numeric validation, overflow, calendar, frozen-array, and healthy controls present. Date type expectation contradicts README.",
+    "swarm": "All eight seeded causes plus shared date type cause have baseline-failing regression cases. Eleven tests fail baseline and all fifteen pass corrected source. Integer rounding near safe limit uses independent BigInt reference. Stable sorting, healthy controls, calendar and overflow checks are present; estimate sum-overflow test detects the erroneous accumulator. Samples do not exhaust invalid numeric fields or input-purity combinations.",
+    "limits": "Hidden evaluator nine healthy groups and solver tests are sampled contract checks, not exhaustive proof of all safe integer combinations or JavaScript input shapes."
+  },
+  "assessmentComplete": true,
+  "verdictBySolver": {
+    "single": "FAIL: submitted findings and all seeded fixes are valid, but full public contract still fails non-string date-field error classification.",
+    "swarm": "PASS: all reported distinct causes reproduce and are fixed; one shared-cause duplicate report reduces unique actionable precision."
+  },
+  "acceptanceCriteria": [
+    "Every submitted observed defect reproduces against frozen baseline and violates public contract.",
+    "Distinct seeded causes counted once; legitimate extra defects distinguished from duplicates and false positives.",
+    "Actual fixes verified through exact submitted repros, independent hidden checks and solver tests.",
+    "Material public-contract gaps and test limitations disclosed; measured artifacts unchanged."
+  ],
+  "reproductionMethod": "Replay each FINDINGS.json input directly through the named public export on baseline and corrected modules. Capture returns or exception class; separately capture sorted ids, caller order and array identity for purity. Run hidden evaluator directly with native Node. Run solver Node test suites, then transplant unmodified solver tests into temporary copies of baseline source and run them to establish defect sensitivity."
+}

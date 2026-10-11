@@ -40,6 +40,10 @@ Twenty-seven offline telemetry regressions validate cumulative deduplication, ex
 
 One workload pair, different imagery, cache/service/shared-host variation, an alpha CLI, one qualitative reviewer and missing image billing limit interpretation. Image/subscription cost is not measured. Public claims and sanitized source inventory require fresh independent review before publication.
 
+## Round-two evidence
+
+Freeze equal new-client fixtures and evaluator before each native attempt; preserve timed outputs before independent grading. Run one paired hotel/studio/landscape design workload and one separate paired JavaScript contract-defect review. Validate hidden evaluator baseline, corrected oracle, healthy controls and single-fix isolation before execution. Independently match concrete findings to baseline causes, distinguishing detection, executable repairs, duplicates, false positives and legitimate additional defects. Replay preparation and missing evidence receive offline regressions. Publish sanitized provenance and counters, never native logs or personal paths. Browser/visual grading follows both timed conditions. Cross-pilot changes in both brief and policy prevent causal attribution to the revised rules.
+
 ## Known gaps and residual risk
 
 The installer is not transactional. It refreshes managed skill copies and writes home settings before a potential launcher collision. Path routing and agent instructions require project-specific judgment. The tool does not enforce merge protection or validate a final auditor verdict. Documentation does not claim certification or measured outcome improvement.

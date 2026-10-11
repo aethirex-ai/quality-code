@@ -1,0 +1,86 @@
+{
+  "workspace": "error-fixture",
+  "resolvedSeedCount": 0,
+  "totalSeedCount": 8,
+  "seeds": [
+    {
+      "id": "H_PRICE",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n94 !== 95\n"
+    },
+    {
+      "id": "H_INTERVAL",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\ntrue !== false\n"
+    },
+    {
+      "id": "H_HTML",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ \"<span data-guest='O'Neil'>O'Neil</span>\"\n- \"<span data-guest='O&#39;Neil'>O&#39;Neil</span>\"\n"
+    },
+    {
+      "id": "F_CAPACITY",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\ntrue !== false\n"
+    },
+    {
+      "id": "F_REFUND",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n0 !== 3900\n"
+    },
+    {
+      "id": "F_PURITY",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    {\n+     id: 'early',\n+     startMs: 10\n+   },\n+   {\n      id: 'late',\n      startMs: 30\n    },\n-   {\n-     id: 'early',\n-     startMs: 10\n-   }\n  ]\n"
+    },
+    {
+      "id": "L_QUANTITY",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n12999 !== 38498\n"
+    },
+    {
+      "id": "L_BUDGET",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\nfalse !== true\n"
+    }
+  ],
+  "healthyControls": [
+    {
+      "id": "record_validation",
+      "pass": true
+    },
+    {
+      "id": "hotel_dates_prices",
+      "pass": true
+    },
+    {
+      "id": "hotel_overlap",
+      "pass": true
+    },
+    {
+      "id": "hotel_encoding",
+      "pass": true
+    },
+    {
+      "id": "fitness_enrollment",
+      "pass": true
+    },
+    {
+      "id": "fitness_refunds",
+      "pass": true
+    },
+    {
+      "id": "fitness_ordering",
+      "pass": true
+    },
+    {
+      "id": "landscape_estimates",
+      "pass": true
+    },
+    {
+      "id": "landscape_budgets",
+      "pass": true
+    }
+  ],
+  "regressionCount": 0
+}
