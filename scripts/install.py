@@ -26,31 +26,53 @@ class InstallError(RuntimeError):
     pass
 
 
-def merge_block(existing: str) -> str:
-    if GLOBAL_START in existing or GLOBAL_END in existing:
-        if GLOBAL_START not in existing or GLOBAL_END not in existing:
-            raise InstallError("global instruction file has an incomplete quality-code marker block")
-        start = existing.index(GLOBAL_START)
-        end = existing.index(GLOBAL_END, start) + len(GLOBAL_END)
-        parts = [
-            part
-            for part in (
-                existing[:start].strip(),
-                GLOBAL_BLOCK.strip(),
-                existing[end:].strip(),
-            )
-            if part
-        ]
+DELEGATION_START = "<!-- quality-code-delegation:start -->"
+DELEGATION_END = "<!-- quality-code-delegation:end -->"
+
+
+def merge_managed(existing: str, block: str, start_marker: str, end_marker: str) -> str:
+    starts, ends = existing.count(start_marker), existing.count(end_marker)
+    if starts or ends:
+        if starts != 1 or ends != 1 or existing.index(end_marker) < existing.index(start_marker):
+            raise InstallError("global instruction file has malformed or duplicate quality-code markers")
+        start = existing.index(start_marker)
+        end = existing.index(end_marker, start) + len(end_marker)
+        parts = [part.strip() for part in (existing[:start], block, existing[end:]) if part.strip()]
         return "\n\n".join(parts) + "\n"
-    if existing.strip():
-        return existing.rstrip() + "\n\n" + GLOBAL_BLOCK
-    return GLOBAL_BLOCK
+    return existing.rstrip() + "\n\n" + block if existing.strip() else block
 
 
-def write_global(path: Path) -> None:
+def merge_block(existing: str) -> str:
+    return merge_managed(existing, GLOBAL_BLOCK, GLOBAL_START, GLOBAL_END)
+
+
+def delegation_block(master: Path) -> str:
+    template = (master / "assets/project/AGENTS.md").read_text(encoding="utf-8")
+    start = template.index("## Efficient delegation and model selection")
+    end = template.index("\nFor review, diagnosis, or planning,", start)
+    policy = template[start:end].strip().replace(
+        "1. Preserve the risk lanes above.",
+        "1. Preserve the project's risk lanes and verification requirements.", 1)
+    return (DELEGATION_START + "\n## Quality-code delegation defaults\n\n"
+            "For working software projects, before implementation check that the managed AGENTS.md block "
+            "matches the installed Quality Code template. If it is outdated, run "
+            "`~/.local/bin/quality-code upgrade --dry-run .`, then `~/.local/bin/quality-code upgrade .`; "
+            "preserve project-specific instructions and configuration and resolve collisions.\n\n"
+            + policy + "\n\n" + DELEGATION_END + "\n")
+
+
+def merged_global(path: Path, delegation: str) -> str:
     existing = path.read_text(encoding="utf-8") if path.is_file() else ""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(merge_block(existing).rstrip() + "\n", encoding="utf-8")
+    # Validate delegation markers in the ORIGINAL text before bootstrap replacement
+    # can erase malformed nested markers. Neither validation call writes a file.
+    merge_managed(existing, delegation, DELEGATION_START, DELEGATION_END)
+    # Reject overlapping blocks before merging either, preserving surrounding instructions.
+    if GLOBAL_START in existing and DELEGATION_START in existing:
+        g0, g1 = existing.index(GLOBAL_START), existing.find(GLOBAL_END)
+        d0, d1 = existing.index(DELEGATION_START), existing.find(DELEGATION_END)
+        if g1 >= 0 and d1 >= 0 and not (g1 < d0 or d1 < g0):
+            raise InstallError("global quality-code marker blocks overlap")
+    return merge_managed(merge_block(existing), delegation, DELEGATION_START, DELEGATION_END).rstrip() + "\n"
 
 
 def install_skill(source: Path, destination: Path) -> None:
@@ -107,8 +129,13 @@ def main() -> int:
     master = Path(__file__).resolve().parent.parent
     bin_dir = args.bin_dir or args.home / ".local" / "bin"
     try:
-        write_global(args.home / ".codex" / "AGENTS.md")
-        write_global(args.home / ".claude" / "CLAUDE.md")
+        delegation = delegation_block(master)
+        globals_to_write = [(path, merged_global(path, delegation)) for path in
+                            (args.home / ".codex/AGENTS.md", args.home / ".claude/CLAUDE.md")]
+        # Preflight both global files before either is written.
+        for path, content in globals_to_write:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(content, encoding="utf-8")
         install_skill(master, args.home / ".codex" / "skills" / "audit-code-change")
         install_skill(master, args.home / ".claude" / "skills" / "audit-code-change")
         update_claude_settings(args.home / ".claude" / "settings.json")

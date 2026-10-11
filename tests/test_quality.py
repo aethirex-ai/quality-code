@@ -206,6 +206,8 @@ class QualityIntegrationTests(unittest.TestCase):
                                 text=True, capture_output=True)
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn('Keep global rules.', (home / '.codex/AGENTS.md').read_text())
+        for relative in ('.codex/AGENTS.md', '.claude/CLAUDE.md'):
+            self.assertIn(installer.delegation_block(ROOT).strip(), (home / relative).read_text())
         for agent in ('.codex', '.claude'):
             skill = home / agent / 'skills/audit-code-change'
             self.assertEqual({f.name for f in skill.iterdir()}, {'LICENSE', 'SKILL.md', 'agents', 'assets', 'references', 'scripts'})
@@ -216,6 +218,69 @@ class QualityIntegrationTests(unittest.TestCase):
         self.assertTrue((home / '.local/bin/quality-code').is_symlink())
         settings = json.loads((home / '.claude/settings.json').read_text())
         self.assertEqual(settings['skillOverrides']['audit-code-change'], 'name-only')
+
+    def test_installer_refreshes_swarm_defaults_and_preserves_user_context(self):
+        home = Path(self.temp.name) / 'swarm-home'
+        stale = (installer.DELEGATION_START + '\nOld delegation policy.\n' + installer.DELEGATION_END)
+        for relative in ('.codex/AGENTS.md', '.claude/CLAUDE.md'):
+            path = home / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text('Keep before.\n\n' + stale + '\n\nKeep after.\n')
+        command = [sys.executable, '-B', str(ROOT / 'scripts/install.py'), '--home', str(home)]
+        first = subprocess.run(command, text=True, capture_output=True)
+        self.assertEqual(first.returncode, 0, first.stderr)
+        snapshots = {}
+        for relative in ('.codex/AGENTS.md', '.claude/CLAUDE.md'):
+            path = home / relative
+            text = path.read_text()
+            self.assertIn('Keep before.', text)
+            self.assertIn('Keep after.', text)
+            self.assertNotIn('Old delegation policy.', text)
+            self.assertIn(installer.delegation_block(ROOT).strip(), text)
+            self.assertIn('one shared budget across the entire tree', text)
+            self.assertIn('smallest sufficient task brief', text)
+            self.assertIn('Distinguish supplied context from model context capacity', text)
+            self.assertEqual(text.count(installer.DELEGATION_START), 1)
+            snapshots[path] = path.read_bytes()
+        second = subprocess.run(command, text=True, capture_output=True)
+        self.assertEqual(second.returncode, 0, second.stderr)
+        self.assertEqual(snapshots, {path: path.read_bytes() for path in snapshots})
+
+    def test_installer_preflights_both_global_marker_blocks(self):
+        for malformed in (installer.DELEGATION_START,
+                          installer.DELEGATION_END + installer.DELEGATION_START,
+                          installer.DELEGATION_START + installer.DELEGATION_END + installer.DELEGATION_START,
+                          installer.GLOBAL_START + installer.DELEGATION_START + installer.DELEGATION_END + installer.GLOBAL_END):
+            with self.subTest(malformed=malformed), tempfile.TemporaryDirectory() as temp:
+                home = Path(temp)
+                codex = home / '.codex/AGENTS.md'
+                claude = home / '.claude/CLAUDE.md'
+                codex.parent.mkdir(); claude.parent.mkdir()
+                codex.write_text('Keep Codex.\n')
+                claude.write_text(malformed)
+                before = {p: p.read_bytes() for p in (codex, claude)}
+                result = subprocess.run([sys.executable, '-B', str(ROOT / 'scripts/install.py'), '--home', str(home)],
+                                        text=True, capture_output=True)
+                self.assertEqual(result.returncode, 2, result.stderr)
+                self.assertEqual(before, {p: p.read_bytes() for p in before})
+                self.assertFalse((home / '.codex/skills').exists())
+
+    def test_installer_rejects_orphan_delegation_markers_inside_bootstrap(self):
+        for malformed_file in ('.codex/AGENTS.md', '.claude/CLAUDE.md'):
+            for orphan in (installer.DELEGATION_START, installer.DELEGATION_END):
+                with self.subTest(file=malformed_file, orphan=orphan), tempfile.TemporaryDirectory() as temp:
+                    home = Path(temp)
+                    paths = [home / relative for relative in ('.codex/AGENTS.md', '.claude/CLAUDE.md')]
+                    for path in paths:
+                        path.parent.mkdir(parents=True)
+                        path.write_text('Keep user rules.\n')
+                    (home / malformed_file).write_text(installer.GLOBAL_START + '\n' + orphan + '\n' + installer.GLOBAL_END)
+                    before = {path: path.read_bytes() for path in paths}
+                    result = subprocess.run([sys.executable, '-B', str(ROOT / 'scripts/install.py'), '--home', str(home)],
+                                            text=True, capture_output=True)
+                    self.assertEqual(result.returncode, 2, result.stderr)
+                    self.assertEqual(before, {path: path.read_bytes() for path in paths})
+                    self.assertFalse((home / '.codex/skills').exists())
 
     def test_delegation_policy_delivered_by_init_and_adopt(self):
         template = (ROOT / 'assets/project/AGENTS.md').read_text()

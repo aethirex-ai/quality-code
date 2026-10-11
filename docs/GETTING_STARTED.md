@@ -29,7 +29,7 @@ You can inspect installation in an isolated directory first:
 python3 scripts/install.py --home /tmp/quality-code-demo-home
 ```
 
-The generated global block instructs agents to run `quality-code init .` for new projects and `quality-code adopt .` for projects missing `.quality/quality.toml`.
+The generated global blocks instruct agents to run `quality-code init .` for new projects and `quality-code adopt .` for projects missing `.quality/quality.toml`. They also deliver the delegation, shared swarm budget, and scoped-context policy, and require checking the installed template before implementation and upgrading stale managed project instructions. Reinstall refreshes both blocks while preserving surrounding user instructions; malformed global markers are rejected before either global instruction file is written.
 
 ## Invoke the audit skill
 

@@ -2,7 +2,7 @@
 
 ## Test objectives
 
-Verify new and upgraded projects receive provider-neutral delegation instructions without losing custom context. Migration from standard v2 must preserve configured verification commands and update the local engine and version together. Instruction delivery is tested; actual model choices, compliance, and efficiency require evidence from the host runtime.
+Verify new and upgraded projects receive provider-neutral delegation instructions without losing custom context. Migration from standard v2 must preserve configured verification commands and update the local engine and version together. Installer tests also cover fresh and stale global swarm/context policy delivery, surrounding user instruction preservation, repeated installation, and malformed-marker rejection before global writes. Instruction delivery is tested; actual model choices, compliance, and efficiency require evidence from the host runtime.
 
 Prove the CLI can bootstrap a usable project, preserve existing content during adoption, refuse wrapper collisions, route actual configured paths, produce scoped audit packets, and surface verification failures. Confirm installation in an isolated home directory and restrict skill distribution to intended files.
 
