@@ -47,18 +47,42 @@ def merge_block(existing: str) -> str:
 
 
 def delegation_block(master: Path) -> str:
-    template = (master / "assets/project/AGENTS.md").read_text(encoding="utf-8")
-    start = template.index("## Efficient delegation and model selection")
-    end = template.index("\nFor review, diagnosis, or planning,", start)
-    policy = template[start:end].strip().replace(
-        "1. Preserve the risk lanes above.",
-        "1. Preserve the project's risk lanes and verification requirements.", 1)
+    template = master / "assets/project/AGENTS.md"
+    content = template.read_text(encoding="utf-8")
+    required = ("<!-- quality-code:start -->", "## Quality-code workflow",
+                "## Efficient delegation and model selection",
+                "## Bounded swarms and scoped context",
+                "## Quality at delegation boundaries", "<!-- quality-code:end -->")
+    positions = [content.find(section) for section in required]
+    if any(content.count(section) != 1 for section in required) or positions != sorted(positions):
+        raise InstallError("canonical project policy template is missing required structure")
+    # Global defaults route to the project policy instead of duplicating its full
+    # body in every runtime context. The fallback applies before bootstrap too.
     return (DELEGATION_START + "\n## Quality-code delegation defaults\n\n"
             "For working software projects, before implementation check that the managed AGENTS.md block "
             "matches the installed Quality Code template. If it is outdated, run "
             "`~/.local/bin/quality-code upgrade --dry-run .`, then `~/.local/bin/quality-code upgrade .`; "
             "preserve project-specific instructions and configuration and resolve collisions.\n\n"
-            + policy + "\n\n" + DELEGATION_END + "\n")
+            "The project's managed AGENTS.md owns the complete Quality Code workflow and delegation policy. "
+            "Use it when already supplied by the runtime; do not load a second full copy. "
+            "For missing policy details, read only relevant sections of the installed template at "
+            + str(template) + ". Bootstrap/init/adopt delivers that policy before software implementation.\n\n"
+            "Fallback while project policy is unavailable: preserve risk lanes, safety, permissions, skill requirements "
+            "and required independent verification. Delegate only ready worthwhile independent outcomes; use coherent "
+            "direct owners, useful primary work and the smallest useful team. Discover available models, supported effort, "
+            "tools/context/capacity through native evidence; choose the least costly fit likely to satisfy criteria, "
+            "escalating when uncertainty or failures justify it. Never invent or hardcode model identifiers, rankings, "
+            "prices or settings; inherit supported defaults when discovery is unavailable.\n\n"
+            "Use one shared budget across the entire tree including every descendant, context transfer, retries and final "
+            "verification; branch shares do not reset it. Permit hierarchy only for substantial independent work. "
+            "Pass the smallest sufficient task brief in fresh scoped context, including contracts, ownership, constraints, "
+            "budget and evidence; bound retrieval/tool output and return paths, checks and unresolved issues. "
+            "Do not print media base64 or duplicate investigations/checks unnecessarily. "
+            "Distinguish supplied context from model context capacity; use only supported controls. "
+            "Primary owns integration and observable product/visual/defect validation. A builder/director cannot "
+            "provide its independent audit verdict. If a required independent gate is unavailable, report it blocked. "
+            "Parallelism and cheaper API models do not prove lower subscription usage.\n\n"
+            + DELEGATION_END + "\n")
 
 
 def merged_global(path: Path, delegation: str) -> str:

@@ -3,6 +3,7 @@ import importlib.util
 import json
 from pathlib import Path
 import subprocess
+import shutil
 import sys
 import tempfile
 import unittest
@@ -218,6 +219,46 @@ class QualityIntegrationTests(unittest.TestCase):
         self.assertTrue((home / '.local/bin/quality-code').is_symlink())
         settings = json.loads((home / '.claude/settings.json').read_text())
         self.assertEqual(settings['skillOverrides']['audit-code-change'], 'name-only')
+
+    def test_missing_or_corrupt_policy_template_refuses_installer_before_writes(self):
+        for state in ('missing', 'corrupt'):
+            with self.subTest(state=state):
+                distribution = Path(self.temp.name) / ('distribution-' + state)
+                for name in ('scripts', 'assets', 'references', 'agents'):
+                    shutil.copytree(ROOT / name, distribution / name)
+                for name in ('LICENSE', 'SKILL.md'):
+                    shutil.copy2(ROOT / name, distribution / name)
+                policy = distribution / 'assets/project/AGENTS.md'
+                if state == 'missing':
+                    policy.unlink()
+                else:
+                    policy.write_text('<!-- quality-code:start -->\n## Quality-code workflow\n'
+                                      '<!-- quality-code:end -->\n')
+                home = Path(self.temp.name) / ('home-' + state)
+                for relative in ('.codex/AGENTS.md', '.claude/CLAUDE.md', '.claude/settings.json'):
+                    file = home / relative
+                    file.parent.mkdir(parents=True, exist_ok=True)
+                    file.write_text('{}' if relative.endswith('.json') else 'Preserve custom instructions.\n')
+                before = {str(f.relative_to(home)): f.read_bytes() for f in home.rglob('*') if f.is_file()}
+                result = subprocess.run([sys.executable, '-B', str(distribution / 'scripts/install.py'),
+                                         '--home', str(home)], text=True, capture_output=True)
+                self.assertEqual(result.returncode, 2, result.stdout + result.stderr)
+                self.assertNotIn('PASS:', result.stdout)
+                self.assertEqual({str(f.relative_to(home)): f.read_bytes() for f in home.rglob('*')
+                                  if f.is_file()}, before)
+                self.assertFalse((home / '.codex/skills').exists())
+                self.assertFalse((home / '.local/bin/quality-code').exists())
+
+    def test_global_routes_to_project_policy_without_duplicate_full_template(self):
+        text = installer.delegation_block(ROOT)
+        self.assertIn(str(ROOT / 'assets/project/AGENTS.md'), text)
+        self.assertIn("project's managed AGENTS.md owns the complete", text)
+        self.assertNotIn('## Efficient delegation and model selection', text)
+        self.assertNotIn('## Quality at delegation boundaries', text)
+        self.assertIn('required independent verification', text)
+        self.assertIn('inherit supported defaults', text)
+        self.assertIn('smallest useful team', text)
+        self.assertIn('one shared budget across the entire tree', text)
 
     def test_installer_refreshes_swarm_defaults_and_preserves_user_context(self):
         home = Path(self.temp.name) / 'swarm-home'
