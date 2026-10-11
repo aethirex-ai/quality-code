@@ -294,6 +294,26 @@ class QualityIntegrationTests(unittest.TestCase):
                 self.assertIn(template.strip(), delivered)
                 self.assertIn('Preserve local instruction.', delivered)
 
+    def test_current_version_refreshes_scoped_policy_without_configuration_loss(self):
+        self.init()
+        agents = self.project / 'AGENTS.md'
+        current = agents.read_text()
+        start = current.index('## Efficient delegation and model selection')
+        end = current.index('For review, diagnosis, or planning', start)
+        agents.write_text('# Project-specific note\nKeep this note.\n' + current[:start] +
+                          '## Efficient delegation and model selection\nStale policy.\n\n' + current[end:])
+        config = (self.project / '.quality/quality.toml').read_bytes()
+        before = agents.read_bytes()
+        self.cli('upgrade', '--dry-run', str(self.project))
+        self.assertEqual(agents.read_bytes(), before)
+        self.cli('upgrade', str(self.project))
+        refreshed = agents.read_text()
+        self.assertIn((ROOT / 'assets/project/AGENTS.md').read_text().strip(), refreshed)
+        self.assertIn('Keep this note.', refreshed)
+        self.assertNotIn('Stale policy.', refreshed)
+        self.assertEqual((self.project / '.quality/quality.toml').read_bytes(), config)
+        self.local('validate')
+
     def test_v2_upgrade_delivers_policy_and_preserves_custom_context(self):
         self.init()
         agents = self.project / 'AGENTS.md'
