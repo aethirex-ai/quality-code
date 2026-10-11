@@ -1,0 +1,87 @@
+{
+  "rubric": {
+    "scale": {"0": "Unusable", "1": "Weak", "2": "Needs substantial refinement", "3": "Solid competent", "4": "Polished professional", "5": "Exceptional distinct portfolio quality"},
+    "increments": 0.5,
+    "criteria": {
+      "visual_hierarchy": "Visible prioritization of headings, imagery, content, and actions across the full page.",
+      "identity_art_direction": "Distinctness and coherence of visible brand, palette, imagery, and graphic treatment.",
+      "typography_spacing": "Type relationships, line breaks, alignment, whitespace, and reading rhythm.",
+      "responsive_composition": "Quality of composition at both supplied desktop and mobile sizes, including cropping and vertical pacing.",
+      "professional_credibility": "Visible editorial finish, consistency, and clarity of the portfolio presentation, without assuming operational functionality."
+    },
+    "reviewed_images": ["A/shop-desktop.png", "A/shop-mobile.png", "B/shop-desktop.png", "B/shop-mobile.png", "A/craftsman-desktop.png", "A/craftsman-mobile.png", "B/craftsman-desktop.png", "B/craftsman-mobile.png", "A/restaurant-desktop.png", "A/restaurant-mobile.png", "B/restaurant-desktop.png", "B/restaurant-mobile.png"]
+  },
+  "sets": {
+    "A": {
+      "shop": {
+        "scores": {"visual_hierarchy": 4, "identity_art_direction": 4, "typography_spacing": 4.5, "responsive_composition": 4, "professional_credibility": 3.5},
+        "evidence": {
+          "visual_hierarchy": "The oversized serif hero and large sunlit photograph establish a clear first read; product names, prices, and ruled bag rows are ordered consistently. The desktop collection's unequal image sizes and staggered starts make the second product less prominent, while the repeated hero image reduces the sense of progression.",
+          "identity_art_direction": "Cream, warm stone, olive accents, serif italics, and tactile ceramics create a coherent quiet-living identity. The small italic f mark adds character. Reusing the same vase-and-lamp scene for both hero and product limits visual variety and leaves the lamp peripheral in its own product image.",
+          "typography_spacing": "The headline's italic living, restrained tracked labels, and generous section margins create a polished editorial rhythm. Product titles and prices align cleanly at both sizes. Some disclosure and footer copy is very small, and the mobile italic quotation forms a comparatively long four-line block.",
+          "responsive_composition": "The split hero becomes an orderly text-then-image stack, and both product blocks retain aligned names, prices, and actions without visible clipping. The mobile hero crop preserves the vase well. The three-column values strip becomes small wrapped labels, and the mobile product image for the lamp still gives most visual emphasis to the vase.",
+          "professional_credibility": "The consistent rules, product material captions, prices, and visible demonstration disclosure present a finished concept. The Evening orb lamp listing is illustrated primarily by a sculptural vase, with the actual lamp smaller in the background; that image-to-label mismatch weakens product presentation. The collection has only two visual product examples."
+        }
+      },
+      "craftsman": {
+        "scores": {"visual_hierarchy": 4, "identity_art_direction": 4.5, "typography_spacing": 4, "responsive_composition": 3, "professional_credibility": 4},
+        "evidence": {
+          "visual_hierarchy": "Made to belong dominates clearly, followed by a broad kitchen photograph, numbered service rows, a dark process band, and the enquiry form. The immense drawer-detail photograph consumes much more space than its accompanying information, weakening full-page pacing, especially on mobile.",
+          "identity_art_direction": "The bold KERN wordmark, recurring plus signs, sans-serif and italic-serif pairing, oak imagery, and restrained dark green process band create a distinctive craft identity. The oversized footer mark is a memorable finish. The drawer image's extreme vertical treatment feels less deliberately balanced than the kitchen hero.",
+          "typography_spacing": "Strong heading scale, thin dividing rules, and aligned numbered services make the desktop page precise. Italic phrases provide controlled contrast to the sans-serif. On mobile the two-column introductory body text creates narrow, many-line paragraphs, while the drawer image leaves an unusually long interval between text sections.",
+          "responsive_composition": "The hero headline, service rows, and footer fit the narrow layout cleanly, and the process becomes a coherent two-by-two grid. However, the drawer photograph becomes an exceptionally tall narrow panel with extensive blurred background above the joint, dominating multiple mobile screen lengths. The mobile name and email fields remain side by side and look cramped relative to the other full-width fields.",
+          "professional_credibility": "Specific visible material, detail, and finish rows, a four-step process, labelled enquiry fields, and clear local-demo text support a finished studio concept. The very large detail image and sparse associated content make that section feel less edited; the visible work presentation relies on only a kitchen and one joinery detail."
+        }
+      },
+      "restaurant": {
+        "scores": {"visual_hierarchy": 4.5, "identity_art_direction": 4.5, "typography_spacing": 4.5, "responsive_composition": 4, "professional_credibility": 4.5},
+        "evidence": {
+          "visual_hierarchy": "The cream hero headline and orange seat action stand out against plum, followed by an arched room photograph, food-and-story section, menu, and a clearly boxed reservation form. The sequence is readily legible. The enormous desktop footer wordmark receives more space than the practical closing information.",
+          "identity_art_direction": "Lowercase luma, orange starbursts, plum and cream, an arched hero image, and candlelit food photography create a recognizable restaurant identity. The motif appears consistently from navigation through form and footer. Some recurring italic emotional headlines repeat the same visual gesture rather than introducing new variation.",
+          "typography_spacing": "Serif headings and menu names are balanced with small sans-serif descriptions, right-aligned prices, and fine rules. Desktop columns have ample separation and the mobile headings break cleanly. The mobile slogan strip splits three short phrases into narrow two-line units, and the smallest photo captions and disclosures are visually delicate.",
+          "responsive_composition": "The arched photograph retains its shape on mobile, the menu columns stack without visible clipped names or prices, and opening times stay aligned. The reservation card has comfortable outer separation. Its mobile date and guests fields retain a two-column arrangement inside the inset card, making this row noticeably tighter than the name and email rows; the slogan strip is also crowded.",
+          "professional_credibility": "The coherent dish photograph, named seasonal menu with EUR disclosure, opening schedule, imagined neighborhood text, and visibly labelled reservation demo give the concept editorial completeness. The form's local-demo explanation and footer disclosure are present. Small fine-print and caption sizing is the main visible finishing weakness."
+        }
+      }
+    },
+    "B": {
+      "shop": {
+        "scores": {"visual_hierarchy": 4.5, "identity_art_direction": 4, "typography_spacing": 4.5, "responsive_composition": 4.5, "professional_credibility": 4},
+        "evidence": {
+          "visual_hierarchy": "A large two-line hero headline and solid olive collection button establish priority; category rows, a group product image, three labelled product entries, and the philosophy band create a clear progression. On desktop the category section has considerable blank space, and the shared product image makes individual entries less visually differentiated.",
+          "identity_art_direction": "Tracked FORME lettering, warm off-white surfaces, olive actions, restrained serif italics, and consistent sunlit stoneware photography form a coherent identity. The photography has material character. The brand treatment remains relatively conventional, and one shared product image limits individual product art direction.",
+          "typography_spacing": "The large serif titles, modest sans-serif descriptions, numbered entries, and ruled categories maintain a disciplined hierarchy. Mobile product descriptions and prices have consistent spacing, with action rows aligned to the right. The mobile philosophy title's isolated for line is less balanced, and tiny tracked captions are a weaker part of the type system.",
+          "responsive_composition": "Hero text and image stack cleanly; categories become full-width rows; the three products retain clear titles, descriptions, prices, and separated actions on mobile. The ceramic image crop preserves the bowl and vase but shows only part of the cup. The large gap after the mobile categories slightly slows the otherwise controlled flow.",
+          "professional_credibility": "All three product entries include descriptions, prices, labels, and consistent add-to-bag presentation, with clear demo and portfolio disclosure. The restrained footer is complete and orderly. Using a single image to represent all three products, including a partially cropped cup, offers less visual specificity than individually presented items."
+        }
+      },
+      "craftsman": {
+        "scores": {"visual_hierarchy": 4.5, "identity_art_direction": 4, "typography_spacing": 4.5, "responsive_composition": 4.5, "professional_credibility": 4},
+        "evidence": {
+          "visual_hierarchy": "The broad sans-serif hero, kitchen image, three parallel service cards, tinted project-study section, hands-at-work image, process rows, and green enquiry block clearly separate the page's purposes. The text-only project studies and long process section create a quieter middle stretch with limited visual emphasis on individual projects.",
+          "identity_art_direction": "KERN's compact geometric accent, natural oak photography, olive-green panels, and clean sans-serif headings create a coherent architectural craft identity. The hands planing wood add a distinct human craft moment. The predominantly familiar clean-grid treatment and repeated large sans-serif statements provide less distinctive variation across sections.",
+          "typography_spacing": "Headlines, tracked section labels, numbered rows, and thin rules maintain consistent hierarchy. Service descriptions and process text have comfortable line lengths, including on mobile. Some desktop sections have large unused areas beside text lists, and the repeated heading style makes the long page somewhat uniform.",
+          "responsive_composition": "Desktop services and studies become spacious mobile stacks; the process uses full-width rows and enquiry fields become single-column. The craft photograph keeps the hands, tool, and timber readable at both sizes. The mobile kitchen badge covers a substantial portion of the cabinetry, and the long text-only studies section reduces image-to-text rhythm.",
+          "professional_credibility": "Specific service descriptions, named concept studies with material captions, a four-step process, and a carefully labelled demo form support a complete studio presentation. Demonstration status is clearly visible. Two of the three named studies lack their own illustrations, so the visible portfolio breadth is asserted mostly through text."
+        }
+      },
+      "restaurant": {
+        "scores": {"visual_hierarchy": 4.5, "identity_art_direction": 4, "typography_spacing": 4.5, "responsive_composition": 4.5, "professional_credibility": 4.5},
+        "evidence": {
+          "visual_hierarchy": "The full-bleed candlelit hero, oversized cream headline, pale table button, and secondary menu link make the opening easy to parse. A centered menu heading, separated categories, contrasting story section, and pale reservation section organize the rest. Mobile places a long menu block before the food photograph, delaying the next visual change.",
+          "identity_art_direction": "Warm candlelight, burgundy surfaces, pale cream, gold italic phrases, and tracked uppercase LUMA form a coherent elegant restaurant identity. Food and room imagery agree in mood. The rectangular full-bleed hero and widely spaced serif logo are familiar treatments, while the star motif is less integrated beyond the slogan band.",
+          "typography_spacing": "Clear menu category headings, bold serif dish names, smaller ingredient lines, aligned prices, and spacious rules establish a polished rhythm. Mobile headings wrap without visible collision and the form uses generous field spacing. The smallest menu notes and footer disclosures are tiny, and the long mobile menu has relatively uniform visual weight throughout.",
+          "responsive_composition": "The hero remains legible over its narrow photo crop; both opening actions fit beside each other, menu prices stay aligned, and the reservation fields become full-width mobile rows. The photograph retains a strong food focal point. The mobile hero crop loses much of the room's wider table composition, and the menu becomes a long uninterrupted text section.",
+          "professional_credibility": "Named dishes with ingredient descriptions, EUR disclosure, separate sweet category, opening and kitchen hours, visibly required form labels, and local-demo explanation make the concept complete and consistently presented. The disclosure is explicit without diminishing the fictional concept. Fine-print sizing and the absence of further dish imagery are the principal visible limitations."
+        }
+      }
+    }
+  },
+  "limitations": [
+    "One anonymous visual review pass over all twelve supplied full-page PNGs, limited to the 1440 desktop and 375 mobile presentations.",
+    "Ratings describe screenshot-visible design only; no code, other folders, logs, timing, metrics, or condition identities were inspected.",
+    "No functionality, keyboard behavior, accessibility compliance, contrast ratios, browser performance, or business conversion was inferred.",
+    "Fictional businesses and visible portfolio disclosures were treated as intended content and were not penalized for fictional status.",
+    "Half-step scores are qualitative design judgments; responsive ratings combine only the two supplied widths and do not establish behavior at intermediate widths."
+  ]
+}

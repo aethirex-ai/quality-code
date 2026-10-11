@@ -1,0 +1,12 @@
+{
+  "image_probe": {
+    "successful_outputs": 1,
+    "excluded_from_conditions": true,
+    "tokens": null,
+    "backend_model": null
+  },
+  "coding_telemetry": "Native rollout cumulative usage, all identified descendants; not account percentages",
+  "pricing_source": "https://developers.openai.com/api/docs/pricing",
+  "pricing_checked_utc": "2026-10-11",
+  "reasoning_relation": "Observed total_tokens=input_tokens+output_tokens; reasoning_output_tokens subset of output."
+}

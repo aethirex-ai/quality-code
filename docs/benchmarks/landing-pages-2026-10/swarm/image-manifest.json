@@ -1,0 +1,56 @@
+[
+  {
+    "page": "shop",
+    "attempt": 1,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: considered-living shop editorial hero photograph, landscape 3:2 composition. Primary request: an extraordinarily refined tactile still life in a sunlit warm minimalist living room: a low pale travertine plinth with one large sculptural chalk-white ceramic loop vase with two thin dried stems, a softly glowing small amber glass orb lamp on a dark walnut side table behind it, a taupe linen armchair cropped at right. Beautiful hard late-afternoon sunlight enters from left and draws long diagonal shadows on a warm plaster wall and sand-colored floor. Muted parchment, chalk, tobacco and amber palette. Sophisticated genuine magazine interior photograph, visible stone pores and hand-glazed ceramic texture, restrained styling, calm negative space top left, objects occupy middle/right. Camera at low eye level, natural optical detail. No people, no lettering, no logos, no watermarks, no collages, no interface.",
+    "output_paths": [
+      "shop/assets/hero.png"
+    ]
+  },
+  {
+    "page": "shop",
+    "attempt": 2,
+    "success": true,
+    "prompt": "Use case: product-mockup. Asset type: shop supporting editorial product photograph, portrait 4:5. Primary request: close still-life photograph of sculptural hand-thrown pottery on a pale sand-colored linen covered table: a matte cream wide bowl, two dark cocoa ceramic cups and a pale off-white rounded vessel arranged with considered imperfect spacing. A walnut spoon rests beside bowl, one folded oatmeal linen cloth. Tight intimate composition with lovely organic silhouettes, soft strong daylight from upper left, subtle shadows, beige plaster backdrop, visible glaze variations and tiny clay imperfections, premium design magazine tabletop photography. Warm neutral palette with charcoal accents, no people, no text, no branding, no watermarks, no collage.",
+    "output_paths": [
+      "shop/assets/supporting.png"
+    ]
+  },
+  {
+    "page": "craftsman",
+    "attempt": 1,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural\nAsset type: architectural editorial photograph for a premium fictional Berlin joinery studio website hero\nPrimary request: an exceptionally beautiful understated bespoke oak kitchen in a quiet Berlin apartment, photographed with the precision and natural texture of an independent interiors magazine.\nScene/backdrop: softly worn ivory lime-plaster walls, high ceilings, a tall side window, pale warm stone floor, no people.\nSubject: long built-in kitchen in natural European oak with beautifully joined flat-front cabinets, subtly recessed handles, a creamy honed limestone worktop, a single understated dark bronze faucet, one simple ceramic bowl and a few bare branches. Oak cabinet grain and real joints must be visible, spare lived-in restraint.\nComposition/framing: wide horizontal architectural photograph, eye-level perspective, rectilinear lens and straight verticals, island or low worktop in the foreground, cabinetry along the back wall, gentle asymmetric composition, all image area contains the room. No typography or graphics; this image will be used under webpage copy outside the photo.\nLighting/mood: late afternoon natural sunlight from the left, long soft shadows, warm but desaturated, tactile, peaceful, refined.\nColor palette: muted honey oak, chalk ivory, stone, graphite accents.\nMaterials/textures: realistic oak end grain, tiny imperfections, matte plaster, honed stone; convincingly photographic rather than a CGI render.\nConstraints: no text, no logos, no watermark, no fake signage, no people, no excessive decor, no glossy surfaces.",
+    "output_paths": [
+      "craftsman/assets/hero.png"
+    ]
+  },
+  {
+    "page": "craftsman",
+    "attempt": 2,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural\nAsset type: supporting architectural craft editorial photograph for a fictional Berlin bespoke joinery studio\nPrimary request: intimate, exceptionally tactile editorial photograph of an unfinished solid European oak cabinet drawer resting diagonally on a worn joiner's workbench in a quiet contemporary woodworking studio. Clearly legible beautiful hand-cut dovetail joinery and timber end grain are the central focus.\nScene/backdrop: modest workshop with softly blurred timber boards and an ivory wall; a single wooden hand plane and a few fresh curled wood shavings on the workbench, restrained believable tools, no people.\nSubject: the corner joint of a substantial oak drawer, finely fitted dovetail pins, gently rounded edges, natural wood grain. The open drawer and a partially finished low oak cabinet behind it suggest furniture being made.\nStyle/medium: premium magazine documentary photograph, photorealistic, no CGI polish.\nComposition/framing: vertical portrait composition, tightly framed on the oak drawer corner at lower center, joinery crisp and detailed, plane and shavings nearby, shallow but sufficient depth of field, authentic 50mm lens look.\nLighting/mood: soft natural side-window daylight, quiet muted warmth, tactile shadows, calm attention to handwork.\nColor palette: honey oak, warm ivory, dusty taupe, charcoal accents.\nConstraints: no writing, no logos, no watermark, no signage, no people, no exaggerated sawdust, no decorative clutter. Realistic woodworking geometry and tool proportions.",
+    "output_paths": [
+      "craftsman/assets/supporting.png"
+    ]
+  },
+  {
+    "page": "restaurant",
+    "attempt": 1,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: premium fictional seasonal Berlin restaurant LUMA website hero photograph. Create an original editorial hospitality photograph of an intimate, beautifully understated Berlin neighborhood restaurant at dusk. Scene: burgundy velvet banquette on the left, dark aged oak tables set with small cream ceramic plates, thin stem wine glasses and linen napkins, a single flickering tapered candle on each table, small glowing amber paper wall sconces, plaster walls in deep aubergine, large street-facing window on the right with blue-hour city light and subtle reflections. A few blurred diners deep in background, empty inviting foreground table. Composition: wide landscape architectural interior photograph with strong diagonal depth, cropped modern design magazine feeling, eye-level, tactile materials, credible proportions. Lighting: warm atmospheric pools of candlelight and tungsten balanced with cool evening window, natural fine grain, rich shadows while preserving detail. Palette deep plum, honey amber, cream, warm oak. High-quality realistic commissioned photography, not illustration or CGI. No text, no logos, no signage, no watermark, no artificial gradient.",
+    "output_paths": [
+      "restaurant/assets/hero.png"
+    ]
+  },
+  {
+    "page": "restaurant",
+    "attempt": 2,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: supporting editorial food photograph for premium fictional seasonal Berlin restaurant LUMA. Primary request: a real-feeling commissioned food photograph of one autumn vegetarian dish: golden roasted pumpkin wedges, whipped fresh cheese, toasted hazelnuts, crisp sage leaves and a restrained amber brown-butter sauce, artfully but naturally plated on a large off-white handmade ceramic plate. Scene: deep dark burgundy linen tablecloth, an imperfect warm oak edge, slim stem wine glass partially visible upper right, understated silver fork and crumpled cream linen napkin off to one side. Composition: close-up three-quarter overhead landscape frame, plate generously fills frame, asymmetrical editorial crop with rich negative space on left, shallow natural depth of field, believable delicious food rather than overly styled fine-dining sculpture. Lighting: soft warm side window light, subtle candle atmosphere, rich detail in ceramic glaze and roasted vegetables, restrained grain. Color palette pumpkin orange, deep aubergine, cream, sage, hazelnut brown. High-quality natural magazine photography, photorealistic, no text, no logos, no watermark, no illustration or CGI.",
+    "output_paths": [
+      "restaurant/assets/supporting.png"
+    ]
+  }
+]

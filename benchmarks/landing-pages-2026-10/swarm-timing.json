@@ -1,0 +1,9 @@
+{
+  "condition": "swarm",
+  "start_unix": 1791744377.155942,
+  "end_unix": 1791744936.194479,
+  "elapsed_seconds": 559.0385382175446,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_time_limit_seconds": 1200
+}

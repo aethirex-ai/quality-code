@@ -1,0 +1,9 @@
+{
+  "condition": "single",
+  "start_unix": 1791743409.0769012,
+  "end_unix": 1791744360.7172532,
+  "elapsed_seconds": 951.6403527259827,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_time_limit_seconds": 1200
+}

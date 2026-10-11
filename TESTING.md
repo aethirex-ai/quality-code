@@ -34,6 +34,12 @@ Review banner rendering, README readability, initial source inventory, secret fi
 
 Reader edition: check `docs/index.html` at desktop and 375px mobile widths. Confirm embedded fonts, visible keyboard focus, local section links and no horizontal overflow. Preserve technical caveats; there is no JavaScript or external font request. Markdown remains a source-readable alternative because GitHub strips custom CSS.
 
+## Delegation pilot evidence
+
+Twenty-seven offline telemetry regressions validate cumulative deduplication, explicit ancestry, model attribution, overlapping cached/reasoning counters, incomplete evidence, conditional price refusal and image-call ambiguity. Full/release profiles include them. The recorded pilot reconciles native root completion usage, all descendant rollouts, native image calls and manifests; an independent manual arithmetic path verifies pricing. A frozen two-width browser evaluator produces screenshots and functional assertions, followed by one anonymous visual reviewer. Recorded outputs remain unchanged before grading. Local dependency paths are normalized only in published replay sources, with both original and published hashes retained.
+
+One workload pair, different imagery, cache/service/shared-host variation, an alpha CLI, one qualitative reviewer and missing image billing limit interpretation. Image/subscription cost is not measured. Public claims and sanitized source inventory require fresh independent review before publication.
+
 ## Known gaps and residual risk
 
 The installer is not transactional. It refreshes managed skill copies and writes home settings before a potential launcher collision. Path routing and agent instructions require project-specific judgment. The tool does not enforce merge protection or validate a final auditor verdict. Documentation does not claim certification or measured outcome improvement.

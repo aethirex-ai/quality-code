@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-11",
+  "kind": "single paired exploratory workload, not replicated causal experiment",
+  "quality_code_revision": "eaace6377201317d648583f9d8ab1948437a3504",
+  "order_seed": 20261011,
+  "order": [
+    "single",
+    "swarm"
+  ],
+  "root_model": "gpt-6.1-sol",
+  "root_reasoning_effort": "high",
+  "selection_basis": "native cached model catalog inspected; same current workhorse root for both",
+  "shared_budget_seconds": 1200,
+  "swarm_active_helpers_cap": 3,
+  "native_generation_per_page_successes": 2,
+  "native_generation_attempt_cap_per_page": 3,
+  "probe_excluded": true,
+  "image_model_identity": "not exposed",
+  "image_tokens": "not exposed; count calls, outputs and retry/failure separately",
+  "coding_price_basis": "hypothetical Standard API-equivalent, not subscription usage or actual charge",
+  "cost_formula": "sum by model of uncached input, cached input, cache writes if reported, and billable output; do not double count reasoning if included in output",
+  "fixture_sha256": {
+    "MAP.md": "40c134d1b225bcf6dc02a9ed2c3ff2361a42c5d377ed0c052dcb8ed3c7a5dc3c",
+    "quality": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4",
+    "TESTING.md": "f6183b831832653fc4de69dd1e0a62d3c0950c47f920e43eedb68d8d40133826",
+    "package.json": "05279e56f42647b0c0fd5a5a03f6099035d046f3e8bfb6849e276109764cc892",
+    "BRIEF.md": "31212b2f3e33823a6858666d372f33155b6cd5f72c6e0d3f7c95ab4086c96aa9",
+    "AGENTS.md": "927c6519ede3c124e2f9738e27ae238b47ed91a69ef7545554acd984ae895fd2",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    ".quality/LICENSE": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+    ".quality/audit-result.schema.json": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+    ".quality/quality.toml": "0ac619e3378a94ad5f8d5009642b2a5e92adad204772fcd2867f9440565a3b63",
+    ".quality/quality.py": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4"
+  },
+  "objective_check_groups": [
+    "document semantics and metadata",
+    "local imagery loads and alt text",
+    "mobile and desktop no overflow",
+    "no console/page/HTTP errors",
+    "bag updates twice",
+    "estimate demo valid submission",
+    "reservation demo valid submission",
+    "visible fictional AethDesign attribution",
+    "no external requests"
+  ],
+  "subjective_review": "blind labels, same 0-5 rubric: visual hierarchy, identity/art direction, typography/spacing, responsive composition, professional credibility; all scores evidence-backed; no causal or general savings claims",
+  "limitations": [
+    "one workload pair",
+    "generated imagery differs",
+    "provider cache warm-up uncontrolled",
+    "same-host other tasks and model load uncontrolled",
+    "native CLI may differ from desktop runtime",
+    "image costs omitted from monetary subtotal",
+    "max concurrency includes all descendants; actual native control behavior recorded"
+  ],
+  "evaluator_sha256": "12e9b9db7732273227dc75ffea6a203e99d3d29ed061f26ba6f96b39b972bb25"
+}

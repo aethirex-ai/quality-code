@@ -1,0 +1,62 @@
+[
+  {
+    "page": "shop",
+    "attempt": 1,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: premium considered-living shop FORME hero editorial photograph, landscape 3:2. A sculptural still life on a pale travertine console in a sunlit European apartment: an oversized matte sand-colored ceramic vessel with a single delicate branch, a low terracotta bowl, an ivory mushroom-shaped table lamp and rumpled flax linen, arranged asymmetrically with generous breathing space. Warm limewashed wall, sharply beautiful afternoon sunlight entering from the left creates geometric window shadows across the stone. Tactile subtle textures, soft analogue film grain, elegant design-magazine photography, restrained warm cream and ochre palette, realistic objects and material detail. Shoot at eye level with a 50mm lens; composition suitable for full-bleed website image. High-quality original editorial photo. No words, no logos, no lettering, no watermark, no frames, no collage.",
+    "output_paths": [
+      "shop/assets/hero-original.png",
+      "shop/assets/hero.jpg"
+    ]
+  },
+  {
+    "page": "shop",
+    "attempt": 2,
+    "success": true,
+    "prompt": "Use case: product-mockup. Asset type: supporting editorial product photograph for FORME considered-living shop, landscape 3:2. Three hand-thrown ceramic objects on a pale warm ivory plaster tabletop: a matte chalk white wide sculptural bowl in the left foreground, a small sand-colored straight-sided cup at right foreground, and a tall warm rust terracotta vase with an organic narrow neck behind. A natural linen cloth lies quietly at one corner. Close-up restrained still life, genuine pottery pores and subtle imperfections, beautiful directional soft sunlight from upper left, warm shadows, neutral cream backdrop, tactile design-magazine quality, 85mm lens. Leave generous space between objects for tasteful editorial cropping. High-quality realistic photograph, no people, no text or lettering, no brand logos, no watermarks, no border, no collage.",
+    "output_paths": [
+      "shop/assets/support-original.png",
+      "shop/assets/support.jpg"
+    ]
+  },
+  {
+    "page": "craftsman",
+    "attempt": 1,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: hero photograph for KERN Berlin bespoke joinery studio, wide landscape 3:2. High-end architectural editorial photograph of a quiet Berlin apartment kitchen, beautiful floor-to-ceiling natural oak cabinets with precise visible grain, oak island with thick light grey limestone top, a single blackened-brass tap, olive green plaster wall and pale stone floor. Tall historic casement window at left floods the room with gentle morning light, a simple twig arrangement in a small ceramic vase on the island, very minimal real lived-in styling. Camera eye-level from across the room, straight verticals, calm geometrical composition, warm golden oak dominates the right two-thirds, natural light and deep soft shadows, analogue texture, exceptional craftsmanship and tactile material detail. No people, no text, no lettering, no logos, no watermarks, no collage, avoid glossy CGI appearance. Original premium editorial photograph.",
+    "output_paths": [
+      "craftsman/assets/hero-original.png",
+      "craftsman/assets/hero.jpg"
+    ]
+  },
+  {
+    "page": "craftsman",
+    "attempt": 2,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: supporting photograph for KERN bespoke Berlin joinery studio, landscape 3:2. Intimate original editorial photograph of an artisan's hands carefully guiding a traditional wooden hand plane along a thick European oak board on a substantial worn wooden workbench. Hands and forearms only, realistic anatomy, an olive cotton apron partly visible at the upper edge. Beautiful curled wood shavings in foreground, one steel square and a quiet wood mallet off to the side. Authentic cabinetmaker workshop, fine oak endgrain and joinery, shallow depth of field, warm side daylight from a tall atelier window, slightly desaturated warm ochre and olive colors, tactile analogue grain, precise material detail, documentary 50mm photography. No face, no text, no lettering, no logos, no watermark, no collage, no artificial glossy look.",
+    "output_paths": [
+      "craftsman/assets/support-original.png",
+      "craftsman/assets/support.jpg"
+    ]
+  },
+  {
+    "page": "restaurant",
+    "attempt": 1,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: hero editorial photograph for LUMA fictional seasonal Berlin restaurant, wide landscape 3:2. Cinematic intimate view across a softly candlelit restaurant in a historic Berlin building at blue hour. Beautiful dark walnut tables set with off-white linen napkins, small wine glasses and short glowing beeswax candles, cognac leather banquette, dark burgundy walls, one tall arched window with cool dusk light in the background, curved dark wooden chairs. A foreground table on the right is sharp and inviting, background gently blurred. No people. Moody yet luminous warm amber light, sophisticated deep wine red, tobacco, golden cream palette, genuine hospitality editorial photography on 35mm film, rich shadows with excellent material detail. Compose breathing space in left third with darker wall for website overlay typography; room and glowing tables fill the center and right. Original high-quality photograph, no words, no signs, no logos, no lettering, no watermarks, no collage, not glossy CGI.",
+    "output_paths": [
+      "restaurant/assets/hero-original.png",
+      "restaurant/assets/hero.jpg"
+    ]
+  },
+  {
+    "page": "restaurant",
+    "attempt": 2,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: supporting culinary editorial photograph for LUMA seasonal Berlin restaurant, landscape 3:2. A single beautiful rustic ivory ceramic plate containing an elegant seasonal dish: roasted golden pumpkin wedges, creamy white whipped ricotta, dark green sage leaves, toasted hazelnuts, a delicate amber brown butter sauce. Plated naturally with restraint, believable restaurant portion. On a dark walnut table with rumpled natural linen, a small stemmed glass holding amber wine softly out of focus in background and soft candlelight. Shoot close from a 45-degree angle, autumnal intimate warm side lighting, deep burgundy brown and copper palette, outstanding food texture, subtle analogue film grain, professional original culinary editorial photograph, not CGI. No people, no text, no labels, no logos, no watermark, no border, no collage.",
+    "output_paths": [
+      "restaurant/assets/support-original.png",
+      "restaurant/assets/support.jpg"
+    ]
+  }
+]

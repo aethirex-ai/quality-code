@@ -1,0 +1,3 @@
+const form=document.querySelector('[data-testid="estimate-form"]');
+form.addEventListener('submit',event=>{event.preventDefault();if(!form.reportValidity())return;const name=form.elements.name.value.trim();if(!name){form.elements.name.setCustomValidity('Please enter your name.');form.elements.name.reportValidity();return;}form.elements.name.setCustomValidity('');document.querySelector('[data-testid="estimate-status"]').textContent=`Thank you, ${name}. Your ${form.elements.project.value.toLowerCase()} enquiry is complete in this demo. Nothing was sent, and no estimate or follow-up will be issued.`;});
+form.elements.name.addEventListener('input',()=>form.elements.name.setCustomValidity(''));

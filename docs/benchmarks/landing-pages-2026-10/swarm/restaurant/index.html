@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LUMA — a fictional seasonal Berlin restaurant. Explore an autumn menu, intimate evenings and a local reservation demonstration by AethDesign.">
+  <meta name="theme-color" content="#30212a">
+  <title>LUMA — Good food. Long evenings.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="LUMA home">luma<span aria-hidden="true">✳</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#menu">The menu</a>
+      <a href="#story">Our table</a>
+      <a class="nav-reserve" href="#reserve">A seat for you <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="little-star" aria-hidden="true">✳</span> A neighbourhood table in Berlin</p>
+        <h1 id="hero-title">Good food.<br>Long <em>evenings.</em></h1>
+        <p class="hero-description">Seasonal plates, a glass of something good,<br class="desktop-break"> and all the time in the world.</p>
+        <a class="button button-orange" href="#reserve">Come take a seat <span aria-hidden="true">↗</span></a>
+        <div class="hero-footnote"><span>SEASONAL KITCHEN · NATURAL WINE</span><span>BERLIN, PRENZLAUER BERG</span></div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/hero.png" alt="Candlelit oak tables and burgundy banquette beside the blue-hour window of an intimate restaurant" width="1536" height="1024" fetchpriority="high">
+        <figcaption>THE BEST PART OF THE DAY <span aria-hidden="true">↙</span></figcaption>
+      </figure>
+    </section>
+    <div class="welcome-strip"><span>Come hungry.</span><span class="strip-star" aria-hidden="true">✳</span><span>Leave a little later.</span><span class="strip-star" aria-hidden="true">✳</span><span>That's the idea.</span></div>
+    <section class="story section-pad" id="story" aria-labelledby="story-title">
+      <figure class="dish-photo">
+        <img src="assets/supporting.png" alt="Roasted autumn pumpkin with whipped fresh cheese, hazelnuts and crisp sage on a handmade cream plate" width="1536" height="1024" loading="lazy">
+        <figcaption><span>ON THE TABLE THIS AUTUMN</span><span>01 / ROASTED PUMPKIN</span></figcaption>
+      </figure>
+      <div class="story-copy">
+        <p class="eyebrow">A little about us</p>
+        <h2 id="story-title">Simple things.<br><em>Done with feeling.</em></h2>
+        <p>LUMA is our idea of a good evening: a warm room, a generous table, and food that follows the season.</p>
+        <p>Our imagined kitchen takes its cues from the market. Vegetables at their best, thoughtful little plates, and a menu that leaves room for curiosity. Nothing hurried. Nothing overcomplicated.</p>
+        <a class="text-link" href="#menu">See what’s cooking <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">From our kitchen</p><h2 id="menu-title">A taste of <em>autumn.</em></h2></div>
+        <p>Order a few. Share a little.<br>Let the evening find its own rhythm.</p>
+      </div>
+      <div class="menu-columns">
+        <div class="menu-group">
+          <h3>To begin <span>01</span></h3>
+          <dl>
+            <div><dt>Warm sourdough <small>Cultured butter, flaky salt</small></dt><dd>6</dd></div>
+            <div><dt>Beetroot &amp; blackberries <small>Fresh curd, dill, toasted seeds</small></dt><dd>13</dd></div>
+            <div><dt>Roasted autumn pumpkin <small>Whipped cheese, hazelnut, crisp sage</small></dt><dd>14</dd></div>
+          </dl>
+        </div>
+        <div class="menu-group">
+          <h3>Stay a while <span>02</span></h3>
+          <dl>
+            <div><dt>Wild mushroom barley <small>Roasted shallot, aged mountain cheese</small></dt><dd>23</dd></div>
+            <div><dt>Pan-roasted trout <small>Leek, lemon, brown butter</small></dt><dd>27</dd></div>
+            <div><dt>Apple &amp; almond tart <small>Vanilla cream, a little cinnamon</small></dt><dd>9</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="menu-note"><span>Sample seasonal menu · All prices in EUR</span><span>Something in your glass? Ask for our imagined wine list.</span></div>
+    </section>
+    <section class="reservation-section section-pad" id="reserve" aria-labelledby="reserve-title">
+      <div class="visit-copy">
+        <p class="eyebrow">We saved you a place</p>
+        <h2 id="reserve-title">Your evening<br><em>starts here.</em></h2>
+        <p>A dinner for two. A catch-up with friends.<br>There’s always a reason to gather.</p>
+        <div class="visit-details">
+          <div><h3>When the lights are on</h3><dl class="hours"><div><dt>Tuesday — Saturday</dt><dd>17:30 — 23:00</dd></div><div><dt>Sunday</dt><dd>17:00 — 21:00</dd></div><div><dt>Monday</dt><dd>Taking a little rest</dd></div></dl></div>
+          <div><h3>Our imagined neighbourhood</h3><p>Prenzlauer Berg, Berlin<br>A fictional place, with a real love of evenings.</p></div>
+        </div>
+      </div>
+      <div class="reservation-panel">
+        <div class="form-heading"><h3>A table for you</h3><span aria-hidden="true">✳</span></div>
+        <p class="form-intro">Try our reservation experience. This is a local demo, so no actual booking is made.</p>
+        <form data-testid="reservation-form">
+          <div class="field"><label for="reservation-name">Your name</label><input id="reservation-name" name="name" autocomplete="name" required placeholder="Alex Morgan"></div>
+          <div class="field"><label for="reservation-email">Email address</label><input id="reservation-email" name="email" type="email" autocomplete="email" required placeholder="alex@example.com"></div>
+          <div class="form-row"><div class="field"><label for="reservation-date">Date</label><input id="reservation-date" name="date" type="date" required></div><div class="field"><label for="reservation-guests">Guests</label><select id="reservation-guests" name="guests" required><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option></select></div></div>
+          <button class="button button-plum" type="submit">Try a reservation <span aria-hidden="true">↗</span></button>
+          <p class="reservation-status" data-testid="reservation-status" role="status" aria-live="polite">Your details stay in this browser. Nothing is sent.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-top"><p>Good company.<br>Good things on the table.</p><a href="#" class="text-link">Back to the beginning <span aria-hidden="true">↑</span></a></div>
+    <div class="footer-wordmark" aria-hidden="true">luma<span>✳</span></div>
+    <div class="footer-bottom"><span>Fictional portfolio concept by AethDesign</span><span>All menus, hours and business details are demonstration content.</span><a href="../index.html">Explore the portfolio ↗</a></div>
+  </footer>
+</body>
+</html>

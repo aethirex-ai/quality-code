@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FORME — Objects for slower living</title>
+  <meta name="description" content="Discover FORME, a fictional considered-living collection of tactile ceramics, warm lighting and everyday objects. Explore the local demo collection.">
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="announcement">A considered collection. A fictional shop. <a href="#collection">Explore the edit <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="FORME home">FORME<span class="wordmark-dot">•</span></a>
+    <nav aria-label="Main navigation"><a href="#collection">The collection</a><a href="#story">Our approach</a></nav>
+    <button class="bag-toggle" aria-controls="bag-panel" aria-expanded="false">Bag <span class="bag-count" data-testid="bag-count" aria-live="polite">0</span></button>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy"><p class="eyebrow">Everyday, thoughtfully shaped</p><h1 id="hero-heading">Objects for<br>slower <em>living.</em></h1><p class="intro">Quiet forms. Honest textures. Pieces that make the everyday feel a little more considered.</p><a class="text-link" href="#collection">Discover the collection <span aria-hidden="true">↗</span></a><div class="hero-note"><span class="note-line"></span><span>The art of having less,<br>and enjoying it more.</span></div></div>
+      <figure class="hero-image"><img src="assets/hero.png" alt="Sculptural cream ceramic vase and amber lamp in a warm sunlit room" fetchpriority="high"><figcaption><span>THE SLOW LIVING EDIT</span><span>01 / 02</span></figcaption></figure>
+    </section>
+    <div class="principles"><span>Form with feeling</span><span>Materials with character</span><span>Made for everyday rituals</span></div>
+    <section class="collection section-wrap" id="collection" aria-labelledby="collection-heading">
+      <div class="section-heading"><div><p class="eyebrow">The considered edit / 01</p><h2 id="collection-heading">A few good things.</h2></div><p>Not more. Just meaningful.<br>Explore our fictional collection.</p></div>
+      <div class="product-layout">
+        <article class="product"><div class="product-image"><img src="assets/supporting.png" alt="A cream ceramic bowl with cocoa cups, a walnut spoon and folded linen" loading="lazy"><span class="product-tag">THE DAILY RITUAL</span></div><div class="product-info"><div><h3>Soft form bowl</h3><p>Stoneware · Chalk</p></div><span class="price">€48</span></div><button class="add-button" data-testid="add-to-bag" data-product="Soft form bowl" data-price="48">Add to demo bag <span aria-hidden="true">+</span></button></article>
+        <article class="product product-secondary"><div class="product-image lamp-image"><img src="assets/hero.png" alt="Amber globe lamp on a walnut table beside tactile cream ceramics" loading="lazy"><span class="product-tag">A WARMER EVENING</span></div><div class="product-info"><div><h3>Evening orb lamp</h3><p>Glass & walnut · Amber</p></div><span class="price">€185</span></div><button class="add-button" data-product="Evening orb lamp" data-price="185">Add to demo bag <span aria-hidden="true">+</span></button><p class="collection-note">A soft glow. A familiar corner.<br>A reason to stay a little longer.</p></article>
+      </div>
+      <p class="demo-note">Collection and prices are fictional portfolio content. The bag is a local demonstration.</p>
+    </section>
+    <section class="story" id="story" aria-labelledby="story-heading"><div class="story-label"><p class="eyebrow">Our point of view</p><span aria-hidden="true">f.</span></div><div><h2 id="story-heading">A home is a feeling.<br><em>Give it room.</em></h2><p>FORME is a fictional collection built around a simple idea: the things we live with should earn their place. We imagine useful shapes, pleasing textures and quiet details that become part of your day.</p><p>Morning coffee. Light across a table. Your favourite corner. Good design lives in the small moments.</p><a class="text-link" href="#collection">Find your everyday object <span aria-hidden="true">↗</span></a></div></section>
+    <section class="closing"><p class="eyebrow">Less, but lovely.</p><p>Make space for the everyday.</p><a href="#collection">Explore the edit <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer><a class="wordmark" href="#">FORME<span class="wordmark-dot">•</span></a><p>Fictional portfolio concept by AethDesign</p><a href="../index.html">View the portfolio <span aria-hidden="true">↗</span></a></footer>
+  <aside id="bag-panel" class="bag-panel" aria-labelledby="bag-heading" hidden><div class="bag-heading"><h2 id="bag-heading">Your demo bag</h2><button class="bag-close" aria-label="Close bag">×</button></div><p class="bag-description">A little collection, just for this visit.</p><ul id="bag-items"></ul><p id="bag-empty">Your bag is waiting for something lovely.</p><div class="bag-total">Demo total <strong id="bag-total">€0</strong></div><p class="demo-note">This is a local demonstration. There is no checkout, payment or order.</p><button class="clear-bag">Empty demo bag</button></aside>
+  <p class="toast" id="bag-status" role="status"></p>
+</body>
+</html>

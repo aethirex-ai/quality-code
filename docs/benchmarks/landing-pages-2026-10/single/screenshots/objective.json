@@ -1,0 +1,603 @@
+{
+  "condition": "single",
+  "pages": {
+    "shop": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "FORME — Objects for a slower everyday"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Less, butmore felt."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Sunlight falls on a sand ceramic vessel, terracotta bowl and sculptural ivory lamp on a travertine console",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Chalk white ceramic bowl, rust terracotta vase and sand-colored cup arranged on ivory plaster",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: bag increments 0→1→2",
+          "passed": true,
+          "evidence": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "BUTTON",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "FORME — Objects for a slower everyday"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Less, butmore felt."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Sunlight falls on a sand ceramic vessel, terracotta bowl and sculptural ivory lamp on a travertine console",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Chalk white ceramic bowl, rust terracotta vase and sand-colored cup arranged on ivory plaster",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: bag increments 0→1→2",
+          "passed": true,
+          "evidence": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "BUTTON",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "shop-desktop.png",
+        "shop-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/hero.jpg",
+          "alt": "Sunlight falls on a sand ceramic vessel, terracotta bowl and sculptural ivory lamp on a travertine console",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "assets/support.jpg",
+          "alt": "Chalk white ceramic bowl, rust terracotta vase and sand-colored cup arranged on ivory plaster",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    },
+    "craftsman": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "KERN — Joinery with intention, Berlin"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Built aroundthe way you live."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Bespoke oak kitchen with limestone island, olive walls and morning light through tall Berlin apartment windows",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Joiner's hands plane a solid oak board on a workbench covered with curled wood shavings",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "project",
+              "labeled": true
+            },
+            {
+              "name": "message",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "desktop: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thank you, Alex Example. Your a bespoke kitchen enquiry is complete in this demo. Nothing was sent, and no estimate or follow-up will be issued."
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "KERN — Joinery with intention, Berlin"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Built aroundthe way you live."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Bespoke oak kitchen with limestone island, olive walls and morning light through tall Berlin apartment windows",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Joiner's hands plane a solid oak board on a workbench covered with curled wood shavings",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "project",
+              "labeled": true
+            },
+            {
+              "name": "message",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "mobile: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thank you, Alex Example. Your a bespoke kitchen enquiry is complete in this demo. Nothing was sent, and no estimate or follow-up will be issued."
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "craftsman-desktop.png",
+        "craftsman-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/hero.jpg",
+          "alt": "Bespoke oak kitchen with limestone island, olive walls and morning light through tall Berlin apartment windows",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "assets/support.jpg",
+          "alt": "Joiner's hands plane a solid oak board on a workbench covered with curled wood shavings",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    },
+    "restaurant": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "LUMA — Seasonal plates, long evenings, Berlin"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Good food.Long evenings."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Candlelit walnut tables and cognac leather seating in an intimate burgundy Berlin dining room at dusk",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Roasted golden pumpkin with ricotta, sage and hazelnuts on a rustic ceramic plate beside candlelight",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "date",
+              "labeled": true
+            },
+            {
+              "name": "guests",
+              "labeled": true
+            },
+            {
+              "name": "time",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "desktop: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thank you, Alex Example. Demo reservation for 2 guests on 15 June 2027 at 19:00. No table has been booked, no email was sent, and availability has not been checked."
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "LUMA — Seasonal plates, long evenings, Berlin"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Good food.Long evenings."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.jpg",
+              "alt": "Candlelit walnut tables and cognac leather seating in an intimate burgundy Berlin dining room at dusk",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/support.jpg",
+              "alt": "Roasted golden pumpkin with ricotta, sage and hazelnuts on a rustic ceramic plate beside candlelight",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "date",
+              "labeled": true
+            },
+            {
+              "name": "guests",
+              "labeled": true
+            },
+            {
+              "name": "time",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "mobile: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thank you, Alex Example. Demo reservation for 2 guests on 15 June 2027 at 19:00. No table has been booked, no email was sent, and availability has not been checked."
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "restaurant-desktop.png",
+        "restaurant-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/hero.jpg",
+          "alt": "Candlelit walnut tables and cognac leather seating in an intimate burgundy Berlin dining room at dusk",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "assets/support.jpg",
+          "alt": "Roasted golden pumpkin with ricotta, sage and hazelnuts on a rustic ceramic plate beside candlelight",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    }
+  },
+  "method": "frozen browser checks; objective assertions are separate from subjective visual quality",
+  "index_links": [
+    "#main",
+    "index.html",
+    "#work",
+    "shop/index.html",
+    "craftsman/index.html",
+    "restaurant/index.html"
+  ],
+  "summary": {
+    "passed": 58,
+    "total": 58,
+    "failed": []
+  }
+}

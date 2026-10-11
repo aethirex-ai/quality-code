@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "session_counts": {
+    "root": 1,
+    "descendant": 3
+  },
+  "models": {
+    "gpt-6.1-sol": {
+      "input_tokens": 2539893,
+      "cached_input_tokens": 2356096,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 42645,
+      "reasoning_output_tokens": 5852,
+      "total_tokens": 2582538
+    },
+    "gpt-6-luna": {
+      "input_tokens": 361336,
+      "cached_input_tokens": 330496,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2786,
+      "reasoning_output_tokens": 604,
+      "total_tokens": 364122
+    }
+  },
+  "tokens": {
+    "input_tokens": 2901229,
+    "cached_input_tokens": 2686592,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 45431,
+    "reasoning_output_tokens": 6456,
+    "total_tokens": 2946660
+  },
+  "sessions": [
+    {
+      "role": "root",
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 1412480,
+          "cached_input_tokens": 1350528,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 18128,
+          "reasoning_output_tokens": 2309,
+          "total_tokens": 1430608
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 2,
+        "assistant": 7
+      },
+      "token_snapshots": 31,
+      "image_call_sites": 2,
+      "max_observed_request_input": 75299,
+      "flags": []
+    },
+    {
+      "role": "descendant",
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 487027,
+          "cached_input_tokens": 418176,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 10784,
+          "reasoning_output_tokens": 1428,
+          "total_tokens": 497811
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 1,
+        "assistant": 4
+      },
+      "token_snapshots": 15,
+      "image_call_sites": 2,
+      "max_observed_request_input": 43835,
+      "flags": []
+    },
+    {
+      "role": "descendant",
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 640386,
+          "cached_input_tokens": 587392,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 13733,
+          "reasoning_output_tokens": 2115,
+          "total_tokens": 654119
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 1,
+        "assistant": 5
+      },
+      "token_snapshots": 17,
+      "image_call_sites": 2,
+      "max_observed_request_input": 47769,
+      "flags": []
+    },
+    {
+      "role": "descendant",
+      "models": {
+        "gpt-6-luna": {
+          "input_tokens": 361336,
+          "cached_input_tokens": 330496,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2786,
+          "reasoning_output_tokens": 604,
+          "total_tokens": 364122
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 1,
+        "assistant": 1
+      },
+      "token_snapshots": 13,
+      "image_call_sites": 0,
+      "max_observed_request_input": 29958,
+      "flags": []
+    }
+  ],
+  "image_calls": 6,
+  "image_call_sites": 6,
+  "image_count_exact": true,
+  "cli_root_reconciliation": "matched",
+  "spawn_reconciliation": {
+    "successful_spawns": 3,
+    "matched_children": 3,
+    "status": "matched"
+  },
+  "standard_short_estimated_usd": 1.03743556,
+  "flags": [],
+  "tree": [
+    {
+      "agent": "primary",
+      "depth": 0,
+      "parents": []
+    },
+    {
+      "agent": "helper-1",
+      "depth": 1,
+      "parents": [
+        "primary"
+      ]
+    },
+    {
+      "agent": "helper-2",
+      "depth": 1,
+      "parents": [
+        "primary"
+      ]
+    },
+    {
+      "agent": "helper-3",
+      "depth": 2,
+      "parents": [
+        "helper-1"
+      ]
+    }
+  ],
+  "observed_max_depth": 2
+}

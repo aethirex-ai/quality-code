@@ -67,9 +67,15 @@ These are observed toolkit defects and concrete corrections, not claims about de
 
 ## What this demonstrates—and what remains open
 
-The repository demonstrates an implemented workflow, executable checks, preservation behavior, and explicit review requirements. It does not demonstrate measured changes in production defect rates, delivery speed, or customer outcomes. No comparative study or benchmark is claimed.
+The repository demonstrates an implemented workflow, executable checks, preservation behavior, and explicit review requirements. It does not demonstrate measured changes in production defect rates, delivery speed, or customer outcomes. An exploratory three-page delegation pilot now records solver time, coding-session usage, image counts, functional checks and an anonymous visual review; it does not establish production or general efficiency gains.
 
 Agent compliance, project-specific test quality, live providers, Windows shell behavior, and production deployment controls remain outside the toolkit’s guarantees. A useful next measurement would compare escaped defects and review effort across similar changes while controlling for product risk.
+
+## A measured delegation pilot
+
+In one paired fictional-business workload, a bounded swarm finished in **9m 19s**, compared with **15m 52s** for a single agent. Both passed 58/58 identical browser checks. The swarm used more coding tokens and had a higher hypothetical Standard API coding subtotal: **$1.0374 versus $0.7188**, excluding image-generation and other tool charges. One anonymous reviewer rated the single agent higher visually, **4.33/5 versus 4.10/5**. Six native images were generated per subject, without retries.
+
+That is an observed trade-off from one run, not evidence of subscription savings or a general advantage. [Read the protocol, complete accounting, review and limitations](../benchmarks/landing-pages-2026-10/RESULTS.md), or [inspect all six fictional landing pages](benchmarks/landing-pages-2026-10/index.html). Raw provider logs and private paths are excluded.
 
 ## The AethDesign connection
 

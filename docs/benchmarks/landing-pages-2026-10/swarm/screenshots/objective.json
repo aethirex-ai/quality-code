@@ -1,0 +1,616 @@
+{
+  "condition": "swarm",
+  "pages": {
+    "shop": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "FORME — Objects for slower living"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Objects forslower living."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.png",
+              "alt": "Sculptural cream ceramic vase and amber lamp in a warm sunlit room",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/supporting.png",
+              "alt": "A cream ceramic bowl with cocoa cups, a walnut spoon and folded linen",
+              "loaded": true,
+              "width": 1122,
+              "height": 1402
+            },
+            {
+              "src": "assets/hero.png",
+              "alt": "Amber globe lamp on a walnut table beside tactile cream ceramics",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: bag increments 0→1→2",
+          "passed": true,
+          "evidence": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "BUTTON",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "FORME — Objects for slower living"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Objects forslower living."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.png",
+              "alt": "Sculptural cream ceramic vase and amber lamp in a warm sunlit room",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/supporting.png",
+              "alt": "A cream ceramic bowl with cocoa cups, a walnut spoon and folded linen",
+              "loaded": true,
+              "width": 1122,
+              "height": 1402
+            },
+            {
+              "src": "assets/hero.png",
+              "alt": "Amber globe lamp on a walnut table beside tactile cream ceramics",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: bag increments 0→1→2",
+          "passed": true,
+          "evidence": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "BUTTON",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "shop-desktop.png",
+        "shop-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/hero.png",
+          "alt": "Sculptural cream ceramic vase and amber lamp in a warm sunlit room",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "assets/supporting.png",
+          "alt": "A cream ceramic bowl with cocoa cups, a walnut spoon and folded linen",
+          "loaded": true,
+          "width": 1122,
+          "height": 1402
+        },
+        {
+          "src": "assets/hero.png",
+          "alt": "Amber globe lamp on a walnut table beside tactile cream ceramics",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    },
+    "craftsman": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "KERN — Joinery for the way you live"
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Made tobelong."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.png",
+              "alt": "A sunlit kitchen with grain-matched oak cabinetry, a limestone island and warm plaster walls.",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/supporting.png",
+              "alt": "A handmade oak drawer with carefully fitted dovetail joints on a joiner’s workbench beside a wooden plane and curled shavings.",
+              "loaded": true,
+              "width": 1024,
+              "height": 1536
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "project",
+              "labeled": true
+            },
+            {
+              "name": "message",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "desktop: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thank you, Alex Example. Your kitchen estimate enquiry is ready in this local demo. No message was sent and your details are not saved."
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "KERN — Joinery for the way you live"
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Made tobelong."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.png",
+              "alt": "A sunlit kitchen with grain-matched oak cabinetry, a limestone island and warm plaster walls.",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/supporting.png",
+              "alt": "A handmade oak drawer with carefully fitted dovetail joints on a joiner’s workbench beside a wooden plane and curled shavings.",
+              "loaded": true,
+              "width": 1024,
+              "height": 1536
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "project",
+              "labeled": true
+            },
+            {
+              "name": "message",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "mobile: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thank you, Alex Example. Your kitchen estimate enquiry is ready in this local demo. No message was sent and your details are not saved."
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "craftsman-desktop.png",
+        "craftsman-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/hero.png",
+          "alt": "A sunlit kitchen with grain-matched oak cabinetry, a limestone island and warm plaster walls.",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "assets/supporting.png",
+          "alt": "A handmade oak drawer with carefully fitted dovetail joints on a joiner’s workbench beside a wooden plane and curled shavings.",
+          "loaded": true,
+          "width": 1024,
+          "height": 1536
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    },
+    "restaurant": {
+      "checks": [
+        {
+          "name": "desktop: title and description",
+          "passed": true,
+          "evidence": "LUMA — Good food. Long evenings."
+        },
+        {
+          "name": "desktop: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Good food.Long evenings."
+          ]
+        },
+        {
+          "name": "desktop: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 1440
+          }
+        },
+        {
+          "name": "desktop: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.png",
+              "alt": "Candlelit oak tables and burgundy banquette beside the blue-hour window of an intimate restaurant",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/supporting.png",
+              "alt": "Roasted autumn pumpkin with whipped fresh cheese, hazelnuts and crisp sage on a handmade cream plate",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "desktop: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "desktop: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "date",
+              "labeled": true
+            },
+            {
+              "name": "guests",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "desktop: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thanks, Alex Example. Your demo request for 2 guests on Tuesday, 15 June 2027 is ready. This is a local demonstration; no reservation has been made."
+        },
+        {
+          "name": "desktop: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "desktop: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "desktop: no external requests",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: title and description",
+          "passed": true,
+          "evidence": "LUMA — Good food. Long evenings."
+        },
+        {
+          "name": "mobile: one h1 and semantic landmarks",
+          "passed": true,
+          "evidence": [
+            "Good food.Long evenings."
+          ]
+        },
+        {
+          "name": "mobile: no horizontal overflow",
+          "passed": true,
+          "evidence": {
+            "viewport": 375
+          }
+        },
+        {
+          "name": "mobile: local loaded descriptive imagery",
+          "passed": true,
+          "evidence": [
+            {
+              "src": "assets/hero.png",
+              "alt": "Candlelit oak tables and burgundy banquette beside the blue-hour window of an intimate restaurant",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "src": "assets/supporting.png",
+              "alt": "Roasted autumn pumpkin with whipped fresh cheese, hazelnuts and crisp sage on a handmade cream plate",
+              "loaded": true,
+              "width": 1536,
+              "height": 1024
+            }
+          ]
+        },
+        {
+          "name": "mobile: fictional portfolio attribution",
+          "passed": true,
+          "evidence": "Visible attribution text"
+        },
+        {
+          "name": "mobile: labeled form inputs",
+          "passed": true,
+          "evidence": [
+            {
+              "name": "name",
+              "labeled": true
+            },
+            {
+              "name": "email",
+              "labeled": true
+            },
+            {
+              "name": "date",
+              "labeled": true
+            },
+            {
+              "name": "guests",
+              "labeled": true
+            }
+          ]
+        },
+        {
+          "name": "mobile: valid demo form confirmation",
+          "passed": true,
+          "evidence": "Thanks, Alex Example. Your demo request for 2 guests on Tuesday, 15 June 2027 is ready. This is a local demonstration; no reservation has been made."
+        },
+        {
+          "name": "mobile: keyboard focus reaches control",
+          "passed": true,
+          "evidence": {
+            "tag": "A",
+            "outline": "solid"
+          }
+        },
+        {
+          "name": "mobile: no runtime or HTTP errors",
+          "passed": true,
+          "evidence": []
+        },
+        {
+          "name": "mobile: no external requests",
+          "passed": true,
+          "evidence": []
+        }
+      ],
+      "screenshots": [
+        "restaurant-desktop.png",
+        "restaurant-mobile.png"
+      ],
+      "image_assets": [
+        {
+          "src": "assets/hero.png",
+          "alt": "Candlelit oak tables and burgundy banquette beside the blue-hour window of an intimate restaurant",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "assets/supporting.png",
+          "alt": "Roasted autumn pumpkin with whipped fresh cheese, hazelnuts and crisp sage on a handmade cream plate",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        }
+      ],
+      "errors": [],
+      "external_requests": []
+    }
+  },
+  "method": "frozen browser checks; objective assertions are separate from subjective visual quality",
+  "index_links": [
+    "index.html",
+    "#work",
+    "#about",
+    "shop/index.html",
+    "craftsman/index.html",
+    "restaurant/index.html"
+  ],
+  "summary": {
+    "passed": 58,
+    "total": 58,
+    "failed": []
+  }
+}

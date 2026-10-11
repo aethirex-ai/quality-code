@@ -90,7 +90,7 @@ The primary agent owns integration and validation. Implementation helpers cannot
 
 We want the way we build to be inspectable. This repository turns our coding-agent bootstrap into a reusable engineering practice: define the outcome, understand the boundary, test proportionately, and separate implementation from independent review when the risk demands it.
 
-The [case study](docs/CASE_STUDY.md) explains the decisions and limitations. It is a design and implementation case study; it does not claim measured defect reduction, certification, or universal agent compliance.
+The [case study](docs/CASE_STUDY.md) explains the decisions and limitations. A [recorded delegation pilot](benchmarks/landing-pages-2026-10/RESULTS.md) adds measured time, coding-session tokens, image counts and anonymous design review, including the observed cost trade-off. It is a design and implementation case study; it does not claim measured defect reduction, certification, or universal agent compliance.
 
 **AethDesign builds products, platforms, and websites.** Explore our work at [aethdesign.com](https://www.aethdesign.com/?utm_source=github&utm_medium=repository&utm_campaign=quality-code).
 

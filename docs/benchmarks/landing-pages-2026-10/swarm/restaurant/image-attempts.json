@@ -1,0 +1,20 @@
+[
+  {
+    "page": "restaurant",
+    "attempt": 1,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: premium fictional seasonal Berlin restaurant LUMA website hero photograph. Create an original editorial hospitality photograph of an intimate, beautifully understated Berlin neighborhood restaurant at dusk. Scene: burgundy velvet banquette on the left, dark aged oak tables set with small cream ceramic plates, thin stem wine glasses and linen napkins, a single flickering tapered candle on each table, small glowing amber paper wall sconces, plaster walls in deep aubergine, large street-facing window on the right with blue-hour city light and subtle reflections. A few blurred diners deep in background, empty inviting foreground table. Composition: wide landscape architectural interior photograph with strong diagonal depth, cropped modern design magazine feeling, eye-level, tactile materials, credible proportions. Lighting: warm atmospheric pools of candlelight and tungsten balanced with cool evening window, natural fine grain, rich shadows while preserving detail. Palette deep plum, honey amber, cream, warm oak. High-quality realistic commissioned photography, not illustration or CGI. No text, no logos, no signage, no watermark, no artificial gradient.",
+    "output_paths": [
+      "restaurant/assets/hero.png"
+    ]
+  },
+  {
+    "page": "restaurant",
+    "attempt": 2,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: supporting editorial food photograph for premium fictional seasonal Berlin restaurant LUMA. Primary request: a real-feeling commissioned food photograph of one autumn vegetarian dish: golden roasted pumpkin wedges, whipped fresh cheese, toasted hazelnuts, crisp sage leaves and a restrained amber brown-butter sauce, artfully but naturally plated on a large off-white handmade ceramic plate. Scene: deep dark burgundy linen tablecloth, an imperfect warm oak edge, slim stem wine glass partially visible upper right, understated silver fork and crumpled cream linen napkin off to one side. Composition: close-up three-quarter overhead landscape frame, plate generously fills frame, asymmetrical editorial crop with rich negative space on left, shallow natural depth of field, believable delicious food rather than overly styled fine-dining sculpture. Lighting: soft warm side window light, subtle candle atmosphere, rich detail in ceramic glaze and roasted vegetables, restrained grain. Color palette pumpkin orange, deep aubergine, cream, sage, hazelnut brown. High-quality natural magazine photography, photorealistic, no text, no logos, no watermark, no illustration or CGI.",
+    "output_paths": [
+      "restaurant/assets/supporting.png"
+    ]
+  }
+]

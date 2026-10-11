@@ -1,0 +1,20 @@
+[
+  {
+    "page": "shop",
+    "attempt": 1,
+    "success": true,
+    "prompt": "Use case: photorealistic-natural. Asset type: considered-living shop editorial hero photograph, landscape 3:2 composition. Primary request: an extraordinarily refined tactile still life in a sunlit warm minimalist living room: a low pale travertine plinth with one large sculptural chalk-white ceramic loop vase with two thin dried stems, a softly glowing small amber glass orb lamp on a dark walnut side table behind it, a taupe linen armchair cropped at right. Beautiful hard late-afternoon sunlight enters from left and draws long diagonal shadows on a warm plaster wall and sand-colored floor. Muted parchment, chalk, tobacco and amber palette. Sophisticated genuine magazine interior photograph, visible stone pores and hand-glazed ceramic texture, restrained styling, calm negative space top left, objects occupy middle/right. Camera at low eye level, natural optical detail. No people, no lettering, no logos, no watermarks, no collages, no interface.",
+    "output_paths": [
+      "shop/assets/hero.png"
+    ]
+  },
+  {
+    "page": "shop",
+    "attempt": 2,
+    "success": true,
+    "prompt": "Use case: product-mockup. Asset type: shop supporting editorial product photograph, portrait 4:5. Primary request: close still-life photograph of sculptural hand-thrown pottery on a pale sand-colored linen covered table: a matte cream wide bowl, two dark cocoa ceramic cups and a pale off-white rounded vessel arranged with considered imperfect spacing. A walnut spoon rests beside bowl, one folded oatmeal linen cloth. Tight intimate composition with lovely organic silhouettes, soft strong daylight from upper left, subtle shadows, beige plaster backdrop, visible glaze variations and tiny clay imperfections, premium design magazine tabletop photography. Warm neutral palette with charcoal accents, no people, no text, no branding, no watermarks, no collage.",
+    "output_paths": [
+      "shop/assets/supporting.png"
+    ]
+  }
+]
