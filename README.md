@@ -90,6 +90,8 @@ The primary agent owns integration and validation. Implementation helpers cannot
 
 We want the way we build to be inspectable. This repository turns our coding-agent bootstrap into a reusable engineering practice: define the outcome, understand the boundary, test proportionately, and separate implementation from independent review when the risk demands it.
 
+Visually coupled work keeps one persistent design owner with a small useful helper team. Substantial independent coding work may use bounded swarms; mixed apps preserve visual ownership and explicit API/state contracts. Model selection stays native and provider-neutral, and measured corrections remain part of the cost.
+
 The [case study](docs/CASE_STUDY.md) explains the decisions and limitations. A [recorded delegation pilot](benchmarks/landing-pages-2026-10/RESULTS.md) adds measured time, coding-session tokens, image counts and anonymous design review, including the observed cost trade-off. The [new-client follow-up and isolated error-finding comparison](benchmarks/client-pilot-round2-2026-10/RESULTS.md) tests the revised delegation rules on different styles and explicit JavaScript contracts. The [richer two-client pilot](benchmarks/rich-client-pilot-2026-10/RESULTS.md) tests cheaper full-client implementation owners and tracks corrections: faster and lower coding-price equivalent in one pair, with lower visual scores and a remaining persistence defect. These are exploratory observations; they do not claim production defect reduction, certification, subscription savings, or universal agent compliance.
 
 **AethDesign builds products, platforms, and websites.** Explore our work at [aethdesign.com](https://www.aethdesign.com/?utm_source=github&utm_medium=repository&utm_campaign=quality-code).

@@ -258,6 +258,8 @@ class QualityIntegrationTests(unittest.TestCase):
         self.assertIn('required independent verification', text)
         self.assertIn('inherit supported defaults', text)
         self.assertIn('smallest useful team', text)
+        self.assertIn('one persistent design owner', text)
+        self.assertIn('ready independent code-heavy outcomes', text)
         self.assertIn('one shared budget across the entire tree', text)
 
     def test_installer_refreshes_swarm_defaults_and_preserves_user_context(self):
@@ -333,6 +335,9 @@ class QualityIntegrationTests(unittest.TestCase):
                 self.cli(command, str(project))
                 delivered = (project / 'AGENTS.md').read_text()
                 self.assertIn(template.strip(), delivered)
+                self.assertIn('## Visual and code-heavy workload ownership', delivered)
+                self.assertIn('one persistent design owner', delivered)
+                self.assertIn('permissions, state transitions and persistence', delivered)
                 self.assertIn('Preserve local instruction.', delivered)
 
     def test_current_version_refreshes_scoped_policy_without_configuration_loss(self):

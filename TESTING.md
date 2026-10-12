@@ -59,3 +59,7 @@ Behavioral fixes need focused regression tests. Do not retry flaky checks until 
 ## Rich-client pilot instrumentation
 
 The rich-client folder adds offline telemetry, immutable-evidence/accounting, runner cleanup and QA-history regression tests plus bounded preview bridge tests. Browser-only evaluator tests require local Playwright/Chromium, including a module MIME reproduction/control. They run separately from CI's dependency-free offline profile. Published objective results retain the original evaluator failure and symmetric MIME-only correction; targeted diagnoses distinguish cascades and limitations. Measured outputs stay unchanged.
+
+## Visual and code-heavy ownership delivery
+
+Init/adopt/upgrade and compact global routing must deliver the visual/code workload distinction while preserving custom guidance and configuration. Native model selection remains provider-neutral; policy delivery does not demonstrate model compliance or effectiveness. The portal benchmark separately measures backend/frontend contracts, visuals, correction evidence and whole-tree usage.

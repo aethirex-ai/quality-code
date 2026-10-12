@@ -79,6 +79,8 @@ def delegation_block(master: Path) -> str:
             "budget and evidence; bound retrieval/tool output and return paths, checks and unresolved issues. "
             "Do not print media base64 or duplicate investigations/checks unnecessarily. "
             "Distinguish supplied context from model context capacity; use only supported controls. "
+            "Keep visually coupled work with one persistent design owner and a small useful helper team; "
+            "reserve bounded swarms for ready independent code-heavy outcomes, preserving API/state contracts and gates. "
             "Primary owns integration and observable product/visual/defect validation. A builder/director cannot "
             "provide its independent audit verdict. If a required independent gate is unavailable, report it blocked. "
             "Parallelism and cheaper API models do not prove lower subscription usage.\n\n"
