@@ -4,7 +4,7 @@ Last verified: 2026-10-11
 
 ## Product boundary
 
-A Python bootstrap and verification toolkit plus reusable coding-agent instructions. Canonical engine: `scripts/quality_code.py`; installer: `scripts/install.py`; templates: `assets/project/`. Public explanation: `README.md` and `docs/`; `docs/index.html` is the static branded reader edition. `benchmarks/landing-pages-2026-10/` owns a recorded native-agent pilot and offline instrumentation; `docs/benchmarks/` serves its frozen fictional portfolios. `benchmarks/client-pilot-round2-2026-10/` owns the new-client follow-up and isolated seeded-defect review; its published oracle is excluded from timed solver workspaces. No production service or customer data.
+A Python bootstrap and verification toolkit plus reusable coding-agent instructions. Canonical engine: `scripts/quality_code.py`; installer: `scripts/install.py`; templates: `assets/project/`. Public explanation: `README.md` and `docs/`; `docs/index.html` is the static branded reader edition. `benchmarks/landing-pages-2026-10/` owns a recorded native-agent pilot and offline instrumentation; `docs/benchmarks/` serves its frozen fictional portfolios. `benchmarks/client-pilot-round2-2026-10/` owns the new-client follow-up and isolated seeded-defect review; its published oracle is excluded from timed solver workspaces. `benchmarks/rich-client-pilot-2026-10/` owns the richer two-client cheaper-owner pilot, immutable evidence, MIME-corrected evaluator and independently classified corrections; matching `docs/benchmarks/` serves four frozen three-page client experiences. No production service or customer data.
 
 ## Runtime flow
 

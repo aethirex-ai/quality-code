@@ -1,0 +1,33 @@
+import {KEY,products,money,parsePlan,addProduct,setQuantity,removeProduct,countPlan,totalPlan} from './state.mjs';
+let plan={};try{plan=parsePlan(localStorage.getItem(KEY));}catch{}
+const $=selector=>document.querySelector(selector);
+const all=selector=>document.querySelectorAll(selector);
+const announce=message=>{const node=$('[data-testid="collection-status"]');if(node)node.textContent=message;};
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(plan));}catch{announce('This browser cannot save the plan. Your selection remains available on this page.');}updateCount();}
+function updateCount(){all('[data-testid="plan-count"]').forEach(n=>n.textContent=countPlan(plan));}
+updateCount();
+window.addEventListener('storage',e=>{if(e.key===KEY){plan=parsePlan(e.newValue);updateCount();renderPlan();}});
+const drawings={arc:'<path d="M90 38v100m220-100v100" stroke="#777065" stroke-width="1"/><path d="M56 145q144 55 288 0" fill="none" stroke="#986342" stroke-width="12"/><path d="M56 151q144 55 288 0" fill="none" stroke="#e6c39c" stroke-width="3"/>',line:'<rect x="185" y="55" width="30" height="210" rx="2" fill="#363834"/><rect x="208" y="63" width="4" height="194" fill="#e8d4b2"/><path d="M150 290h100" stroke="#9d968a"/>',orbit:'<ellipse cx="200" cy="279" rx="58" ry="9" fill="#ded8cc"/><rect x="173" y="212" width="54" height="61" fill="#383b37"/><circle cx="200" cy="162" r="68" fill="#f9f5e9" stroke="#cfc7b5"/><path d="M158 146q8-29 33-35" fill="none" stroke="#fff" stroke-width="5"/>'};
+function diagram(p){return `<svg viewBox="0 0 400 320" role="img" aria-label="${p.name} ${p.type} technical illustration">${drawings[p.id]}</svg>`;}
+const grid=$('#product-grid');
+if(grid){grid.innerHTML=products.map((p,i)=>`<article class="product-card" data-testid="product-card" data-product-id="${p.id}" data-type="${p.type}"><div class="product-drawing"><span class="plate-no">PLATE 0${i+1}</span>${diagram(p)}<span class="drawing-caption">FORM STUDY / ${p.type.toUpperCase()}</span></div><div class="product-heading"><h2>${p.name}</h2><span>${money(p.price)}</span></div><p class="product-meta">${p.type} · ${p.finish}</p><p>${p.description}</p><div class="card-actions"><button class="text-button" id="open-product-${p.id}" data-testid="open-product" data-product-id="${p.id}">Explore details <span aria-hidden="true">↗</span></button><button class="small-button" data-testid="add-product" data-product-id="${p.id}" aria-label="Add ${p.name} to specification">Add to plan +</button></div></article>`).join('');
+ $('[data-testid="type-filter"]').addEventListener('change',e=>{let count=0;all('[data-testid="product-card"]').forEach(card=>{card.hidden=e.target.value!=='all'&&card.dataset.type!==e.target.value;if(!card.hidden)count++;});$('#filter-status').textContent=`${count} ${count===1?'fixture':'fixtures'}`;});
+}
+let trigger=null;
+const dialog=$('[data-testid="product-dialog"]');
+document.addEventListener('click',e=>{
+ const open=e.target.closest('[data-testid="open-product"]');
+ if(open&&dialog){const p=products.find(p=>p.id===open.dataset.productId);trigger=open;$('#dialog-illustration').innerHTML=diagram(p);$('#dialog-title').textContent=p.name;$('#dialog-description').textContent=p.description;$('#dialog-dimensions').textContent=p.dimensions;$('#dialog-material').textContent=p.material;$('#dialog-price').textContent=money(p.price);$('#dialog-add').dataset.productId=p.id;dialog.showModal();$('[data-testid="close-product"]').focus();}
+ const add=e.target.closest('[data-testid="add-product"], [data-testid="dialog-add-product"]');
+ if(add){const id=add.dataset.productId;const before=plan[id]||0;plan=addProduct(plan,id);persist();const message=before>=10?'Maximum 10 units per fixture.':`${products.find(p=>p.id===id).name} added. ${countPlan(plan)} ${countPlan(plan)===1?'fixture':'fixtures'} in your specification.`;announce(message);if(dialog?.open)$('#dialog-status').textContent=message;}
+ const remove=e.target.closest('[data-testid="remove-product"]');
+ if(remove){plan=removeProduct(plan,remove.dataset.productId);persist();renderPlan();const next=$('[data-testid^="quantity-"]')||$('#empty-plan a');next?.focus();}
+});
+if(dialog){$('[data-testid="close-product"]').addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>{trigger?.focus();$('#dialog-status').textContent='';});dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});}
+function updateTotal(){const total=$('[data-testid="plan-total"]');if(total){const cents=totalPlan(plan);total.dataset.totalCents=cents;total.textContent=money(cents);$('#plan-units').textContent=`${countPlan(plan)} ${countPlan(plan)===1?'fixture':'fixtures'} · illustrative estimate`;}}
+function renderPlan(){const list=$('#plan-items');if(!list)return;list.innerHTML=products.filter(p=>plan[p.id]).map(p=>`<article class="plan-row"><div class="row-drawing">${diagram(p)}</div><div class="row-description"><h2>${p.name}</h2><p>${p.type} · ${p.finish}</p><small>${p.dimensions}</small><button class="text-button remove" data-testid="remove-product" data-product-id="${p.id}" aria-label="Remove ${p.name}">Remove</button></div><div class="quantity-block"><label for="quantity-${p.id}">Quantity</label><input id="quantity-${p.id}" data-testid="quantity-${p.id}" type="number" min="1" max="10" step="1" value="${plan[p.id]}" inputmode="numeric" aria-describedby="quantity-help"><span>${money(p.price)} / unit</span></div></article>`).join('');$('#empty-plan').hidden=countPlan(plan)>0;$('#quantity-help').hidden=countPlan(plan)===0;updateTotal();
+ all('[data-testid^="quantity-"]').forEach(input=>{const id=input.id.slice(9);input.addEventListener('input',()=>{plan=setQuantity(plan,id,input.value);persist();updateTotal();});input.addEventListener('change',()=>{const accepted=String(plan[id]);if(input.value!==accepted){input.value=accepted;$('#quantity-status').textContent='Quantity must be a whole number from 1 to 10. The last valid quantity was retained.';}else $('#quantity-status').textContent='';});});
+}
+renderPlan();
+const form=$('[data-testid="project-form"]');
+form?.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const status=$('[data-testid="project-status"]');if(!countPlan(plan)){status.textContent='Add a fixture from the collection before preparing your specification.';return;}const name=new FormData(form).get('name').trim();status.textContent=`${name}, your specification of ${countPlan(plan)} fixtures (${money(totalPlan(plan))}) is prepared locally. No enquiry was sent. Your plan is saved in this browser.`;});

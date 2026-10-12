@@ -1,0 +1,42 @@
+{
+  "method": "Manual supplement: literal four-item job list, single image call in each map iteration, four successful native returns, delivered-original SHA256 comparisons. General ambiguity flag retained. No repeated loop execution/retries observed in exact root/descendant trace. Native exec yielded; successful returns delivered through its subsequent wait rather than initial exec return.",
+  "verified_attempts": 4,
+  "verified_successes": 4,
+  "verified_failed_attempts": 0,
+  "jobs": [
+    {
+      "client": "lighting",
+      "attempt": 1,
+      "delivered_original": "lighting/assets/installation.png",
+      "sha256": "8952c7487bf8a88990be3f9d67a5b4772613460fbe66e3834d7508fa3815476d",
+      "matching_successful_return_count": 1,
+      "native_job_name": "installation"
+    },
+    {
+      "client": "lighting",
+      "attempt": 2,
+      "delivered_original": "lighting/assets/materials.png",
+      "sha256": "eda558cff0bf7239c9cb7fe2940b536c5ef3633d5a90a43f8c9e00ba0e7e585a",
+      "matching_successful_return_count": 1,
+      "native_job_name": "materials"
+    },
+    {
+      "client": "expedition",
+      "attempt": 1,
+      "delivered_original": "expedition/assets/alpine.png",
+      "sha256": "ba95a89719b635e7eecb0636b89c87577361bcedeaaa8ab6e47db72e1087d70e",
+      "matching_successful_return_count": 1,
+      "native_job_name": "alpine"
+    },
+    {
+      "client": "expedition",
+      "attempt": 2,
+      "delivered_original": "expedition/assets/fjord.png",
+      "sha256": "0bd229683a1741cd99c31bfdbb41a967003af472514950c2440805ad3ae0b80b",
+      "matching_successful_return_count": 1,
+      "native_job_name": "fjord"
+    }
+  ],
+  "automatic_flag_preserved": "image_execution_ambiguous",
+  "backend_tokens_charges": null
+}

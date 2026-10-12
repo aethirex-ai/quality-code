@@ -1,0 +1,22 @@
+{
+  "manifest_present": true,
+  "by_client": {
+    "lighting": {
+      "attempts": 2,
+      "successes": 2,
+      "failures": 0,
+      "missing_outputs": 0
+    },
+    "expedition": {
+      "attempts": 2,
+      "successes": 2,
+      "failures": 0,
+      "missing_outputs": 0
+    }
+  },
+  "native_calls": null,
+  "automatic_count_reconciled": false,
+  "generator_model": null,
+  "generator_tokens": null,
+  "generator_charges": null
+}

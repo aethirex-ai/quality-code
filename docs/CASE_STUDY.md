@@ -89,6 +89,14 @@ The new adaptive portfolio finished 37.6% sooner and received a higher anonymous
 
 [Read the follow-up results and error-finding evidence](../benchmarks/client-pilot-round2-2026-10/RESULTS.md), or [inspect the new fictional portfolio concepts](benchmarks/client-pilot-round2-2026-10/index.html).
 
+## Richer portfolios and correction costs
+
+A third pair built two complete three-page client experiences per subject: AUREL architectural lighting and MERIDIAN expedition editorial. Two native-discovered cheaper owners at high effort handled complete clients while the primary generated imagery and integrated the experience. Adaptive finished in 18m 02s versus 30m 17s, with a 23.9% lower hypothetical coding API equivalent ($0.7785 versus $1.0230), including builder corrections. It processed more tokens, but 77.3% of its output used the cheaper model.
+
+The single-agent designs scored higher anonymously (4.35/5 versus 4.05/5). Each tree had eight independently evidenced correction cause types, including QA mistakes; these are not eight product bugs. Adaptive retained one confirmed saved-trip persistence defect. An evaluator module-MIME error was repaired symmetrically, with original results and unchanged outputs retained. Exact assertion counts include compatibility/timing limitations, not just distinct defects. This is one observed cost/speed/quality trade-off, not subscription savings or universal routing quality.
+
+[Read the complete rich-client results and correction evidence](../benchmarks/rich-client-pilot-2026-10/RESULTS.md), or [explore all four frozen client experiences](benchmarks/rich-client-pilot-2026-10/index.html).
+
 ## The AethDesign connection
 
 Quality Code makes one part of AethDesign’s engineering process public: how we ask coding agents to understand a project, prove a change, and surface uncertainty. Readers can reuse the system, challenge its choices, or bring the same discipline to a project with us.

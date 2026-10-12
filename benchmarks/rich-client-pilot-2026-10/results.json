@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-12",
+  "workload": "one paired two-client six-page rich portfolio workload plus index",
+  "measurement_boundary": "Native solver root and every explicit descendant, including images/preview waiting/corrections/builder checks. Setup, external evaluation, independent audits, publishing, image-generator tokens/charges and other tool charges excluded. API equivalents are hypothetical coding token prices, not native subscription consumption.",
+  "conditions": {
+    "single": {
+      "elapsed_seconds": 1817.0690701007843,
+      "exit_code": 0,
+      "timed_out": false,
+      "tokens": {
+        "input_tokens": 2531741,
+        "cached_input_tokens": 2400384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 52020,
+        "reasoning_output_tokens": 10768,
+        "total_tokens": 2583761
+      },
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 2531741,
+          "cached_input_tokens": 2400384,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 52020,
+          "reasoning_output_tokens": 10768,
+          "total_tokens": 2583761
+        }
+      },
+      "session_counts": {
+        "root": 1
+      },
+      "standard_short_estimated_usd": 1.0229524,
+      "cost_components_usd": {
+        "by_model": {
+          "gpt-6.1-sol": {
+            "uncached_input": "0.262714",
+            "cached_input": "0.2400384",
+            "output_including_reasoning": "0.5202",
+            "total": "1.0229524"
+          }
+        },
+        "total": {
+          "uncached_input": "0.262714",
+          "cached_input": "0.2400384",
+          "output_including_reasoning": "0.5202"
+        }
+      },
+      "coding_telemetry_flags": [
+        "image_execution_ambiguous"
+      ],
+      "max_observed_request_input": 133120,
+      "objective_corrected": {
+        "passed": 141,
+        "total": 142
+      },
+      "visual_totals": {
+        "lighting": 22.5,
+        "expedition": 21
+      },
+      "visual_mean_5": 4.35,
+      "independent_iteration_summary": {
+        "logged_check_records": 51,
+        "failed_check_records": 8,
+        "expected_initial_scaffold_failures": 1,
+        "observed_cause_fix_recheck_cycles": 8,
+        "qa_tooling_causes": 5,
+        "product_cycle_count": {
+          "strict_contract_selector": 1,
+          "including_visual": 2,
+          "including_automation_observed_reachability": 3
+        }
+      },
+      "verified_image_attempts": 4,
+      "verified_image_successes": 4,
+      "verified_image_failed_attempts": 0,
+      "image_tokens_backend_charges": null
+    },
+    "swarm": {
+      "elapsed_seconds": 1081.8112862110138,
+      "exit_code": 0,
+      "timed_out": false,
+      "tokens": {
+        "input_tokens": 9900823,
+        "cached_input_tokens": 9540608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 90075,
+        "reasoning_output_tokens": 26943,
+        "total_tokens": 9990898
+      },
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 2619051,
+          "cached_input_tokens": 2523776,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 20404,
+          "reasoning_output_tokens": 4624,
+          "total_tokens": 2639455
+        },
+        "gpt-6-luna": {
+          "input_tokens": 7281772,
+          "cached_input_tokens": 7016832,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 69671,
+          "reasoning_output_tokens": 22319,
+          "total_tokens": 7351443
+        }
+      },
+      "session_counts": {
+        "root": 1,
+        "descendant": 2
+      },
+      "standard_short_estimated_usd": 0.77846542,
+      "cost_components_usd": {
+        "by_model": {
+          "gpt-6.1-sol": {
+            "uncached_input": "0.19055",
+            "cached_input": "0.2523776",
+            "output_including_reasoning": "0.20404",
+            "total": "0.6469676"
+          },
+          "gpt-6-luna": {
+            "uncached_input": "0.026494",
+            "cached_input": "0.07016832",
+            "output_including_reasoning": "0.0348355",
+            "total": "0.13149782"
+          }
+        },
+        "total": {
+          "uncached_input": "0.217044",
+          "cached_input": "0.32254592",
+          "output_including_reasoning": "0.2388755"
+        }
+      },
+      "coding_telemetry_flags": [
+        "image_execution_ambiguous"
+      ],
+      "max_observed_request_input": 110894,
+      "objective_corrected": {
+        "passed": 130,
+        "total": 142
+      },
+      "visual_totals": {
+        "lighting": 21,
+        "expedition": 19.5
+      },
+      "visual_mean_5": 4.05,
+      "independent_iteration_summary": {
+        "logged_check_records": 36,
+        "failed_check_records": 6,
+        "unexpected_nonzero_check_records": 2,
+        "expected_scaffold_nonzero_records": 1,
+        "product_fix_recheck_cycles": 3,
+        "observed_issue_id_fix_recheck_cycles": 9,
+        "distinct_cause_types_with_confirmed_cycle": 8,
+        "unresolved_external_product_causes": 1
+      },
+      "verified_image_attempts": 4,
+      "verified_image_successes": 4,
+      "verified_image_failed_attempts": 0,
+      "image_tokens_backend_charges": null
+    }
+  },
+  "comparisons": {
+    "elapsed_change_pct": -40.46394250984577,
+    "coding_api_equivalent_change_pct": -23.90013259659004,
+    "input_change_pct": 291.0677672005154,
+    "output_change_pct": 73.15455594002307,
+    "cheaper_output_share_pct": 77.34776575076326,
+    "component_deltas_usd": {
+      "uncached_input": "-0.045670",
+      "cached_input": "0.08250752",
+      "output_including_reasoning": "-0.2813245"
+    }
+  },
+  "routing": {
+    "method": "Exact native root completion reconciled with cumulative counters and explicit descendant lineage. Two actual native spawn requests plus descendant turn contexts independently corroborate model/effort/scoped history. Session identities and raw prompts stay private.",
+    "single": {
+      "root_model": "gpt-6.1-sol",
+      "root_effort": "high",
+      "descendants": 0
+    },
+    "swarm": {
+      "root_model": "gpt-6.1-sol",
+      "root_effort": "high",
+      "topology": "two direct coherent client owners; no nested descendants",
+      "initial_workers": [
+        {
+          "scope": "lighting",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "fork_turns": "none",
+          "brief_characters": 2660
+        },
+        {
+          "scope": "expedition",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "fork_turns": "none",
+          "brief_characters": 2572
+        }
+      ],
+      "model_escalations_observed": 0,
+      "selection_limits": "Supported native catalog and dated API rate evidence establish available choices; they do not establish a perfect match, calibration or subscription saving."
+    }
+  },
+  "evaluation_amendment": "MIME-only server repair applied symmetrically to frozen websites; original and corrected scores retained. Scored query matcher/image-per-page expectation/800ms timeout are not changed; independent diagnosis distinguishes instrument failures and cascades.",
+  "iteration_limits": "Observed lower bounds from self-recorded histories corroborated by traces/screenshots, not exhaustive iteration counts. Agent snapshots, passing reruns, scaffold and expected negatives are not product defects. Some early errors were unrecorded.",
+  "quality_conclusion": "Lower coding-equivalent price and less elapsed time in this pair; single preferred by blind visual reviewer; one confirmed adaptive persistence defect remains, plus single visible clipped artwork label. No general/causal quality, perfect-model-match or subscription-saving claim.",
+  "limitations": [
+    "one pair, fixed order single then adaptive",
+    "shared host/service/cache load uncontrolled; stochastic imagery differs",
+    "alpha native CLI; native runtime context overhead remains",
+    "model/topology/implementation together differ; no isolated policy causal attribution",
+    "one anonymous qualitative screenshot reviewer",
+    "142 assertions sample two widths and contracts; exact failed count is not distinct defect count",
+    "model prices dated evidence; not actual billed native API charges"
+  ]
+}

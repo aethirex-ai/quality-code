@@ -1,0 +1,31 @@
+{
+  "method": "Exact native root completion reconciled with cumulative counters and explicit descendant lineage. Two actual native spawn requests plus descendant turn contexts independently corroborate model/effort/scoped history. Session identities and raw prompts stay private.",
+  "single": {
+    "root_model": "gpt-6.1-sol",
+    "root_effort": "high",
+    "descendants": 0
+  },
+  "swarm": {
+    "root_model": "gpt-6.1-sol",
+    "root_effort": "high",
+    "topology": "two direct coherent client owners; no nested descendants",
+    "initial_workers": [
+      {
+        "scope": "lighting",
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "fork_turns": "none",
+        "brief_characters": 2660
+      },
+      {
+        "scope": "expedition",
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "fork_turns": "none",
+        "brief_characters": 2572
+      }
+    ],
+    "model_escalations_observed": 0,
+    "selection_limits": "Supported native catalog and dated API rate evidence establish available choices; they do not establish a perfect match, calibration or subscription saving."
+  }
+}

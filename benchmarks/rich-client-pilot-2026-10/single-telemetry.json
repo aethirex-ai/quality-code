@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "session_counts": {
+    "root": 1
+  },
+  "models": {
+    "gpt-6.1-sol": {
+      "input_tokens": 2531741,
+      "cached_input_tokens": 2400384,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 52020,
+      "reasoning_output_tokens": 10768,
+      "total_tokens": 2583761
+    }
+  },
+  "tokens": {
+    "input_tokens": 2531741,
+    "cached_input_tokens": 2400384,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 52020,
+    "reasoning_output_tokens": 10768,
+    "total_tokens": 2583761
+  },
+  "sessions": [
+    {
+      "role": "root",
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 2531741,
+          "cached_input_tokens": 2400384,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 52020,
+          "reasoning_output_tokens": 10768,
+          "total_tokens": 2583761
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 2,
+        "assistant": 9
+      },
+      "token_snapshots": 32,
+      "image_call_sites": 1,
+      "max_observed_request_input": 133120,
+      "flags": [
+        "image_execution_ambiguous"
+      ]
+    }
+  ],
+  "image_calls": null,
+  "image_call_sites": 1,
+  "image_count_exact": false,
+  "cli_root_reconciliation": "matched",
+  "spawn_reconciliation": {
+    "successful_spawns": 0,
+    "matched_children": 0,
+    "status": "matched"
+  },
+  "standard_short_estimated_usd": 1.0229524,
+  "flags": [
+    "image_execution_ambiguous"
+  ],
+  "cost_components_usd": {
+    "by_model": {
+      "gpt-6.1-sol": {
+        "uncached_input": "0.262714",
+        "cached_input": "0.2400384",
+        "output_including_reasoning": "0.5202",
+        "total": "1.0229524"
+      }
+    },
+    "total": {
+      "uncached_input": "0.262714",
+      "cached_input": "0.2400384",
+      "output_including_reasoning": "0.5202"
+    }
+  },
+  "iteration_evidence": {
+    "owners": {
+      "lighting": {
+        "check_history_present": true,
+        "issue_history_present": true,
+        "recorded_check_runs": 19,
+        "initial_scaffold_nonzero_exits": 0,
+        "verification_nonzero_exits": 3,
+        "passing_runs": 16,
+        "observed_check_recovery_sequences": [],
+        "distinct_reported_issue_ids": 1,
+        "latest_reported_statuses": {
+          "duplicate-add-selector": "fixed"
+        },
+        "limits": "Reported ids are not independently confirmed distinct software defects; planned failures, tooling, visuals, duplicate causes and unresolved final findings are classified separately."
+      },
+      "expedition": {
+        "check_history_present": true,
+        "issue_history_present": true,
+        "recorded_check_runs": 18,
+        "initial_scaffold_nonzero_exits": 0,
+        "verification_nonzero_exits": 2,
+        "passing_runs": 16,
+        "observed_check_recovery_sequences": [],
+        "distinct_reported_issue_ids": 2,
+        "latest_reported_statuses": {
+          "route-markers": "fixed",
+          "mobile-guide-scroll": "fixed"
+        },
+        "limits": "Reported ids are not independently confirmed distinct software defects; planned failures, tooling, visuals, duplicate causes and unresolved final findings are classified separately."
+      },
+      "integration": {
+        "check_history_present": true,
+        "issue_history_present": true,
+        "recorded_check_runs": 14,
+        "initial_scaffold_nonzero_exits": 1,
+        "verification_nonzero_exits": 2,
+        "passing_runs": 11,
+        "observed_check_recovery_sequences": [],
+        "distinct_reported_issue_ids": 5,
+        "latest_reported_statuses": {
+          "preview-press-field": "fixed",
+          "bounded-preview-excerpt": "fixed",
+          "preview-module-readiness": "fixed",
+          "quality-cli-command": "fixed",
+          "evidence-json-decode": "fixed"
+        },
+        "limits": "Reported ids are not independently confirmed distinct software defects; planned failures, tooling, visuals, duplicate causes and unresolved final findings are classified separately."
+      }
+    },
+    "preview_history_present": true,
+    "recorded_previews": 37,
+    "classification_pending_independent_review": true
+  }
+}

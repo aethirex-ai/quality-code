@@ -1,0 +1,38 @@
+{
+  "query": {
+    "before": {
+      "url": "http://127.0.0.1:53870/expedition/builder.html?trip=ridge",
+      "selected": "fjord",
+      "total": "420000",
+      "storage": "{\"id\":\"fjord\",\"travelers\":2,\"guide\":true}"
+    },
+    "after": {
+      "url": "http://127.0.0.1:53870/expedition/builder.html?trip=ridge",
+      "selected": "ridge",
+      "total": "540000",
+      "storage": "{\"id\":\"ridge\",\"travelers\":2,\"guide\":true}"
+    },
+    "submit": {
+      "elapsed_ms": 365,
+      "status": "A local demo note for Local Demo is ready: RIDGE, 2 travelers, €5,400. No information was sent."
+    }
+  },
+  "direct": {
+    "before": {
+      "url": "http://127.0.0.1:53870/expedition/builder.html",
+      "selected": "fjord",
+      "total": "420000",
+      "storage": "{\"id\":\"fjord\",\"travelers\":2,\"guide\":true}"
+    },
+    "after": {
+      "url": "http://127.0.0.1:53870/expedition/builder.html",
+      "selected": "fjord",
+      "total": "420000",
+      "storage": "{\"id\":\"fjord\",\"travelers\":2,\"guide\":true}"
+    },
+    "submit": {
+      "elapsed_ms": 367,
+      "status": "A local demo note for Local Demo is ready: FJORD, 2 travelers, €4,200. No information was sent."
+    }
+  }
+}

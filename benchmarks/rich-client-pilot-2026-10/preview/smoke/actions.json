@@ -1,0 +1,1 @@
+[{"op": "fill", "selector": "#name", "value": "Alex"}, {"op": "select", "selector": "#kind", "value": "b"}, {"op": "check", "selector": "#yes"}, {"op": "click", "selector": "#show"}, {"op": "press", "selector": "#show", "value": "Tab"}, {"op": "scroll", "selector": "footer"}]

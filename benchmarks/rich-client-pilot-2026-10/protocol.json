@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-12",
+  "kind": "one paired rich two-client six-page workload; single then cheaper implementation ownership",
+  "order": [
+    "single",
+    "swarm"
+  ],
+  "root_model": "gpt-6.1-sol",
+  "root_reasoning_effort": "high",
+  "root_selection_evidence": "same supported native root as prior experiments; current advertised coding capability/catalog; not a hardcoded standard rule",
+  "shared_budget_seconds": 2100,
+  "swarm_active_helpers_cap": 2,
+  "fixture_sha256": {
+    ".quality/LICENSE": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+    ".quality/audit-result.schema.json": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+    ".quality/quality.py": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+    ".quality/quality.toml": "541a919ca0c91cb394be2d0cdb3c92c9f6d6d12f7585c5719017612a23c27968",
+    "AGENTS.md": "861c149960a995af9f95730d386c1a7fbc574f6aa0b32db292ea7fed8163db7c",
+    "BRIEF.md": "1353cd280686cf78f5a90568b166bec54ff69ad85a5cb5cb3f260d5309bb364d",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "MAP.md": "fbb860a43f75efce7533a0c59a4f0f454abfa41fa1a78f13702848fb02870ed4",
+    "MODEL_COSTS.json": "a09a11b14284901ec4eebd6a2997910ec50064c9ebe551a66edb513a12606e98",
+    "RUNTIME.md": "210c0d6e0e28e7e36daa8985d980980e7ff83dddd1fbbc960df55db5fd146310",
+    "TESTING.md": "ce35b80892906a9dfbce7dee38bfe46fdd23401d126a4cb3c4151ef06ea176ff",
+    "preview_client.py": "0932bb63a8515b2be0647d94ee66a03dec32f635d375c5b74f928741b5fada3e",
+    "qa_check.py": "04726b4b5e599eb3c5293e0ac1b9a90ecb03fb6dabda215c4342122ce7d0d138",
+    "quality": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4",
+    "verify_site.py": "cc72d776be20bac9919e6cfb83f588c787b7f5e8e08af3ef95f4cbc095134b72"
+  },
+  "runner_sha256": "8afacec76cc6c99fd73d598b853d2b74ec78e1e0a199e7610ef3b4123a6fc3ed",
+  "evaluator_sha256": "63a5c022ceb7abc4a0f0f19807e8ff320d086229acaa30097fdb113584eaf996",
+  "preview_sha256": {
+    "broker.py": "93a6cd158c5d288fd210bd73ef36df465fe1e9adc2f3bb9a2fb17b99035b7ddf",
+    "client.py": "0932bb63a8515b2be0647d94ee66a03dec32f635d375c5b74f928741b5fada3e",
+    "render.mjs": "2ed9b911215dd2b93eb44fcdfe3b3f26c77d212cea939f37b86b76862e00cf8c",
+    "tests.py": "1f57be78077f2979de140615024980cb1273567aae665827da5cb7559df78402",
+    "README.md": "be2b4dcd7ecf82db0584c6ee092b6bdcbadda06090aa8e6dead5d5cce89561be"
+  },
+  "quality_code_revision": "b97fb9c99fcd121e9c00426ad930d13ff90be29b",
+  "image_successes_per_condition": 4,
+  "image_attempt_ceiling_per_client": 3,
+  "iteration_definition": "observed distinct issue followed by correction and targeted recheck; routine tool/model calls or initial construction are not fix cycles",
+  "metrics": [
+    "wall time",
+    "all-tree input/cached/output/reasoning by model and owner",
+    "uncached/cached/output API-equivalent cost components",
+    "expensive output share",
+    "routing/escalations",
+    "failed checks versus initial scaffold failures",
+    "check reruns",
+    "distinct evidenced issues/fix cycles/unresolved final errors",
+    "preview failures/visual refinements",
+    "native image attempts/successes/retries",
+    "frozen142 functional checks",
+    "anonymous multi-page visual review"
+  ],
+  "measurement_boundary": "native solver root and explicit descendants, tool/image inspection/retries/preview waiting/validation included; setup and external grading/audit/publication excluded; imagegenerator/backend/billing/subscription unmeasured",
+  "limitations": [
+    "one pair, different stochastic imagery and implementation",
+    "native runtime context fixed overhead remains",
+    "primary+cheap versus solo changes architecture and model routing together",
+    "no perfect model-fit/generalquality/subscription savings claim",
+    "preview broker resource/serialization costs count as solver elapsed waiting, not additional modeltokens"
+  ],
+  "cleanup_reserve_seconds": 4,
+  "process_budget_enforcement": "active root wait reserves4seconds inside sharedbudget for graceful2second group termination and bounded leader reaping; surviving same-group descendants killed even if root exits",
+  "frozen_assertion_count": 142
+}

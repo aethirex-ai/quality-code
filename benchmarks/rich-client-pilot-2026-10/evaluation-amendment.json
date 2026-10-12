@@ -1,0 +1,10 @@
+{
+  "kind": "post-run evaluator hosting repair",
+  "original_sha256": "63a5c022ceb7abc4a0f0f19807e8ff320d086229acaa30097fdb113584eaf996",
+  "corrected_sha256": "f1c7f8cc2ed7168b0541bedc44c640d89aaa0c740e6a56d0e1f29c135572a853",
+  "only_change": "Serve .mjs as text/javascript instead of application/octet-stream",
+  "reason": "Original server rejected native ECMAScript module files, causing control missing selectors and runtime errors; broker supported these files during timed work",
+  "both_frozen_outputs_unchanged": true,
+  "original_results_retained": true,
+  "other_evaluator_contracts_and_timeout_unchanged": true
+}

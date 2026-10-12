@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "session_counts": {
+    "root": 1,
+    "descendant": 2
+  },
+  "models": {
+    "gpt-6.1-sol": {
+      "input_tokens": 2619051,
+      "cached_input_tokens": 2523776,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 20404,
+      "reasoning_output_tokens": 4624,
+      "total_tokens": 2639455
+    },
+    "gpt-6-luna": {
+      "input_tokens": 7281772,
+      "cached_input_tokens": 7016832,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 69671,
+      "reasoning_output_tokens": 22319,
+      "total_tokens": 7351443
+    }
+  },
+  "tokens": {
+    "input_tokens": 9900823,
+    "cached_input_tokens": 9540608,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 90075,
+    "reasoning_output_tokens": 26943,
+    "total_tokens": 9990898
+  },
+  "sessions": [
+    {
+      "role": "root",
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 2619051,
+          "cached_input_tokens": 2523776,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 20404,
+          "reasoning_output_tokens": 4624,
+          "total_tokens": 2639455
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 2,
+        "assistant": 8
+      },
+      "token_snapshots": 39,
+      "image_call_sites": 1,
+      "max_observed_request_input": 110894,
+      "flags": [
+        "image_execution_ambiguous"
+      ]
+    },
+    {
+      "role": "descendant",
+      "models": {
+        "gpt-6-luna": {
+          "input_tokens": 3777449,
+          "cached_input_tokens": 3634304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 38960,
+          "reasoning_output_tokens": 12706,
+          "total_tokens": 3816409
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 1,
+        "assistant": 12
+      },
+      "token_snapshots": 55,
+      "image_call_sites": 0,
+      "max_observed_request_input": 109306,
+      "flags": []
+    },
+    {
+      "role": "descendant",
+      "models": {
+        "gpt-6-luna": {
+          "input_tokens": 3504323,
+          "cached_input_tokens": 3382528,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 30711,
+          "reasoning_output_tokens": 9613,
+          "total_tokens": 3535034
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 1,
+        "assistant": 11
+      },
+      "token_snapshots": 62,
+      "image_call_sites": 0,
+      "max_observed_request_input": 86452,
+      "flags": []
+    }
+  ],
+  "image_calls": null,
+  "image_call_sites": 1,
+  "image_count_exact": false,
+  "cli_root_reconciliation": "matched",
+  "spawn_reconciliation": {
+    "successful_spawns": 2,
+    "matched_children": 2,
+    "status": "matched"
+  },
+  "standard_short_estimated_usd": 0.77846542,
+  "flags": [
+    "image_execution_ambiguous"
+  ],
+  "cost_components_usd": {
+    "by_model": {
+      "gpt-6.1-sol": {
+        "uncached_input": "0.19055",
+        "cached_input": "0.2523776",
+        "output_including_reasoning": "0.20404",
+        "total": "0.6469676"
+      },
+      "gpt-6-luna": {
+        "uncached_input": "0.026494",
+        "cached_input": "0.07016832",
+        "output_including_reasoning": "0.0348355",
+        "total": "0.13149782"
+      }
+    },
+    "total": {
+      "uncached_input": "0.217044",
+      "cached_input": "0.32254592",
+      "output_including_reasoning": "0.2388755"
+    }
+  },
+  "iteration_evidence": {
+    "owners": {
+      "lighting": {
+        "check_history_present": true,
+        "issue_history_present": true,
+        "recorded_check_runs": 8,
+        "initial_scaffold_nonzero_exits": 0,
+        "verification_nonzero_exits": 0,
+        "passing_runs": 8,
+        "observed_check_recovery_sequences": [],
+        "distinct_reported_issue_ids": 4,
+        "latest_reported_statuses": {
+          "qa-preview-action-fields": "fixed",
+          "qa-preview-ambiguous-selector": "fixed",
+          "qa-wrapper-wrong-interpreter": "fixed",
+          "aurel-fixture-silhouette-mismatch": "fixed"
+        },
+        "limits": "Reported ids are not independently confirmed distinct software defects; planned failures, tooling, visuals, duplicate causes and unresolved final findings are classified separately."
+      },
+      "expedition": {
+        "check_history_present": true,
+        "issue_history_present": true,
+        "recorded_check_runs": 7,
+        "initial_scaffold_nonzero_exits": 0,
+        "verification_nonzero_exits": 1,
+        "passing_runs": 6,
+        "observed_check_recovery_sequences": [],
+        "distinct_reported_issue_ids": 5,
+        "latest_reported_statuses": {
+          "expedition-mobile-route-overflow": "fixed",
+          "expedition-home-card-dead-actions": "fixed",
+          "expedition-prototype-storage-id": "fixed",
+          "expedition-command-path": "fixed",
+          "expedition-preview-selector-ambiguity": "fixed"
+        },
+        "limits": "Reported ids are not independently confirmed distinct software defects; planned failures, tooling, visuals, duplicate causes and unresolved final findings are classified separately."
+      },
+      "integration": {
+        "check_history_present": true,
+        "issue_history_present": true,
+        "recorded_check_runs": 21,
+        "initial_scaffold_nonzero_exits": 1,
+        "verification_nonzero_exits": 4,
+        "passing_runs": 16,
+        "observed_check_recovery_sequences": [],
+        "distinct_reported_issue_ids": 2,
+        "latest_reported_statuses": {
+          "integration-preview-action-fields": "fixed",
+          "qa-launch-error-recording": "fixed"
+        },
+        "limits": "Reported ids are not independently confirmed distinct software defects; planned failures, tooling, visuals, duplicate causes and unresolved final findings are classified separately."
+      }
+    },
+    "preview_history_present": true,
+    "recorded_previews": 47,
+    "classification_pending_independent_review": true
+  }
+}

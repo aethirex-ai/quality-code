@@ -1,0 +1,325 @@
+{
+  "scope": "Rendered static reader, gallery and14 immutable portfolio routes at375/1440. Source unchanged; state/persistence quality measured separately. Module MIME served correctly.",
+  "checks": [
+    {
+      "page": "index.html",
+      "width": 375,
+      "status": 200,
+      "title": "Quality Code — AethDesign Case Study",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Quality Code — AethDesign Case Study",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/index.html",
+      "width": 375,
+      "status": 200,
+      "title": "Two worlds, fully explored — AethDesign / Quality Code",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Two worlds, fully explored — AethDesign / Quality Code",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/index.html",
+      "width": 375,
+      "status": 200,
+      "title": "Selected worlds — AethDesign",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Selected worlds — AethDesign",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/lighting/index.html",
+      "width": 375,
+      "status": 200,
+      "title": "Light as architecture — AUREL",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/lighting/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Light as architecture — AUREL",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/lighting/collection.html",
+      "width": 375,
+      "status": 200,
+      "title": "The collection — AUREL",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/lighting/collection.html",
+      "width": 1440,
+      "status": 200,
+      "title": "The collection — AUREL",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/lighting/planner.html",
+      "width": 375,
+      "status": 200,
+      "title": "Your specification — AUREL",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/lighting/planner.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Your specification — AUREL",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/expedition/index.html",
+      "width": 375,
+      "status": 200,
+      "title": "Take the long way — MERIDIAN",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/expedition/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Take the long way — MERIDIAN",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/expedition/journeys.html",
+      "width": 375,
+      "status": 200,
+      "title": "The journeys — MERIDIAN",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/expedition/journeys.html",
+      "width": 1440,
+      "status": 200,
+      "title": "The journeys — MERIDIAN",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/expedition/builder.html",
+      "width": 375,
+      "status": 200,
+      "title": "Shape your journey — MERIDIAN",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/single/expedition/builder.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Shape your journey — MERIDIAN",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/index.html",
+      "width": 375,
+      "status": 200,
+      "title": "AethDesign — Independent worlds, considered experiences",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "AethDesign — Independent worlds, considered experiences",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/lighting/index.html",
+      "width": 375,
+      "status": 200,
+      "title": "AUREL — Light, held in form",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/lighting/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "AUREL — Light, held in form",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/lighting/collection.html",
+      "width": 375,
+      "status": 200,
+      "title": "The collection — AUREL",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/lighting/collection.html",
+      "width": 1440,
+      "status": 200,
+      "title": "The collection — AUREL",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/lighting/planner.html",
+      "width": 375,
+      "status": 200,
+      "title": "Specification planner — AUREL",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/lighting/planner.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Specification planner — AUREL",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/expedition/index.html",
+      "width": 375,
+      "status": 200,
+      "title": "MERIDIAN — Journeys with room to notice",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/expedition/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "MERIDIAN — Journeys with room to notice",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/expedition/journeys.html",
+      "width": 375,
+      "status": 200,
+      "title": "Journeys — MERIDIAN Field Notes",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/expedition/journeys.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Journeys — MERIDIAN Field Notes",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/expedition/builder.html",
+      "width": 375,
+      "status": 200,
+      "title": "Build a trip — MERIDIAN Field Notes",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    },
+    {
+      "page": "benchmarks/rich-client-pilot-2026-10/swarm/expedition/builder.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Build a trip — MERIDIAN Field Notes",
+      "overflow": false,
+      "unloadedImages": [],
+      "h1": 1,
+      "runtimeErrors": []
+    }
+  ]
+}

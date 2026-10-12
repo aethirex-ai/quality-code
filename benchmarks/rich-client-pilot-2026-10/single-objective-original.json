@@ -1,0 +1,782 @@
+{
+  "version": 1,
+  "passed": 97,
+  "total": 142,
+  "results": [
+    {
+      "name": "lighting/index.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: loaded local images with descriptive alt",
+      "passed": false
+    },
+    {
+      "name": "expedition/journeys.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: loaded local images with descriptive alt",
+      "passed": false
+    },
+    {
+      "name": "expedition/journeys.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting: functional context",
+      "passed": true
+    },
+    {
+      "name": "lighting: filter all arc,line,orbit",
+      "passed": false
+    },
+    {
+      "name": "lighting: filter pendant arc",
+      "passed": false
+    },
+    {
+      "name": "lighting: filter wall line",
+      "passed": false
+    },
+    {
+      "name": "lighting: filter table orbit",
+      "passed": false
+    },
+    {
+      "name": "lighting: filter all arc,line,orbit",
+      "passed": false
+    },
+    {
+      "name": "lighting: arc dialog Escape and focus",
+      "passed": false
+    },
+    {
+      "name": "lighting: line dialog Escape and focus",
+      "passed": false
+    },
+    {
+      "name": "lighting: orbit dialog Escape and focus",
+      "passed": false
+    },
+    {
+      "name": "lighting: arc close button and focus",
+      "passed": false
+    },
+    {
+      "name": "lighting: line close button and focus",
+      "passed": false
+    },
+    {
+      "name": "lighting: orbit close button and focus",
+      "passed": false
+    },
+    {
+      "name": "lighting: add ARC twice count and total",
+      "passed": false
+    },
+    {
+      "name": "lighting: quantity 3 integer total",
+      "passed": false
+    },
+    {
+      "name": "lighting: add LINE cross page total and count",
+      "passed": false
+    },
+    {
+      "name": "lighting: remove LINE exact total",
+      "passed": false
+    },
+    {
+      "name": "lighting: persistence and named storage",
+      "passed": false
+    },
+    {
+      "name": "lighting: invalid ARC quantity 0",
+      "passed": false
+    },
+    {
+      "name": "lighting: invalid ARC quantity 11",
+      "passed": false
+    },
+    {
+      "name": "lighting: invalid ARC quantity 1.5",
+      "passed": false
+    },
+    {
+      "name": "lighting: invalid ARC quantity empty",
+      "passed": false
+    },
+    {
+      "name": "lighting: valid local form confirmation",
+      "passed": false
+    },
+    {
+      "name": "lighting: corrupt state syntax",
+      "passed": false
+    },
+    {
+      "name": "lighting: corrupt state entries",
+      "passed": false
+    },
+    {
+      "name": "expedition: functional context",
+      "passed": true
+    },
+    {
+      "name": "expedition: filter all ridge,fjord,desert",
+      "passed": false
+    },
+    {
+      "name": "expedition: filter alpine ridge",
+      "passed": false
+    },
+    {
+      "name": "expedition: filter coastal fjord",
+      "passed": false
+    },
+    {
+      "name": "expedition: filter desert desert",
+      "passed": false
+    },
+    {
+      "name": "expedition: filter all ridge,fjord,desert",
+      "passed": false
+    },
+    {
+      "name": "expedition: select RIDGE navigates builder",
+      "passed": false
+    },
+    {
+      "name": "expedition: RIDGE 2 travelers integer estimate",
+      "passed": false
+    },
+    {
+      "name": "expedition: guide flat cost",
+      "passed": false
+    },
+    {
+      "name": "expedition: three accessible RIDGE itinerary sections",
+      "passed": false
+    },
+    {
+      "name": "expedition: FJORD switch exact estimate and narrative",
+      "passed": false
+    },
+    {
+      "name": "expedition: visible FJORD summary",
+      "passed": false
+    },
+    {
+      "name": "expedition: persistence and named storage",
+      "passed": false
+    },
+    {
+      "name": "expedition: invalid travelers 0",
+      "passed": false
+    },
+    {
+      "name": "expedition: invalid travelers 7",
+      "passed": false
+    },
+    {
+      "name": "expedition: invalid travelers 1.5",
+      "passed": false
+    },
+    {
+      "name": "expedition: invalid travelers empty",
+      "passed": false
+    },
+    {
+      "name": "expedition: valid local form confirmation",
+      "passed": false
+    },
+    {
+      "name": "expedition: corrupt state syntax",
+      "passed": false
+    },
+    {
+      "name": "expedition: corrupt state entries",
+      "passed": false
+    },
+    {
+      "name": "all pages: no external HTTP resources",
+      "passed": true
+    },
+    {
+      "name": "all pages: no browser runtime or console errors",
+      "passed": false
+    }
+  ],
+  "errors": [
+    {
+      "name": "expedition/journeys.html@375: loaded local images with descriptive alt",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "expedition/journeys.html@1440: loaded local images with descriptive alt",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "lighting: filter all arc,line,orbit",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "lighting: filter pendant arc",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "lighting: filter wall line",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "lighting: filter table orbit",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "lighting: filter all arc,line,orbit",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "lighting: arc dialog Escape and focus",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\"open-product\"][data-product-id=\"arc\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: line dialog Escape and focus",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\"open-product\"][data-product-id=\"line\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: orbit dialog Escape and focus",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\"open-product\"][data-product-id=\"orbit\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: arc close button and focus",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\"open-product\"][data-product-id=\"arc\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: line close button and focus",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\"open-product\"][data-product-id=\"line\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: orbit close button and focus",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\"open-product\"][data-product-id=\"orbit\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: add ARC twice count and total",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\"add-product\"][data-product-id=\"arc\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: quantity 3 integer total",
+      "error": "locator.fill: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"quantity-arc\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: add LINE cross page total and count",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\"add-product\"][data-product-id=\"line\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: remove LINE exact total",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\"remove-product\"][data-product-id=\"line\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: persistence and named storage",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "lighting: invalid ARC quantity 0",
+      "error": "locator.inputValue: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"quantity-arc\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: invalid ARC quantity 11",
+      "error": "locator.inputValue: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"quantity-arc\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: invalid ARC quantity 1.5",
+      "error": "locator.inputValue: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"quantity-arc\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: invalid ARC quantity empty",
+      "error": "locator.inputValue: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"quantity-arc\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: valid local form confirmation",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "lighting: corrupt state syntax",
+      "error": "locator.getAttribute: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"plan-total\"]')\u001b[22m\n"
+    },
+    {
+      "name": "lighting: corrupt state entries",
+      "error": "locator.getAttribute: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"plan-total\"]')\u001b[22m\n"
+    },
+    {
+      "name": "expedition: filter all ridge,fjord,desert",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "expedition: filter alpine ridge",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "expedition: filter coastal fjord",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "expedition: filter desert desert",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "expedition: filter all ridge,fjord,desert",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "expedition: select RIDGE navigates builder",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[data-testid=\"select-journey\"][data-journey-id=\"ridge\"]')\u001b[22m\n"
+    },
+    {
+      "name": "expedition: RIDGE 2 travelers integer estimate",
+      "error": "locator.fill: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"travelers\"]')\u001b[22m\n"
+    },
+    {
+      "name": "expedition: guide flat cost",
+      "error": "locator.check: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"add-guide\"]')\u001b[22m\n"
+    },
+    {
+      "name": "expedition: three accessible RIDGE itinerary sections",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "expedition: FJORD switch exact estimate and narrative",
+      "error": "locator.selectOption: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"journey-select\"]')\u001b[22m\n"
+    },
+    {
+      "name": "expedition: visible FJORD summary",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "expedition: persistence and named storage",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "expedition: invalid travelers 0",
+      "error": "locator.inputValue: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"travelers\"]')\u001b[22m\n"
+    },
+    {
+      "name": "expedition: invalid travelers 7",
+      "error": "locator.inputValue: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"travelers\"]')\u001b[22m\n"
+    },
+    {
+      "name": "expedition: invalid travelers 1.5",
+      "error": "locator.inputValue: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"travelers\"]')\u001b[22m\n"
+    },
+    {
+      "name": "expedition: invalid travelers empty",
+      "error": "locator.inputValue: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"travelers\"]')\u001b[22m\n"
+    },
+    {
+      "name": "expedition: valid local form confirmation",
+      "error": "Assertion failed"
+    },
+    {
+      "name": "expedition: corrupt state syntax",
+      "error": "locator.inputValue: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"travelers\"]')\u001b[22m\n"
+    },
+    {
+      "name": "expedition: corrupt state entries",
+      "error": "locator.inputValue: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"travelers\"]')\u001b[22m\n"
+    },
+    {
+      "name": "all pages: no browser runtime or console errors",
+      "error": "Assertion failed"
+    }
+  ],
+  "externalRequests": [],
+  "runtimeErrors": [
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec.",
+    "Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of \"application/octet-stream\". Strict MIME type checking is enforced for module scripts per HTML spec."
+  ],
+  "fatal": null
+}

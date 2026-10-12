@@ -1,0 +1,7 @@
+{
+  "fixture/RUNTIME.md": {
+    "original_sha256": "210c0d6e0e28e7e36daa8985d980980e7ff83dddd1fbbc960df55db5fd146310",
+    "published_sha256": "7743aeac529c8db4d6fba66a798476b7b5413c109d4f3fe4d0473d5d952daf5d",
+    "transformation": "host runtime/skill paths normalized; configure local environment for replay"
+  }
+}

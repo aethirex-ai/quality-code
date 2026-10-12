@@ -1,0 +1,584 @@
+{
+  "version": 1,
+  "passed": 141,
+  "total": 142,
+  "results": [
+    {
+      "name": "lighting/index.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/index.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/collection.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "lighting/planner.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/index.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/journeys.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@375: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: load and screenshot",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: metadata",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: one h1 and semantic landmarks",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: loaded local images with descriptive alt",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: visible attribution",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "expedition/builder.html@1440: internal client navigation",
+      "passed": true
+    },
+    {
+      "name": "lighting: functional context",
+      "passed": true
+    },
+    {
+      "name": "lighting: filter all arc,line,orbit",
+      "passed": true
+    },
+    {
+      "name": "lighting: filter pendant arc",
+      "passed": true
+    },
+    {
+      "name": "lighting: filter wall line",
+      "passed": true
+    },
+    {
+      "name": "lighting: filter table orbit",
+      "passed": true
+    },
+    {
+      "name": "lighting: filter all arc,line,orbit",
+      "passed": true
+    },
+    {
+      "name": "lighting: arc dialog Escape and focus",
+      "passed": true
+    },
+    {
+      "name": "lighting: line dialog Escape and focus",
+      "passed": true
+    },
+    {
+      "name": "lighting: orbit dialog Escape and focus",
+      "passed": true
+    },
+    {
+      "name": "lighting: arc close button and focus",
+      "passed": true
+    },
+    {
+      "name": "lighting: line close button and focus",
+      "passed": true
+    },
+    {
+      "name": "lighting: orbit close button and focus",
+      "passed": true
+    },
+    {
+      "name": "lighting: add ARC twice count and total",
+      "passed": true
+    },
+    {
+      "name": "lighting: quantity 3 integer total",
+      "passed": true
+    },
+    {
+      "name": "lighting: add LINE cross page total and count",
+      "passed": true
+    },
+    {
+      "name": "lighting: remove LINE exact total",
+      "passed": true
+    },
+    {
+      "name": "lighting: persistence and named storage",
+      "passed": true
+    },
+    {
+      "name": "lighting: invalid ARC quantity 0",
+      "passed": true
+    },
+    {
+      "name": "lighting: invalid ARC quantity 11",
+      "passed": true
+    },
+    {
+      "name": "lighting: invalid ARC quantity 1.5",
+      "passed": true
+    },
+    {
+      "name": "lighting: invalid ARC quantity empty",
+      "passed": true
+    },
+    {
+      "name": "lighting: valid local form confirmation",
+      "passed": false
+    },
+    {
+      "name": "lighting: corrupt state syntax",
+      "passed": true
+    },
+    {
+      "name": "lighting: corrupt state entries",
+      "passed": true
+    },
+    {
+      "name": "expedition: functional context",
+      "passed": true
+    },
+    {
+      "name": "expedition: filter all ridge,fjord,desert",
+      "passed": true
+    },
+    {
+      "name": "expedition: filter alpine ridge",
+      "passed": true
+    },
+    {
+      "name": "expedition: filter coastal fjord",
+      "passed": true
+    },
+    {
+      "name": "expedition: filter desert desert",
+      "passed": true
+    },
+    {
+      "name": "expedition: filter all ridge,fjord,desert",
+      "passed": true
+    },
+    {
+      "name": "expedition: select RIDGE navigates builder",
+      "passed": true
+    },
+    {
+      "name": "expedition: RIDGE 2 travelers integer estimate",
+      "passed": true
+    },
+    {
+      "name": "expedition: guide flat cost",
+      "passed": true
+    },
+    {
+      "name": "expedition: three accessible RIDGE itinerary sections",
+      "passed": true
+    },
+    {
+      "name": "expedition: FJORD switch exact estimate and narrative",
+      "passed": true
+    },
+    {
+      "name": "expedition: visible FJORD summary",
+      "passed": true
+    },
+    {
+      "name": "expedition: persistence and named storage",
+      "passed": true
+    },
+    {
+      "name": "expedition: invalid travelers 0",
+      "passed": true
+    },
+    {
+      "name": "expedition: invalid travelers 7",
+      "passed": true
+    },
+    {
+      "name": "expedition: invalid travelers 1.5",
+      "passed": true
+    },
+    {
+      "name": "expedition: invalid travelers empty",
+      "passed": true
+    },
+    {
+      "name": "expedition: valid local form confirmation",
+      "passed": true
+    },
+    {
+      "name": "expedition: corrupt state syntax",
+      "passed": true
+    },
+    {
+      "name": "expedition: corrupt state entries",
+      "passed": true
+    },
+    {
+      "name": "all pages: no external HTTP resources",
+      "passed": true
+    },
+    {
+      "name": "all pages: no browser runtime or console errors",
+      "passed": true
+    }
+  ],
+  "errors": [
+    {
+      "name": "lighting: valid local form confirmation",
+      "error": "locator.click: Timeout 800ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('form[data-testid=\"project-form\"]').locator('button[type=\"submit\"],input[type=\"submit\"],button:not([type])').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"submit\" class=\"button\">Prepare specification ↗</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - eleme"
+    }
+  ],
+  "externalRequests": [],
+  "runtimeErrors": [],
+  "fatal": null
+}

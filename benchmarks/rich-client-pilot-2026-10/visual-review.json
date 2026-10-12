@@ -1,0 +1,322 @@
+{
+  "review_type": "Independent anonymous screenshot-only visual review",
+  "scope": {
+    "root": "/private/tmp/rich-blind-review",
+    "subjects": [
+      "A",
+      "B"
+    ],
+    "experiences": [
+      "lighting",
+      "expedition"
+    ],
+    "pages": {
+      "lighting": [
+        "index",
+        "collection",
+        "planner"
+      ],
+      "expedition": [
+        "index",
+        "journeys",
+        "builder"
+      ]
+    },
+    "widths": [
+      1440,
+      375
+    ],
+    "expected_screenshots": 24,
+    "inspected_screenshots": 24,
+    "inspection_tool": "native view_image"
+  },
+  "rubric": {
+    "scale": "0–5 in half-point steps",
+    "categories": [
+      "hierarchy",
+      "art_direction",
+      "typography_spacing",
+      "responsive_composition",
+      "professional_finish"
+    ],
+    "maximum_total": 25,
+    "applied_equally": true
+  },
+  "limits": [
+    "One qualitative reviewer; scores are judgments rather than objective measurements.",
+    "Only supplied full-page desktop and mobile screenshots were inspected; interactions, focus states, accessibility semantics, dynamic content and other viewport widths are excluded.",
+    "Full-page previews are downscaled by the viewer, limiting judgments about very small text.",
+    "No source code, routing, evaluation results or identifying metadata were inspected."
+  ],
+  "results": [
+    {
+      "subject": "A",
+      "experience": "lighting",
+      "ratings": {
+        "hierarchy": 4.5,
+        "art_direction": 4,
+        "typography_spacing": 4.5,
+        "responsive_composition": 4,
+        "professional_finish": 4
+      },
+      "total": 21,
+      "category_evidence": {
+        "hierarchy": {
+          "strength": "A/lighting-index-1440.png: large serif headline, adjacent installation image and dark collection CTA establish a clear reading order. A/lighting-planner-1440.png: empty state and estimate are visually distinct.",
+          "weakness": "A/lighting-planner-375.png: estimate precedes the empty selection, giving the zero total prominence before the next action."
+        },
+        "art_direction": {
+          "strength": "A/lighting-index-1440.png: warm stone, bronze photography and cream background form a coherent architectural mood.",
+          "weakness": "A/lighting-index-1440.png: the same material-study image appears twice; A/lighting-collection-1440.png: simple rendered product shapes feel less rich than the installation photography."
+        },
+        "typography_spacing": {
+          "strength": "A/lighting-collection-1440.png: strong serif titles, restrained metadata and aligned specification rules make the cards easy to scan.",
+          "weakness": "A/lighting-index-375.png: header and image captions are visually very small; uppercase microcopy is more demanding to read."
+        },
+        "responsive_composition": {
+          "strength": "A/lighting-collection-375.png: three cards stack cleanly with prices, specifications and paired buttons contained in each card.",
+          "weakness": "A/lighting-index-375.png: navigation is compressed into the right side of a narrow header instead of gaining a dedicated row."
+        },
+        "professional_finish": {
+          "strength": "A/lighting-planner-1440.png: crisp borders, consistent alignment and a designed empty state; A/lighting-collection-375.png: complete card/footer rhythm.",
+          "weakness": "A/lighting-planner-1440.png: substantial unoccupied space below the short empty-state content makes the page feel sparse."
+        }
+      },
+      "visible_defects": []
+    },
+    {
+      "subject": "A",
+      "experience": "expedition",
+      "ratings": {
+        "hierarchy": 4.5,
+        "art_direction": 3.5,
+        "typography_spacing": 4,
+        "responsive_composition": 3.5,
+        "professional_finish": 4
+      },
+      "total": 19.5,
+      "category_evidence": {
+        "hierarchy": {
+          "strength": "A/expedition-index-1440.png: bold two-line hero and cyan CTA are unmistakable; A/expedition-builder-1440.png: planning inputs and day-by-day content form clear columns.",
+          "weakness": "A/expedition-journeys-1440.png: repeated terrain/duration/price metadata within each route creates some unnecessary scanning work."
+        },
+        "art_direction": {
+          "strength": "A/expedition-index-1440.png: dramatic alpine/fjord photography and navy/cyan palette establish a distinctive outdoor identity.",
+          "weakness": "A/expedition-index-1440.png and A/expedition-journeys-1440.png: flat geometric desert image has noticeably less landscape information and richness than the other two route images."
+        },
+        "typography_spacing": {
+          "strength": "A/expedition-builder-1440.png: large sans headings, serif narrative text and ruled sections create a legible editorial structure.",
+          "weakness": "A/expedition-index-375.png and A/expedition-journeys-375.png: very small header navigation and metadata contrast with much larger headings."
+        },
+        "responsive_composition": {
+          "strength": "A/expedition-builder-375.png: full-width fields and stacked itinerary sections remain contained, with no visible content overlap.",
+          "weakness": "A/expedition-index-375.png: four header items remain on a single tightly packed row; A/expedition-builder-375.png: route heading breaks into two heavy lines, pushing controls farther down."
+        },
+        "professional_finish": {
+          "strength": "A/expedition-journeys-1440.png: route rows and image widths align consistently; A/expedition-builder-375.png: form, estimate and day sections retain a coherent border system.",
+          "weakness": "A/expedition-index-1440.png: geometric desert panel and repeated metadata make the route section feel less editorially resolved than the hero."
+        }
+      },
+      "visible_defects": []
+    },
+    {
+      "subject": "B",
+      "experience": "lighting",
+      "ratings": {
+        "hierarchy": 4.5,
+        "art_direction": 4.5,
+        "typography_spacing": 4.5,
+        "responsive_composition": 4.5,
+        "professional_finish": 4.5
+      },
+      "total": 22.5,
+      "category_evidence": {
+        "hierarchy": {
+          "strength": "B/lighting-index-1440.png: oversized serif/italic headline leads into a wide installation image; B/lighting-planner-1440.png: selection and shaded summary/form panel are clearly separated.",
+          "weakness": "B/lighting-planner-375.png: the large repeated installation image lies between the empty selection and summary, lengthening the path to the form."
+        },
+        "art_direction": {
+          "strength": "B/lighting-index-1440.png: copper italic accents, warm dining-room image and material study create a polished, cohesive identity.",
+          "weakness": "B/lighting-collection-1440.png: flat product diagrams communicate silhouettes but provide less material detail than the lifestyle photography."
+        },
+        "typography_spacing": {
+          "strength": "B/lighting-collection-1440.png: serif product names, restrained sans body copy and consistent card baselines are balanced. B/lighting-index-375.png: headings wrap naturally without collisions.",
+          "weakness": "B/lighting-index-1440.png: some captions/footer copy are visually minute relative to the large editorial type."
+        },
+        "responsive_composition": {
+          "strength": "B/lighting-collection-375.png: dedicated mobile navigation row and clean card stacking; B/lighting-planner-375.png: full-width inputs and summary are neatly contained.",
+          "weakness": "B/lighting-index-375.png: hero support copy and collection link share a narrow two-column row, making the link wrap."
+        },
+        "professional_finish": {
+          "strength": "B/lighting-planner-1440.png: carefully framed empty state, aligned form fields and consistent footer; B/lighting-collection-375.png: product/actions rhythm remains orderly.",
+          "weakness": "B/lighting-planner-375.png: long vertical sequence and duplicated installation imagery reduce compactness."
+        }
+      },
+      "visible_defects": []
+    },
+    {
+      "subject": "B",
+      "experience": "expedition",
+      "ratings": {
+        "hierarchy": 4.5,
+        "art_direction": 4.5,
+        "typography_spacing": 4,
+        "responsive_composition": 4,
+        "professional_finish": 4
+      },
+      "total": 21,
+      "category_evidence": {
+        "hierarchy": {
+          "strength": "B/expedition-index-1440.png: serif/italic hero, wide route tile and secondary tiles provide clear visual sequence. B/expedition-builder-1440.png: light builder panel strongly separates controls from itinerary.",
+          "weakness": "B/expedition-builder-375.png: itinerary comes before the builder, producing a long page before the primary planning controls."
+        },
+        "art_direction": {
+          "strength": "B/expedition-index-1440.png: alpine/fjord images, mint accent strip and topographic desert treatment form a coherent editorial system; B/expedition-builder-1440.png: route schematic adds visual specificity.",
+          "weakness": "B/expedition-journeys-375.png: desert artwork loses its designed desktop heading composition on mobile."
+        },
+        "typography_spacing": {
+          "strength": "B/expedition-journeys-1440.png: serif intro and bold sans route titles establish clear levels; B/expedition-builder-1440.png: repeated rules organize itinerary and form.",
+          "weakness": "B/expedition-builder-375.png: route diagram labels and supporting itinerary metadata are very small; B/expedition-journeys-1440.png: some secondary details are subdued and small within spacious cards."
+        },
+        "responsive_composition": {
+          "strength": "B/expedition-index-375.png: mobile navigation has its own row, tiles stack neatly and image crops retain landscape subjects. B/expedition-builder-375.png: planner fields fit cleanly.",
+          "weakness": "B/expedition-journeys-375.png: desert illustration heading extends beyond its right edge and is cut off."
+        },
+        "professional_finish": {
+          "strength": "B/expedition-builder-1440.png: coordinated illustration, photo, accordion rows and light summary panel provide a finished visual composition.",
+          "weakness": "B/expedition-journeys-375.png: clipped desert heading is a visible responsive finish defect."
+        }
+      },
+      "visible_defects": [
+        {
+          "filename": "B/expedition-journeys-375.png",
+          "severity": "minor",
+          "observation": "The desert illustration displays its heading as a single long line ('THE OPEN HORIZ...') clipped at the right edge. The desktop counterpart shows the full 'THE OPEN HORIZON' heading in three contained lines.",
+          "basis": "Visible text clipping; not a subjective preference."
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "filename": "A/lighting-index-1440.png",
+      "inspected": true,
+      "observation": "Balanced split hero, warm installation photograph, repeated material image, dark concluding CTA."
+    },
+    {
+      "filename": "A/lighting-index-375.png",
+      "inspected": true,
+      "observation": "Contained stacked sections and strong headline; very compact header/captions."
+    },
+    {
+      "filename": "A/lighting-collection-1440.png",
+      "inspected": true,
+      "observation": "Three evenly aligned product cards, specification rows and paired actions."
+    },
+    {
+      "filename": "A/lighting-collection-375.png",
+      "inspected": true,
+      "observation": "All three complete cards stack cleanly; no visible overflow."
+    },
+    {
+      "filename": "A/lighting-planner-1440.png",
+      "inspected": true,
+      "observation": "Empty selection and estimate clearly separated; sparse lower area."
+    },
+    {
+      "filename": "A/lighting-planner-375.png",
+      "inspected": true,
+      "observation": "Estimate moved above selection, both contained; prominent zero-total card."
+    },
+    {
+      "filename": "A/expedition-index-1440.png",
+      "inspected": true,
+      "observation": "Bold photo hero, contrasting editorial block and three route cards; desert art differs in richness."
+    },
+    {
+      "filename": "A/expedition-index-375.png",
+      "inspected": true,
+      "observation": "Hero and all three route cards fit vertically; compressed single-row navigation."
+    },
+    {
+      "filename": "A/expedition-journeys-1440.png",
+      "inspected": true,
+      "observation": "Consistent three image/text rows with repeated metadata."
+    },
+    {
+      "filename": "A/expedition-journeys-375.png",
+      "inspected": true,
+      "observation": "All route rows stack cleanly, large headings and small metadata."
+    },
+    {
+      "filename": "A/expedition-builder-1440.png",
+      "inspected": true,
+      "observation": "Planning form/estimate on left and ruled itinerary on right."
+    },
+    {
+      "filename": "A/expedition-builder-375.png",
+      "inspected": true,
+      "observation": "Full-width inputs and complete itinerary stack without visible overlap."
+    },
+    {
+      "filename": "B/lighting-index-1440.png",
+      "inspected": true,
+      "observation": "Copper italic headline and wide warm installation photo; balanced material-study section."
+    },
+    {
+      "filename": "B/lighting-index-375.png",
+      "inspected": true,
+      "observation": "Dedicated nav row; hero/link wrap and material section remain orderly."
+    },
+    {
+      "filename": "B/lighting-collection-1440.png",
+      "inspected": true,
+      "observation": "Three diagram cards, aligned descriptions and actions; consistent editorial typography."
+    },
+    {
+      "filename": "B/lighting-collection-375.png",
+      "inspected": true,
+      "observation": "Complete card stacking and price/action alignment without visible clipping."
+    },
+    {
+      "filename": "B/lighting-planner-1440.png",
+      "inspected": true,
+      "observation": "Designed empty-state panel, installation image and shaded summary/form panel."
+    },
+    {
+      "filename": "B/lighting-planner-375.png",
+      "inspected": true,
+      "observation": "All panels and fields contained; installation image separates empty state from summary."
+    },
+    {
+      "filename": "B/expedition-index-1440.png",
+      "inspected": true,
+      "observation": "Wide hero, mint band, asymmetric route tiles and contrasting shore editorial section."
+    },
+    {
+      "filename": "B/expedition-index-375.png",
+      "inspected": true,
+      "observation": "Dedicated nav row and neatly stacked landscape/illustrated tiles."
+    },
+    {
+      "filename": "B/expedition-journeys-1440.png",
+      "inspected": true,
+      "observation": "Three complete paired image/detail cards with cohesive route information hierarchy."
+    },
+    {
+      "filename": "B/expedition-journeys-375.png",
+      "inspected": true,
+      "observation": "Cards and buttons stack cleanly; desert artwork heading clips on right."
+    },
+    {
+      "filename": "B/expedition-builder-1440.png",
+      "inspected": true,
+      "observation": "Landscape, schematic, itinerary and contrasting planner panel form a complete visual system."
+    },
+    {
+      "filename": "B/expedition-builder-375.png",
+      "inspected": true,
+      "observation": "Itinerary precedes contained full-width builder; schematic microcopy is small."
+    }
+  ]
+}

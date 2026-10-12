@@ -55,3 +55,7 @@ Scripts, templates, schemas, and agent policy require a fresh read-only audit af
 ## Maintenance rules
 
 Behavioral fixes need focused regression tests. Do not retry flaky checks until green. Keep `.quality/quality.py` synchronized with `scripts/quality_code.py` and the project-local schema synchronized with its template.
+
+## Rich-client pilot instrumentation
+
+The rich-client folder adds offline telemetry, immutable-evidence/accounting, runner cleanup and QA-history regression tests plus bounded preview bridge tests. Browser-only evaluator tests require local Playwright/Chromium, including a module MIME reproduction/control. They run separately from CI's dependency-free offline profile. Published objective results retain the original evaluator failure and symmetric MIME-only correction; targeted diagnoses distinguish cascades and limitations. Measured outputs stay unchanged.

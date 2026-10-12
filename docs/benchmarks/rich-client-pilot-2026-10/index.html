@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Two fictional client portfolios, each built in single-agent and adaptive-delegation conditions: AUREL architectural lighting and MERIDIAN expedition editorial.">
+  <meta name="theme-color" content="#f2f0e8">
+  <title>Two worlds, fully explored — AethDesign / Quality Code</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f2f0e8;
+      --surface: #fbfaf6;
+      --ink: #202620;
+      --muted: #62685f;
+      --line: #d5d8ce;
+      --green: #344832;
+      --gold: #a17b44;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--sans); }
+    a { color: inherit; text-underline-offset: .25em; }
+    a:hover { color: var(--green); }
+    a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+    .skip { position: absolute; top: -5rem; left: 1rem; z-index: 5; padding: .7rem 1rem; background: var(--surface); }
+    .skip:focus { top: 1rem; }
+    header, main, footer { width: min(1280px, 100% - 80px); margin-inline: auto; }
+    .masthead { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--line); }
+    .brand { text-decoration: none; font-size: 12px; font-weight: 760; letter-spacing: .17em; }
+    .brand span { color: var(--muted); font-weight: 500; }
+    nav { display: flex; align-items: center; gap: 26px; font-size: 13px; }
+    nav a { text-decoration: none; }
+    .hero { padding: clamp(54px, 9vw, 112px) 0 46px; }
+    .eyebrow, .index, .tag, .work-label { font-size: 10px; line-height: 1.5; letter-spacing: .15em; text-transform: uppercase; }
+    .eyebrow { color: var(--muted); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 850px; margin-bottom: 24px; font: 400 clamp(46px, 7.5vw, 94px)/.99 var(--serif); letter-spacing: -.052em; }
+    h1 em { color: var(--green); font-weight: 400; }
+    .hero-copy { max-width: 710px; margin-bottom: 38px; color: var(--muted); font-size: clamp(16px, 2vw, 19px); }
+    .hero-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 850px; padding-top: 20px; border-top: 1px solid var(--line); }
+    .hero-meta p { margin: 0; color: var(--muted); font-size: 13px; }
+    .hero-meta strong { color: var(--ink); font-weight: 650; }
+    .client { padding: 52px 0 64px; border-top: 1px solid var(--line); }
+    .client-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 22px; }
+    .client-heading h2 { margin: 8px 0 0; font: 400 clamp(34px, 5vw, 52px)/1 var(--serif); letter-spacing: -.035em; }
+    .client-heading p { max-width: 410px; margin: 0; color: var(--muted); font-size: 14px; }
+    .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+    .version { min-width: 0; border: 1px solid var(--line); background: var(--surface); }
+    .version-head { min-height: 54px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 18px; }
+    .version-head h3 { margin: 0; font: 600 11px/1.4 var(--sans); letter-spacing: .11em; text-transform: uppercase; }
+    .version-head a { font-size: 12px; }
+    .cover { display: block; position: relative; overflow: hidden; aspect-ratio: 1.72; background: #d2d2c7; }
+    .cover::after { position: absolute; inset: 45% 0 0; content: ""; background: linear-gradient(transparent, rgb(16 22 18 / .42)); pointer-events: none; }
+    .cover img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+    .cover:hover img { transform: scale(1.025); }
+    .cover-label { position: absolute; z-index: 1; right: 18px; bottom: 14px; left: 18px; color: white; font: 400 clamp(23px, 3vw, 35px)/1 var(--serif); }
+    .version-body { padding: 18px; }
+    .version-body > p { margin-bottom: 15px; color: var(--muted); font-size: 13px; }
+    .page-links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .page-links a { display: inline-flex; min-height: 36px; align-items: center; padding: 7px 11px; border: 1px solid var(--line); border-radius: 2px; font-size: 12px; text-decoration: none; }
+    .page-links a:first-child { border-color: var(--green); background: var(--green); color: white; }
+    .page-links a:first-child:hover { background: #263725; }
+    .results { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 28px; margin: 8px 0 56px; padding: 24px 28px; border: 1px solid var(--line); background: #e9e9df; }
+    .results h2 { margin: 0 0 5px; font: 400 27px/1.1 var(--serif); }
+    .results p { max-width: 690px; margin: 0; color: var(--muted); font-size: 13px; }
+    .result-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 13px; }
+    footer { display: flex; justify-content: space-between; gap: 22px; padding: 24px 0 34px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    footer p { margin: 0; }
+    @media (max-width: 760px) {
+      header, main, footer { width: min(100% - 40px, 600px); }
+      .masthead { min-height: 72px; align-items: flex-start; padding: 22px 0; }
+      nav { justify-content: flex-end; flex-wrap: wrap; gap: 8px 16px; }
+      .hero { padding-top: 56px; }
+      .hero-meta { gap: 18px; }
+      .client-heading { display: block; }
+      .client-heading p { margin-top: 12px; }
+      .pair { grid-template-columns: 1fr; gap: 16px; }
+      .cover { aspect-ratio: 1.8; }
+      .results { grid-template-columns: 1fr; gap: 16px; padding: 20px; }
+      footer { display: block; }
+      footer p { margin: 7px 0; }
+    }
+    @media (max-width: 440px) {
+      header, main, footer { width: calc(100% - 32px); }
+      .masthead { gap: 12px; }
+      .brand { max-width: 142px; font-size: 10px; line-height: 1.6; }
+      nav { gap: 7px 11px; font-size: 12px; }
+      .hero-meta { grid-template-columns: 1fr; gap: 12px; }
+      .client { padding: 40px 0 48px; }
+      .version-head, .version-body { padding-inline: 14px; }
+      .cover-label { left: 14px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <a class="brand" href="#top">AETHDESIGN <span>/ QUALITY CODE</span></a>
+    <nav aria-label="Gallery navigation">
+      <a href="#aurel">AUREL</a>
+      <a href="#meridian">MERIDIAN</a>
+      <a href="#results">Results status</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="page-title">
+      <p class="eyebrow">Engineering in public · Rich portfolio benchmark · October 2026</p>
+      <h1 id="page-title">Two worlds.<br><em>Every detail in place.</em></h1>
+      <p class="hero-copy">A paired portfolio exercise across two fictional clients. AUREL explores architectural lighting from studio story to collection and specification planner. MERIDIAN follows an expedition journal into journeys and a trip builder.</p>
+      <div class="hero-meta">
+        <p><strong>Two build conditions</strong><br>Single agent and adaptive delegation, shown side by side for each concept.</p>
+        <p><strong>Local portfolio experiences</strong><br>Illustrative products, routes and prices. Forms are local demonstrations; there is no real booking or enquiry service.</p>
+      </div>
+    </section>
+
+    <section class="client" id="aurel" aria-labelledby="aurel-title">
+      <div class="client-heading">
+        <div><span class="eyebrow">01 / Architectural lighting</span><h2 id="aurel-title">AUREL</h2></div>
+        <p>Light, considered. A quiet material world with a collection to explore and a specification to compose.</p>
+      </div>
+      <div class="pair">
+        <article class="version">
+          <div class="version-head"><h3>Single agent</h3><a href="single/index.html">Open portfolio ↗</a></div>
+          <a class="cover" href="single/lighting/index.html" aria-label="Open AUREL, single-agent version">
+            <img src="single/lighting/assets/installation.png" alt="Sculptural copper pendant lighting over an oak table in a sunlit interior" width="1536" height="1024">
+            <span class="cover-label">Light gives space its shape.</span>
+          </a>
+          <div class="version-body"><p>Visit the AUREL concept pages:</p><div class="page-links"><a href="single/lighting/index.html">Studio</a><a href="single/lighting/collection.html">Collection</a><a href="single/lighting/planner.html">Specification planner</a></div></div>
+        </article>
+        <article class="version">
+          <div class="version-head"><h3>Adaptive delegation</h3><a href="swarm/index.html">Open portfolio ↗</a></div>
+          <a class="cover" href="swarm/lighting/index.html" aria-label="Open AUREL, adaptive-delegation version">
+            <img src="swarm/lighting/assets/installation.png" alt="Sculptural copper pendant lighting over an oak table in a sunlit interior" width="1536" height="1024" loading="lazy">
+            <span class="cover-label">Light gives space its shape.</span>
+          </a>
+          <div class="version-body"><p>Visit the AUREL concept pages:</p><div class="page-links"><a href="swarm/lighting/index.html">Studio</a><a href="swarm/lighting/collection.html">Collection</a><a href="swarm/lighting/planner.html">Specification planner</a></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="client" id="meridian" aria-labelledby="meridian-title">
+      <div class="client-heading">
+        <div><span class="eyebrow">02 / Expedition editorial</span><h2 id="meridian-title">MERIDIAN</h2></div>
+        <p>Take the long way. An expedition journal for Alpine, coastal and desert landscapes, with journeys to shape into a trip.</p>
+      </div>
+      <div class="pair">
+        <article class="version">
+          <div class="version-head"><h3>Single agent</h3><a href="single/index.html">Open portfolio ↗</a></div>
+          <a class="cover" href="single/expedition/index.html" aria-label="Open MERIDIAN, single-agent version">
+            <img src="single/expedition/assets/alpine.png" alt="Two hikers crossing an Alpine ridge above a glacier valley" width="1536" height="1024" loading="lazy">
+            <span class="cover-label">Out there. More here.</span>
+          </a>
+          <div class="version-body"><p>Visit the MERIDIAN concept pages:</p><div class="page-links"><a href="single/expedition/index.html">Journal</a><a href="single/expedition/journeys.html">Journeys</a><a href="single/expedition/builder.html">Trip builder</a></div></div>
+        </article>
+        <article class="version">
+          <div class="version-head"><h3>Adaptive delegation</h3><a href="swarm/index.html">Open portfolio ↗</a></div>
+          <a class="cover" href="swarm/expedition/index.html" aria-label="Open MERIDIAN, adaptive-delegation version">
+            <img src="swarm/expedition/assets/alpine.png" alt="Two hikers crossing an Alpine ridge above a glacier valley" width="1536" height="1024" loading="lazy">
+            <span class="cover-label">Out there. More here.</span>
+          </a>
+          <div class="version-body"><p>Visit the MERIDIAN concept pages:</p><div class="page-links"><a href="swarm/expedition/index.html">Journal</a><a href="swarm/expedition/journeys.html">Journeys</a><a href="swarm/expedition/builder.html">Trip builder</a></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="results" id="results" aria-labelledby="results-title">
+      <div><h2 id="results-title">Faster and cheaper, with a trade-off.</h2><p>In this one paired workload, cheaper complete-client owners finished 40.5% sooner and reduced the hypothetical coding API equivalent by 23.9%, including corrections. The single-agent designs scored higher in anonymous review (4.35/5 vs 4.05/5), and the adaptive trip builder retained a confirmed persistence defect.</p><p>Observed correction cause types: eight each; these include QA/tooling fixes. The frozen outputs below retain errors. Image charges and subscription consumption are unmeasured. Read the full evidence, evaluation repair and limitations before interpreting assertion counts.</p></div>
+      <div class="result-links"><a href="https://github.com/aethirex-ai/quality-code/blob/main/benchmarks/rich-client-pilot-2026-10/results.json">results.json ↗</a><a href="https://github.com/aethirex-ai/quality-code/blob/main/benchmarks/rich-client-pilot-2026-10/RESULTS.md">RESULTS.md ↗</a></div>
+    </section>
+  </main>
+  <footer><span>AethDesign / Quality Code</span><p>Fictional portfolio concepts for a design and engineering study.</p><a href="#top">Back to the top ↑</a></footer>
+</body>
+</html>

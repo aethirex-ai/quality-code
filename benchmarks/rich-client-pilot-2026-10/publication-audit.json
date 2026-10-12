@@ -1,0 +1,9 @@
+{
+  "verdict": "PASS",
+  "findings": [],
+  "independence": "Fresh read-only audit agent; did not implement or materially direct this change.",
+  "scope": "Rich-client publication sources/evidence/gallery and related root docs/profile, against b97fb9c99fcd121e9c00426ad930d13ff90be29b",
+  "verification": "136 offline regressions plus browser instrument regressions, native accounting/routing, image native returns/original hashes, immutable portfolio bytes, correction evidence, anonymous screenshots and local renders independently checked.",
+  "residual_risk": "One paired run; original evaluator repaired symmetrically; matcher/image/timing limits remain; qualitative visual review; frozen adaptive persistence bug reproduced; no production/general-quality/subscription-saving claims.",
+  "private_report": "Full raw-evidence report retained privately; session identifiers/account paths are not published."
+}

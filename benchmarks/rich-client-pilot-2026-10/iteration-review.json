@@ -1,0 +1,863 @@
+{
+  "scope": "Independent frozen iteration and external-failure reconciliation for both runs, with bounded supplemental browser diagnosis; no measured source edits.",
+  "method": "Distinct causes reconciled from issue/check logs, correction commands, screenshots. Cycle requires issue, correction, successful targeted recheck; reruns are not cycles. Missing evidence is unknown, not zero.",
+  "single": {
+    "logged_check_records": 51,
+    "failed_check_records": 8,
+    "expected_initial_scaffold_failures": 1,
+    "distinct_logged_issue_causes": 8,
+    "observed_cause_fix_recheck_cycles": 8,
+    "confirmed_contract_selector_causes": 1,
+    "confirmed_visual_refinement_causes": 1,
+    "automation_observed_mobile_interaction_causes": 1,
+    "qa_tooling_causes": 5,
+    "confirmed_resource_causes_observed": 0,
+    "confirmed_accessibility_causes_observed": 0,
+    "product_cycle_count": {
+      "strict_contract_selector": 1,
+      "including_visual": 2,
+      "including_automation_observed_reachability": 3
+    },
+    "counts_are_observed_lower_bounds": true,
+    "unresolved_logged_issues": [],
+    "unresolved_uncertainties": [
+      "Manual impact of 1000ms guide timeout not independently established.",
+      "No exhaustive accessibility audit; absent findings do not establish no defects."
+    ],
+    "issues": [
+      {
+        "id": "duplicate-add-selector",
+        "owner": "lighting",
+        "raw_category": "functional",
+        "classification": "contract_selector_defect",
+        "confidence": "high",
+        "assessment": "Hidden dialog duplicates required add locator; manual visible-button failure not established.",
+        "summary": "ARC card and hidden dialog share the same add-product selector, so the contract action is ambiguous.",
+        "raw_status": "fixed",
+        "issue_evidence": [
+          "runs/single/site/lighting/issues.jsonl:1",
+          "runs/single/site/lighting/issues.jsonl:2"
+        ],
+        "detected_by": "plan-mobile-actions",
+        "fix_paths": [
+          "lighting/collection.html",
+          "lighting/app.mjs",
+          "integration/build_pages.py"
+        ],
+        "correction_evidence": "runs/single/events.jsonl:88",
+        "final_recheck_id": "plan-mobile-fixed",
+        "observed_cause_cycle": true,
+        "passing_rechecks": [
+          {
+            "owner": "lighting",
+            "check_id": "plan-mobile-fixed",
+            "record_id": "bcd2e463-f67e-429e-ac6b-49703805d00b",
+            "evidence": "runs/single/site/lighting/check-runs.jsonl:8"
+          }
+        ]
+      },
+      {
+        "id": "route-markers",
+        "owner": "expedition",
+        "raw_category": "visual",
+        "classification": "visual_refinement_defect",
+        "confidence": "high",
+        "assessment": "Original/fixed screenshots confirm marker/path mismatch corrected.",
+        "summary": "Waypoint markers 03 and 05 visibly sit off the route curve.",
+        "raw_status": "fixed",
+        "issue_evidence": [
+          "runs/single/site/expedition/issues.jsonl:1",
+          "runs/single/site/expedition/issues.jsonl:2"
+        ],
+        "detected_by": "trip-desktop screenshot inspection",
+        "fix_paths": [
+          "expedition/app.mjs"
+        ],
+        "correction_evidence": "runs/single/events.jsonl:88",
+        "final_recheck_id": "fjord-route-confirmed",
+        "observed_cause_cycle": true,
+        "passing_rechecks": [
+          {
+            "owner": "expedition",
+            "check_id": "fjord-route-confirmed",
+            "record_id": "c8d0e0ad-46c4-4038-9cf9-b06bfddce871",
+            "evidence": "runs/single/site/expedition/check-runs.jsonl:9"
+          }
+        ]
+      },
+      {
+        "id": "mobile-guide-scroll",
+        "owner": "expedition",
+        "raw_category": "runtime",
+        "classification": "automation_observed_interaction_reachability",
+        "confidence": "medium",
+        "assessment": "1000ms checkbox timeout corrected by disabling smooth scrolling. Manual impact and sole causality uncertain.",
+        "summary": "Mobile guide action timed out while automatically reaching the checkbox after a deep-page traveler edit. Smooth scrolling is disabled to make control reachability predictable.",
+        "raw_status": "fixed",
+        "issue_evidence": [
+          "runs/single/site/expedition/issues.jsonl:3",
+          "runs/single/site/expedition/issues.jsonl:4"
+        ],
+        "detected_by": "expedition safe-form-text",
+        "fix_paths": [
+          "expedition/styles.css"
+        ],
+        "correction_evidence": "runs/single/events.jsonl:160",
+        "final_recheck_id": "mobile-guide-stable",
+        "observed_cause_cycle": true,
+        "passing_rechecks": [
+          {
+            "owner": "expedition",
+            "check_id": "mobile-guide-stable",
+            "record_id": "4a8158f4-e3d2-45e7-9156-576fb2515a1a",
+            "evidence": "runs/single/site/expedition/check-runs.jsonl:17"
+          }
+        ]
+      },
+      {
+        "id": "preview-press-field",
+        "owner": "integration",
+        "raw_category": "runtime",
+        "classification": "qa_tooling_error",
+        "confidence": "high",
+        "assessment": "Unsupported key field prevents any client actions.",
+        "summary": "Preview action payload used an unsupported press field. No client action ran.",
+        "raw_status": "fixed",
+        "issue_evidence": [
+          "runs/single/site/integration/issues.jsonl:1",
+          "runs/single/site/integration/issues.jsonl:3"
+        ],
+        "detected_by": "plan-mobile",
+        "fix_paths": [
+          "evidence/lighting-plan-actions.json"
+        ],
+        "correction_evidence": "runs/single/events.jsonl:85",
+        "final_recheck_id": "plan-mobile-fixed",
+        "observed_cause_cycle": true,
+        "passing_rechecks": [
+          {
+            "owner": "lighting",
+            "check_id": "plan-mobile-fixed",
+            "record_id": "bcd2e463-f67e-429e-ac6b-49703805d00b",
+            "evidence": "runs/single/site/lighting/check-runs.jsonl:8"
+          }
+        ]
+      },
+      {
+        "id": "bounded-preview-excerpt",
+        "owner": "integration",
+        "raw_category": "runtime",
+        "classification": "qa_tooling_error",
+        "confidence": "high",
+        "assessment": "Confirmation exists in screenshot beyond bounded excerpt.",
+        "summary": "QA expected confirmation wording beyond the generic preview\u2019s 1500-character excerpt. Screenshot shows the complete successful confirmation.",
+        "raw_status": "fixed",
+        "issue_evidence": [
+          "runs/single/site/integration/issues.jsonl:2",
+          "runs/single/site/integration/issues.jsonl:5"
+        ],
+        "detected_by": "fjord-route-fixed",
+        "fix_paths": [
+          "evidence/expedition-fjord-route-confirmed.json"
+        ],
+        "correction_evidence": "runs/single/events.jsonl:94",
+        "final_recheck_id": "fjord-route-confirmed",
+        "observed_cause_cycle": true,
+        "passing_rechecks": [
+          {
+            "owner": "expedition",
+            "check_id": "fjord-route-confirmed",
+            "record_id": "c8d0e0ad-46c4-4038-9cf9-b06bfddce871",
+            "evidence": "runs/single/site/expedition/check-runs.jsonl:9"
+          }
+        ]
+      },
+      {
+        "id": "preview-module-readiness",
+        "owner": "integration",
+        "raw_category": "runtime",
+        "classification": "qa_tooling_error",
+        "confidence": "high",
+        "assessment": "Diagnostics stale; later screenshot has quantity2 and EUR498.",
+        "summary": "Generic diagnostics captured the static page before its deferred module finished; the subsequent screenshot shows the correct persisted two-unit plan.",
+        "raw_status": "fixed",
+        "issue_evidence": [
+          "runs/single/site/integration/issues.jsonl:4",
+          "runs/single/site/integration/issues.jsonl:6"
+        ],
+        "detected_by": "lighting persist-navigation",
+        "fix_paths": [
+          "evidence/lighting-persist-actions.json"
+        ],
+        "correction_evidence": "runs/single/events.jsonl:120",
+        "final_recheck_id": "persist-ready",
+        "observed_cause_cycle": true,
+        "passing_rechecks": [
+          {
+            "owner": "lighting",
+            "check_id": "persist-ready",
+            "record_id": "aa17c3f7-88f4-4cf5-a321-657e90878033",
+            "evidence": "runs/single/site/lighting/check-runs.jsonl:18"
+          }
+        ]
+      },
+      {
+        "id": "quality-cli-command",
+        "owner": "integration",
+        "raw_category": "runtime",
+        "classification": "qa_tooling_error",
+        "confidence": "high",
+        "assessment": "Unsupported check subcommand; validate passes.",
+        "summary": "An optional quality validation invocation used the unsupported check subcommand. The required changed profile already passed.",
+        "raw_status": "fixed",
+        "issue_evidence": [
+          "runs/single/site/integration/issues.jsonl:7",
+          "runs/single/site/integration/issues.jsonl:8"
+        ],
+        "detected_by": "final integration command",
+        "fix_paths": [
+          "integration/check-runs.jsonl"
+        ],
+        "correction_evidence": "runs/single/events.jsonl:160",
+        "final_recheck_id": "quality-validate",
+        "observed_cause_cycle": true,
+        "passing_rechecks": [
+          {
+            "owner": "integration",
+            "check_id": "quality-validate",
+            "record_id": "05470659-67a8-4752-9a24-50c355d63608",
+            "evidence": "runs/single/site/integration/check-runs.jsonl:9"
+          }
+        ]
+      },
+      {
+        "id": "evidence-json-decode",
+        "owner": "integration",
+        "raw_category": "runtime",
+        "classification": "qa_tooling_error",
+        "confidence": "high",
+        "assessment": "Undecoded Unicode JSON produces false missing-route report.",
+        "summary": "Evidence checker compared Unicode titles to undecoded JSON strings from early direct preview runs, falsely reporting a missing desktop home inspection.",
+        "raw_status": "fixed",
+        "issue_evidence": [
+          "runs/single/site/integration/issues.jsonl:9",
+          "runs/single/site/integration/issues.jsonl:10"
+        ],
+        "detected_by": "evidence-integrity",
+        "fix_paths": [
+          "integration/check_evidence.py"
+        ],
+        "correction_evidence": "runs/single/events.jsonl:168",
+        "final_recheck_id": "evidence-json-fixed",
+        "observed_cause_cycle": true,
+        "passing_rechecks": [
+          {
+            "owner": "integration",
+            "check_id": "evidence-json-fixed",
+            "record_id": "58763ab9-a256-48c1-bd87-ff754df9e95e",
+            "evidence": "runs/single/site/integration/check-runs.jsonl:13"
+          }
+        ]
+      }
+    ],
+    "failed_checks": [
+      {
+        "owner": "lighting",
+        "check_id": "plan-mobile",
+        "record_id": "b4427772-545a-4c1b-b1cd-f53c86b863be",
+        "phase": "verification",
+        "raw_issue_id": null,
+        "exit_code": 1,
+        "evidence": "runs/single/site/lighting/check-runs.jsonl:3",
+        "classification": "qa_tooling_error"
+      },
+      {
+        "owner": "lighting",
+        "check_id": "plan-mobile-actions",
+        "record_id": "43f3969f-e682-4741-b096-c01fe5eb4552",
+        "phase": "recheck",
+        "raw_issue_id": "preview-press-field",
+        "exit_code": 1,
+        "evidence": "runs/single/site/lighting/check-runs.jsonl:7",
+        "classification": "contract_selector_defect"
+      },
+      {
+        "owner": "lighting",
+        "check_id": "persist-navigation",
+        "record_id": "05a89e63-1331-4978-8285-ac1eaccac085",
+        "phase": "verification",
+        "raw_issue_id": null,
+        "exit_code": 1,
+        "evidence": "runs/single/site/lighting/check-runs.jsonl:13",
+        "classification": "qa_tooling_error"
+      },
+      {
+        "owner": "expedition",
+        "check_id": "fjord-route-fixed",
+        "record_id": "3ebca07d-b1f4-45cf-bf5f-920e9bf90066",
+        "phase": "recheck",
+        "raw_issue_id": "route-markers",
+        "exit_code": 1,
+        "evidence": "runs/single/site/expedition/check-runs.jsonl:6",
+        "classification": "qa_tooling_error"
+      },
+      {
+        "owner": "expedition",
+        "check_id": "safe-form-text",
+        "record_id": "643d1c9e-6c72-4107-942d-2af9bbe6670d",
+        "phase": "verification",
+        "raw_issue_id": null,
+        "exit_code": 1,
+        "evidence": "runs/single/site/expedition/check-runs.jsonl:15",
+        "classification": "automation_observed_interaction_reachability"
+      },
+      {
+        "owner": "integration",
+        "check_id": "scaffold",
+        "record_id": "cf134af8-c268-4d96-b8c7-0f7257afa2b0",
+        "phase": "initial",
+        "raw_issue_id": null,
+        "exit_code": 1,
+        "evidence": "runs/single/site/integration/check-runs.jsonl:1",
+        "classification": "expected_initial_scaffold"
+      },
+      {
+        "owner": "integration",
+        "check_id": "quality-cli-invalid",
+        "record_id": "14e6c158-fe0e-4c6f-9ab2-2960b3db7a77",
+        "phase": "verification",
+        "raw_issue_id": "quality-cli-command",
+        "exit_code": 2,
+        "evidence": "runs/single/site/integration/check-runs.jsonl:8",
+        "classification": "qa_tooling_error"
+      },
+      {
+        "owner": "integration",
+        "check_id": "evidence-integrity",
+        "record_id": "c4c42d2c-d28f-41ce-a374-fafbb02aef11",
+        "phase": "verification",
+        "raw_issue_id": null,
+        "exit_code": 1,
+        "evidence": "runs/single/site/integration/check-runs.jsonl:10",
+        "classification": "qa_tooling_error"
+      }
+    ],
+    "first_pass_failed_checks": [
+      "lighting/plan-mobile",
+      "lighting/persist-navigation",
+      "expedition/safe-form-text",
+      "integration/quality-cli-invalid",
+      "integration/evidence-integrity"
+    ],
+    "first_pass_caveat": "Distinct verification failures; lighting/plan-mobile-actions and expedition/fjord-route-fixed are rechecks exposing separate causes. First CLI failure events:158 was unwrapped; wrapped failure is duplicate preservation.",
+    "duplicate_manifestations": [
+      {
+        "id": "quality-cli-command",
+        "evidence": [
+          "runs/single/events.jsonl:158",
+          "runs/single/site/integration/check-runs.jsonl:8"
+        ],
+        "count_once": true
+      },
+      {
+        "id": "route-markers",
+        "rechecks": [
+          "fjord-route-fixed",
+          "fjord-route-confirmed"
+        ],
+        "count_once": true,
+        "note": "First recheck failed due excerpt tooling, no second route correction evidenced."
+      },
+      {
+        "id": "mobile-guide-scroll",
+        "rechecks": [
+          "mobile-guide-stable",
+          "mobile-builder-jump-final"
+        ],
+        "count_once": true
+      }
+    ],
+    "screenshots_independently_inspected": [
+      "runs/single/site/.preview-output/dce3bcfa8d1e406c8f2ec293328ab5a7.png",
+      "runs/single/site/.preview-output/391c662a42d9419a970ac153841a8774.png",
+      "runs/single/site/.preview-output/5ce7677fa70a4d77b5eaf0877067d3b6.png"
+    ]
+  },
+  "swarm": {
+    "status": "frozen_reviewed",
+    "logged_check_records": 36,
+    "failed_check_records": 6,
+    "unexpected_nonzero_check_records": 2,
+    "expected_scaffold_nonzero_records": 1,
+    "expected_negative_recorder_subprocess_records": 2,
+    "intentional_missing_command_reproduction_records": 1,
+    "raw_distinct_issue_ids": 11,
+    "unsupported_withdrawn_ids": 1,
+    "confirmed_product_causes": 3,
+    "product_fix_recheck_cycles": 3,
+    "qa_issue_ids": 7,
+    "qa_distinct_cause_types": 6,
+    "observed_issue_id_fix_recheck_cycles": 9,
+    "distinct_cause_types_with_confirmed_cycle": 8,
+    "cycle_accounting_note": "Two owners independently corrected the same unsupported press-field type: two evidenced corrections but one cause type. Wrong-interpreter failure has no targeted later recheck; routes cited in issue preceded failure, so excluded from cycles. Overflow withdrawn and excluded. Repeated fixture checks/recorder negative cases are not new cycles.",
+    "issues": [
+      {
+        "id": "qa-preview-action-fields",
+        "owner": "lighting",
+        "classification": "qa_tooling_error",
+        "raw_category": "runtime",
+        "raw_status": "fixed",
+        "recheck_id": "preview-2026-10-12T13:03:28+02:00",
+        "evidence": [
+          "runs/swarm/site/lighting/issues.jsonl:1"
+        ],
+        "summary": "A preview request was rejected because the press action used an unsupported field; this was a QA request-format error, not a site defect.",
+        "fix_paths": [],
+        "observed_fix_recheck_cycle": true,
+        "confidence": "high",
+        "passing_check_references": []
+      },
+      {
+        "id": "qa-preview-ambiguous-selector",
+        "owner": "lighting",
+        "classification": "qa_tooling_error",
+        "raw_category": "runtime",
+        "raw_status": "fixed",
+        "recheck_id": "preview-2026-10-12T13:03:53+02:00",
+        "evidence": [
+          "runs/swarm/site/lighting/issues.jsonl:2"
+        ],
+        "summary": "A preview click selector matched both the planner navigation link and the page CTA, so the strict locator action failed; this was a QA selector ambiguity, not a site defect.",
+        "fix_paths": [],
+        "observed_fix_recheck_cycle": true,
+        "confidence": "high",
+        "passing_check_references": []
+      },
+      {
+        "id": "qa-wrapper-wrong-interpreter",
+        "owner": "lighting",
+        "classification": "qa_tooling_error",
+        "raw_category": "runtime",
+        "raw_status": "fixed",
+        "recheck_id": "routes",
+        "evidence": [
+          "runs/swarm/site/lighting/issues.jsonl:3"
+        ],
+        "summary": "The quality shell wrapper was invoked through Python, which raised SyntaxError before the project verifier ran; this was a QA command invocation error, not a site defect.",
+        "fix_paths": [],
+        "observed_fix_recheck_cycle": false,
+        "confidence": "medium",
+        "passing_check_references": [
+          {
+            "check_id": "routes",
+            "record_id": "f00e0d16-c570-4250-b6ec-a9aa7578def5",
+            "evidence": "runs/swarm/site/lighting/check-runs.jsonl:3"
+          }
+        ]
+      },
+      {
+        "id": "aurel-fixture-silhouette-mismatch",
+        "owner": "lighting",
+        "classification": "product_visual",
+        "raw_category": "visual",
+        "raw_status": "fixed",
+        "recheck_id": "fixture-mapping",
+        "evidence": [
+          "runs/swarm/site/lighting/issues.jsonl:4",
+          "runs/swarm/site/lighting/issues.jsonl:5"
+        ],
+        "summary": "Fixed the ARC silhouette and made product dialog drawings follow the selected fixture type.",
+        "fix_paths": [
+          "lighting/styles.css",
+          "lighting/collection.html",
+          "lighting/aurel.js",
+          "lighting/tests/behavior.test.mjs"
+        ],
+        "observed_fix_recheck_cycle": true,
+        "confidence": "high",
+        "passing_check_references": [
+          {
+            "check_id": "fixture-mapping",
+            "record_id": "afa4e325-9ecd-44a8-8dd7-4d78f09b7c4c",
+            "evidence": "runs/swarm/site/lighting/check-runs.jsonl:5"
+          },
+          {
+            "check_id": "fixture-mapping",
+            "record_id": "cc97f796-2e60-4af4-8b6c-1c0772fa228f",
+            "evidence": "runs/swarm/site/lighting/check-runs.jsonl:7"
+          }
+        ]
+      },
+      {
+        "id": "expedition-mobile-route-overflow",
+        "owner": "expedition",
+        "classification": "unsupported_withdrawn_claim",
+        "raw_category": "visual",
+        "raw_status": "fixed",
+        "recheck_id": "5f3776ef7fcc4cc7aef092186af54dab",
+        "evidence": [
+          "runs/swarm/site/expedition/issues.jsonl:1",
+          "runs/swarm/site/expedition/issues.jsonl:2",
+          "runs/swarm/site/expedition/issues.jsonl:7",
+          "runs/swarm/site/expedition/issues.jsonl:12"
+        ],
+        "summary": "Correction: the retained evidence does not support a mobile overflow defect or verified defect/fix cycle.",
+        "fix_paths": [
+          "expedition/issues.jsonl"
+        ],
+        "observed_fix_recheck_cycle": false,
+        "confidence": "high",
+        "passing_check_references": []
+      },
+      {
+        "id": "expedition-home-card-dead-actions",
+        "owner": "expedition",
+        "classification": "product_functional",
+        "raw_category": "functional",
+        "raw_status": "fixed",
+        "recheck_id": "behavior-v6",
+        "evidence": [
+          "runs/swarm/site/expedition/issues.jsonl:3",
+          "runs/swarm/site/expedition/issues.jsonl:5",
+          "runs/swarm/site/expedition/issues.jsonl:8"
+        ],
+        "summary": "Home cards render working links to Journeys; detailed journey cards retain their builder buttons.",
+        "fix_paths": [
+          "expedition/app.js",
+          "expedition/tests/behavior.test.mjs"
+        ],
+        "observed_fix_recheck_cycle": true,
+        "confidence": "high",
+        "passing_check_references": [
+          {
+            "check_id": "behavior-v6",
+            "record_id": "cf7c46ac-1d52-4b4e-ba29-7565fe73832d",
+            "evidence": "runs/swarm/site/expedition/check-runs.jsonl:5"
+          }
+        ]
+      },
+      {
+        "id": "expedition-prototype-storage-id",
+        "owner": "expedition",
+        "classification": "product_runtime",
+        "raw_category": "runtime",
+        "raw_status": "fixed",
+        "recheck_id": "behavior-v5",
+        "evidence": [
+          "runs/swarm/site/expedition/issues.jsonl:4",
+          "runs/swarm/site/expedition/issues.jsonl:6",
+          "runs/swarm/site/expedition/issues.jsonl:9"
+        ],
+        "summary": "Malformed stored route IDs that match inherited object keys now recover to RIDGE safely.",
+        "fix_paths": [
+          "expedition/trips.js",
+          "expedition/app.js",
+          "expedition/tests/behavior.test.mjs"
+        ],
+        "observed_fix_recheck_cycle": true,
+        "confidence": "high",
+        "passing_check_references": [
+          {
+            "check_id": "behavior-v5",
+            "record_id": "0ef14888-3256-447e-9963-22250f39dd19",
+            "evidence": "runs/swarm/site/expedition/check-runs.jsonl:4"
+          }
+        ]
+      },
+      {
+        "id": "expedition-command-path",
+        "owner": "expedition",
+        "classification": "qa_tooling_error",
+        "raw_category": "runtime",
+        "raw_status": "fixed",
+        "recheck_id": "node-runtime-recheck",
+        "evidence": [
+          "runs/swarm/site/expedition/issues.jsonl:10",
+          "runs/swarm/site/expedition/issues.jsonl:11"
+        ],
+        "summary": "The Node runtime is available at the documented absolute path; the incorrect relative executable path is corrected for expedition checks.",
+        "fix_paths": [],
+        "observed_fix_recheck_cycle": true,
+        "confidence": "high",
+        "passing_check_references": [
+          {
+            "check_id": "node-runtime-recheck",
+            "record_id": "d64982c6-6e78-4162-bd02-7fa3c3d4c733",
+            "evidence": "runs/swarm/site/expedition/check-runs.jsonl:7"
+          }
+        ]
+      },
+      {
+        "id": "expedition-preview-selector-ambiguity",
+        "owner": "expedition",
+        "classification": "qa_tooling_error",
+        "raw_category": "runtime",
+        "raw_status": "fixed",
+        "recheck_id": "80d3476f9122473db7a7ff34673f2ce5",
+        "evidence": [
+          "runs/swarm/site/expedition/issues.jsonl:13",
+          "runs/swarm/site/expedition/issues.jsonl:14"
+        ],
+        "summary": "The preview selector now targets the first home-card link specifically, and navigation succeeds.",
+        "fix_paths": [],
+        "observed_fix_recheck_cycle": true,
+        "confidence": "high",
+        "passing_check_references": []
+      },
+      {
+        "id": "integration-preview-action-fields",
+        "owner": "integration",
+        "classification": "qa_tooling_error",
+        "raw_category": "runtime",
+        "raw_status": "fixed",
+        "recheck_id": "lighting-exact-recheck",
+        "evidence": [
+          "runs/swarm/site/integration/issues.jsonl:1",
+          "runs/swarm/site/integration/issues.jsonl:3"
+        ],
+        "summary": "Primary interaction preview requests used key instead of the broker-supported value field for press actions. This is QA request construction, not a site defect.",
+        "fix_paths": [
+          "integration/lighting-exact.json",
+          "integration/meridian-exact.json"
+        ],
+        "observed_fix_recheck_cycle": true,
+        "confidence": "high",
+        "passing_check_references": [
+          {
+            "check_id": "lighting-exact-recheck",
+            "record_id": "4934f0ed-a0d7-47e2-8eb4-d46d0f0db7c1",
+            "evidence": "runs/swarm/site/integration/check-runs.jsonl:13"
+          }
+        ]
+      },
+      {
+        "id": "qa-launch-error-recording",
+        "owner": "integration",
+        "classification": "qa_tooling_error",
+        "raw_category": "runtime",
+        "raw_status": "fixed",
+        "recheck_id": "qa-recorder-recheck",
+        "evidence": [
+          "runs/swarm/site/integration/issues.jsonl:2",
+          "runs/swarm/site/integration/issues.jsonl:4"
+        ],
+        "summary": "qa_check did not retain process-launch errors: a missing Node path raised FileNotFoundError before the check record was written.",
+        "fix_paths": [
+          "qa_check.py"
+        ],
+        "observed_fix_recheck_cycle": true,
+        "confidence": "high",
+        "passing_check_references": [
+          {
+            "check_id": "qa-recorder-recheck",
+            "record_id": "d2b22f67-54b3-4e2c-af43-31df57e0cc1d",
+            "evidence": "runs/swarm/site/integration/check-runs.jsonl:15"
+          }
+        ]
+      }
+    ],
+    "failed_checks": [
+      {
+        "check_id": "missing-node-reproduction",
+        "owner": "expedition",
+        "record_id": "1e33dc9d-3937-4524-8597-ffb28bda659d",
+        "exit_code": 127,
+        "phase": "recheck",
+        "raw_issue_id": "expedition-command-path",
+        "evidence": "runs/swarm/site/expedition/check-runs.jsonl:6",
+        "classification": "intentional_reproduction_of_prior_qa_error"
+      },
+      {
+        "check_id": "route-scaffold",
+        "owner": "integration",
+        "record_id": "d91506d8-007e-4d55-bc34-17c2aa1ce441",
+        "exit_code": 1,
+        "phase": "initial",
+        "raw_issue_id": null,
+        "evidence": "runs/swarm/site/integration/check-runs.jsonl:3",
+        "classification": "expected_initial_scaffold"
+      },
+      {
+        "check_id": "lighting-exact",
+        "owner": "integration",
+        "record_id": "72718bba-7d17-4912-b617-b12a0d456ac1",
+        "exit_code": 1,
+        "phase": "verification",
+        "raw_issue_id": null,
+        "evidence": "runs/swarm/site/integration/check-runs.jsonl:8",
+        "classification": "unexpected_qa_request_failure"
+      },
+      {
+        "check_id": "meridian-exact",
+        "owner": "integration",
+        "record_id": "27b5f42d-aae5-464a-8424-a7a421f870b0",
+        "exit_code": 1,
+        "phase": "verification",
+        "raw_issue_id": null,
+        "evidence": "runs/swarm/site/integration/check-runs.jsonl:10",
+        "classification": "unexpected_qa_request_failure"
+      },
+      {
+        "check_id": "launch-error-regression",
+        "owner": "integration",
+        "record_id": "6f173718-0913-49bb-8d8d-c985500ec677",
+        "exit_code": 127,
+        "phase": "recheck",
+        "raw_issue_id": "qa-launch-error-recording",
+        "evidence": "runs/swarm/site/integration/check-runs.jsonl:14",
+        "classification": "expected_negative_subprocess_for_recorder_regression"
+      },
+      {
+        "check_id": "launch-error-regression",
+        "owner": "integration",
+        "record_id": "052a6e10-9e84-4317-99b2-d21822ae3251",
+        "exit_code": 127,
+        "phase": "recheck",
+        "raw_issue_id": "qa-launch-error-recording",
+        "evidence": "runs/swarm/site/integration/check-runs.jsonl:18",
+        "classification": "expected_negative_subprocess_for_recorder_regression"
+      }
+    ],
+    "missing_evidence": [
+      "Earliest owner request/wrong-interpreter/missing-node failures not durably recorded in check JSONL. Native session evidence confirms errors; original exact launch time/check id unavailable from owner issue links.",
+      "Wrong-interpreter original failure exists in native lighting trace line153; cited routes recheck predates it. Later integrated correct quality invocation passes, but targeted fix/recheck sequence not established."
+    ],
+    "native_trace_evidence": {
+      "lighting": "private exact-lineage native lighting trace, independently inspected; not published",
+      "expedition": "private exact-lineage native expedition trace, independently inspected; not published",
+      "expedition_correction_lines": [
+        150,
+        236
+      ],
+      "lighting_failed_request_line": 100,
+      "lighting_wrong_interpreter_line": 153
+    },
+    "unresolved_logged_issues": [],
+    "unresolved_external_product_causes": 1,
+    "withdrawn_overflow_evidence": [
+      "runs/swarm/site/.preview-events.jsonl:5",
+      "runs/swarm/site/.preview-events.jsonl:8"
+    ],
+    "selector_recheck_evidence": [
+      "runs/swarm/site/.preview-events.jsonl:13",
+      "runs/swarm/site/.preview-events.jsonl:18",
+      "runs/swarm/site/.preview-events.jsonl:24",
+      "runs/swarm/site/.preview-events.jsonl:25"
+    ],
+    "screenshots_independently_inspected": [
+      "runs/swarm/site/.preview-output/d9863f5529b74d3baf07c11b4559638a.png",
+      "runs/swarm/site/.preview-output/cebdb4839873453095c6afb86c2f8707.png"
+    ]
+  },
+  "external_evaluation": {
+    "status": "original_and_mime_corrected_frozen_reviewed",
+    "scores": {
+      "single": {
+        "original": {
+          "passed": 97,
+          "total": 142,
+          "evidence": "runs/single/evaluation/objective.json"
+        },
+        "mime_corrected": {
+          "passed": 141,
+          "total": 142,
+          "evidence": "runs/single/evaluation-corrected/objective.json"
+        },
+        "corrected_failed_assertions": [
+          "lighting: valid local form confirmation"
+        ]
+      },
+      "swarm": {
+        "original": {
+          "passed": 129,
+          "total": 142,
+          "evidence": "runs/swarm/evaluation/objective.json"
+        },
+        "mime_corrected": {
+          "passed": 130,
+          "total": 142,
+          "evidence": "runs/swarm/evaluation-corrected/objective.json"
+        },
+        "corrected_failed_assertions": [
+          "lighting/collection.html@375: loaded local images with descriptive alt",
+          "lighting/collection.html@1440: loaded local images with descriptive alt",
+          "lighting/planner.html@375: loaded local images with descriptive alt",
+          "lighting/planner.html@1440: loaded local images with descriptive alt",
+          "expedition/builder.html@375: loaded local images with descriptive alt",
+          "expedition/builder.html@1440: loaded local images with descriptive alt",
+          "expedition: select RIDGE navigates builder",
+          "expedition: persistence and named storage",
+          "expedition: invalid travelers 0",
+          "expedition: invalid travelers 7",
+          "expedition: invalid travelers 1.5",
+          "expedition: invalid travelers empty"
+        ]
+      }
+    },
+    "setup_defect": {
+      "classification": "evaluator_resource_serving_compatibility",
+      "evidence": [
+        "evaluator.mjs:10",
+        "evaluator.mjs:60",
+        "runs/single/evaluation/objective.json:runtimeErrors"
+      ],
+      "cause": "MIME map omits .mjs; octet-stream rejected for module scripts. Shared preview supports .mjs. Original single45 failed assertions are dominated by one evaluator setup cascade, not45 product defects.",
+      "repair": "MIME-only .mjs text/javascript corrected evaluator, symmetric runs, preserve original score/hash."
+    },
+    "swarm_distinct_final_product_cause": {
+      "id": "external-swarm-query-overrides-persistence",
+      "classification": "functional_persistence_defect",
+      "confidence": "high",
+      "evidence": [
+        "runs/swarm/site/expedition/app.js:52",
+        "browser-diagnosis.json"
+      ],
+      "repro": "Open builder?trip=ridge, choose FJORD,2 travelers,guide; reload. Before420000/idfjord; after540000/idridge and storage overwritten.",
+      "healthy_control": "Bare builder URL retains FJORD420000 after reload.",
+      "manifestations": [
+        "persistence and named storage",
+        "four invalid traveler assertions cascade because reload reset route to RIDGE while evaluator expects FJORD"
+      ],
+      "fixed_during_measured_run": false
+    },
+    "evaluator_compatibility_failures": [
+      {
+        "cause": "URL glob excludes query suffix",
+        "manifestations": 1,
+        "confidence": "high",
+        "evidence": [
+          "evaluator.mjs:113",
+          "runs/swarm/site/expedition/app.js:35"
+        ],
+        "assessment": "Navigation to builder?trip=ridge succeeds and subsequent RIDGE tests pass; waitForURL **/expedition/builder.html fails despite required destination page reached."
+      },
+      {
+        "cause": "Per-page img existence requirement",
+        "manifestations": 6,
+        "confidence": "high",
+        "assessment": "Three swarm pages contain no img; other pages reuse originals. BRIEF requires four native originals and descriptive alt for images and thoughtful reuse across pages, but does not unambiguously require photograph on every page. This is an explicit visual completeness/interpretation finding, not six broken resources."
+      }
+    ],
+    "transient_or_unreproduced_failures": [
+      {
+        "run": "swarm",
+        "cause": "Original form stability timeout800ms",
+        "assessment": "Passed symmetric corrected run and targeted forms365/367ms. No confirmed independent defect.",
+        "evidence": "browser-diagnosis.json"
+      },
+      {
+        "run": "single",
+        "cause": "Corrected valid local form assertion",
+        "assessment": "Targeted same invalid quantity preconditions, HTML-like name, email succeeds: visible local prepared status,74700 cents,no injected img. Unreproduced assertion; timing/instrumentation uncertain, no confirmed product defect.",
+        "evidence": "single-form-diagnosis.json"
+      }
+    ],
+    "final_confirmed_functional_defect_counts": {
+      "single": 0,
+      "swarm": 1
+    },
+    "limits": "These are targeted confirmed lower bounds, not exhaustive accessibility/visual certification. No scored output or measured source changed."
+  },
+  "causal_cost_claims": "None; defect counts cannot establish model/topology cost causality.",
+  "evidence_access": "Raw native transcripts, session identities and check-log commands are private. Reviewed references identify the archived evidence without implying public access. Frozen public portfolios, external results and supplemental reproductions are available."
+}
