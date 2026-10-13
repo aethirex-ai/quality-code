@@ -1,0 +1,9 @@
+{
+  "source": "Private 434-file baseline compared after all evaluator reruns; independently inspectable original/final app and screenshot hashes are also in output-provenance.json.",
+  "baseline_file_count": 434,
+  "changed_baseline_files": 0,
+  "original_evaluator_sha256": "1287cfd246d6c57d4843b342a59942585eeb0b33e762ffd4058b5e37dc645152",
+  "reload_only_native_sha256": "325317f44ccbc2d2dce89be0d5d0415d27c8420c73ec3f078eb2227ac3fa44c0",
+  "final_native_sha256": "790d3c1855b54a084f82922098487ac664fd833ddf2b12dbc509d657a319a56a",
+  "private_proof_sha256": "ed9fe8699abd10d75dc995b97d87d757fb122199be77005c285af316994bf50f"
+}

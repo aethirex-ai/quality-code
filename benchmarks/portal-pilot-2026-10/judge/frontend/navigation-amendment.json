@@ -1,0 +1,243 @@
+{
+  "schema": 1,
+  "acceptanceCriteria": [
+    "Wait for visible authenticated overview or detail after asynchronous startup/reload before project navigation.",
+    "Use visible current detail or actual back-projects when navigation must return to overview; do not assume URL.",
+    "Wait for advertised rendered selected/current project tab before editing its controls.",
+    "Preserve all eleven group definitions, assertions, original evaluator, original evaluations, original screenshots and frozen applications.",
+    "Demonstrate delayed startup and tab races with healthy and negative controls; evaluate both conditions symmetrically on fresh disposable databases."
+  ],
+  "changes": {
+    "evaluate.mjs": [
+      "settledAuthenticatedView bounded existing eventually deadline",
+      "ensureProjectDetail semantic visible detail identity and actual back-projects",
+      "all three reload continuations call ensureProjectDetail",
+      "tab waits aria-selected=true or aria-current=page only when app advertises those semantics"
+    ],
+    "assertionsAndGroupsUnchanged": true,
+    "screenshotsRecaptured": false
+  },
+  "stages": [
+    {
+      "stage": "frontend",
+      "condition": "single",
+      "report": "evaluation/single/frontend/report.json",
+      "sha256": "bc2a26dd7b1af4527da47ca2599e70d73a6f66720f9c7d21dbebe2601ddccc11",
+      "passed": 8,
+      "denominator": 11,
+      "failedGroups": [
+        {
+          "name": "literal_comment_persistence",
+          "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n"
+        },
+        {
+          "name": "decision_validation_persistence",
+          "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n"
+        },
+        {
+          "name": "staff_publish_reopens_history_activity",
+          "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n"
+        }
+      ],
+      "groupDurationTotalMs": 21656,
+      "screenshots": 12,
+      "public_report": "evidence/single/frontend-original.json"
+    },
+    {
+      "stage": "frontend",
+      "condition": "adaptive",
+      "report": "evaluation/adaptive/frontend/report.json",
+      "sha256": "3648bbb1a61bfbf99d79cb4750de314bd534e6a2515864470b96127f56773012",
+      "passed": 8,
+      "denominator": 11,
+      "failedGroups": [
+        {
+          "name": "literal_comment_persistence",
+          "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n"
+        },
+        {
+          "name": "decision_validation_persistence",
+          "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n"
+        },
+        {
+          "name": "staff_publish_reopens_history_activity",
+          "error": "current revision should equal 2"
+        }
+      ],
+      "groupDurationTotalMs": 21543,
+      "screenshots": 12,
+      "public_report": "evidence/adaptive/frontend-original.json"
+    },
+    {
+      "stage": "frontend-corrected-reload-only",
+      "condition": "single",
+      "report": "evaluation/single/frontend-corrected-reload-only/report.json",
+      "sha256": "4253d806428b27432bf2c51d1bb5979833cdab7cfc6f5d9faee51d11a13e4037",
+      "passed": 11,
+      "denominator": 11,
+      "failedGroups": [],
+      "groupDurationTotalMs": 7514,
+      "screenshots": 0,
+      "public_report": "evidence/single/frontend-reload-only.json"
+    },
+    {
+      "stage": "frontend-corrected-reload-only",
+      "condition": "adaptive",
+      "report": "evaluation/adaptive/frontend-corrected-reload-only/report.json",
+      "sha256": "2fbaf5a63014fe80f880866a10d43b6432e6be17c1c90b1e65590f5021179ac2",
+      "passed": 10,
+      "denominator": 11,
+      "failedGroups": [
+        {
+          "name": "staff_publish_reopens_history_activity",
+          "error": "current revision should equal 2"
+        }
+      ],
+      "groupDurationTotalMs": 12115,
+      "screenshots": 0,
+      "public_report": "evidence/adaptive/frontend-reload-only.json"
+    },
+    {
+      "stage": "frontend-corrected",
+      "condition": "single",
+      "report": "evaluation/single/frontend-corrected/report.json",
+      "sha256": "c796160cb58ae790b46458bce72f67ec1fa7212e0640fc7de040d841d27b657b",
+      "passed": 11,
+      "denominator": 11,
+      "failedGroups": [],
+      "groupDurationTotalMs": 7390,
+      "screenshots": 0,
+      "public_report": "evidence/single/frontend-corrected.json"
+    },
+    {
+      "stage": "frontend-corrected",
+      "condition": "adaptive",
+      "report": "evaluation/adaptive/frontend-corrected/report.json",
+      "sha256": "46868a09279465a942d699d99f373e19e3986408f684e63e43f50608e828c808",
+      "passed": 11,
+      "denominator": 11,
+      "failedGroups": [],
+      "groupDurationTotalMs": 8193,
+      "screenshots": 0,
+      "public_report": "evidence/adaptive/frontend-corrected.json"
+    }
+  ],
+  "publicationInterpretation": "Original sampled behavior scores were evaluator-confounded. Corrected sampled behavior scores do not grade overall product quality or establish a winner; separately audited out-of-sample defects remain separate.",
+  "adaptivePublicationChronology": {
+    "evidence": "judge/frontend/adaptive-navigation-diagnostic/report.json",
+    "tabClickMs": 339.2,
+    "titleInputMs": 343.1,
+    "summaryInputMs": 345.7,
+    "selectedAtInputs": "false",
+    "selectedRenderClearedInputsMs": 356,
+    "publishClickMs": 439.1,
+    "publishInputs": "both empty",
+    "publishPOSTObserved": false,
+    "interpretation": "Evaluator edited before advertised revisions selection completed; selected/current semantic wait resolves this timing issue without changing publication assertions."
+  },
+  "hashEvidence": "judge/frontend/navigation-preserved-hashes.json",
+  "controls": {
+    "existingSelftest": {
+      "status": "pass",
+      "proof": "judge/frontend/final-selftest-proof/selftest.json",
+      "healthyPassed": 11,
+      "negativeModes": 11,
+      "screenshots": 12,
+      "missingCapabilityDenominator": 11
+    },
+    "existingRegression": {
+      "status": "pass",
+      "proof": "judge/frontend/final-regression-proof/regression.json",
+      "cleanupCases": 2,
+      "moneyParserCases": 16,
+      "moneyBrowserCases": 6
+    },
+    "delayedStartupNavigation": {
+      "status": "pass",
+      "proof": "judge/frontend/navigation-regression-proof-final/navigation-regression.json",
+      "originalPassed": 8,
+      "correctedPassed": 11,
+      "negativeControls": 3,
+      "actualBackBranch": true,
+      "boundedUnsettledRejected": true
+    },
+    "delayedTab": {
+      "status": "pass",
+      "proof": "judge/frontend/tab-regression-proof-contract/tab-regression.json",
+      "beforePassed": 10,
+      "beforePublication": "fail",
+      "correctedHealthyPassed": 11,
+      "negativePublication": "fail",
+      "healthyControl": "authorized_cards:pass",
+      "model": "fresh brief overview resets selection; staff form exposed while revisions aria-selected=false; asynchronous selected-tab render resets form; nonempty publication contract preserved",
+      "deterministicInterleaving": "250ms pending selection; if summary input arrives before selection, completion is scheduled immediately to exercise render between fill and publish."
+    }
+  },
+  "observedHarnessCorrections": [
+    {
+      "case": "navigation static synthetic page branch",
+      "cause": "global script binding redeclaration across setContent",
+      "fix": "IIFE scope for per-page setup",
+      "firstFailedEvidence": "tool output; original five reports retained navigation-regression-proof",
+      "appSourceChanged": false
+    },
+    {
+      "case": "synthetic delayed tab",
+      "cause": "initial test setup replaced activity content with staff form",
+      "fix": "staff-form setup only on brief",
+      "firstFailedEvidence": "judge/frontend/tab-regression-proof/healthy/report.json",
+      "appSourceChanged": false
+    },
+    {
+      "case": "synthetic delayed tab timing",
+      "cause": "35ms timer nondeterministically completed before evaluator typed",
+      "fix": "pending 250ms selection completion; if input precedes selection, schedule completion at summary input so interleaving is deterministic",
+      "firstFailedEvidence": "judge/frontend/tab-regression-proof-final/before/report.json",
+      "appSourceChanged": false
+    },
+    {
+      "case": "synthetic delayed tab retained fixture state",
+      "cause": "fixture carried revisions selection across overview/account changes unlike measured fresh brief route",
+      "fix": "reset disposable fixture section on overview",
+      "retainedEvidence": [
+        "judge/frontend/tab-regression-proof-deterministic/before/report.json"
+      ],
+      "appSourceChanged": false
+    },
+    {
+      "case": "synthetic delayed tab minimal fixture publication contract",
+      "cause": "minimal fixture accepts empty publication title/summary; actual app required fields reject blank form after reset",
+      "fix": "enforce nonempty title and summary only in disposable delayed-tab fixture copy",
+      "retainedEvidence": "judge/frontend/tab-regression-proof-settled/before/report.json",
+      "appSourceChanged": false
+    }
+  ],
+  "provenance": {
+    "unchangedFileCount": 434,
+    "changed": [],
+    "evaluatorOriginalSha256": "1287cfd246d6c57d4843b342a59942585eeb0b33e762ffd4058b5e37dc645152",
+    "evaluatorReloadOnlySha256": "325317f44ccbc2d2dce89be0d5d0415d27c8420c73ec3f078eb2227ac3fa44c0",
+    "evaluatorCorrectedSha256": "790d3c1855b54a084f82922098487ac664fd833ddf2b12dbc509d657a319a56a",
+    "originalVisualBasis": {
+      "single": 12,
+      "adaptive": 12
+    }
+  },
+  "evidenceFiles": [
+    "judge/frontend/evaluate-original.mjs",
+    "judge/frontend/evaluate-reload-only.mjs",
+    "judge/frontend/evaluate.mjs",
+    "judge/frontend/navigation-evaluator.diff",
+    "judge/frontend/navigation-preserved-hashes.json",
+    "judge/frontend/navigation-regression.mjs",
+    "judge/frontend/tab-regression.mjs",
+    "judge/frontend/navigation-regression-proof-final/navigation-regression.json",
+    "judge/frontend/tab-regression-proof-contract/tab-regression.json",
+    "judge/frontend/final-selftest-proof/selftest.json",
+    "judge/frontend/final-regression-proof/regression.json",
+    "judge/frontend/adaptive-navigation-diagnostic/report.json"
+  ],
+  "scriptPortability": "Evaluator uses existing absolute native Playwright import; publisher may create a portable audit copy replacing import only, retaining evaluator hashes and all behavioral assertions.",
+  "baselineEvidencePolicy": "The full 434-file baseline remains private. Published navigation-preserved-hashes.json summarizes unchanged baseline verification and hashes the private proof; output-provenance.json exposes curated unchanged app/capture bytes.",
+  "publicDiffPolicy": "navigation-evaluator.diff compares the portable original and final evaluator copies; native original/amended hashes are recorded separately."
+}

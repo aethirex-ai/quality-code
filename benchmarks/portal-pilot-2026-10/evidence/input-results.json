@@ -1,0 +1,274 @@
+{
+  "single": {
+    "checks": [
+      {
+        "name": "surrogate comment",
+        "status": 500,
+        "body": {
+          "error": {
+            "code": "server_error",
+            "message": "The local server could not complete this request. Please try again."
+          }
+        }
+      },
+      {
+        "name": "surrogate email",
+        "status": 500,
+        "body": {
+          "error": {
+            "code": "server_error",
+            "message": "The local server could not complete this request. Please try again."
+          }
+        }
+      },
+      {
+        "name": "surrogate password",
+        "status": 500,
+        "body": {
+          "error": {
+            "code": "server_error",
+            "message": "The local server could not complete this request. Please try again."
+          }
+        }
+      },
+      {
+        "name": "surrogate decision note",
+        "status": 500,
+        "body": {
+          "error": {
+            "code": "server_error",
+            "message": "The local server could not complete this request. Please try again."
+          }
+        }
+      },
+      {
+        "name": "decision object",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_decision",
+            "message": "Choose approve or request_changes."
+          }
+        }
+      },
+      {
+        "name": "boolean revision",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_revision",
+            "message": "revision must be a positive integer."
+          }
+        }
+      },
+      {
+        "name": "overflow revision",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_revision",
+            "message": "revision must be a positive integer."
+          }
+        }
+      },
+      {
+        "name": "deep json",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_field",
+            "message": "body must be text."
+          }
+        }
+      },
+      {
+        "name": "nonfinite",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_json",
+            "message": "Send a JSON object of at most 16 KiB with valid field values."
+          }
+        }
+      },
+      {
+        "name": "static /server.py",
+        "status": 404
+      },
+      {
+        "name": "static /../server.py",
+        "status": 404
+      },
+      {
+        "name": "static /%2e%2e/server.py",
+        "status": 404
+      },
+      {
+        "name": "static /public/../server.py",
+        "status": 404
+      },
+      {
+        "name": "static /.git/config",
+        "status": 404
+      },
+      {
+        "name": "static /%2f..%2fserver.py",
+        "status": 404
+      },
+      {
+        "name": "healthy Unicode",
+        "status": 201,
+        "body": {
+          "comment": {
+            "id": "206896b1db51d0b9557415fb",
+            "body": "healthy Unicode \ud83c\udfdb caf\u00e9",
+            "author": {
+              "id": "c1",
+              "name": "Alex Morgan",
+              "role": "client"
+            },
+            "createdAt": "2026-10-13T00:29:59.624350Z"
+          }
+        }
+      }
+    ],
+    "failedInputsAddedEvents": 0,
+    "saltedPBKDF2_240000": true
+  },
+  "adaptive": {
+    "checks": [
+      {
+        "name": "surrogate comment",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_input",
+            "message": "body must contain valid Unicode text."
+          }
+        }
+      },
+      {
+        "name": "surrogate email",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_input",
+            "message": "email must contain valid Unicode text."
+          }
+        }
+      },
+      {
+        "name": "surrogate password",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_input",
+            "message": "password must contain valid Unicode text."
+          }
+        }
+      },
+      {
+        "name": "surrogate decision note",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_input",
+            "message": "note must contain valid Unicode text."
+          }
+        }
+      },
+      {
+        "name": "decision object",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_input",
+            "message": "decision must be approve or request_changes."
+          }
+        }
+      },
+      {
+        "name": "boolean revision",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_input",
+            "message": "revision must be a positive integer."
+          }
+        }
+      },
+      {
+        "name": "overflow revision",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_input",
+            "message": "revision must be a positive integer."
+          }
+        }
+      },
+      {
+        "name": "deep json",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_input",
+            "message": "body must be text."
+          }
+        }
+      },
+      {
+        "name": "nonfinite",
+        "status": 400,
+        "body": {
+          "error": {
+            "code": "invalid_input",
+            "message": "Request must contain valid JSON."
+          }
+        }
+      },
+      {
+        "name": "static /server.py",
+        "status": 404
+      },
+      {
+        "name": "static /../server.py",
+        "status": 404
+      },
+      {
+        "name": "static /%2e%2e/server.py",
+        "status": 404
+      },
+      {
+        "name": "static /public/../server.py",
+        "status": 404
+      },
+      {
+        "name": "static /.git/config",
+        "status": 404
+      },
+      {
+        "name": "static /%2f..%2fserver.py",
+        "status": 404
+      },
+      {
+        "name": "healthy Unicode",
+        "status": 201,
+        "body": {
+          "comment": {
+            "id": "710c327415d00a6e46725000",
+            "body": "healthy Unicode \ud83c\udfdb caf\u00e9",
+            "author": {
+              "id": "c1",
+              "name": "Alex Morgan",
+              "role": "client"
+            },
+            "createdAt": "2026-10-13T00:29:59.899005Z"
+          }
+        }
+      }
+    ],
+    "failedInputsAddedEvents": 0,
+    "saltedPBKDF2_240000": true
+  }
+}

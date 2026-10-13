@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "session_counts": {
+    "root": 1
+  },
+  "models": {
+    "gpt-6.1-sol": {
+      "input_tokens": 4614607,
+      "cached_input_tokens": 4455168,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 90904,
+      "reasoning_output_tokens": 32163,
+      "total_tokens": 4705511
+    }
+  },
+  "tokens": {
+    "input_tokens": 4614607,
+    "cached_input_tokens": 4455168,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 90904,
+    "reasoning_output_tokens": 32163,
+    "total_tokens": 4705511
+  },
+  "sessions": [
+    {
+      "role": "root",
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 4614607,
+          "cached_input_tokens": 4455168,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 90904,
+          "reasoning_output_tokens": 32163,
+          "total_tokens": 4705511
+        }
+      },
+      "message_roles": {
+        "developer": 1,
+        "user": 2,
+        "assistant": 12
+      },
+      "token_snapshots": 49,
+      "image_call_sites": 0,
+      "max_observed_request_input": 159473,
+      "flags": []
+    }
+  ],
+  "image_calls": 0,
+  "image_call_sites": 0,
+  "image_count_exact": true,
+  "cli_root_reconciliation": "matched",
+  "spawn_reconciliation": {
+    "successful_spawns": 0,
+    "matched_children": 0,
+    "status": "matched"
+  },
+  "standard_short_estimated_usd": 1.6734348,
+  "flags": [],
+  "tokens_complete": true,
+  "observed_tokens": {
+    "input_tokens": 4614607,
+    "cached_input_tokens": 4455168,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 90904,
+    "reasoning_output_tokens": 32163,
+    "total_tokens": 4705511
+  },
+  "native_evidence_sha256": [
+    {
+      "role": "root",
+      "sha256": "f30710e159fc4c1540e952017ea3a0dedb2ac7bb5520970f83c5d3cb6099a710"
+    }
+  ],
+  "native_evidence_policy": "Selected native logs retained privately at their original location; only hashes/aggregate counters published.",
+  "cost_components_usd": {
+    "checked_date": "2026-10-13",
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "by_model": {
+      "gpt-6.1-sol": {
+        "uncached_input": "0.318878",
+        "cached_input": "0.4455168",
+        "output_including_reasoning": "0.90904",
+        "total": "1.6734348"
+      }
+    },
+    "total": {
+      "uncached_input": "0.318878",
+      "cached_input": "0.4455168",
+      "output_including_reasoning": "0.90904"
+    },
+    "estimated_total": "1.6734348",
+    "exclusions": [
+      "image generation",
+      "other tool charges",
+      "setup",
+      "external grading",
+      "measurement audit"
+    ]
+  },
+  "iteration_evidence": {
+    "owners": {
+      "backend": {
+        "check_history_present": true,
+        "recorded_check_runs": 2,
+        "initial_scaffold_nonzero_exits": 0,
+        "verification_nonzero_exits": 0,
+        "passing_runs": 2,
+        "observed_check_recovery_sequences": [],
+        "unrecovered_check_ids": [],
+        "reported_issue_ids": [
+          "API-001"
+        ]
+      },
+      "frontend": {
+        "check_history_present": true,
+        "recorded_check_runs": 27,
+        "initial_scaffold_nonzero_exits": 3,
+        "verification_nonzero_exits": 4,
+        "passing_runs": 20,
+        "observed_check_recovery_sequences": [],
+        "unrecovered_check_ids": [
+          "client-dashboard-mobile-recheck",
+          "login-invalid-mobile",
+          "login-invalid-mobile-ready",
+          "login-mobile"
+        ],
+        "reported_issue_ids": [
+          "CHECK-001",
+          "CHECK-002",
+          "TOOL-002",
+          "UI-001",
+          "UI-002",
+          "UI-003",
+          "VIS-001",
+          "VIS-002"
+        ]
+      },
+      "integration": {
+        "check_history_present": true,
+        "recorded_check_runs": 26,
+        "initial_scaffold_nonzero_exits": 0,
+        "verification_nonzero_exits": 2,
+        "passing_runs": 24,
+        "observed_check_recovery_sequences": [],
+        "unrecovered_check_ids": [
+          "rendered-revision-conflict",
+          "rendered-revision-conflict-recheck"
+        ],
+        "reported_issue_ids": [
+          "CHECK-003",
+          "GATE-001",
+          "TOOL-001",
+          "TOOL-003"
+        ]
+      }
+    },
+    "issue_history_present": true,
+    "distinct_reported_issue_ids": 13,
+    "latest_reported_statuses": {
+      "TOOL-001": "fixed",
+      "TOOL-002": "fixed",
+      "CHECK-001": "fixed",
+      "CHECK-002": "fixed",
+      "UI-001": "fixed",
+      "UI-002": "fixed",
+      "TOOL-003": "fixed",
+      "CHECK-003": "fixed",
+      "VIS-001": "fixed",
+      "UI-003": "fixed",
+      "GATE-001": "blocked",
+      "VIS-002": "fixed",
+      "API-001": "fixed"
+    },
+    "preview_history_present": true,
+    "recorded_previews": 34,
+    "timed_recorded_previews": 34,
+    "outside_timer_recorded_previews": 0,
+    "preview_timing_unknown": false,
+    "classification_pending_independent_review": true,
+    "limits": "Raw observations only. Independent review must distinguish product defects, visual refinements, tooling errors, expected negative/construction failures, duplicate causes and unresolved final errors."
+  }
+}

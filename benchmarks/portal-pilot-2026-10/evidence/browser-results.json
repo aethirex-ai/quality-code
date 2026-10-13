@@ -1,0 +1,55 @@
+{
+  "single": {
+    "checks": [
+      {
+        "name": "comment literal and reload",
+        "status": "pass"
+      },
+      {
+        "name": "blank request changes and approval persist",
+        "status": "pass"
+      },
+      {
+        "name": "staff browser publish reopens with immutable history",
+        "status": "pass"
+      },
+      {
+        "name": "real stale decision refetch draft no event",
+        "status": "pass"
+      },
+      {
+        "name": "post success refresh failure feedback",
+        "status": "pass"
+      }
+    ],
+    "errors": [],
+    "refreshFailureFeedback": "Your change was saved, but the latest project could not be loaded. Refresh the page before continuing."
+  },
+  "adaptive": {
+    "checks": [
+      {
+        "name": "comment literal and reload",
+        "status": "pass"
+      },
+      {
+        "name": "blank request changes and approval persist",
+        "status": "pass"
+      },
+      {
+        "name": "staff browser publish reopens with immutable history",
+        "status": "pass"
+      },
+      {
+        "name": "real stale decision refetch draft no event",
+        "status": "pass"
+      },
+      {
+        "name": "post success refresh failure feedback",
+        "status": "fail",
+        "error": "saved mutation misrepresented: Failed to fetch"
+      }
+    ],
+    "errors": [],
+    "refreshFailureFeedback": "Failed to fetch"
+  }
+}

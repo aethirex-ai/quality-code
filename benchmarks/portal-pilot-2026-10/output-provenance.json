@@ -1,0 +1,278 @@
+{
+  "policy": "App server/public files and curated original backend regressions are byte-identical to frozen measured output. Original screenshots are unchanged. Other measured files remain private; published files are not a full workspace or private evidence dump.",
+  "files": [
+    {
+      "condition": "single",
+      "path": "server.py",
+      "original_sha256": "269973502766b5ee68303359222f3bb402500d5b1a822e0a67da22e6853d501f",
+      "published_sha256": "269973502766b5ee68303359222f3bb402500d5b1a822e0a67da22e6853d501f",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "public/app.js",
+      "original_sha256": "1cb0a07f55d30788393ba6a5c9554fe8a15c55a0429ba1621130658bab04895e",
+      "published_sha256": "1cb0a07f55d30788393ba6a5c9554fe8a15c55a0429ba1621130658bab04895e",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "public/favicon.svg",
+      "original_sha256": "a419371d7aa88e983506963a0ba374f904043bb40198f4e15dc57ee407988751",
+      "published_sha256": "a419371d7aa88e983506963a0ba374f904043bb40198f4e15dc57ee407988751",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "public/index.html",
+      "original_sha256": "a570f0a4fddb863f1a1f21c00febd5f96c0b1aee6dfb43c149d1235fe1ceeada",
+      "published_sha256": "a570f0a4fddb863f1a1f21c00febd5f96c0b1aee6dfb43c149d1235fe1ceeada",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "public/style.css",
+      "original_sha256": "61c5ed92926c47de4dc49128600870b28f24e85e9d33fedc080fe70fa37b4b32",
+      "published_sha256": "61c5ed92926c47de4dc49128600870b28f24e85e9d33fedc080fe70fa37b4b32",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "tests/__init__.py",
+      "original_sha256": "ea98a685d9a6ec186670f30600841648b97d3535494762a9963a960ecfb3101c",
+      "published_sha256": "ea98a685d9a6ec186670f30600841648b97d3535494762a9963a960ecfb3101c",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "tests/test_api.py",
+      "original_sha256": "49c986abb2b3089b043c0c42f4198d8fecfb45ef090aae2d94521c107204b4eb",
+      "published_sha256": "49c986abb2b3089b043c0c42f4198d8fecfb45ef090aae2d94521c107204b4eb",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "tests/support.py",
+      "original_sha256": "1634e6d07f96f07e342b92ff0e0f258380d39cf54098d24a5cd92811dd688e83",
+      "published_sha256": "1634e6d07f96f07e342b92ff0e0f258380d39cf54098d24a5cd92811dd688e83",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/1440-client-dashboard.png",
+      "original_sha256": "5edaa37b5d787dd205f095cb300e446ca9d3ebbbab1951b447ddc74203ad2dce",
+      "published_sha256": "5edaa37b5d787dd205f095cb300e446ca9d3ebbbab1951b447ddc74203ad2dce",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/1440-project-brief.png",
+      "original_sha256": "a34610dc5caaf8c9091763ee54580de39925918066c6a81f8dce6e2c8af12f13",
+      "published_sha256": "a34610dc5caaf8c9091763ee54580de39925918066c6a81f8dce6e2c8af12f13",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/1440-project-discussion.png",
+      "original_sha256": "38e585d08683271758e1406c7eb51eaa77d60e1f009b77dc6758a34dad22d4cf",
+      "published_sha256": "38e585d08683271758e1406c7eb51eaa77d60e1f009b77dc6758a34dad22d4cf",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/1440-project-revisions.png",
+      "original_sha256": "78d61e5f67d92c3d7d7c93a259106d945b32c807fed7980f625d412b3aba9ba0",
+      "published_sha256": "78d61e5f67d92c3d7d7c93a259106d945b32c807fed7980f625d412b3aba9ba0",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/1440-staff-dashboard.png",
+      "original_sha256": "2ee2913fbc843e3b3ccfa8195eccbb0c8f0593d489510399ba53a551e98250ad",
+      "published_sha256": "2ee2913fbc843e3b3ccfa8195eccbb0c8f0593d489510399ba53a551e98250ad",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/1440-staff-publish.png",
+      "original_sha256": "f195df56c5a01aa4364f43ef79cb9e484a650de3e7a3e580616f171923e877c3",
+      "published_sha256": "f195df56c5a01aa4364f43ef79cb9e484a650de3e7a3e580616f171923e877c3",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/375-client-dashboard.png",
+      "original_sha256": "1051ecdf71c69ec7909598a607f25748fbe9f2d5a415300056ec8ee36e06894c",
+      "published_sha256": "1051ecdf71c69ec7909598a607f25748fbe9f2d5a415300056ec8ee36e06894c",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/375-project-brief.png",
+      "original_sha256": "358597c54257c8b6dafae6167eb4a41d2a635cc782be3b61a2ccedb557696d10",
+      "published_sha256": "358597c54257c8b6dafae6167eb4a41d2a635cc782be3b61a2ccedb557696d10",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/375-project-discussion.png",
+      "original_sha256": "94e6263006a662125ab4bbf2e3a76b4f81b753dafb3b77472120d60a51579d30",
+      "published_sha256": "94e6263006a662125ab4bbf2e3a76b4f81b753dafb3b77472120d60a51579d30",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/375-project-revisions.png",
+      "original_sha256": "449c9d3de1b51b34d6bfeff00058beffaf6372c560c669be5128e7f9fb164a5d",
+      "published_sha256": "449c9d3de1b51b34d6bfeff00058beffaf6372c560c669be5128e7f9fb164a5d",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/375-staff-dashboard.png",
+      "original_sha256": "27dfc7a7aaceb41c23205503cc8161ba94db4cb69f6a02724dcbc24992a4688d",
+      "published_sha256": "27dfc7a7aaceb41c23205503cc8161ba94db4cb69f6a02724dcbc24992a4688d",
+      "normalization": null
+    },
+    {
+      "condition": "single",
+      "path": "screenshots/375-staff-publish.png",
+      "original_sha256": "4b44701e77bf3e4113ffb7c17a575585c227e49ffc96850ce0da2e35bd987f2f",
+      "published_sha256": "4b44701e77bf3e4113ffb7c17a575585c227e49ffc96850ce0da2e35bd987f2f",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "server.py",
+      "original_sha256": "fce0081d6835b5ec073089c4aded2b98bb8f731a005dd042fdc5281e08087fc1",
+      "published_sha256": "fce0081d6835b5ec073089c4aded2b98bb8f731a005dd042fdc5281e08087fc1",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "public/app.js",
+      "original_sha256": "4dc22286c0152545e1420e0db3d40360f71e049fe27d03c7603a73b5264a1add",
+      "published_sha256": "4dc22286c0152545e1420e0db3d40360f71e049fe27d03c7603a73b5264a1add",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "public/index.html",
+      "original_sha256": "e49f3ff24a7f146b3ca1aa18f961a094eb7704b4ecff180262e28e0205a5edaa",
+      "published_sha256": "e49f3ff24a7f146b3ca1aa18f961a094eb7704b4ecff180262e28e0205a5edaa",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "public/mark.svg",
+      "original_sha256": "666f6ac1cca931b0726971441aad41e8f64c17abc9c4df9498407675730a5b84",
+      "published_sha256": "666f6ac1cca931b0726971441aad41e8f64c17abc9c4df9498407675730a5b84",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "public/style.css",
+      "original_sha256": "4cb60339c64a2d1d04b84325e702d56120f9afe94157bea131447d731110351a",
+      "published_sha256": "4cb60339c64a2d1d04b84325e702d56120f9afe94157bea131447d731110351a",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "tests/__init__.py",
+      "original_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "tests/test_backend.py",
+      "original_sha256": "88dbf34bfd4cf7238cf17e1ef047e8a14578a5b1acb72415e7d7412bccf13577",
+      "published_sha256": "88dbf34bfd4cf7238cf17e1ef047e8a14578a5b1acb72415e7d7412bccf13577",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/1440-client-dashboard.png",
+      "original_sha256": "6f14c4e2f019875d3565edc1e5031b4d2f87555bb539e1c3f51a259044fdaa4e",
+      "published_sha256": "6f14c4e2f019875d3565edc1e5031b4d2f87555bb539e1c3f51a259044fdaa4e",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/1440-project-brief.png",
+      "original_sha256": "d305158af34c7098121572324d72059fcc4d3502e7018701bd7a4fefccd355d4",
+      "published_sha256": "d305158af34c7098121572324d72059fcc4d3502e7018701bd7a4fefccd355d4",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/1440-project-discussion.png",
+      "original_sha256": "948421b5e0fcdff35ded48bedb5e605bd05afc9fafea9d4286e37afc45235690",
+      "published_sha256": "948421b5e0fcdff35ded48bedb5e605bd05afc9fafea9d4286e37afc45235690",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/1440-project-revisions.png",
+      "original_sha256": "24b27e233637a4169058be6b48f61b60207486be5b55df6a93f5bdfe06f93850",
+      "published_sha256": "24b27e233637a4169058be6b48f61b60207486be5b55df6a93f5bdfe06f93850",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/1440-staff-dashboard.png",
+      "original_sha256": "0d7227d77871e931a5bf9d199397c252d8a89028ce875671bbc69fd64e44404b",
+      "published_sha256": "0d7227d77871e931a5bf9d199397c252d8a89028ce875671bbc69fd64e44404b",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/1440-staff-publish.png",
+      "original_sha256": "d1bc6dce39d3ccc54f3d47e6925a896b6f7748e5db75bfe6f4f6ba14d4ee89af",
+      "published_sha256": "d1bc6dce39d3ccc54f3d47e6925a896b6f7748e5db75bfe6f4f6ba14d4ee89af",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/375-client-dashboard.png",
+      "original_sha256": "827883f9022f697eee16f49debd42f078f5b4a8055ada01000fc741bc0380768",
+      "published_sha256": "827883f9022f697eee16f49debd42f078f5b4a8055ada01000fc741bc0380768",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/375-project-brief.png",
+      "original_sha256": "2e5acff5c0efd54cbb836eeff5f085f9c33044fffb87cd26fb6c2395dc47cd47",
+      "published_sha256": "2e5acff5c0efd54cbb836eeff5f085f9c33044fffb87cd26fb6c2395dc47cd47",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/375-project-discussion.png",
+      "original_sha256": "37269a70b12740077f99b9b87f57e65b821d41dc6cea69c49db24a75a97d4a1f",
+      "published_sha256": "37269a70b12740077f99b9b87f57e65b821d41dc6cea69c49db24a75a97d4a1f",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/375-project-revisions.png",
+      "original_sha256": "d34d1d1c1697e5fe51bafdbbf38c16474ae1110bc4087e9fb578817f24b7e4d5",
+      "published_sha256": "d34d1d1c1697e5fe51bafdbbf38c16474ae1110bc4087e9fb578817f24b7e4d5",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/375-staff-dashboard.png",
+      "original_sha256": "acd8996313dd619662b229eb7035c7b9feda5a2ab174d02b62b91679a22e3de5",
+      "published_sha256": "acd8996313dd619662b229eb7035c7b9feda5a2ab174d02b62b91679a22e3de5",
+      "normalization": null
+    },
+    {
+      "condition": "adaptive",
+      "path": "screenshots/375-staff-publish.png",
+      "original_sha256": "69996ac46feb8bb8385dc1110e4720e5bf1997e3bddd1a83004a557c6730d486",
+      "published_sha256": "69996ac46feb8bb8385dc1110e4720e5bf1997e3bddd1a83004a557c6730d486",
+      "normalization": null
+    }
+  ]
+}

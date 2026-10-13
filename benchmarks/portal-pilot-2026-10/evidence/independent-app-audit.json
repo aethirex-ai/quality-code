@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "verdict": "FAIL",
+  "scope": {
+    "base": "Explicit completed frozen site snapshots runs/single/site and runs/adaptive/site; packet HEAD is initialization baseline, with all current source files in scope. Parent benchmark infrastructure and history metrics outside this gate.",
+    "changed_files": [
+      "private-evidence/runs/single/site/server.py",
+      "private-evidence/runs/single/site/public/app.js",
+      "private-evidence/runs/single/site/public/index.html",
+      "private-evidence/runs/single/site/public/style.css",
+      "private-evidence/runs/single/site/.quality/quality.toml",
+      "private-evidence/runs/single/site/MAP.md",
+      "private-evidence/runs/single/site/TESTING.md",
+      "private-evidence/runs/adaptive/site/server.py",
+      "private-evidence/runs/adaptive/site/public/app.js",
+      "private-evidence/runs/adaptive/site/public/index.html",
+      "private-evidence/runs/adaptive/site/public/style.css",
+      "private-evidence/runs/adaptive/site/.quality/quality.toml",
+      "private-evidence/runs/adaptive/site/MAP.md",
+      "private-evidence/runs/adaptive/site/TESTING.md"
+    ],
+    "acceptance_criteria": "Frozen fictional AethDesign portal BRIEF.md and APP_PROMPT: complete local stdlib Python/SQLite plus HTML/CSS/JS app; secure salted verifiers and opaque persistent sessions; server permissions/client isolation; bounded JSON/origin/type/text validation; transactional revisions, decisions, comments and exactly-one activity; restart persistence; safe static serving; integrated responsive authenticated UI, navigation/reload, success/error/conflict feedback and account isolation. No release or production certification."
+  },
+  "risk": "critical",
+  "checks": [
+    {
+      "command": [
+        "PYTHONDONTWRITEBYTECODE=1",
+        "python3",
+        "-B",
+        "runs/single/site/verify_app.py"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Executed in single site cwd; all 11 discovered regression tests passed, covering real HTTP auth/state/races/restart and frontend focused tests."
+    },
+    {
+      "command": [
+        "PYTHONDONTWRITEBYTECODE=1",
+        "python3",
+        "-B",
+        "runs/adaptive/site/verify_app.py"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Executed in adaptive site cwd; all 11 discovered regression tests passed, covering real HTTP auth/state/races/restart and frontend focused tests."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "runs/adaptive/site/tests/conflict_server.py",
+        "--self-test"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Executed in adaptive site cwd with PYTHONDONTWRITEBYTECODE; 1 conflict harness self-test passed."
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "runs/adaptive/site/public/app.js"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Bundled Node syntax check passed; required adaptive full profile covered."
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Executed in both site roots; both passed. This is supplementary static evidence."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "judge/backend/evaluate.py",
+        "runs/single/site",
+        "independent-app-audit/single-backend.json"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Independently reproduced 12/12 black-box groups on fresh per-group DBs; auth, sessions, isolation, permissions, bounds, comment/activity, publication, transitions, conflicts, concurrent publication, restart and seeds."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "judge/backend/evaluate.py",
+        "runs/adaptive/site",
+        "independent-app-audit/adaptive-backend.json"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Independently reproduced same12/12 black-box groups on fresh per-group DBs."
+    },
+    {
+      "command": [
+        "node",
+        "independent-app-audit/browser.mjs"
+      ],
+      "status": "fail",
+      "exit_code": 0,
+      "evidence": "Harness records outcomes in browser-results.json rather than exiting on assertion: both pass literal comment+reload, blank changes validation+approval persistence, browser publication+immutable approval history, real stale decision refetch+draft retention+no event. Both have no pageerrors. Single passes saved-refresh feedback; adaptive fails it. Real 375px integrated screenshots saved."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "independent-app-audit/inputs.py"
+      ],
+      "status": "fail",
+      "exit_code": 0,
+      "evidence": "input-results.json: single Unicode500 defect; adaptive400. Both reject object/bool/overflow revisions, nonfinite JSON and static traversal/source access. Healthy Unicode201, failed event delta0. Static plus stored DB review confirms per-account random128bit salt, PBKDF2-HMAC-SHA256240000 and hashed random256bit session tokens, no API secret exposure."
+    },
+    {
+      "command": [
+        "node",
+        "independent-app-audit/race.mjs"
+      ],
+      "status": "fail",
+      "exit_code": 0,
+      "evidence": "account-race.json and screenshots demonstrate AUD-001; adaptive same schedule healthy."
+    },
+    {
+      "command": [
+        "node",
+        "independent-app-audit/refresh-conflict.mjs"
+      ],
+      "status": "fail",
+      "exit_code": 0,
+      "evidence": "refresh-conflict.json confirms AUD-003 duplicate retry (saved POST then failed GET); single healthy control. Other adaptive staff-conflict and conflict-refetch-failure rows were sampled before stable tab state, so their empty feedback/revision rows are inconclusive harness timing evidence, not product failures or passes."
+    }
+  ],
+  "findings": [
+    {
+      "id": "AUD-001",
+      "severity": "critical",
+      "title": "Delayed stale-conflict response exposes prior client project after account switch",
+      "file": "private-evidence/runs/single/site/public/app.js",
+      "line": 214,
+      "evidence": "Fresh scratch DB, real browser: c1 opens p1/revisions; staff publishes revision 2; c1 approves stale revision 1. Hold the conflict recovery GET /api/projects/p1 response after its real server authorization. Logout c1 and login c2: Sam Ellis overview initially shows no Harbor. Release the held response: Sam Ellis identity now shows Harbor House Identity, p1 revisions and old draft. account-race.json: beforeHarbor=false, afterSam=true, afterHarbor=true, afterDetail=p1. race.mjs is deterministic repro; screenshot single-account-conflict-race.png visually inspected. Adaptive healthy control with identical scheduling did not show Harbor. Server-side c2 isolation remains enforced; this is a frontend response-generation defect. Missing epoch/route recheck after await loadDetail in the conflict branch permits stale assignment/render.",
+      "required_action": "Check the captured account/navigation generation and project route immediately after each awaited conflict refetch and before committing state or rendering; add a real delayed-response logout/account-switch regression."
+    },
+    {
+      "id": "AUD-002",
+      "severity": "normal",
+      "title": "Unpaired Unicode surrogates return 500 rather than bounded invalid-input errors",
+      "file": "private-evidence/runs/single/site/server.py",
+      "line": 148,
+      "evidence": "inputs.py against fresh scratch DB sends JSON escaped unpaired U+D800 in comment body, email, password and approval note. input-results.json records HTTP500/server_error for all four, versus expected400. One missing Unicode scalar-validation cause, not four independent defects. Healthy Unicode comment containing emoji and caf\u00e9 succeeds201; failed-input event delta0 proves rollback intact. Adaptive healthy control rejects all four400.",
+      "required_action": "Reject invalid Unicode scalar values before password encoding, SQLite binding or mutations and cover all affected text fields with a bounded400 regression."
+    },
+    {
+      "id": "AUD-003",
+      "severity": "normal",
+      "title": "Confirmed mutation is reported as fetch failure and enabled retry duplicates comments",
+      "file": "private-evidence/runs/adaptive/site/public/app.js",
+      "line": 79,
+      "evidence": "Fresh browser and DB: successfully POST a comment, abort only subsequent GET /api/projects/p1 refresh. browser-results.json reports feedback Failed to fetch. refresh-conflict.json confirms persisted=1, retryEnabled=true; clicking the still-visible retry creates persistedAfterVisibleRetry=2 identical comments. The POST itself succeeded. Single healthy control explicitly says saved-but-refresh-failed, persisted=1 and retryEnabled=false. mutate places action and refresh in one try/catch with no saved marker; finally enables form buttons.",
+      "required_action": "Preserve confirmed success independently from refresh failure, display saved-but-refresh-unavailable feedback, and prevent inadvertent resubmission of the acknowledged mutation; add a POST-success/GET-failure integration regression."
+    }
+  ],
+  "untested": [
+    "Not an exhaustive production penetration test or security-completeness certification; no external/deployed backend, live accounts, TLS, real personal data, purchases or destructive actions tested.",
+    "Anonymous aesthetic ranking and full cross-browser/platform/accessibility audit belong to separate evaluation; this audit checked representative actual desktop/mobile screenshots and integrated interactions.",
+    "Adaptive old-conflict assignment can update stale internal state before its generation guard; attempted overlapping-account-mutation experiment stalled because state.busy suppresses a second mutation. No additional visible leak established; hypothesis not counted as defect.",
+    "Targeted adaptive staff-stale-publication / failed-conflict-refetch harness did not establish stable tab readiness; its inconclusive rows excluded. Successful publication and decision-conflict branches separately passed.",
+    "Frozen frontend evaluation original reports retain8/11 for each. Some failures attempt overview-only open-project immediately during detail reload restoration; later groups share prior navigation/mutation dependencies. These three group failures per condition do not establish three independent product defects. Corrected evaluator rerun is parent-owned and not certified here."
+  ],
+  "residual_risk": "Both implementation verdicts FAIL: single has two distinct reproduced causes (critical frontend account leak, normal Unicode input500); adaptive has one reproduced normal saved-success/duplicate-retry cause. Passing sampled API and UI checks do not certify production readiness. Frozen sources may be published only as honestly disclosed fictional experimental local runnable sources/static captures; this audit does not approve a deployed backend. Three original failing browser groups per condition are preserved as raw evidence, not defect denominators. Sources, builder evidence and frozen DB files unchanged; generated bytecode excluded. Independent audit artifacts only created outside frozen sites.",
+  "worktree_unchanged": true
+}

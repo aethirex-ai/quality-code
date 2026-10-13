@@ -1,0 +1,439 @@
+{
+  "policy": "Measured native sources remain private and immutable. Published replay copies normalize host tool paths and move generated control results outside historical evidence. Recorded protocol retains original hashes; for a new opted-in native trial copy into a new dated workspace, rediscover support/prices and create a new seal. No app outcome bytes have been changed. External frontend evaluation was amended after grading; original, reload-only and final native hashes and all score stages are explicitly retained.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "original_sha256": "727c76c1cad5fc35387acf769d984e6f44a952cb3802c232f617304158aad345",
+      "published_sha256": "727c76c1cad5fc35387acf769d984e6f44a952cb3802c232f617304158aad345",
+      "changes": []
+    },
+    {
+      "path": ".quality/quality.toml",
+      "original_sha256": "993bcb1047b9e60dc1844ea8d7ae0ed70d9bd808fe7e36a0d61eb62be86d5d5d",
+      "published_sha256": "5adb6d76cc0896d4c980d37aa9613b68439fa8142dd29226e8ade1f952b4d2b0",
+      "changes": [
+        "Local Node/Playwright paths normalized to supported environment controls or portable command names; replay control results write outside historical evidence."
+      ]
+    },
+    {
+      "path": "APP_PROMPT.txt",
+      "original_sha256": "2d1344d66b8a61c688b253cfc33733b7da340151216543b84f69677243ee4206",
+      "published_sha256": "2d1344d66b8a61c688b253cfc33733b7da340151216543b84f69677243ee4206",
+      "changes": []
+    },
+    {
+      "path": "BRIEF.md",
+      "original_sha256": "907c1d4740824fbda1b782767d6cad36e0dd442dd6b1473435f2687a8bcf24d4",
+      "published_sha256": "907c1d4740824fbda1b782767d6cad36e0dd442dd6b1473435f2687a8bcf24d4",
+      "changes": []
+    },
+    {
+      "path": "BUDGET.md",
+      "original_sha256": "f1d357f383528e21039fd79aabfdc4688762603459564f4e76e84878ef07a9d3",
+      "published_sha256": "f1d357f383528e21039fd79aabfdc4688762603459564f4e76e84878ef07a9d3",
+      "changes": []
+    },
+    {
+      "path": "MAP.md",
+      "original_sha256": "4629926a54f3ed10be6c910828f4a300f3ebb2efc87046edfaeaf57f78d95f92",
+      "published_sha256": "4629926a54f3ed10be6c910828f4a300f3ebb2efc87046edfaeaf57f78d95f92",
+      "changes": []
+    },
+    {
+      "path": "TESTING.md",
+      "original_sha256": "76c0fc57c29182526386a00406e74cb1ce712c5898fc5a66d0720eea80084533",
+      "published_sha256": "76c0fc57c29182526386a00406e74cb1ce712c5898fc5a66d0720eea80084533",
+      "changes": []
+    },
+    {
+      "path": "collect.py",
+      "original_sha256": "e66b746ba4474e350df6ca30292cd15fd00fd5e9a0111b0dc8e9365a5395685f",
+      "published_sha256": "e66b746ba4474e350df6ca30292cd15fd00fd5e9a0111b0dc8e9365a5395685f",
+      "changes": []
+    },
+    {
+      "path": "discover_models.py",
+      "original_sha256": "11bf10ecb000eb70d5a4f227cbd33ef3b1ade3506b919558a2c8701151936382",
+      "published_sha256": "11bf10ecb000eb70d5a4f227cbd33ef3b1ade3506b919558a2c8701151936382",
+      "changes": []
+    },
+    {
+      "path": "fixture/.quality/LICENSE",
+      "original_sha256": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+      "published_sha256": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+      "changes": []
+    },
+    {
+      "path": "fixture/.quality/audit-result.schema.json",
+      "original_sha256": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+      "published_sha256": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+      "changes": []
+    },
+    {
+      "path": "fixture/.quality/quality.py",
+      "original_sha256": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+      "published_sha256": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+      "changes": []
+    },
+    {
+      "path": "fixture/.quality/quality.toml",
+      "original_sha256": "4c0eb087f96d500d0281beda376245feeaf2cd3ec47f365e4166c9b9ca56cc39",
+      "published_sha256": "4c0eb087f96d500d0281beda376245feeaf2cd3ec47f365e4166c9b9ca56cc39",
+      "changes": []
+    },
+    {
+      "path": "fixture/AGENTS.md",
+      "original_sha256": "5813288cb4233639b306fc0808fd03504a11218f80657d0daae88dac59751e20",
+      "published_sha256": "5813288cb4233639b306fc0808fd03504a11218f80657d0daae88dac59751e20",
+      "changes": []
+    },
+    {
+      "path": "fixture/APP_PROMPT.txt",
+      "original_sha256": "2d1344d66b8a61c688b253cfc33733b7da340151216543b84f69677243ee4206",
+      "published_sha256": "2d1344d66b8a61c688b253cfc33733b7da340151216543b84f69677243ee4206",
+      "changes": []
+    },
+    {
+      "path": "fixture/BRIEF.md",
+      "original_sha256": "907c1d4740824fbda1b782767d6cad36e0dd442dd6b1473435f2687a8bcf24d4",
+      "published_sha256": "907c1d4740824fbda1b782767d6cad36e0dd442dd6b1473435f2687a8bcf24d4",
+      "changes": []
+    },
+    {
+      "path": "fixture/BUDGET.md",
+      "original_sha256": "f1d357f383528e21039fd79aabfdc4688762603459564f4e76e84878ef07a9d3",
+      "published_sha256": "f1d357f383528e21039fd79aabfdc4688762603459564f4e76e84878ef07a9d3",
+      "changes": []
+    },
+    {
+      "path": "fixture/CLAUDE.md",
+      "original_sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "published_sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "changes": []
+    },
+    {
+      "path": "fixture/MAP.md",
+      "original_sha256": "2c46be752298d8e82435e10e4a078a8e88dd87ccfe2a49d751d0664a91386147",
+      "published_sha256": "2c46be752298d8e82435e10e4a078a8e88dd87ccfe2a49d751d0664a91386147",
+      "changes": []
+    },
+    {
+      "path": "fixture/MODEL_COSTS.json",
+      "original_sha256": "aaa299dc688e4636e18dd9363dc7ddfb2e4c25b2f79bddb6b88216d6f97ae8d1",
+      "published_sha256": "aaa299dc688e4636e18dd9363dc7ddfb2e4c25b2f79bddb6b88216d6f97ae8d1",
+      "changes": []
+    },
+    {
+      "path": "fixture/NATIVE_MODELS.json",
+      "original_sha256": "9599712e2f6bcb7b7b7e2d64639eaab1b9b063de115c64ff3a47b980fe845389",
+      "published_sha256": "9599712e2f6bcb7b7b7e2d64639eaab1b9b063de115c64ff3a47b980fe845389",
+      "changes": []
+    },
+    {
+      "path": "fixture/RUNTIME.md",
+      "original_sha256": "c79cc2fcda57862b47c9fa009d94b0af1664aea8a58fb666a4f3804d91ba4c84",
+      "published_sha256": "9c1705518851c7e7bffcb9681ea4bb4448709bef7ee7f1c459cd1f989f63903d",
+      "changes": [
+        "Local Node/Playwright paths normalized to supported environment controls or portable command names; replay control results write outside historical evidence."
+      ]
+    },
+    {
+      "path": "fixture/TESTING.md",
+      "original_sha256": "d56351865c98014203bf81f1390036518e217c9cf76646fa61322d2d0209a31f",
+      "published_sha256": "d56351865c98014203bf81f1390036518e217c9cf76646fa61322d2d0209a31f",
+      "changes": []
+    },
+    {
+      "path": "fixture/preview_client.py",
+      "original_sha256": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+      "published_sha256": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+      "changes": []
+    },
+    {
+      "path": "fixture/qa_check.py",
+      "original_sha256": "f7fce05f66ff398073ec86e2ae0441589b7c5cf5cdbd0723cf0818cb880b8052",
+      "published_sha256": "f7fce05f66ff398073ec86e2ae0441589b7c5cf5cdbd0723cf0818cb880b8052",
+      "changes": []
+    },
+    {
+      "path": "fixture/quality",
+      "original_sha256": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4",
+      "published_sha256": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4",
+      "changes": []
+    },
+    {
+      "path": "fixture/verify_app.py",
+      "original_sha256": "2a1291a4ce1d903ee1bd24e6e6c6bc92478a984f3a37ed0bd8d3fdcdaaf46792",
+      "published_sha256": "2a1291a4ce1d903ee1bd24e6e6c6bc92478a984f3a37ed0bd8d3fdcdaaf46792",
+      "changes": []
+    },
+    {
+      "path": "judge/backend/CONTROL_RESULTS.json",
+      "original_sha256": "1d8dcf9afc301df448ae9ab408998ca209ac77ee062314b49be8aeb9fe1b50dd",
+      "published_sha256": "1d8dcf9afc301df448ae9ab408998ca209ac77ee062314b49be8aeb9fe1b50dd",
+      "changes": []
+    },
+    {
+      "path": "judge/backend/README.md",
+      "original_sha256": "6861b514fcb9d12c7c65f6306efc8686be90815ad4a1a7d825e1319bbac55750",
+      "published_sha256": "6861b514fcb9d12c7c65f6306efc8686be90815ad4a1a7d825e1319bbac55750",
+      "changes": []
+    },
+    {
+      "path": "judge/backend/evaluate.py",
+      "original_sha256": "84e1ae14de48e79c109459f2aedc016bb4e0d923c0987aa1260d11db0938606d",
+      "published_sha256": "84e1ae14de48e79c109459f2aedc016bb4e0d923c0987aa1260d11db0938606d",
+      "changes": []
+    },
+    {
+      "path": "judge/backend/test_evaluator.py",
+      "original_sha256": "c648eac5de64842312ccd62362c021f22b62abd82914c52964f2f39581892a4f",
+      "published_sha256": "99663b88fbe7b86d7ec664e92f6a1d8e1a2fb510b611aefb1440f72c1a7d8fcb",
+      "changes": [
+        "Local Node/Playwright paths normalized to supported environment controls or portable command names; replay control results write outside historical evidence."
+      ]
+    },
+    {
+      "path": "judge/backend/test_fixture.py",
+      "original_sha256": "40521f05c325ab602db5547d6f41372c88c797f74ca759d6108a4f9d0104d9d7",
+      "published_sha256": "40521f05c325ab602db5547d6f41372c88c797f74ca759d6108a4f9d0104d9d7",
+      "changes": []
+    },
+    {
+      "path": "judge/frontend/README.md",
+      "original_sha256": "f909b9ba5492509cf9e6c000778fc5e0da66d8b348cfe69e720550e5f3b82a0b",
+      "published_sha256": "57c2bae24fe201926d320e94c34f44ff622ce4f7953a5aac60c21971403d1074",
+      "changes": [
+        "Local Node/Playwright paths normalized to supported environment controls or portable command names; replay control results write outside historical evidence.",
+        "Published replay documentation updated with preserved semantic-navigation amendment and control instructions."
+      ]
+    },
+    {
+      "path": "judge/frontend/cleanup-diagnostic.mjs",
+      "original_sha256": "a3ababceadac58ce25961ecaea6b96c4da819b546bb0eb12ca891f606c07d328",
+      "published_sha256": "a3ababceadac58ce25961ecaea6b96c4da819b546bb0eb12ca891f606c07d328",
+      "changes": []
+    },
+    {
+      "path": "judge/frontend/evaluate.mjs",
+      "original_sha256": "1287cfd246d6c57d4843b342a59942585eeb0b33e762ffd4058b5e37dc645152",
+      "published_sha256": "8c9c571560a34d4a43ce12d4edda51dea4ecb6424b4550eec0726f6524f382cd",
+      "changes": [
+        "Portable Playwright import via supported environment control.",
+        "Post-grade symmetric semantic detail/tab navigation correction, original sealed evaluator preserved separately."
+      ],
+      "amended_native_sha256": "790d3c1855b54a084f82922098487ac664fd833ddf2b12dbc509d657a319a56a"
+    },
+    {
+      "path": "judge/frontend/fixture/index.html",
+      "original_sha256": "a6d834509dd70aa0c087fcbce05f41f4424dda05e37fbeca0cf4e93240fc6d42",
+      "published_sha256": "a6d834509dd70aa0c087fcbce05f41f4424dda05e37fbeca0cf4e93240fc6d42",
+      "changes": []
+    },
+    {
+      "path": "judge/frontend/fixture/server.py",
+      "original_sha256": "d6f7bfb39e0873d84df2758b64cb2093a5f3f2577d3d8903d12d16a18500eb01",
+      "published_sha256": "d6f7bfb39e0873d84df2758b64cb2093a5f3f2577d3d8903d12d16a18500eb01",
+      "changes": []
+    },
+    {
+      "path": "judge/frontend/regression.mjs",
+      "original_sha256": "96965769a386ffbd5a9bf19aa4380ad39df40a5529dc45e27ebf4de7d2de4825",
+      "published_sha256": "96965769a386ffbd5a9bf19aa4380ad39df40a5529dc45e27ebf4de7d2de4825",
+      "changes": []
+    },
+    {
+      "path": "judge/frontend/selftest.mjs",
+      "original_sha256": "3709fefe5e1fa3c9eed6fd796566a0c10448ed6411604b7dc34080977c8fa224",
+      "published_sha256": "3709fefe5e1fa3c9eed6fd796566a0c10448ed6411604b7dc34080977c8fa224",
+      "changes": []
+    },
+    {
+      "path": "native-model-catalog.json",
+      "original_sha256": "9599712e2f6bcb7b7b7e2d64639eaab1b9b063de115c64ff3a47b980fe845389",
+      "published_sha256": "9599712e2f6bcb7b7b7e2d64639eaab1b9b063de115c64ff3a47b980fe845389",
+      "changes": []
+    },
+    {
+      "path": "prepare.py",
+      "original_sha256": "374b709e3eb6c7fbb10f93909e58f65be2a81be244ddbeba69f26878a233920a",
+      "published_sha256": "1e14ce86d36908b2219e631e75f1848a2d7870731486000eaa766adc137666eb",
+      "changes": [
+        "Local Node/Playwright paths normalized to supported environment controls or portable command names; replay control results write outside historical evidence."
+      ]
+    },
+    {
+      "path": "preview/README.md",
+      "original_sha256": "47c388167a2f21a9168dd8f1e25d50b7b4678549ec47fcfbbe0244b5c5b03e7c",
+      "published_sha256": "47c388167a2f21a9168dd8f1e25d50b7b4678549ec47fcfbbe0244b5c5b03e7c",
+      "changes": []
+    },
+    {
+      "path": "preview/broker.py",
+      "original_sha256": "ae967c0f79b40599723823f8165078f08695c4aaf057ffadf9bd2a1b6b434097",
+      "published_sha256": "ae967c0f79b40599723823f8165078f08695c4aaf057ffadf9bd2a1b6b434097",
+      "changes": []
+    },
+    {
+      "path": "preview/client.py",
+      "original_sha256": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+      "published_sha256": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+      "changes": []
+    },
+    {
+      "path": "preview/render.mjs",
+      "original_sha256": "d6e61ad7091793aa070bb8b43b8b5c5f87e7e2754edf257fedabf2e77ae924f2",
+      "published_sha256": "d6e61ad7091793aa070bb8b43b8b5c5f87e7e2754edf257fedabf2e77ae924f2",
+      "changes": []
+    },
+    {
+      "path": "preview/tests.py",
+      "original_sha256": "d43e9a91d6a0b7a3c0fee810f8bcda263cf31bde30c676e6ea045e1afffc7acc",
+      "published_sha256": "ba9e3bd0f0698681799a12327260644efa599be53f3c4f179801cafac3440281",
+      "changes": [
+        "Local Node/Playwright paths normalized to supported environment controls or portable command names; replay control results write outside historical evidence."
+      ]
+    },
+    {
+      "path": "prices.json",
+      "original_sha256": "aaa299dc688e4636e18dd9363dc7ddfb2e4c25b2f79bddb6b88216d6f97ae8d1",
+      "published_sha256": "aaa299dc688e4636e18dd9363dc7ddfb2e4c25b2f79bddb6b88216d6f97ae8d1",
+      "changes": []
+    },
+    {
+      "path": "qa_check.py",
+      "original_sha256": "f7fce05f66ff398073ec86e2ae0441589b7c5cf5cdbd0723cf0818cb880b8052",
+      "published_sha256": "f7fce05f66ff398073ec86e2ae0441589b7c5cf5cdbd0723cf0818cb880b8052",
+      "changes": []
+    },
+    {
+      "path": "telemetry.py",
+      "original_sha256": "7bc8794283d3f454a35faf3ec7b051c1927f6936d2eb3f926b7359d5df810dc4",
+      "published_sha256": "7bc8794283d3f454a35faf3ec7b051c1927f6936d2eb3f926b7359d5df810dc4",
+      "changes": []
+    },
+    {
+      "path": "test_collect.py",
+      "original_sha256": "c7713d547f21e33309d3a51b296e5a023a67867326767ae7e804fe050d58b458",
+      "published_sha256": "c7713d547f21e33309d3a51b296e5a023a67867326767ae7e804fe050d58b458",
+      "changes": []
+    },
+    {
+      "path": "test_qa_check.py",
+      "original_sha256": "25798d4302f8fa517b380bd8b9176c1d618846e985feaa4f5ea016a114218bb4",
+      "published_sha256": "25798d4302f8fa517b380bd8b9176c1d618846e985feaa4f5ea016a114218bb4",
+      "changes": []
+    },
+    {
+      "path": "test_telemetry.py",
+      "original_sha256": "b14b670fa1de27430f46a4288426397ec329adff8d46dda94580743adc7e1ba5",
+      "published_sha256": "b14b670fa1de27430f46a4288426397ec329adff8d46dda94580743adc7e1ba5",
+      "changes": []
+    },
+    {
+      "path": "verify_app.py",
+      "original_sha256": "2a1291a4ce1d903ee1bd24e6e6c6bc92478a984f3a37ed0bd8d3fdcdaaf46792",
+      "published_sha256": "2a1291a4ce1d903ee1bd24e6e6c6bc92478a984f3a37ed0bd8d3fdcdaaf46792",
+      "changes": []
+    },
+    {
+      "path": "judge/backend/CONTROL_HISTORY.jsonl",
+      "original_sha256": "08310a7fdab756a205197fa30aeb4fd74f2bf59906bf628cc4614638add02527",
+      "published_sha256": "08310a7fdab756a205197fa30aeb4fd74f2bf59906bf628cc4614638add02527",
+      "changes": []
+    },
+    {
+      "path": "runner-original.py",
+      "original_sha256": "5b3ad157299fbe075b280445569ac0697707198e186c953f8ba809381d139dea",
+      "published_sha256": "719ee790107557614a8961c90ceb2b8688f0344b97df720f9cea044c51e4914d",
+      "changes": [
+        "Capability isolation amendment is explicitly recorded; local tool paths normalized. Original runner/protocol retained separately."
+      ]
+    },
+    {
+      "path": "run.py",
+      "original_sha256": "bb8e6f106881d6e40b1cd38c807a925afcb12778ee6c7eff2859f726efcb4ea8",
+      "published_sha256": "eabc41c58e49888c107b6e611d347e73fd1da9c38e5194e2ed6fd913c89a4354",
+      "changes": [
+        "Capability isolation amendment is explicitly recorded; local tool paths normalized. Original runner/protocol retained separately."
+      ]
+    },
+    {
+      "path": "test_runner.py",
+      "original_sha256": "eeab3e0cf414eb2590144df3d1380795c73c31d20408a5e31abd64a35235d065",
+      "published_sha256": "eeab3e0cf414eb2590144df3d1380795c73c31d20408a5e31abd64a35235d065",
+      "changes": [
+        "Capability isolation amendment is explicitly recorded; local tool paths normalized. Original runner/protocol retained separately."
+      ]
+    },
+    {
+      "path": "freeze.py",
+      "original_sha256": "9f2dac5b5f800181759caa0086a1f97cb37a5d9b1f5beb169938a33078971638",
+      "published_sha256": "9f2dac5b5f800181759caa0086a1f97cb37a5d9b1f5beb169938a33078971638",
+      "changes": [
+        "Capability isolation amendment is explicitly recorded; local tool paths normalized. Original runner/protocol retained separately."
+      ]
+    },
+    {
+      "path": "protocol.json",
+      "original_sha256": "b479d8b69430664c3ac0b3acda297d19befde6d7c4df851e518778001bec56e8",
+      "published_sha256": "b479d8b69430664c3ac0b3acda297d19befde6d7c4df851e518778001bec56e8",
+      "changes": [
+        "Capability isolation amendment is explicitly recorded; local tool paths normalized. Original runner/protocol retained separately."
+      ]
+    },
+    {
+      "path": "protocol-original.json",
+      "original_sha256": "e81eec1ce1745990792d0cbb79c7bf01f23fd975d38e97c44f1712393e633d6a",
+      "published_sha256": "e81eec1ce1745990792d0cbb79c7bf01f23fd975d38e97c44f1712393e633d6a",
+      "changes": [
+        "Capability isolation amendment is explicitly recorded; local tool paths normalized. Original runner/protocol retained separately."
+      ]
+    },
+    {
+      "path": "isolation-preflight-proof.json",
+      "original_sha256": "017f8bef4f5d8ca3d911aaf5ba3c11c4fedab15049cac25927049bdc5bd5b323",
+      "published_sha256": "017f8bef4f5d8ca3d911aaf5ba3c11c4fedab15049cac25927049bdc5bd5b323",
+      "changes": [
+        "Capability isolation amendment is explicitly recorded; local tool paths normalized. Original runner/protocol retained separately."
+      ]
+    },
+    {
+      "path": "judge/frontend/evaluate-original.mjs",
+      "original_sha256": "1287cfd246d6c57d4843b342a59942585eeb0b33e762ffd4058b5e37dc645152",
+      "amended_native_sha256": "1287cfd246d6c57d4843b342a59942585eeb0b33e762ffd4058b5e37dc645152",
+      "published_sha256": "e6e1340533b6d28f1c35f4a11963785d565b0ce754e315a34c0388bbf82272c6",
+      "changes": [
+        "Portable Playwright import via supported environment control."
+      ]
+    },
+    {
+      "path": "judge/frontend/evaluate-reload-only.mjs",
+      "original_sha256": "325317f44ccbc2d2dce89be0d5d0415d27c8420c73ec3f078eb2227ac3fa44c0",
+      "amended_native_sha256": "325317f44ccbc2d2dce89be0d5d0415d27c8420c73ec3f078eb2227ac3fa44c0",
+      "published_sha256": "b26fc102d4cc984d6bfce5fa47a34edd29686fe7cc86b1fa55f18d412176560f",
+      "changes": [
+        "Portable Playwright import via supported environment control."
+      ]
+    },
+    {
+      "path": "judge/frontend/navigation-regression.mjs",
+      "original_sha256": "8cd61cbef1fcb2a491454a3924db1eb02fe1a982cba981f9a3e957d8b5e97451",
+      "amended_native_sha256": "8cd61cbef1fcb2a491454a3924db1eb02fe1a982cba981f9a3e957d8b5e97451",
+      "published_sha256": "21658b051690c47b651bdcd1520b71a3a856c4b5ecbcf791131163da8eaf6df5",
+      "changes": [
+        "Portable Playwright import via supported environment control."
+      ]
+    },
+    {
+      "path": "judge/frontend/tab-regression.mjs",
+      "original_sha256": "b1f35fe2b0b06def3b72954ace4482f3bf6f6a8f82529178049141165aef3a56",
+      "amended_native_sha256": "b1f35fe2b0b06def3b72954ace4482f3bf6f6a8f82529178049141165aef3a56",
+      "published_sha256": "b1f35fe2b0b06def3b72954ace4482f3bf6f6a8f82529178049141165aef3a56",
+      "changes": [
+        "Portable Playwright import via supported environment control."
+      ]
+    }
+  ],
+  "condition_isolation": "Original control spawned a helper with modern tools still enabled; stopped and retained before scoring. Fresh control disables both toolsets and uses original corpus. Original adaptive output unchanged."
+}

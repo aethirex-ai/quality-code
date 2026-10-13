@@ -1,0 +1,194 @@
+{
+  "schema": 1,
+  "denominator": 11,
+  "groups": [
+    {
+      "name": "auth_identity_isolation",
+      "status": "pass",
+      "durationMs": 755
+    },
+    {
+      "name": "authorized_cards",
+      "status": "pass",
+      "durationMs": 582
+    },
+    {
+      "name": "detail_budget",
+      "status": "pass",
+      "durationMs": 360
+    },
+    {
+      "name": "meaningful_content",
+      "status": "pass",
+      "durationMs": 353
+    },
+    {
+      "name": "literal_comment_persistence",
+      "status": "pass",
+      "durationMs": 644
+    },
+    {
+      "name": "decision_validation_persistence",
+      "status": "pass",
+      "durationMs": 895
+    },
+    {
+      "name": "staff_publish_reopens_history_activity",
+      "status": "fail",
+      "error": "current revision should equal 2",
+      "durationMs": 5455
+    },
+    {
+      "name": "client_staff_controls_hidden",
+      "status": "pass",
+      "durationMs": 338
+    },
+    {
+      "name": "accessibility_focus_landmarks_attribution",
+      "status": "pass",
+      "durationMs": 353
+    },
+    {
+      "name": "responsive_widths",
+      "status": "pass",
+      "durationMs": 1945
+    },
+    {
+      "name": "runtime_http_health",
+      "status": "pass",
+      "durationMs": 302
+    }
+  ],
+  "fatal": null,
+  "screenshotDenominator": 0,
+  "screenshots": [],
+  "navigationDiagnostic": [
+    {
+      "type": "click-tab-revisions",
+      "time": 317.10000002384186,
+      "selected": "false",
+      "current": "1"
+    },
+    {
+      "type": "mutation-staff-form",
+      "time": 255.80000007152557,
+      "selected": "false",
+      "current": "1",
+      "title": "",
+      "summary": "",
+      "feedback": ""
+    },
+    {
+      "type": "click-tab-revisions",
+      "time": 339.2000000476837,
+      "selected": "false",
+      "current": "1",
+      "title": "",
+      "summary": "",
+      "feedback": ""
+    },
+    {
+      "type": "input-revision-title",
+      "time": 343.10000002384186,
+      "selected": "false",
+      "current": "1",
+      "title": "Evaluator refined identity",
+      "summary": "",
+      "feedback": ""
+    },
+    {
+      "type": "input-revision-summary",
+      "time": 345.7000000476837,
+      "selected": "false",
+      "current": "1",
+      "title": "Evaluator refined identity",
+      "summary": "Refined wordmark spacing, color balance and the complete identity presentation for client review.",
+      "feedback": ""
+    },
+    {
+      "type": "mutation-staff-form",
+      "time": 356,
+      "selected": "true",
+      "current": "1",
+      "title": "",
+      "summary": "",
+      "feedback": ""
+    },
+    {
+      "type": "click-publish-revision",
+      "time": 439.10000002384186,
+      "selected": "true",
+      "current": "1",
+      "title": "",
+      "summary": "",
+      "feedback": ""
+    },
+    {
+      "type": "click-tab-revisions",
+      "time": 332.89999997615814,
+      "selected": "false",
+      "current": "1"
+    },
+    {
+      "type": "click-tab-revisions",
+      "time": 439.7000000476837,
+      "selected": "false",
+      "current": "1"
+    },
+    {
+      "type": "mutation-staff-form",
+      "time": 240.5,
+      "selected": "false",
+      "current": "1",
+      "title": "",
+      "summary": "",
+      "feedback": ""
+    },
+    {
+      "type": "click-tab-revisions",
+      "time": 324.60000002384186,
+      "selected": "false",
+      "current": "1",
+      "title": "",
+      "summary": "",
+      "feedback": ""
+    },
+    {
+      "type": "click-tab-revisions",
+      "time": 427.7000000476837,
+      "selected": "false",
+      "current": "1"
+    },
+    {
+      "type": "mutation-staff-form",
+      "time": 239.70000004768372,
+      "selected": "false",
+      "current": "1",
+      "title": "",
+      "summary": "",
+      "feedback": ""
+    },
+    {
+      "type": "click-tab-revisions",
+      "time": 324.89999997615814,
+      "selected": "false",
+      "current": "1",
+      "title": "",
+      "summary": "",
+      "feedback": ""
+    },
+    {
+      "type": "mutation-staff-form",
+      "time": 341.2000000476837,
+      "selected": "true",
+      "current": "1",
+      "title": "",
+      "summary": "",
+      "feedback": ""
+    }
+  ],
+  "screenshotFailures": 0,
+  "passed": 10,
+  "failed": 1,
+  "notRun": 0
+}

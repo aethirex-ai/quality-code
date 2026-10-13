@@ -1,0 +1,119 @@
+{
+  "cleanup": [
+    {
+      "leader": "exited",
+      "descendantTerminated": true,
+      "durationMs": 1048
+    },
+    {
+      "leader": "running",
+      "descendantTerminated": true,
+      "durationMs": 1052
+    }
+  ],
+  "moneyParser": [
+    {
+      "display": "EUR 4200.00",
+      "cents": 420000
+    },
+    {
+      "display": "\u20ac4,200.00",
+      "cents": 420000
+    },
+    {
+      "display": "4.200,00 \u20ac",
+      "cents": 420000
+    },
+    {
+      "display": "EUR4200",
+      "cents": 420000
+    },
+    {
+      "display": "4\u202f200,00 EUR",
+      "cents": 420000
+    },
+    {
+      "display": "\u20ac4,200",
+      "cents": 420000
+    },
+    {
+      "display": "\u20ac4.200",
+      "cents": 420000
+    },
+    {
+      "display": "CHF is not used: \u20ac4'200.00",
+      "cents": 420000
+    },
+    {
+      "display": "EUR420000",
+      "rejected": true
+    },
+    {
+      "display": "EUR 420000.00",
+      "rejected": true
+    },
+    {
+      "display": "\u20ac420.00",
+      "rejected": true
+    },
+    {
+      "display": "\u20ac42,000.00",
+      "rejected": true
+    },
+    {
+      "display": "EUR -4200.00",
+      "rejected": true
+    },
+    {
+      "display": "EUR NaN",
+      "rejected": true
+    },
+    {
+      "display": "EUR 4,20,000",
+      "rejected": true
+    },
+    {
+      "display": "EUR 4200 and 7800",
+      "rejected": true
+    }
+  ],
+  "moneyBrowser": [
+    {
+      "mode": "healthy",
+      "budgetGroup": "pass",
+      "healthyControl": "authorized_cards",
+      "passed": 11
+    },
+    {
+      "mode": "money_us",
+      "budgetGroup": "pass",
+      "healthyControl": "authorized_cards",
+      "passed": 11
+    },
+    {
+      "mode": "money_de",
+      "budgetGroup": "pass",
+      "healthyControl": "authorized_cards",
+      "passed": 11
+    },
+    {
+      "mode": "money_space",
+      "budgetGroup": "pass",
+      "healthyControl": "authorized_cards",
+      "passed": 11
+    },
+    {
+      "mode": "money_plain",
+      "budgetGroup": "pass",
+      "healthyControl": "authorized_cards",
+      "passed": 11
+    },
+    {
+      "mode": "money_scale",
+      "budgetGroup": "fail",
+      "healthyControl": "authorized_cards",
+      "passed": 10
+    }
+  ],
+  "liveGroupPermissionErrorNotWaived": true
+}

@@ -1,0 +1,964 @@
+{
+  "schema": 1,
+  "kind": "independent_iteration_history_reconciliation",
+  "scope": "Both valid frozen outputs; historical builder causes, repairs and raw check evidence, separated from independent final evaluation. No output repairs, paid sessions, visual ranking or model/cost inference.",
+  "counting_rules": {
+    "cause": "One actual underlying cause, not assertion count. Schema-field protocol misuses grouped with separately retained manifestations and repair episodes.",
+    "cycle": "Cause-linked corrective change plus focused recheck; repeated checks without a new corrective change are not new cycles. Failed corrective attempt recorded separately from successful resolution. Same code-change batch can resolve multiple causes; per-cause counts do not measure model turns.",
+    "product_basis": "Observed original failures, source-only diagnoses and refinements distinguished. Healthy controls and final source plus trace changes corroborate resolution; builder claims alone are insufficient."
+  },
+  "invalid_control_1": {
+    "included_in_valid_outcome_counts": false,
+    "reason": "Original control accidentally spawned a helper and was stopped before grading.",
+    "elapsed_seconds": 419.351,
+    "evidence": "private-evidence/invalid-control-1"
+  },
+  "conditions": {
+    "single": {
+      "raw_builder_checks": {
+        "total": 55,
+        "nonzero": 9,
+        "by_owner": {
+          "frontend": {
+            "checks": 27,
+            "nonzero": 7,
+            "path": "private-evidence/runs/single/accounting-evidence/frontend/check-runs.jsonl"
+          },
+          "integration": {
+            "checks": 26,
+            "nonzero": 2,
+            "path": "private-evidence/runs/single/accounting-evidence/integration/check-runs.jsonl"
+          },
+          "backend": {
+            "checks": 2,
+            "nonzero": 0,
+            "path": "private-evidence/runs/single/accounting-evidence/backend/check-runs.jsonl"
+          }
+        },
+        "nonzero_check_ids": [
+          "client-dashboard-mobile-initial",
+          "client-brief-desktop-initial",
+          "client-dashboard-mobile-recheck",
+          "login-mobile",
+          "login-invalid-mobile",
+          "login-invalid-mobile-ready",
+          "save-refresh-failure-initial",
+          "rendered-revision-conflict",
+          "rendered-revision-conflict-recheck"
+        ]
+      },
+      "raw_cli_processes": {
+        "completed": 58,
+        "nonzero": 7,
+        "scope": "Root only; started/completed duplication removed by item.completed filter"
+      },
+      "distinct_historical_causes": [
+        {
+          "id": "confirmed-save-refresh-failure",
+          "category": "product_defect",
+          "issue_ids": [
+            "UI-001"
+          ],
+          "summary": "Confirmed save was shown as generic refresh failure, inviting duplicate submission.",
+          "original_evidence_basis": "executed original focused regression failed",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "save-refresh-failure-initial",
+              "owner": "frontend",
+              "phase": "initial",
+              "exit_code": 1
+            },
+            {
+              "check_id": "save-refresh-failure-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              170,
+              181
+            ]
+          },
+          "notes": []
+        },
+        {
+          "id": "staff-review-queue-count",
+          "category": "product_defect",
+          "issue_ids": [
+            "UI-002"
+          ],
+          "summary": "Queue count omitted changes_requested while queue filter included it.",
+          "original_evidence_basis": "rendered mixed-state overview observation; code trace confirmed awaiting-only count",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "staff-overview-desktop",
+              "owner": "frontend",
+              "phase": "verification",
+              "exit_code": 0
+            },
+            {
+              "check_id": "save-refresh-failure-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            },
+            {
+              "check_id": "staff-queue-count-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              181,
+              241
+            ]
+          },
+          "notes": [
+            "Shares initial corrective patch/regression run with UI-001; focused rendered queue recheck is distinct evidence."
+          ]
+        },
+        {
+          "id": "authenticated-error-document-title",
+          "category": "product_defect",
+          "issue_ids": [
+            "UI-003"
+          ],
+          "summary": "Authenticated forbidden-project view retained Sign in title.",
+          "original_evidence_basis": "rendered original title mismatch",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "error-route-title-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            },
+            {
+              "check_id": "forbidden-title-rendered-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            },
+            {
+              "check_id": "client-forbidden-direct",
+              "owner": "integration",
+              "phase": "verification",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              296
+            ]
+          },
+          "notes": []
+        },
+        {
+          "id": "default-port-host-compatibility",
+          "category": "product_defect",
+          "issue_ids": [
+            "API-001"
+          ],
+          "summary": "Normal HTTP Host without :80 rejected at port80.",
+          "original_evidence_basis": "source-only original diagnosis; no original port80 HTTP process launched",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "freeze-full-profile",
+              "owner": "integration",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              454
+            ]
+          },
+          "notes": [
+            "Patch replaces explicit host:port-only predicate with allowed_host including omission only on80. Focused pure validator assertions plus healthy invalid-host/assigned-port field tests passed."
+          ]
+        },
+        {
+          "id": "preview-action-schema",
+          "category": "tooling_error",
+          "issue_ids": [
+            "TOOL-002",
+            "TOOL-003"
+          ],
+          "summary": "Preview requests used unsupported type/action and press key fields; rejected before browser product actions.",
+          "original_evidence_basis": "executed protocol errors",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 2,
+          "failed_corrective_attempt_cycles": 1,
+          "check_results": [
+            {
+              "check_id": "client-dashboard-mobile-initial",
+              "owner": "frontend",
+              "phase": "initial",
+              "exit_code": 1
+            },
+            {
+              "check_id": "client-brief-desktop-initial",
+              "owner": "frontend",
+              "phase": "initial",
+              "exit_code": 1
+            },
+            {
+              "check_id": "client-dashboard-mobile-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 1
+            },
+            {
+              "check_id": "client-dashboard-mobile-protocol-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            },
+            {
+              "check_id": "client-brief-desktop-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            },
+            {
+              "check_id": "rendered-revision-conflict",
+              "owner": "integration",
+              "phase": "verification",
+              "exit_code": 1
+            },
+            {
+              "check_id": "rendered-revision-conflict-recheck",
+              "owner": "integration",
+              "phase": "recheck",
+              "exit_code": 1
+            },
+            {
+              "check_id": "rendered-conflict-bounded-evidence",
+              "owner": "integration",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              89,
+              98,
+              202,
+              216,
+              233
+            ]
+          },
+          "notes": [
+            "Two schema manifestations; type->action first correction still failed, action->op passed. Later press key replaced with supported clicks; next check reached product409 but failed a separate bounded excerpt assertion. Those are two eventual protocol repairs, one failed correction attempt."
+          ]
+        },
+        {
+          "id": "quality-cli-discovery-flag",
+          "category": "tooling_error",
+          "issue_ids": [
+            "TOOL-001"
+          ],
+          "summary": "quality-code --version unsupported; discovery process exited2.",
+          "original_evidence_basis": "native original exit2",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "quality-cli-help",
+              "owner": "integration",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              25,
+              40
+            ]
+          },
+          "notes": []
+        },
+        {
+          "id": "password-redaction-false-negative",
+          "category": "tooling_error",
+          "issue_ids": [
+            "CHECK-002"
+          ],
+          "summary": "Expected invalid-login word incorrect matched supplied synthetic password and was redacted from preview excerpt.",
+          "original_evidence_basis": "two failed assertions; excerpt actually showed useful rendered error",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 1,
+          "check_results": [
+            {
+              "check_id": "login-invalid-mobile",
+              "owner": "frontend",
+              "phase": "verification",
+              "exit_code": 1
+            },
+            {
+              "check_id": "login-invalid-mobile-ready",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 1
+            },
+            {
+              "check_id": "login-invalid-redaction-safe",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              141,
+              150
+            ]
+          },
+          "notes": [
+            "Added wait/error-region action first, assuming an async rendering miss; login-invalid-mobile-ready still failed. This is a failed QA correction attempt, later attributed to redaction rather than startup loading. Redaction-safe assertion then passed."
+          ]
+        },
+        {
+          "id": "bounded-conflict-excerpt-false-negative",
+          "category": "tooling_error",
+          "issue_ids": [
+            "CHECK-003"
+          ],
+          "summary": "Whole-page1500-character excerpt truncated before existing conflict feedback.",
+          "original_evidence_basis": "real409 and successful error-region action; assertion false negative",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "rendered-revision-conflict-recheck",
+              "owner": "integration",
+              "phase": "recheck",
+              "exit_code": 1
+            },
+            {
+              "check_id": "rendered-conflict-bounded-evidence",
+              "owner": "integration",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              233
+            ]
+          },
+          "notes": [
+            "Evidence assertion changed to scoped action/HTTP409/latest-state/no extra decision event, plus screenshot inspection. No app-source repair for this cause."
+          ]
+        },
+        {
+          "id": "startup-loading-snapshot",
+          "category": "expected_construction",
+          "issue_ids": [
+            "CHECK-001"
+          ],
+          "summary": "Snapshot captured intentional async initial loading before login form resolved.",
+          "original_evidence_basis": "failed snapshot assertion with no runtime/overflow error",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "login-mobile",
+              "owner": "frontend",
+              "phase": "verification",
+              "exit_code": 1
+            },
+            {
+              "check_id": "login-mobile-ready",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              134
+            ]
+          },
+          "notes": [
+            "Waiting on login input resolved it. Invalid-login-ready failure belongs to separate redaction cause, despite original CHECK-001 label."
+          ]
+        },
+        {
+          "id": "login-heading-mobile-input-refinement",
+          "category": "visual_refinement",
+          "issue_ids": [
+            "VIS-001"
+          ],
+          "summary": "Promoted form heading and raised mobile input/textarea font16px.",
+          "original_evidence_basis": "inspection refinement; no recorded failing behavioral assertion",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "final-login-mobile",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              264
+            ]
+          },
+          "notes": [
+            "Includes semantic-heading refinement; not a demonstrated contract/accessibility failure."
+          ]
+        },
+        {
+          "id": "singular-discussion-count-copy",
+          "category": "visual_refinement",
+          "issue_ids": [
+            "VIS-002"
+          ],
+          "summary": "Changed 1 notes to1 note.",
+          "original_evidence_basis": "rendered copy observation; static display refinement",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "final-discussion-desktop",
+              "owner": "frontend",
+              "phase": "verification",
+              "exit_code": 0
+            },
+            {
+              "check_id": "discussion-count-copy",
+              "owner": "frontend",
+              "phase": "verification",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              377
+            ]
+          },
+          "notes": []
+        },
+        {
+          "id": "builder-independent-gate",
+          "category": "missing_evidence",
+          "issue_ids": [
+            "GATE-001"
+          ],
+          "summary": "Builder could not provide fresh independent auth/state audit.",
+          "original_evidence_basis": "explicit blocked evidence",
+          "status": "builder_gate_pending",
+          "successful_fix_recheck_cycles": 0,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [],
+          "native_change_trace": {},
+          "notes": [
+            "Parent post-freeze evaluation separate; not a product bug or repaired-source cycle."
+          ]
+        }
+      ],
+      "final_evaluation": {
+        "backend": {
+          "path": "private-evidence/evaluation/single/backend",
+          "sha256": "a0290db96014194a0f09c065fb73514ebefc3e3fbd663cb04e04ae0ec24c77fb",
+          "denominator": 12,
+          "passed": 12,
+          "failed_groups": []
+        },
+        "frontend_initial": {
+          "path": "private-evidence/evaluation/single/frontend/report.json",
+          "sha256": "bc2a26dd7b1af4527da47ca2599e70d73a6f66720f9c7d21dbebe2601ddccc11",
+          "denominator": 11,
+          "passed": 8,
+          "failed_groups": [
+            {
+              "name": "literal_comment_persistence",
+              "status": "fail",
+              "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n",
+              "durationMs": 5512
+            },
+            {
+              "name": "decision_validation_persistence",
+              "status": "fail",
+              "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n",
+              "durationMs": 5762
+            },
+            {
+              "name": "staff_publish_reopens_history_activity",
+              "status": "fail",
+              "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n",
+              "durationMs": 5832
+            }
+          ],
+          "classification": "Initial navigation assumptions confounded sampled scores; original reports preserved. Semantic detail/tab readiness amendment and adaptive chronology recorded in navigation-amendment.json. No app source edits."
+        },
+        "actual_unresolved_product_causes": {
+          "status": "independently_reproduced",
+          "distinct_count": 2,
+          "causes": [
+            {
+              "id": "final-invalid-unicode-input",
+              "summary": "Malformed Unicode surrogate JSON text reaches hashing/SQLite encoding and returns500 instead of bounded400.",
+              "category": "product_defect",
+              "independent_confirmation": "Completed independent actual-source/browser audit; see evidence/independent-app-audit.json and focused results."
+            },
+            {
+              "id": "final-conflict-refresh-account-race",
+              "summary": "Stale409 recovery GET can assign c1 project data after logout/login c2, leaving Harbor project under Sam identity.",
+              "category": "product_defect",
+              "independent_confirmation": "Completed independent actual-source/browser audit; see evidence/independent-app-audit.json and focused results."
+            }
+          ],
+          "note": "These are actual frozen-output product causes, separate from historical fixed builder causes. No fixes applied.",
+          "independent_report": "evidence/independent-app-audit.json"
+        },
+        "frontend_navigation_corrected": {
+          "report": "evidence/single/frontend-corrected.json",
+          "passed": 11,
+          "denominator": 11,
+          "app_sources_unchanged": true
+        }
+      },
+      "history_summary": {
+        "distinct_causes_by_category": {
+          "product_defect": 4,
+          "tooling_error": 4,
+          "expected_construction": 1,
+          "visual_refinement": 2,
+          "missing_evidence": 1
+        },
+        "total_distinct_causes": 12,
+        "product_causes": 4,
+        "product_with_observed_original_failure": 3,
+        "product_source_only_original_diagnoses": 1,
+        "successful_per_cause_fix_recheck_cycles": 12,
+        "failed_corrective_attempt_cycles": 2,
+        "product_successful_fix_recheck_cycles": 4
+      }
+    },
+    "adaptive": {
+      "raw_builder_checks": {
+        "total": 42,
+        "nonzero": 4,
+        "by_owner": {
+          "frontend": {
+            "checks": 19,
+            "nonzero": 3,
+            "path": "private-evidence/runs/adaptive/accounting-evidence/frontend/check-runs.jsonl"
+          },
+          "integration": {
+            "checks": 18,
+            "nonzero": 0,
+            "path": "private-evidence/runs/adaptive/accounting-evidence/integration/check-runs.jsonl"
+          },
+          "backend": {
+            "checks": 5,
+            "nonzero": 1,
+            "path": "private-evidence/runs/adaptive/accounting-evidence/backend/check-runs.jsonl"
+          }
+        },
+        "nonzero_check_ids": [
+          "client-overview-desktop",
+          "client-overview-desktop-recheck",
+          "keyboard-navigation",
+          "backend-unicode-original"
+        ]
+      },
+      "raw_cli_processes": {
+        "completed": 60,
+        "nonzero": 4,
+        "scope": "Root only; started/completed duplication removed by item.completed filter"
+      },
+      "distinct_historical_causes": [
+        {
+          "id": "unicode-scalar-input-validation",
+          "category": "product_defect",
+          "issue_ids": [
+            "backend-invalid-unicode"
+          ],
+          "summary": "Unpaired surrogate text produced500 across login and mutation text fields.",
+          "original_evidence_basis": "native original UnicodeProbe500 and formal regression six500 failures",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "backend-unicode-original",
+              "owner": "backend",
+              "phase": "initial",
+              "exit_code": 1
+            },
+            {
+              "check_id": "backend-unicode-recheck",
+              "owner": "backend",
+              "phase": "recheck",
+              "exit_code": 0
+            },
+            {
+              "check_id": "backend-contracts-verification",
+              "owner": "backend",
+              "phase": "verification",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "backend_child_ordinals": [
+              54,
+              61,
+              77
+            ]
+          },
+          "notes": [
+            "Six formal failed subcases and original probe are manifestations of one shared text validation cause, not seven product defects. Formal run also had one independent test-placement IndexError."
+          ]
+        },
+        {
+          "id": "mobile-line-break-word-boundaries",
+          "category": "product_defect",
+          "issue_ids": [
+            "mobile-login-word-spacing"
+          ],
+          "summary": "Hidden desktop line breaks joined mobile words (Welcome tothe, projects.Follow).",
+          "original_evidence_basis": "rendered original mobile text and replacement trace",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "login-mobile",
+              "owner": "frontend",
+              "phase": "initial",
+              "exit_code": 0
+            },
+            {
+              "check_id": "login-spacing-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              162,
+              171
+            ]
+          },
+          "notes": []
+        },
+        {
+          "id": "delayed-account-project-response",
+          "category": "product_defect",
+          "issue_ids": [
+            "delayed-account-response"
+          ],
+          "summary": "Old-account async projects response could overwrite newer account/navigation state.",
+          "original_evidence_basis": "source-only original diagnosis; original browser race not executed",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "account-response-race",
+              "owner": "frontend",
+              "phase": "verification",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              195
+            ]
+          },
+          "notes": [
+            "Original loadProjects directly assigned response; fix checks generation before assignment and mutation continuation. Focused final regression discards old response and accepts healthy current response."
+          ]
+        },
+        {
+          "id": "preview-action-schema",
+          "category": "tooling_error",
+          "issue_ids": [
+            "preview-action-schema",
+            "preview-press-schema"
+          ],
+          "summary": "Preview type/action and key fields rejected before actions.",
+          "original_evidence_basis": "recorded protocol errors; latter explicitly duplicate_of former",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 2,
+          "failed_corrective_attempt_cycles": 1,
+          "check_results": [
+            {
+              "check_id": "client-overview-desktop",
+              "owner": "frontend",
+              "phase": "initial",
+              "exit_code": 1
+            },
+            {
+              "check_id": "client-overview-desktop-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 1
+            },
+            {
+              "check_id": "preview-action-format-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            },
+            {
+              "check_id": "keyboard-navigation",
+              "owner": "frontend",
+              "phase": "verification",
+              "exit_code": 1
+            },
+            {
+              "check_id": "keyboard-navigation-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              108,
+              286
+            ]
+          },
+          "notes": [
+            "Initial type->action correction still failed; action->op success and later press key->value success are two eventual schema repairs. Keyboard assertion misses are consequences of actions=0, not extra product failures."
+          ]
+        },
+        {
+          "id": "unicode-regression-placement",
+          "category": "tooling_qa_error",
+          "issue_ids": [
+            "backend-regression-placement"
+          ],
+          "summary": "Inserted regression retained adjacent publication assertions and raised IndexError.",
+          "original_evidence_basis": "formal Unicode run errors1 separate from six genuine product failures",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "backend-unicode-original",
+              "owner": "backend",
+              "phase": "initial",
+              "exit_code": 1
+            },
+            {
+              "check_id": "backend-unicode-recheck",
+              "owner": "backend",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "backend_child_ordinals": [
+              61,
+              77
+            ]
+          },
+          "notes": [
+            "Restored assertions to owning publication test; targeted pair passed. Same patch/check batch as Unicode product fix."
+          ]
+        },
+        {
+          "id": "missing-gitignore-during-build",
+          "category": "expected_construction",
+          "issue_ids": [],
+          "summary": "Read of .gitignore before construction exited1.",
+          "original_evidence_basis": "root native ordinal86; cat .gitignore no such file",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 0,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [],
+          "native_change_trace": {
+            "root_ordinals": [
+              86,
+              214
+            ]
+          },
+          "notes": [
+            "Scaffold file added later, no dedicated cause-linked recheck. Preserved raw nonzero, not product failure."
+          ]
+        },
+        {
+          "id": "control-typography-refinement",
+          "category": "visual_refinement",
+          "issue_ids": [
+            "control-readability"
+          ],
+          "summary": "Raised small controls/supporting type after rendered inspection.",
+          "original_evidence_basis": "inspection refinement",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "readability-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              162,
+              195
+            ]
+          },
+          "notes": []
+        },
+        {
+          "id": "artwork-content-refinement",
+          "category": "visual_refinement",
+          "issue_ids": [
+            "artwork-narrative"
+          ],
+          "summary": "Aligned digital artwork narrative and Harbor spelling.",
+          "original_evidence_basis": "inspection refinement",
+          "status": "fixed",
+          "successful_fix_recheck_cycles": 1,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [
+            {
+              "check_id": "artwork-recheck",
+              "owner": "frontend",
+              "phase": "recheck",
+              "exit_code": 0
+            }
+          ],
+          "native_change_trace": {
+            "root_ordinals": [
+              162,
+              203
+            ]
+          },
+          "notes": []
+        },
+        {
+          "id": "builder-independent-gate",
+          "category": "missing_evidence",
+          "issue_ids": [
+            "independent-auth-state-gate"
+          ],
+          "summary": "Independent parent auth/state gate unavailable inside timed builder.",
+          "original_evidence_basis": "explicit blocked evidence",
+          "status": "builder_gate_pending",
+          "successful_fix_recheck_cycles": 0,
+          "failed_corrective_attempt_cycles": 0,
+          "check_results": [],
+          "native_change_trace": {},
+          "notes": []
+        }
+      ],
+      "final_evaluation": {
+        "backend": {
+          "path": "private-evidence/evaluation/adaptive/backend",
+          "sha256": "c6519466d24c0aa27f25c24292c8457dc49dda4e6817b24e82aba1129c453f6a",
+          "denominator": 12,
+          "passed": 12,
+          "failed_groups": []
+        },
+        "frontend_initial": {
+          "path": "private-evidence/evaluation/adaptive/frontend/report.json",
+          "sha256": "3648bbb1a61bfbf99d79cb4750de314bd534e6a2515864470b96127f56773012",
+          "denominator": 11,
+          "passed": 8,
+          "failed_groups": [
+            {
+              "name": "literal_comment_persistence",
+              "status": "fail",
+              "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n",
+              "durationMs": 5472
+            },
+            {
+              "name": "decision_validation_persistence",
+              "status": "fail",
+              "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n",
+              "durationMs": 5841
+            },
+            {
+              "name": "staff_publish_reopens_history_activity",
+              "status": "fail",
+              "error": "current revision should equal 2",
+              "durationMs": 5465
+            }
+          ],
+          "classification": "Initial navigation assumptions confounded sampled scores; original reports preserved. Semantic detail/tab readiness amendment and adaptive chronology recorded in navigation-amendment.json. No app source edits."
+        },
+        "actual_unresolved_product_causes": {
+          "status": "independently_reproduced",
+          "distinct_count": 1,
+          "causes": [
+            {
+              "id": "final-confirmed-write-refresh-feedback",
+              "summary": "A successful mutation followed by failed refresh displays generic failure and permits retry instead of acknowledging persisted success.",
+              "category": "product_defect",
+              "independent_confirmation": "Completed independent actual-source/browser audit; see evidence/independent-app-audit.json and focused results."
+            }
+          ],
+          "note": "These are actual frozen-output product causes, separate from historical fixed builder causes. No fixes applied.",
+          "independent_report": "evidence/independent-app-audit.json"
+        },
+        "frontend_navigation_corrected": {
+          "report": "evidence/adaptive/frontend-corrected.json",
+          "passed": 11,
+          "denominator": 11,
+          "app_sources_unchanged": true
+        }
+      },
+      "history_summary": {
+        "distinct_causes_by_category": {
+          "product_defect": 3,
+          "tooling_error": 1,
+          "tooling_qa_error": 1,
+          "expected_construction": 1,
+          "visual_refinement": 2,
+          "missing_evidence": 1
+        },
+        "total_distinct_causes": 9,
+        "product_causes": 3,
+        "product_with_observed_original_failure": 2,
+        "product_source_only_original_diagnoses": 1,
+        "successful_per_cause_fix_recheck_cycles": 8,
+        "failed_corrective_attempt_cycles": 1,
+        "product_successful_fix_recheck_cycles": 3
+      }
+    }
+  },
+  "limitations": [
+    "History counts describe recorded evidence, not total latent bugs or engineering effort.",
+    "Native shell exit counts and qa_check exits overlap; never sum them. Multi-command shell final exit can hide an earlier failed qa_check.",
+    "Native adaptive paths retain original original-private-evidence source location; valid preserved output and accounting evidence now reside under corrected root.",
+    "Expected denied API requests, test negative subprocesses and intentional startup loading are not defects. No requirement for zero 4xx responses.",
+    "Source-only original diagnoses are not mislabeled as executed original failures.",
+    "Fresh independent gates were blocked/pending inside builders; post-freeze evaluators are separate evidence."
+  ],
+  "public_normalization": "Private paths/native identities and random check record UUIDs omitted; owner/check_id/phase/exit_code and source trace ordinals retained. Final out-of-sample evidence linked after historical reconciliation."
+}

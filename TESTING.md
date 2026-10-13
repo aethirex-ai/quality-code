@@ -63,3 +63,7 @@ The rich-client folder adds offline telemetry, immutable-evidence/accounting, ru
 ## Visual and code-heavy ownership delivery
 
 Init/adopt/upgrade and compact global routing must deliver the visual/code workload distinction while preserving custom guidance and configuration. Native model selection remains provider-neutral; policy delivery does not demonstrate model compliance or effectiveness. The portal benchmark separately measures backend/frontend contracts, visuals, correction evidence and whole-tree usage.
+
+## Client portal pilot
+
+The portal folder adds offline native-counter, recursive-tree, partition/Decimal cost, immutable-evidence, runner/isolation and QA-history controls, plus bounded preview tests. Full/release profiles run these dependency-free checks. Local backend and Playwright/Chromium controls run separately with loopback/process-group permissions. Historical 12 backend and 11 frontend group denominators stay fixed; original frontend failures and symmetric navigation correction are retained. Independent browser/input diagnosis, blind visual review and source provenance distinguish sampled passes from remaining defects. No CI command launches a paid model.

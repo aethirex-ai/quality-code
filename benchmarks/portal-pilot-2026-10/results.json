@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "date": "2026-10-13",
+  "workload": "AethDesign Atelier client portal",
+  "common_prompt_sha256": "2d1344d66b8a61c688b253cfc33733b7da340151216543b84f69677243ee4206",
+  "sample": "one valid matched pair; adaptive first",
+  "conditions": {
+    "single": {
+      "elapsed_seconds": 2511.818867209018,
+      "tokens": {
+        "input_tokens": 4614607,
+        "cached_input_tokens": 4455168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 90904,
+        "reasoning_output_tokens": 32163,
+        "total_tokens": 4705511
+      },
+      "cost_usd": {
+        "checked_date": "2026-10-13",
+        "source": "https://developers.openai.com/api/docs/pricing",
+        "by_model": {
+          "gpt-6.1-sol": {
+            "uncached_input": "0.318878",
+            "cached_input": "0.4455168",
+            "output_including_reasoning": "0.90904",
+            "total": "1.6734348"
+          }
+        },
+        "total": {
+          "uncached_input": "0.318878",
+          "cached_input": "0.4455168",
+          "output_including_reasoning": "0.90904"
+        },
+        "estimated_total": "1.6734348",
+        "exclusions": [
+          "image generation",
+          "other tool charges",
+          "setup",
+          "external grading",
+          "measurement audit"
+        ]
+      },
+      "session_counts": {
+        "root": 1
+      },
+      "native_reconciliation": {
+        "cli": "matched",
+        "spawns": {
+          "successful_spawns": 0,
+          "matched_children": 0,
+          "status": "matched"
+        },
+        "flags": []
+      },
+      "backend_contracts": {
+        "passed": 12,
+        "denominator": 12
+      },
+      "frontend_original": {
+        "passed": 8,
+        "denominator": 11
+      },
+      "frontend_corrected": {
+        "passed": 11,
+        "denominator": 11
+      },
+      "visual_review": {
+        "anonymous_label": "B",
+        "scores": {
+          "visual_identity_portfolio_impression": 4.5,
+          "typography_hierarchy": 4.5,
+          "composition_coherence": 4.5,
+          "responsive_usability": 4.0,
+          "forms_state_clarity": 4.5
+        },
+        "mean": 4.4,
+        "evidence": {
+          "visual_identity_portfolio_impression": "The serif AethDesign wordmark, recurring asterisk, olive accents, pale stone surfaces, and forest-green review banner create a coherent studio identity. Harbor House's architectural mark, framed identity board, angled website mockup, and Northline editorial cover read as considered portfolio material. The visual approach is restrained rather than highly theatrical, but consistently polished across the supplied states.",
+          "typography_hierarchy": "Serif headings, italic secondary lines, readable body copy and labelled metadata establish a clear hierarchy. The current revision and milestone information are grouped in a distinct summary panel, and the dark review banner strongly identifies the next action. Small uppercase metadata and helper text remain fairly tiny; the staff mobile dashboard's long full-page capture makes these particularly hard to inspect at reduced display size.",
+          "composition_coherence": "The desktop sidebar remains aligned at the top in all captures, with orderly card grids, consistent gutters, and balanced content/action columns. Project tabs appear above the state-specific content. The brief pairs text with identity imagery and a timeline; revisions keep the actual artwork in the revision card beside the decision form. The discussion uses a spacious message area beside its composer. The single third staff card leaves a large lower-right blank area, but the grid still reads coherently.",
+          "responsive_usability": "The 375px pages preserve the same reading order: project summary, tabs, selected content, then its action panel. The summary becomes a readable 2-by-2 grid, cards stack cleanly, and form buttons occupy ample width. The mobile revisions and staff publishing pages are long but retain contextual content before the form. In 375-staff-publish.png, a visible Skip to content block overlaps the investment cell of the summary, obscuring its value. No other obvious clipping or overlap is visible in the supplied B captures.",
+          "forms_state_clarity": "The revision form explicitly says which revision is being reviewed and that a note is required for requesting changes; approval and change buttons are visually distinct. The staff publish panel explains that earlier decisions stay in history, identifies publishing after revision 1, and shows clear title and change-summary labels. Its populated textarea has a strong visible focus ring. The discussion composer explains audience and local saving. These captures show stronger visible guidance, but no error, success or saved post-action states. The populated staff form is a different capture state from A, so population alone is not counted as evidence of superior behavior."
+        }
+      },
+      "builder_history": {
+        "distinct_causes_by_category": {
+          "product_defect": 4,
+          "tooling_error": 4,
+          "expected_construction": 1,
+          "visual_refinement": 2,
+          "missing_evidence": 1
+        },
+        "total_distinct_causes": 12,
+        "product_causes": 4,
+        "product_with_observed_original_failure": 3,
+        "product_source_only_original_diagnoses": 1,
+        "successful_per_cause_fix_recheck_cycles": 12,
+        "failed_corrective_attempt_cycles": 2,
+        "product_successful_fix_recheck_cycles": 4
+      },
+      "raw_builder_checks": {
+        "total": 55,
+        "nonzero": 9
+      },
+      "remaining_confirmed_defects": 2
+    },
+    "adaptive": {
+      "elapsed_seconds": 968.3990441249916,
+      "tokens": {
+        "input_tokens": 3418721,
+        "cached_input_tokens": 3258112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 65402,
+        "reasoning_output_tokens": 11965,
+        "total_tokens": 3484123
+      },
+      "cost_usd": {
+        "checked_date": "2026-10-13",
+        "source": "https://developers.openai.com/api/docs/pricing",
+        "by_model": {
+          "gpt-6.1-sol": {
+            "uncached_input": "0.321218",
+            "cached_input": "0.3258112",
+            "output_including_reasoning": "0.65402",
+            "total": "1.3010492"
+          }
+        },
+        "total": {
+          "uncached_input": "0.321218",
+          "cached_input": "0.3258112",
+          "output_including_reasoning": "0.65402"
+        },
+        "estimated_total": "1.3010492",
+        "exclusions": [
+          "image generation",
+          "other tool charges",
+          "setup",
+          "external grading",
+          "measurement audit"
+        ]
+      },
+      "session_counts": {
+        "root": 1,
+        "descendant": 1
+      },
+      "native_reconciliation": {
+        "cli": "matched",
+        "spawns": {
+          "successful_spawns": 1,
+          "matched_children": 1,
+          "status": "matched"
+        },
+        "flags": []
+      },
+      "backend_contracts": {
+        "passed": 12,
+        "denominator": 12
+      },
+      "frontend_original": {
+        "passed": 8,
+        "denominator": 11
+      },
+      "frontend_corrected": {
+        "passed": 11,
+        "denominator": 11
+      },
+      "visual_review": {
+        "anonymous_label": "A",
+        "scores": {
+          "visual_identity_portfolio_impression": 4.5,
+          "typography_hierarchy": 4.0,
+          "composition_coherence": 3.5,
+          "responsive_usability": 3.5,
+          "forms_state_clarity": 4.0
+        },
+        "mean": 3.9,
+        "evidence": {
+          "visual_identity_portfolio_impression": "The dark forest sidebar, warm paper canvas, rust italic display line, circular atelier seal, and three distinctive project illustrations create a memorable studio identity. The large Harbor House monogram and angled digital/editorial mockups give the dashboards strong portfolio presence. The typography and palette remain consistent across client and staff states.",
+          "typography_hierarchy": "Large serif project titles, restrained sans-serif body copy, numbered deliverables, and thin separators make the main information readable and ordered. Dashboard statistics are subordinate to the welcome heading without competing. Small tracked metadata, breadcrumb labels, and status/count text are noticeably tiny, especially at 375px; the approval button also wraps its label onto two lines on mobile.",
+          "composition_coherence": "Desktop dashboard cards and the normal project pages align cleanly with generous spacing and a stable two-column content/action layout. The large project artwork repeats above every project tab, pushing the actual revision or discussion content far down. In 1440-staff-publish.png, the sidebar starts roughly 400px below the top while the main content begins at the top, leaving a conspicuous blank upper-left region. The visible Skip to content control interrupts the composition in that capture and several mobile project captures.",
+          "responsive_usability": "Cards stack within the 375px width, the desktop sidebar becomes a compact top header, and no obvious horizontal clipping appears. However, the mobile decision or publishing panel appears before the project tabs and their selected content; revision/discussion information requires a long scroll past the repeated artwork and action panel. In 375-project-brief.png the visible Skip to content block overlaps the action-panel heading; in revisions/discussion/publish it covers part of the artwork. These are visible captured-state interruptions, without evidence of their frequency during normal use.",
+          "forms_state_clarity": "Feedback and publishing fields have visible labels, large textareas, and distinct dark primary buttons. Status badges distinguish Awaiting review and Approved; the client panel identifies R1 and says decisions are saved to that revision. The client note explains feedback is optional for approval, but the visible panel does not state whether a note is required for requesting changes. The staff publish button explicitly names revision 2. Only empty form states are shown, so completion, error and success clarity cannot be judged."
+        }
+      },
+      "builder_history": {
+        "distinct_causes_by_category": {
+          "product_defect": 3,
+          "tooling_error": 1,
+          "tooling_qa_error": 1,
+          "expected_construction": 1,
+          "visual_refinement": 2,
+          "missing_evidence": 1
+        },
+        "total_distinct_causes": 9,
+        "product_causes": 3,
+        "product_with_observed_original_failure": 2,
+        "product_source_only_original_diagnoses": 1,
+        "successful_per_cause_fix_recheck_cycles": 8,
+        "failed_corrective_attempt_cycles": 1,
+        "product_successful_fix_recheck_cycles": 3
+      },
+      "raw_builder_checks": {
+        "total": 42,
+        "nonzero": 4
+      },
+      "remaining_confirmed_defects": 1
+    }
+  },
+  "invalid_control": {
+    "elapsed_seconds": 419.35055991692934,
+    "reason": "modern delegation tools remained enabled despite legacy disable; one helper spawned; stopped before product grading",
+    "authoritative_tokens": null,
+    "complete_cost_usd": null,
+    "included_in_valid_results": false,
+    "partial_observations": {
+      "input_tokens": 759659,
+      "cached_input_tokens": 683008,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 26891,
+      "reasoning_output_tokens": 3151,
+      "total_tokens": 786550
+    }
+  },
+  "scope": "Native builder trees, retries/corrections and owned cleanup. Setup, parent grading, independent audits, publication and other tool charges excluded; not zero. API equivalent is not billed or subscription consumption.",
+  "adaptive_observed_change": {
+    "elapsed_percent_lower": 61.44630264677411,
+    "cost_percent_lower": 22.252770170669333,
+    "output_tokens_lower": 25502,
+    "reasoning_tokens_lower": 20198
+  }
+}

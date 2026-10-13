@@ -1,0 +1,47 @@
+version = 1
+standard_version = 3
+project = "quality-code-portal-20261013"
+
+[policy]
+map_word_limit = 900
+
+[audit]
+default_base = "HEAD"
+independent_audit_min_risk = "high"
+required_profiles_by_risk = { low = ["fast"], normal = ["changed"], high = ["full"], critical = ["full", "release"] }
+
+# Commands are argument arrays, never shell strings. The bootstrapper detects
+# conservative local commands; tailor them as the project gains tooling.
+# Multiple arrays run sequentially in the project root. They must be local and
+# non-destructive; deployment and other external writes are never verify commands.
+[verify]
+fast = [["python3", "-B", "-m", "unittest", "discover", "-s", ".", "-p", "test_*.py", "-v"], ["python3", "judge/backend/test_evaluator.py"], ["python3", "preview/tests.py"], ["env", "BENCHMARK_PLAYWRIGHT_IMPORT=playwright", "node", "judge/frontend/selftest.mjs", "/tmp/portal-front-proof"], ["node", "judge/frontend/regression.mjs", "/tmp/portal-front-regression"], ["git", "diff", "--check"]]
+changed = [["python3", "-B", "-m", "unittest", "discover", "-s", ".", "-p", "test_*.py", "-v"], ["python3", "judge/backend/test_evaluator.py"], ["python3", "preview/tests.py"], ["env", "BENCHMARK_PLAYWRIGHT_IMPORT=playwright", "node", "judge/frontend/selftest.mjs", "/tmp/portal-front-proof"], ["node", "judge/frontend/regression.mjs", "/tmp/portal-front-regression"], ["git", "diff", "--check"]]
+full = [["python3", "-B", "-m", "unittest", "discover", "-s", ".", "-p", "test_*.py", "-v"], ["python3", "judge/backend/test_evaluator.py"], ["python3", "preview/tests.py"], ["env", "BENCHMARK_PLAYWRIGHT_IMPORT=playwright", "node", "judge/frontend/selftest.mjs", "/tmp/portal-front-proof"], ["node", "judge/frontend/regression.mjs", "/tmp/portal-front-regression"], ["git", "diff", "--check"]]
+release = [["python3", "-B", "-m", "unittest", "discover", "-s", ".", "-p", "test_*.py", "-v"], ["python3", "judge/backend/test_evaluator.py"], ["python3", "preview/tests.py"], ["env", "BENCHMARK_PLAYWRIGHT_IMPORT=playwright", "node", "judge/frontend/selftest.mjs", "/tmp/portal-front-proof"], ["node", "judge/frontend/regression.mjs", "/tmp/portal-front-regression"], ["git", "diff", "--check"]]
+
+[[areas]]
+name = "default"
+paths = ["**"]
+risk = "normal"
+fallback = true
+map_sections = ["Product boundary", "Verification"]
+tests = []
+required_profiles = []
+
+# Add narrower routes after the default. The highest matched risk wins.
+[[areas]]
+name = "security-sensitive-example"
+paths = ["src/auth/**", "src/security/**", "migrations/**"]
+risk = "critical"
+map_sections = ["Contracts", "Safety and privacy", "Verification"]
+tests = ["tests/auth/**", "tests/security/**", "tests/migrations/**"]
+required_profiles = ["full", "release"]
+
+[[areas]]
+name = "benchmark-integrity"
+paths = ["run.py", "prepare.py", "freeze.py", "collect.py", "telemetry.py", "prices.json", "protocol.json", "APP_PROMPT.txt", "BRIEF.md", "BUDGET.md", "qa_check.py", "fixture/**", "judge/**", "preview/**", ".quality/**"]
+risk = "high"
+map_sections = ["Contracts", "Safety and privacy", "Verification"]
+tests = ["test_*.py", "judge/**", "preview/tests.py"]
+required_profiles = ["full"]

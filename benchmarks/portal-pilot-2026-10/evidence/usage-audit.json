@@ -1,0 +1,355 @@
+{
+  "audit_date": "2026-10-13",
+  "scope": "Independent pricing, routing, token and elapsed reconciliation only; no product-quality verdict",
+  "verdict": "reconciled_with_external_instrument_amendment_disclosure",
+  "pricing_basis": {
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "source_verified_date": "2026-10-13",
+    "frozen_prices_sha256": "aaa299dc688e4636e18dd9363dc7ddfb2e4c25b2f79bddb6b88216d6f97ae8d1",
+    "currency": "USD",
+    "service_tier": "Standard hypothetical API equivalent",
+    "per_million_tokens": {
+      "ordinary_input": "2",
+      "cached_input": "0.10",
+      "cache_write_input": "2.50",
+      "output": "10"
+    },
+    "short_context_threshold_input_tokens": 272000,
+    "all_observed_requests_below_threshold": true,
+    "formula": "(input - cached_input) * 2/1M + cached_input * 0.10/1M + output * 10/1M",
+    "partition_notes": [
+      "Cached input is a subset of input; count total tokens as input + output, never add cached tokens.",
+      "Reasoning output is a subset of output, charged once at the output rate. Non-reasoning output is output minus reasoning output.",
+      "Native cache_write_input_tokens is zero in all measured sessions; no unverified nonzero partition."
+    ],
+    "exclusions": [
+      "image generation",
+      "other tool charges",
+      "setup",
+      "external grading",
+      "measurement audit"
+    ],
+    "actual_invoice_or_subscription_usage_claim": false
+  },
+  "conditions": {
+    "single": {
+      "elapsed_seconds": 2511.818867209018,
+      "elapsed_minutes": 41.86364778681697,
+      "exit_code": 0,
+      "timed_out": false,
+      "budget_exceeded": false,
+      "cleanup_errors": [],
+      "cleanup_in_measured_boundary": true,
+      "cleanup_listener_actions_recorded": 0,
+      "time_basis": "runner monotonic elapsed from native launch through owned native/backend/browser cleanup; helper span overlaps root and is not added",
+      "tokens": {
+        "input_tokens": 4614607,
+        "cached_input_tokens": 4455168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 90904,
+        "reasoning_output_tokens": 32163,
+        "total_tokens": 4705511
+      },
+      "uncached_input_tokens": 159439,
+      "non_reasoning_output_tokens": 58741,
+      "cost_components_usd": {
+        "uncached_input": "0.318878",
+        "cached_input": "0.4455168",
+        "output_including_reasoning": "0.90904",
+        "estimated_total": "1.6734348"
+      },
+      "sessions": [
+        {
+          "role": "root",
+          "tokens": {
+            "input_tokens": 4614607,
+            "cached_input_tokens": 4455168,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 90904,
+            "reasoning_output_tokens": 32163,
+            "total_tokens": 4705511
+          },
+          "uncached_input_tokens": 159439,
+          "non_reasoning_output_tokens": 58741,
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "high",
+          "cost_components_usd": {
+            "uncached_input": "0.318878",
+            "cached_input": "0.4455168",
+            "output_including_reasoning": "0.90904",
+            "estimated_total": "1.6734348"
+          },
+          "token_snapshots": 49,
+          "max_observed_request_input": 159473,
+          "native_reported_context_window": 475000,
+          "native_timestamp_span_seconds": 2508.765,
+          "native_evidence_sha256": "f30710e159fc4c1540e952017ea3a0dedb2ac7bb5520970f83c5d3cb6099a710",
+          "spawn_calls": [],
+          "output_charge_breakdown": {
+            "reasoning_subset_usd": "0.32163",
+            "non_reasoning_output_usd": "0.58741",
+            "already_included_in_output_charge": true
+          }
+        }
+      ],
+      "cli_root_usage_match": true,
+      "native_end_counters_match": true,
+      "successful_spawns": 0,
+      "matched_children": 0,
+      "frozen_output_all_hashes_match": true,
+      "recorded_protocol_sha256": "b479d8b69430664c3ac0b3acda297d19befde6d7c4df851e518778001bec56e8",
+      "common_prompt_sha256": "2d1344d66b8a61c688b253cfc33733b7da340151216543b84f69677243ee4206",
+      "output_charge_breakdown": {
+        "reasoning_subset_usd": "0.32163",
+        "non_reasoning_output_usd": "0.58741",
+        "already_included_in_output_charge": true
+      }
+    },
+    "adaptive": {
+      "elapsed_seconds": 968.3990441249916,
+      "elapsed_minutes": 16.13998406874986,
+      "exit_code": 0,
+      "timed_out": false,
+      "budget_exceeded": false,
+      "cleanup_errors": [],
+      "cleanup_in_measured_boundary": true,
+      "cleanup_listener_actions_recorded": 0,
+      "time_basis": "runner monotonic elapsed from native launch through owned native/backend/browser cleanup; helper span overlaps root and is not added",
+      "tokens": {
+        "input_tokens": 3418721,
+        "cached_input_tokens": 3258112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 65402,
+        "reasoning_output_tokens": 11965,
+        "total_tokens": 3484123
+      },
+      "uncached_input_tokens": 160609,
+      "non_reasoning_output_tokens": 53437,
+      "cost_components_usd": {
+        "uncached_input": "0.321218",
+        "cached_input": "0.3258112",
+        "output_including_reasoning": "0.65402",
+        "estimated_total": "1.3010492"
+      },
+      "sessions": [
+        {
+          "role": "root",
+          "tokens": {
+            "input_tokens": 2807446,
+            "cached_input_tokens": 2689024,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 45889,
+            "reasoning_output_tokens": 8401,
+            "total_tokens": 2853335
+          },
+          "uncached_input_tokens": 118422,
+          "non_reasoning_output_tokens": 37488,
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "high",
+          "cost_components_usd": {
+            "uncached_input": "0.236844",
+            "cached_input": "0.2689024",
+            "output_including_reasoning": "0.45889",
+            "estimated_total": "0.9646364"
+          },
+          "token_snapshots": 36,
+          "max_observed_request_input": 123199,
+          "native_reported_context_window": 475000,
+          "native_timestamp_span_seconds": 965.158,
+          "native_evidence_sha256": "fd9de428097633c67f3fc3f2b7f514bc344bd98caa5f0febe5d44e0c5e020bda",
+          "spawn_calls": [
+            {
+              "task_name": "backend",
+              "fork_turns": "none",
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high"
+            }
+          ],
+          "output_charge_breakdown": {
+            "reasoning_subset_usd": "0.08401",
+            "non_reasoning_output_usd": "0.37488",
+            "already_included_in_output_charge": true
+          }
+        },
+        {
+          "role": "backend_helper",
+          "tokens": {
+            "input_tokens": 611275,
+            "cached_input_tokens": 569088,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 19513,
+            "reasoning_output_tokens": 3564,
+            "total_tokens": 630788
+          },
+          "uncached_input_tokens": 42187,
+          "non_reasoning_output_tokens": 15949,
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "high",
+          "cost_components_usd": {
+            "uncached_input": "0.084374",
+            "cached_input": "0.0569088",
+            "output_including_reasoning": "0.19513",
+            "estimated_total": "0.3364128"
+          },
+          "token_snapshots": 17,
+          "max_observed_request_input": 46084,
+          "native_reported_context_window": 475000,
+          "native_timestamp_span_seconds": 519.008,
+          "native_evidence_sha256": "650db9b919cec718ba499978a2eb8c0a3a66d925b08105099647e20ade790e44",
+          "spawn_calls": [],
+          "output_charge_breakdown": {
+            "reasoning_subset_usd": "0.03564",
+            "non_reasoning_output_usd": "0.15949",
+            "already_included_in_output_charge": true
+          }
+        }
+      ],
+      "cli_root_usage_match": true,
+      "native_end_counters_match": true,
+      "successful_spawns": 1,
+      "matched_children": 1,
+      "frozen_output_all_hashes_match": true,
+      "recorded_protocol_sha256": "e81eec1ce1745990792d0cbb79c7bf01f23fd975d38e97c44f1712393e633d6a",
+      "common_prompt_sha256": "2d1344d66b8a61c688b253cfc33733b7da340151216543b84f69677243ee4206",
+      "output_charge_breakdown": {
+        "reasoning_subset_usd": "0.11965",
+        "non_reasoning_output_usd": "0.53437",
+        "already_included_in_output_charge": true
+      }
+    }
+  },
+  "deltas_adaptive_vs_single": {
+    "elapsed_seconds": -1543.4198230840266,
+    "elapsed_reduction_percent": 61.44630264677411,
+    "speed_ratio_single_over_adaptive": 2.593784950994661,
+    "tokens": {
+      "input_tokens": {
+        "adaptive_minus_single": -1195886,
+        "percent_change_vs_single": "-25.91522961760340588050076637"
+      },
+      "cached_input_tokens": {
+        "adaptive_minus_single": -1197056,
+        "percent_change_vs_single": "-26.86893064414181462966155261"
+      },
+      "cache_write_input_tokens": {
+        "adaptive_minus_single": 0,
+        "percent_change_vs_single": null
+      },
+      "output_tokens": {
+        "adaptive_minus_single": -25502,
+        "percent_change_vs_single": "-28.05377101117662589104989879"
+      },
+      "reasoning_output_tokens": {
+        "adaptive_minus_single": -20198,
+        "percent_change_vs_single": "-62.79886826477629574355626030"
+      },
+      "total_tokens": {
+        "adaptive_minus_single": -1221388,
+        "percent_change_vs_single": "-25.95654329572282372732738272"
+      },
+      "uncached_input_tokens": {
+        "adaptive_minus_single": 1170,
+        "percent_change_vs_single": "0.7338229667772627776140091195"
+      },
+      "non_reasoning_output_tokens": {
+        "adaptive_minus_single": -5304,
+        "percent_change_vs_single": "-9.029468344086753715462794300"
+      }
+    },
+    "cost_components": {
+      "uncached_input": {
+        "adaptive_minus_single_usd": "0.002340",
+        "percent_change_vs_single": "0.733822966777262777614009100"
+      },
+      "cached_input": {
+        "adaptive_minus_single_usd": "-0.1197056",
+        "percent_change_vs_single": "-26.86893064414181462966155261"
+      },
+      "output_including_reasoning": {
+        "adaptive_minus_single_usd": "-0.25502",
+        "percent_change_vs_single": "-28.05377101117662589104989879"
+      },
+      "estimated_total": {
+        "adaptive_minus_single_usd": "-0.3723856",
+        "percent_change_vs_single": "-22.25277017066933232176120635"
+      }
+    },
+    "output_charge_breakdown": {
+      "reasoning_subset_usd": {
+        "adaptive_minus_single_usd": "-0.20198",
+        "percent_change_vs_single": "-62.79886826477629574355626030"
+      },
+      "non_reasoning_output_usd": {
+        "adaptive_minus_single_usd": "-0.05304",
+        "percent_change_vs_single": "-9.029468344086753715462794300"
+      }
+    }
+  },
+  "routing": {
+    "same_root_model_and_effort": true,
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "single_successful_helpers": 0,
+    "adaptive_successful_helpers": 1,
+    "adaptive_topology": "One direct same-model high-effort backend helper with fork_turns=none (fresh context); persistent root owns frontend/integration. No child spawn, hierarchy, or cheaper model observed.",
+    "effective_single_coordination": "multi_agent_v2 disabled, multi_agent disabled, agents.enabled=false; actual successful spawns zero; separate preflight found no available delegation tools",
+    "context_notes": "Max observed request input measures supplied native request usage, not model window capacity. All native sessions report capacity 475000. No smaller window setting was requested or demonstrated. Fresh helper context does not prove subscription savings."
+  },
+  "freeze_and_isolation": {
+    "frozen_measurement_source_files": 34,
+    "all_accounting_pricing_runner_source_hashes_match": true,
+    "changed_external_grading_instrument": [
+      "judge/frontend/evaluate.mjs"
+    ],
+    "sealed_original_frontend_evaluator_retained": true,
+    "prompt_hash_matches_both_runs": true,
+    "adaptive_original_artifact_byte_identity": {
+      "metadata.json": true,
+      "events.jsonl": true,
+      "final.md": true,
+      "stderr.log": true
+    },
+    "original_protocol_sha256": "e81eec1ce1745990792d0cbb79c7bf01f23fd975d38e97c44f1712393e633d6a",
+    "current_protocol_sha256": "b479d8b69430664c3ac0b3acda297d19befde6d7c4df851e518778001bec56e8",
+    "amendment_reason": "Legacy multi_agent/agents.enabled disable did not remove modern collaboration tools because shared runner enabled multi_agent_v2. Actual control child creation confirmed before external grading.",
+    "invalid_control_excluded_before_external_grading": true,
+    "control_capability_preflight": {
+      "native_features": "Both multi_agent and multi_agent_v2 disabled; agents.enabled=false. Same protected workspace permission/network profile.",
+      "model_report": {
+        "available_delegation_tools": [],
+        "spawn_attempted": false,
+        "spawn_succeeded": false
+      },
+      "actual_delegation_calls": [],
+      "events_sha256": "ac91b62c65b84926cfb8330132f442266a067f4791f18947a528092d2b37c0f9",
+      "preflight_boundary": "Small capability-only native session, outside measured app coding usage/time."
+    },
+    "original_adaptive_frozen_manifest_byte_identical": true,
+    "control_protocol_matches_launch_metadata": true,
+    "adaptive_protocol_matches_original_seal": true
+  },
+  "invalid_control_excluded_preparation": {
+    "label": "invalid-control-1",
+    "elapsed_seconds": 419.35055991692934,
+    "elapsed_rounded_seconds": 419.351,
+    "reason": "Actually created a helper despite intended control; interrupted native root has no observed completion.",
+    "authoritative_tokens": null,
+    "complete_cost_estimate_usd": null,
+    "not_zero_cost": true,
+    "excluded_from_pair_deltas": true
+  },
+  "limitations": [
+    "One pair, adaptive first; outcomes cannot establish causal savings or general superiority.",
+    "Cache/provider/host load and implementation decisions are uncontrolled.",
+    "Hypothetical Standard API equivalents do not prove included subscription usage savings or actual billed USD.",
+    "Setup, negative capability preflight, interrupted invalid run, external grading, measurement audits and publication are excluded from measured app-builder totals.",
+    "Helper native duration overlaps root; do not sum durations to claim wall time.",
+    "This reconciliation does not assess product correctness, accessibility, visual quality or regression counts."
+  ],
+  "findings": [
+    {
+      "severity": "disclosure",
+      "finding": "Frontend external grading instrument was amended after frozen builds. Current judge/frontend/evaluate.mjs differs from launch seal; evaluate-original.mjs retains the sealed 1287cfd hash. App frozen outputs and accounting/pricing/runner sources match. This audit gives no product-quality judgment."
+    }
+  ]
+}

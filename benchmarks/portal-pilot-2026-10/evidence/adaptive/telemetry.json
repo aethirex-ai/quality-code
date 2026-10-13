@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "session_counts": {
+    "root": 1,
+    "descendant": 1
+  },
+  "models": {
+    "gpt-6.1-sol": {
+      "input_tokens": 3418721,
+      "cached_input_tokens": 3258112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 65402,
+      "reasoning_output_tokens": 11965,
+      "total_tokens": 3484123
+    }
+  },
+  "tokens": {
+    "input_tokens": 3418721,
+    "cached_input_tokens": 3258112,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 65402,
+    "reasoning_output_tokens": 11965,
+    "total_tokens": 3484123
+  },
+  "sessions": [
+    {
+      "role": "root",
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 2807446,
+          "cached_input_tokens": 2689024,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 45889,
+          "reasoning_output_tokens": 8401,
+          "total_tokens": 2853335
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 2,
+        "assistant": 9
+      },
+      "token_snapshots": 36,
+      "image_call_sites": 0,
+      "max_observed_request_input": 123199,
+      "flags": []
+    },
+    {
+      "role": "descendant",
+      "models": {
+        "gpt-6.1-sol": {
+          "input_tokens": 611275,
+          "cached_input_tokens": 569088,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 19513,
+          "reasoning_output_tokens": 3564,
+          "total_tokens": 630788
+        }
+      },
+      "message_roles": {
+        "developer": 3,
+        "user": 1,
+        "assistant": 2
+      },
+      "token_snapshots": 17,
+      "image_call_sites": 0,
+      "max_observed_request_input": 46084,
+      "flags": []
+    }
+  ],
+  "image_calls": 0,
+  "image_call_sites": 0,
+  "image_count_exact": true,
+  "cli_root_reconciliation": "matched",
+  "spawn_reconciliation": {
+    "successful_spawns": 1,
+    "matched_children": 1,
+    "status": "matched"
+  },
+  "standard_short_estimated_usd": 1.3010492,
+  "flags": [],
+  "tokens_complete": true,
+  "observed_tokens": {
+    "input_tokens": 3418721,
+    "cached_input_tokens": 3258112,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 65402,
+    "reasoning_output_tokens": 11965,
+    "total_tokens": 3484123
+  },
+  "native_evidence_sha256": [
+    {
+      "role": "root",
+      "sha256": "fd9de428097633c67f3fc3f2b7f514bc344bd98caa5f0febe5d44e0c5e020bda"
+    },
+    {
+      "role": "descendant",
+      "sha256": "650db9b919cec718ba499978a2eb8c0a3a66d925b08105099647e20ade790e44"
+    }
+  ],
+  "native_evidence_policy": "Selected native logs retained privately at their original location; only hashes/aggregate counters published.",
+  "cost_components_usd": {
+    "checked_date": "2026-10-13",
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "by_model": {
+      "gpt-6.1-sol": {
+        "uncached_input": "0.321218",
+        "cached_input": "0.3258112",
+        "output_including_reasoning": "0.65402",
+        "total": "1.3010492"
+      }
+    },
+    "total": {
+      "uncached_input": "0.321218",
+      "cached_input": "0.3258112",
+      "output_including_reasoning": "0.65402"
+    },
+    "estimated_total": "1.3010492",
+    "exclusions": [
+      "image generation",
+      "other tool charges",
+      "setup",
+      "external grading",
+      "measurement audit"
+    ]
+  },
+  "iteration_evidence": {
+    "owners": {
+      "backend": {
+        "check_history_present": true,
+        "recorded_check_runs": 5,
+        "initial_scaffold_nonzero_exits": 1,
+        "verification_nonzero_exits": 0,
+        "passing_runs": 4,
+        "observed_check_recovery_sequences": [],
+        "unrecovered_check_ids": [],
+        "reported_issue_ids": [
+          "backend-invalid-unicode",
+          "backend-regression-placement"
+        ]
+      },
+      "frontend": {
+        "check_history_present": true,
+        "recorded_check_runs": 19,
+        "initial_scaffold_nonzero_exits": 1,
+        "verification_nonzero_exits": 2,
+        "passing_runs": 16,
+        "observed_check_recovery_sequences": [],
+        "unrecovered_check_ids": [
+          "client-overview-desktop-recheck",
+          "keyboard-navigation"
+        ],
+        "reported_issue_ids": [
+          "artwork-narrative",
+          "control-readability",
+          "delayed-account-response",
+          "mobile-login-word-spacing",
+          "preview-action-schema",
+          "preview-press-schema"
+        ]
+      },
+      "integration": {
+        "check_history_present": true,
+        "recorded_check_runs": 18,
+        "initial_scaffold_nonzero_exits": 0,
+        "verification_nonzero_exits": 0,
+        "passing_runs": 18,
+        "observed_check_recovery_sequences": [],
+        "unrecovered_check_ids": [],
+        "reported_issue_ids": [
+          "independent-auth-state-gate"
+        ]
+      }
+    },
+    "issue_history_present": true,
+    "distinct_reported_issue_ids": 9,
+    "latest_reported_statuses": {
+      "backend-invalid-unicode": "fixed",
+      "backend-regression-placement": "fixed",
+      "preview-action-schema": "fixed",
+      "mobile-login-word-spacing": "fixed",
+      "control-readability": "fixed",
+      "artwork-narrative": "fixed",
+      "delayed-account-response": "fixed",
+      "preview-press-schema": "fixed",
+      "independent-auth-state-gate": "blocked"
+    },
+    "preview_history_present": true,
+    "recorded_previews": 26,
+    "timed_recorded_previews": 26,
+    "outside_timer_recorded_previews": 0,
+    "preview_timing_unknown": false,
+    "classification_pending_independent_review": true,
+    "limits": "Raw observations only. Independent review must distinguish product defects, visual refinements, tooling errors, expected negative/construction failures, duplicate causes and unresolved final errors."
+  }
+}

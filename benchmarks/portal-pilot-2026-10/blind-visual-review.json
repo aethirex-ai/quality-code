@@ -1,0 +1,63 @@
+{
+  "review_type": "independent anonymous screenshot review",
+  "scope": "Only the 24 original PNG captures in blind-visual/A and blind-visual/B were inspected, individually through native view_image. No mapping, source, metrics, or other run reports were read.",
+  "scale": "0 to 5, in half-point steps; arithmetic mean across five equally weighted dimensions",
+  "entries": {
+    "A": {
+      "scores": {
+        "visual_identity_portfolio_impression": 4.5,
+        "typography_hierarchy": 4.0,
+        "composition_coherence": 3.5,
+        "responsive_usability": 3.5,
+        "forms_state_clarity": 4.0
+      },
+      "mean": 3.9,
+      "evidence": {
+        "visual_identity_portfolio_impression": "The dark forest sidebar, warm paper canvas, rust italic display line, circular atelier seal, and three distinctive project illustrations create a memorable studio identity. The large Harbor House monogram and angled digital/editorial mockups give the dashboards strong portfolio presence. The typography and palette remain consistent across client and staff states.",
+        "typography_hierarchy": "Large serif project titles, restrained sans-serif body copy, numbered deliverables, and thin separators make the main information readable and ordered. Dashboard statistics are subordinate to the welcome heading without competing. Small tracked metadata, breadcrumb labels, and status/count text are noticeably tiny, especially at 375px; the approval button also wraps its label onto two lines on mobile.",
+        "composition_coherence": "Desktop dashboard cards and the normal project pages align cleanly with generous spacing and a stable two-column content/action layout. The large project artwork repeats above every project tab, pushing the actual revision or discussion content far down. In 1440-staff-publish.png, the sidebar starts roughly 400px below the top while the main content begins at the top, leaving a conspicuous blank upper-left region. The visible Skip to content control interrupts the composition in that capture and several mobile project captures.",
+        "responsive_usability": "Cards stack within the 375px width, the desktop sidebar becomes a compact top header, and no obvious horizontal clipping appears. However, the mobile decision or publishing panel appears before the project tabs and their selected content; revision/discussion information requires a long scroll past the repeated artwork and action panel. In 375-project-brief.png the visible Skip to content block overlaps the action-panel heading; in revisions/discussion/publish it covers part of the artwork. These are visible captured-state interruptions, without evidence of their frequency during normal use.",
+        "forms_state_clarity": "Feedback and publishing fields have visible labels, large textareas, and distinct dark primary buttons. Status badges distinguish Awaiting review and Approved; the client panel identifies R1 and says decisions are saved to that revision. The client note explains feedback is optional for approval, but the visible panel does not state whether a note is required for requesting changes. The staff publish button explicitly names revision 2. Only empty form states are shown, so completion, error and success clarity cannot be judged."
+      }
+    },
+    "B": {
+      "scores": {
+        "visual_identity_portfolio_impression": 4.5,
+        "typography_hierarchy": 4.5,
+        "composition_coherence": 4.5,
+        "responsive_usability": 4.0,
+        "forms_state_clarity": 4.5
+      },
+      "mean": 4.4,
+      "evidence": {
+        "visual_identity_portfolio_impression": "The serif AethDesign wordmark, recurring asterisk, olive accents, pale stone surfaces, and forest-green review banner create a coherent studio identity. Harbor House's architectural mark, framed identity board, angled website mockup, and Northline editorial cover read as considered portfolio material. The visual approach is restrained rather than highly theatrical, but consistently polished across the supplied states.",
+        "typography_hierarchy": "Serif headings, italic secondary lines, readable body copy and labelled metadata establish a clear hierarchy. The current revision and milestone information are grouped in a distinct summary panel, and the dark review banner strongly identifies the next action. Small uppercase metadata and helper text remain fairly tiny; the staff mobile dashboard's long full-page capture makes these particularly hard to inspect at reduced display size.",
+        "composition_coherence": "The desktop sidebar remains aligned at the top in all captures, with orderly card grids, consistent gutters, and balanced content/action columns. Project tabs appear above the state-specific content. The brief pairs text with identity imagery and a timeline; revisions keep the actual artwork in the revision card beside the decision form. The discussion uses a spacious message area beside its composer. The single third staff card leaves a large lower-right blank area, but the grid still reads coherently.",
+        "responsive_usability": "The 375px pages preserve the same reading order: project summary, tabs, selected content, then its action panel. The summary becomes a readable 2-by-2 grid, cards stack cleanly, and form buttons occupy ample width. The mobile revisions and staff publishing pages are long but retain contextual content before the form. In 375-staff-publish.png, a visible Skip to content block overlaps the investment cell of the summary, obscuring its value. No other obvious clipping or overlap is visible in the supplied B captures.",
+        "forms_state_clarity": "The revision form explicitly says which revision is being reviewed and that a note is required for requesting changes; approval and change buttons are visually distinct. The staff publish panel explains that earlier decisions stay in history, identifies publishing after revision 1, and shows clear title and change-summary labels. Its populated textarea has a strong visible focus ring. The discussion composer explains audience and local saving. These captures show stronger visible guidance, but no error, success or saved post-action states. The populated staff form is a different capture state from A, so population alone is not counted as evidence of superior behavior."
+      }
+    }
+  },
+  "comparative_assessment": "B has the higher screenshot-based mean, chiefly because selected project content and its related forms are composed more directly and remain in a clearer order on mobile. A has equally strong visual identity, with more expressive dashboard imagery and display typography, but repeated large artwork and captured overlay/sidebar interruptions reduce coherence and mobile usability.",
+  "limitations": [
+    "Screenshots do not prove navigation, tab switching, keyboard operation, accessible semantics, permissions, data persistence, validation, approval, publishing, or discussion behavior.",
+    "Skip to content overlays are visible evidence in these exact captures. Their trigger, correctness, persistence and normal-use frequency are unknown; no causal claim is made.",
+    "Only the six supplied states at 375px and 1440px were reviewed; intermediate widths, hover states, errors, successful submissions, and other project states are unobserved.",
+    "Some long full-page images were automatically reduced by the native viewer. Detailed text-size and contrast judgments are qualitative, not measured accessibility results.",
+    "The scores concern visible presentation and clarity only, without assumptions about implementation topology or development method."
+  ],
+  "inspected_images_per_entry": [
+    "1440-client-dashboard.png",
+    "375-client-dashboard.png",
+    "1440-project-brief.png",
+    "375-project-brief.png",
+    "1440-project-revisions.png",
+    "375-project-revisions.png",
+    "1440-project-discussion.png",
+    "375-project-discussion.png",
+    "1440-staff-dashboard.png",
+    "375-staff-dashboard.png",
+    "1440-staff-publish.png",
+    "375-staff-publish.png"
+  ]
+}

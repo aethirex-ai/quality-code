@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "denominator": 11,
+  "groups": [
+    {
+      "name": "auth_identity_isolation",
+      "status": "pass",
+      "durationMs": 782
+    },
+    {
+      "name": "authorized_cards",
+      "status": "pass",
+      "durationMs": 637
+    },
+    {
+      "name": "detail_budget",
+      "status": "pass",
+      "durationMs": 309
+    },
+    {
+      "name": "meaningful_content",
+      "status": "pass",
+      "durationMs": 336
+    },
+    {
+      "name": "literal_comment_persistence",
+      "status": "fail",
+      "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n",
+      "durationMs": 5472
+    },
+    {
+      "name": "decision_validation_persistence",
+      "status": "fail",
+      "error": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"open-project\"][data-project-id=\"p1\"]').first()\u001b[22m\n",
+      "durationMs": 5841
+    },
+    {
+      "name": "staff_publish_reopens_history_activity",
+      "status": "fail",
+      "error": "current revision should equal 2",
+      "durationMs": 5465
+    },
+    {
+      "name": "client_staff_controls_hidden",
+      "status": "pass",
+      "durationMs": 300
+    },
+    {
+      "name": "accessibility_focus_landmarks_attribution",
+      "status": "pass",
+      "durationMs": 303
+    },
+    {
+      "name": "responsive_widths",
+      "status": "pass",
+      "durationMs": 1796
+    },
+    {
+      "name": "runtime_http_health",
+      "status": "pass",
+      "durationMs": 302
+    }
+  ],
+  "fatal": null,
+  "screenshotDenominator": 12,
+  "screenshots": [
+    {
+      "name": "375-client-dashboard.png",
+      "status": "captured"
+    },
+    {
+      "name": "375-project-brief.png",
+      "status": "captured"
+    },
+    {
+      "name": "375-project-revisions.png",
+      "status": "captured"
+    },
+    {
+      "name": "375-project-discussion.png",
+      "status": "captured"
+    },
+    {
+      "name": "375-staff-dashboard.png",
+      "status": "captured"
+    },
+    {
+      "name": "375-staff-publish.png",
+      "status": "captured"
+    },
+    {
+      "name": "1440-client-dashboard.png",
+      "status": "captured"
+    },
+    {
+      "name": "1440-project-brief.png",
+      "status": "captured"
+    },
+    {
+      "name": "1440-project-revisions.png",
+      "status": "captured"
+    },
+    {
+      "name": "1440-project-discussion.png",
+      "status": "captured"
+    },
+    {
+      "name": "1440-staff-dashboard.png",
+      "status": "captured"
+    },
+    {
+      "name": "1440-staff-publish.png",
+      "status": "captured"
+    }
+  ],
+  "screenshotFailures": 0,
+  "passed": 8,
+  "failed": 3,
+  "notRun": 0
+}

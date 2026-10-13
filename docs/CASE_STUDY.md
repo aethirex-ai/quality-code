@@ -102,3 +102,11 @@ The single-agent designs scored higher anonymously (4.35/5 versus 4.05/5). Each 
 Quality Code makes one part of AethDesign’s engineering process public: how we ask coding agents to understand a project, prove a change, and surface uncertainty. Readers can reuse the system, challenge its choices, or bring the same discipline to a project with us.
 
 [Explore AethDesign →](https://www.aethdesign.com/?utm_source=github&utm_medium=case_study&utm_campaign=quality-code)
+
+## Fullstack client portal: keep the experience coherent
+
+The standard now differentiates visually coupled work from independent code-heavy outcomes. One persistent design/integration owner keeps the frontend coherent; bounded delegation depends on ready backend work, contracts and a shared budget. The rule was independently checked and rolled into twelve working project roots. Model selection remains native and provider-neutral.
+
+AethDesign Atelier tests this approach with a real local Python/SQLite client portal and dependency-free frontend. Adaptive chose one same-model backend helper, finishing 61.4% sooner with 22.3% lower hypothetical coding API equivalent. Single scored higher visually, 4.4/5 versus 3.9/5. Both passed 12/12 sampled backend groups yet failed their independent app gate: single retained 2 distinct defects and adaptive 1. Speed and sampled passes are separate from complete quality.
+
+Both original frontend evaluator failures, corrected isolation, actual routing, correction histories and frozen sources remain inspectable. No backend is deployed; these are experimental fictional apps. [Read complete portal results](../benchmarks/portal-pilot-2026-10/RESULTS.md) or [inspect desktop/mobile captures](benchmarks/portal-pilot-2026-10/index.html).

@@ -1,0 +1,38 @@
+{
+  "original": {
+    "passed": 8,
+    "failedTargets": [
+      "literal_comment_persistence",
+      "decision_validation_persistence",
+      "staff_publish_reopens_history_activity"
+    ]
+  },
+  "corrected": {
+    "passed": 11
+  },
+  "negativeControls": [
+    {
+      "mode": "literal",
+      "target": "literal_comment_persistence",
+      "status": "fail",
+      "healthyControl": "authorized_cards:pass"
+    },
+    {
+      "mode": "validation",
+      "target": "decision_validation_persistence",
+      "status": "fail",
+      "healthyControl": "authorized_cards:pass"
+    },
+    {
+      "mode": "publish",
+      "target": "staff_publish_reopens_history_activity",
+      "status": "fail",
+      "healthyControl": "authorized_cards:pass"
+    }
+  ],
+  "navigationBranches": {
+    "overview": true,
+    "wrongDetailUsesActualBack": true
+  },
+  "unsettledContractRejected": true
+}

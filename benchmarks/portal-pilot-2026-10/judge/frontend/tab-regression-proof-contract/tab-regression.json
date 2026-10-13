@@ -1,0 +1,13 @@
+{
+  "before": {
+    "passed": 10,
+    "publish": "fail"
+  },
+  "healthy": {
+    "passed": 11
+  },
+  "negative": {
+    "publish": "fail",
+    "healthyControl": "authorized_cards:pass"
+  }
+}

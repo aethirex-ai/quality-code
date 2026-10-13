@@ -1,0 +1,12 @@
+__pycache__/
+runs/
+judge/frontend/proof/
+judge/frontend/proof-final/
+judge/frontend/audit-regression-proof/
+judge/frontend/proof-history.jsonl
+*.log
+runtime-preflight-events.jsonl
+runtime-preflight-final.txt
+runtime-preflight-stderr.log
+CURRENT_TASK.json
+native-preview-handshake.json

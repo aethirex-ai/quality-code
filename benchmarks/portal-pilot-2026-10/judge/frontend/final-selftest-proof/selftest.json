@@ -1,0 +1,73 @@
+{
+  "healthyPassed": 11,
+  "screenshots": 12,
+  "negatives": [
+    {
+      "mode": "leak",
+      "target": "auth_identity_isolation",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    },
+    {
+      "mode": "budget",
+      "target": "detail_budget",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    },
+    {
+      "mode": "money_scale",
+      "target": "detail_budget",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    },
+    {
+      "mode": "literal",
+      "target": "literal_comment_persistence",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    },
+    {
+      "mode": "validation",
+      "target": "decision_validation_persistence",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    },
+    {
+      "mode": "publish",
+      "target": "staff_publish_reopens_history_activity",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    },
+    {
+      "mode": "staff_controls",
+      "target": "client_staff_controls_hidden",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    },
+    {
+      "mode": "labels",
+      "target": "accessibility_focus_landmarks_attribution",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    },
+    {
+      "mode": "overflow",
+      "target": "responsive_widths",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    },
+    {
+      "mode": "runtime",
+      "target": "runtime_http_health",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    },
+    {
+      "mode": "http",
+      "target": "runtime_http_health",
+      "status": "fail",
+      "healthyControl": "authorized_cards"
+    }
+  ],
+  "fatalDenominator": 11
+}

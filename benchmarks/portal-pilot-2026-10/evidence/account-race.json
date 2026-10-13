@@ -1,0 +1,16 @@
+{
+  "single": {
+    "beforeSam": true,
+    "beforeHarbor": false,
+    "afterSam": true,
+    "afterHarbor": true,
+    "afterDetail": "p1"
+  },
+  "adaptive": {
+    "beforeSam": true,
+    "beforeHarbor": false,
+    "afterSam": true,
+    "afterHarbor": false,
+    "afterDetail": null
+  }
+}

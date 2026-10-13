@@ -1,0 +1,11 @@
+{
+  "native_features": "Both multi_agent and multi_agent_v2 disabled; agents.enabled=false. Same protected workspace permission/network profile.",
+  "model_report": {
+    "available_delegation_tools": [],
+    "spawn_attempted": false,
+    "spawn_succeeded": false
+  },
+  "actual_delegation_calls": [],
+  "events_sha256": "ac91b62c65b84926cfb8330132f442266a067f4791f18947a528092d2b37c0f9",
+  "preflight_boundary": "Small capability-only native session, outside measured app coding usage/time."
+}
