@@ -1,0 +1,399 @@
+{
+  "schema": 1,
+  "scope": "post-clock frozen adaptive final grading; not accepted independent app verdict",
+  "source_manifest": "<measured-workspace>/runs/adaptive/snapshots/final/manifest.json",
+  "copied_site": "<single-diagnostic-workspace>/site-copy",
+  "manifest_hashes": {
+    "original": {
+      "checked": 39,
+      "all_match": true,
+      "mismatches": []
+    },
+    "copy": {
+      "checked": 39,
+      "all_match": true,
+      "mismatches": []
+    }
+  },
+  "reports": {
+    "backend": "<single-diagnostic-workspace>/backend.json",
+    "frontend": "<single-diagnostic-workspace>/frontend/report.json",
+    "recovery": "<single-diagnostic-workspace>/recovery/defect-probes.json",
+    "cleanup": "<single-diagnostic-workspace>/cleanup.json"
+  },
+  "backend": {
+    "denominator": 12,
+    "counts": {
+      "pass": 12
+    },
+    "instrument_error": null,
+    "evidence_dir": "<single-diagnostic-workspace>/backend.evidence"
+  },
+  "frontend": {
+    "denominator": 11,
+    "counts": {
+      "pass": 10,
+      "fail": 1
+    },
+    "fatal": null,
+    "failures": [
+      {
+        "name": "staff_publish_reopens_history_activity",
+        "status": "fail",
+        "error": "previous decision history visible",
+        "durationMs": 833
+      }
+    ]
+  },
+  "recovery": {
+    "denominator": 3,
+    "reported_counts": {
+      "pass": 3
+    },
+    "checks": [
+      {
+        "name": "healthy_comment_and_identity",
+        "status": "pass",
+        "evidence": {
+          "identity": "Alex Morgan",
+          "literalUnicodePersisted": true
+        }
+      },
+      {
+        "name": "late_conflict_refresh_after_account_switch",
+        "status": "pass",
+        "evidence": {
+          "actualDecisionStatus": 409,
+          "heldProjectReadPaths": [
+            "/api/projects/p1/comments",
+            "/api/projects/p1",
+            "/api/projects/p1/revisions",
+            "/api/projects/p1/activity"
+          ],
+          "canceledProjectReads": [],
+          "instrumentErrors": [],
+          "identity": "Sam Ellis",
+          "visibleProjectIds": [
+            "p3"
+          ],
+          "leakedTitle": false,
+          "errors": []
+        }
+      },
+      {
+        "name": "committed_comment_refresh_failure",
+        "status": "pass",
+        "evidence": {
+          "postStatus": 201,
+          "refreshStrategy": "public_dataset_reread",
+          "injectedProjectReadPaths": [
+            "/api/projects/p1",
+            "/api/projects/p1/revisions",
+            "/api/projects/p1/comments",
+            "/api/projects/p1/activity"
+          ],
+          "feedback": "Saved successfully. The latest activity could not be loaded. Refresh to recover; your submission is already stored.\nRefresh project",
+          "retainedDraft": "",
+          "postCount": 1,
+          "instrumentErrors": [],
+          "persistedCount": 1
+        }
+      }
+    ],
+    "qualified_clean_passes": 3,
+    "uncertain_due_to_recorded_instrument_error": [],
+    "missing_not_run": 0,
+    "fatal": null
+  },
+  "screenshots": {
+    "required": 12,
+    "captured_required": 12,
+    "missing_or_failed_required": 0,
+    "captured_optional": 4,
+    "shots": [
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-client-dashboard.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-project-brief.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-project-revisions.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-project-discussion.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-staff-dashboard.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-staff-publish.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-client-dashboard.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-project-brief.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-project-revisions.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-project-discussion.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-staff-dashboard.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-staff-publish.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-login.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-project-discussion-form-view.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 605,
+          "containers": [
+            {
+              "hook": null,
+              "tag": "HTML",
+              "top": 605,
+              "left": 0
+            }
+          ]
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-staff-publish-form-view.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 983,
+          "containers": [
+            {
+              "hook": null,
+              "tag": "HTML",
+              "top": 983,
+              "left": 0
+            }
+          ]
+        }
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-login.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true,
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        }
+      }
+    ],
+    "visually_inspected_required": 12,
+    "visually_inspected_optional": 4,
+    "observations": [
+      "All 16 inspected states have styled black/olive/cream surfaces, serif display headings, compact sans body text, thin borders and an AD/AethDesign mark; no numeric visual grade assigned.",
+      "Desktop client/staff states retain a left project sidebar with Overview, account identity, logout and project links; detail also has a project switcher strip.",
+      "Mobile screenshots remove the desktop sidebar and stack overview stats/project cards. Detail retains a wrapping project switcher, header identity and four tab controls; document overflow probe passed at 375 and 1440.",
+      "Harbor commerce concept preview is rendered on desktop and mobile dashboards; desktop brief pairs prose/milestones with concept imagery and deliverables. Mobile brief prioritizes prose and milestones, with lower content below the initial viewport.",
+      "Initial mobile discussion/publication captures place forms below the viewport; optional scrolled form views show populated textareas, visible labels and full-width submit controls.",
+      "Desktop brief metrics show delivery-progress and current-revision labels touching in this capture; desktop revisions/discussion metrics have more separation.",
+      "Desktop publication and client revision review actions extend beneath the 1000px required viewport; required captures are viewport images, not full-page completion proof."
+    ]
+  },
+  "recorded_judge_controls": {
+    "not_rerun": true,
+    "paths": [
+      "<measured-workspace>/judge/backend/completion-control-results.json",
+      "<measured-workspace>/judge/backend/completion-unicode-controls.json",
+      "<measured-workspace>/judge/frontend/completion-selftest-proof/selftest.json",
+      "<measured-workspace>/judge/frontend/completion-defect-controls/regression.json",
+      "<measured-workspace>/judge/frontend/completion-defect-controls/healthy/defect-probes.json",
+      "<measured-workspace>/judge/frontend/final-regression-proof/regression.json",
+      "<measured-workspace>/judge/frontend/completion-fixed-capture-proof/capture-regression.json"
+    ],
+    "healthy_backend": "12/12 in stored Unicode healthy control",
+    "healthy_frontend": "11/11 and 12 screenshots in stored selftest",
+    "healthy_recovery": "3/3 in stored healthy fixture",
+    "negative_controls": "stored backend mutations and 11 frontend target mutations detected; stored recovery mutation regressions passed",
+    "cleanup_controls": "stored exited/running leader descendant termination passed; live permission error not waived"
+  },
+  "supplied_prior_audit_context": {
+    "source": "parent task brief; not independently reread or reproduced",
+    "first_audit": "FAIL; one API cause subsequently fixed",
+    "second_audit": "20 minute cap; no final canonical report",
+    "remaining_known_issues": [
+      "history visibility",
+      "navigation",
+      "long revision title"
+    ]
+  },
+  "limitations": [
+    "No final canonical independent audit report is established by these diagnostics; final grading outside the condition clock does not convert capped completion into accepted PASS.",
+    "The frontend publication-history failure is observed by the fixed journey; navigation and long-title issues supplied by parent were not redundantly externally reproduced.",
+    "Judge groups are outcomes rather than independent defect counts; backend sample is not comprehensive security/production audit.",
+    "Unknown app test/full/release counts and canonical independent audit conclusions are not inferred as zero or PASS.",
+    "No application or instrument source edits, paid calls, or other agents."
+  ]
+}

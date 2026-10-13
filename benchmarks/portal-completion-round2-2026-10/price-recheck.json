@@ -1,0 +1,42 @@
+{
+  "checked_date": "2026-10-13",
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "basis": "Official Standard pricing table independently reread during final preparation; API-equivalent proxy, not actual native subscription bill",
+  "matches_frozen_rates": true,
+  "observed_rows": {
+    "gpt-6.1-sol": {
+      "short": [
+        2,
+        0.1,
+        2.5,
+        10
+      ],
+      "long": [
+        4,
+        0.2,
+        5,
+        15
+      ]
+    },
+    "gpt-6-luna": {
+      "short": [
+        0.1,
+        0.01,
+        0.125,
+        0.5
+      ],
+      "long": [
+        0.2,
+        0.02,
+        0.25,
+        0.75
+      ]
+    }
+  },
+  "rate_order": [
+    "ordinary_input",
+    "cached_input",
+    "cache_write_input",
+    "output"
+  ]
+}

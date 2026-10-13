@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "records": [
+    {
+      "path": "backend-controls.json",
+      "native_sha256": "dac0e28f29552653ac606dae51e738878f3022b7261d6c291de8669563af412d",
+      "published_sha256": "dac0e28f29552653ac606dae51e738878f3022b7261d6c291de8669563af412d",
+      "adaptation": "Local diagnostic paths replaced; test outcomes retained."
+    },
+    {
+      "path": "unicode-controls.json",
+      "native_sha256": "d0fbb5a17c9cb4ceead6c744da8a598c829617b23dca26b4c2634f8dc3cf7576",
+      "published_sha256": "d0fbb5a17c9cb4ceead6c744da8a598c829617b23dca26b4c2634f8dc3cf7576",
+      "adaptation": "Local diagnostic paths replaced; test outcomes retained."
+    },
+    {
+      "path": "browser-controls.json",
+      "native_sha256": "dcded54660e92b637d1b180b9cc1b7126d22e9d25ecfff294bec403d21b3e136",
+      "published_sha256": "be494fb9602f2b7c908615c188f88e4b9f1589f21c8a86550b212404b8dee91e",
+      "adaptation": "Local diagnostic paths replaced; test outcomes retained."
+    },
+    {
+      "path": "recovery-strategy-controls.json",
+      "native_sha256": "9437aa3d9e798f130ad295245c9da55d65e422250b40860435cfc805cfab7124",
+      "published_sha256": "cb60bea0b759cf78bf7d26bd04025c99936877cb7b85469f1e8873faee8862e2",
+      "adaptation": "Local diagnostic paths replaced; test outcomes retained."
+    },
+    {
+      "path": "viewport-controls.json",
+      "native_sha256": "64f9a01417f7116f5fe98130177dbe0fef3bff093affb1c35b0aa4082bca5057",
+      "published_sha256": "b536413e76bf3fee1b5e273acf049b504f7c13a09540d438f50d5e0dae3e3708",
+      "adaptation": "Local diagnostic paths replaced; test outcomes retained."
+    },
+    {
+      "path": "revision-format-controls.json",
+      "native_sha256": "b8a908eabc9698b23cf051d83f0748d949af4475210a7938998df5e3c2251dcc",
+      "published_sha256": "17982e6d3a8a1333739fe1e90e01d63ce901ad03a32b7f23bc00dd6f39a0c6f0",
+      "adaptation": "Local diagnostic paths replaced; test outcomes retained."
+    },
+    {
+      "path": "canceled-transport-control.json",
+      "native_sha256": "9d6807ad1b8be77e2cf8bd7f16787ddc072c276ff28f409e367b32a0553f994a",
+      "published_sha256": "3a37e5c3a85556f1611604bb4a7f6f83e00168f12bc2c21fe3fb7e989a62f3b6",
+      "adaptation": "Local diagnostic paths replaced; test outcomes retained."
+    }
+  ],
+  "scope": "Preflight controlled instrument checks, not measured application audit verdicts. Live later transport errors must be qualified despite these controls passing."
+}

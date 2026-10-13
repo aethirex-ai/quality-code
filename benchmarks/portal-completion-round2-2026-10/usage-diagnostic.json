@@ -1,0 +1,450 @@
+{
+  "scope": "Final read-only accounting diagnostic of both frozen conditions and archived invalid preparation; frozen instruments/apps unchanged; no API/key/account/subscription reads; no quality or speed winner.",
+  "single": {
+    "state": "INCOMPLETE",
+    "phase_state": "timed_out",
+    "complete_tokens": null,
+    "tokens_complete": false,
+    "last_reported_partial_counters": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 155136,
+      "input_tokens": 202804,
+      "output_tokens": 19763,
+      "reasoning_output_tokens": 1084,
+      "total_tokens": 222567
+    },
+    "ordinary_uncached_input_tokens": 47668,
+    "nonreasoning_output_tokens": 18679,
+    "native_positive_delta_snapshot_count": 7,
+    "max_observed_request_input_tokens": 43317,
+    "root_rollout_sha256": "e145273b8b5a9614817adf6edb8b3a5826c0d6d38ef1d4481c289cf5de06c461",
+    "native_completion_observed": false,
+    "cli_completion_usage": null,
+    "unreported_inflight_retry_or_canceled_request_usage": null,
+    "unreported_usage_policy": "Unknown, not zero; do not extrapolate missing usage. Last reported cumulative counters exclude any unreported consumption.",
+    "descendants_identified": 0,
+    "fresh_independent_auditors": 0,
+    "accepted_comparable": false,
+    "conditional_partial_standard_short_proxy": {
+      "components_usd": {
+        "uncached_input": "0.095336",
+        "cached_input": "0.0155136",
+        "output_including_reasoning": "0.19763"
+      },
+      "total_usd": "0.3084796"
+    },
+    "proxy_status": "Only arithmetic for observed reported tokens under frozen hypothetical rates; not complete run spend, invoice, or subscription usage.",
+    "actual_model_effort_contexts": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high"
+      }
+    ]
+  },
+  "collector_diagnostic": {
+    "authoritative_total_withholding": "Correct: timed out phase has no CLI completion counters or required fresh auditor.",
+    "observed_tokens_all_zero": "Artifact of reconciliation, not evidence of no usage. reconcile_phases adds root only after CLI counter validation; failure leaves roots empty, so collect never extracts the stopped root and sums an empty model list.",
+    "recommended_reporting_only": "Preserve tokens=null and tokens_complete=false. Separately disclose last_reported_partial_counters from native_after, confirmed by owned native log. Do not change frozen instruments for this comparison.",
+    "evidence": [
+      "<measured-workspace>/phase_collect.py",
+      "<measured-workspace>/collect.py",
+      "<measured-workspace>/telemetry.py",
+      "<measured-workspace>/runs/single/metadata.json",
+      "<measured-workspace>/runs/single/telemetry.json"
+    ],
+    "adaptive_observed_subset": "Completed builder root including repair + backend child + completed auditor1 retained, but stopped auditor2 excluded by missing CLI completion counters. Full totals/prices correctly withheld; disclosed known observations need auditor2 reported partial counters separately."
+  },
+  "interrupted_schema_rejected_preparation": {
+    "classification": "Instrument-invalid attempt; disclose as preparation, exclude from accepted app comparison; not assumed zero.",
+    "completed_builder_counters": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 3679232,
+      "input_tokens": 3818541,
+      "output_tokens": 62615,
+      "reasoning_output_tokens": 14195,
+      "total_tokens": 3881156
+    },
+    "native_positive_delta_snapshot_count": 44,
+    "max_observed_request_input_tokens": 129185,
+    "builder_cli_native_counters_match": true,
+    "builder_native_completion_observed": true,
+    "builder_rollout_sha256": "d505869f2f0f9a1b33c73f65cde598e5629c3a981552d0d8a3c811d6ebce20f0",
+    "conditional_completed_builder_standard_short_proxy": {
+      "components_usd": {
+        "uncached_input": "0.278618",
+        "cached_input": "0.3679232",
+        "output_including_reasoning": "0.62615"
+      },
+      "total_usd": "1.2726912"
+    },
+    "claimed_1_2726912_reconciles": true,
+    "rejected_audit_usage": null,
+    "rejected_audit_usage_policy": "400 invalid_json_schema response before independent model review has no authoritative usage counters. task_complete marker does not prove model accounting completeness. Unknown, not zero.",
+    "auditor_rollout_sha256": "31cbe23b580237956fb93403fbc0d9c7b349d72dae988e5dae8b184a2ba1b5b3",
+    "preparation_complete_cost": null,
+    "evidence": [
+      "<measured-workspace>/interrupted-attempts/01-schema-rejected/SUMMARY.json",
+      "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/metadata.json",
+      "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/phases/02-auditor/events.jsonl"
+    ]
+  },
+  "clock": {
+    "single_calendar_seconds": 5012.11648106575,
+    "single_runner_monotonic_seconds": 2405.0911334590055,
+    "difference_seconds": 2607.0253476067446,
+    "initial_builder_monotonic_seconds": 2402.013732500025,
+    "initial_builder_calendar_seconds": 5009.039404153824,
+    "basis": "run.py records time.time timestamps and time.monotonic elapsed. Parent supplies intentional interruption/host pause context. These records alone do not isolate pause duration from clock adjustment or identify CPU/model-active time. Runner elapsed is measured monotonic duration, not equivalent to calendar wall time or necessarily active compute. Preserve both clocks; do not rank speed.",
+    "evidence": "<measured-workspace>/run.py",
+    "adaptive_calendar_seconds": 3547.6689069271088,
+    "adaptive_runner_monotonic_seconds": 3547.663548457902,
+    "adaptive_calendar_minus_monotonic_seconds": 0.0053584692068398,
+    "adaptive_phase_monotonic_sum_seconds": 3464.5066478339722,
+    "adaptive_nonphase_runner_seconds": 83.15690062392969
+  },
+  "token_partitions": "Cached input is a subset of input; ordinary input = input-cached when reported cache-write count is zero. Reasoning is a subset of output; total=input+output. Never add cached or reasoning tokens to total or charge reasoning again. Reported zero cache-write is an observed counter, not inference of all possible billing details.",
+  "price_basis": {
+    "evidence": "<measured-workspace>/prices.json",
+    "checked_date": "2026-10-13",
+    "model": "gpt-6.1-sol",
+    "short_rates_usd_per_million": {
+      "ordinary_input": 2,
+      "cached_input": 0.1,
+      "cache_write_input": 2.5,
+      "output": 10
+    },
+    "status": "Parent independently reread official Standard pricing table on 2026-10-13 and saved proof that frozen short/long sol and luna rows match. These remain conditional API equivalents, not actual native billed or subscription cost.",
+    "exclusions": "Image generation, other tool charges, shared setup/native preflight, final scoring, publication, invalid preparation and unknown unreported consumption are not represented in per-run complete spend.",
+    "official_recheck_evidence": "<temporary-path>",
+    "official_recheck_source": "https://developers.openai.com/api/docs/pricing"
+  },
+  "private_native_evidence": "Single and archive: three explicit roots, zero descendants. Adaptive: three explicit roots plus one native metadata-proven backend descendant. Only selected owned bodies read. Native IDs/home paths/account metadata withheld; hashes connect shareable evidence to phase metadata.",
+  "remaining_unknowns": [
+    "Actual total consumption of stopped single including unreported requests",
+    "Actual total adaptive consumption including stopped final auditor unreported requests",
+    "Rejected preparation audit request usage",
+    "Complete invalid preparation cost including any preflight/setup outside archive counters",
+    "Actual billed or subscription cost",
+    "Accepted product quality: neither condition has final independent PASS"
+  ],
+  "adaptive": {
+    "state": "INCOMPLETE",
+    "complete_tokens": null,
+    "tokens_complete": false,
+    "complete_cost": null,
+    "accepted_comparable": false,
+    "persistent_implementation_root_count": 1,
+    "implementation_child_count": 1,
+    "fresh_independent_auditor_root_count": 2,
+    "topology": "One persistent builder plus one direct backend-labeled implementation child; same builder exact resume for repair; two fresh independent auditor roots, neither with descendants. Maximum observed implementation team: builder + child.",
+    "actual_models": [
+      "gpt-6.1-sol"
+    ],
+    "model_selection_observation": "Child explicitly requested gpt-6.1-sol at medium effort with fork_turns=none; native actual context confirms it. Root builder and both auditors actual high effort. No gpt-6-luna usage observed in this selected tree.",
+    "phase_rows": [
+      {
+        "number": 1,
+        "role": "builder",
+        "state": "completed",
+        "elapsed_monotonic_seconds": 980.8540337500162,
+        "root_alias": "persistent_builder_root",
+        "exact_builder_resume": false,
+        "reported_root_delta": {
+          "input_tokens": 3167913,
+          "cached_input_tokens": 3044224,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 48091,
+          "reasoning_output_tokens": 8603,
+          "total_tokens": 3216004
+        },
+        "cli_basis": "phase_increment",
+        "conditional_delta_proxy": {
+          "components_usd": {
+            "uncached_input": "0.247378",
+            "cached_input": "0.3044224",
+            "output_including_reasoning": "0.48091"
+          },
+          "total_usd": "1.0327104"
+        }
+      },
+      {
+        "number": 2,
+        "role": "auditor",
+        "state": "completed",
+        "elapsed_monotonic_seconds": 903.3269434999675,
+        "root_alias": "fresh_auditor_1",
+        "exact_builder_resume": false,
+        "reported_root_delta": {
+          "input_tokens": 3772899,
+          "cached_input_tokens": 3615744,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 25219,
+          "reasoning_output_tokens": 10908,
+          "total_tokens": 3798118
+        },
+        "cli_basis": "phase_increment",
+        "conditional_delta_proxy": {
+          "components_usd": {
+            "uncached_input": "0.31431",
+            "cached_input": "0.3615744",
+            "output_including_reasoning": "0.25219"
+          },
+          "total_usd": "0.9280744"
+        }
+      },
+      {
+        "number": 3,
+        "role": "builder",
+        "state": "completed",
+        "elapsed_monotonic_seconds": 377.346894458984,
+        "root_alias": "persistent_builder_root",
+        "exact_builder_resume": true,
+        "reported_root_delta": {
+          "input_tokens": 1760152,
+          "cached_input_tokens": 1665280,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 13069,
+          "reasoning_output_tokens": 5582,
+          "total_tokens": 1773221
+        },
+        "cli_basis": "root_cumulative",
+        "conditional_delta_proxy": {
+          "components_usd": {
+            "uncached_input": "0.189744",
+            "cached_input": "0.166528",
+            "output_including_reasoning": "0.13069"
+          },
+          "total_usd": "0.486962"
+        }
+      },
+      {
+        "number": 4,
+        "role": "auditor",
+        "state": "timed_out",
+        "elapsed_monotonic_seconds": 1202.9787761250045,
+        "root_alias": "fresh_auditor_2_stopped",
+        "exact_builder_resume": false,
+        "reported_root_delta": {
+          "input_tokens": 5133228,
+          "cached_input_tokens": 4941952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 34393,
+          "reasoning_output_tokens": 15845,
+          "total_tokens": 5167621
+        },
+        "cli_basis": "missing",
+        "conditional_delta_proxy": {
+          "components_usd": {
+            "uncached_input": "0.382552",
+            "cached_input": "0.4941952",
+            "output_including_reasoning": "0.34393"
+          },
+          "total_usd": "1.2206772"
+        }
+      }
+    ],
+    "unique_owned_session_rows": [
+      {
+        "role": "persistent_builder_root",
+        "ownership_evidence": "native root assigned by phase role",
+        "actual_model": "gpt-6.1-sol",
+        "actual_effort": "high",
+        "completion_counters_complete_for_this_owned_session": true,
+        "reported_counters": {
+          "input_tokens": 4928065,
+          "cached_input_tokens": 4709504,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 61160,
+          "reasoning_output_tokens": 14185,
+          "total_tokens": 4989225
+        },
+        "reported_native_rollout_sha256": "54766e3b7a0f92dd43a4cc43e72cd483124b66fedad8ca68169176316777bbe4",
+        "positive_delta_snapshots": 53,
+        "last_counter_timestamp_utc": "2026-10-13T17:34:13.183Z",
+        "max_observed_request_input": 163866,
+        "flags": [],
+        "conditional_standard_short_proxy": {
+          "components_usd": {
+            "uncached_input": "0.437122",
+            "cached_input": "0.4709504",
+            "output_including_reasoning": "0.6116"
+          },
+          "total_usd": "1.5196724"
+        }
+      },
+      {
+        "role": "backend_labeled_implementation_child",
+        "ownership_evidence": "explicit native parent ancestry plus agent path /root/backend; label does not establish individual file authorship",
+        "actual_model": "gpt-6.1-sol",
+        "actual_effort": "medium",
+        "completion_counters_complete_for_this_owned_session": true,
+        "reported_counters": {
+          "input_tokens": 295875,
+          "cached_input_tokens": 220416,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 11880,
+          "reasoning_output_tokens": 1204,
+          "total_tokens": 307755
+        },
+        "reported_native_rollout_sha256": "8d3defe5078cec2bca466d40484ae15cd010ed01d1f941e5910e026ff705752c",
+        "positive_delta_snapshots": 10,
+        "last_counter_timestamp_utc": "2026-10-13T17:01:30.974Z",
+        "max_observed_request_input": 38292,
+        "flags": [],
+        "conditional_standard_short_proxy": {
+          "components_usd": {
+            "uncached_input": "0.150918",
+            "cached_input": "0.0220416",
+            "output_including_reasoning": "0.1188"
+          },
+          "total_usd": "0.2917596"
+        }
+      },
+      {
+        "role": "fresh_auditor_1",
+        "ownership_evidence": "native root assigned by phase role",
+        "actual_model": "gpt-6.1-sol",
+        "actual_effort": "high",
+        "completion_counters_complete_for_this_owned_session": true,
+        "reported_counters": {
+          "input_tokens": 3772899,
+          "cached_input_tokens": 3615744,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 25219,
+          "reasoning_output_tokens": 10908,
+          "total_tokens": 3798118
+        },
+        "reported_native_rollout_sha256": "aad6c353fc70123d66966963a170bc787d6d9c875ed138903f172242efc4a2e9",
+        "positive_delta_snapshots": 36,
+        "last_counter_timestamp_utc": "2026-10-13T17:27:55.317Z",
+        "max_observed_request_input": 151835,
+        "flags": [],
+        "conditional_standard_short_proxy": {
+          "components_usd": {
+            "uncached_input": "0.31431",
+            "cached_input": "0.3615744",
+            "output_including_reasoning": "0.25219"
+          },
+          "total_usd": "0.9280744"
+        }
+      },
+      {
+        "role": "fresh_auditor_2_stopped",
+        "ownership_evidence": "native root assigned by phase role",
+        "actual_model": "gpt-6.1-sol",
+        "actual_effort": "high",
+        "completion_counters_complete_for_this_owned_session": false,
+        "reported_counters": {
+          "input_tokens": 5133228,
+          "cached_input_tokens": 4941952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 34393,
+          "reasoning_output_tokens": 15845,
+          "total_tokens": 5167621
+        },
+        "reported_native_rollout_sha256": "e9960a06a288ed0fd5c14f5497eb813c51a3835f475854ff83de65550eb3d318",
+        "positive_delta_snapshots": 43,
+        "last_counter_timestamp_utc": "2026-10-13T17:54:31.869Z",
+        "max_observed_request_input": 183782,
+        "flags": [
+          "session_completion_unobserved"
+        ],
+        "conditional_standard_short_proxy": {
+          "components_usd": {
+            "uncached_input": "0.382552",
+            "cached_input": "0.4941952",
+            "output_including_reasoning": "0.34393"
+          },
+          "total_usd": "1.2206772"
+        }
+      }
+    ],
+    "all_reported_unique_owned_subset": {
+      "input_tokens": 14130067,
+      "cached_input_tokens": 13487616,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 132652,
+      "reasoning_output_tokens": 42142,
+      "total_tokens": 14262719
+    },
+    "all_reported_subset_conditional_standard_short_proxy": {
+      "components_usd": {
+        "uncached_input": "1.284902",
+        "cached_input": "1.3487616",
+        "output_including_reasoning": "1.32652"
+      },
+      "total_usd": "3.9601836"
+    },
+    "collector_observed_completed_subset": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 8545664,
+      "input_tokens": 8996839,
+      "output_tokens": 98259,
+      "reasoning_output_tokens": 26297,
+      "total_tokens": 9095098
+    },
+    "collector_observed_completed_subset_conditional_proxy": {
+      "components_usd": {
+        "uncached_input": "0.90235",
+        "cached_input": "0.8545664",
+        "output_including_reasoning": "0.98259"
+      },
+      "total_usd": "2.7395064"
+    },
+    "omitted_reported_partial_role": "fresh_auditor_2_stopped",
+    "unknown_inflight_or_canceled_auditor_usage": null,
+    "aggregation_policy": "Completed builder root cumulative after exact resume counted once. Child counted once separately. Each fresh auditor root counted once; stopped auditor only as last-reported partial. Phase deltas are explanatory and must not be added again to unique-session cumulative totals. All-reported subset is not a complete total.",
+    "evidence": [
+      "<measured-workspace>/runs/adaptive/metadata.json",
+      "<measured-workspace>/runs/adaptive/telemetry.json",
+      "<measured-workspace>/phase_collect.py",
+      "<measured-workspace>/telemetry.py"
+    ],
+    "native_evidence_policy": "Explicit root and metadata-proven descendant bodies only; three root logs plus one descendant. Shareable JSON contains rollout hashes/role aliases, no native IDs/home/account metadata.",
+    "exact_resume_baseline_usage_bytes_hash_match": true,
+    "backend_child_model_selection": {
+      "native_spawn_argument_keys": [
+        "task_name",
+        "model",
+        "reasoning_effort",
+        "fork_turns",
+        "message"
+      ],
+      "native_spawn_nonbrief_arguments": {
+        "task_name": "backend",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "medium",
+        "fork_turns": "none"
+      },
+      "source_role": "persistent_builder_root",
+      "source_rollout_sha256": "54766e3b7a0f92dd43a4cc43e72cd483124b66fedad8ca68169176316777bbe4",
+      "root_routing_write_timestamp_utc": "2026-10-13T16:56:48.969Z",
+      "declared_child_file_ownership": [
+        "server.py",
+        "tests/test_backend.py"
+      ],
+      "root_declared_selection_evidence": [
+        "NATIVE_MODELS.json native app-server model/list",
+        "MODEL_COSTS.json checked 2026-10-13",
+        "Runtime advertised model catalog and reasoning efforts"
+      ],
+      "root_declared_rationale": "Critical auth and transactional state justify workhorse; lowest-cost model in dated catalog judged qualified for this coupled security outcome. One independent coherent backend outcome overlaps frontend work.",
+      "rationale_status": "Builder judgment recorded in native tool call that wrote ROUTING.json. It is not independent evidence that cheaper models could not satisfy the task.",
+      "capability_evidence": "Native collaboration declaration advertised gpt-6-luna and supported model/effort overrides for fresh scoped spawns. The actual spawn explicitly supplied sol rather than inheriting a hidden default. No examined native evidence says cheaper model selection was unavailable or rejected.",
+      "disclosed_limitation": "Builder recorded primary exact model identifier not exposed to builder. This does not explain or restrict explicit child model override; actual native contexts show primary sol/high.",
+      "cheap_routing_exercised": false,
+      "price_interpretation": "Medium effort changes reasoning configuration, not the frozen per-token sol API unit rates. This run did not test cheaper-model backend implementation. Bugs and fixes cannot be attributed to cheap models."
+    }
+  },
+  "cost_composition_observations": {
+    "adaptive_reported_subset_components_usd": {
+      "uncached_input": "1.284902",
+      "cached_input": "1.3487616",
+      "output_including_reasoning": "1.32652"
+    },
+    "adaptive_reported_builder_plus_child_usd": "1.8114320",
+    "adaptive_reported_auditor_subset_usd": "2.1487516",
+    "interpretation": "Known adaptive costs come entirely from observed sol tokens, including builder repairs, one helper and two auditor observations. High cache fractions are input subsets charged at cached rates; output includes reasoning. Higher observed subset spend than stopped single cannot establish efficiency or quality because completion/stages and unknown consumption differ.",
+    "preparation_policy": "Archived invalid completed-builder proxy $1.2726912 kept separately; rejected request and full preparation unknown. Never fold preparation into one accepted condition or assume it is free."
+  }
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.sqlite*
+*.db
+*.log
+.preview-output/
+.preview-mailbox/
+.preview-events.jsonl
+*.sock
+evidence/
+backend/check-runs.jsonl
+frontend/check-runs.jsonl
+integration/check-runs.jsonl

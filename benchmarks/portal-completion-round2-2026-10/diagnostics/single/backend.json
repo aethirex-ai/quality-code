@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "kind": "backend_contract_evaluation",
+  "site": "<single-diagnostic-workspace>/site-copy",
+  "denominator": 12,
+  "groups": [
+    {
+      "id": "authentication",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/authentication.json"
+    },
+    {
+      "id": "session_lifecycle",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/session_lifecycle.json"
+    },
+    {
+      "id": "client_isolation",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/client_isolation.json"
+    },
+    {
+      "id": "staff_permissions",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/staff_permissions.json"
+    },
+    {
+      "id": "json_and_input_bounds",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/json_and_input_bounds.json"
+    },
+    {
+      "id": "comment_identity_and_activity",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/comment_identity_and_activity.json"
+    },
+    {
+      "id": "revision_publication",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/revision_publication.json"
+    },
+    {
+      "id": "decision_transitions",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/decision_transitions.json"
+    },
+    {
+      "id": "conflict_atomicity",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/conflict_atomicity.json"
+    },
+    {
+      "id": "concurrent_revision_writes",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/concurrent_revision_writes.json"
+    },
+    {
+      "id": "restart_persistence",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/restart_persistence.json"
+    },
+    {
+      "id": "seed_and_read_contract",
+      "status": "pass",
+      "error": null,
+      "evidence": "<single-diagnostic-workspace>/backend.evidence/seed_and_read_contract.json"
+    }
+  ],
+  "independence": "Each group uses a fresh database; prerequisites are blocked, not additional distinct defects.",
+  "deadline_seconds": 110,
+  "error": null,
+  "passed": 12,
+  "elapsed_seconds": 4.181
+}

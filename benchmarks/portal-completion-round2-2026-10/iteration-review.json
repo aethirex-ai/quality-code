@@ -1,0 +1,1070 @@
+{
+  "status": "final frozen iteration evidence classification; separate post-clock final diagnostics may supplement",
+  "scope": "Read-only valid single, archived instrument-invalid preparation, adaptive frozen initial/final sources and completed/stopped owned phase evidence. No application/instrument edits, execution, resumed builders, model calls, child agents or new checks.",
+  "acceptance_for_review": "Tie claims to observed evidence; distinguish defect classes, repeated manifestations, fix/recheck cycles and reruns; withhold unsupported quality/cost/speed conclusions.",
+  "valid_single": {
+    "state": "INCOMPLETE",
+    "reason": "Initial builder hit initial-phase cap before observed ready handoff. This is workload execution incompleteness; evidence does not isolate model quality, delegation, active compute, pause effects, or transport contribution.",
+    "measured_initial_builder_seconds": 2402.013732500025,
+    "phase_allowance_seconds": 2399.0566496660467,
+    "phase_exit_code": -15,
+    "measured_total_seconds": 2405.0911334590055,
+    "shared_budget_seconds": 5400,
+    "shared_budget_exceeded": false,
+    "state_evidence": [
+      {
+        "path": "<measured-workspace>/runs/single/metadata.json",
+        "lines": [
+          49,
+          180,
+          185,
+          188
+        ]
+      },
+      {
+        "path": "<measured-workspace>/runs/single/phases/01-builder/metadata.json",
+        "lines": [
+          2,
+          47,
+          102
+        ]
+      }
+    ],
+    "last_observed_work": "Backend, controller and app.js construction; builder said responsive styling then API/render verification remained.",
+    "last_work_evidence": {
+      "path": "<measured-workspace>/runs/single/phases/01-builder/events.jsonl",
+      "lines": [
+        26,
+        27
+      ]
+    },
+    "transport_error": {
+      "exact_message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "evidence": {
+        "path": "<measured-workspace>/runs/single/phases/01-builder/events.jsonl",
+        "lines": [
+          28
+        ]
+      },
+      "subsequent_recovery_observed": false,
+      "completion_observed": false,
+      "attribution": "Observed transport symptom, not causal proof of why allowance elapsed; 2/5 label alone does not prove two recorded errors."
+    },
+    "native_log_evidence": {
+      "rollout_sha256": "e145273b8b5a9614817adf6edb8b3a5826c0d6d38ef1d4481c289cf5de06c461",
+      "last_agent_message_line": 68,
+      "last_agent_message_utc": "2026-10-13T15:53:51.993Z",
+      "later_token_counter_lines": [
+        70,
+        71
+      ],
+      "last_counter_utc": "2026-10-13T16:46:34.263Z",
+      "task_complete_or_recovery_work_observed": false,
+      "private_root_path_and_identifiers_withheld": true
+    },
+    "qa_record_count_observed": 0,
+    "issue_file": "present but empty",
+    "observed_fix_recheck_cycles": 0,
+    "cycles_meaning": "No evidenced completed cycles in permitted valid-single logs. This does not establish zero defects or an accepted app.",
+    "fresh_application_audits": 0,
+    "fixed_gate_results": "No in-clock gates after incomplete builder; separate post-clock diagnostic added below.",
+    "product_defect_total": null,
+    "visual_quality": "Post-clock diagnostic reports unfinished composition from missing stylesheet; accepted visual quality remains unavailable.",
+    "accepted_quality": null,
+    "clock_limit": {
+      "calendar_total_seconds": 5012.11648106575,
+      "monotonic_total_seconds": 2405.0911334590055,
+      "gap_seconds": 2607.0253476067446,
+      "interpretation": "Parent reports host pause context. Clocks do not isolate active compute, pause duration or clock adjustment. Do not rank speed."
+    },
+    "usage_limit": "CLI completion usage absent; partial counters exist; inflight, retry or canceled consumption unknown, not zero. See supplied read-only usage diagnostic.",
+    "usage_evidence": {
+      "path": "<temporary-path>",
+      "keys": [
+        "single",
+        "clock",
+        "remaining_unknowns"
+      ]
+    },
+    "post_clock_diagnostic": {
+      "evidence": {
+        "path": "<temporary-path>",
+        "keys": [
+          "scope",
+          "manifest_hashes",
+          "backend",
+          "frontend",
+          "recovery",
+          "screenshots",
+          "limitations"
+        ]
+      },
+      "source_original_and_copy_hashes": "30/30 match",
+      "backend": "12/12 passed",
+      "frontend": "10/11 passed",
+      "unfinished_resource_and_style": {
+        "category": "unfinished implementation / resource health",
+        "signature": "styles.css request served application/json; strict MIME rejection; unfinished default browser appearance",
+        "distinct_observed_missing_resource_outcome": 1,
+        "repeated_manifestations": "Same missing stylesheet repeated across routes, MIME errors, browser styling and captures. Do not count each route/error/screenshot as another bug.",
+        "functional_interpretation": "Observed style/resource health failure; other sampled functional groups passed. Do not infer separate auth/state defects from missing stylesheet."
+      },
+      "recovery": {
+        "raw_report": "3/3 pass",
+        "clean_passes": 2,
+        "uncertain": "committed_comment_refresh_failure recorded route.fulfill: Route is already handled!",
+        "observed_partial_behavior": "201 response, acknowledged comment saved, cleared draft, one POST, persisted count 1",
+        "classification": "transport/instrument ambiguity in supplemental probe; clean injected-refresh behavior not established; do not claim accepted 3/3"
+      },
+      "captures": "12/12 required plus four optional captured and inspected by diagnostic owner; unfinished visual composition reported",
+      "fix_recheck_cycles": 0,
+      "limits": "Post-clock read-only frozen diagnostic, not in-clock builder validation, repair, or independent application PASS. No source modifications."
+    }
+  },
+  "archived_instrument_invalid_attempt": {
+    "comparability": "Exclude from valid app comparison; disclose separately as preparation. Restart from blank corpus is a new build, not product repair or fix/recheck cycle.",
+    "summary_evidence": {
+      "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/SUMMARY.json",
+      "lines": [
+        2,
+        3,
+        20
+      ]
+    },
+    "audit_rejection": {
+      "category": "instrument_schema_error",
+      "status_code": 400,
+      "code": "invalid_json_schema",
+      "reason": "schema_version property lacked type key",
+      "model_application_review_performed": false,
+      "product_findings_from_rejected_audit": null,
+      "usage": "unknown, not zero",
+      "evidence": {
+        "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/phases/02-auditor/events.jsonl",
+        "lines": [
+          4,
+          5
+        ]
+      }
+    },
+    "qa_counts": [
+      {
+        "owner": "backend",
+        "records": 5,
+        "failed_records": 2,
+        "source": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/backend/check-runs.jsonl"
+        }
+      },
+      {
+        "owner": "frontend",
+        "records": 16,
+        "failed_records": 4,
+        "source": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/frontend/check-runs.jsonl"
+        }
+      },
+      {
+        "owner": "integration",
+        "records": 16,
+        "failed_records": 0,
+        "source": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/integration/check-runs.jsonl"
+        }
+      }
+    ],
+    "counting_rules": "37 recorded QA commands contain six failures: three product regression failures and three bridge-protocol failures. Passing full/release repetitions and repeated executions of same regression are not new defects or cycles. Negative cases inside passing suites are expected checks, not defects. No separate expected construction-failure check recorded in this inspected QA set.",
+    "observed_cycles": [
+      {
+        "id": "UI-001",
+        "category": "product_defect",
+        "cause": "Pre-save read overwrote acknowledged approval in UI; committed database state stayed approved.",
+        "original": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/frontend/check-runs.jsonl",
+          "lines": [
+            9
+          ]
+        },
+        "fix_and_passing_recheck": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/phases/01-builder/events.jsonl",
+          "lines": [
+            52
+          ]
+        },
+        "issue_updates": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/evidence/issues.jsonl",
+          "lines": [
+            3,
+            4
+          ]
+        },
+        "completed_cycles": 1
+      },
+      {
+        "id": "AUTH-001",
+        "category": "product_defect",
+        "cause": "Password trimming accepted padded exact fixture credentials.",
+        "original": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/backend/check-runs.jsonl",
+          "lines": [
+            2
+          ]
+        },
+        "fix_and_passing_recheck": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/phases/01-builder/events.jsonl",
+          "lines": [
+            90
+          ]
+        },
+        "issue_updates": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/evidence/issues.jsonl",
+          "lines": [
+            8,
+            9
+          ]
+        },
+        "completed_cycles": 1
+      },
+      {
+        "id": "API-001",
+        "category": "product_defect",
+        "cause": "Byte cap rejected allowed 2000-character emoji comment encoded as JSON surrogate escapes.",
+        "original": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/backend/check-runs.jsonl",
+          "lines": [
+            4
+          ]
+        },
+        "passing_recheck": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/backend/check-runs.jsonl",
+          "lines": [
+            5
+          ]
+        },
+        "fix_and_profile_recheck": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/phases/01-builder/events.jsonl",
+          "lines": [
+            111
+          ]
+        },
+        "issue_updates": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/evidence/issues.jsonl",
+          "lines": [
+            12,
+            13
+          ]
+        },
+        "completed_cycles": 1
+      },
+      {
+        "id": "VIS-001",
+        "category": "visual_refinement",
+        "cause": "375px storefront display heading crowded footer; primary controls recorded usable.",
+        "original": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/frontend/check-runs.jsonl",
+          "lines": [
+            11
+          ]
+        },
+        "passing_recheck": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/frontend/check-runs.jsonl",
+          "lines": [
+            12
+          ]
+        },
+        "issue_updates": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/evidence/issues.jsonl",
+          "lines": [
+            5,
+            6
+          ]
+        },
+        "completed_cycles": 1,
+        "limit": "Builder visual judgment corroborated by logs; reviewer has not independently inspected image pixels."
+      },
+      {
+        "id": "TOOL-001",
+        "category": "tooling_protocol",
+        "cause": "Bridge action type, then action keys rejected before product action; third op-key attempt passed.",
+        "check_evidence": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/frontend/check-runs.jsonl",
+          "lines": [
+            2,
+            3,
+            4
+          ]
+        },
+        "issue_updates": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/evidence/issues.jsonl",
+          "lines": [
+            1,
+            2
+          ]
+        },
+        "completed_cycles": 1,
+        "correction_attempts": 2,
+        "failed_manifestations": 2
+      },
+      {
+        "id": "TOOL-002",
+        "category": "tooling_protocol",
+        "cause": "Bridge press key field rejected; selector/value correction passed.",
+        "check_evidence": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/frontend/check-runs.jsonl",
+          "lines": [
+            14,
+            15
+          ]
+        },
+        "issue_updates": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/evidence/issues.jsonl",
+          "lines": [
+            7,
+            10
+          ]
+        },
+        "completed_cycles": 1
+      },
+      {
+        "id": "TOOL-003",
+        "category": "tooling_permission",
+        "cause": "Sandbox denied stopping preview listener; attempted replacement encountered occupied assigned port. Same ownership/cleanup blocker, not two product defects.",
+        "evidence": {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/site/evidence/issues.jsonl",
+          "lines": [
+            11
+          ]
+        },
+        "completed_cycles": 0,
+        "status": "blocked at builder handoff",
+        "limit": "Builder notes final isolated profiles used updated source; earlier preview listener predated fixes."
+      }
+    ],
+    "cycle_totals": {
+      "completed_product_fix_recheck_cycles": 3,
+      "completed_visual_refinement_cycles": 1,
+      "completed_tooling_issue_cycles": 2,
+      "blocked_tooling_issues": 1
+    },
+    "independent_contract_gates": {
+      "backend": "12/12 groups passed",
+      "frontend": "5/11 passed; six failed groups",
+      "recovery": "2/3 passed",
+      "meaning": "Unmet gate evidence retained separately from invalid audit; group/assertion failures do not equal distinct bugs.",
+      "frontend_failure_signatures": [
+        {
+          "signature": "project-list visibility timeout",
+          "manifestations": 5
+        },
+        {
+          "signature": "mutation activity retained assertion",
+          "manifestations": 1
+        }
+      ],
+      "recovery_failure_signature": "late_conflict_refresh_after_account_switch: page.waitForLoadState timeout",
+      "root_causes_and_distinct_product_count": null,
+      "no_followup_fix_cycle_observed": true,
+      "evidence": [
+        {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/gates/01/frontend/report.json"
+        },
+        {
+          "path": "<measured-workspace>/interrupted-attempts/01-schema-rejected/single/gates/01/recovery/defect-probes.json"
+        }
+      ]
+    },
+    "limits": [
+      "No accepted independent application audit occurred.",
+      "Builder passing profiles do not negate failed fixed gates.",
+      "Gate timeout roots not independently diagnosed; may reflect shared prerequisite or timing behavior.",
+      "Archived product fixes cannot be transferred into valid-single evidence."
+    ]
+  },
+  "unknowns": [
+    "Valid single accepted correctness and visual quality; post-clock samples do not replace required audit",
+    "Unreported stopped-request usage",
+    "Rejected audit consumption",
+    "Independent root causes of archived gate failures",
+    "Canonical adaptive second independent verdict (never completed)",
+    "Exhaustive final independent coverage/defect count",
+    "Stopped second auditor unreported inflight/canceled usage",
+    "Separate post-clock final diagnosis outputs not yet supplied to this reviewer"
+  ],
+  "prohibited_inferences": [
+    "No quality, delegation-efficiency, speed, or usage winner",
+    "Do not infer zero product defects from absent audit",
+    "Do not classify rejected first audit as application failure",
+    "Do not count all assertions/groups/turns as bugs or correction cycles"
+  ],
+  "adaptive_initial": {
+    "scope": "Only frozen initial sources/manifest, finished initial-builder and first-auditor evidence, first gate reports and evaluator source; no active repair/site reads.",
+    "initial_builder_outcome": "Audit-ready, independent gate pending; no final acceptance claimed.",
+    "builder_evidence": {
+      "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+      "lines": [
+        127,
+        128
+      ]
+    },
+    "construction_corrections": [
+      {
+        "id": "UI-001",
+        "category": "product_defect_display",
+        "cause": "CSP rejected inline progress/chart styles; reported 65% showed full bar and chart lost heights.",
+        "original_observation_and_fix": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            41,
+            45
+          ]
+        },
+        "passing_rechecks": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            48,
+            50
+          ]
+        },
+        "completed_cycles": 1,
+        "basis": "Concrete builder rendered observation and source/CSP conflict; regression and corrected render evidence. Reviewer did not independently inspect original pixels."
+      },
+      {
+        "id": "REC-001",
+        "category": "product_defect_recovery_feedback",
+        "cause": "Successful recovery GET retained obsolete recover prompt.",
+        "failing_regression": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            52
+          ]
+        },
+        "fix_and_passing_recheck": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            54
+          ]
+        },
+        "completed_cycles": 1
+      },
+      {
+        "id": "NAV-001",
+        "category": "product_defect_selection_persistence",
+        "cause": "Signed-in loading render erased saved project/tab before boot restoration read it.",
+        "original_manifestations": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            56,
+            58
+          ]
+        },
+        "fix_and_passing_rechecks": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            60,
+            63
+          ]
+        },
+        "completed_cycles": 1,
+        "manifestations": 2,
+        "distinct_cause": 1
+      },
+      {
+        "id": "VIS-001",
+        "category": "visual_refinement",
+        "cause": "Reduced widespread green tint to match frozen silver/near-black brand.",
+        "change_evidence": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            45
+          ]
+        },
+        "render_recheck": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            50
+          ]
+        },
+        "completed_cycles": 1,
+        "basis": "Builder subjective visual refinement; no separate behavioral failure."
+      },
+      {
+        "id": "TOOL-001",
+        "category": "tooling_protocol",
+        "cause": "Preview action schema rejected type/action/verb attempts before product execution; op fields worked.",
+        "failed_manifestations": 3,
+        "failed_attempt_evidence": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            35,
+            37,
+            39
+          ]
+        },
+        "passing_recheck": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            41,
+            43
+          ]
+        },
+        "completed_cycles": 1,
+        "correction_attempts": 3,
+        "limit": "Early issue fixed label is contradicted by failed recheck at line37; later success line41 supports final closure."
+      },
+      {
+        "id": "TOOL-002",
+        "category": "tooling_assertion_excerpt",
+        "cause": "Assertion searched third project title beyond bounded 1500-character bridge text despite successful actions/render.",
+        "original_failure": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            87
+          ]
+        },
+        "passing_rechecks": {
+          "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl",
+          "lines": [
+            99,
+            104
+          ]
+        },
+        "completed_cycles": 1
+      }
+    ],
+    "construction_cycle_totals": {
+      "completed_product_fix_recheck_cycles": 3,
+      "completed_visual_refinement_cycles": 1,
+      "completed_tooling_issue_cycles": 2
+    },
+    "root_event_qa_counts": {
+      "records": 30,
+      "failed_records": 7,
+      "evidence": {
+        "path": "<measured-workspace>/runs/adaptive/phases/01-builder/events.jsonl"
+      },
+      "scope": "Only QA records surfaced in initial root event stream; child standalone check counts not independently established."
+    },
+    "independent_audit": {
+      "verdict": "FAIL",
+      "evidence": {
+        "path": "<measured-workspace>/runs/adaptive/phases/02-auditor/verdict.json",
+        "lines": [
+          156,
+          158,
+          214
+        ]
+      },
+      "confirmed_distinct_product_causes": 1,
+      "finding_id": "AUD-001",
+      "cause": "Project response is reread after transaction commit, allowing another transaction to change project before successful response serialization.",
+      "manifestations": [
+        {
+          "type": "decision response snapshot",
+          "evidence": {
+            "path": "<measured-workspace>/runs/adaptive/phases/02-auditor/verdict.json",
+            "lines": [
+              61
+            ]
+          },
+          "observation": "Approval revision1 returned awaiting_review/currentRevision2 following concurrent publication; stored decision remained correct."
+        },
+        {
+          "type": "publication response snapshot",
+          "evidence": {
+            "path": "<measured-workspace>/runs/adaptive/phases/02-auditor/verdict.json",
+            "lines": [
+              71
+            ]
+          },
+          "observation": "First publication returned revision.number2 with project.currentRevision3 after subsequent publication."
+        }
+      ],
+      "source": {
+        "path": "<measured-workspace>/runs/adaptive/snapshots/initial/sources/server.py",
+        "lines": [
+          286,
+          287,
+          297,
+          298
+        ]
+      },
+      "contracts": {
+        "path": "<measured-workspace>/runs/adaptive/snapshots/initial/sources/BRIEF.md",
+        "lines": [
+          29,
+          30
+        ]
+      },
+      "coverage_gap": "Initial competing-write tests missed post-commit response-read interleaving; deterministic repair tests now reproduced and passed, but canonical fresh re-audit completion is absent.",
+      "completed_repair_cycles_observed": 1,
+      "counting": "Two independent reproductions of one response-snapshot cause, not two bugs; no verified repair completion yet."
+    },
+    "first_fixed_frontend_gate": {
+      "raw": "5/11 pass, six failed groups",
+      "evidence": {
+        "path": "<measured-workspace>/runs/adaptive/gates/01/frontend/report.json"
+      },
+      "project_list_timeouts": {
+        "manifestations": 5,
+        "classification": "Evaluator navigation prerequisite assumption, with timing-sensitive premature view-read; no additional confirmed frontend product cause from raw timeout alone.",
+        "source_basis": [
+          {
+            "path": "<measured-workspace>/runs/adaptive/snapshots/initial/sources/public/app.mjs",
+            "lines": [
+              12,
+              15,
+              17,
+              20,
+              23,
+              71,
+              86,
+              89,
+              93
+            ]
+          },
+          {
+            "path": "<measured-workspace>/runs/adaptive/snapshots/initial/sources/public/state.mjs",
+            "lines": [
+              39,
+              40,
+              44,
+              50,
+              61,
+              62,
+              66,
+              67,
+              68,
+              74,
+              78
+            ]
+          }
+        ],
+        "mechanism": "login() unconditionally waits overview project-list after identity. App restores an authorized saved per-user project/tab even after fresh login. Identity is rendered before project load settles, briefly exposing overview before restored detail; evaluator can catch transient overview or wait after it disappears.",
+        "evaluator": {
+          "path": "<measured-workspace>/judge/frontend/evaluate.mjs",
+          "lines": [
+            21
+          ]
+        },
+        "norms": {
+          "path": "<measured-workspace>/runs/adaptive/snapshots/initial/sources/BRIEF.md",
+          "lines": [
+            35,
+            37,
+            38,
+            43
+          ]
+        },
+        "contract_interpretation": "BRIEF permits SPA/multipage and coherent persisted selection, requires overview and functioning back-projects, but does not require every login to discard saved selection and settle on overview.",
+        "independent_confirmation": {
+          "path": "<measured-workspace>/runs/adaptive/phases/02-auditor/verdict.json",
+          "lines": [
+            139
+          ]
+        },
+        "uncertainty": "No fresh execution here. Exact scheduling of each timeout unknown. Visibility of identity is not guaranteed completed project loading. Do not claim confirmed auth leak, login failure, persistence loss or additional defects."
+      },
+      "activity_assertion": {
+        "manifestations": 1,
+        "classification": "Dependent group cascade / prerequisite writes absent, not confirmed stored-event loss.",
+        "evaluator": {
+          "path": "<measured-workspace>/judge/frontend/evaluate.mjs",
+          "lines": [
+            119,
+            121,
+            122,
+            123
+          ]
+        },
+        "mechanism": "Groups share page/context/database. Earlier comment and decision groups enter login first and abort on missing overview before submission. Staff publication then requires comment_added, decision_submitted and revision_published, although those predecessor writes never ran.",
+        "norm": {
+          "path": "<measured-workspace>/runs/adaptive/snapshots/initial/sources/BRIEF.md",
+          "lines": [
+            32
+          ]
+        },
+        "independent_confirmation": {
+          "path": "<measured-workspace>/runs/adaptive/phases/02-auditor/verdict.json",
+          "lines": [
+            139
+          ]
+        },
+        "uncertainty": "Actual failing event set not preserved in raw report; exact per-event absence unknown, but independence of six bug claims is unsupported."
+      },
+      "runner_gate_label": "AUD-999 is synthetic fixed-gate blocking feedback, not fresh auditor product-finding count. Mandatory raw gate remains failed; this classification cannot waive acceptance.",
+      "coverage": "Failed groups do not independently exercise their downstream literal persistence, decisions, permissions, accessibility or responsive assertions. Independent auditor separately reported rendered/permission/activity coverage, but raw first gate does not establish it.",
+      "confirmed_extra_frontend_product_causes_from_raw_gate": null,
+      "premature_auth_state_limit": "Controller deliberately displays identity before loaded projects, with login/logout authBusy guards and disabled controls. Evaluator waits identity then overview without an explicit settled authenticated view. No separate auth-state defect is proven by static order alone.",
+      "existing_settled_helper": {
+        "path": "<measured-workspace>/judge/frontend/evaluate.mjs",
+        "lines": [
+          24,
+          25,
+          26,
+          29,
+          31,
+          33
+        ]
+      },
+      "helper_limit": "settledAuthenticatedView accepts detail/overview, but login() still requires overview and therefore bypasses that tolerance."
+    },
+    "test_coverage_limits": [
+      "Root event check repetitions are not distinct cycles.",
+      "Controller tests mostly await login/logout, so transient DOM/evaluator authentication scheduling coverage remains unproven.",
+      "Initial response-snapshot interleaving coverage is confirmed missing by auditor despite passing full/release.",
+      "Independent verdict reports source unchanged across 39 hashes; reviewer here relies on frozen evidence and did not rerun checks.",
+      "Repair and second audit are now frozen; final state is INCOMPLETE without a canonical second verdict."
+    ]
+  },
+  "adaptive_final": {
+    "condition_state": "INCOMPLETE",
+    "total_measured_seconds": 3547.663548457902,
+    "shared_budget_exceeded": false,
+    "failure_route": "Second independent audit reached its own allowance without canonical final verdict. Shared budget exhaustion was not reported.",
+    "state_evidence": {
+      "path": "<measured-workspace>/runs/adaptive/metadata.json",
+      "lines": [
+        7,
+        12,
+        1157,
+        1250
+      ]
+    },
+    "phase_outcomes": [
+      {
+        "phase": "first independent audit",
+        "seconds": 903.3269434999675,
+        "canonical_verdict": "FAIL"
+      },
+      {
+        "phase": "same builder repair",
+        "seconds": 377.346894458984,
+        "state": "completed; fresh audit pending"
+      },
+      {
+        "phase": "second fresh auditor",
+        "seconds": 1202.9787761250045,
+        "state": "timed_out",
+        "exit_code": -15,
+        "canonical_verdict": null,
+        "completion_usage": null
+      }
+    ],
+    "public_verdict_policy": "Second audit and final condition are INCOMPLETE, not FAIL or PASS. Auditor commentary promising FAIL is an interim observation, not a canonical verdict.",
+    "native_completion_evidence": {
+      "owned_second_auditor_log_lines": 392,
+      "task_complete_lines": [],
+      "assistant_final_lines": [],
+      "last_record_utc": "2026-10-13T17:54:31.869Z",
+      "private_native_identifiers_and_path_withheld": true
+    },
+    "verified_repair_cycles": [
+      {
+        "id": "AUD-001",
+        "category": "product_defect_response_snapshot",
+        "completed_cycles": 1,
+        "reproduced_before_fix": {
+          "path": "<measured-workspace>/runs/adaptive/phases/03-builder/events.jsonl",
+          "lines": [
+            13
+          ]
+        },
+        "fix_and_passing_recheck": {
+          "path": "<measured-workspace>/runs/adaptive/phases/03-builder/events.jsonl",
+          "lines": [
+            15
+          ]
+        },
+        "source": {
+          "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/server.py",
+          "lines": [
+            286,
+            288,
+            289,
+            299,
+            301,
+            302
+          ]
+        },
+        "manifestations": "Decision and publication both failed deterministic scheduled tests, both then passed. One lock/snapshot cause, two manifestations, one correction cycle.",
+        "independent_reaudit_completion": "Unavailable; no canonical second verdict."
+      },
+      {
+        "id": "ACK-ACTIVITY",
+        "tracking_label": "AUD-999",
+        "category": "acknowledged_activity_display_correction",
+        "completed_cycles": 1,
+        "reproduced_before_frontend_event_consumption": {
+          "path": "<measured-workspace>/runs/adaptive/phases/03-builder/events.jsonl",
+          "lines": [
+            15
+          ]
+        },
+        "failed_recheck_before_consumption": {
+          "path": "<measured-workspace>/runs/adaptive/phases/03-builder/events.jsonl",
+          "lines": [
+            18
+          ]
+        },
+        "fix_and_passing_recheck": {
+          "path": "<measured-workspace>/runs/adaptive/phases/03-builder/events.jsonl",
+          "lines": [
+            22
+          ]
+        },
+        "source": {
+          "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/public/state.mjs",
+          "lines": [
+            120
+          ]
+        },
+        "manifestations": "Composed comment, decision and publication failed-refresh cases expected persisted event immediately in visible history. Server returned event; client initially ignored it; client event consumption corrected all three.",
+        "interpretation": "Separate correction with evidenced assertions; does not establish first gate had lost stored events. Group failure repeated at line18 is same unresolved cause, not new defect or completed cycle."
+      }
+    ],
+    "checker_driven_navigation_change": {
+      "tracking_label": "AUD-999",
+      "category": "navigation accommodation / behavior change",
+      "cause": "Fixed evaluator demanded visible project-list after restored detail. Added authorized project switcher while retaining selection.",
+      "implementation": {
+        "path": "<measured-workspace>/runs/adaptive/phases/03-builder/events.jsonl",
+        "lines": [
+          18
+        ]
+      },
+      "source": {
+        "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/public/app.mjs",
+        "lines": [
+          35,
+          37,
+          38
+        ]
+      },
+      "passing_client_and_studio_journeys": {
+        "path": "<measured-workspace>/runs/adaptive/phases/03-builder/events.jsonl",
+        "lines": [
+          24,
+          27
+        ]
+      },
+      "counting": "One evaluator-driven accommodation/change-and-confirmation; do not add another confirmed pre-existing product defect. Initial NAV-001 persistence correction remains separate."
+    },
+    "builder_profile_evidence": {
+      "path": "<measured-workspace>/runs/adaptive/phases/03-builder/events.jsonl",
+      "lines": [
+        28,
+        37,
+        41
+      ]
+    },
+    "independent_second_profile_evidence": {
+      "path": "<measured-workspace>/runs/adaptive/phases/04-auditor/events.jsonl",
+      "lines": [
+        39,
+        52
+      ]
+    },
+    "second_fixed_gates": {
+      "backend": "12/12 pass",
+      "frontend": "10/11 pass; previous decision history visible assertion failed",
+      "recovery": "3/3 clean pass in recorded gate02",
+      "sources": [
+        {
+          "path": "<measured-workspace>/runs/adaptive/gates/02/backend.json"
+        },
+        {
+          "path": "<measured-workspace>/runs/adaptive/gates/02/frontend/report.json"
+        },
+        {
+          "path": "<measured-workspace>/runs/adaptive/gates/02/recovery/defect-probes.json"
+        }
+      ],
+      "interpretation": "Most initial project-list prerequisite failures resolved by switcher. Remaining history failure has independent concrete corroboration. Passing sampled gates do not replace exhaustive canonical auditor completion."
+    },
+    "remaining_observed_product_cause_clusters": [
+      {
+        "id": "REVIEW-HISTORY",
+        "classification": "Concrete functional presentation/retrieval gap; no stored-data-loss evidence",
+        "observations": "Stored change-request and approval notes remain in database, but read API exposes no notes and revision cards show generic previous-direction copy rather than previous review outcomes. Studio cannot read submitted feedback note through these product views.",
+        "reproduction": {
+          "path": "<measured-workspace>/runs/adaptive/phases/04-auditor/events.jsonl",
+          "lines": [
+            163
+          ]
+        },
+        "interim_comment": {
+          "path": "<measured-workspace>/runs/adaptive/phases/04-auditor/events.jsonl",
+          "lines": [
+            80
+          ]
+        },
+        "fixed_gate_correspondence": {
+          "path": "<measured-workspace>/runs/adaptive/gates/02/frontend/report.json"
+        },
+        "source": [
+          {
+            "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/server.py",
+            "lines": [
+              264,
+              272,
+              273,
+              296
+            ]
+          },
+          {
+            "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/public/app.mjs",
+            "lines": [
+              53,
+              54,
+              55,
+              61
+            ]
+          }
+        ],
+        "norms": {
+          "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/BRIEF.md",
+          "lines": [
+            6,
+            29,
+            30,
+            39
+          ]
+        },
+        "norm_limit": "Exact revision GET schema does not explicitly require a note field. The demonstrated product gap concerns visible review/feedback/history usefulness and preserved older decisions, not violation of an invented mandatory JSON key. Activity does expose decision kinds, so do not claim every outcome is absent everywhere.",
+        "distinct_cause_count": 1,
+        "manifestations": "Unavailable note retrieval and unshown prior revision outcomes are one grouped review-history delivery gap; cannot independently prove two separate implementation causes.",
+        "repair_cycles_after_detection": 0
+      },
+      {
+        "id": "NAVIGATION-ACK",
+        "classification": "Concrete functional asynchronous reconciliation defect",
+        "cause": "mutate acknowledges/clears matching draft by account, then returns when original viewEpoch changed, before incorporating response data or offering recovery. Returning to same project before ACK still has a new viewEpoch.",
+        "source": {
+          "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/public/state.mjs",
+          "lines": [
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            120,
+            122,
+            124,
+            135,
+            138
+          ]
+        },
+        "controller_reproductions": {
+          "path": "<measured-workspace>/runs/adaptive/phases/04-auditor/events.jsonl",
+          "lines": [
+            86
+          ]
+        },
+        "browser_reproduction_and_database_readback": {
+          "path": "<measured-workspace>/runs/adaptive/phases/04-auditor/events.jsonl",
+          "lines": [
+            144,
+            146
+          ]
+        },
+        "observations": "Decision persisted approved while overview retained awaiting_review. Held comment committed once after navigate-away/return, but returned view showed one older message, no saved body/event, success ACK and no recovery prompt.",
+        "healthy_controls": {
+          "path": "<measured-workspace>/runs/adaptive/phases/04-auditor/events.jsonl",
+          "lines": [
+            132,
+            163
+          ]
+        },
+        "norms": {
+          "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/BRIEF.md",
+          "lines": [
+            6,
+            43,
+            46
+          ]
+        },
+        "test_gap": {
+          "source": {
+            "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/tests/frontend.mjs",
+            "lines": [
+              60,
+              61,
+              62,
+              63
+            ]
+          },
+          "explanation": "Existing test releases save before returning to original project, forcing subsequent GET to observe stored state; it does not cover return/read before save commit, or overview remaining visible at ACK."
+        },
+        "distinct_cause_count": 1,
+        "manifestations": "Stale overview decision and missing returned-view comment/event are two manifestations of one account-valid/view-changed early-return cause.",
+        "repair_cycles_after_detection": 0
+      },
+      {
+        "id": "VALID-TITLE-OVERFLOW",
+        "classification": "Concrete responsive layout defect for valid boundary input",
+        "observations": "Successful publication with valid 120-character unbroken title expanded document to 2522 pixels at viewport375 and2650 at viewport1440.",
+        "reproductions": {
+          "path": "<measured-workspace>/runs/adaptive/phases/04-auditor/events.jsonl",
+          "lines": [
+            148,
+            150,
+            152,
+            163
+          ]
+        },
+        "interim_comment": {
+          "path": "<measured-workspace>/runs/adaptive/phases/04-auditor/events.jsonl",
+          "lines": [
+            155
+          ]
+        },
+        "source": [
+          {
+            "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/public/app.mjs",
+            "lines": [
+              53,
+              54
+            ]
+          },
+          {
+            "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/public/styles.css"
+          }
+        ],
+        "norms": {
+          "path": "<measured-workspace>/runs/adaptive/snapshots/final/sources/BRIEF.md",
+          "lines": [
+            6,
+            29
+          ]
+        },
+        "distinct_cause_count": 1,
+        "manifestations": "Two viewport failures and multiple overflowing DOM nodes share one long-title containment/wrapping deficiency; count one cause, not each node/viewport.",
+        "test_gap": "Existing healthy-width checks passed using ordinary fixture text; valid maximum title layout coverage not established in frozen builder suite.",
+        "repair_cycles_after_detection": 0
+      }
+    ],
+    "evidence_strength": "All three clusters have concrete probe/source evidence beyond auditor commentary. These observations are not a complete independent verdict or exhaustive defect count.",
+    "second_auditor_integrity": {
+      "evidence": {
+        "path": "<measured-workspace>/runs/adaptive/phases/04-auditor/events.jsonl",
+        "lines": [
+          170,
+          178
+        ]
+      },
+      "observation": "39 inventoried source hashes unchanged and git status unchanged; owned listener absent recorded. Final canonical closure still absent."
+    },
+    "audit_tooling_and_negative_check_limits": "Expected authorization, Unicode, fault-injection and regression-challenge failures are negative controls, not product defects. Auditor CLI multi-command formatting/retries and permission cleanup work do not become extra product findings. Parent timeout terminates completion and usage accounting; unreported inflight/canceled usage remains unknown.",
+    "aggregate_adaptive_evidenced_cycles": {
+      "initial_product_cycles": 3,
+      "repair_product_correction_cycles": 2,
+      "total_product_correction_cycles": 5,
+      "visual_refinement_cycles": 1,
+      "tooling_issue_cycles": 2,
+      "checker_driven_navigation_accommodations": 1,
+      "unresolved_second_audit_clusters_with_completed_fixes": 0
+    },
+    "counting_limit": "Product correction count includes immediate acknowledged activity display correction as an evidenced regression/fix cycle; initial fixed activity cascade was not itself proof of this cause. No builder turn, repeated profile, assertion, viewport or phase restart is counted as an extra defect/cycle."
+  }
+}

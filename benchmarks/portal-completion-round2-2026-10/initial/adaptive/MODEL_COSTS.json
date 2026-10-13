@@ -1,0 +1,124 @@
+{
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "checked_date": "2026-10-13",
+  "currency": "USD",
+  "unit_tokens": 1000000,
+  "service_tier": "Standard hypothetical API equivalent",
+  "long_context_threshold_input_tokens": 272000,
+  "exclusions": [
+    "image generation",
+    "other tool charges",
+    "shared setup/native preflight",
+    "final comparative scoring",
+    "publication"
+  ],
+  "models": {
+    "gpt-6.1-sol": {
+      "short": [
+        2,
+        0.1,
+        2.5,
+        10
+      ],
+      "long": [
+        4,
+        0.2,
+        5,
+        15
+      ]
+    },
+    "gpt-6-luna": {
+      "short": [
+        0.1,
+        0.01,
+        0.125,
+        0.5
+      ],
+      "long": [
+        0.2,
+        0.02,
+        0.25,
+        0.75
+      ]
+    },
+    "gpt-6-astra": {
+      "short": [
+        10,
+        1,
+        12.5,
+        50
+      ],
+      "long": [
+        20,
+        2,
+        25,
+        75
+      ]
+    },
+    "gpt-6-sol": {
+      "short": [
+        2,
+        0.2,
+        2.5,
+        10
+      ],
+      "long": [
+        4,
+        0.4,
+        5,
+        15
+      ]
+    },
+    "gpt-5.6-sol": {
+      "short": [
+        4,
+        0.4,
+        5,
+        20
+      ],
+      "long": [
+        8,
+        0.8,
+        10,
+        30
+      ]
+    },
+    "gpt-5.6-terra": {
+      "short": [
+        2,
+        0.2,
+        2.5,
+        12
+      ],
+      "long": [
+        4,
+        0.4,
+        5,
+        18
+      ]
+    },
+    "gpt-5.6-luna": {
+      "short": [
+        0.2,
+        0.02,
+        0.25,
+        1.2
+      ],
+      "long": [
+        0.4,
+        0.04,
+        0.5,
+        1.8
+      ]
+    }
+  },
+  "rate_order": [
+    "ordinary_input",
+    "cached_input",
+    "cache_write_input",
+    "output"
+  ],
+  "cache_write_partition": "unknown; if nonzero, withhold complete cost estimate until verified",
+  "reasoning_output": "included in output; never add a second charge",
+  "included": "All per-condition native builder/reviewer sessions and descendants, including repairs/re-audits; per-condition fixed checks in elapsed."
+}

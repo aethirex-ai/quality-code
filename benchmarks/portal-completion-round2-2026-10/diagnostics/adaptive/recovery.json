@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "scope": "supplemental_browser_contracts",
+  "scored": false,
+  "supplementalCheckCount": 3,
+  "originalFrontendDenominator": 11,
+  "checks": [
+    {
+      "name": "healthy_comment_and_identity",
+      "status": "pass",
+      "evidence": {
+        "identity": "Alex Morgan",
+        "literalUnicodePersisted": true
+      }
+    },
+    {
+      "name": "late_conflict_refresh_after_account_switch",
+      "status": "pass",
+      "evidence": {
+        "actualDecisionStatus": 409,
+        "heldProjectReadPaths": [
+          "/api/projects/p1/comments",
+          "/api/projects/p1",
+          "/api/projects/p1/revisions",
+          "/api/projects/p1/activity"
+        ],
+        "canceledProjectReads": [],
+        "instrumentErrors": [],
+        "identity": "Sam Ellis",
+        "visibleProjectIds": [
+          "p3"
+        ],
+        "leakedTitle": false,
+        "errors": []
+      }
+    },
+    {
+      "name": "committed_comment_refresh_failure",
+      "status": "pass",
+      "evidence": {
+        "postStatus": 201,
+        "refreshStrategy": "public_dataset_reread",
+        "injectedProjectReadPaths": [
+          "/api/projects/p1",
+          "/api/projects/p1/revisions",
+          "/api/projects/p1/comments",
+          "/api/projects/p1/activity"
+        ],
+        "feedback": "Saved successfully. The latest activity could not be loaded. Refresh to recover; your submission is already stored.\nRefresh project",
+        "retainedDraft": "",
+        "postCount": 1,
+        "instrumentErrors": [],
+        "persistedCount": 1
+      }
+    }
+  ],
+  "passed": 3,
+  "failed": 0
+}

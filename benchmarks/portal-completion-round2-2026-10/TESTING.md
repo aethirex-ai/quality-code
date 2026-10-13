@@ -1,0 +1,7 @@
+# Verification
+
+Run `./quality verify full` and `./quality verify release`. Root `test_*.py` tests cover native lineage/counter reconciliation, Decimal cost partitions, exact-session resumes, independent review, corpus integrity, critical routing, shared deadlines/cleanup, immutable snapshots and canonical PASS guards. `preview/tests.py Contracts` verifies bounded request/mailbox/output and privacy contracts. Fixtures use synthetic native events; CLI help tests do not run a model.
+
+Separate controlled checks cover backend positive/negative cases, healthy Unicode and surrogate mutations; eleven frontend groups with healthy and broken controls; revision-label neutrality; fixed viewport captures; and three composed recovery probes with healthy, alternate-refresh, response-only, canceled-transport and broken implementations. Inspect the proof files under `judge/`. Local Node/Playwright paths are environment observations, not portable defaults. The native output formatter uses supported schema primitives; the parent applies full canonical semantic validation.
+
+Limits: one pair, single first; shared host/provider/cache effects are uncontrolled. Native browser IPC requires the same parent fixed-origin bridge for both conditions. Hypothetical API prices do not measure subscription consumption or invoices. Missing authoritative telemetry is withheld. Native reviewers, contract gates and repairs are inside completion time; setup, final comparative grading and publication are excluded and disclosed. A budget cap never converts FAIL or BLOCKED into PASS.

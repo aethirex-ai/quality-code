@@ -1,0 +1,430 @@
+{
+  "status": "pass",
+  "scored": false,
+  "results": [
+    {
+      "mode": "healthy",
+      "checks": [
+        {
+          "name": "healthy_comment_and_identity",
+          "status": "pass",
+          "evidence": {
+            "identity": "Alex Morgan",
+            "literalUnicodePersisted": true
+          }
+        },
+        {
+          "name": "late_conflict_refresh_after_account_switch",
+          "status": "pass",
+          "evidence": {
+            "actualDecisionStatus": 409,
+            "heldProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "canceledProjectReads": [],
+            "instrumentErrors": [],
+            "identity": "Sam Ellis",
+            "visibleProjectIds": [
+              "p3"
+            ],
+            "leakedTitle": false,
+            "errors": []
+          }
+        },
+        {
+          "name": "committed_comment_refresh_failure",
+          "status": "pass",
+          "evidence": {
+            "postStatus": 201,
+            "refreshStrategy": "public_dataset_reread",
+            "injectedProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "feedback": "Comment saved; detail refresh unavailable",
+            "retainedDraft": "",
+            "postCount": 1,
+            "instrumentErrors": [],
+            "persistedCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "list_refresh",
+      "checks": [
+        {
+          "name": "healthy_comment_and_identity",
+          "status": "pass",
+          "evidence": {
+            "identity": "Alex Morgan",
+            "literalUnicodePersisted": true
+          }
+        },
+        {
+          "name": "late_conflict_refresh_after_account_switch",
+          "status": "pass",
+          "evidence": {
+            "actualDecisionStatus": 409,
+            "heldProjectReadPaths": [
+              "/api/projects"
+            ],
+            "canceledProjectReads": [],
+            "instrumentErrors": [],
+            "identity": "Sam Ellis",
+            "visibleProjectIds": [
+              "p3"
+            ],
+            "leakedTitle": false,
+            "errors": []
+          }
+        },
+        {
+          "name": "committed_comment_refresh_failure",
+          "status": "pass",
+          "evidence": {
+            "postStatus": 201,
+            "refreshStrategy": "public_dataset_reread",
+            "injectedProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "feedback": "Comment saved; detail refresh unavailable",
+            "retainedDraft": "",
+            "postCount": 1,
+            "instrumentErrors": [],
+            "persistedCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "account_conflict",
+      "checks": [
+        {
+          "name": "healthy_comment_and_identity",
+          "status": "pass",
+          "evidence": {
+            "identity": "Alex Morgan",
+            "literalUnicodePersisted": true
+          }
+        },
+        {
+          "name": "late_conflict_refresh_after_account_switch",
+          "status": "fail",
+          "evidence": {
+            "actualDecisionStatus": 409,
+            "heldProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "canceledProjectReads": [],
+            "instrumentErrors": [],
+            "identity": "Sam Ellis",
+            "visibleProjectIds": [],
+            "leakedTitle": true,
+            "errors": []
+          },
+          "error": "late conflict refresh leaked previous account project"
+        },
+        {
+          "name": "committed_comment_refresh_failure",
+          "status": "pass",
+          "evidence": {
+            "postStatus": 201,
+            "refreshStrategy": "public_dataset_reread",
+            "injectedProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "feedback": "Comment saved; detail refresh unavailable",
+            "retainedDraft": "",
+            "postCount": 1,
+            "instrumentErrors": [],
+            "persistedCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "account_conflict_list",
+      "checks": [
+        {
+          "name": "healthy_comment_and_identity",
+          "status": "pass",
+          "evidence": {
+            "identity": "Alex Morgan",
+            "literalUnicodePersisted": true
+          }
+        },
+        {
+          "name": "late_conflict_refresh_after_account_switch",
+          "status": "fail",
+          "evidence": {
+            "actualDecisionStatus": 409,
+            "heldProjectReadPaths": [
+              "/api/projects"
+            ],
+            "canceledProjectReads": [],
+            "instrumentErrors": [],
+            "identity": "Sam Ellis",
+            "visibleProjectIds": [],
+            "leakedTitle": true,
+            "errors": []
+          },
+          "error": "late conflict refresh leaked previous account project"
+        },
+        {
+          "name": "committed_comment_refresh_failure",
+          "status": "pass",
+          "evidence": {
+            "postStatus": 201,
+            "refreshStrategy": "public_dataset_reread",
+            "injectedProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "feedback": "Comment saved; detail refresh unavailable",
+            "retainedDraft": "",
+            "postCount": 1,
+            "instrumentErrors": [],
+            "persistedCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "committed_refresh",
+      "checks": [
+        {
+          "name": "healthy_comment_and_identity",
+          "status": "pass",
+          "evidence": {
+            "identity": "Alex Morgan",
+            "literalUnicodePersisted": true
+          }
+        },
+        {
+          "name": "late_conflict_refresh_after_account_switch",
+          "status": "pass",
+          "evidence": {
+            "actualDecisionStatus": 409,
+            "heldProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "canceledProjectReads": [],
+            "instrumentErrors": [],
+            "identity": "Sam Ellis",
+            "visibleProjectIds": [
+              "p3"
+            ],
+            "leakedTitle": false,
+            "errors": []
+          }
+        },
+        {
+          "name": "committed_comment_refresh_failure",
+          "status": "fail",
+          "evidence": {
+            "postStatus": 201,
+            "refreshStrategy": "public_dataset_reread",
+            "injectedProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "feedback": "Unable to submit comment",
+            "retainedDraft": "Committed exactly once despite failed refresh",
+            "postCount": 1,
+            "instrumentErrors": []
+          },
+          "error": "refresh failure hid successful mutation"
+        }
+      ]
+    },
+    {
+      "mode": "comments_refresh",
+      "checks": [
+        {
+          "name": "healthy_comment_and_identity",
+          "status": "pass",
+          "evidence": {
+            "identity": "Alex Morgan",
+            "literalUnicodePersisted": true
+          }
+        },
+        {
+          "name": "late_conflict_refresh_after_account_switch",
+          "status": "pass",
+          "evidence": {
+            "actualDecisionStatus": 409,
+            "heldProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "canceledProjectReads": [],
+            "instrumentErrors": [],
+            "identity": "Sam Ellis",
+            "visibleProjectIds": [
+              "p3"
+            ],
+            "leakedTitle": false,
+            "errors": []
+          }
+        },
+        {
+          "name": "committed_comment_refresh_failure",
+          "status": "pass",
+          "evidence": {
+            "postStatus": 201,
+            "refreshStrategy": "public_dataset_reread",
+            "injectedProjectReadPaths": [
+              "/api/projects/p1/comments"
+            ],
+            "feedback": "Comment saved; detail refresh unavailable",
+            "retainedDraft": "",
+            "postCount": 1,
+            "instrumentErrors": [],
+            "persistedCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "committed_refresh_comments",
+      "checks": [
+        {
+          "name": "healthy_comment_and_identity",
+          "status": "pass",
+          "evidence": {
+            "identity": "Alex Morgan",
+            "literalUnicodePersisted": true
+          }
+        },
+        {
+          "name": "late_conflict_refresh_after_account_switch",
+          "status": "pass",
+          "evidence": {
+            "actualDecisionStatus": 409,
+            "heldProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "canceledProjectReads": [],
+            "instrumentErrors": [],
+            "identity": "Sam Ellis",
+            "visibleProjectIds": [
+              "p3"
+            ],
+            "leakedTitle": false,
+            "errors": []
+          }
+        },
+        {
+          "name": "committed_comment_refresh_failure",
+          "status": "fail",
+          "evidence": {
+            "postStatus": 201,
+            "refreshStrategy": "public_dataset_reread",
+            "injectedProjectReadPaths": [
+              "/api/projects/p1/comments"
+            ],
+            "feedback": "Unable to submit comment",
+            "retainedDraft": "Committed exactly once despite failed refresh",
+            "postCount": 1,
+            "instrumentErrors": []
+          },
+          "error": "refresh failure hid successful mutation"
+        }
+      ]
+    },
+    {
+      "mode": "response_only",
+      "checks": [
+        {
+          "name": "healthy_comment_and_identity",
+          "status": "pass",
+          "evidence": {
+            "identity": "Alex Morgan",
+            "literalUnicodePersisted": true
+          }
+        },
+        {
+          "name": "late_conflict_refresh_after_account_switch",
+          "status": "pass",
+          "evidence": {
+            "actualDecisionStatus": 409,
+            "heldProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "canceledProjectReads": [],
+            "instrumentErrors": [],
+            "identity": "Sam Ellis",
+            "visibleProjectIds": [
+              "p3"
+            ],
+            "leakedTitle": false,
+            "errors": []
+          }
+        },
+        {
+          "name": "committed_comment_refresh_failure",
+          "status": "pass",
+          "evidence": {
+            "postStatus": 201,
+            "refreshStrategy": "no_refresh_response_acknowledgment",
+            "injectedProjectReadPaths": [],
+            "feedback": "Comment saved",
+            "retainedDraft": "",
+            "postCount": 1,
+            "instrumentErrors": [],
+            "persistedCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cancel_conflict",
+      "checks": [
+        {
+          "name": "healthy_comment_and_identity",
+          "status": "pass",
+          "evidence": {
+            "identity": "Alex Morgan",
+            "literalUnicodePersisted": true
+          }
+        },
+        {
+          "name": "late_conflict_refresh_after_account_switch",
+          "status": "pass",
+          "evidence": {
+            "actualDecisionStatus": 409,
+            "heldProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "canceledProjectReads": [
+              {
+                "path": "/api/projects/p1",
+                "transportFailure": "net::ERR_ABORTED"
+              }
+            ],
+            "instrumentErrors": [],
+            "identity": "Sam Ellis",
+            "visibleProjectIds": [
+              "p3"
+            ],
+            "leakedTitle": false,
+            "errors": []
+          }
+        },
+        {
+          "name": "committed_comment_refresh_failure",
+          "status": "pass",
+          "evidence": {
+            "postStatus": 201,
+            "refreshStrategy": "public_dataset_reread",
+            "injectedProjectReadPaths": [
+              "/api/projects/p1"
+            ],
+            "feedback": "Comment saved; detail refresh unavailable",
+            "retainedDraft": "",
+            "postCount": 1,
+            "instrumentErrors": [],
+            "persistedCount": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "boundary": "Read-only checks after capped control froze; not an independent application PASS or measured completion. Original source30/30 hashes unchanged. Third raw recovery pass qualified for recorded transport error.",
+  "reports": [
+    {
+      "path": "diagnostics/single/summary.json",
+      "native_sha256": "10390ff25e456c02c01cb6a071572e912e1cc064adf3e2b09bbc71a3bf39d9b3",
+      "published_sha256": "ab965894401cc594742905b34b63232a2d4462b5349d1ef25e8a123c40795a48",
+      "adaptation": "Private local paths/session identifiers redacted; recorded outcomes and qualifiers retained."
+    },
+    {
+      "path": "diagnostics/single/backend.json",
+      "native_sha256": "e18aae6ac22f435ca444781c4b16d8f56a68886494b0976cbd038ee0f7bd1df0",
+      "published_sha256": "f600d77a1764fb6ee80ff902bd0ed1a30f57a7adf795b4ee665ead85b4d6efc6",
+      "adaptation": "Private local paths/session identifiers redacted; recorded outcomes and qualifiers retained."
+    },
+    {
+      "path": "diagnostics/single/frontend.json",
+      "native_sha256": "da90ab2a79741ffd91bbaf3a23474b6853b15f8ee0f9e119b084a1813923a896",
+      "published_sha256": "126262cbab4ba3bc90ac6a176114efad78650c7e70edb6cd75d0235ccdf2bea0",
+      "adaptation": "Private local paths/session identifiers redacted; recorded outcomes and qualifiers retained."
+    },
+    {
+      "path": "diagnostics/single/recovery.json",
+      "native_sha256": "92e7535812d9110dc977355fb12b287da8bc97f4b6e0fe2699b71b6d9a959f51",
+      "published_sha256": "c03c004e309463058cfb92d9e8e5d522bd2f84880dae0cc9b0bb9181cecbc8b1",
+      "adaptation": "Private local paths/session identifiers redacted; recorded outcomes and qualifiers retained."
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "screenshots/single/1440-client-dashboard.png",
+      "sha256": "aa3b40dcfb58d2f52d900da11d8b09a0b3dcef8a029fe76770849860b8105c6f"
+    },
+    {
+      "path": "screenshots/single/1440-login.png",
+      "sha256": "d66eb3a2fa3eb11a8ea19c23acb53c85edc235f1386e25981388dd99a8f80923"
+    },
+    {
+      "path": "screenshots/single/1440-project-brief.png",
+      "sha256": "784da2e28fa5b46d0bdac2ca11c48893f4281913be02fd8414dc4c1e47fcf843"
+    },
+    {
+      "path": "screenshots/single/1440-project-discussion.png",
+      "sha256": "f354e2acfafc50820fe0f03409ad8fb89e70cbf2bb6b7e24e28382c09558108e"
+    },
+    {
+      "path": "screenshots/single/1440-project-revisions.png",
+      "sha256": "2dc405ec6609d126c899bae35f4be06089218b35db6a1185147f7464e87338bf"
+    },
+    {
+      "path": "screenshots/single/1440-staff-dashboard.png",
+      "sha256": "3e734600c919aba01a48dc1d7a1c90d37dd8b2c8b440259fb6c64d9e24388060"
+    },
+    {
+      "path": "screenshots/single/1440-staff-publish.png",
+      "sha256": "69a92cd7a18bec36372258428a94dada1956385c1ffd43b07d93ee6e78f29e57"
+    },
+    {
+      "path": "screenshots/single/375-client-dashboard.png",
+      "sha256": "eb258715f7313b67cf5411bba7b3b7af2fa234fedcb626b78c88ad4b66307ef8"
+    },
+    {
+      "path": "screenshots/single/375-login.png",
+      "sha256": "66bc17524ce8c4f236e592df556ce930368110fb407d347577a70970c7fea7cf"
+    },
+    {
+      "path": "screenshots/single/375-project-brief.png",
+      "sha256": "5d34bfc410e393907d2c49d0fb55503903756ba412a70f4758ef9325ab719ad7"
+    },
+    {
+      "path": "screenshots/single/375-project-discussion-form-view.png",
+      "sha256": "8f862a367edd839f89bd8b2f347e2bd3c7a86f4acff5d731e173307cda0768d2"
+    },
+    {
+      "path": "screenshots/single/375-project-discussion.png",
+      "sha256": "2beead9c3039e0afaadd78d1b214c76ccf3d5dee3b20590a01be9f3168ba33df"
+    },
+    {
+      "path": "screenshots/single/375-project-revisions.png",
+      "sha256": "4dbe3ba51fb1ae768eb4b10ba8f8103d18618ac1a97fd1ba316474f256f9f562"
+    },
+    {
+      "path": "screenshots/single/375-staff-dashboard.png",
+      "sha256": "e3feaad5238100748835e81728be55f38c0936eedea12c0a16d9199c7947515a"
+    },
+    {
+      "path": "screenshots/single/375-staff-publish-form-view.png",
+      "sha256": "e3de0bda32cc53d52bc7530cca9f00bba1d72c425f715d58f8b7fa06d2d122ee"
+    },
+    {
+      "path": "screenshots/single/375-staff-publish.png",
+      "sha256": "117d500c3b3c158bfd7309d52902c2eea12ab3edb1328236a178f88aacbd6b78"
+    }
+  ]
+}

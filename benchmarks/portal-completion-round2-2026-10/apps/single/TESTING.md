@@ -1,0 +1,5 @@
+# AethDesign client workspace verification
+
+The initial fixture deliberately has no product implementation; verify_app.py fails until real source and meaningful unittest regressions exist. Wireactualchanged-scope checks. Auth/account/state boundaries arecritical: fullandrelease required plusfreshauditpacket/reviewer. Field-testnormalandcomposedfailurepaths inBRIEF includinglonesurrogate text/healthyUnicode, oldaccount conflictrefetchduringlogout/login, acknowledgedPOST thenfailedrefresh/retry, permissions/atomictransactions/restart andmobile/desktop userjourneys. Realrendering usesparentpreview/RUNTIME; regex/DOMchecks alonearenotvisual evidence.
+
+qa_check.py retainsfailedandpassingchecks; evidence/issues.jsonl tracks stablecauses/corrections. No rawfailure-count-as-bug inference. Fixedparentcontractreports areavailableonlyasgatefindings; noothercondition/finalscorefeedback. Every blocking findingrequiresfix,relevantregressionandfreshfullscopeaudit. Gate/audit/repair costs,time,helper contexts andcleanupshareBUDGET; initial-ready isnotaccepted. Missingevidence/caps stayincomplete.

@@ -1,0 +1,262 @@
+{
+  "schema": 1,
+  "scope": "post-clock frozen single diagnostic; not an accepted independent app verdict",
+  "source_manifest": "<measured-workspace>/runs/single/snapshots/final/manifest.json",
+  "copied_site": "<single-diagnostic-workspace>/site-copy",
+  "manifest_hashes": {
+    "original": {
+      "checked": 30,
+      "all_match": true,
+      "mismatches": []
+    },
+    "copy": {
+      "checked": 30,
+      "all_match": true,
+      "mismatches": []
+    }
+  },
+  "reports": {
+    "backend": "<single-diagnostic-workspace>/backend.json",
+    "frontend": "<single-diagnostic-workspace>/frontend/report.json",
+    "recovery": "<single-diagnostic-workspace>/recovery/defect-probes.json",
+    "cleanup": "<single-diagnostic-workspace>/cleanup.json"
+  },
+  "backend": {
+    "denominator": 12,
+    "counts": {
+      "pass": 12
+    },
+    "instrument_error": null,
+    "evidence_dir": "<single-diagnostic-workspace>/backend.evidence"
+  },
+  "frontend": {
+    "denominator": 11,
+    "counts": {
+      "pass": 10,
+      "fail": 1
+    },
+    "fatal": null,
+    "failures": [
+      {
+        "name": "runtime_http_health",
+        "status": "fail",
+        "error": "runtime/request failures: Refused to apply style from 'http://127.0.0.1:58934/styles.css' because its MIME type ('application/json') is not a supported stylesheet MIME type, and strict MIME checking is enabled.; /styles.css: net::ERR_ABORTED; Refused to apply style from 'http://127.0.0.1:58934/styles.css' because its MIME type ('application/json') is not a supported stylesheet MIME type, and strict MIME checking is enabled.; /styles.css: net::ERR_ABORTED; Refused to apply style from 'http://127.0.0.1:58934/styles.css' because its MIME type ('application/json') is not a supported stylesheet MIME type, and strict MIME checking is enabled.; /styles.css: net::ERR_ABORTED",
+        "durationMs": 303
+      }
+    ]
+  },
+  "recovery": {
+    "denominator": 3,
+    "reported_counts": {
+      "pass": 3
+    },
+    "checks": [
+      {
+        "name": "healthy_comment_and_identity",
+        "status": "pass",
+        "evidence": {
+          "identity": "Alex Morgan",
+          "literalUnicodePersisted": true
+        }
+      },
+      {
+        "name": "late_conflict_refresh_after_account_switch",
+        "status": "pass",
+        "evidence": {
+          "actualDecisionStatus": 409,
+          "heldProjectReadPaths": [
+            "/api/projects/p1",
+            "/api/projects/p1/activity",
+            "/api/projects/p1/revisions",
+            "/api/projects/p1/comments"
+          ],
+          "canceledProjectReads": [],
+          "instrumentErrors": [],
+          "identity": "Sam Ellis",
+          "visibleProjectIds": [
+            "p3"
+          ],
+          "leakedTitle": false,
+          "errors": []
+        }
+      },
+      {
+        "name": "committed_comment_refresh_failure",
+        "status": "pass",
+        "evidence": {
+          "postStatus": 201,
+          "refreshStrategy": "public_dataset_reread",
+          "injectedProjectReadPaths": [
+            "/api/projects/p1",
+            "/api/projects/p1/revisions",
+            "/api/projects/p1/comments",
+            "/api/projects/p1/activity"
+          ],
+          "feedback": "Comment saved.",
+          "retainedDraft": "",
+          "postCount": 1,
+          "instrumentErrors": [
+            {
+              "path": "/api/projects/p1/comments",
+              "message": "route.fulfill: Route is already handled!"
+            }
+          ],
+          "persistedCount": 1
+        }
+      }
+    ],
+    "qualified_clean_passes": 2,
+    "uncertain_due_to_recorded_instrument_error": [
+      "committed_comment_refresh_failure"
+    ],
+    "missing_not_run": 0
+  },
+  "screenshots": {
+    "required": 12,
+    "captured": 12,
+    "missing_or_failed": 0,
+    "shots": [
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-client-dashboard.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-project-brief.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-project-revisions.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-project-discussion.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-staff-dashboard.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/375-staff-publish.png",
+        "status": "captured",
+        "actual_dimensions": [
+          375,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-client-dashboard.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-project-brief.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-project-revisions.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-project-discussion.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-staff-dashboard.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true
+      },
+      {
+        "path": "<single-diagnostic-workspace>/frontend/1440-staff-publish.png",
+        "status": "captured",
+        "actual_dimensions": [
+          1440,
+          1000
+        ],
+        "matches_viewport": true
+      }
+    ],
+    "optional_captured": 4,
+    "visually_inspected_required": 12,
+    "visually_inspected_optional": 4,
+    "observations": [
+      "All inspected captures render default browser serif typography, blue links and native gray controls with concatenated labels: the intended visual composition is unfinished.",
+      "Required viewport captures are complete at the specified 375x1000 and 1440x1000 sizes, top scroll, blurred focus, settled account/project/tab and matched form values.",
+      "Review/publication controls fall below the initial viewport; optional mobile form views show the discussion and publication forms and populated draft values.",
+      "Screenshots reflect missing styles.css reported by runtime_http_health; captured semantic states do not establish visual completeness."
+    ]
+  },
+  "recorded_judge_controls": {
+    "not_rerun": true,
+    "paths": [
+      "<measured-workspace>/judge/backend/completion-control-results.json",
+      "<measured-workspace>/judge/backend/completion-unicode-controls.json",
+      "<measured-workspace>/judge/frontend/completion-selftest-proof/selftest.json",
+      "<measured-workspace>/judge/frontend/completion-defect-controls/regression.json",
+      "<measured-workspace>/judge/frontend/completion-defect-controls/healthy/defect-probes.json",
+      "<measured-workspace>/judge/frontend/final-regression-proof/regression.json",
+      "<measured-workspace>/judge/frontend/completion-fixed-capture-proof/capture-regression.json"
+    ],
+    "healthy_backend": "12/12 in stored Unicode healthy control",
+    "healthy_frontend": "11/11 and 12 screenshots in stored selftest",
+    "healthy_recovery": "3/3 in stored healthy fixture",
+    "negative_controls": "stored backend mutations and 11 frontend target mutations detected; stored recovery mutation regressions passed",
+    "cleanup_controls": "stored exited/running leader descendant termination passed; live permission error not waived"
+  },
+  "limitations": [
+    "No independent app gate occurred for the capped single initial build; these diagnostics cannot turn the cap into accepted PASS.",
+    "Groups are outcomes, not independent defect counts; backend contract sample is not complete security or production assessment.",
+    "Recovery raw report says pass despite one route.fulfill Route is already handled instrument error. Its successful acknowledgment, cleared draft, single POST and persisted count 1 are observed, but clean instrumentation is uncertain.",
+    "Root test/full/release run counts and app independent audit findings remain unknown here; none were inferred as zero.",
+    "No judge or application sources edited, no paid calls, no feedback sent to the active adaptive builder."
+  ]
+}

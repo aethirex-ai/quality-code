@@ -1,0 +1,207 @@
+{
+  "review_type": "Anonymous read-only visual and brand-fit review for professional design-studio case-study readers",
+  "captured_scope": {
+    "required_actually_inspected": 24,
+    "additional_actually_inspected": 8,
+    "total_artifact_captures_actually_inspected": 32,
+    "per_label_required": 12,
+    "per_label_additional": 4,
+    "widths": [
+      375,
+      1440
+    ],
+    "required_states": [
+      "client dashboard",
+      "project brief",
+      "project revisions",
+      "project discussion",
+      "studio dashboard",
+      "studio publish"
+    ],
+    "required_files_per_label": [
+      "1440-client-dashboard.png",
+      "1440-project-brief.png",
+      "1440-project-revisions.png",
+      "1440-project-discussion.png",
+      "1440-staff-dashboard.png",
+      "1440-staff-publish.png",
+      "375-client-dashboard.png",
+      "375-project-brief.png",
+      "375-project-revisions.png",
+      "375-project-discussion.png",
+      "375-staff-dashboard.png",
+      "375-staff-publish.png"
+    ],
+    "additional_files_per_label": [
+      "1440-login.png",
+      "375-login.png",
+      "375-project-discussion-form-view.png",
+      "375-staff-publish-form-view.png"
+    ],
+    "brand_reference_inspected": [
+      "brand-reference/BRAND.md",
+      "brand-reference/landing-page.txt",
+      "brand-reference/aethdesign-home-1440.png",
+      "brand-reference/aethdesign-home-375.png"
+    ]
+  },
+  "method": {
+    "images": "Every supplied A and B capture was viewed individually with native view_image at original detail; no image edits, source inspection or live interaction.",
+    "score_anchors": {
+      "1": "Unusable or visually incomplete",
+      "3": "Usable but ordinary",
+      "5": "Polished portfolio quality"
+    },
+    "scores": "Category scores are holistic presentation judgments, not counts of findings."
+  },
+  "labels": {
+    "A": {
+      "scores": {
+        "artifact_presentation": 1,
+        "typography": 1,
+        "layout": 1,
+        "coherence": 1,
+        "actual_studio_brand_fit": 2,
+        "workflow_readability_and_visible_controls": 2
+      },
+      "assessment": "Software/product-oriented content is present, but all supplied captures present largely default browser HTML. The artifact does not visually demonstrate the studio interface-design quality in the frozen reference.",
+      "required_capture_observations": [
+        {
+          "observation": "White canvas, default serif body/headings, blue underlined branding/skip links and native small buttons occur consistently. Default presentation is not the intentional near-black, silver, restrained-border studio identity. Labels and values run together, reducing scanning clarity.",
+          "evidence": [
+            "A/1440-client-dashboard.png",
+            "A/375-client-dashboard.png",
+            "A/1440-staff-dashboard.png",
+            "A/375-staff-dashboard.png"
+          ]
+        },
+        {
+          "observation": "Brief content accurately describes responsive commerce, checkout, catalogue/inventory APIs and frontend/backend work. Selected-project information appears before tab content. However investment, progress, revision and next-milestone summaries are visually concatenated, and desktop layout leaves most width unstructured. Mobile wrapping is readable in places but offers little spacing or product-interface hierarchy.",
+          "evidence": [
+            "A/1440-project-brief.png",
+            "A/375-project-brief.png"
+          ]
+        },
+        {
+          "observation": "Revision titles and review context exist, but the storefront preview appears as plain text/navigation rather than finished UI artwork. Initial revision/publish captures do not show decision/publish controls; their position outside the viewport alone does not establish absence.",
+          "evidence": [
+            "A/1440-project-revisions.png",
+            "A/375-project-revisions.png",
+            "A/1440-staff-publish.png",
+            "A/375-staff-publish.png"
+          ]
+        },
+        {
+          "observation": "Discussion has an understandable heading, comment and labeled composer. Author/role/date spacing is collapsed, and the narrow default textarea and small native submit control give an unfinished form presentation.",
+          "evidence": [
+            "A/1440-project-discussion.png",
+            "A/375-project-discussion.png"
+          ]
+        }
+      ],
+      "additional_capture_observations": [
+        {
+          "observation": "Login contains a clear shared-workspace message and synthetic role selection, but email/password inputs are inline on desktop and awkwardly wrap on mobile; storefront text is not a finished visual preview.",
+          "evidence": [
+            "A/1440-login.png",
+            "A/375-login.png"
+          ]
+        },
+        {
+          "observation": "Scrolled discussion capture confirms a visible Post comment control, privacy-context copy and a route to revisions. The form remains a small browser-default textarea/button without deliberate mobile ergonomics.",
+          "evidence": [
+            "A/375-project-discussion-form-view.png"
+          ]
+        },
+        {
+          "observation": "Scrolled publish capture confirms title, summary and Publish revision 2 controls after existing revision information. Inputs and labels wrap together and lack a clear form layout.",
+          "evidence": [
+            "A/375-staff-publish-form-view.png"
+          ]
+        }
+      ],
+      "visible_unfinished_assets": [
+        "All captures visibly lack a composed product style system; storefront/concept artwork is represented by raw text and symbols. The screenshots cannot establish why this occurred."
+      ],
+      "confidence": "High for observed visual presentation; medium for workflow readability because some controls/content are outside captured viewports."
+    },
+    "B": {
+      "scores": {
+        "artifact_presentation": 4,
+        "typography": 4,
+        "layout": 4,
+        "coherence": 5,
+        "actual_studio_brand_fit": 5,
+        "workflow_readability_and_visible_controls": 4
+      },
+      "assessment": "A cohesive, credible client/studio product presentation translates the actual dark studio identity into a useful interface. Commerce, merchant-console and SaaS previews tell a software-delivery story rather than a graphic-design-only story.",
+      "required_capture_observations": [
+        {
+          "observation": "Near-black canvas, pale text, fine borders, serif display headings and muted green state/action accents form a coherent system. Desktop sidebar and summary row are clearly organized. Mobile summary information stacks neatly. Storefront UI preview is composed and merchant/SaaS interface previews are visible on desktop. Mobile project artwork precedes card task details and pushes the Open project control below the first viewport, a modest efficiency tradeoff.",
+          "evidence": [
+            "B/1440-client-dashboard.png",
+            "B/375-client-dashboard.png",
+            "B/1440-staff-dashboard.png",
+            "B/375-staff-dashboard.png"
+          ]
+        },
+        {
+          "observation": "Selected project, status, investment, delivery progress, revision and milestone information are easy to identify; the brief uses a balanced desktop two-column composition and purposeful mobile order. Delivery-progress/current-revision label spacing is overly tight on desktop in this and revision/publish states. Secondary metadata and navigation labels are small.",
+          "evidence": [
+            "B/1440-project-brief.png",
+            "B/375-project-brief.png"
+          ]
+        },
+        {
+          "observation": "Revision history is separated from client-review/studio-publication panels on desktop, with clear selected revision context and restrained state badges. Mobile places project information and existing revision ahead of subsequent controls. Initial mobile captures show mainly header/history, so approval controls and complete publish forms need additional scrolled evidence.",
+          "evidence": [
+            "B/1440-project-revisions.png",
+            "B/375-project-revisions.png",
+            "B/1440-staff-publish.png",
+            "B/375-staff-publish.png"
+          ]
+        },
+        {
+          "observation": "Discussion separates prior message and composer clearly, with visible author/role/date context, labeled spacious input and an emphasized Send message action on desktop. The mobile state retains coherent order and readable wrapping; composer lies below the initial viewport.",
+          "evidence": [
+            "B/1440-project-discussion.png",
+            "B/375-project-discussion.png"
+          ]
+        }
+      ],
+      "additional_capture_observations": [
+        {
+          "observation": "Desktop login balances a studio headline/product preview with a distinct sign-in panel. Mobile puts the sign-in form before the artwork, with full-width labeled inputs and clear primary action. Synthetic demo account selection is understandable; the full mobile selector list extends beyond the capture.",
+          "evidence": [
+            "B/1440-login.png",
+            "B/375-login.png"
+          ]
+        },
+        {
+          "observation": "Scrolled mobile discussion shows a comfortably spaced composer, full-width Send message button and synthetic-information reminder. The form is visually polished and fits the width.",
+          "evidence": [
+            "B/375-project-discussion-form-view.png"
+          ]
+        },
+        {
+          "observation": "Scrolled mobile publish shows existing revision before selected-publication context, labeled title/summary fields and a clear full-width Publish revision 2 action. Copy explains that publishing opens a fresh review and preserves prior decisions.",
+          "evidence": [
+            "B/375-staff-publish-form-view.png"
+          ]
+        }
+      ],
+      "visible_unfinished_assets": [
+        "No broken image, raw placeholder block or visibly unfinished control is apparent in the inspected scope. Product previews are explicitly fictional concept artwork; their miniature embedded text is not intended as the main workflow reading surface."
+      ],
+      "confidence": "High for identity, composition and visible form presentation; medium for complete workflow coverage because captures are partial viewports."
+    }
+  },
+  "limits": [
+    "Screenshots cannot prove backend correctness, authentication/permissions, persistence, functionality, accessibility conformance or interactivity.",
+    "No click, keyboard, focus, hover, validation/error, approval submission, publication outcome or recovery state was tested.",
+    "Activity content, complete milestone/deliverable lists, offscreen project cards and client approval action controls are not fully visible in this supplied capture set.",
+    "These scores evaluate supplied visible artifacts only; missing styling cause and unseen product scope remain unknown.",
+    "The frozen brand text/screenshots provide the sole brand basis. No live-site or historical-score comparison was used."
+  ],
+  "summary": "B is the stronger portfolio presentation and actual AethDesign studio fit in the supplied pixels. A contains relevant software-delivery copy and identifiable workflow controls but appears visually incomplete."
+}

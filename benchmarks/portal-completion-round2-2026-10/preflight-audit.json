@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "verdict": "PASS",
+  "scope": {
+    "base": "HEAD",
+    "changed_files": [
+      ".gitignore",
+      ".quality/quality.toml",
+      "APP_PROMPT.txt",
+      "AUDIT_PROMPT.txt",
+      "BRAND.md",
+      "BRIEF.md",
+      "BUDGET.md",
+      "MAP.md",
+      "RUNTIME.md",
+      "TESTING.md",
+      "audit-output-schema.json",
+      "brand/aethdesign-home-1440.png",
+      "brand/aethdesign-home-375.png",
+      "brand/capture.json",
+      "brand/landing-page.txt",
+      "capture-brand.mjs",
+      "collect.py",
+      "discover_models.py",
+      "gate_checks.py",
+      "gate_support/gate_registration.py",
+      "gate_support/preload.cjs",
+      "gate_support/sitecustomize.py",
+      "judge/backend/CONTROL_HISTORY.jsonl",
+      "judge/backend/CONTROL_RESULTS.json",
+      "judge/backend/README.md",
+      "judge/backend/completion-control-results.json",
+      "judge/backend/completion-unicode-controls.json",
+      "judge/backend/evaluate.py",
+      "judge/backend/test_evaluator.py",
+      "judge/backend/test_fixture.py",
+      "judge/frontend/README.md",
+      "judge/frontend/adaptive-navigation-diagnostic/report.json",
+      "judge/frontend/capture-regression.mjs",
+      "judge/frontend/cleanup-diagnostic.mjs",
+      "judge/frontend/completion-canceled-transport-proof/defect-probes.json",
+      "judge/frontend/completion-capture-control/1440-client-dashboard.png",
+      "judge/frontend/completion-capture-control/1440-login.png",
+      "judge/frontend/completion-capture-control/1440-project-brief.png",
+      "judge/frontend/completion-capture-control/1440-project-discussion.png",
+      "judge/frontend/completion-capture-control/1440-project-revisions.png",
+      "judge/frontend/completion-capture-control/1440-staff-dashboard.png",
+      "judge/frontend/completion-capture-control/1440-staff-publish.png",
+      "judge/frontend/completion-capture-control/375-client-dashboard.png",
+      "judge/frontend/completion-capture-control/375-login.png",
+      "judge/frontend/completion-capture-control/375-project-brief.png",
+      "judge/frontend/completion-capture-control/375-project-discussion-form-view.png",
+      "judge/frontend/completion-capture-control/375-project-discussion.png",
+      "judge/frontend/completion-capture-control/375-project-revisions.png",
+      "judge/frontend/completion-capture-control/375-staff-dashboard.png",
+      "judge/frontend/completion-capture-control/375-staff-publish-form-view.png",
+      "judge/frontend/completion-capture-control/375-staff-publish.png",
+      "judge/frontend/completion-capture-control/report.json",
+      "judge/frontend/completion-defect-controls/account_conflict/defect-probes.json",
+      "judge/frontend/completion-defect-controls/account_conflict_list/defect-probes.json",
+      "judge/frontend/completion-defect-controls/cancel_conflict/defect-probes.json",
+      "judge/frontend/completion-defect-controls/comments_refresh/defect-probes.json",
+      "judge/frontend/completion-defect-controls/committed_refresh/defect-probes.json",
+      "judge/frontend/completion-defect-controls/committed_refresh_comments/defect-probes.json",
+      "judge/frontend/completion-defect-controls/healthy/defect-probes.json",
+      "judge/frontend/completion-defect-controls/list_refresh/defect-probes.json",
+      "judge/frontend/completion-defect-controls/regression.json",
+      "judge/frontend/completion-defect-controls/response_only/defect-probes.json",
+      "judge/frontend/completion-fixed-capture-proof/1440-fixed-layout-top.png",
+      "judge/frontend/completion-fixed-capture-proof/375-fixed-layout-top.png",
+      "judge/frontend/completion-fixed-capture-proof/capture-regression.json",
+      "judge/frontend/completion-revision-neutrality-proof/revision-regression.json",
+      "judge/frontend/completion-revision-neutrality-proof/zero-padded-browser/report.json",
+      "judge/frontend/completion-selftest-proof/budget/report.json",
+      "judge/frontend/completion-selftest-proof/healthy/1440-client-dashboard.png",
+      "judge/frontend/completion-selftest-proof/healthy/1440-login.png",
+      "judge/frontend/completion-selftest-proof/healthy/1440-project-brief.png",
+      "judge/frontend/completion-selftest-proof/healthy/1440-project-discussion.png",
+      "judge/frontend/completion-selftest-proof/healthy/1440-project-revisions.png",
+      "judge/frontend/completion-selftest-proof/healthy/1440-staff-dashboard.png",
+      "judge/frontend/completion-selftest-proof/healthy/1440-staff-publish.png",
+      "judge/frontend/completion-selftest-proof/healthy/375-client-dashboard.png",
+      "judge/frontend/completion-selftest-proof/healthy/375-login.png",
+      "judge/frontend/completion-selftest-proof/healthy/375-project-brief.png",
+      "judge/frontend/completion-selftest-proof/healthy/375-project-discussion-form-view.png",
+      "judge/frontend/completion-selftest-proof/healthy/375-project-discussion.png",
+      "judge/frontend/completion-selftest-proof/healthy/375-project-revisions.png",
+      "judge/frontend/completion-selftest-proof/healthy/375-staff-dashboard.png",
+      "judge/frontend/completion-selftest-proof/healthy/375-staff-publish-form-view.png",
+      "judge/frontend/completion-selftest-proof/healthy/375-staff-publish.png",
+      "judge/frontend/completion-selftest-proof/healthy/report.json",
+      "judge/frontend/completion-selftest-proof/http/report.json",
+      "judge/frontend/completion-selftest-proof/labels/report.json",
+      "judge/frontend/completion-selftest-proof/leak/report.json",
+      "judge/frontend/completion-selftest-proof/literal/report.json",
+      "judge/frontend/completion-selftest-proof/missing/report.json",
+      "judge/frontend/completion-selftest-proof/money_scale/report.json",
+      "judge/frontend/completion-selftest-proof/overflow/report.json",
+      "judge/frontend/completion-selftest-proof/publish/report.json",
+      "judge/frontend/completion-selftest-proof/runtime/report.json",
+      "judge/frontend/completion-selftest-proof/selftest.json",
+      "judge/frontend/completion-selftest-proof/staff_controls/report.json",
+      "judge/frontend/completion-selftest-proof/validation/report.json",
+      "judge/frontend/defect-probes-regression.mjs",
+      "judge/frontend/defect-probes.mjs",
+      "judge/frontend/evaluate-original.mjs",
+      "judge/frontend/evaluate-reload-only.mjs",
+      "judge/frontend/evaluate.mjs",
+      "judge/frontend/final-regression-proof/regression.json",
+      "judge/frontend/final-selftest-proof/selftest.json",
+      "judge/frontend/navigation-amendment.json",
+      "judge/frontend/navigation-evaluator.diff",
+      "judge/frontend/navigation-preserved-hashes.json",
+      "judge/frontend/navigation-regression-proof-final/navigation-regression.json",
+      "judge/frontend/navigation-regression.mjs",
+      "judge/frontend/regression.mjs",
+      "judge/frontend/revision-regression.mjs",
+      "judge/frontend/selftest.mjs",
+      "judge/frontend/tab-regression-proof-contract/tab-regression.json",
+      "judge/frontend/tab-regression.mjs",
+      "native-model-catalog.json",
+      "phase_collect.py",
+      "prepare.py",
+      "preview/README.md",
+      "preview/broker.py",
+      "preview/client.py",
+      "preview/render.mjs",
+      "preview/tests.py",
+      "prices.json",
+      "protocol.json",
+      "qa_check.py",
+      "run.py",
+      "telemetry.py",
+      "test_audit_formatter.py",
+      "test_collect.py",
+      "test_completion_runner.py",
+      "test_gate_checks.py",
+      "test_qa_check.py",
+      "test_telemetry.py",
+      "verify_app.py"
+    ],
+    "acceptance_criteria": "Matched brand-grounded blank conditions; isolated single delegation controls; native exact-resume and fresh independent audit/repair loops; shared deadline and owned selected process cleanup; complete token accounting, immutable stage snapshots, neutral controlled judges and viewport captures. Re-audit typed native formatter/canonical meaning against actual matched model, immutable instrument-invalid attempt archive, disclosed nonzero/unknown usage, identical fresh blank pair and final source seal."
+  },
+  "risk": "high",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "judge/backend/test_evaluator.py"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "<temporary-path> 9 tests passed, healthy 12-group oracle and targeted negative controls including lone surrogate."
+    },
+    {
+      "command": [
+        "node",
+        "judge/frontend/selftest.mjs",
+        "<temporary-path>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Healthy11/11, required12 screenshots, all11 targeted negative modes detected with unrelated authorized-card control; missing capability retains denominator."
+    },
+    {
+      "command": [
+        "node",
+        "judge/frontend/defect-probes-regression.mjs",
+        "<temporary-path>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "All9 strategies passed expected outcomes: healthy detail/list/comments/response-only/canceled transport; distinct account conflict and committed-refresh defects detected."
+    },
+    {
+      "command": [
+        "node",
+        "judge/frontend/capture-regression.mjs",
+        "<temporary-path>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Both375/1440 fixed/container-scroll states normalized to exact1000px viewport captures; wrong form/tab rejected."
+    },
+    {
+      "command": [
+        "node",
+        "judge/frontend/revision-regression.mjs",
+        "<temporary-path>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "R2/R02 accepted, R3 rejected; zero-padded healthy browser11/11."
+    },
+    {
+      "command": [
+        "node",
+        "judge/frontend/regression.mjs",
+        "<temporary-path>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "2 owned cleanup cases, 16 money parser cases and6 healthy/negative browser cases pass."
+    },
+    {
+      "command": [
+        "node",
+        "judge/frontend/navigation-regression.mjs",
+        "<temporary-path>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Original delay fixture8/11, corrected11/11; all3 negative controls detected; overview/wrong-detail/back and unsettled contracts checked."
+    },
+    {
+      "command": [
+        "read",
+        "native-preflight/proof.json",
+        "phases/*/metadata.json",
+        "phases/*/final.txt"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Actual loopback CAPABILITY_OK and no delegation tools; exact original root resume RESUME_OK; failedschema phase03 retained and fresh schema phase04 completed BLOCKED capability-only result. No paid model call made by auditor."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "AUD-001 confirmation: identical former fast-exit detached-child reproduction now leader exit0, no child process state, survived=false. Previously observed Ss is retained in original audit history and reproduction script."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "AUD-001 confirmation: identical former outer gate timeout now observed with no surviving ordinary child; prior S outcome corrected. Full suite additionally verifies detached timeout child, unrelated live-process preservation and nested gate interruption."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Unavailable inherited ledger provokes FileNotFoundError and refuses accepted handoff; child caller never reaches PID handoff. Static registration review confirms parent+kernel creation identity checks, before-return Python Popen/Node spawn registration, scoped environment and group cleanup."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Actual bundled Node/Playwright evaluator through owned_run launches Chromium and Python fixture: exit0, healthy11/11, fatal=null; wrapper cleanup completed. Initial temporary diagnostic used relative site and failed missing path; corrected absolute contract path confirms selected live hierarchy."
+    },
+    {
+      "command": [
+        "./quality",
+        "verify",
+        "full"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Final formatter source: independent <temporary-path> passes72root tests plus6preview Contracts and whitespace."
+    },
+    {
+      "command": [
+        "./quality",
+        "verify",
+        "release"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Final formatter source: independent <temporary-path> passes72root tests plus6preview Contracts and whitespace."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "temporary original-formatter mutation"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "New test rejects the archived untyped schema with one assertion failure and zero errors. Normal corrected schema passes. Removing added types yields exact old schema; enums/const/required fields/canonical gate meaning unchanged."
+    },
+    {
+      "command": [
+        "read",
+        "native-preflight-matched/proof.json",
+        "phases/03-auditor/events.jsonl",
+        "phases/03-auditor/final.txt"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Raw thread.started and turn.completed confirm exact matched gpt-6.1-sol/high invocation, typed output schema and completed formatter-only BLOCKED response, not application acceptance. Recorded native_after snapshot exactly matches selected owned rollout SHA/counters and actual model. Earlier cheaper-model formatter acceptance was not representative and the previous preflight missed this compatibility boundary; superseded by matched-model proof and defect-sensitive type regression."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "independent interrupted archive and corpus verification"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "All285 retained-sha256 entries match. Archived60sealed instruments differ from final existing files only audit-output-schema.json; original/current protected and initial25fixture hash maps equal. Old initial/final app snapshots, source, phaseevents and fixed gates retained; summary correctly labels INCOMPLETE instrument-invalid attempt,2222.286235s initial builder,2286.140174s attempt. Completed builder counters input3818541,cached3679232,output62615,reasoning14195 retained; rejected audit usage null (no authoritative completion), never assumed zero. Archives/native logs ignored from publication; both fresh conditions blank and unstarted."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "final source SHA and unchanged worktree inventory"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "FINAL SOURCE PROTOCOL SHA256 f9323423163fd109f49648c30dd6fe6f022d83192ab75aacc1474ef9ba6e4e8a; all61sealed sources match; final formatter SHA256 8f6664c33ea5e839d606747010f7fed096aa58ce1d71feae93a89f15073b9801. Final source/status/protocol unchanged by audit. Explicit new test audited even though initial supplied rawpacket omitted it; final scope includes test_audit_formatter.py."
+    }
+  ],
+  "findings": [],
+  "untested": [],
+  "residual_risk": "Instrument preflight PASS only: neither blank condition has built or accepted an application. Cleanup assurance covers synchronous registered trusted Python Popen, Node spawn/Playwright launches and proven descendant groups; arbitrary unregistered native binaries, bypassed hooks or unrelated native subprocess mechanisms are outside that guarantee. Native builder sandbox/independent app gates remain necessary. A single matched pair cannot establish causal advantage or subscription savings; recorded API prices are dated equivalents. Earlier negative control evidence is retained for unchanged sealed evaluators; no paid native model calls were performed by this auditor. AUD-001 reproduced failure and focused correction/recheck cycle are preserved in check evidence. Final typed formatter/matched-model re-audit supersedes earlier formatter transport assumption. Interrupted attempt is preserved as nonzero instrument-invalid preparation; unknown rejected-request usage prevents an exact total cost claim. Replacement comparison remains unexecuted and requires its real independent app gates.",
+  "worktree_unchanged": true
+}

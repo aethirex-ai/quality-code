@@ -1,0 +1,13 @@
+{
+  "condition": "single",
+  "policy": "critical auth-and-state; full/release and fresh parent independent gate",
+  "catalog": "NATIVE_MODELS.json",
+  "cost_basis": {"path": "MODEL_COSTS.json", "checked_date": "2026-10-13", "unit": "hypothetical API equivalent only"},
+  "discovery": {"native_delegation_tools": [], "model_selection_tool": false, "capacity_tool": false, "exact_usage": "unavailable"},
+  "owners": [{"owner": "primary builder", "outcomes": ["visual direction", "backend", "frontend", "integration", "builder verification", "repairs"], "model": "inherited runtime GPT-6 family; exact catalog ID not exposed", "effort": "inherited; setting not exposed", "context": "fresh task scope, bounded relevant reads; no supported window control"}],
+  "helpers": [],
+  "decision": "Single condition and no callable native delegation: implement locally. No external model/CLI sessions. Cannot select cheaper catalog model through supported controls; inherit runtime defaults.",
+  "budget": {"global_seconds": 5400, "initial_cap_seconds": 2400, "cleanup_reserve_seconds": 30, "audit_round_ceiling": 4, "allocation": "bounded implementation and integrated checks; reserve at least 3000 seconds for parent gates and repairs", "live_token_quota": "unknown"},
+  "independent_gate": {"status": "pending", "orchestrator": "parent", "builder_verdict": null},
+  "helpers_joined": true
+}

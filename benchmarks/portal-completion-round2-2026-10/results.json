@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "date": "2026-10-13",
+  "title": "Client workspace completion pilot: two incomplete outcomes",
+  "protocol_native_sha256": "f9323423163fd109f49648c30dd6fe6f022d83192ab75aacc1474ef9ba6e4e8a",
+  "standard_commit": "28caf3f86a031b097c5df40b80d97bfb8ea52da6",
+  "validity": {
+    "accepted_quality_comparison": false,
+    "speed_winner": null,
+    "total_cost_winner": null,
+    "cheap_model_routing_exercised": false,
+    "reason": "Control stalled/capped before audit; adaptive re-audit stage timed out before a canonical verdict and further repair. Both incomplete. Single clock discrepancy and canceled unreported requests prevent accepted-performance/complete-cost comparison.",
+    "no_subscription_percentages_read": true,
+    "scope": "One sequential pair; measured boundaries and incomplete stages preserved, no outcome-selected rerun."
+  },
+  "conditions": {
+    "single": {
+      "state": "INCOMPLETE",
+      "accepted_completion_seconds": null,
+      "initial_phase_seconds": 2402.013732500025,
+      "runner_monotonic_seconds": 2405.0911334590055,
+      "calendar_seconds": 5012.11648106575,
+      "phases": [
+        {
+          "number": 1,
+          "role": "builder",
+          "state": "timed_out",
+          "elapsed_seconds": 2402.013732500025,
+          "verdict": null
+        }
+      ],
+      "canonical_audit_reports": [],
+      "complete_tokens": null,
+      "complete_cost_usd": null,
+      "known_reported_token_subset": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 155136,
+        "input_tokens": 202804,
+        "output_tokens": 19763,
+        "reasoning_output_tokens": 1084,
+        "total_tokens": 222567
+      },
+      "conditional_known_subset_standard_api_proxy_usd": {
+        "components_usd": {
+          "uncached_input": "0.095336",
+          "cached_input": "0.0155136",
+          "output_including_reasoning": "0.19763"
+        },
+        "total_usd": "0.3084796"
+      },
+      "reported_subset_is_complete": false,
+      "post_clock_samples": {
+        "backend": {
+          "passed": 12,
+          "denominator": 12
+        },
+        "frontend": {
+          "passed": 10,
+          "denominator": 11,
+          "failed": [
+            "runtime_http_health"
+          ]
+        },
+        "recovery": {
+          "raw_passed": 3,
+          "denominator": 3,
+          "clean_passed": 2,
+          "instrument_ambiguous": [
+            "committed_comment_refresh_failure"
+          ]
+        },
+        "required_captures": 12,
+        "additional_captures": 4,
+        "source_manifest_verified_files": 30
+      },
+      "anonymous_label": "A",
+      "visual_artifact_scores": {
+        "artifact_presentation": 1,
+        "typography": 1,
+        "layout": 1,
+        "coherence": 1,
+        "actual_studio_brand_fit": 2,
+        "workflow_readability_and_visible_controls": 2
+      },
+      "visual_score_scope": "Captured artifact presentation only; unstyled control incomplete, no causal model/topology quality inference."
+    },
+    "adaptive": {
+      "state": "INCOMPLETE",
+      "accepted_completion_seconds": null,
+      "initial_phase_seconds": 980.8540337500162,
+      "runner_monotonic_seconds": 3547.663548457902,
+      "calendar_seconds": 3547.6689069271088,
+      "phases": [
+        {
+          "number": 1,
+          "role": "builder",
+          "state": "completed",
+          "elapsed_seconds": 980.8540337500162,
+          "verdict": null
+        },
+        {
+          "number": 2,
+          "role": "auditor",
+          "state": "completed",
+          "elapsed_seconds": 903.3269434999675,
+          "verdict": "FAIL"
+        },
+        {
+          "number": 3,
+          "role": "builder",
+          "state": "completed",
+          "elapsed_seconds": 377.346894458984,
+          "verdict": null
+        },
+        {
+          "number": 4,
+          "role": "auditor",
+          "state": "timed_out",
+          "elapsed_seconds": 1202.9787761250045,
+          "verdict": null
+        }
+      ],
+      "canonical_audit_reports": [
+        "audits/adaptive-02.json"
+      ],
+      "complete_tokens": null,
+      "complete_cost_usd": null,
+      "known_reported_token_subset": {
+        "input_tokens": 14130067,
+        "cached_input_tokens": 13487616,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 132652,
+        "reasoning_output_tokens": 42142,
+        "total_tokens": 14262719
+      },
+      "conditional_known_subset_standard_api_proxy_usd": {
+        "components_usd": {
+          "uncached_input": "1.284902",
+          "cached_input": "1.3487616",
+          "output_including_reasoning": "1.32652"
+        },
+        "total_usd": "3.9601836"
+      },
+      "reported_subset_is_complete": false,
+      "post_clock_samples": {
+        "backend": {
+          "passed": 12,
+          "denominator": 12
+        },
+        "frontend": {
+          "passed": 10,
+          "denominator": 11,
+          "failed": [
+            "staff_publish_reopens_history_activity"
+          ]
+        },
+        "recovery": {
+          "raw_passed": 3,
+          "denominator": 3,
+          "clean_passed": 3,
+          "instrument_ambiguous": []
+        },
+        "required_captures": 12,
+        "additional_captures": 4,
+        "source_manifest_verified_files": 39
+      },
+      "anonymous_label": "B",
+      "visual_artifact_scores": {
+        "artifact_presentation": 4,
+        "typography": 4,
+        "layout": 4,
+        "coherence": 5,
+        "actual_studio_brand_fit": 5,
+        "workflow_readability_and_visible_controls": 4
+      },
+      "visual_score_scope": "Captured artifact presentation only; unstyled control incomplete, no causal model/topology quality inference."
+    }
+  },
+  "adaptive_observed_topology": "One persistent builder plus one direct backend-labeled implementation child; same builder exact resume for repair; two fresh independent auditor roots, neither with descendants. Maximum observed implementation team: builder + child.",
+  "adaptive_model_selection": {
+    "native_spawn_argument_keys": [
+      "task_name",
+      "model",
+      "reasoning_effort",
+      "fork_turns",
+      "message"
+    ],
+    "native_spawn_nonbrief_arguments": {
+      "task_name": "backend",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "fork_turns": "none"
+    },
+    "source_role": "persistent_builder_root",
+    "source_rollout_sha256": "54766e3b7a0f92dd43a4cc43e72cd483124b66fedad8ca68169176316777bbe4",
+    "root_routing_write_timestamp_utc": "2026-10-13T16:56:48.969Z",
+    "declared_child_file_ownership": [
+      "server.py",
+      "tests/test_backend.py"
+    ],
+    "root_declared_selection_evidence": [
+      "NATIVE_MODELS.json native app-server model/list",
+      "MODEL_COSTS.json checked 2026-10-13",
+      "Runtime advertised model catalog and reasoning efforts"
+    ],
+    "root_declared_rationale": "Critical auth and transactional state justify workhorse; lowest-cost model in dated catalog judged qualified for this coupled security outcome. One independent coherent backend outcome overlaps frontend work.",
+    "rationale_status": "Builder judgment recorded in native tool call that wrote ROUTING.json. It is not independent evidence that cheaper models could not satisfy the task.",
+    "capability_evidence": "Native collaboration declaration advertised gpt-6-luna and supported model/effort overrides for fresh scoped spawns. The actual spawn explicitly supplied sol rather than inheriting a hidden default. No examined native evidence says cheaper model selection was unavailable or rejected.",
+    "disclosed_limitation": "Builder recorded primary exact model identifier not exposed to builder. This does not explain or restrict explicit child model override; actual native contexts show primary sol/high.",
+    "cheap_routing_exercised": false,
+    "price_interpretation": "Medium effort changes reasoning configuration, not the frozen per-token sol API unit rates. This run did not test cheaper-model backend implementation. Bugs and fixes cannot be attributed to cheap models."
+  },
+  "adaptive_known_subset_cost_composition": {
+    "auditor_roles_usd": "2.1487516",
+    "auditor_share_percent": "54.26",
+    "backend_child_usd": "0.2917596",
+    "backend_child_share_percent": "7.37",
+    "interpretation": "All observed actors used the same model/API rates; medium effort is not a cheaper unit price. Even eliminating the helper cost would remove only its 7.37% observed share before any changed quality/retry behavior. Audits are necessary assurance work, not free overhead."
+  },
+  "corrections": {
+    "adaptive_evidenced": {
+      "initial_product_cycles": 3,
+      "repair_product_correction_cycles": 2,
+      "total_product_correction_cycles": 5,
+      "visual_refinement_cycles": 1,
+      "tooling_issue_cycles": 2,
+      "checker_driven_navigation_accommodations": 1,
+      "unresolved_second_audit_clusters_with_completed_fixes": 0
+    },
+    "single_product_cycles": null,
+    "single_cycle_status": "No completed fix/recheck cycle evidenced in the valid interrupted build; unknown overall, not proof zero bugs.",
+    "adaptive_remaining_observed_clusters": [
+      "review-history and feedback delivery",
+      "save acknowledgment across navigation",
+      "long valid title overflow"
+    ],
+    "single_remaining_observation": "Stylesheet missing at capped source; intended visual design incomplete; no independent app verdict."
+  },
+  "shared_preparation": {
+    "instrument_invalid_attempt_retained_files": 285,
+    "completed_builder_known_proxy_usd": "1.2726912",
+    "rejected_audit_usage": null,
+    "complete_preparation_cost": null,
+    "scope": "Archived initial single attempt rejected at formatter before review, excluded from condition comparison. Typed formatter verified with matched model; 61 instruments/25 common corpus re-frozen. Shared setup, final diagnosis/visual review and publication not measured as per-condition spend and not zero."
+  },
+  "pricing_source": "https://developers.openai.com/api/docs/pricing",
+  "measurement_notes": [
+    "Cached input and reasoning output are subsets; cumulative builder resume counted once.",
+    "Known reported subset proxies use dated Standard API rates and reported short-context calls; unknown in-flight/retry/canceled consumption is excluded, never zero.",
+    "Collector omits stopped-root observations; independent derived diagnostic restores known partial counters while withholding complete totals.",
+    "Post-clock contract/render diagnostics never turn incomplete work into an accepted gate.",
+    "First adaptive canonical audit FAIL; second auditor partial observations are not a canonical FAIL or PASS.",
+    "Anonymous screenshots are viewport375/1440x1000, 24required+8additional; no historical full-page score comparison.",
+    "No image-generation calls in this code-native portal pair; no image billing claim."
+  ]
+}

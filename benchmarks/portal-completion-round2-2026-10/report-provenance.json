@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "records": [
+    {
+      "path": "usage-diagnostic.json",
+      "native_sha256": "643e2841f496ef8ef290ba45cd51e63d084ddecd3a7f376ca21aa1a535c4a6bb",
+      "published_sha256": "204e4e837fb6fb88df896b43b065594cccdc6fa9bc568a0e6ce8c7380bb9a6f9",
+      "adaptation": "Private runtime paths/session identifiers redacted; findings, counters and qualification retained."
+    },
+    {
+      "path": "iteration-review.json",
+      "native_sha256": "8cda2ac9269bd7a10c4a7b020064cae5ad8e8ba7a7c1adb80cf1cd04fc64f342",
+      "published_sha256": "931a7d95d9a17f8228adb68bf7abf63f53ad4bf1b3a222a3176901cd682fe3fc",
+      "adaptation": "Private runtime paths/session identifiers redacted; findings, counters and qualification retained."
+    },
+    {
+      "path": "blind-visual-review.json",
+      "native_sha256": "bffd050763e47d72d66a363bfd63e2a7fcc26fa9973bd663ef62002d3de01b37",
+      "published_sha256": "bffd050763e47d72d66a363bfd63e2a7fcc26fa9973bd663ef62002d3de01b37",
+      "adaptation": "Private runtime paths/session identifiers redacted; findings, counters and qualification retained."
+    },
+    {
+      "path": "blind-visual-map.json",
+      "native_sha256": "fc757a01630ec05945f44b11572cfd97117c27b5c9f3f10f485bc3b5c92608aa",
+      "published_sha256": "fc757a01630ec05945f44b11572cfd97117c27b5c9f3f10f485bc3b5c92608aa",
+      "adaptation": "Private runtime paths/session identifiers redacted; findings, counters and qualification retained."
+    },
+    {
+      "path": "price-recheck.json",
+      "native_sha256": "191116d8aafe3798c2a473b4e49d5621d2c70f4793764c5601c727adfcc53e6e",
+      "published_sha256": "191116d8aafe3798c2a473b4e49d5621d2c70f4793764c5601c727adfcc53e6e",
+      "adaptation": "Private runtime paths/session identifiers redacted; findings, counters and qualification retained."
+    },
+    {
+      "path": "preflight-audit.json",
+      "native_sha256": "3e121be742dc43d92faca6d337ffc0515a837d53440f08f68ac00b001009f143",
+      "published_sha256": "502a317a7d58f135bb932035e4bc81ff6f321610887d3f9d2a5b3cbb5e424f7b",
+      "adaptation": "Private runtime paths/session identifiers redacted; findings, counters and qualification retained."
+    },
+    {
+      "path": "audits/adaptive-02.json",
+      "native_sha256": "8752c3aceb1aec2c178c93896820bd577e7d8fe8779530f854606b1af93fc0c7",
+      "published_sha256": "6c2bc1d1783e527b3729c364db3318a5279d61616d6167d5b0e51cb39ee10e22",
+      "adaptation": "Private diagnostic paths redacted; canonical verdict and scoped findings retained."
+    }
+  ],
+  "policy": "Raw native transcripts, session IDs, cookies/databases and personal runtime metadata excluded. SHA records identify retained private originals and separately sanitized reports."
+}

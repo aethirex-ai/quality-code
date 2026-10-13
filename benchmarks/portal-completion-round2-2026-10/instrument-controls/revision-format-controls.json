@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "results": [
+    {
+      "label": "R2",
+      "expected": 2,
+      "status": "pass"
+    },
+    {
+      "label": "R02",
+      "expected": 2,
+      "status": "pass"
+    },
+    {
+      "label": "R3",
+      "expected": 2,
+      "status": "rejected"
+    }
+  ],
+  "zeroPaddedHealthyGroups": 11
+}

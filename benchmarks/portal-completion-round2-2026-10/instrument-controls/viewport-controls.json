@@ -1,0 +1,63 @@
+{
+  "status": "pass",
+  "results": [
+    {
+      "width": 375,
+      "viewportPixelDimensions": [
+        375,
+        1000
+      ],
+      "focusedScrolledFixtureNormalized": true,
+      "mismatchedFormRejected": true,
+      "wrongSelectedTabRejected": true,
+      "metadata": {
+        "viewport": {
+          "width": 375,
+          "height": 1000
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        },
+        "focus": "BODY",
+        "identity": "AethDesign Studio",
+        "project": "p1",
+        "section": "revisions",
+        "formValues": {
+          "revision-title": "Matched review draft"
+        },
+        "captureMode": "viewport"
+      }
+    },
+    {
+      "width": 1440,
+      "viewportPixelDimensions": [
+        1440,
+        1000
+      ],
+      "focusedScrolledFixtureNormalized": true,
+      "mismatchedFormRejected": true,
+      "wrongSelectedTabRejected": true,
+      "metadata": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0,
+          "containers": []
+        },
+        "focus": "BODY",
+        "identity": "AethDesign Studio",
+        "project": "p1",
+        "section": "revisions",
+        "formValues": {
+          "revision-title": "Matched review draft"
+        },
+        "captureMode": "viewport"
+      }
+    }
+  ]
+}

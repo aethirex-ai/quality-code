@@ -1,0 +1,407 @@
+{
+  "schema": 1,
+  "denominator": 11,
+  "groups": [
+    {
+      "name": "auth_identity_isolation",
+      "status": "pass",
+      "durationMs": 609
+    },
+    {
+      "name": "authorized_cards",
+      "status": "pass",
+      "durationMs": 657
+    },
+    {
+      "name": "detail_budget",
+      "status": "pass",
+      "durationMs": 414
+    },
+    {
+      "name": "meaningful_content",
+      "status": "pass",
+      "durationMs": 399
+    },
+    {
+      "name": "literal_comment_persistence",
+      "status": "pass",
+      "durationMs": 612
+    },
+    {
+      "name": "decision_validation_persistence",
+      "status": "pass",
+      "durationMs": 894
+    },
+    {
+      "name": "staff_publish_reopens_history_activity",
+      "status": "pass",
+      "durationMs": 978
+    },
+    {
+      "name": "client_staff_controls_hidden",
+      "status": "pass",
+      "durationMs": 335
+    },
+    {
+      "name": "accessibility_focus_landmarks_attribution",
+      "status": "pass",
+      "durationMs": 401
+    },
+    {
+      "name": "responsive_widths",
+      "status": "pass",
+      "durationMs": 1745
+    },
+    {
+      "name": "runtime_http_health",
+      "status": "fail",
+      "error": "runtime/request failures: Refused to apply style from 'http://127.0.0.1:58934/styles.css' because its MIME type ('application/json') is not a supported stylesheet MIME type, and strict MIME checking is enabled.; /styles.css: net::ERR_ABORTED; Refused to apply style from 'http://127.0.0.1:58934/styles.css' because its MIME type ('application/json') is not a supported stylesheet MIME type, and strict MIME checking is enabled.; /styles.css: net::ERR_ABORTED; Refused to apply style from 'http://127.0.0.1:58934/styles.css' because its MIME type ('application/json') is not a supported stylesheet MIME type, and strict MIME checking is enabled.; /styles.css: net::ERR_ABORTED",
+      "durationMs": 303
+    }
+  ],
+  "fatal": null,
+  "screenshotDenominator": 12,
+  "screenshots": [
+    {
+      "name": "375-client-dashboard.png",
+      "status": "captured",
+      "viewport": {
+        "width": 375,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "Alex Morgan",
+      "project": null,
+      "section": null,
+      "formValues": {},
+      "captureMode": "viewport"
+    },
+    {
+      "name": "375-project-brief.png",
+      "status": "captured",
+      "viewport": {
+        "width": 375,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "Alex Morgan",
+      "project": "p1",
+      "section": "brief",
+      "formValues": {},
+      "captureMode": "viewport"
+    },
+    {
+      "name": "375-project-revisions.png",
+      "status": "captured",
+      "viewport": {
+        "width": 375,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "Alex Morgan",
+      "project": "p1",
+      "section": "revisions",
+      "formValues": {
+        "decision-note": "Please refine the checkout flow before approval."
+      },
+      "captureMode": "viewport"
+    },
+    {
+      "name": "375-project-discussion.png",
+      "status": "captured",
+      "viewport": {
+        "width": 375,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "Alex Morgan",
+      "project": "p1",
+      "section": "discussion",
+      "formValues": {
+        "comment-body": "Please confirm the responsive checkout flow for the next review."
+      },
+      "captureMode": "viewport"
+    },
+    {
+      "name": "375-staff-dashboard.png",
+      "status": "captured",
+      "viewport": {
+        "width": 375,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "AethDesign Studio",
+      "project": null,
+      "section": null,
+      "formValues": {},
+      "captureMode": "viewport"
+    },
+    {
+      "name": "375-staff-publish.png",
+      "status": "captured",
+      "viewport": {
+        "width": 375,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "AethDesign Studio",
+      "project": "p1",
+      "section": "revisions",
+      "formValues": {
+        "revision-title": "Refined checkout flow",
+        "revision-summary": "The responsive checkout screens and merchant workflows are ready for client review."
+      },
+      "captureMode": "viewport"
+    },
+    {
+      "name": "1440-client-dashboard.png",
+      "status": "captured",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "Alex Morgan",
+      "project": null,
+      "section": null,
+      "formValues": {},
+      "captureMode": "viewport"
+    },
+    {
+      "name": "1440-project-brief.png",
+      "status": "captured",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "Alex Morgan",
+      "project": "p1",
+      "section": "brief",
+      "formValues": {},
+      "captureMode": "viewport"
+    },
+    {
+      "name": "1440-project-revisions.png",
+      "status": "captured",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "Alex Morgan",
+      "project": "p1",
+      "section": "revisions",
+      "formValues": {
+        "decision-note": "Please refine the checkout flow before approval."
+      },
+      "captureMode": "viewport"
+    },
+    {
+      "name": "1440-project-discussion.png",
+      "status": "captured",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "Alex Morgan",
+      "project": "p1",
+      "section": "discussion",
+      "formValues": {
+        "comment-body": "Please confirm the responsive checkout flow for the next review."
+      },
+      "captureMode": "viewport"
+    },
+    {
+      "name": "1440-staff-dashboard.png",
+      "status": "captured",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "AethDesign Studio",
+      "project": null,
+      "section": null,
+      "formValues": {},
+      "captureMode": "viewport"
+    },
+    {
+      "name": "1440-staff-publish.png",
+      "status": "captured",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "identity": "AethDesign Studio",
+      "project": "p1",
+      "section": "revisions",
+      "formValues": {
+        "revision-title": "Refined checkout flow",
+        "revision-summary": "The responsive checkout screens and merchant workflows are ready for client review."
+      },
+      "captureMode": "viewport"
+    }
+  ],
+  "additionalScreenshots": [
+    {
+      "name": "375-login.png",
+      "status": "captured",
+      "viewport": {
+        "width": 375,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "project": null,
+      "section": null,
+      "formValues": {},
+      "captureMode": "viewport"
+    },
+    {
+      "name": "375-project-discussion-form-view.png",
+      "status": "captured",
+      "viewport": {
+        "width": 375,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 422,
+        "containers": [
+          {
+            "hook": null,
+            "tag": "HTML",
+            "top": 422,
+            "left": 0
+          }
+        ]
+      },
+      "focus": "BODY",
+      "identity": "Alex Morgan",
+      "project": "p1",
+      "section": "discussion",
+      "formValues": {
+        "comment-body": "Please confirm the responsive checkout flow for the next review."
+      },
+      "captureMode": "viewport"
+    },
+    {
+      "name": "375-staff-publish-form-view.png",
+      "status": "captured",
+      "viewport": {
+        "width": 375,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 516,
+        "containers": [
+          {
+            "hook": null,
+            "tag": "HTML",
+            "top": 516,
+            "left": 0
+          }
+        ]
+      },
+      "focus": "BODY",
+      "identity": "AethDesign Studio",
+      "project": "p1",
+      "section": "revisions",
+      "formValues": {
+        "revision-title": "Refined checkout flow",
+        "revision-summary": "The responsive checkout screens and merchant workflows are ready for client review."
+      },
+      "captureMode": "viewport"
+    },
+    {
+      "name": "1440-login.png",
+      "status": "captured",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0,
+        "containers": []
+      },
+      "focus": "BODY",
+      "project": null,
+      "section": null,
+      "formValues": {},
+      "captureMode": "viewport"
+    }
+  ],
+  "screenshotFailures": 0,
+  "passed": 10,
+  "failed": 1,
+  "notRun": 0
+}

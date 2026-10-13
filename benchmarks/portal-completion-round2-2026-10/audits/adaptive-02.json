@@ -1,0 +1,216 @@
+{
+  "checks": [
+    {
+      "command": [
+        "git",
+        "diff",
+        "--relative",
+        "HEAD",
+        "--",
+        "."
+      ],
+      "evidence": "Reviewed the initialization baseline diff, supplied inventory, current application source/tests/configuration, complete acceptance documents and required audit references. Examined authentication, sessions, authorization, validation, transactions, persistence, static serving and asynchronous recovery.",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "./quality",
+        "verify",
+        "full"
+      ],
+      "evidence": "Independently passed 13 Python tests, including 12 integrated JavaScript regressions, both JavaScript syntax checks and git diff --check.",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "./quality",
+        "verify",
+        "release"
+      ],
+      "evidence": "Independently passed the complete required release profile. Output retained in <temporary-path>",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "./quality",
+        "validate"
+      ],
+      "evidence": "Project quality configuration validated; critical auth/state routing and full/release requirements remain intact.",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>"
+      ],
+      "evidence": "Fresh actual HTTP/SQLite checks passed for password verification, role/owner boundaries, forged identity, JSON/origin/Unicode bounds, 2,000 healthy emoji, static allowlisting, concurrent conflicts, restart/session persistence and logout. Injected event-insertion failures rolled back all three mutation kinds without partial state.",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>"
+      ],
+      "evidence": "Paused only the existing post-commit project read. Approval of revision 1 committed; concurrent publication created revision 2. The approval returned HTTP 200 with currentRevision=2 and status=awaiting_review. Evidence: response-race.json.",
+      "exit_code": 1,
+      "status": "fail"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>"
+      ],
+      "evidence": "Overlapping sequential publications returned HTTP 201 with revision.number=2 but project.currentRevision=3 for the first publication. Evidence: publication-race.json.",
+      "exit_code": 1,
+      "status": "fail"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>"
+      ],
+      "evidence": "Temporary source copies with owner authorization or account-continuation guards removed caused expected regression failures. Original application files were untouched. Earlier diagnostic expectation failures remain recorded.",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "preview_client.py",
+        "--workspace",
+        ".",
+        "--ready"
+      ],
+      "evidence": "Parent fixed-origin preview was ready for 375/1440 widths. Rendering used an independently started assigned-port backend and an owned fresh temporary database.",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>",
+        "comment-reload-desktop",
+        "1440",
+        "<temporary-path>"
+      ],
+      "evidence": "Actual browser comment submission and reload retained literal markup, multilingual text, emoji and session-derived authorship; no browser errors or external requests.",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>",
+        "studio-publish-mobile",
+        "375",
+        "<temporary-path>"
+      ],
+      "evidence": "Actual staff publication reopened review, retained revision history and survived reload. Native PNG inspection confirmed mobile content precedes publication controls.",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>"
+      ],
+      "evidence": "Validated 18 independent preview reports with 101 completed actions, no horizontal overflow, browser errors or external requests. Inspected settled desktop/mobile PNGs against both frozen brand screenshots: login/error, authorized overviews, brief, decisions, discussion, publication, activity, account switch, keyboard focus and retained navigation drafts. Browser database inspection confirmed exactly one event per successful mutation and both immutable decisions.",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "cat",
+        "<measured-workspace>/runs/adaptive/gates/01/00-stdout.json"
+      ],
+      "evidence": "Inspected supplied raw contract assertions and supplemental browser probes. Independently verified implicated reload, permission, activity and responsive behavior. Restored project detail explains missing project-list after reload; completed independent writes retained all activity kinds. Recovery/account-switch assertions were also reproduced through the required integrated regressions and examined statically.",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "<temporary-path>"
+      ],
+      "evidence": "All 39 source-inventory SHA-256 hashes match the parent inventory and initial audit snapshot; git status is unchanged. Owned assigned-port listener was stopped through its execution session after cwd/output ownership verification.",
+      "exit_code": 0,
+      "status": "pass"
+    }
+  ],
+  "findings": [
+    {
+      "evidence": "Decision and publication handlers commit before rereading the project for their response (lines 286\u2013287 and 297\u2013298). Independent real HTTP/SQLite scheduling probes reproduced approval of revision 1 returning awaiting_review/currentRevision=2 after concurrent publication, and publication of revision 2 returning revision.number=2 alongside project.currentRevision=3. Stored mutations remain correct, but successful responses violate BRIEF.md's version/status contracts. Existing competing-write tests do not cover this post-commit interleaving.",
+      "file": "server.py",
+      "id": "AUD-001",
+      "line": 298,
+      "required_action": "Capture the successful mutation's project response snapshot while its transaction still holds the write lock, commit, then return that frozen result. Add deterministic decision/publication interleaving regressions and obtain a fresh full-scope independent re-audit.",
+      "severity": "normal",
+      "title": "Mutation responses can describe a subsequent transaction"
+    }
+  ],
+  "residual_risk": "Verification covers the synthetic loopback exercise with sampled Chromium desktop/mobile journeys through the parent bridge. It does not certify production security, deployment readiness, legal compliance or exhaustive device/assistive-technology compatibility.",
+  "risk": "critical",
+  "schema_version": 1,
+  "scope": {
+    "acceptance_criteria": "BRIEF.md and BRAND.md: actual AethDesign software/UIUX positioning; complete responsive local client/studio portal; secure server auth/session and account isolation across all async/recovery paths; bounded valid text/Unicode; atomic versioned decisions/publication/comment/activity and restart persistence; reliable committed-save/failed-refresh recovery; accurate accessible desktop/mobile journeys; critical full/release profiles, meaningful regressions and complete fresh independent gate.",
+    "base": "HEAD",
+    "changed_files": [
+      ".gitignore",
+      ".quality/LICENSE",
+      ".quality/audit-result.schema.json",
+      ".quality/quality.py",
+      ".quality/quality.toml",
+      "AGENTS.md",
+      "APP_PROMPT.txt",
+      "AUDIT_PROMPT.txt",
+      "BRAND.md",
+      "BRIEF.md",
+      "BUDGET.md",
+      "CLAUDE.md",
+      "MAP.md",
+      "MODEL_COSTS.json",
+      "NATIVE_MODELS.json",
+      "README.md",
+      "ROUTING.json",
+      "RUNTIME.md",
+      "TESTING.md",
+      "brand/aethdesign-home-1440.png",
+      "brand/aethdesign-home-375.png",
+      "brand/capture.json",
+      "brand/landing-page.txt",
+      "preview_client.py",
+      "public/app.mjs",
+      "public/favicon.svg",
+      "public/index.html",
+      "public/state.mjs",
+      "public/styles.css",
+      "qa_check.py",
+      "quality",
+      "scripts/check_demo.py",
+      "scripts/render_check.py",
+      "server.py",
+      "tests/__init__.py",
+      "tests/frontend.mjs",
+      "tests/test_backend.py",
+      "tests/test_frontend.py",
+      "verify_app.py"
+    ]
+  },
+  "untested": [],
+  "verdict": "FAIL",
+  "worktree_unchanged": true
+}
