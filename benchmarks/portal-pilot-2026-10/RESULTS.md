@@ -1,6 +1,8 @@
 # AethDesign Atelier: paired app-building results
 
-Adaptive ownership finished this one portal build **61.4% sooner**, with a **22.3% lower hypothetical coding API equivalent**. The single-agent frontend scored higher in anonymous screenshot review. Both outputs retain independently reproduced defects: neither passed the independent app gate or qualifies as a production client portal.
+Adaptive ownership froze its initial audit-ready build **61.4% sooner**, with a **22.3% lower hypothetical coding API equivalent**. The single-agent frontend scored higher in anonymous screenshot review. Both outputs retain independently reproduced defects: neither passed the independent app gate or qualifies as a production client portal.
+
+**Correction, 13 October 2026:** these are initial-build metrics; the benchmark did not complete Quality Code’s fix-and-re-audit loop. Original visual scores are capture-confounded. [Read the diagnosis and methodological correction](DIAGNOSIS.md).
 
 This is one exploratory matched pair, run adaptive first on a shared host. The common prompt builds a real Python/SQLite API and dependency-free browser interface: client/studio authentication, isolated projects, budgets, briefs, revision decisions, comments, immutable history and staff publication. Model choice, implementation and topology vary together; this experiment cannot isolate a causal delegation effect or establish subscription savings.
 
@@ -82,7 +84,7 @@ One fresh reviewer inspected all 24 original captures before receiving the rando
 | Responsive usability | 4.0 | 3.5 |
 | Forms / state clarity | 4.5 | 4.0 |
 
-Both have strong studio identity. Single's selected content and forms have clearer mobile order; adaptive repeats large artwork before actionable content and has a displaced publishing sidebar in one capture. Captured skip-link overlays affect both. Their trigger and normal-use frequency are unproven; scores describe the supplied rendered states, not universal behavior or measured accessibility compliance.
+Both have strong studio identity. Single's selected content and forms have clearer mobile order; adaptive repeats large artwork before actionable content and has a displaced publishing sidebar in one capture. Fresh diagnosis confirms the skip-link overlays and displaced fixed sidebar arise from full-page capture after scrolling; ordinary viewport rendering is correct. The original ratings remain historical screenshot judgments. They need reassessment with corrected captures before inferring a visual advantage; see DIAGNOSIS.md.
 
 ## Isolation correction and provenance
 

@@ -227,5 +227,15 @@
     "cost_percent_lower": 22.252770170669333,
     "output_tokens_lower": 25502,
     "reasoning_tokens_lower": 20198
+  },
+  "completion_correction": {
+    "date": "2026-10-13",
+    "measured_stage": "initial audit-ready build",
+    "accepted_completion_measured": false,
+    "accepted_completion_elapsed_seconds": null,
+    "accepted_completion_cost_usd": null,
+    "reason": "Audits happened afterfreeze and repairs were prohibited; both builders truthfully reported gates pending.",
+    "visual_status": "Original scores capture-confounded; no corrected rescore.",
+    "diagnosis": "DIAGNOSIS.md"
   }
 }
