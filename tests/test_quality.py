@@ -338,6 +338,9 @@ class QualityIntegrationTests(unittest.TestCase):
                 self.assertIn('## Visual and code-heavy workload ownership', delivered)
                 self.assertIn('one persistent design owner', delivered)
                 self.assertIn('permissions, state transitions and persistence', delivered)
+                self.assertIn('## Cost-aware implementation ownership', delivered)
+                self.assertIn('Whole-project risk', installer.delegation_block(ROOT))
+                self.assertIn('Lower effort on the same model is not cheaper-model delegation.', delivered)
                 self.assertIn('Preserve local instruction.', delivered)
 
     def test_current_version_refreshes_scoped_policy_without_configuration_loss(self):

@@ -75,3 +75,7 @@ The second portal instrument includes matched actual-studio references, exact-se
 ## ServiceFlow matched MVP benchmark
 
 `benchmarks/serviceflow-mvp-2026-10/` retains the common task, exact blank fixture, native-versus-portable provenance and uncapped builder/repair/fresh-audit controller. Full and release profiles run its offline instrumentation, source-projection and publication integrity checks plus preview contracts. Native model work and authenticated app acceptance are recorded experimental evidence, not invoked by these offline profiles. Runtime secrets are excluded by name before reading snapshot bytes. Final screenshots and independent app audits are distinct from static-gallery publication checks.
+
+## Cost-aware routing policy delivery
+
+Init/adopt/upgrade preserve project-specific guidance while delivering bounded implementation candidate comparison, separate product-risk and task-difficulty reasoning, and requested/observed model reporting. Installer fallback carries the bundle-decomposition rule without duplicating the full policy. Delivery tests do not establish model compliance or savings. Future trial design and the recorded same-model decision are explained in `docs/DELEGATION_ROUTING.md`; historical benchmark artifacts remain immutable.

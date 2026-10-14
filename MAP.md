@@ -27,7 +27,7 @@ Verification runs configured executables with user permissions. No sandbox. Pres
 - Highest specific matched risk wins; fallback covers unmatched paths.
 - Missing required evidence is not a passing audit.
 - Builder verification cannot replace required independent review.
-- Delegation uses native discovery with safe fallbacks; model and effort choices remain provider-neutral.
+- Delegation uses native discovery, bounded implementation candidate comparison and observed-setting checks; product risk does not alone determine model capability. Model/effort policy remains provider-neutral.
 - Keep engine/local copy and schema/template copy identical.
 - Distribution copies retain LICENSE and exclude Git history, local state, tests, and public documentation.
 
