@@ -1,0 +1,14 @@
+[
+  {
+    "op": "click",
+    "selector": "button:has-text('Customer 2')"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Sign in')"
+  },
+  {
+    "op": "click",
+    "selector": "[role=\"alert\"]"
+  }
+]

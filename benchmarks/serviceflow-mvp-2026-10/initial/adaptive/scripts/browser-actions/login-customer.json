@@ -1,0 +1,1 @@
+[{"op":"click","selector":"button:has-text('Customer'):not(:has-text('2'))"},{"op":"click","selector":"button:has-text('Sign in')"}]

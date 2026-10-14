@@ -1,0 +1,19 @@
+[
+  {
+    "op": "click",
+    "selector": "button:has-text('Provider')"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Sign in')"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Draft reply')"
+  },
+  {
+    "op": "fill",
+    "selector": "#draft-text",
+    "value": "Mobile draft edit; review required and not sent."
+  }
+]

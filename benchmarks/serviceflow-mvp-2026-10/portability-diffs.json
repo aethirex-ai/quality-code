@@ -1,0 +1,80 @@
+{
+  "format": "Per-file semantic diff descriptions plus exact native/public hashes; private report diff bodies excluded.",
+  "files": {
+    "continue-v2.py": {
+      "native_sha256": "de08d23f86033264c1dff00bf88d763dd5af2cc57b55992a6ee129ab25138c7c",
+      "public_sha256": "a7b3f8c90594ebf004b1a9cffaf6133929bc82fa8da7d4315106b882d2add825",
+      "change": "Replace private default benchmark/proof locations with package-relative defaults; resolve native runtime through existing explicit environment/default discovery. Recovery logic unchanged."
+    },
+    "continue.py": {
+      "native_sha256": "4634cd157fdaddbab984081307167dea6400d15b185d66eb2f8b27dc22245cfd",
+      "public_sha256": "dea0cdeba2947cd9ffaab2c2c3baab492a18e9b0085e735e99b1df6bc6354265",
+      "change": "Replace private runtime/proof locations with portable discovery; require separately supplied PASS proof with exact portable controller hash before subprocess, metadata or native actions. Historical native report is not executable approval."
+    },
+    "controller-amendment-audit.json": {
+      "native_sha256": "42355e35e4b13254f034c9e85a3bdc57dc147f828f21c679555e9cb4454c9751",
+      "public_sha256": "d09c529ba3e5f31cb5b138885221ab4a0fa28369804841f75aa95e1a82c177d3",
+      "change": "Sanitize private artifact references to descriptive private-evidence references; preserve historical verdict and exact original hash separately."
+    },
+    "controller-amendment2-audit.json": {
+      "native_sha256": "cbf67fb1b9b0f7ce8c99f8a111422817557c50edb2f374b5a9fee73b68f4e884",
+      "public_sha256": "05d35c65b484e99eb9ba2606b44707b558953452562631a02121f34a30570541",
+      "change": "Sanitize private scoped source/evidence references to descriptive private-evidence references; preserve historical native verdict, checks and limitations."
+    },
+    "controller-amendment2-entry-proof.json": {
+      "native_sha256": "a50aa0d813b14a1739cc60dbab15405229ae61d6fa93bb706d49b9ff0cd18ce5",
+      "public_sha256": "5d832b51b15ebb07f8a8595db916e6c67547b2036bade4af8091cff3f17d0af7",
+      "change": "Sanitize canonical report path reference only; retain original native controller/report hashes, so historical proof does not approve portable controller."
+    },
+    "native-protocol-amendment2.json": {
+      "native_sha256": "007ecc6b59107824fd2c92620dd2f36ebba494c4dcf93848646b6c8f6597f887",
+      "public_sha256": "61669f803410dd28c71c07dfec1742ee51c3ba997f5c7a1984bd46d245356e68",
+      "change": "Sanitize private native CLI and session-directory fields; preserve all native semantic protocol fields and frozen hash records."
+    },
+    "protocol-before-amendment2.json": {
+      "native_sha256": "cbc73e3fcd67a230fd73e64687c36957c7ba66469377bd6074b7d33c88df4841",
+      "public_sha256": "25076e6bba0eddedfb8dceb5ab3cd0569b9756569a275d4b81e312b9b2573ee3",
+      "change": "Sanitize private native CLI and session-directory fields; preserve prior full acceptance and frozen hash baseline for semantic amendment tests."
+    },
+    "run.py": {
+      "native_sha256": "b1f439b1960f4a58a223826b79c6d6b880eb636cfe3866ec94cebc8a5c3bd2ad",
+      "public_sha256": "b610ce85ddea223b0fa6c1cae74f1e79cc3ab6ea5e5b32b8fd93c52d5836e424",
+      "change": "Add runtime_protocol to resolve explicit SERVICEFLOW_NATIVE_CLI/SERVICEFLOW_SESSIONS_DIR or documented local discovery on new runs."
+    },
+    "seal.py": {
+      "native_sha256": "ef614cda2949933404cb553a563ada133f31b1bd4fb216557f3276a56901af1b",
+      "public_sha256": "99481ed8e46852b3c1f9881ba91a6e6521f9eb7946f9e28f0ef03a47c5093beb",
+      "change": "Use portable CLI/session placeholders; initialize fixture Git when absent; use nonpersonal synthetic benchmark commit email."
+    },
+    "test_amendment2_contracts.py": {
+      "native_sha256": "0e45c1c650514e5972fe89f6e20b1317dadfd655cc6535fef1afe1a377f285e7",
+      "public_sha256": "23a190ba7d3325ace8d64f76d09a1faef6dabace56c8a7a9deab4ca2d485b19f",
+      "change": "Resolve portable controller relative to test package; compare exact native semantic amendment against sanitized native protocol mirrors and assert public protocol semantic parity; verify portable controller hash."
+    },
+    "test_completion_runner.py": {
+      "native_sha256": "cf08299434fbc9e5355c2e8cff764513f2a07a32f283e3deb9e1570b7516022c",
+      "public_sha256": "f62fc236929e34bd1badd26d981ad2062fa0a8a0dc2b9f1c5e741824af2472cd",
+      "change": "Make real parser-only native help probe opt-in via explicit SERVICEFLOW_NATIVE_CLI; all fake subprocess behavior tests unchanged."
+    },
+    "test_continuation_v2.py": {
+      "native_sha256": "ecf8a40172e53723acf40da22eb5702d97b03c568e6032b84d245a9bf9a9f52b",
+      "public_sha256": "7e933d5f9c418fcfd52de037dbd87813b7e6b8e7259b5df44931c2b0b920ea1d",
+      "change": "Import package-relative portable v2 controller; all seven owned-fake recovery, privacy, source, timing and proof scenarios unchanged."
+    },
+    "report_recovery.py": {
+      "native_sha256": "0d107906437963fb26ff581a3b06cb49553965b0f496b49ceedd183ef263bcc7",
+      "public_sha256": "1e8c96c0a11a064a586199d623f98263c89d2a6269a93d10bc999e095b218eb9",
+      "change": "Replace private benchmark/proof defaults with package-relative defaults, resolve runtime through run.runtime_protocol; keep exact report-only correction/retry logic."
+    },
+    "test_report_recovery.py": {
+      "native_sha256": "d8f73a30a16b383a4743c57a080946f4799d7622fe8c7d8e4e5670e5b0db2242",
+      "public_sha256": "9bb6894e8af6b226c75a7d4d3d45b4640a90644fcc22aa64c788e170a1c3745a",
+      "change": "Resolve module directory and controller import relative to portable test package; all 27 owned synthetic cases unchanged."
+    },
+    "report-recovery-native-audit-summary.json": {
+      "native_sha256": "6ff2ac615c5b86b03508785947da24e7019a9866d8f389eb996384a5b0b2195c",
+      "public_sha256": "b57e565732459abc18c4ca70521954244d8b3e23d71925ae31561aea7392271d",
+      "change": "Publish only explicitly selected native audit fields and factual check summaries plus original full-report hash. No private path, command or arbitrary report body copied."
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "verdict": "PASS",
+  "controller_sha256": "de08d23f86033264c1dff00bf88d763dd5af2cc57b55992a6ee129ab25138c7c",
+  "canonical_report_path": "private-evidence/serviceflow-amendment2-canonical-audit.json",
+  "canonical_report_sha256": "cbf67fb1b9b0f7ce8c99f8a111422817557c50edb2f374b5a9fee73b68f4e884"
+}

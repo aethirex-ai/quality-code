@@ -1,0 +1,172 @@
+{
+  "limitations": [
+    "All 32 listed PNGs were visually inspected with view_image. Some tall images were automatically scaled in tool presentation, limiting precision for very fine text.",
+    "Assessment covers only rendered screenshots at supplied 1440- and 375-pixel widths, not interactions, intermediate widths, hidden content, keyboard behavior, measured contrast, backend correctness, security or accessibility conformance.",
+    "Subjects were evaluated anonymously; no source, private manifests, condition mapping, model or cost information was inspected.",
+    "Visible wording, record counts and service examples differ; scores assess visual execution rather than feature completeness or data parity."
+  ],
+  "mapping_revealed_after_review": {
+    "adaptive": "A",
+    "single": "B"
+  },
+  "raw_anonymous_review_sha256": "b4d2a8583b20e9e184a075873e683a0555136ecc7edf3152cb8c61e3f70e4d8e",
+  "reviewed_paths": [
+    "screenshots/single/1440/01-landing.png",
+    "screenshots/single/1440/02-login.png",
+    "screenshots/single/1440/03-customer-request.png",
+    "screenshots/single/1440/04-customer-dashboard.png",
+    "screenshots/single/1440/05-provider-dashboard.png",
+    "screenshots/single/1440/06-provider-request-detail.png",
+    "screenshots/single/1440/07-editable-deterministic-draft.png",
+    "screenshots/single/1440/08-admin-catalogue.png",
+    "screenshots/single/375/01-landing.png",
+    "screenshots/single/375/02-login.png",
+    "screenshots/single/375/03-customer-request.png",
+    "screenshots/single/375/04-customer-dashboard.png",
+    "screenshots/single/375/05-provider-dashboard.png",
+    "screenshots/single/375/06-provider-request-detail.png",
+    "screenshots/single/375/07-editable-deterministic-draft.png",
+    "screenshots/single/375/08-admin-catalogue.png",
+    "screenshots/adaptive/1440/01-landing.png",
+    "screenshots/adaptive/1440/02-login.png",
+    "screenshots/adaptive/1440/03-customer-request.png",
+    "screenshots/adaptive/1440/04-customer-dashboard.png",
+    "screenshots/adaptive/1440/05-provider-dashboard.png",
+    "screenshots/adaptive/1440/06-provider-request-detail.png",
+    "screenshots/adaptive/1440/07-editable-deterministic-draft.png",
+    "screenshots/adaptive/1440/08-admin-catalogue.png",
+    "screenshots/adaptive/375/01-landing.png",
+    "screenshots/adaptive/375/02-login.png",
+    "screenshots/adaptive/375/03-customer-request.png",
+    "screenshots/adaptive/375/04-customer-dashboard.png",
+    "screenshots/adaptive/375/05-provider-dashboard.png",
+    "screenshots/adaptive/375/06-provider-request-detail.png",
+    "screenshots/adaptive/375/07-editable-deterministic-draft.png",
+    "screenshots/adaptive/375/08-admin-catalogue.png"
+  ],
+  "rubric": {
+    "anchors": {
+      "0": "Absent or unusable visual execution",
+      "1": "Major pervasive visual defects",
+      "2": "Several substantial visual weaknesses",
+      "3": "Competent with noticeable limitations",
+      "4": "Strong with minor or localized weaknesses",
+      "5": "Exceptional, consistently resolved execution"
+    },
+    "categories": {
+      "coherent_system_across_states": "Consistency of color, type, components, spacing and brand across eight states",
+      "desktop_composition": "Use of 1440-pixel layout, alignment, density and balance",
+      "mobile_composition": "Use of 375-pixel layout, stacking, content fit and reading rhythm",
+      "typography_readability": "Type sizing, wrapping, line length and visible contrast",
+      "visual_hierarchy": "Clarity of primary content, actions, grouping and scan order"
+    },
+    "scale": "0\u20135 per category in 0.5 increments; total out of 25; identical rubric for both anonymous subjects"
+  },
+  "schema": "serviceflow.blind-visual-review.v1",
+  "subjects": {
+    "A": {
+      "observations": [
+        {
+          "defects": "Mobile keeps service cards in two narrow columns, causing frequent heading/body wraps and small supporting text; the top demo strip and three-item reassurance row are visually tiny.",
+          "state": "01-landing",
+          "strengths": "Large serif headline, restrained green palette and house illustration establish a clear, warm identity. Desktop services align cleanly and the process panel has a strong two-column balance."
+        },
+        {
+          "defects": "Mobile headline visibly joins 'home.Your' without a space, weakening polished typography; the demo strip and footer remain very small.",
+          "state": "02-login",
+          "strengths": "Desktop form is clearly grouped, with a well-balanced illustration/copy column and prominent sign-in action. Mobile demo accounts form a tidy two-by-two grid."
+        },
+        {
+          "defects": "Mobile retains several header/navigation bands before the form, increasing visual overhead; helper text is notably smaller than body copy.",
+          "state": "03-customer-request",
+          "strengths": "Numbered sections, dividers and generous full-width fields create a readable form. Desktop contextual panel is clearly separated; mobile sections stack without visible horizontal overflow."
+        },
+        {
+          "defects": "Mobile three-across summary cards and side-by-side search/filter create small labels and clipped search placeholder; repeated wrench icons provide little service differentiation.",
+          "state": "04-customer-dashboard",
+          "strengths": "Desktop table aligns service, location, date and status well. Mobile converts rows into compact readable cards with statuses kept distinct."
+        },
+        {
+          "defects": "Mobile six summary tiles stay three across, making secondary text small. Desktop repeated icons and similarly toned surfaces reduce some scanning distinction.",
+          "state": "05-provider-dashboard",
+          "strengths": "Desktop summary row, compact recent enquiries and full request table create a coherent work queue. Mobile recent enquiries remain neatly grouped."
+        },
+        {
+          "defects": "The mobile status action occurs after a long request card and history; progress labels and request metadata are very small.",
+          "state": "06-provider-request-detail",
+          "strengths": "Desktop clearly separates the request, history and right-hand actions. Mobile contact/date/service information stacks cleanly, and the five-step progress line fits."
+        },
+        {
+          "defects": "Desktop draft editor is confined to the narrow right column while a large lower-left area is empty, producing a cramped writing area and unbalanced page.",
+          "state": "07-editable-deterministic-draft",
+          "strengths": "Draft state preserves the same shell and uses a distinct pale panel with visible review guidance. Mobile editor has a sensible single-column width."
+        },
+        {
+          "defects": "Desktop three-column grid leaves the fourth card isolated with a large empty lower-right area. Card action text and status badges are small.",
+          "state": "08-admin-catalogue",
+          "strengths": "Clear add-service action, explanatory banner and consistent service cards. Mobile single-column cards retain comfortable content width."
+        }
+      ],
+      "scores": {
+        "coherent_system_across_states": 4.5,
+        "desktop_composition": 4,
+        "mobile_composition": 4,
+        "typography_readability": 4,
+        "visual_hierarchy": 4.5
+      },
+      "total": 21
+    },
+    "B": {
+      "observations": [
+        {
+          "defects": "Mobile page is lengthy, and the illustration caption, eyebrow text and footer are quite small. The hero illustration uses a fairly large vertical share.",
+          "state": "01-landing",
+          "strengths": "Distinctive serif headline and illustrated home provide a strong focal point. Desktop hero, four service cards and process section have clear alignment; mobile single-column cards allow readable descriptions."
+        },
+        {
+          "defects": "Small disclaimer text and the collapsed demo-account row have low visual prominence; the left desktop icon panel is decorative rather than informationally dense.",
+          "state": "02-login",
+          "strengths": "Desktop two-column introduction/form composition is balanced. Mobile form has clear labels, comfortable field widths and a prominent sign-in button."
+        },
+        {
+          "defects": "Mobile supporting service/context panels appear only after the complete long form, extending the page; helper and disclaimer text is small.",
+          "state": "03-customer-request",
+          "strengths": "Numbered form sections and supportive desktop sidebar establish clear grouping. Mobile full-width fields and separate dates avoid cramped columns."
+        },
+        {
+          "defects": "Large request cards leave fairly generous unused space, making the three-request mobile list long; footnote text is very small.",
+          "state": "04-customer-dashboard",
+          "strengths": "Desktop summary and request cards have clear hierarchy and service-specific icons. Mobile summary cards deliberately rearrange to label-left/count-right, preserving readability."
+        },
+        {
+          "defects": "Mobile recent-enquiry section shows only one visible card while desktop shows three, and the long stacked list demands substantial scrolling; fine table metadata is small.",
+          "state": "05-provider-dashboard",
+          "strengths": "Desktop six-status overview, recent cards and table align cleanly. Mobile summary tiles use two columns and request rows reflow into legible grouped blocks."
+        },
+        {
+          "defects": "Mobile puts the next-step action after work, history and drafting, delaying the primary workflow action. Progress labels and card corner annotations are small.",
+          "state": "06-provider-request-detail",
+          "strengths": "Desktop next-step card is prominent beside work details, and the contact/service panels form a consistent secondary column. Mobile progress steps and card widths fit without visible clipping."
+        },
+        {
+          "defects": "Mobile editor shows only part of the reply at once in its fixed visible area, and the next-step action is further down the long page. Fine review/disclaimer copy is small.",
+          "state": "07-editable-deterministic-draft",
+          "strengths": "Desktop editor uses the broad main column, giving the reply comfortable line lengths. Confirmation guidance, editor label, review checkbox and copy control form a clear sequence; mobile layout remains contained."
+        },
+        {
+          "defects": "Generous card spacing makes mobile catalogue lengthy; deactivate links, status badges and activity annotations are comparatively small.",
+          "state": "08-admin-catalogue",
+          "strengths": "Balanced two-by-two desktop catalogue, distinct service icons and consistent edit/deactivate/delete action placement. Mobile single-column cards preserve readable headings and comfortable spacing."
+        }
+      ],
+      "scores": {
+        "coherent_system_across_states": 4.5,
+        "desktop_composition": 4.5,
+        "mobile_composition": 4.5,
+        "typography_readability": 4.5,
+        "visual_hierarchy": 4.5
+      },
+      "total": 22.5
+    }
+  }
+}

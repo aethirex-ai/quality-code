@@ -1,0 +1,26 @@
+[
+  {
+    "op": "click",
+    "selector": "button:has-text('Admin')"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Sign in')"
+  },
+  {
+    "op": "click",
+    "selector": "a:has-text('Service catalogue')"
+  },
+  {
+    "op": "click",
+    "selector": ".catalogue-card:has(h3:has-text('Plumbing repairs')) button:has-text('Delete')"
+  },
+  {
+    "op": "click",
+    "selector": "[role=dialog] button:has-text('Delete service')"
+  },
+  {
+    "op": "click",
+    "selector": "[role=alert]"
+  }
+]

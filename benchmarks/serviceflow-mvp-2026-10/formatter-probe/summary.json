@@ -1,0 +1,11 @@
+{
+  "probe": "native-short-canonical-identity",
+  "matches": true,
+  "expected_length": 94,
+  "actual_length": 94,
+  "scope_files": [
+    "src/index.ts"
+  ],
+  "schema_sha256": "a967d1ba3759a076ede4873e7a26316d64b6dbb2e028af3af5ba973194553aaa",
+  "application_audit": false
+}

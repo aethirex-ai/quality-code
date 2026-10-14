@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "verdict": "PASS",
+  "scope": {
+    "base": "Explicit amendment file scope and before backups in private-evidence/serviceflow-controller-amendment-scope.json; external controller SHA256 4634cd157fdaddbab984081307167dea6400d15b185d66eb2f8b27dc22245cfd",
+    "changed_files": [
+      "collect.py",
+      "audit-output-schema.json",
+      "test_serviceflow_instrument.py",
+      "test_audit_formatter.py",
+      "protocol.json",
+      "private-evidence/serviceflow-continue.py"
+    ],
+    "acceptance_criteria": "Preserve raw old invalid-scope audit unchanged, use its concrete reproduced defects only as supplemental builder evidence, original builder exact resume then NEW complete correctly scoped independent ServiceFlow audits until PASS; no stage/global/round caps. Active original adaptive builder must finish uninterrupted; old controller will detect amended source and halt safely before initial audit, then same app continues through fresh audits. Time/usage/iterations retained, infrastructure gap and possible overlap disclosed, no unqualified causal speed result. No secret bytes read/printed/published. No app code changes by controller."
+  },
+  "risk": "high",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Independent unmodified 82 tests pass in 9.275s; private-evidence/serviceflow-controller-audit-tests-full.log. First sandbox run could not inspect ps or bind loopback (6 environmental errors); authorized rerun outside sandbox passed all 82. CLI invocation is parser-only --help, no model call."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "preview/tests.py",
+        "Contracts"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "6 preview contract tests pass in 0.190s; synthetic temporary mailboxes, validation, path and redaction checks."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "private-evidence/serviceflow-continuation-audit-repro.py"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "8 independently authored owned-fake cases pass; private-evidence/serviceflow-continuation-audit-repro.log. Exercises supplemental old finding preservation, exact original builder resume, fresh correctly scoped auditor, repeated 7 FAIL/repair rounds before PASS, structural-gate failure despite auditor PASS, BLOCKED, active original rejection, source mismatch and auditor source mutation. Original metadata/counters, raw verdict bytes, calendar/gap/monotonic/overlap disclosures and sanitized snapshots asserted; all native/model/real broker calls replaced by owned fakes."
+    },
+    {
+      "command": [
+        "independent-static-review",
+        "collect.py",
+        "audit-output-schema.json",
+        "protocol.json",
+        "private-evidence/serviceflow-continue.py"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Reviewed full continuation control/failure/cleanup paths, source-inventory diff, formatter schema and protocol diff, inherited execute_phase fresh-root/exact-resume independence and validate_verdict strict scope/profile acceptance checks. Controller SHA256 4634cd157fdaddbab984081307167dea6400d15b185d66eb2f8b27dc22245cfd. No native phase/global/audit-round cap. Controller invokes no app-source writes and requires completed original phases and matching original final source before continuation. Frozen task/acceptance remain unchanged; original audit raw metadata never becomes canonical acceptance."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-c",
+        "run.verify_freeze(protocol,single_site)"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Current real single protected corpus and frozen measurement instruments independently match current protocol. Semantic formatter diff is acceptance const only; original explicit types unchanged. Protocol differences limited to declared frozen hashes and two disclosed instrument amendments; all task, scope and acceptance values remain equal."
+    },
+    {
+      "command": [
+        "independent-owned-privacy-negative-control"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Guarded Path.read_bytes raises on fake .auth-secret: corrected inventory and real sanitized snapshot never access those bytes; prior inventory raises, demonstrating sensitivity to the original defect. Existing meaningful source paths remain covered by regression. No measured credential bytes read/printed or source inspected beyond scoped instruments/contracts."
+    },
+    {
+      "command": [
+        "independent-final-hash-check"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Every scoped instrument and external controller hash equals initial recorded state; original raw audit SHA256 remains 6d32b55cbfa8c0378d3db471b285f773f9ca2308b9d4701810654117a67b4a85. Audit changed no measured app/source, project tests, documentation, configuration, native sessions or metadata. Only temporary auditor evidence/report files created."
+    }
+  ],
+  "findings": [],
+  "untested": [],
+  "residual_risk": "PASS covers the frozen controller/inventory/formatter amendment, not ServiceFlow product acceptance. No native model work, active adaptive builder interaction, measured app mutation, or live service call was performed. Future native phases must independently validate each app and retain counters; model/provider failures and real broker availability remain operational risks. Existing historical snapshots containing the prior private runtime artifact stay private. Timing includes infrastructure gap and possible overlap and cannot support an unqualified causal speed claim. Explicit-file audit lacks Git history; scoped hashes prove auditor source nonmutation.",
+  "worktree_unchanged": true
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "Field-allowlisted historical native report-recovery delta audit summary; original full report remains private",
+  "schema_version": 1,
+  "verdict": "PASS",
+  "risk": "high",
+  "controller_sha256": "0d107906437963fb26ff581a3b06cb49553965b0f496b49ceedd183ef263bcc7",
+  "original_native_audit_sha256": "6ff2ac615c5b86b03508785947da24e7019a9866d8f389eb996384a5b0b2195c",
+  "checked_contracts": [
+    "exact original independent auditor resume, report-only correction",
+    "immutable original report/events/source and archival retry proof",
+    "single cumulative auditor root with verified correction usage",
+    "strict canonical PASS/FAIL/BLOCKED validation",
+    "exit1 exact config startup failure retry only with empty events/no native growth",
+    "read-only sandbox without named permissions overrides",
+    "failed startup timing and gaps retained; current canonical metadata corrected only after validation"
+  ],
+  "checks": {
+    "supplied_synthetic_tests": 27,
+    "extended_independent_tests": 33,
+    "actual_nonmodel_config_load": "v1 fails known config error, corrected v2 loads successfully; no native turn",
+    "all_recorded_check_statuses": [
+      "pass",
+      "pass",
+      "pass",
+      "pass",
+      "pass",
+      "pass",
+      "pass"
+    ],
+    "all_recorded_exit_codes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "worktree_unchanged": true,
+  "limitations": [
+    "Native historical proof accepts native bytes only; portable controller needs independent publication acceptance.",
+    "No raw private reports, commands, root IDs or native transcript bodies are included in this summary.",
+    "Future actual auditor response and provider behavior remain runtime checks; this is not application acceptance."
+  ]
+}

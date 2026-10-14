@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-14",
+  "kind": "ServiceFlow full-stack MVP matched uncapped task-to-independent-acceptance pair",
+  "completion_mode": "uncapped",
+  "native_cli": "codex",
+  "sessions_dir": "<set SERVICEFLOW_SESSIONS_DIR>",
+  "root_model": "gpt-6.1-sol",
+  "root_reasoning_effort": "high",
+  "native_helper_cap": 3,
+  "root_selection": "Same matched root/auditor as preceding experiment; native refreshed catalog supports high; implementation helpers select supported fit. Generic policy has no model names.",
+  "shared_budget_seconds": null,
+  "initial_builder_cap_seconds": null,
+  "audit_phase_cap_seconds": null,
+  "repair_phase_cap_seconds": null,
+  "gate_reserve_seconds": null,
+  "cleanup_reserve_seconds": 30,
+  "fixed_gate_cap_seconds": null,
+  "max_audit_rounds": null,
+  "order": [
+    "single",
+    "adaptive"
+  ],
+  "ports": {
+    "single": 55838,
+    "adaptive": 55839
+  },
+  "prompt_sha256": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+  "fixture_sha256": {
+    ".quality/LICENSE": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+    ".quality/audit-result.schema.json": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+    ".quality/quality.py": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+    "AGENTS.md": "5813288cb4233639b306fc0808fd03504a11218f80657d0daae88dac59751e20",
+    "APP_PROMPT.txt": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+    "AUDIT_PROMPT.txt": "a8a15e19342d06539a25512d2ab301ec823f00c5010f1566653884256b72302a",
+    "BRAND.md": "415fc360b754c32c4671533d19c5edb3f8f191c07ad3976f60bcd4848e193f34",
+    "BRIEF.md": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+    "BUDGET.md": "d6ea5200dcec427df0e09c6eaca10f73d71856276d536526f6e5ad16e59697ef",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "MODEL_COSTS.json": "00429a8ad67894dbae85ad993f62cf7a47fc77311628b65cc611755343ec97ae",
+    "NATIVE_MODELS.json": "d6e6e1ebd2fb111d1ddd3924d50b18033b7a859595794a6e1c3fff0480590f67",
+    "RUNTIME.md": "1a5545b44dbc17d2f2d053f5c850bc0c830b8e727708fe06599d58bc8664a419",
+    "brand/aethdesign-home-1440.png": "094794c739ebebf4468e63ae9414df7dc6915a7e6076b67ad45e95aa0dd56f5e",
+    "brand/aethdesign-home-375.png": "8ffa62f886e19983875c53bc8501342f4875855c6f0f70363f16b51d21018d1a",
+    "brand/capture.json": "9ffc4a7944054116b4f33de5b05e2ab145da49b63b8e62e9e27c92dec8d428db",
+    "brand/landing-page.txt": "11582a20e4d3a634ad1796e6215201c5f3169befc262818c784e5b2c7a80c021",
+    "preview_client.py": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+    "qa_check.py": "472ed87fd7ee56868064c1b5b76cf75644a2a0dcade8a46200644c232992a6ba",
+    "quality": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4"
+  },
+  "initial_fixture_sha256": {
+    ".gitignore": "3a87347065bffdec45bd969b96df9bc527e18b7b16912d8d2488ad9f24c95524",
+    ".quality/LICENSE": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+    ".quality/audit-result.schema.json": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+    ".quality/quality.py": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+    ".quality/quality.toml": "57d2c31f266b0551f5c3854ca4eda17056095a6cb2540fdc3f8ad23966bee993",
+    "AGENTS.md": "5813288cb4233639b306fc0808fd03504a11218f80657d0daae88dac59751e20",
+    "APP_PROMPT.txt": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+    "AUDIT_PROMPT.txt": "a8a15e19342d06539a25512d2ab301ec823f00c5010f1566653884256b72302a",
+    "BRAND.md": "415fc360b754c32c4671533d19c5edb3f8f191c07ad3976f60bcd4848e193f34",
+    "BRIEF.md": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+    "BUDGET.md": "d6ea5200dcec427df0e09c6eaca10f73d71856276d536526f6e5ad16e59697ef",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "MAP.md": "f8d7b0bff1a2a984549f746a61795e53a85595b3ecb7794e7255ecf6bce3707d",
+    "MODEL_COSTS.json": "00429a8ad67894dbae85ad993f62cf7a47fc77311628b65cc611755343ec97ae",
+    "NATIVE_MODELS.json": "d6e6e1ebd2fb111d1ddd3924d50b18033b7a859595794a6e1c3fff0480590f67",
+    "RUNTIME.md": "1a5545b44dbc17d2f2d053f5c850bc0c830b8e727708fe06599d58bc8664a419",
+    "TESTING.md": "58224c5ad47a04f9872b8f30617d6b8a96b4a2dfc36841448883d54ddf44624f",
+    "brand/aethdesign-home-1440.png": "094794c739ebebf4468e63ae9414df7dc6915a7e6076b67ad45e95aa0dd56f5e",
+    "brand/aethdesign-home-375.png": "8ffa62f886e19983875c53bc8501342f4875855c6f0f70363f16b51d21018d1a",
+    "brand/capture.json": "9ffc4a7944054116b4f33de5b05e2ab145da49b63b8e62e9e27c92dec8d428db",
+    "brand/landing-page.txt": "11582a20e4d3a634ad1796e6215201c5f3169befc262818c784e5b2c7a80c021",
+    "preview_client.py": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+    "qa_check.py": "472ed87fd7ee56868064c1b5b76cf75644a2a0dcade8a46200644c232992a6ba",
+    "quality": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4"
+  },
+  "frozen_sources_sha256": {
+    "ACCEPTANCE.md": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+    "APP_PROMPT.txt": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+    "AUDIT_PROMPT.txt": "a8a15e19342d06539a25512d2ab301ec823f00c5010f1566653884256b72302a",
+    "BRAND.md": "415fc360b754c32c4671533d19c5edb3f8f191c07ad3976f60bcd4848e193f34",
+    "README.md": "aa05294876662535e8018243609b83c466022a399897670d6ac033b0b8eb627f",
+    "audit-output-schema.json": "84920f09538e195afda89e652208a22d702eb18753866e2d4b164ed68bf7693a",
+    "collect.py": "6359a82957f05f1831c24bfc26bb70eef4eaa1cd776b76f829d42eef2f2ebc9e",
+    "native-model-catalog.json": "d6e6e1ebd2fb111d1ddd3924d50b18033b7a859595794a6e1c3fff0480590f67",
+    "phase_collect.py": "03cc950c104d791345ec2f0d425d57279450330655c6e87de480f786252b62ba",
+    "preview/broker.py": "ae967c0f79b40599723823f8165078f08695c4aaf057ffadf9bd2a1b6b434097",
+    "preview/client.py": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+    "preview/render.mjs": "d6e61ad7091793aa070bb8b43b8b5c5f87e7e2754edf257fedabf2e77ae924f2",
+    "preview/tests.py": "ba9e3bd0f0698681799a12327260644efa599be53f3c4f179801cafac3440281",
+    "prices.json": "00429a8ad67894dbae85ad993f62cf7a47fc77311628b65cc611755343ec97ae",
+    "qa_check.py": "472ed87fd7ee56868064c1b5b76cf75644a2a0dcade8a46200644c232992a6ba",
+    "run.py": "b1f439b1960f4a58a223826b79c6d6b880eb636cfe3866ec94cebc8a5c3bd2ad",
+    "seal.py": "ef614cda2949933404cb553a563ada133f31b1bd4fb216557f3276a56901af1b",
+    "structural_gate.py": "2b652b72d5530e13772d58825f70cd56638c59dd2d6e1241e2a9f35b37a689b4",
+    "telemetry.py": "7bc8794283d3f454a35faf3ec7b051c1927f6936d2eb3f926b7359d5df810dc4",
+    "test_audit_formatter.py": "d439712836b1c643bb7950e4c15942e212611243e7fa6e17f5c3758414bdcbf1",
+    "test_collect.py": "c7713d547f21e33309d3a51b296e5a023a67867326767ae7e804fe050d58b458",
+    "test_completion_runner.py": "cf08299434fbc9e5355c2e8cff764513f2a07a32f283e3deb9e1570b7516022c",
+    "test_qa_check.py": "25798d4302f8fa517b380bd8b9176c1d618846e985feaa4f5ea016a114218bb4",
+    "test_replay_cleanup.py": "ebb6d6d826a9e1afe11fd31ef4ad313dce1f63e3fcfd892471dc12e0fc9cb741",
+    "test_serviceflow_instrument.py": "3f8a1dfc35451a3840852d0711beaa06aacb3d54a3d9349859de2fd71b7e9787",
+    "test_telemetry.py": "b14b670fa1de27430f46a4288426397ec329adff8d46dda94580743adc7e1ba5",
+    "gate_support/preload.cjs": "0efb0f3fd3b40929511ca36349b404e2740b3ae43a748ffe5375ff445b2ed894",
+    "gate_support/gate_registration.py": "3f2462a0e4b7dfefaf8c536333a5e673e22486f50afe42240130a29a98edf67b",
+    "gate_support/sitecustomize.py": "d310fa893118dd94661b85823720fe00b860323e21423988e1c3dc80ff8dc744"
+  },
+  "required_frozen_sources": [
+    "run.py",
+    "phase_collect.py",
+    "collect.py",
+    "telemetry.py",
+    "qa_check.py",
+    "structural_gate.py",
+    "preview/broker.py",
+    "preview/render.mjs",
+    "APP_PROMPT.txt",
+    "AUDIT_PROMPT.txt",
+    "audit-output-schema.json",
+    "ACCEPTANCE.md",
+    "gate_support/preload.cjs",
+    "gate_support/sitecustomize.py"
+  ],
+  "audit_required_risk": "critical",
+  "audit_required_commands": [
+    [
+      "./quality",
+      "verify",
+      "full"
+    ],
+    [
+      "./quality",
+      "verify",
+      "release"
+    ]
+  ],
+  "required_critical_route": "auth-and-state",
+  "critical_implementation_paths": [
+    "src/auth/service.ts",
+    "app/api/requests/route.ts",
+    "package.json"
+  ],
+  "initial_forbidden_paths": [
+    "package.json",
+    "src",
+    "app",
+    "public",
+    "server.ts"
+  ],
+  "backend_command_markers": [
+    "node",
+    "next",
+    "tsx",
+    "vite",
+    "npm",
+    "bun"
+  ],
+  "network_allow_domains": [
+    "127.0.0.1",
+    "localhost",
+    "registry.npmjs.org",
+    "binaries.prisma.sh",
+    "github.com",
+    "release-assets.githubusercontent.com",
+    "objects.githubusercontent.com"
+  ],
+  "audit_scope_base": "HEAD",
+  "audit_acceptance_criteria": "# ServiceFlow common acceptance basis\nBoth subjects receive the same APP_PROMPT.txt and frozen AethDesign reference. Clean isolated starting fixtures; same model/effort for primary and independent auditor; only adaptive implementation may delegate. Stack choice is part of implementation judgment and must be reported as a possible comparison confounder. No time or round caps; no mandatory swarm. No live AI/provider/account/subscription calls.\n\nRequired observable outcomes:\n1. README fresh setup installs pinned dependencies, migrates relational database, seeds four role/ownership demo users and runs app; production build and real full/release profiles pass.\n2. Authentication uses a mature library and each role reaches appropriate views; unauthorized/unauthenticated writes and cross-site writes fail through server enforcement.\n3. Customer request validation, submission, own dashboard and persisted history work; second customer ownership isolation holds through direct route/API and draft endpoints.\n4. Provider totals/search/filter/detail and permitted transitions work; invalid/stale transitions fail without partial state or successful history.\n5. Admin catalogue CRUD/activation works; provider cannot manage services; inactive services cannot create requests and referenced service history survives deletion policy.\n6. Deterministic no-key drafting works server-side, at most three useful questions, editable/review-labeled and no sending/status mutation; customer access fails; configured server-side adapter is implemented and tested with mocks only, secrets/PII not leaked.\n7. Integrated customer-submit/provider-update journey works in a real browser; database/history survives reload/restart; committed-write/failed-refresh behavior is coherent and safe.\n8. Real desktop/mobile landing, request form, customer dashboard, provider dashboard/detail/draft and admin service states show coherent identity, usable layout, labels, focus, keyboard behavior and no missing assets/runtime failures.\n9. Every required verification step and full-scope fresh independent audit completes; blockers are repaired in the original builder session then reviewed by a fresh independent auditor. Missing evidence is BLOCKED, not PASS.\n\nRecord initial and accepted immutable source snapshots, actual topology/models/effort, native input/cached-input/output subsets without double-counting, all audit/repair rounds and evidence-backed defect/fix cycles. Clock initial implementation and end-to-end verified completion separately; retain transport interruptions and unknown usage. Frozen prior portal results are outside this experiment. Anonymous final visual grading is separate from app acceptance and cannot repair apps or change measured outcomes.\n",
+  "gate_commands": [
+    [
+      "python3",
+      "{root}/structural_gate.py",
+      "{site}",
+      "{out}"
+    ]
+  ],
+  "measurement_boundary": "Initial builder and descendants, parent structural checks, every fresh independent full-scope audit, exact-root repairs and cleanup included. Setup/preflight and final blind grading/publication separately reported, not free. No live AI calls. Native counters/subsets reconciled without double-counting; missing consumption unknown.",
+  "limitations": [
+    "Single exploratory pair, single first; no causal or subscription-saving inference.",
+    "Independent stack choices may affect comparison.",
+    "No elapsed or audit-round caps; native/account/transport/tool blockers remain observable.",
+    "Parent browser preview needed because native Chromium IPC is blocked.",
+    "Parent structural gate is not a functional score; complete fresh independent acceptance required."
+  ],
+  "audit_product_scope": "all-source",
+  "instrument_amendments": [
+    {
+      "date": "2026-10-14",
+      "kind": "private runtime auth-secret inventory correction",
+      "reason": "Single canonical FAIL correctly omitted generated data/.auth-secret; parent incorrectly treated it as product source and halted before repair. No task, app source or acceptance change; no native cancellation/reset. Original snapshots retained private, never publish the secret.",
+      "original_protocol_sha256": "b1717e2b29915cdf3fae0d6256513a33e310ec93818916e53b10cebc4dd918a1",
+      "changed_instruments": [
+        "collect.py",
+        "test_serviceflow_instrument.py"
+      ],
+      "time_policy": "All condition elapsed and infrastructure interruption retained; actual overlap reported, no unqualified pure speed winner."
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "formatter scope metadata correction",
+      "reason": "Old portal acceptance const was retained in output schema despite ServiceFlow prompt. Preserve original auditor output as invalid canonical metadata and all concrete reproduction evidence; use evidence for builder fixes, then require a new complete independent audit with correct ServiceFlow formatter. Do not rewrite original verdict or accept it.",
+      "changed_instruments": [
+        "audit-output-schema.json",
+        "test_audit_formatter.py"
+      ],
+      "continuation": "Keep measured sessions and all costs/time. Let active adaptive builder finish without interruption; original controller will halt at source-freeze boundary and be continued under corrected controller, no code restart."
+    }
+  ]
+}

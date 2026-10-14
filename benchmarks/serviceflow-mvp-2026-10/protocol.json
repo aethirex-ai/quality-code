@@ -1,0 +1,482 @@
+{
+  "acceptance_document_sha256": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+  "audit_acceptance_criteria": "ServiceFlow acceptance SHA256 0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+  "audit_phase_cap_seconds": null,
+  "audit_product_scope": "all-source",
+  "audit_required_commands": [
+    [
+      "./quality",
+      "verify",
+      "full"
+    ],
+    [
+      "./quality",
+      "verify",
+      "release"
+    ]
+  ],
+  "audit_required_risk": "critical",
+  "audit_scope_base": "HEAD",
+  "backend_command_markers": [
+    "node",
+    "next",
+    "tsx",
+    "vite",
+    "npm",
+    "bun"
+  ],
+  "cleanup_reserve_seconds": 30,
+  "completion_mode": "uncapped",
+  "critical_implementation_paths": [
+    "src/auth/service.ts",
+    "app/api/requests/route.ts",
+    "package.json"
+  ],
+  "date": "2026-10-14",
+  "fixed_gate_cap_seconds": null,
+  "fixture_sha256": {
+    ".quality/LICENSE": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+    ".quality/audit-result.schema.json": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+    ".quality/quality.py": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+    "AGENTS.md": "5813288cb4233639b306fc0808fd03504a11218f80657d0daae88dac59751e20",
+    "APP_PROMPT.txt": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+    "AUDIT_PROMPT.txt": "a8a15e19342d06539a25512d2ab301ec823f00c5010f1566653884256b72302a",
+    "BRAND.md": "415fc360b754c32c4671533d19c5edb3f8f191c07ad3976f60bcd4848e193f34",
+    "BRIEF.md": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+    "BUDGET.md": "d6ea5200dcec427df0e09c6eaca10f73d71856276d536526f6e5ad16e59697ef",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "MODEL_COSTS.json": "00429a8ad67894dbae85ad993f62cf7a47fc77311628b65cc611755343ec97ae",
+    "NATIVE_MODELS.json": "d6e6e1ebd2fb111d1ddd3924d50b18033b7a859595794a6e1c3fff0480590f67",
+    "RUNTIME.md": "1a5545b44dbc17d2f2d053f5c850bc0c830b8e727708fe06599d58bc8664a419",
+    "brand/aethdesign-home-1440.png": "094794c739ebebf4468e63ae9414df7dc6915a7e6076b67ad45e95aa0dd56f5e",
+    "brand/aethdesign-home-375.png": "8ffa62f886e19983875c53bc8501342f4875855c6f0f70363f16b51d21018d1a",
+    "brand/capture.json": "9ffc4a7944054116b4f33de5b05e2ab145da49b63b8e62e9e27c92dec8d428db",
+    "brand/landing-page.txt": "11582a20e4d3a634ad1796e6215201c5f3169befc262818c784e5b2c7a80c021",
+    "preview_client.py": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+    "qa_check.py": "472ed87fd7ee56868064c1b5b76cf75644a2a0dcade8a46200644c232992a6ba",
+    "quality": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4"
+  },
+  "frozen_sources_sha256": {
+    "ACCEPTANCE.md": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+    "APP_PROMPT.txt": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+    "AUDIT_PROMPT.txt": "a8a15e19342d06539a25512d2ab301ec823f00c5010f1566653884256b72302a",
+    "BRAND.md": "415fc360b754c32c4671533d19c5edb3f8f191c07ad3976f60bcd4848e193f34",
+    "INSTRUMENTS.md": "478eb1840dd5b20bbafb4df1a407d0e4b00a5693477d7108b7a87053dd2e928e",
+    "REPORT_RECOVERY.md": "31c0aa55816c5c87462294de0817328fd030dd9814e652f1dcf51309d040ed5a",
+    "audit-output-schema.json": "13eb7193299af2c5f656f987a1f927284b767414157e9153d0ca592b262ee0b8",
+    "collect.py": "d6969b30437a202ca6389772ca8fc9bb22ba7c906cfeb63f00e40eaae9897d31",
+    "continue-v2.py": "a7b3f8c90594ebf004b1a9cffaf6133929bc82fa8da7d4315106b882d2add825",
+    "continue.py": "dea0cdeba2947cd9ffaab2c2c3baab492a18e9b0085e735e99b1df6bc6354265",
+    "controller-amendment-audit.json": "d09c529ba3e5f31cb5b138885221ab4a0fa28369804841f75aa95e1a82c177d3",
+    "controller-amendment2-audit.json": "05d35c65b484e99eb9ba2606b44707b558953452562631a02121f34a30570541",
+    "controller-amendment2-entry-proof.json": "5d832b51b15ebb07f8a8595db916e6c67547b2036bade4af8091cff3f17d0af7",
+    "formatter-probe/result.json": "0cfe506de84d4336e282c21b8bc93671c1ab78361a184e71c62f39a656ac0bfc",
+    "formatter-probe/schema.json": "a967d1ba3759a076ede4873e7a26316d64b6dbb2e028af3af5ba973194553aaa",
+    "formatter-probe/summary.json": "0510858ec5c462be7ebdb7c3f44ac0c72b74d717d89ec6026dc97579a6cb3cd4",
+    "gate_support/gate_registration.py": "3f2462a0e4b7dfefaf8c536333a5e673e22486f50afe42240130a29a98edf67b",
+    "gate_support/preload.cjs": "0efb0f3fd3b40929511ca36349b404e2740b3ae43a748ffe5375ff445b2ed894",
+    "gate_support/sitecustomize.py": "d310fa893118dd94661b85823720fe00b860323e21423988e1c3dc80ff8dc744",
+    "native-model-catalog.json": "d6e6e1ebd2fb111d1ddd3924d50b18033b7a859595794a6e1c3fff0480590f67",
+    "native-protocol-amendment2.json": "61669f803410dd28c71c07dfec1742ee51c3ba997f5c7a1984bd46d245356e68",
+    "phase_collect.py": "03cc950c104d791345ec2f0d425d57279450330655c6e87de480f786252b62ba",
+    "portability-diffs.json": "c66fcbef4292e8f1f61e80b2c7a6d404b7c0e4ff8fe7b7274bb5ef036056c67c",
+    "preview/broker.py": "ae967c0f79b40599723823f8165078f08695c4aaf057ffadf9bd2a1b6b434097",
+    "preview/client.py": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+    "preview/render.mjs": "d6e61ad7091793aa070bb8b43b8b5c5f87e7e2754edf257fedabf2e77ae924f2",
+    "preview/tests.py": "ba9e3bd0f0698681799a12327260644efa599be53f3c4f179801cafac3440281",
+    "prices.json": "00429a8ad67894dbae85ad993f62cf7a47fc77311628b65cc611755343ec97ae",
+    "protocol-before-amendment2.json": "25076e6bba0eddedfb8dceb5ab3cd0569b9756569a275d4b81e312b9b2573ee3",
+    "qa_check.py": "472ed87fd7ee56868064c1b5b76cf75644a2a0dcade8a46200644c232992a6ba",
+    "report-recovery-native-audit-summary.json": "b57e565732459abc18c4ca70521954244d8b3e23d71925ae31561aea7392271d",
+    "report-recovery-parser-probe.json": "f7f4f0dbf22fd12e3cd858ac7dec50caa6b479211dc972da0ec8bc5ac3bc9525",
+    "report_recovery.py": "1e8c96c0a11a064a586199d623f98263c89d2a6269a93d10bc999e095b218eb9",
+    "run.py": "b610ce85ddea223b0fa6c1cae74f1e79cc3ab6ea5e5b32b8fd93c52d5836e424",
+    "seal.py": "99481ed8e46852b3c1f9881ba91a6e6521f9eb7946f9e28f0ef03a47c5093beb",
+    "structural_gate.py": "2b652b72d5530e13772d58825f70cd56638c59dd2d6e1241e2a9f35b37a689b4",
+    "telemetry.py": "7bc8794283d3f454a35faf3ec7b051c1927f6936d2eb3f926b7359d5df810dc4",
+    "test_amendment2_contracts.py": "23a190ba7d3325ace8d64f76d09a1faef6dabace56c8a7a9deab4ca2d485b19f",
+    "test_audit_formatter.py": "b200320fd2f97eaed1e3a396c6bd746c9062d6410f2178173de90904591d9b0d",
+    "test_collect.py": "c7713d547f21e33309d3a51b296e5a023a67867326767ae7e804fe050d58b458",
+    "test_completion_runner.py": "f62fc236929e34bd1badd26d981ad2062fa0a8a0dc2b9f1c5e741824af2472cd",
+    "test_continuation_gate.py": "a8227ed22c4882e9bdad7c19221e36d645865ad7d8245f40b0c9d255611ad6e2",
+    "test_continuation_v2.py": "7e933d5f9c418fcfd52de037dbd87813b7e6b8e7259b5df44931c2b0b920ea1d",
+    "test_public_instruments.py": "4b55507cb9c7314408c2f35d94ebb05ce5e9639066629b12b1496a68de3faea4",
+    "test_qa_check.py": "25798d4302f8fa517b380bd8b9176c1d618846e985feaa4f5ea016a114218bb4",
+    "test_replay_cleanup.py": "ebb6d6d826a9e1afe11fd31ef4ad313dce1f63e3fcfd892471dc12e0fc9cb741",
+    "test_report_recovery.py": "9bb6894e8af6b226c75a7d4d3d45b4640a90644fcc22aa64c788e170a1c3745a",
+    "test_serviceflow_instrument.py": "d52792197338ec427cce57ae2661f3de13473c3308dfa30c8a3a5f45d21effc7",
+    "test_telemetry.py": "b14b670fa1de27430f46a4288426397ec329adff8d46dda94580743adc7e1ba5"
+  },
+  "gate_commands": [
+    [
+      "python3",
+      "{root}/structural_gate.py",
+      "{site}",
+      "{out}"
+    ]
+  ],
+  "gate_reserve_seconds": null,
+  "initial_builder_cap_seconds": null,
+  "initial_fixture_sha256": {
+    ".gitignore": "3a87347065bffdec45bd969b96df9bc527e18b7b16912d8d2488ad9f24c95524",
+    ".quality/LICENSE": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+    ".quality/audit-result.schema.json": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+    ".quality/quality.py": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+    ".quality/quality.toml": "57d2c31f266b0551f5c3854ca4eda17056095a6cb2540fdc3f8ad23966bee993",
+    "AGENTS.md": "5813288cb4233639b306fc0808fd03504a11218f80657d0daae88dac59751e20",
+    "APP_PROMPT.txt": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+    "AUDIT_PROMPT.txt": "a8a15e19342d06539a25512d2ab301ec823f00c5010f1566653884256b72302a",
+    "BRAND.md": "415fc360b754c32c4671533d19c5edb3f8f191c07ad3976f60bcd4848e193f34",
+    "BRIEF.md": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+    "BUDGET.md": "d6ea5200dcec427df0e09c6eaca10f73d71856276d536526f6e5ad16e59697ef",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "MAP.md": "f8d7b0bff1a2a984549f746a61795e53a85595b3ecb7794e7255ecf6bce3707d",
+    "MODEL_COSTS.json": "00429a8ad67894dbae85ad993f62cf7a47fc77311628b65cc611755343ec97ae",
+    "NATIVE_MODELS.json": "d6e6e1ebd2fb111d1ddd3924d50b18033b7a859595794a6e1c3fff0480590f67",
+    "RUNTIME.md": "1a5545b44dbc17d2f2d053f5c850bc0c830b8e727708fe06599d58bc8664a419",
+    "TESTING.md": "58224c5ad47a04f9872b8f30617d6b8a96b4a2dfc36841448883d54ddf44624f",
+    "brand/aethdesign-home-1440.png": "094794c739ebebf4468e63ae9414df7dc6915a7e6076b67ad45e95aa0dd56f5e",
+    "brand/aethdesign-home-375.png": "8ffa62f886e19983875c53bc8501342f4875855c6f0f70363f16b51d21018d1a",
+    "brand/capture.json": "9ffc4a7944054116b4f33de5b05e2ab145da49b63b8e62e9e27c92dec8d428db",
+    "brand/landing-page.txt": "11582a20e4d3a634ad1796e6215201c5f3169befc262818c784e5b2c7a80c021",
+    "preview_client.py": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+    "qa_check.py": "472ed87fd7ee56868064c1b5b76cf75644a2a0dcade8a46200644c232992a6ba",
+    "quality": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4"
+  },
+  "initial_forbidden_paths": [
+    "package.json",
+    "src",
+    "app",
+    "public",
+    "server.ts"
+  ],
+  "instrument_amendments": [
+    {
+      "changed_instruments": [
+        "collect.py",
+        "test_serviceflow_instrument.py"
+      ],
+      "date": "2026-10-14",
+      "kind": "private runtime auth-secret inventory correction",
+      "original_protocol_sha256": "b1717e2b29915cdf3fae0d6256513a33e310ec93818916e53b10cebc4dd918a1",
+      "reason": "Single canonical FAIL correctly omitted generated data/.auth-secret; parent incorrectly treated it as product source and halted before repair. No task, app source or acceptance change; no native cancellation/reset. Original snapshots retained private, never publish the secret.",
+      "time_policy": "All condition elapsed and infrastructure interruption retained; actual overlap reported, no unqualified pure speed winner."
+    },
+    {
+      "changed_instruments": [
+        "audit-output-schema.json",
+        "test_audit_formatter.py"
+      ],
+      "continuation": "Keep measured sessions and all costs/time. Let active adaptive builder finish without interruption; original controller will halt at source-freeze boundary and be continued under corrected controller, no code restart.",
+      "date": "2026-10-14",
+      "kind": "formatter scope metadata correction",
+      "reason": "Old portal acceptance const was retained in output schema despite ServiceFlow prompt. Preserve original auditor output as invalid canonical metadata and all concrete reproduction evidence; use evidence for builder fixes, then require a new complete independent audit with correct ServiceFlow formatter. Do not rewrite original verdict or accept it."
+    },
+    {
+      "acceptance_document": "ACCEPTANCE.md",
+      "acceptance_document_sha256": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+      "changed_instruments": [
+        "collect.py",
+        "audit-output-schema.json",
+        "test_serviceflow_instrument.py",
+        "test_audit_formatter.py"
+      ],
+      "date": "2026-10-14",
+      "kind": "generated credential filename and short canonical acceptance identity correction",
+      "prior_protocol_sha256": "cbc73e3fcd67a230fd73e64687c36957c7ba66469377bd6074b7d33c88df4841",
+      "reason": "Exclude .auth-secret and filename suffix .secret before reading source bytes. Replace long canonical acceptance text with exact hash identity to prevent native formatter truncation. Protected task/acceptance/fixture bytes and all product requirements remain unchanged.",
+      "recovery": "Repeat-safe continuation v2 requires independent proof and fresh complete audits; retain every original phase, report, gap, active interval and native counter.",
+      "semantic_acceptance_unchanged": true
+    }
+  ],
+  "kind": "ServiceFlow full-stack MVP matched uncapped task-to-independent-acceptance pair",
+  "limitations": [
+    "Single exploratory pair, single first; no causal or subscription-saving inference.",
+    "Independent stack choices may affect comparison.",
+    "No elapsed or audit-round caps; native/account/transport/tool blockers remain observable.",
+    "Parent browser preview needed because native Chromium IPC is blocked.",
+    "Parent structural gate is not a functional score; complete fresh independent acceptance required."
+  ],
+  "max_audit_rounds": null,
+  "measurement_boundary": "Initial builder and descendants, parent structural checks, every fresh independent full-scope audit, exact-root repairs and cleanup included. Setup/preflight and final blind grading/publication separately reported, not free. No live AI calls. Native counters/subsets reconciled without double-counting; missing consumption unknown.",
+  "native_cli": "codex",
+  "native_frozen_sources_sha256": {
+    "ACCEPTANCE.md": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+    "APP_PROMPT.txt": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+    "AUDIT_PROMPT.txt": "a8a15e19342d06539a25512d2ab301ec823f00c5010f1566653884256b72302a",
+    "BRAND.md": "415fc360b754c32c4671533d19c5edb3f8f191c07ad3976f60bcd4848e193f34",
+    "README.md": "aa05294876662535e8018243609b83c466022a399897670d6ac033b0b8eb627f",
+    "audit-output-schema.json": "13eb7193299af2c5f656f987a1f927284b767414157e9153d0ca592b262ee0b8",
+    "collect.py": "d6969b30437a202ca6389772ca8fc9bb22ba7c906cfeb63f00e40eaae9897d31",
+    "gate_support/gate_registration.py": "3f2462a0e4b7dfefaf8c536333a5e673e22486f50afe42240130a29a98edf67b",
+    "gate_support/preload.cjs": "0efb0f3fd3b40929511ca36349b404e2740b3ae43a748ffe5375ff445b2ed894",
+    "gate_support/sitecustomize.py": "d310fa893118dd94661b85823720fe00b860323e21423988e1c3dc80ff8dc744",
+    "native-model-catalog.json": "d6e6e1ebd2fb111d1ddd3924d50b18033b7a859595794a6e1c3fff0480590f67",
+    "phase_collect.py": "03cc950c104d791345ec2f0d425d57279450330655c6e87de480f786252b62ba",
+    "preview/broker.py": "ae967c0f79b40599723823f8165078f08695c4aaf057ffadf9bd2a1b6b434097",
+    "preview/client.py": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+    "preview/render.mjs": "d6e61ad7091793aa070bb8b43b8b5c5f87e7e2754edf257fedabf2e77ae924f2",
+    "preview/tests.py": "ba9e3bd0f0698681799a12327260644efa599be53f3c4f179801cafac3440281",
+    "prices.json": "00429a8ad67894dbae85ad993f62cf7a47fc77311628b65cc611755343ec97ae",
+    "qa_check.py": "472ed87fd7ee56868064c1b5b76cf75644a2a0dcade8a46200644c232992a6ba",
+    "run.py": "b1f439b1960f4a58a223826b79c6d6b880eb636cfe3866ec94cebc8a5c3bd2ad",
+    "seal.py": "ef614cda2949933404cb553a563ada133f31b1bd4fb216557f3276a56901af1b",
+    "structural_gate.py": "2b652b72d5530e13772d58825f70cd56638c59dd2d6e1241e2a9f35b37a689b4",
+    "telemetry.py": "7bc8794283d3f454a35faf3ec7b051c1927f6936d2eb3f926b7359d5df810dc4",
+    "test_amendment2_contracts.py": "0e45c1c650514e5972fe89f6e20b1317dadfd655cc6535fef1afe1a377f285e7",
+    "test_audit_formatter.py": "b200320fd2f97eaed1e3a396c6bd746c9062d6410f2178173de90904591d9b0d",
+    "test_collect.py": "c7713d547f21e33309d3a51b296e5a023a67867326767ae7e804fe050d58b458",
+    "test_completion_runner.py": "cf08299434fbc9e5355c2e8cff764513f2a07a32f283e3deb9e1570b7516022c",
+    "test_continuation_v2.py": "ecf8a40172e53723acf40da22eb5702d97b03c568e6032b84d245a9bf9a9f52b",
+    "test_qa_check.py": "25798d4302f8fa517b380bd8b9176c1d618846e985feaa4f5ea016a114218bb4",
+    "test_replay_cleanup.py": "ebb6d6d826a9e1afe11fd31ef4ad313dce1f63e3fcfd892471dc12e0fc9cb741",
+    "test_serviceflow_instrument.py": "d52792197338ec427cce57ae2661f3de13473c3308dfa30c8a3a5f45d21effc7",
+    "test_telemetry.py": "b14b670fa1de27430f46a4288426397ec329adff8d46dda94580743adc7e1ba5"
+  },
+  "native_helper_cap": 3,
+  "native_protocol_history": [
+    {
+      "audit_acceptance_criteria": "# ServiceFlow common acceptance basis\nBoth subjects receive the same APP_PROMPT.txt and frozen AethDesign reference. Clean isolated starting fixtures; same model/effort for primary and independent auditor; only adaptive implementation may delegate. Stack choice is part of implementation judgment and must be reported as a possible comparison confounder. No time or round caps; no mandatory swarm. No live AI/provider/account/subscription calls.\n\nRequired observable outcomes:\n1. README fresh setup installs pinned dependencies, migrates relational database, seeds four role/ownership demo users and runs app; production build and real full/release profiles pass.\n2. Authentication uses a mature library and each role reaches appropriate views; unauthorized/unauthenticated writes and cross-site writes fail through server enforcement.\n3. Customer request validation, submission, own dashboard and persisted history work; second customer ownership isolation holds through direct route/API and draft endpoints.\n4. Provider totals/search/filter/detail and permitted transitions work; invalid/stale transitions fail without partial state or successful history.\n5. Admin catalogue CRUD/activation works; provider cannot manage services; inactive services cannot create requests and referenced service history survives deletion policy.\n6. Deterministic no-key drafting works server-side, at most three useful questions, editable/review-labeled and no sending/status mutation; customer access fails; configured server-side adapter is implemented and tested with mocks only, secrets/PII not leaked.\n7. Integrated customer-submit/provider-update journey works in a real browser; database/history survives reload/restart; committed-write/failed-refresh behavior is coherent and safe.\n8. Real desktop/mobile landing, request form, customer dashboard, provider dashboard/detail/draft and admin service states show coherent identity, usable layout, labels, focus, keyboard behavior and no missing assets/runtime failures.\n9. Every required verification step and full-scope fresh independent audit completes; blockers are repaired in the original builder session then reviewed by a fresh independent auditor. Missing evidence is BLOCKED, not PASS.\n\nRecord initial and accepted immutable source snapshots, actual topology/models/effort, native input/cached-input/output subsets without double-counting, all audit/repair rounds and evidence-backed defect/fix cycles. Clock initial implementation and end-to-end verified completion separately; retain transport interruptions and unknown usage. Frozen prior portal results are outside this experiment. Anonymous final visual grading is separate from app acceptance and cannot repair apps or change measured outcomes.\n",
+      "native_frozen_sources_sha256": {
+        "ACCEPTANCE.md": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+        "APP_PROMPT.txt": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+        "AUDIT_PROMPT.txt": "a8a15e19342d06539a25512d2ab301ec823f00c5010f1566653884256b72302a",
+        "BRAND.md": "415fc360b754c32c4671533d19c5edb3f8f191c07ad3976f60bcd4848e193f34",
+        "README.md": "aa05294876662535e8018243609b83c466022a399897670d6ac033b0b8eb627f",
+        "audit-output-schema.json": "84920f09538e195afda89e652208a22d702eb18753866e2d4b164ed68bf7693a",
+        "collect.py": "6359a82957f05f1831c24bfc26bb70eef4eaa1cd776b76f829d42eef2f2ebc9e",
+        "gate_support/gate_registration.py": "3f2462a0e4b7dfefaf8c536333a5e673e22486f50afe42240130a29a98edf67b",
+        "gate_support/preload.cjs": "0efb0f3fd3b40929511ca36349b404e2740b3ae43a748ffe5375ff445b2ed894",
+        "gate_support/sitecustomize.py": "d310fa893118dd94661b85823720fe00b860323e21423988e1c3dc80ff8dc744",
+        "native-model-catalog.json": "d6e6e1ebd2fb111d1ddd3924d50b18033b7a859595794a6e1c3fff0480590f67",
+        "phase_collect.py": "03cc950c104d791345ec2f0d425d57279450330655c6e87de480f786252b62ba",
+        "preview/broker.py": "ae967c0f79b40599723823f8165078f08695c4aaf057ffadf9bd2a1b6b434097",
+        "preview/client.py": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+        "preview/render.mjs": "d6e61ad7091793aa070bb8b43b8b5c5f87e7e2754edf257fedabf2e77ae924f2",
+        "preview/tests.py": "ba9e3bd0f0698681799a12327260644efa599be53f3c4f179801cafac3440281",
+        "prices.json": "00429a8ad67894dbae85ad993f62cf7a47fc77311628b65cc611755343ec97ae",
+        "qa_check.py": "472ed87fd7ee56868064c1b5b76cf75644a2a0dcade8a46200644c232992a6ba",
+        "run.py": "b1f439b1960f4a58a223826b79c6d6b880eb636cfe3866ec94cebc8a5c3bd2ad",
+        "seal.py": "ef614cda2949933404cb553a563ada133f31b1bd4fb216557f3276a56901af1b",
+        "structural_gate.py": "2b652b72d5530e13772d58825f70cd56638c59dd2d6e1241e2a9f35b37a689b4",
+        "telemetry.py": "7bc8794283d3f454a35faf3ec7b051c1927f6936d2eb3f926b7359d5df810dc4",
+        "test_audit_formatter.py": "d439712836b1c643bb7950e4c15942e212611243e7fa6e17f5c3758414bdcbf1",
+        "test_collect.py": "c7713d547f21e33309d3a51b296e5a023a67867326767ae7e804fe050d58b458",
+        "test_completion_runner.py": "cf08299434fbc9e5355c2e8cff764513f2a07a32f283e3deb9e1570b7516022c",
+        "test_qa_check.py": "25798d4302f8fa517b380bd8b9176c1d618846e985feaa4f5ea016a114218bb4",
+        "test_replay_cleanup.py": "ebb6d6d826a9e1afe11fd31ef4ad313dce1f63e3fcfd892471dc12e0fc9cb741",
+        "test_serviceflow_instrument.py": "3f8a1dfc35451a3840852d0711beaa06aacb3d54a3d9349859de2fd71b7e9787",
+        "test_telemetry.py": "b14b670fa1de27430f46a4288426397ec329adff8d46dda94580743adc7e1ba5"
+      },
+      "native_protocol_sha256": "cbc73e3fcd67a230fd73e64687c36957c7ba66469377bd6074b7d33c88df4841"
+    }
+  ],
+  "native_protocol_sha256": "007ecc6b59107824fd2c92620dd2f36ebba494c4dcf93848646b6c8f6597f887",
+  "native_supplementary_sources_sha256": {
+    "continue-v2.py": "de08d23f86033264c1dff00bf88d763dd5af2cc57b55992a6ee129ab25138c7c",
+    "continue.py": "4634cd157fdaddbab984081307167dea6400d15b185d66eb2f8b27dc22245cfd",
+    "controller-amendment-audit.json": "42355e35e4b13254f034c9e85a3bdc57dc147f828f21c679555e9cb4454c9751",
+    "controller-amendment2-audit.json": "cbf67fb1b9b0f7ce8c99f8a111422817557c50edb2f374b5a9fee73b68f4e884",
+    "controller-amendment2-entry-proof.json": "a50aa0d813b14a1739cc60dbab15405229ae61d6fa93bb706d49b9ff0cd18ce5",
+    "formatter-probe/result.json": "0cfe506de84d4336e282c21b8bc93671c1ab78361a184e71c62f39a656ac0bfc",
+    "formatter-probe/schema.json": "a967d1ba3759a076ede4873e7a26316d64b6dbb2e028af3af5ba973194553aaa",
+    "formatter-probe/summary.json": "0510858ec5c462be7ebdb7c3f44ac0c72b74d717d89ec6026dc97579a6cb3cd4",
+    "native-protocol-amendment2.json": "007ecc6b59107824fd2c92620dd2f36ebba494c4dcf93848646b6c8f6597f887",
+    "protocol-before-amendment2.json": "cbc73e3fcd67a230fd73e64687c36957c7ba66469377bd6074b7d33c88df4841",
+    "report-recovery-native-audit-summary.json": "6ff2ac615c5b86b03508785947da24e7019a9866d8f389eb996384a5b0b2195c",
+    "report-recovery-parser-probe.json": "f7f4f0dbf22fd12e3cd858ac7dec50caa6b479211dc972da0ec8bc5ac3bc9525",
+    "report_recovery.py": "0d107906437963fb26ff581a3b06cb49553965b0f496b49ceedd183ef263bcc7",
+    "test_report_recovery.py": "d8f73a30a16b383a4743c57a080946f4799d7622fe8c7d8e4e5670e5b0db2242"
+  },
+  "network_allow_domains": [
+    "127.0.0.1",
+    "localhost",
+    "registry.npmjs.org",
+    "binaries.prisma.sh",
+    "github.com",
+    "release-assets.githubusercontent.com",
+    "objects.githubusercontent.com"
+  ],
+  "order": [
+    "single",
+    "adaptive"
+  ],
+  "portable_adaptations": {
+    "continue-v2.py": {
+      "native_sha256": "de08d23f86033264c1dff00bf88d763dd5af2cc57b55992a6ee129ab25138c7c",
+      "public_sha256": "a7b3f8c90594ebf004b1a9cffaf6133929bc82fa8da7d4315106b882d2add825"
+    },
+    "continue.py": {
+      "native_sha256": "4634cd157fdaddbab984081307167dea6400d15b185d66eb2f8b27dc22245cfd",
+      "public_sha256": "dea0cdeba2947cd9ffaab2c2c3baab492a18e9b0085e735e99b1df6bc6354265"
+    },
+    "controller-amendment-audit.json": {
+      "native_sha256": "42355e35e4b13254f034c9e85a3bdc57dc147f828f21c679555e9cb4454c9751",
+      "public_sha256": "d09c529ba3e5f31cb5b138885221ab4a0fa28369804841f75aa95e1a82c177d3"
+    },
+    "controller-amendment2-audit.json": {
+      "native_sha256": "cbf67fb1b9b0f7ce8c99f8a111422817557c50edb2f374b5a9fee73b68f4e884",
+      "public_sha256": "05d35c65b484e99eb9ba2606b44707b558953452562631a02121f34a30570541"
+    },
+    "controller-amendment2-entry-proof.json": {
+      "native_sha256": "a50aa0d813b14a1739cc60dbab15405229ae61d6fa93bb706d49b9ff0cd18ce5",
+      "public_sha256": "5d832b51b15ebb07f8a8595db916e6c67547b2036bade4af8091cff3f17d0af7"
+    },
+    "native-protocol-amendment2.json": {
+      "native_sha256": "007ecc6b59107824fd2c92620dd2f36ebba494c4dcf93848646b6c8f6597f887",
+      "public_sha256": "61669f803410dd28c71c07dfec1742ee51c3ba997f5c7a1984bd46d245356e68"
+    },
+    "protocol-before-amendment2.json": {
+      "native_sha256": "cbc73e3fcd67a230fd73e64687c36957c7ba66469377bd6074b7d33c88df4841",
+      "public_sha256": "25076e6bba0eddedfb8dceb5ab3cd0569b9756569a275d4b81e312b9b2573ee3"
+    },
+    "report-recovery-native-audit-summary.json": {
+      "native_sha256": "6ff2ac615c5b86b03508785947da24e7019a9866d8f389eb996384a5b0b2195c",
+      "public_sha256": "b57e565732459abc18c4ca70521954244d8b3e23d71925ae31561aea7392271d"
+    },
+    "report_recovery.py": {
+      "native_sha256": "0d107906437963fb26ff581a3b06cb49553965b0f496b49ceedd183ef263bcc7",
+      "public_sha256": "1e8c96c0a11a064a586199d623f98263c89d2a6269a93d10bc999e095b218eb9"
+    },
+    "run.py": {
+      "native_sha256": "b1f439b1960f4a58a223826b79c6d6b880eb636cfe3866ec94cebc8a5c3bd2ad",
+      "public_sha256": "b610ce85ddea223b0fa6c1cae74f1e79cc3ab6ea5e5b32b8fd93c52d5836e424"
+    },
+    "seal.py": {
+      "native_sha256": "ef614cda2949933404cb553a563ada133f31b1bd4fb216557f3276a56901af1b",
+      "public_sha256": "99481ed8e46852b3c1f9881ba91a6e6521f9eb7946f9e28f0ef03a47c5093beb"
+    },
+    "test_amendment2_contracts.py": {
+      "native_sha256": "0e45c1c650514e5972fe89f6e20b1317dadfd655cc6535fef1afe1a377f285e7",
+      "public_sha256": "23a190ba7d3325ace8d64f76d09a1faef6dabace56c8a7a9deab4ca2d485b19f"
+    },
+    "test_completion_runner.py": {
+      "native_sha256": "cf08299434fbc9e5355c2e8cff764513f2a07a32f283e3deb9e1570b7516022c",
+      "public_sha256": "f62fc236929e34bd1badd26d981ad2062fa0a8a0dc2b9f1c5e741824af2472cd"
+    },
+    "test_continuation_v2.py": {
+      "native_sha256": "ecf8a40172e53723acf40da22eb5702d97b03c568e6032b84d245a9bf9a9f52b",
+      "public_sha256": "7e933d5f9c418fcfd52de037dbd87813b7e6b8e7259b5df44931c2b0b920ea1d"
+    },
+    "test_report_recovery.py": {
+      "native_sha256": "d8f73a30a16b383a4743c57a080946f4799d7622fe8c7d8e4e5670e5b0db2242",
+      "public_sha256": "9bb6894e8af6b226c75a7d4d3d45b4640a90644fcc22aa64c788e170a1c3745a"
+    }
+  },
+  "ports": {
+    "adaptive": 55839,
+    "single": 55838
+  },
+  "postprocessing_helpers_sha256": {
+    "METRICS.md": "12754bdb981ac939ee59603ec0c027c5b3185238754da9d8b79e7dd8e50eedd5",
+    "POSTPROCESSING.md": "829e173975b8c1512d927bb3a18a1b13d5de978cd2abb6aaf2246f6507660fcc",
+    "postprocess.py": "660261fe922cc8d5c08ed374bd80c2e263329c60807dc6ae48f79b6a1e6bbd84",
+    "test_postprocess.py": "afea20e18adeead6c93361c97067c3d70e1804a470b5220d0fca73ff4daf2a61"
+  },
+  "postprocessing_provenance": {
+    "external_native_adapter_sha256": "0a2e5ee009733bc8b0b1ed6dca912042746ec76f2dfd1413749681bdae146124",
+    "native_adapter_module_root": "Explicit SERVICEFLOW_BENCHMARK_ROOT required; never invoked on measured data by helper author.",
+    "outside_measured_work": true,
+    "public_adapter_module_root": "Directory containing postprocess.py.",
+    "scope": "Only optional legacy iteration-summary ValueError becomes unparsed/null counts; native collector and raw records unchanged.",
+    "unchanged_phase_collect_sha256": "03cc950c104d791345ec2f0d425d57279450330655c6e87de480f786252b62ba"
+  },
+  "prompt_sha256": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+  "public_only_sources": [
+    "INSTRUMENTS.md",
+    "REPORT_RECOVERY.md",
+    "portability-diffs.json",
+    "test_continuation_gate.py",
+    "test_public_instruments.py"
+  ],
+  "publication_corrections": [
+    {
+      "corrected_public_controller_sha256": "dea0cdeba2947cd9ffaab2c2c3baab492a18e9b0085e735e99b1df6bc6354265",
+      "finding": "AUD-001",
+      "native_controller_sha256_unchanged": "4634cd157fdaddbab984081307167dea6400d15b185d66eb2f8b27dc22245cfd",
+      "native_experiment_unchanged": true,
+      "new_regression_test_sha256": "a8227ed22c4882e9bdad7c19221e36d645865ad7d8245f40b0c9d255611ad6e2",
+      "prior_public_controller_sha256": "29fd03bceec30d19c3a9aa724ccdb61852690323a1cd6d355f6e081ca3ebef32",
+      "proof_default": "controller-amendment-portable-proof.json (not bundled)",
+      "scope": "portable v1 continuation approval boundary"
+    }
+  ],
+  "publication_helpers_sha256": {
+    "project_sources.py": "7d447b8844bb5ee280f0ecf309850a4c8566097ea382dd007dc180740269320f",
+    "test_source_projection.py": "0d9b901f83160a2ae1d812af8f54112412cfa17143c92ba1cf8ecba4b70988ea"
+  },
+  "publication_note": "Portable amended instrument history. Native and public frozen maps are distinct; native_protocol_history retains previous measured freeze. Historical native audit proofs do not accept portable controller changes or apps. No raw sessions or credential-bearing snapshots included.",
+  "publication_provenance_history": [
+    {
+      "kind": "first public instrument adaptation before amendment2",
+      "portable_adaptations": {
+        "continue.py": {
+          "native_sha256": "4634cd157fdaddbab984081307167dea6400d15b185d66eb2f8b27dc22245cfd",
+          "public_sha256": "29fd03bceec30d19c3a9aa724ccdb61852690323a1cd6d355f6e081ca3ebef32"
+        },
+        "controller-amendment-audit.json": {
+          "native_sha256": "42355e35e4b13254f034c9e85a3bdc57dc147f828f21c679555e9cb4454c9751",
+          "public_sha256": "d09c529ba3e5f31cb5b138885221ab4a0fa28369804841f75aa95e1a82c177d3"
+        },
+        "run.py": {
+          "native_sha256": "b1f439b1960f4a58a223826b79c6d6b880eb636cfe3866ec94cebc8a5c3bd2ad",
+          "public_sha256": "b610ce85ddea223b0fa6c1cae74f1e79cc3ab6ea5e5b32b8fd93c52d5836e424"
+        },
+        "seal.py": {
+          "native_sha256": "ef614cda2949933404cb553a563ada133f31b1bd4fb216557f3276a56901af1b",
+          "public_sha256": "99481ed8e46852b3c1f9881ba91a6e6521f9eb7946f9e28f0ef03a47c5093beb"
+        },
+        "test_completion_runner.py": {
+          "native_sha256": "cf08299434fbc9e5355c2e8cff764513f2a07a32f283e3deb9e1570b7516022c",
+          "public_sha256": "f62fc236929e34bd1badd26d981ad2062fa0a8a0dc2b9f1c5e741824af2472cd"
+        }
+      }
+    }
+  ],
+  "repair_phase_cap_seconds": null,
+  "report_recovery_helpers_sha256": {
+    "REPORT_RECOVERY.md": "31c0aa55816c5c87462294de0817328fd030dd9814e652f1dcf51309d040ed5a",
+    "report-recovery-native-audit-summary.json": "b57e565732459abc18c4ca70521954244d8b3e23d71925ae31561aea7392271d",
+    "report-recovery-parser-probe.json": "f7f4f0dbf22fd12e3cd858ac7dec50caa6b479211dc972da0ec8bc5ac3bc9525",
+    "report_recovery.py": "1e8c96c0a11a064a586199d623f98263c89d2a6269a93d10bc999e095b218eb9",
+    "test_report_recovery.py": "9bb6894e8af6b226c75a7d4d3d45b4640a90644fcc22aa64c788e170a1c3745a"
+  },
+  "report_recovery_native_history": [
+    {
+      "native_controller_sha256": "89f92c528ea6f5deca71333c484c5ef1aaa0ea05d85e3891f4796daa2b0d98ab",
+      "scope": "format-001 failed before native work; exact error/empty-event/no-growth retry guards retain the failure.",
+      "version": "first accepted controller with later evidenced startup config failure"
+    },
+    {
+      "native_audit_sha256": "6ff2ac615c5b86b03508785947da24e7019a9866d8f389eb996384a5b0b2195c",
+      "native_controller_sha256": "0d107906437963fb26ff581a3b06cb49553965b0f496b49ceedd183ef263bcc7",
+      "native_tests_sha256": "d8f73a30a16b383a4743c57a080946f4799d7622fe8c7d8e4e5670e5b0db2242",
+      "version": "independently accepted startup retry delta"
+    }
+  ],
+  "required_critical_route": "auth-and-state",
+  "required_frozen_sources": [
+    "run.py",
+    "phase_collect.py",
+    "collect.py",
+    "telemetry.py",
+    "qa_check.py",
+    "structural_gate.py",
+    "preview/broker.py",
+    "preview/render.mjs",
+    "APP_PROMPT.txt",
+    "AUDIT_PROMPT.txt",
+    "audit-output-schema.json",
+    "ACCEPTANCE.md",
+    "gate_support/preload.cjs",
+    "gate_support/sitecustomize.py"
+  ],
+  "root_model": "gpt-6.1-sol",
+  "root_reasoning_effort": "high",
+  "root_selection": "Same matched root/auditor as preceding experiment; native refreshed catalog supports high; implementation helpers select supported fit. Generic policy has no model names.",
+  "sessions_dir": "<set SERVICEFLOW_SESSIONS_DIR>",
+  "shared_budget_seconds": null,
+  "supplementary_instruments_sha256": {
+    "continue-v2.py": "a7b3f8c90594ebf004b1a9cffaf6133929bc82fa8da7d4315106b882d2add825"
+  }
+}

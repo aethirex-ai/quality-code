@@ -1,0 +1,580 @@
+{
+  "conditions": {
+    "adaptive": {
+      "category_counts": {
+        "application_behavior_defects_excluding_verification_delivery": 4,
+        "backend_or_config_defects": 2,
+        "canonical_independent_product_defects": 3,
+        "confirmed_product_correction_recheck_cycles": 5,
+        "frontend_defects": 2,
+        "independent_supplemental_product_defects": 1,
+        "initial_builder_product_defects": 1,
+        "initial_builder_tooling_groups": 5,
+        "initial_test_expectation_corrections": 2,
+        "observed_distinct_product_defects": 5,
+        "repair_test_fixture_corrections": 1,
+        "verification_delivery_defects": 1,
+        "visual_refinement_groups": 1
+      },
+      "distinctions": {
+        "fixture_length": "The reported literal repeated three times is99characters, despite the auditor description saying96. An extended103-character fixture correctly received validation400. Changing the fixture to exactly100characters repaired the test, not the application; it adds no runtime bug or product correction cycle.",
+        "privacy_roots": "Case-sensitive name matching and short-phone pattern mismatch are two distinct redaction defects, despite sharing the configured-adapter area.",
+        "test_expectations": "A secure role-tamper rejection and an intentionally absent overview description were mistaken test expectations. Their corrections do not change product behavior.",
+        "tooling": "IPC loader, compiler CLI mode, preview action schema, strict duplicate locator and keyboard protocol corrections are not product defects.",
+        "variants": "Capitalization, punctuation, short names and Unicode exercise the name-redaction root cause, not four separate bugs.",
+        "verification_delivery": "AUD-003 violates required documented clean-source verification delivery. It counts as an acceptance/product-deliverable defect, separately from the four application-behavior defects."
+      },
+      "final_observed_outstanding_product_defects": 0,
+      "final_verification_state": "canonical PASS phase8 after same independent auditor report-only correction; app unchanged",
+      "latent_bug_count": "unknown",
+      "phases": [
+        {
+          "confirmed_product_cycles": 1,
+          "kind": "initial builder",
+          "new_product_defects": 1,
+          "phase": 1
+        },
+        {
+          "canonical_accepted": false,
+          "kind": "unaccepted raw audit supplemental reproduction",
+          "new_product_defects": 1,
+          "phase": 2
+        },
+        {
+          "confirmed_product_cycles": 1,
+          "kind": "known-name privacy repair",
+          "phase": 3,
+          "repaired_distinct_defects": 1
+        },
+        {
+          "canonical_accepted": true,
+          "kind": "canonical full audit FAIL",
+          "new_product_defects": 1,
+          "phase": 4
+        },
+        {
+          "confirmed_product_cycles": 1,
+          "kind": "phone privacy repair",
+          "phase": 5,
+          "repaired_distinct_defects": 1
+        },
+        {
+          "canonical_accepted": true,
+          "kind": "canonical full audit FAIL",
+          "new_product_defects": 2,
+          "phase": 6
+        },
+        {
+          "confirmed_product_cycles": 2,
+          "kind": "verification-delivery and mobile repair",
+          "phase": 7,
+          "repaired_distinct_defects": 2
+        },
+        {
+          "canonical_accepted": false,
+          "kind": "raw functional PASS, metadata unaccepted for explained cleanup exit130",
+          "new_product_defects": 0,
+          "phase": 8
+        }
+      ],
+      "product_defects": [
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Logging in at a protected request URL could land on the dashboard.",
+          "evidence": [
+            {
+              "file": "runs/adaptive/site/evidence/issues.jsonl",
+              "lines": [
+                9,
+                10
+              ]
+            }
+          ],
+          "id": "login-return-route-race",
+          "root_cause": "Competing authenticated fallback and submit navigation used different destinations."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Configured draft payload could expose a known contact name after capitalization changes.",
+          "evidence": [
+            {
+              "file": "runs/adaptive/site/evidence/issues.jsonl",
+              "lines": [
+                17,
+                18,
+                19,
+                20
+              ]
+            }
+          ],
+          "id": "AUD-001",
+          "root_cause": "Case-sensitive literal replacement missed accepted name variants."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Configured draft payload exposed accepted short phone numbers.",
+          "evidence": [
+            {
+              "file": "runs/adaptive/phases/04-auditor/final.txt",
+              "json_pointer": "/findings/0"
+            },
+            {
+              "file": "runs/adaptive/site/evidence/issues.jsonl",
+              "lines": [
+                21,
+                22,
+                23
+              ]
+            }
+          ],
+          "id": "AUD-002",
+          "root_cause": "Validation accepted seven digits while generic phone redaction required a longer pattern."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Documented browser verification failed from clean source.",
+          "evidence": [
+            {
+              "file": "runs/adaptive/site/evidence/issues.jsonl",
+              "lines": [
+                24,
+                26,
+                29
+              ]
+            },
+            {
+              "file": "runs/adaptive/phases/06-auditor/final.txt",
+              "json_pointer": "/findings/0"
+            }
+          ],
+          "id": "AUD-003",
+          "root_cause": "Generated action files were written before the ignored parent directory was created."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Accepted long service names overflowed the mobile public/admin catalogue.",
+          "evidence": [
+            {
+              "file": "runs/adaptive/site/evidence/issues.jsonl",
+              "lines": [
+                25,
+                27,
+                30
+              ]
+            },
+            {
+              "file": "runs/adaptive/phases/06-auditor/final.txt",
+              "json_pointer": "/findings/1"
+            }
+          ],
+          "id": "AUD-004",
+          "root_cause": "Grid minimum sizing and card text wrapping could exceed the viewport."
+        }
+      ],
+      "visual_refinements": [
+        {
+          "description": "Secondary metadata font size and contrast were improved after render inspection.",
+          "evidence": [
+            {
+              "file": "runs/adaptive/site/evidence/issues.jsonl",
+              "lines": [
+                8,
+                13
+              ]
+            }
+          ],
+          "id": "workspace-metadata-readability"
+        }
+      ]
+    },
+    "single": {
+      "category_counts": {
+        "backend_or_config_defects": 4,
+        "canonical_independent_product_defects": 2,
+        "confirmed_product_correction_recheck_cycles": 11,
+        "frontend_defects": 6,
+        "independent_supplemental_product_defects": 4,
+        "initial_builder_product_defects": 4,
+        "initial_builder_tooling_or_construction_groups": 10,
+        "observed_distinct_product_defects": 10,
+        "repair_construction_or_test_harness_groups": 2,
+        "visual_refinement_groups": 3
+      },
+      "distinctions": {
+        "expected_negative": "Production login rate-limit rejection and already-initialized bootstrap are expected states, not product failures.",
+        "multi_manifestation": "AUD-004 detail and overview failures share one wrapping root cause. Two successive corrections/rechecks are recorded, one distinct defect.",
+        "repair_harness": "The boundary overview content exceeded a bounded preview excerpt; correcting the assertion did not fix an app defect.",
+        "tooling_or_construction": "IPC/loader, typecheck/test-helper construction, bridge action/selectors, login-test pacing, formatting, development WebSocket incompatibility and restored fixture ignore rules. These do not add product defects."
+      },
+      "final_observed_outstanding_product_defects": 0,
+      "final_verification_state": "canonical PASS phase7",
+      "latent_bug_count": "unknown",
+      "phases": [
+        {
+          "confirmed_product_cycles": 4,
+          "kind": "initial builder",
+          "new_product_defects": 4,
+          "phase": 1
+        },
+        {
+          "canonical_accepted": false,
+          "kind": "unaccepted raw audit supplemental reproductions",
+          "new_product_defects": 4,
+          "phase": 2
+        },
+        {
+          "confirmed_product_cycles": 5,
+          "kind": "product repair",
+          "phase": 3,
+          "repaired_distinct_defects": 4
+        },
+        {
+          "canonical_accepted": false,
+          "kind": "unaccepted old-format raw PASS",
+          "new_product_defects": 0,
+          "phase": 4
+        },
+        {
+          "canonical_accepted": true,
+          "kind": "canonical full audit FAIL",
+          "new_product_defects": 2,
+          "phase": 5
+        },
+        {
+          "confirmed_product_cycles": 2,
+          "kind": "product repair",
+          "phase": 6,
+          "repaired_distinct_defects": 2
+        },
+        {
+          "canonical_accepted": true,
+          "kind": "canonical full audit PASS",
+          "new_product_defects": 0,
+          "phase": 7
+        }
+      ],
+      "product_defects": [
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Injected preview port and copied application origin could disagree.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                4,
+                15
+              ]
+            }
+          ],
+          "id": "CONFIG-001",
+          "root_cause": "Origin configuration did not prioritize the injected port."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Staff Requests navigation had no target.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                13,
+                30
+              ]
+            }
+          ],
+          "id": "NAV-001",
+          "root_cause": "Anchor lacked matching section ID."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Provider request table overflowed the mobile viewport.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                16,
+                19
+              ]
+            }
+          ],
+          "id": "MOBILE-001",
+          "root_cause": "Wide table had no usable mobile composition."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Configured drafts could contain more than three questions.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                24,
+                27
+              ]
+            }
+          ],
+          "id": "AI-001",
+          "root_cause": "Validation counted the questions array but ignored questions in reply text."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Retry after a committed but unreadable success could create a duplicate request.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                39,
+                43,
+                50
+              ]
+            }
+          ],
+          "id": "AUD-001",
+          "root_cause": "Client discarded retry protection before receiving a readable success body."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Late reads could overwrite newer commits or the currently selected resource.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                40,
+                44,
+                51
+              ]
+            }
+          ],
+          "id": "AUD-002",
+          "root_cause": "Async reads had no resource/owner generation fence."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Previous request draft/action state could remain after navigation.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                41,
+                45,
+                52
+              ]
+            }
+          ],
+          "id": "AUD-003",
+          "root_cause": "Transient state and delayed completions were not scoped to request and actor."
+        },
+        {
+          "correction_recheck_cycles": 2,
+          "description": "Accepted maximum-length text overflowed detail headings and overview cards.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                42,
+                46,
+                48,
+                53
+              ]
+            }
+          ],
+          "id": "AUD-004",
+          "root_cause": "Layout did not allow long data to shrink/wrap across shared panels."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Configured drafts leaked accepted dotted and other separated contact numbers.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                56,
+                57,
+                60
+              ]
+            },
+            {
+              "file": "runs/single/phases/05-auditor/final.txt",
+              "json_pointer": "/findings/0"
+            }
+          ],
+          "id": "AUDIT03-001 / audit-phase05:AUD-001",
+          "root_cause": "Phone redaction excluded accepted separator forms before configured transport."
+        },
+        {
+          "correction_recheck_cycles": 1,
+          "description": "Deterministic drafts asked about materials already explicitly supplied.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                58,
+                59,
+                61,
+                62
+              ]
+            },
+            {
+              "file": "runs/single/phases/05-auditor/final.txt",
+              "json_pointer": "/findings/1"
+            }
+          ],
+          "id": "AUDIT03-002 / audit-phase05:AUD-002",
+          "root_cause": "Whole-word relevance pattern missed materials/supplied/supply word forms; existing Paint-positive fixture masked the gap."
+        }
+      ],
+      "visual_refinements": [
+        {
+          "description": "Route focus scrolled navigation out of view.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                5,
+                14
+              ]
+            }
+          ],
+          "id": "VISUAL-001"
+        },
+        {
+          "description": "Hidden mobile line break removed visible word spacing.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                12,
+                31
+              ]
+            }
+          ],
+          "id": "VISUAL-002"
+        },
+        {
+          "classification_sensitivity": "Author labeled this a visual refinement. A stricter objective accessibility-defect taxonomy adds one visual/accessibility defect to the observed defect count; it is not silently ignored.",
+          "description": "Measured small-text contrast was below 4.5 and corrected.",
+          "evidence": [
+            {
+              "file": "runs/single/site/evidence/issues.jsonl",
+              "lines": [
+                34,
+                35,
+                38
+              ]
+            }
+          ],
+          "id": "CONTRAST-001"
+        }
+      ]
+    }
+  },
+  "controller_and_audit_distinctions": [
+    {
+      "condition": "single",
+      "phase": 2,
+      "product_defect": false,
+      "reason": "Canonical metadata validation failed; four reproduced findings remain supplemental.",
+      "state": "unaccepted raw audit"
+    },
+    {
+      "condition": "adaptive",
+      "phase": 2,
+      "product_defect": false,
+      "reason": "Runtime credential inventory and truncated acceptance metadata failed validation; reproduced name finding remains supplemental.",
+      "state": "unaccepted raw audit"
+    },
+    {
+      "condition": "single",
+      "phase": 4,
+      "product_defect": false,
+      "reason": "Old-format acceptance text truncated to 53 characters; controller requires current canonical metadata. Recorded product checks and cost remain evidence.",
+      "state": "unaccepted raw PASS"
+    },
+    {
+      "condition": "adaptive",
+      "phase": 4,
+      "product_defect": true,
+      "reason": "One reproduced short-phone privacy finding.",
+      "state": "accepted canonical FAIL"
+    },
+    {
+      "condition": "single",
+      "phase": 5,
+      "product_defect": true,
+      "reason": "Two drafting/privacy findings; both repaired in phase6.",
+      "state": "canonical FAIL"
+    },
+    {
+      "condition": "single",
+      "phase": 7,
+      "product_defect": false,
+      "reason": "Fresh full-scope audit reports no findings.",
+      "state": "canonical PASS"
+    },
+    {
+      "condition": "adaptive",
+      "phase": 6,
+      "product_defect": true,
+      "reason": "Clean-source verification delivery and mobile catalogue overflow; repaired in phase7.",
+      "state": "canonical FAIL"
+    },
+    {
+      "condition": "adaptive",
+      "phase": 8,
+      "product_defect": false,
+      "reason": "Original raw report retained expected cleanup exit130 as a passing check. The same original independent auditor corrected its report without app source changes; original report and all correction usage/time remain recorded.",
+      "state": "canonical PASS after report-only correction"
+    },
+    {
+      "condition": "adaptive",
+      "phase": "report-only launcher after8",
+      "product_defect": false,
+      "reason": "Empty events and launcher exit1; no application repair or model turn. Costs remain retained in methodology ledger.",
+      "state": "startup failure, no model session"
+    }
+  ],
+  "definitions": {
+    "correction_recheck_cycle": "An actual correction followed by a relevant check. Reruns without another correction, model turns and assertions are not extra cycles.",
+    "expected_negative": "A deliberately rejected invalid/unauthorized operation asserted by a passing test is not a product bug.",
+    "final_defect_state": "No outstanding observed finding after accepted audit means only that recorded scope found none. There is no oracle for latent bugs.",
+    "product_defect": "An evidenced required-behavior violation, grouped by root cause. Repeated symptoms and assertions do not add defects.",
+    "source_refs": "All evidence paths are relative to the benchmark root; line numbers are one-based."
+  },
+  "evidence_sha256": {
+    "runs/adaptive/phases/01-builder/final.txt": "937d3140ccba4716e93e9932dfb31d03a12219b16f318d6fad0ab37e2bdb564a",
+    "runs/adaptive/phases/02-auditor/final.txt": "e1f699d45daf99618a66b3a0d75ecd8333e3f2d34e028f2d1e653f857fdaf156",
+    "runs/adaptive/phases/03-builder/final.txt": "fd1bb748683311b9c693a189ab654f6d115421ccf56c7d8dd14f84a9522d0fc7",
+    "runs/adaptive/phases/04-auditor/final.txt": "bd156b5f497c7d6ac6b48c5ac0e6d28549531b97e77809ba722d56fc14771784",
+    "runs/adaptive/phases/05-builder/final.txt": "a0d8f3ca8b4ad925cb912cff91438462c2258fcaf38682d2a60e0a7d800cc4f3",
+    "runs/adaptive/phases/06-auditor/final.txt": "c14ae4b49f5f8cd158f94218fed18c231f15a5d1ad2c4b8990419b2385356771",
+    "runs/adaptive/phases/07-builder/final.txt": "8ec9f67d12d0fd7442d203666bd7ced23c1103b8eb25884945ff3cd4cad40b8a",
+    "runs/adaptive/phases/08-auditor/final.txt": "1e6fd1321e259b4de20f901b545df3f7cbbc91b75abe969e4a4d24a097dcc9d3",
+    "runs/adaptive/site/backend/check-runs.jsonl": "370345989f95fbdd612d444015fd418f1142e608aa9fe29c41991356261a8993",
+    "runs/adaptive/site/evidence/issues.jsonl": "d64737effcae7c7f43d2afae9fa2c9fa6525f1ae123e7a3eaf74c57f5ca4699f",
+    "runs/adaptive/site/frontend/check-runs.jsonl": "84cb2df40ff541d862c2630038277c1788ad685bc9c987f9c78e29700f82a00c",
+    "runs/adaptive/site/integration/check-runs.jsonl": "db6de5e3e1346adffda8ca8c69f93055a71acfc8839971a6daf2f757368f09e6",
+    "runs/adaptive/snapshots/continuation-v2-002-final-008/manifest.json": "5cf8ef361dccb2ceb8ab6d2366b519b836e1442b18fbbae16be9ec58027cd25a",
+    "runs/single/phases/01-builder/final.txt": "b06a310b5770a9f159587552951c2b3e23f6b11645a2f1ad4a1bb41d5a77fd84",
+    "runs/single/phases/02-auditor/final.txt": "6d32b55cbfa8c0378d3db471b285f773f9ca2308b9d4701810654117a67b4a85",
+    "runs/single/phases/03-builder/final.txt": "00c641e03b10ec9c2775e32894790978d8425c19e423dddec5f475047094e835",
+    "runs/single/phases/04-auditor/final.txt": "78ce312be65c200bd6d5088518a5126bd62b5debc1faea2be4653c795b8ed7fc",
+    "runs/single/phases/05-auditor/final.txt": "0b1b4b08ce02cbf20548cdba919bb878521a6143874fd12b51f60bbe2d3b49aa",
+    "runs/single/phases/06-builder/final.txt": "c17521ac73356fb39de428d3a2280d5732786831c44ae7df464e0dbe485eaa5b",
+    "runs/single/phases/07-auditor/final.txt": "d50777d9ef7b7786e02326cd3c91a3d762894ea3ad3f60525deefb9037dbbece",
+    "runs/single/site/backend/check-runs.jsonl": "044f57cb14bbaf67c4e4359a46aa419ccb27a8723f163392122a34eee7f1402c",
+    "runs/single/site/evidence/issues.jsonl": "5f9a72dd8498734565876cdb7d6198762f0b974c7d0576fcf051cfd65b6d0de7",
+    "runs/single/site/frontend/check-runs.jsonl": "a3c0e3b2dcfb384b4cd2a69214e505a01565d362f9de54f24bbb4f3cc63deb84",
+    "runs/single/site/integration/check-runs.jsonl": "c0ad713a2733962e3a8b12dab0625d2cdd7157a4344c1d45353fa065ee68705f",
+    "runs/single/snapshots/continuation-v2-001-final-007/manifest.json": "da625c2a0f87e57fbc535d248b89f6d673329fe1758e4af3c35215a066a4e420"
+  },
+  "limitations": [
+    "Counts describe observed and recorded work, not all defects present at any moment or a bug-free guarantee.",
+    "Builder issue logs and independent reproductions have different evidence strengths; unaccepted metadata never becomes canonical PASS/FAIL merely because app checks ran.",
+    "Auth/signing runtime credentials were excluded from this evidence review; no secret contents were read.",
+    "Controller formatter/inventory/environment interruptions are benchmark methodology events, not app product defects. Their time and usage remain costs.",
+    "Visual refinements are separate from product defects, with the objective contrast ambiguity explicitly disclosed.",
+    "No causal conclusion, winner claim, production security certification, exhaustive accessibility assertion or live provider verification follows from this classification.",
+    "Final raw reports have zero findings; this is not an oracle for latent bugs. Adaptive canonical acceptance remains pending solely on report metadata at this capture. Root may update acceptance-only state after disposition without altering product/cycle counts."
+  ],
+  "schema": 1,
+  "scope": "Evidence classification of recorded ServiceFlow implementation and repair iterations. The review used frozen native app source/audit captures; it did not run additional app tests, alter measured apps or feed unrecorded findings to subjects.",
+  "status": "final product-correction classification; both canonical app gates PASS"
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "op": "click",
+    "selector": "button:has-text('Provider')"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Sign in')"
+  },
+  {
+    "op": "click",
+    "selector": ".request-table a[href=\"/requests/06c16bdc-abbd-47a5-afe7-ce8a6f9ef4e3\"]"
+  },
+  {
+    "op": "select",
+    "selector": "#next-status",
+    "value": "Reviewing"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Save status')"
+  },
+  {
+    "op": "select",
+    "selector": "#next-status",
+    "value": "Quoted"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Draft reply')"
+  },
+  {
+    "op": "fill",
+    "selector": "#draft-text",
+    "value": "Edited demo reply. Thank you for the details. Please review before use."
+  },
+  {
+    "op": "click",
+    "selector": "label:has-text('Edit your draft')"
+  }
+]

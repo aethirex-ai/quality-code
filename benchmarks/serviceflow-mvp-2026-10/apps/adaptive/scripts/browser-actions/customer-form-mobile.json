@@ -1,0 +1,22 @@
+[
+  {
+    "op": "click",
+    "selector": "button:has-text('Customer'):not(:has-text('2'))"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Sign in')"
+  },
+  {
+    "op": "click",
+    "selector": "a:has-text('New request')"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Submit request')"
+  },
+  {
+    "op": "click",
+    "selector": "[role=\"alert\"]"
+  }
+]

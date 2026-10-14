@@ -1,0 +1,18 @@
+[
+  {
+    "op": "click",
+    "selector": "button:has-text('Admin')"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Sign in')"
+  },
+  {
+    "op": "click",
+    "selector": "a:has-text('Service catalogue')"
+  },
+  {
+    "op": "click",
+    "selector": "h3:has-text('Plumbing repairs')"
+  }
+]

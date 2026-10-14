@@ -1,0 +1,6 @@
+CREATE TABLE services (id TEXT PRIMARY KEY, name TEXT NOT NULL, description TEXT NOT NULL, price TEXT NOT NULL, active INTEGER NOT NULL CHECK(active IN (0,1)), version INTEGER NOT NULL DEFAULT 1);
+CREATE TABLE requests (id TEXT PRIMARY KEY, customerId TEXT NOT NULL REFERENCES user(id), serviceId TEXT NOT NULL REFERENCES services(id), serviceName TEXT NOT NULL, servicePrice TEXT NOT NULL, description TEXT NOT NULL, location TEXT NOT NULL, preferredDate TEXT NOT NULL, preferredEndDate TEXT, contactName TEXT NOT NULL, contactEmail TEXT NOT NULL, contactPhone TEXT NOT NULL, status TEXT NOT NULL CHECK(status IN ('New','Reviewing','Quoted','Booked','Completed','Declined')), version INTEGER NOT NULL DEFAULT 1, createdAt TEXT NOT NULL, updatedAt TEXT NOT NULL);
+CREATE INDEX requests_customer ON requests(customerId);
+CREATE TABLE activity (id TEXT PRIMARY KEY, requestId TEXT NOT NULL REFERENCES requests(id), actorId TEXT NOT NULL REFERENCES user(id), actorName TEXT NOT NULL, action TEXT NOT NULL, createdAt TEXT NOT NULL);
+CREATE INDEX activity_request ON activity(requestId,createdAt);
+CREATE TABLE operations (actorId TEXT NOT NULL REFERENCES user(id), token TEXT NOT NULL, scope TEXT NOT NULL, payload TEXT NOT NULL, response TEXT NOT NULL, PRIMARY KEY(actorId,token));

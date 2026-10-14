@@ -1,0 +1,309 @@
+{
+  "schema": 1,
+  "conditions": {
+    "single": {
+      "state": "PASS",
+      "initial_minutes": "42.33 min",
+      "accepted_minutes": "145.35 min",
+      "active_minutes": "134.22 min",
+      "audit_rounds": 4,
+      "product_fix_cycles": 11,
+      "observed_defects": 10,
+      "visual_score": "22.5 / 25",
+      "input_tokens": "46,325,274",
+      "cached_input_tokens": "44,899,584",
+      "output_tokens": "293,883",
+      "uncached_input_usd": "$3.0287",
+      "cached_input_usd": "$5.1992",
+      "output_usd": "$3.1350",
+      "api_equivalent_usd": "$11.3628"
+    },
+    "adaptive": {
+      "state": "PASS",
+      "initial_minutes": "22.08 min",
+      "accepted_minutes": "116.11 min",
+      "active_minutes": "88.85 min",
+      "audit_rounds": 4,
+      "product_fix_cycles": 5,
+      "observed_defects": 5,
+      "visual_score": "21 / 25",
+      "input_tokens": "32,137,917",
+      "cached_input_tokens": "30,824,832",
+      "output_tokens": "217,650",
+      "uncached_input_usd": "$2.6262",
+      "cached_input_usd": "$3.0825",
+      "output_usd": "$2.1765",
+      "api_equivalent_usd": "$7.8852"
+    }
+  },
+  "screenshots": [
+    {
+      "state": "01-landing",
+      "state_label": "Public landing",
+      "width": "1440",
+      "path": "screenshots/single/1440/01-landing.png",
+      "alt": "Single implementation: Public landing at 1440 pixels",
+      "caption": "Single \u00b7 Public landing \u00b7 1440 px"
+    },
+    {
+      "state": "01-landing",
+      "state_label": "Public landing",
+      "width": "1440",
+      "path": "screenshots/adaptive/1440/01-landing.png",
+      "alt": "Adaptive implementation: Public landing at 1440 pixels",
+      "caption": "Adaptive \u00b7 Public landing \u00b7 1440 px"
+    },
+    {
+      "state": "01-landing",
+      "state_label": "Public landing",
+      "width": "375",
+      "path": "screenshots/single/375/01-landing.png",
+      "alt": "Single implementation: Public landing at 375 pixels",
+      "caption": "Single \u00b7 Public landing \u00b7 375 px"
+    },
+    {
+      "state": "01-landing",
+      "state_label": "Public landing",
+      "width": "375",
+      "path": "screenshots/adaptive/375/01-landing.png",
+      "alt": "Adaptive implementation: Public landing at 375 pixels",
+      "caption": "Adaptive \u00b7 Public landing \u00b7 375 px"
+    },
+    {
+      "state": "02-login",
+      "state_label": "Sign in",
+      "width": "1440",
+      "path": "screenshots/single/1440/02-login.png",
+      "alt": "Single implementation: Sign in at 1440 pixels",
+      "caption": "Single \u00b7 Sign in \u00b7 1440 px"
+    },
+    {
+      "state": "02-login",
+      "state_label": "Sign in",
+      "width": "1440",
+      "path": "screenshots/adaptive/1440/02-login.png",
+      "alt": "Adaptive implementation: Sign in at 1440 pixels",
+      "caption": "Adaptive \u00b7 Sign in \u00b7 1440 px"
+    },
+    {
+      "state": "02-login",
+      "state_label": "Sign in",
+      "width": "375",
+      "path": "screenshots/single/375/02-login.png",
+      "alt": "Single implementation: Sign in at 375 pixels",
+      "caption": "Single \u00b7 Sign in \u00b7 375 px"
+    },
+    {
+      "state": "02-login",
+      "state_label": "Sign in",
+      "width": "375",
+      "path": "screenshots/adaptive/375/02-login.png",
+      "alt": "Adaptive implementation: Sign in at 375 pixels",
+      "caption": "Adaptive \u00b7 Sign in \u00b7 375 px"
+    },
+    {
+      "state": "03-customer-request",
+      "state_label": "Customer request form",
+      "width": "1440",
+      "path": "screenshots/single/1440/03-customer-request.png",
+      "alt": "Single implementation: Customer request form at 1440 pixels",
+      "caption": "Single \u00b7 Customer request form \u00b7 1440 px"
+    },
+    {
+      "state": "03-customer-request",
+      "state_label": "Customer request form",
+      "width": "1440",
+      "path": "screenshots/adaptive/1440/03-customer-request.png",
+      "alt": "Adaptive implementation: Customer request form at 1440 pixels",
+      "caption": "Adaptive \u00b7 Customer request form \u00b7 1440 px"
+    },
+    {
+      "state": "03-customer-request",
+      "state_label": "Customer request form",
+      "width": "375",
+      "path": "screenshots/single/375/03-customer-request.png",
+      "alt": "Single implementation: Customer request form at 375 pixels",
+      "caption": "Single \u00b7 Customer request form \u00b7 375 px"
+    },
+    {
+      "state": "03-customer-request",
+      "state_label": "Customer request form",
+      "width": "375",
+      "path": "screenshots/adaptive/375/03-customer-request.png",
+      "alt": "Adaptive implementation: Customer request form at 375 pixels",
+      "caption": "Adaptive \u00b7 Customer request form \u00b7 375 px"
+    },
+    {
+      "state": "04-customer-dashboard",
+      "state_label": "Customer dashboard",
+      "width": "1440",
+      "path": "screenshots/single/1440/04-customer-dashboard.png",
+      "alt": "Single implementation: Customer dashboard at 1440 pixels",
+      "caption": "Single \u00b7 Customer dashboard \u00b7 1440 px"
+    },
+    {
+      "state": "04-customer-dashboard",
+      "state_label": "Customer dashboard",
+      "width": "1440",
+      "path": "screenshots/adaptive/1440/04-customer-dashboard.png",
+      "alt": "Adaptive implementation: Customer dashboard at 1440 pixels",
+      "caption": "Adaptive \u00b7 Customer dashboard \u00b7 1440 px"
+    },
+    {
+      "state": "04-customer-dashboard",
+      "state_label": "Customer dashboard",
+      "width": "375",
+      "path": "screenshots/single/375/04-customer-dashboard.png",
+      "alt": "Single implementation: Customer dashboard at 375 pixels",
+      "caption": "Single \u00b7 Customer dashboard \u00b7 375 px"
+    },
+    {
+      "state": "04-customer-dashboard",
+      "state_label": "Customer dashboard",
+      "width": "375",
+      "path": "screenshots/adaptive/375/04-customer-dashboard.png",
+      "alt": "Adaptive implementation: Customer dashboard at 375 pixels",
+      "caption": "Adaptive \u00b7 Customer dashboard \u00b7 375 px"
+    },
+    {
+      "state": "05-provider-dashboard",
+      "state_label": "Provider dashboard",
+      "width": "1440",
+      "path": "screenshots/single/1440/05-provider-dashboard.png",
+      "alt": "Single implementation: Provider dashboard at 1440 pixels",
+      "caption": "Single \u00b7 Provider dashboard \u00b7 1440 px"
+    },
+    {
+      "state": "05-provider-dashboard",
+      "state_label": "Provider dashboard",
+      "width": "1440",
+      "path": "screenshots/adaptive/1440/05-provider-dashboard.png",
+      "alt": "Adaptive implementation: Provider dashboard at 1440 pixels",
+      "caption": "Adaptive \u00b7 Provider dashboard \u00b7 1440 px"
+    },
+    {
+      "state": "05-provider-dashboard",
+      "state_label": "Provider dashboard",
+      "width": "375",
+      "path": "screenshots/single/375/05-provider-dashboard.png",
+      "alt": "Single implementation: Provider dashboard at 375 pixels",
+      "caption": "Single \u00b7 Provider dashboard \u00b7 375 px"
+    },
+    {
+      "state": "05-provider-dashboard",
+      "state_label": "Provider dashboard",
+      "width": "375",
+      "path": "screenshots/adaptive/375/05-provider-dashboard.png",
+      "alt": "Adaptive implementation: Provider dashboard at 375 pixels",
+      "caption": "Adaptive \u00b7 Provider dashboard \u00b7 375 px"
+    },
+    {
+      "state": "06-provider-request-detail",
+      "state_label": "Request detail and history",
+      "width": "1440",
+      "path": "screenshots/single/1440/06-provider-request-detail.png",
+      "alt": "Single implementation: Request detail and history at 1440 pixels",
+      "caption": "Single \u00b7 Request detail and history \u00b7 1440 px"
+    },
+    {
+      "state": "06-provider-request-detail",
+      "state_label": "Request detail and history",
+      "width": "1440",
+      "path": "screenshots/adaptive/1440/06-provider-request-detail.png",
+      "alt": "Adaptive implementation: Request detail and history at 1440 pixels",
+      "caption": "Adaptive \u00b7 Request detail and history \u00b7 1440 px"
+    },
+    {
+      "state": "06-provider-request-detail",
+      "state_label": "Request detail and history",
+      "width": "375",
+      "path": "screenshots/single/375/06-provider-request-detail.png",
+      "alt": "Single implementation: Request detail and history at 375 pixels",
+      "caption": "Single \u00b7 Request detail and history \u00b7 375 px"
+    },
+    {
+      "state": "06-provider-request-detail",
+      "state_label": "Request detail and history",
+      "width": "375",
+      "path": "screenshots/adaptive/375/06-provider-request-detail.png",
+      "alt": "Adaptive implementation: Request detail and history at 375 pixels",
+      "caption": "Adaptive \u00b7 Request detail and history \u00b7 375 px"
+    },
+    {
+      "state": "07-editable-deterministic-draft",
+      "state_label": "Editable demo reply",
+      "width": "1440",
+      "path": "screenshots/single/1440/07-editable-deterministic-draft.png",
+      "alt": "Single implementation: Editable demo reply at 1440 pixels",
+      "caption": "Single \u00b7 Editable demo reply \u00b7 1440 px"
+    },
+    {
+      "state": "07-editable-deterministic-draft",
+      "state_label": "Editable demo reply",
+      "width": "1440",
+      "path": "screenshots/adaptive/1440/07-editable-deterministic-draft.png",
+      "alt": "Adaptive implementation: Editable demo reply at 1440 pixels",
+      "caption": "Adaptive \u00b7 Editable demo reply \u00b7 1440 px"
+    },
+    {
+      "state": "07-editable-deterministic-draft",
+      "state_label": "Editable demo reply",
+      "width": "375",
+      "path": "screenshots/single/375/07-editable-deterministic-draft.png",
+      "alt": "Single implementation: Editable demo reply at 375 pixels",
+      "caption": "Single \u00b7 Editable demo reply \u00b7 375 px"
+    },
+    {
+      "state": "07-editable-deterministic-draft",
+      "state_label": "Editable demo reply",
+      "width": "375",
+      "path": "screenshots/adaptive/375/07-editable-deterministic-draft.png",
+      "alt": "Adaptive implementation: Editable demo reply at 375 pixels",
+      "caption": "Adaptive \u00b7 Editable demo reply \u00b7 375 px"
+    },
+    {
+      "state": "08-admin-catalogue",
+      "state_label": "Admin service catalogue",
+      "width": "1440",
+      "path": "screenshots/single/1440/08-admin-catalogue.png",
+      "alt": "Single implementation: Admin service catalogue at 1440 pixels",
+      "caption": "Single \u00b7 Admin service catalogue \u00b7 1440 px"
+    },
+    {
+      "state": "08-admin-catalogue",
+      "state_label": "Admin service catalogue",
+      "width": "1440",
+      "path": "screenshots/adaptive/1440/08-admin-catalogue.png",
+      "alt": "Adaptive implementation: Admin service catalogue at 1440 pixels",
+      "caption": "Adaptive \u00b7 Admin service catalogue \u00b7 1440 px"
+    },
+    {
+      "state": "08-admin-catalogue",
+      "state_label": "Admin service catalogue",
+      "width": "375",
+      "path": "screenshots/single/375/08-admin-catalogue.png",
+      "alt": "Single implementation: Admin service catalogue at 375 pixels",
+      "caption": "Single \u00b7 Admin service catalogue \u00b7 375 px"
+    },
+    {
+      "state": "08-admin-catalogue",
+      "state_label": "Admin service catalogue",
+      "width": "375",
+      "path": "screenshots/adaptive/375/08-admin-catalogue.png",
+      "alt": "Adaptive implementation: Admin service catalogue at 375 pixels",
+      "caption": "Adaptive \u00b7 Admin service catalogue \u00b7 375 px"
+    }
+  ],
+  "limitations": "One ordered, partly overlapping pair; both use Quality Code. Calendar time includes recorded interruptions and report correction; controller execution is wall time, not CPU time. Adaptive chose one same-model helper at medium effort, so cheaper-model implementation and hierarchical swarms were not tested. Conditional Standard API equivalents use request-level price tiers; they are not invoices or subscription measurements. Outer setup, orchestration, comparative grading and publication are excluded and are not free.",
+  "evidence": {
+    "usage": "usage.json",
+    "iterations": "iteration-review.json",
+    "audits": "app-audits.json",
+    "visual_review": "visual-review.json",
+    "capture_manifest": "capture-manifest.json"
+  },
+  "image_generation_count": {
+    "single": 0,
+    "adaptive": 0
+  }
+}

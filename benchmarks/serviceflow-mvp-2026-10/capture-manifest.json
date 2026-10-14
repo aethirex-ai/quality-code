@@ -1,0 +1,743 @@
+{
+  "capture_processes_and_databases_cleaned": true,
+  "console_error_limit": "Console records retain HTTP401 resource errors; counts are published per capture. The capture tool did not attribute every resource error to an endpoint. No page-error or unfinished image/loaded-state failure was reported. Console errors alone are not a functional acceptance verdict.",
+  "mapping": {
+    "adaptive": "A",
+    "single": "B"
+  },
+  "method": "Fresh isolated source copies and databases, installed dependencies, production builds, real role sign-ins; identical desktop/mobile dimensions, locale, light scheme, reduced motion, fonts and loaded-state checks. Role cookies reused in memory across viewport contexts to respect production authentication limits.",
+  "schema": 1,
+  "screenshots": [
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:42.384Z",
+      "condition": "single",
+      "console_error_count": 1,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/1440/01-landing.png",
+      "sha256": "dc857bc45dd519fbe125c9c482bdf0618a1d69334699550af18cd3c8393c7b01",
+      "state": "01-landing",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:43.198Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/1440/02-login.png",
+      "sha256": "92db040185cd307e719469241b400c82428cd559654a3e268b7e1dd12e1e01e4",
+      "state": "02-login",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:44.205Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/1440/03-customer-request.png",
+      "sha256": "508605275b58526326508c90da92b0735af49433cf28e52e129872896c0c7f23",
+      "state": "03-customer-request",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:45.037Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/1440/04-customer-dashboard.png",
+      "sha256": "39fa0fab1d2e26bf18d973bf2169807f2076409e05a16a773725555af21a61dc",
+      "state": "04-customer-dashboard",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:45.963Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/1440/05-provider-dashboard.png",
+      "sha256": "1624709ad1e92ca4c52a21dd95e809f3ad203459be0ca2d1ff6900ffbd742c1d",
+      "state": "05-provider-dashboard",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:46.815Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/1440/06-provider-request-detail.png",
+      "sha256": "3f9171384caaed8e038ceab20b6383bf3bf444a87e8a591f055ec4d3bedf9f03",
+      "state": "06-provider-request-detail",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:47.192Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/1440/07-editable-deterministic-draft.png",
+      "sha256": "79dbc74aa3fdebd6c1e1e7f7a5eaa077cc329b8406c04cea7d0923e0602ecc14",
+      "state": "07-editable-deterministic-draft",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:48.176Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/1440/08-admin-catalogue.png",
+      "sha256": "421e766678f71361f271615c1eabe413eb96966a013f2ef51ecdfc1592bff71d",
+      "state": "08-admin-catalogue",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:49.198Z",
+      "condition": "single",
+      "console_error_count": 1,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/375/01-landing.png",
+      "sha256": "3cd96bf88ef1719443dfb5d0c10a5aa6d445312f6ddbd9818098085b7e93dec6",
+      "state": "01-landing",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:50.039Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/375/02-login.png",
+      "sha256": "4584ba24676adae4d4424a797c1f51411f4a0c37e73e8732bfb00fcb2ebfdba8",
+      "state": "02-login",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:50.869Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/375/03-customer-request.png",
+      "sha256": "5de3fb83acbf3b0efe167ad56611046fc8f8a68a569b571fb7d9d884d31ba60f",
+      "state": "03-customer-request",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:51.714Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/375/04-customer-dashboard.png",
+      "sha256": "9cc04dd98163bdf6bdf31671948508b4c9b6f84eee432dc5761c513def0e7819",
+      "state": "04-customer-dashboard",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:52.533Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/375/05-provider-dashboard.png",
+      "sha256": "90390616e36ce04044cf792e8ebfda2f267340f27a0ae522f472fe7007187652",
+      "state": "05-provider-dashboard",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:53.360Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/375/06-provider-request-detail.png",
+      "sha256": "385c2b257a2c97c1203aefc2ec52395c7f2081b511c4d111c10be87fa14a5531",
+      "state": "06-provider-request-detail",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:53.755Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/375/07-editable-deterministic-draft.png",
+      "sha256": "b91d0f41ff3c40b9934f5d1a47c51e2721c585dd29d5651a3da8a0d17773f8cb",
+      "state": "07-editable-deterministic-draft",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "B",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:54.599Z",
+      "condition": "single",
+      "console_error_count": 2,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/single/375/08-admin-catalogue.png",
+      "sha256": "432ff0b9ee8f171dcb94f63e4b8032ad648428fdfda32ec77f14f4e58e52af68",
+      "state": "08-admin-catalogue",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:55.647Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/1440/01-landing.png",
+      "sha256": "e829b91854220ca41ec8b942fbca05ab1d631fa0f01a67011e6843d2ecbc376b",
+      "state": "01-landing",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:56.504Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/1440/02-login.png",
+      "sha256": "bf92b6e66726e9dc294c257f51912c8f8b05e1cba92a31e7462ee5e7e1af1138",
+      "state": "02-login",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:57.470Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/1440/03-customer-request.png",
+      "sha256": "0d23d49269410b0b404234dc57a422aa2514d2d8f79a4677662b7903167844a0",
+      "state": "03-customer-request",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:58.315Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/1440/04-customer-dashboard.png",
+      "sha256": "c3c51b6fd8e89b1c681e1129073d7fa7991ce6388ef0711249ed705dd47af8af",
+      "state": "04-customer-dashboard",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:30:59.285Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/1440/05-provider-dashboard.png",
+      "sha256": "399f3ab135854795efc4fa983963d98891e6d94e69e9d945191b42aa79356408",
+      "state": "05-provider-dashboard",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:00.144Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/1440/06-provider-request-detail.png",
+      "sha256": "f3dd082a09817b02fa648eb88d3c7140114eba781d5f29d4a258c70960630542",
+      "state": "06-provider-request-detail",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:00.582Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/1440/07-editable-deterministic-draft.png",
+      "sha256": "16fa63c98529f6d68368969c71e1e03ae5840e7679a2b78f88a7fd8a15d7baaa",
+      "state": "07-editable-deterministic-draft",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:01.523Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/1440/08-admin-catalogue.png",
+      "sha256": "f33b7b3334fdeae4b1034116fe12f37d5d189f343c0ad123426ab2674c6fe3ab",
+      "state": "08-admin-catalogue",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:02.529Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/375/01-landing.png",
+      "sha256": "e70a4171f381ee09a490dce6526d4a2cc44c45ae1cedce4edc67b85c33e3eed8",
+      "state": "01-landing",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:03.340Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/375/02-login.png",
+      "sha256": "58c31dc6a5afc6b2024283c784a844da78ecd934b4ae6a475529e071d8c7b19a",
+      "state": "02-login",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:04.163Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/375/03-customer-request.png",
+      "sha256": "4560264c5ca401d53e17d78921eedc2e5de9ca6aa68232d34d0398445579838a",
+      "state": "03-customer-request",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:04.977Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/375/04-customer-dashboard.png",
+      "sha256": "700687b31dcedf91f9a7914172abc4c493c5b26a5b2b1f46c8130d05f19c1508",
+      "state": "04-customer-dashboard",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:05.799Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/375/05-provider-dashboard.png",
+      "sha256": "32bacd91378ac454b680de5cecd25d9a988a8bad20be607c4e9d384060094c06",
+      "state": "05-provider-dashboard",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:06.626Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/375/06-provider-request-detail.png",
+      "sha256": "5d97b5c98deb1af127f1d5bcb35e7fffbffb44ed7945664e16a69c2f569a2719",
+      "state": "06-provider-request-detail",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:07.019Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/375/07-editable-deterministic-draft.png",
+      "sha256": "8bf100bcdac10dd74bad261492608de3952c194a7e692918821e1a08d2d963ea",
+      "state": "07-editable-deterministic-draft",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    },
+    {
+      "anonymous_label": "A",
+      "broken_image_count": 0,
+      "capture_time": "2026-10-14T01:31:07.847Z",
+      "condition": "adaptive",
+      "console_error_count": 0,
+      "deviceScaleFactor": 1,
+      "fullPage": true,
+      "horizontal_overflow": false,
+      "path": "screenshots/adaptive/375/08-admin-catalogue.png",
+      "sha256": "f8415ef9c27beaec22806cbfb22f9108c0f9a63c2cc4f9a7e0dd95a065ec8e63",
+      "state": "08-admin-catalogue",
+      "unfinished_loading": false,
+      "viewport": {
+        "height": 812,
+        "width": 375
+      }
+    }
+  ],
+  "source_provenance": [
+    {
+      "condition": "single",
+      "copied_source_sha256": {
+        ".env.example": "233af405a89ac201eeb6217c6528d2d63ac7363fdc5b8a98248c238d5bde85a3",
+        ".gitignore": "fde041d3fdbb19bc65340edec24e4a0fbd4da7ccfd7d9166bd16704e3723b700",
+        ".quality/LICENSE": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+        ".quality/audit-result.schema.json": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+        ".quality/quality.py": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+        ".quality/quality.toml": "f23bb1b84af41e40d6278b567d0bf65cf36bb69d65722a10467529da5606eff2",
+        "AGENTS.md": "5813288cb4233639b306fc0808fd03504a11218f80657d0daae88dac59751e20",
+        "APP_PROMPT.txt": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+        "AUDIT_PROMPT.txt": "a8a15e19342d06539a25512d2ab301ec823f00c5010f1566653884256b72302a",
+        "BRAND.md": "415fc360b754c32c4671533d19c5edb3f8f191c07ad3976f60bcd4848e193f34",
+        "BRIEF.md": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+        "BUDGET.md": "d6ea5200dcec427df0e09c6eaca10f73d71856276d536526f6e5ad16e59697ef",
+        "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+        "MAP.md": "2e5e08dd1f5612d8b359c4d53fef67b37ee994da2ae50cf39702c60664b5e4c5",
+        "MODEL_COSTS.json": "00429a8ad67894dbae85ad993f62cf7a47fc77311628b65cc611755343ec97ae",
+        "NATIVE_MODELS.json": "d6e6e1ebd2fb111d1ddd3924d50b18033b7a859595794a6e1c3fff0480590f67",
+        "README.md": "7f3f15e3980b07ed7265fb6b73754290914aad311288c8821821a28dd81de12d",
+        "RUNTIME.md": "1a5545b44dbc17d2f2d053f5c850bc0c830b8e727708fe06599d58bc8664a419",
+        "TESTING.md": "55cb0c9333d327655670fd782b5253c6d7753c595c41a7efef91ea30490a3d29",
+        "brand/aethdesign-home-1440.png": "094794c739ebebf4468e63ae9414df7dc6915a7e6076b67ad45e95aa0dd56f5e",
+        "brand/aethdesign-home-375.png": "8ffa62f886e19983875c53bc8501342f4875855c6f0f70363f16b51d21018d1a",
+        "brand/capture.json": "9ffc4a7944054116b4f33de5b05e2ab145da49b63b8e62e9e27c92dec8d428db",
+        "brand/landing-page.txt": "11582a20e4d3a634ad1796e6215201c5f3169befc262818c784e5b2c7a80c021",
+        "index.html": "cbaa8aba0b0ee088b5b87633190e99a3961d0677760348704a23e02ab6d1f8f9",
+        "migrations/001_application.sql": "b63a2df32da3ec458e99a607b410ea09f43a5b4b6b52e8c4ffc3fced515541ad",
+        "package-lock.json": "37d8521613ed652697d1b5625559a7e5a930af23f2bd07988dd68c6966f8cda6",
+        "package.json": "67f72e9e983562041bee712ef6b609dd964f2cfa8baaac1cd6cab56227079317",
+        "preview_client.py": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+        "qa_check.py": "472ed87fd7ee56868064c1b5b76cf75644a2a0dcade8a46200644c232992a6ba",
+        "quality": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4",
+        "scripts/boundary-browser.py": "5d9ed155fb70a2188392776157778b1b41e87c8e710d8540c52ea0c3fd82393e",
+        "scripts/contrast-check.py": "43263cfe385f9d0654c78e6467c006dca1dcbf8a0a7d6f16c7c33f3e491096ad",
+        "scripts/drafting-browser.py": "2664fcf14b24b3b277ec59cf6426bda48c928cbbf1727fc0455033e743f6a993",
+        "scripts/e2e.py": "22107974e88721bb8ec489a43b733e33d156b8f6f9ff226c7c79231867ddf1a9",
+        "scripts/migrate.ts": "3e8381c78dbf04c7f3ce4249b7de88f9dafc368a8cc0bd8938e4dea1d37fc1ef",
+        "scripts/preview-check.py": "0f4ff0c89b4c6197eaa524b2cd24f7e79dbb66dbe3907ae637725fc7485b25b4",
+        "scripts/process-smoke.ts": "001ce6032a9d3a3d3bf703bd99ee74f9e2bc17bdef86da1223c88409e11d20af",
+        "scripts/seed-data.ts": "bb720e74d20d528c599a9d39096d846eab216883cb95aa1bbc3aaea45d2b787c",
+        "scripts/seed.ts": "61b71d60c72a6adac5e210f7cfb11a3bb2e974eb5f714527948ea7351efe5978",
+        "src/client/api.ts": "eefc944d0d72a8fa85ea38c0860970b0d1468be6f45305d38a4d343fada76e92",
+        "src/client/catalogue.tsx": "ca4b37ab6d3bf9e51e6e6624509f085dd36892ff7e0f8292d3c46b7b3ceba2a9",
+        "src/client/components.tsx": "ec33e55bc4698ab45ca35714bfca50878247d1a25fb0a8c108c3f91bf571189f",
+        "src/client/dashboard.tsx": "5b28b0d98069caed398297c01aaf9ebc15600186a5184935aa6fe9252a04489f",
+        "src/client/detail.tsx": "46f9484d8ff6199ae14e4f162461c39b4086b6b2c3cef62d966056e2ae596570",
+        "src/client/forms.tsx": "50a7b621bfff2b4a682de726eb7f73b0c181ecb653d6ccdc1df7828a80523e84",
+        "src/client/landing.tsx": "d16984e3b53be087be93e7bdb3ffb3ddcb24ec8f4142ddc8f16223f06ed62982",
+        "src/client/main.tsx": "79ad31ea9343be834d705115423242ef3035c58f4045a0576abb68057fb05b3e",
+        "src/client/styles.css": "04a7c3574292cc6d24e89c234c549bdbaa66aa0baebb8ab7924c196b5b562691",
+        "src/server/ai.ts": "376585fda65e6309363eb4e425c2153cf53ac3c2c56acc7771e8679d4b0971c8",
+        "src/server/app.ts": "8b7702a01da4853b045ec4379123b27d8259eeca77549f637df6af927c7d350e",
+        "src/server/auth.ts": "d1c550cf092b8c00fde18c3644fb2e231f2845523aca12ba9f64be4b6325cb48",
+        "src/server/config.ts": "c6396b85af83e9142e0cf8c6a393c4f25450fa40787ee6e1df6b68431c59bb84",
+        "src/server/database.ts": "2bf4b6cbddca37f50211ffdffbaccd37d649ae36336fe4190e1e13dc6c0c1896",
+        "src/server/domain.ts": "2314f56a1698bb5bf09c839837e6a201369e7c31e4f449b0ad55217a971e7622",
+        "src/server/start.ts": "aa75daf4dfa7836a31f6dcebd4fc6ad8e976ddd7234b17d5bccfcd8d110d4c97",
+        "src/shared/contracts.ts": "ae6085e3645c404006686a32b3a940fc45b2bd16dce391997cec9bbc85613bc1",
+        "tests/ai.test.ts": "112c6a374bbc125b7b2027a04e1729b36379911bb4738fcd28af565b1ba79da5",
+        "tests/application.test.ts": "7aeee05da959d14bfbfb8dabc5d8a217cdc6f00a33a19d5e5b1cbdf7788cc128",
+        "tests/client-http-recovery.test.ts": "3ed6a42a16bb67305cbbd8290838cf92c439945272eb41d931ac049534e62fb9",
+        "tests/client-recovery.test.ts": "7f0fc4e63f742ddcdc7f1fb537e5d22829d66f2f8183ecf924abd0cb2999f56e",
+        "tests/configuration.test.ts": "b3ba2a5a67d42fca7c82abd43fd8a39328c828316198c8f82eecf693f420be5a",
+        "tests/validation.test.ts": "b638736e8d2f48c1cd891cc4e89b4a20b1a4f16b26a234f600e5885d4075450d",
+        "tsconfig.json": "8d1b97d5aa6be8fb605c712b9bb588c4a7f6f896e1f632a4f9d7faa910f545a7",
+        "vite.config.ts": "59867413fce977f1d87d2216a3e34e1bdfa0f6cd16c420df60f110f73f901220",
+        "vitest.config.ts": "a0a0d63e6367bc24ee63589db96d2f7cbc3d10690868786fa80e55f1a79b4550"
+      },
+      "environment_policy": "allowlisted PATH HOME TMPDIR DATABASE_PATH PORTAL_PORT NODE_ENV; no inherited secrets or env files",
+      "excluded_by_name": [
+        "ROUTING.json"
+      ],
+      "label": "B",
+      "source_manifest_sha256": "da625c2a0f87e57fbc535d248b89f6d673329fe1758e4af3c35215a066a4e420"
+    },
+    {
+      "condition": "adaptive",
+      "copied_source_sha256": {
+        ".env.example": "176866794e965d490603a8020adb1de10a10f406ad9d90becb1c9e0f3125e2de",
+        ".gitignore": "930fc4afb49f90046972f037286a7c8dcccb77857e96ce80f41b1e18e51899cf",
+        ".quality/LICENSE": "770b1b8b27078705ad4e44a7ecb6f42135ad6b85e0261793fc5c1d0bee68983a",
+        ".quality/audit-result.schema.json": "65164d50d5d137f4652146741656d9b5ec88059e6ac710771a05f42dd99f9be0",
+        ".quality/quality.py": "0e04351fa627da72a8d701ef11cb3d02a823e35de677a47a59fed8135df083c4",
+        ".quality/quality.toml": "1dacd7e6e8f75999b849bada24b942bbb3961b22ffe4d32be2b712b1ff896a8b",
+        "AGENTS.md": "5813288cb4233639b306fc0808fd03504a11218f80657d0daae88dac59751e20",
+        "APP_PROMPT.txt": "e83108ea43fb97b9c5d1e6d06fc25bcec5f4a262dbd4de8563718ee680e3a31c",
+        "AUDIT_CRITERIA.md": "1e446442c3af0a0e9051a2253df6442fb37faf57083abc8b078f2b58ca719790",
+        "AUDIT_PROMPT.txt": "a8a15e19342d06539a25512d2ab301ec823f00c5010f1566653884256b72302a",
+        "AUDIT_READY.md": "33f5e79fed42adffa3e8990a1488744d1a79ac162ce3151b5585c0bf05316e4d",
+        "BRAND.md": "415fc360b754c32c4671533d19c5edb3f8f191c07ad3976f60bcd4848e193f34",
+        "BRIEF.md": "0568ce48ebad5f2aec6139f2f3345acf63065eb403a10d81d69a08b36ae91abf",
+        "BUDGET.md": "d6ea5200dcec427df0e09c6eaca10f73d71856276d536526f6e5ad16e59697ef",
+        "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+        "MAP.md": "55f254c9f3b96460f537101c63840985167be822d5e6a975c01590487604318f",
+        "MODEL_COSTS.json": "00429a8ad67894dbae85ad993f62cf7a47fc77311628b65cc611755343ec97ae",
+        "NATIVE_MODELS.json": "d6e6e1ebd2fb111d1ddd3924d50b18033b7a859595794a6e1c3fff0480590f67",
+        "README.md": "91f20dc36e789e78059a12d48f9927321d37dd187c19ff1a99cfcc5665a9364f",
+        "RUNTIME.md": "1a5545b44dbc17d2f2d053f5c850bc0c830b8e727708fe06599d58bc8664a419",
+        "TESTING.md": "9ed8ed23e8d55ff4ac9cae293407124b802e2069877799af3bb51f887836d855",
+        "brand/aethdesign-home-1440.png": "094794c739ebebf4468e63ae9414df7dc6915a7e6076b67ad45e95aa0dd56f5e",
+        "brand/aethdesign-home-375.png": "8ffa62f886e19983875c53bc8501342f4875855c6f0f70363f16b51d21018d1a",
+        "brand/capture.json": "9ffc4a7944054116b4f33de5b05e2ab145da49b63b8e62e9e27c92dec8d428db",
+        "brand/landing-page.txt": "11582a20e4d3a634ad1796e6215201c5f3169befc262818c784e5b2c7a80c021",
+        "index.html": "f3872da67973c41ea3094d8ab6ac35b45cd384486ce83dad299bb8967ed3a1a9",
+        "migrations/001-domain.sql": "d120a28d21e748735b72e0c1fc2833913a41d52e9f1336c642cd1a9bb79bfcda",
+        "migrations/002-catalogue-activity.sql": "53de45673aa1154cd4f376a83eed81a9c42d02efc001b1eed597cea053f09b3b",
+        "package-lock.json": "a6370b3ec5e2a309514bfe560d7c85d8caee0e481a4d9f1724140d857cff7079",
+        "package.json": "3889c5275acdb18c44886e0a258f3547622a8b0a1abecdadcda872f438d40080",
+        "preview_client.py": "534f3624d60481e95c1334431dbfc9816d53ef650971d393c9e5b648cfe4fec9",
+        "qa_check.py": "472ed87fd7ee56868064c1b5b76cf75644a2a0dcade8a46200644c232992a6ba",
+        "quality": "02d9220c47d1c16f5e269f19f02d7eaade7e7b6151832cc40c80dd66a4b8e2a4",
+        "scripts/browser-actions/admin-catalogue-mobile.json": "49e2f2552b4b71e6a8c9b0dbddecf8efe4c5b1515595fa0fd16cbfb097a1d581",
+        "scripts/browser-actions/admin-editor-desktop.json": "9c1d07d6b646ec4c301b3d8cd81e15dc36dc5a97ddf5893570acd5c03aaffbdd",
+        "scripts/browser-actions/admin-referenced-delete.json": "b5a2351fc9c6c421fa0d484c53eeffe39f74c20357db3d6d74589753ac6f63be",
+        "scripts/browser-actions/customer-form-mobile.json": "91246f6133a04c653cc8e9ee8541c0fadbe09f738bd9ae1d16d51da27969bdcd",
+        "scripts/browser-actions/customer-mobile-detail.json": "dab033b165d1a8047efc231eaaccb8bd0741bfc2405f06c174d3661e63b52881",
+        "scripts/browser-actions/customer-submit.json": "161bfef173bd76692a4cd9215a9f4c7c949cd8e6759b1f89e8666da0597400aa",
+        "scripts/browser-actions/customer2-ownership.json": "6d02a4079ac66b3abd99fcfa4caf6c8f27da50cb7c864e281d73f1ddfb44ff30",
+        "scripts/browser-actions/desktop-services.json": "66136230d228aabff823da484e48242c7c637877f911b279ac4a449cdfb1415f",
+        "scripts/browser-actions/mobile-services.json": "66136230d228aabff823da484e48242c7c637877f911b279ac4a449cdfb1415f",
+        "scripts/browser-actions/provider-dashboard.json": "d782998893e8da0c43a8f2924eaec65192f530682358d7ddb1716a7a9ff01045",
+        "scripts/browser-actions/provider-mobile-draft.json": "eea32cf4fa34ab5237bfc57e8f8357d75429324554879656655fe2beeb538a0f",
+        "scripts/browser-actions/provider-update-draft.json": "b9a042b66450e31ccaf279c170a95d921d003ab42028ab582931dd3dda098a45",
+        "scripts/browser_checks.py": "49131256005d5e885ade6c2c783796a8c17423bf1e36635468b4b60acafa7bd0",
+        "scripts/capture_audit_packet.py": "ca3a930e5dc4b09c2c99384326239818f7d03dd72005830fb2bf577887ae9d2b",
+        "scripts/catalogue_boundary_checks.py": "c686e8728e5c61e416d7e67848ecc7228420f382e8b37ba6fcf745e5ea2f0321",
+        "scripts/fresh_setup.py": "4f86e9389781d2fd16c16d21c6f660dfe1bca5910f45e0fab0781d4fc1560c1e",
+        "src/client/api.ts": "1445de3c22ca9af0ecaabd0ffbafc2d57addc2304a22eb63d65130320f30a7fb",
+        "src/client/main.tsx": "553ed18e85eab335d966919f2a070332fcdffe4b6bfeb7d015af127184651adb",
+        "src/client/styles.css": "ddff667a7f19340ebc23b3201385c9f20f56df51e575e7b707944df79a5d54d6",
+        "src/server/app.ts": "9d52aa5d7c48183de1ab3534969ac4f7083ca81f5051674755136c1831b2eacb",
+        "src/server/database.ts": "44d6a94ea56746ca98698270989b14bf3a4a3b3723534b7943fcf5e1e5249aac",
+        "src/server/drafts.ts": "da80d8188e0a2095087b12e41b676e8f4a7ece36ebab212479d5c7683f67c134",
+        "src/server/index.ts": "dbbacb9856f227211342b1d635356e58271d9562be170d728be9d91316d4644c",
+        "src/server/migrate.ts": "5702e04f519c5e5a8055a9d7f8441926951871302521957f5ee2317d5a150b88",
+        "src/server/seed.ts": "01c02321a15310ef6a0d5fbf98266c30ae49b1a7677b5b57179835e7a4254ffa",
+        "src/shared/contracts.ts": "76abad58ceab836ee3743b778a1c3d129eee71c8d092c6443b93750be23cb94b",
+        "tests/backend.test.ts": "c1523e12ad623ad4a95f06c7948440ed0318f4a1aef956939cca6a908b48548d",
+        "tests/browser_artifacts_test.py": "9cb872e06f810463238531fbb5859dac497e6f6e85f4aa7ad393ae048ae57fac",
+        "tests/drafts-privacy.test.ts": "79ccba795f758cea42445e70c63d309f48cf9dc3c471c2deb5da4e36014585d8",
+        "tsconfig.json": "69197ec0c742b49cd6617c7b21b80257aca54b5e8943da13396ca86bf514b928",
+        "vite.config.ts": "1806b4e3046fc32f385517e8cfe80d221793313073f5023e43e02af21d71fed6"
+      },
+      "environment_policy": "allowlisted PATH HOME TMPDIR DATABASE_PATH PORTAL_PORT NODE_ENV; no inherited secrets or env files",
+      "excluded_by_name": [
+        "ROUTING.json"
+      ],
+      "label": "A",
+      "source_manifest_sha256": "5cf8ef361dccb2ceb8ab6d2366b519b836e1442b18fbbae16be9ec58027cd25a"
+    }
+  ],
+  "source_reverified_after_render": true,
+  "tooling_attempts": "A missing npm executable and expected login-rate-limit rejection interrupted setup/capture attempts; only own temporary copies/partial captures were discarded. Final capture uses installed npm and three real role sign-ins per app. These are external capture-tooling events, not subject product fixes or new measured work."
+}

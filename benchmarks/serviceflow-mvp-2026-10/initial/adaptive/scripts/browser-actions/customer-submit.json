@@ -1,0 +1,47 @@
+[
+  {
+    "op": "click",
+    "selector": "button:has-text('Customer'):not(:has-text('2'))"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Sign in')"
+  },
+  {
+    "op": "click",
+    "selector": "a:has-text('New request')"
+  },
+  {
+    "op": "select",
+    "selector": "#serviceId",
+    "value": "plumbing-repairs"
+  },
+  {
+    "op": "fill",
+    "selector": "#description",
+    "value": "E2E 2dddc997: the kitchen tap drips after closing. Please inspect the washer."
+  },
+  {
+    "op": "fill",
+    "selector": "#location",
+    "value": "BS6 5AA, Bristol (demo)"
+  },
+  {
+    "op": "fill",
+    "selector": "#preferredDate",
+    "value": "2099-05-12"
+  },
+  {
+    "op": "fill",
+    "selector": "#contactPhone",
+    "value": "07700 900123"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Submit request')"
+  },
+  {
+    "op": "click",
+    "selector": "h2:has-text('Request history')"
+  }
+]

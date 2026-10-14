@@ -1,0 +1,14 @@
+# ServiceFlow verification
+
+## Automated verification
+Use Node 24.15+ and public npm registry. `npm ci --cache .npm-cache` installs locked dependencies. `npm test` runs seven real HTTP/SQLite suites through `node --import tsx --test`; no external model calls. `npm run typecheck` checks all frontend/backend/shared/test TypeScript. `npm run build` checks types and compiles production frontend. `./quality verify full` runs tests, typecheck, formatting and whitespace; `./quality verify release` runs production build, fresh-database setup and whitespace. Critical risk applies to every changed path.
+
+HTTP tests allocate free ports and temporary fresh databases with synthetic secrets and actual Better Auth email/password login. They verify disabled signup/role tampering, session/role/ownership reads/writes/draft restrictions, cross-origin rejection, validation/normalization, exactly-once retries, stale conflicts, allowed/rejected transitions, chronological atomic actor history, admin-only service CRUD, deactivation/referenced deletion/history snapshots, catalogue action records, deterministic and mocked configured AI success/errors/privacy/question bounds, seed idempotency and persisted cookies/state after application restart. Expected 4xx negatives are successful assertions, not product defects.
+
+## Local setup and browser verification
+Run `npm run migrate`, `npm run seed`, `npm run build`, then `PORTAL_PORT=3000 npm run benchmark:start` (use supplied PORTAL_PORT for benchmark). `python3 preview_client.py --ready` checks bridge readiness only. `npm run test:e2e` requires the supplied bridge and running app at its assigned port. It performs a real customer form submission followed by provider update/history/draft and customer ownership confirmation. Actions use `{ "op": "click", "selector": "..." }` (fill/select add value), bounded to 24 per journey. No arbitrary browser JavaScript, external access or cookie bypass.
+
+Inspect returned screenshots using native image tooling at both 1440 and 375 widths. Bridge records document width, overflow, browser errors and blocked requests. A screenshot or metadata alone is not a functional verdict: assertions check page content and failed actions, and HTTP tests confirm committed state. Screenshots/journey results are saved in evidence/browser-results.json; commands and failures are retained with `qa_check.py` in frontend/backend/integration check-runs.jsonl. Defect/tooling/visual correction records live in evidence/issues.jsonl. Runtime artifacts are ignored by Git but remain in the workspace for audit.
+
+## Audit gate
+Generate `./quality audit-packet --criteria "<full observable criteria>"` after full/release/browser checks. Parent supplies a fresh independent full-scope auditor and returns findings to the persistent builder. Builder never claims independent acceptance. Browser bridge absent is a concrete unverified browser gate, never silently replaced by DOM or build checks.

@@ -1,0 +1,27 @@
+# ServiceFlow project map
+
+## Product boundary
+ServiceFlow demonstrates a single fictional Bristol home-services business, Hearth & Home. AethDesign is the software/UI studio, not the service provider; no client relationship or customer outcomes are claimed. Three roles, four synthetic accounts. No payments, live scheduling, matching, uploads, organizations, marketplace, messages, or deployment.
+
+## Runtime flow
+React/TypeScript UI (`src/client`) is compiled by Vite. Express (`src/server/app.ts`) serves same-origin JSON APIs and production assets; `start.ts` binds exactly the configured loopback port. Better Auth (`auth.ts`) owns passwords, persisted sessions and cookies. SQLite (`database.ts`) uses foreign keys, WAL and transactions. `scripts/migrate.ts` applies Better Auth programmatic migrations followed by versioned application SQL. `scripts/seed-data.ts` preserves existing accounts and requests. Public catalogue is active-only; account signup and other unused authentication endpoints are unavailable.
+
+## Ownership
+The persistent primary owns all implementation, visual direction, integration and builder validation. Implementation delegation/model selection tools are unavailable; supported runtime defaults are inherited, with limitations recorded in ROUTING.json. Parent supplies a fresh full-scope independent auditor. Builder is not an independent auditor.
+
+## Contracts and state
+`src/shared/contracts.ts` defines Zod inputs, roles, services, requests, history and workflow. `domain.ts` is the business/persistence boundary. Auth `user`, `session`, `account`, `verification` tables are library-managed; `user_roles` binds trusted application roles. `services`, `requests`, `activity`, `mutation_receipts`, `schema_migrations` are relational application tables. All requests belong to the only business; customerId enforces ownership. Service name/description/price snapshots preserve historical meaning. Referenced services cannot be deleted; deactivate them instead.
+
+Requests advance New → Reviewing → Quoted → Booked → Completed. Declined is available only from New/Reviewing/Quoted. Terminal and reverse/skip/stale updates fail. Status changes and actor/time activity commit atomically. All persistent business writes carry owner-scoped retry keys, body fingerprints and transactional result receipts. Request/status/service version checks prevent conflicting stale writes. UI request drafts and pending retry keys persist in sessionStorage under user scope; sign-out clears local state. Draft generation has no persistence mutation. Unreadable HTTP success bodies remain uncertain failures: retry keys and form data are retained until readable success. UI resource identity tokens and read generations prevent old-owner/old-request results or errors from replacing current or committed data. Detail draft/review/copy/action state belongs to one request/actor/role and ignores completions after leaving that identity.
+
+## Security, privacy, and safety
+Critical risk applies to all changed scope. API actors come from Better Auth sessions and database roles, never payloads. Customer lists/details/history enforce ownership; customers cannot draft or update status. Provider manages all requests for this single business; admin also manages catalogue/activity. Every mutation requires exact trusted Origin, non-cross-site Fetch Metadata and JSON. Auth library CSRF checks and HttpOnly SameSite cookies remain enabled. Helmet adds content/security headers. React renders untrusted strings as text. Safe API errors expose no exceptions. AI payload excludes contact, location, identifiers and history, and redacts email/phone in description. Personal information freely typed in descriptions cannot be guaranteed fully anonymized; synthetic data only. No raw provider error/secret logging.
+
+## AI draft adapter
+`src/server/ai.ts` uses deterministic labeled drafts when AI_API_KEY is blank. Materials/supply word forms suppress redundant materials questions. Phone redaction covers the form's accepted separators (including dots and whitespace), counting at least seven digits while preserving short measurements. Optional configured server adapter reads key/model only from environment, calls the fixed OpenAI endpoint with a minimized input and validated structured output. Network, invalid output and incomplete settings fall back visibly. Tests inject mocked transport; no live AI requests are made. Staff reviews/edits and optionally copies drafts; no send function exists. Outputs are never treated as HTML.
+
+## Change invariants
+Protected instructions, frozen brand references and measurement helpers remain unchanged. Do not lower the critical risk route or independent gate. SQLite data, local generated auth secret, environment, caches and builds remain ignored. No external writes/deployment/live integrations.
+
+## Verification
+Vitest validation/adapter/API suites cover roles, ownership, CSRF, workflow, atomic rollback, retries, catalogue history, sessions and database reopen. Full runs typecheck and tests; release runs production build. Browser bridge evidence in evidence/ exercises real desktop/mobile user journeys; PNGs must be visually inspected. README lists exact setup/run/check commands and accounts. qa_check.py retains initial failures and rechecks; evidence/issues.jsonl distinguishes defects/tooling/expected negatives. Full changed-scope audit packet and parent independent gate are required. See TESTING.md for commands and evidence limits.

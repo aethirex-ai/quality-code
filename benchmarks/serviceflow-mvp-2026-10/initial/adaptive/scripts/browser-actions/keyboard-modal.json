@@ -1,0 +1,8 @@
+[
+{"op":"click","selector":"button:has-text('Admin')"},
+{"op":"click","selector":"button:has-text('Sign in')"},
+{"op":"click","selector":"a:has-text('Service catalogue')"},
+{"op":"click","selector":"button:has-text('Add service')"},
+{"op":"press","selector":"#service-name","value":"Tab"},
+{"op":"press","selector":"#service-description","value":"Escape"}
+]

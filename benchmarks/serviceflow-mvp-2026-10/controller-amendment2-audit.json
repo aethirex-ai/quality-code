@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "verdict": "PASS",
+  "scope": {
+    "base": "Explicit non-Git staged amendment scope in ready-manifest.json; protocol-before-amendment2.json supplies protected baseline hashes",
+    "changed_files": [
+      "private-evidence/serviceflow-amendment2/audit-output-schema.json",
+      "private-evidence/serviceflow-amendment2/collect.py",
+      "private-evidence/serviceflow-amendment2/test_audit_formatter.py",
+      "private-evidence/serviceflow-amendment2/test_serviceflow_instrument.py",
+      "private-evidence/serviceflow-amendment2/protocol.json",
+      "private-evidence/serviceflow-amendment2/test_amendment2_contracts.py",
+      "private-evidence/serviceflow-amendment2/test_continuation_v2.py",
+      "private-evidence/serviceflow-continue-v2.py"
+    ],
+    "acceptance_criteria": "Preserve task, full acceptance and fixture bytes; exclude generated credential filenames before byte reads while retaining legitimate secrets source; exact short acceptance SHA identity agrees across schema/protocol/validator without semantic waiver; repeat-safe completed-segment recovery preserves original roots, native counters, raw invalid reports, exact metadata archives, separate active intervals/gaps and unique snapshots; resume original builder for genuine findings, skip only completed prior repairs, require fresh complete audits after repair; preserve uncapped phases/rounds, source integrity, cleanup, BLOCKED and structural gates; require independently issued PASS proof for exact controller SHA."
+  },
+  "risk": "high",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "private-evidence/serviceflow-amendment2-auditor-evidence/offline-host.log: 94 tests, 9.804 seconds, OK; initial sandbox-only ps/loopback errors resolved with authorized host test rerun. Includes seven controller scenarios and negative verification profiles."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "preview/tests.py",
+        "Contracts"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "private-evidence/serviceflow-amendment2-auditor-evidence/preview-contracts.log: six Contracts, OK. No live app, native session or paid model executed."
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "private-evidence/serviceflow-amendment2-auditor-evidence/independent_scenarios.py",
+        "Independent"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "private-evidence/serviceflow-amendment2-auditor-evidence/independent-only.log: four auditor-owned scenarios pass. Three sequential BLOCKED/BLOCKED/PASS recoveries preserve each prior metadata byte, original phase counters, raw report and unique final snapshot; accumulated active time excludes gaps. Source corruption rejects before mutation/native call. Generated credentials are never read during inventory/snapshot export. Actual frozen inputs and retained formatter probe match exact 94-character identity."
+    },
+    {
+      "command": [
+        "independent-static-review",
+        "ready-manifest.json",
+        "collect.py",
+        "audit-output-schema.json",
+        "protocol-before-amendment2.json",
+        "protocol.json",
+        "serviceflow-continue-v2.py",
+        "affected-tests"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "Reviewed full controller, declared changed source/tests, protocol raw diff, neighboring freeze/verdict/snapshot/accounting contracts, fixture AGENTS/MAP/TESTING/runtime/risk policy and required audit skill references. Current controller SHA de08d23f86033264c1dff00bf88d763dd5af2cc57b55992a6ee129ab25138c7c. Native phase execution remains uncapped and exact-builder resumed; fresh independent auditor enforced through execute_phase; invalid raw reports are retained, not accepted. Protected baseline task/fixture identities match. Formatter probe is external formatting evidence only, not application acceptance."
+    },
+    {
+      "command": [
+        "independent-contract-and-integrity-check"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "evidence": "private-evidence/serviceflow-amendment2-auditor-evidence/final-integrity.json: all 62 pre-audit staged/controller file hashes unchanged; actual acceptance SHA matches short schema/protocol identity; incorrect and truncated identities rejected by runtime validator. Stage verify_freeze(initial=True) passes; exact entry-proof rejection/acceptance tests independently pass."
+    }
+  ],
+  "findings": [],
+  "untested": [],
+  "residual_risk": "This verdict covers only the staged instrument amendment and recovery controller, using deterministic fake native phases plus owned process/loopback tests. It is not an audit or acceptance of either ServiceFlow app. Live benchmark roots, native sessions and private snapshots were not inspected or changed; real recovery installation and future native behavior remain primary integration work. Explicit file scope and baseline hashes replace unavailable Git history. Formatter native probe is retained external evidence and was not rerun. Existing README preflight includes an extraneous trailing dot for the Contracts selector; the six actual Contracts were run successfully without that selector. No production security certification or exhaustive vulnerability claim.",
+  "worktree_unchanged": true
+}

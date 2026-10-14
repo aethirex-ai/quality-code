@@ -1,0 +1,15 @@
+[
+  {
+    "op": "click",
+    "selector": "button:has-text('Provider')"
+  },
+  {
+    "op": "click",
+    "selector": "button:has-text('Sign in')"
+  },
+  {
+    "op": "fill",
+    "selector": "input[aria-label=\"Search requests\"]",
+    "value": "E2E 2dddc997"
+  }
+]

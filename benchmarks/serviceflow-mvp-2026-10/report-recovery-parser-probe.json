@@ -1,0 +1,8 @@
+{
+  "kind": "Updated exact command --help only; no model/resume executed",
+  "exit_code": 0,
+  "named_permission_profile_overrides": 0,
+  "read_only_sandbox": true,
+  "output_schema_supported": true,
+  "controller_sha256": "0d107906437963fb26ff581a3b06cb49553965b0f496b49ceedd183ef263bcc7"
+}
