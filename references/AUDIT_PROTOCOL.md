@@ -1,6 +1,6 @@
 # Independent audit protocol
 
-This protocol begins only when the project's risk gate requires an independent audit or the user explicitly requests one. Do not invoke it merely because a file containing code changed. Once invoked, apply the full protocol; the entry gate limits frequency, not audit completeness.
+This protocol begins only when the project's risk gate, a selected module's explicit gate, or the user requires an independent audit. A selected Quality Visuals gate covers new frontends/pages and substantial visual redesigns; low-risk isolated copy/static-style work still receives focused builder confirmation unless a stricter rule applies. Do not invoke it merely because a file containing code changed. Once invoked, apply the full protocol; the entry gate limits frequency, not audit completeness.
 
 ## Independence boundary
 

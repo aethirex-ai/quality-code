@@ -1,6 +1,16 @@
 
 
 <!-- quality-code:start -->
+## Shared quality foundation
+
+Apply the selected standards once. Preserve project-specific instructions, user decisions, existing work and stricter risk, permission and verification requirements. Omitting a module never waives an existing project requirement. Set observable acceptance criteria before implementation. Distinguish evidence-backed defects from preferences and report uncertainty.
+
+Verify the changed product behavior and disclose unavailable evidence. A build, score, screenshot, helper completion or generated audit packet is not an independent verdict. A builder or material implementation director cannot supply a required independent audit verdict. Resolve blocking findings and obtain the required re-review before claiming completion; unavailable required evidence remains BLOCKED. Never invent test results, legal claims, integrations, credentials, client relationships or savings.
+
+For review, diagnosis, or planning, inspect and report without implementing. Ask before destructive actions, external writes, releases, purchases, or material scope expansion unless already authorized.
+
+## Quality Code by AethDesign
+
 ## Quality-code workflow
 
 For any change affecting code, configuration, dependencies, tests, builds, data, releases, or agent behavior:
@@ -15,9 +25,43 @@ For any change affecting code, configuration, dependencies, tests, builds, data,
 8. Builder validation is mandatory in every lane. For a concrete bug, field-test the original or smallest failing case only as needed to understand it, then once to confirm the fix. Add more cases only when requested or justified by risk, an unclear cause, or inconsistent results.
 9. Resolve blocking audit findings and request re-audit when an independent audit was required. Otherwise hand off after the lane's evidence passes, with residual risk stated when material.
 
+## Quality Visuals by AethDesign
+
+This is a starting baseline for frontends and landing pages, not an exhaustive design system. Judge information, composition and usability, not whether a design was human- or AI-generated. User-approved brand and product requirements govern deliberate exceptions; do not invent an exception to retain filler.
+
+### Content and composition
+
+1. Give each page a specific audience, purpose and primary task. Explain the actual offer, service or product and its meaningful distinguishing details. Use real scope, coverage, indicative prices, constraints or evidence when available; do not invent business facts to fill a layout. Task screens prioritize the task rather than marketing copy.
+2. Every section, sentence and visual treatment must add useful information, support a decision or action, or serve an intentional brand purpose. Remove content whose removal loses nothing useful. Do not default to a hero, reassurance strip, three cards, numbered process, FAQ and closing CTA regardless of the brief.
+3. Do not add decorative uppercase slogan eyebrows above headings, illustrations or every section. A category, location or status label is appropriate only when it supplies necessary context. Remove repetitive reassurance, unsupported superlatives, generic slogans and tiny explanatory text that merely restates the heading. Authored UI prose must not introduce em or en dashes; use ordinary punctuation instead.
+4. Use arrows and icons for meaningful actions, states or distinctions. Do not append arrows to every redirect or button, or give obvious labels decorative icons by default. Number only an actual sequence, ranking or reference. Do not invent numbered selling points to make a section look designed.
+5. Choose the information structure before the container. Use cards for distinct selectable objects or meaningful comparisons, with useful content and proportionate dimensions. Prefer lists, rows, tables or plain sections where appropriate. Avoid half-empty rounded boxes, gratuitous bento grids, fake browser/device frames and multiple nested borders used as substitutes for hierarchy.
+6. Use whitespace to group and prioritize content. Avoid inflated gaps, forced equal-height cards and oversized sections that make thin information appear substantial. Whitespace and asymmetry are valid deliberate choices when the composition supports them; visual density alone is not quality.
+7. Give each CTA a clear action and an appropriate destination. Repeat it only where the visitor's progress justifies it. Do not add a large closing CTA section, moving slogan band, reassurance bar, FAQ or process panel merely to occupy space. A real process explanation must clarify decisions, timing, requirements or consequences.
+8. Establish a coherent, business-specific visual direction through typography, imagery, layout and language. Use restrained readable hierarchy, relevant product views, photography, diagrams or intentional artwork. Avoid unrelated illustrations, floating promise badges, excessive italic emphasis and tiny tracked capitals. Decorative assets and motion need a purpose; honor reduced-motion preferences and do not obstruct operation.
+
+### Product completeness
+
+9. Design mobile composition and content order intentionally, including realistic long and missing content. Provide semantic structure, clear form labels, readable contrast, visible keyboard focus, keyboard operation and comfortable touch targets. Prevent clipping, accidental overflow, unreadable supporting text and controls that become cramped at mobile widths.
+10. Deliver working navigation and controls with clear loading, empty, validation, error and success states where applicable. Links have real destinations; buttons have real behavior. A polished happy-path screenshot does not establish a usable frontend. Keep marketing ornament out of login, forms and dashboards when it interferes with the task.
+11. Provide accessible, accurate ownership/contact and privacy information and working relevant footer links. Identify the applicable jurisdiction, actual data handling and deployment context before deciding which legal notices or consent controls are needed. Use verified or owner-approved facts and text; never fabricate an address, registration, policy, testimonial, logo, statistic, certification or compliance claim. If required public-launch information is unavailable, report that launch requirement blocked. Clearly label fictional demonstrations without scattering repetitive demo disclaimers throughout the experience.
+12. Verify appropriate page titles, metadata, assets, not-found behavior and reasonable loading performance for the actual product. Do not treat a legally incomplete footer, dead controls or missing required states as optional visual polish.
+
+### Visual completion gate
+
+For new pages/frontends and substantial visual redesigns, obtain a fresh independent visual review before claiming completion. Keep the existing code-risk lanes and required verification; low-risk isolated copy/static-style changes still receive one focused builder confirmation unless a stricter requirement or explicit review request applies.
+
+With the toolkit available, declare this scope using `./quality audit-packet --visual --criteria "Observable visual and product outcomes"` and hand the packet and raw changed scope to the fresh reviewer. Instruction-only users provide the same scope, criteria and evidence directly. A packet is not a verdict; omitting a flag does not waive the selected visual gate.
+
+Review representative desktop and mobile renders of every changed screen and relevant interaction/state, including full-page composition and realistic boundary content. Evaluate content usefulness, specificity, hierarchy, typography, spacing, imagery, responsive composition, accessibility, functional completeness and ownership/privacy requirements. A high average score cannot override a blocking finding.
+
+Classify each finding against an observable baseline requirement, include the affected screen/viewport/state and evidence, and distinguish defects from subjective preferences. Unjustified filler, repetitive generic layouts, illegible or broken responsive states, dead controls and missing required disclosures/states must be corrected in scope. Re-render and recheck affected states; obtain independent re-review of blocking findings. Missing required render, interaction or independent review evidence is BLOCKED, never a presumed pass. Record remaining preferences and explicitly approved exceptions. Do not retroactively rewrite frozen benchmark outputs or scores when this baseline changes.
+
+## Quality Swarms by AethDesign
+
 ## Efficient delegation and model selection
 
-1. Preserve the risk lanes above. Difficulty and product risk are separate; delegation never lowers verification or replaces a required independent audit. Low-risk work remains builder-only unless its stated exception applies.
+1. Preserve applicable project risk lanes and verification requirements. Difficulty and product risk are separate; delegation never lowers verification or replaces a required independent audit. Do not introduce helpers for small, low-impact work unless the user requests them or an applicable project requirement or concrete uncertainty justifies them.
 2. Delegate only ready, independent work whose expected benefit exceeds briefing, runtime context, coordination and integration costs. Keep small or tightly coupled work local. Prefer direct delegation of a coherent outcome, with one owner for its implementation and focused checks, over splitting its markup, styling and simple interactions across agents. Parallelism may reduce time while increasing aggregate usage.
 3. Discover accessible models, supported effort controls, tools, context limits and capacity through native tools or advertised metadata. Refresh when requirements/access change, not before every spawn. Select the least costly supported fit likely to meet acceptance criteria, considering uncertainty, risk, context, tools, skills and user budgets. Stronger capability can avoid retries; do not equate high effort with high quality for every task. Never invent or hardcode providers, model names, rankings, prices or settings. Explicit user choices and higher-priority runtime constraints prevail.
 4. If discovery or selection is unavailable, inherit the current model and supported defaults and disclose the limitation. If delegation is unavailable, do permitted builder work locally; a required independent gate remains blocked until independence is available.
@@ -52,6 +96,4 @@ For any change affecting code, configuration, dependencies, tests, builds, data,
 
 1. Give each owner observable product checks, not merely a file list. For presentation work, communicate audience, intended visual identity, content/imagery accuracy, typography, readable contrast, mobile composition, form ergonomics and accessible interactions. Inspect representative rendered desktop/mobile states before handoff when tools permit; a passing build or DOM check does not prove visual quality. Report blocked visual verification explicitly and preserve required independent review.
 2. For diagnosis, require concrete reproductions tied to contracts, distinguish defects from preferences, include boundary/negative cases and healthy controls, and report uncertainty. For fixes, confirm the failing behavior and relevant regressions; do not treat more findings, more tests or helper completion as proof of quality. The primary integrates and validates the final experience and its contracts.
-
-For review, diagnosis, or planning, inspect and report without implementing. Ask before destructive actions, external writes, releases, purchases, or material scope expansion.
 <!-- quality-code:end -->

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 from pathlib import Path
 import shutil
@@ -42,13 +43,28 @@ def merge_managed(existing: str, block: str, start_marker: str, end_marker: str)
     return existing.rstrip() + "\n\n" + block if existing.strip() else block
 
 
-def merge_block(existing: str) -> str:
-    return merge_managed(existing, GLOBAL_BLOCK, GLOBAL_START, GLOBAL_END)
+def merge_block(existing: str, modules: list[str] | None = None) -> str:
+    block = GLOBAL_BLOCK
+    if modules is not None and modules != ["code", "visuals", "swarms"]:
+        suffix = " --modules " + ",".join(modules)
+        block = block.replace(" init .`", " init ." + suffix + "`").replace(" adopt .`", " adopt ." + suffix + "`")
+    return merge_managed(existing, block, GLOBAL_START, GLOBAL_END)
 
 
-def delegation_block(master: Path) -> str:
+def module_api(master: Path):
+    spec = importlib.util.spec_from_file_location("quality_install_engine", master / "scripts" / "quality_code.py")
+    engine = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(engine)
+    return engine
+
+
+def delegation_block(master: Path, modules: list[str] | None = None) -> str:
     template = master / "assets/project/AGENTS.md"
     content = template.read_text(encoding="utf-8")
+    engine = module_api(master)
+    selected = engine.configured_modules({"quality_modules": modules}) if modules is not None else list(engine.MODULE_NAMES)
+    if content.strip() != engine.compose_instructions(master, list(engine.MODULE_NAMES)).strip():
+        raise InstallError("canonical full template differs from module sources; regenerate it first")
     required = ("<!-- quality-code:start -->", "## Quality-code workflow",
                 "## Efficient delegation and model selection",
                 "## Bounded swarms and scoped context",
@@ -58,12 +74,12 @@ def delegation_block(master: Path) -> str:
         raise InstallError("canonical project policy template is missing required structure")
     # Global defaults route to the project policy instead of duplicating its full
     # body in every runtime context. The fallback applies before bootstrap too.
-    return (DELEGATION_START + "\n## Quality-code delegation defaults\n\n"
+    text = (DELEGATION_START + "\n## Quality-code delegation defaults\n\n"
             "For working software projects, before implementation check that the managed AGENTS.md block "
-            "matches the installed Quality Code template. If it is outdated, run "
+            "matches the installed composition for the project's quality_modules selection (legacy default: all), not unselected module content. If it is outdated, run "
             "`~/.local/bin/quality-code upgrade --dry-run .`, then `~/.local/bin/quality-code upgrade .`; "
             "preserve project-specific instructions and configuration and resolve collisions.\n\n"
-            "The project's managed AGENTS.md owns the complete Quality Code workflow and delegation policy. "
+            "The project's managed AGENTS.md owns the complete selected AethDesign standards policy. "
             "Use it when already supplied by the runtime; do not load a second full copy. "
             "For missing policy details, read only relevant sections of the installed template at "
             + str(template) + ". Bootstrap/init/adopt delivers that policy before software implementation.\n\n"
@@ -88,9 +104,19 @@ def delegation_block(master: Path) -> str:
             "provide its independent audit verdict. If a required independent gate is unavailable, report it blocked. "
             "Parallelism and cheaper API models do not prove lower subscription usage.\n\n"
             + DELEGATION_END + "\n")
+    prefix = text[:text.index("Fallback while project policy is unavailable:")]
+    prefix += "Installed defaults: " + ", ".join(selected) + ". Existing project selections are preserved on upgrade.\n\n"
+    fallback = "Fallback while project policy is unavailable: preserve risk lanes, safety, permissions and required independent verification. Do not claim unavailable evidence passed.\n\n"
+    if "swarms" in selected:
+        fallback = text[text.index("Fallback while project policy is unavailable:"):text.index(DELEGATION_END)]
+    if "visuals" in selected:
+        fallback += ("Quality Visuals: use specific useful content and intentional composition; remove unjustified slogan eyebrows, arrows, numbering and empty containers. "
+                     "For new or substantially redesigned frontends, require desktop/mobile evidence and fresh independent visual review; fix blocking baseline findings before completion. "
+                     "Isolated low-risk copy/static-style work keeps its focused builder lane.\n\n")
+    return prefix + fallback + DELEGATION_END + "\n"
 
 
-def merged_global(path: Path, delegation: str) -> str:
+def merged_global(path: Path, delegation: str, modules: list[str] | None = None) -> str:
     existing = path.read_text(encoding="utf-8") if path.is_file() else ""
     # Validate delegation markers in the ORIGINAL text before bootstrap replacement
     # can erase malformed nested markers. Neither validation call writes a file.
@@ -101,7 +127,7 @@ def merged_global(path: Path, delegation: str) -> str:
         d0, d1 = existing.index(DELEGATION_START), existing.find(DELEGATION_END)
         if g1 >= 0 and d1 >= 0 and not (g1 < d0 or d1 < g0):
             raise InstallError("global quality-code marker blocks overlap")
-    return merge_managed(merge_block(existing), delegation, DELEGATION_START, DELEGATION_END).rstrip() + "\n"
+    return merge_managed(merge_block(existing, modules), delegation, DELEGATION_START, DELEGATION_END).rstrip() + "\n"
 
 
 def install_skill(source: Path, destination: Path) -> None:
@@ -150,6 +176,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--home", type=Path, default=Path.home())
     parser.add_argument("--bin-dir", type=Path)
+    parser.add_argument("--modules", default="all", help="all or comma-separated code, visuals, swarms defaults for new projects")
     return parser
 
 
@@ -158,8 +185,9 @@ def main() -> int:
     master = Path(__file__).resolve().parent.parent
     bin_dir = args.bin_dir or args.home / ".local" / "bin"
     try:
-        delegation = delegation_block(master)
-        globals_to_write = [(path, merged_global(path, delegation)) for path in
+        selected = module_api(master).parse_modules(args.modules)
+        delegation = delegation_block(master, selected)
+        globals_to_write = [(path, merged_global(path, delegation, selected)) for path in
                             (args.home / ".codex/AGENTS.md", args.home / ".claude/CLAUDE.md")]
         # Preflight both global files before either is written.
         for path, content in globals_to_write:
@@ -176,7 +204,7 @@ def main() -> int:
         print(f"PASS: Claude global instructions: {args.home / '.claude' / 'CLAUDE.md'}")
         print(f"PASS: launcher: {bin_dir / 'quality-code'}")
         return 0
-    except (InstallError, OSError) as exc:
+    except (RuntimeError, OSError, ValueError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
 

@@ -29,6 +29,8 @@ If the scope cannot be determined without guessing, return `BLOCKED` instead of 
 5. Read [GIT_BASELINE.md](references/GIT_BASELINE.md) only when auditing repository initialization, an initial commit, ignore rules, or a source-control migration.
 6. Inspect additional source, tests, history, or contracts only when evidence requires it.
 
+For frontend scope governed by Quality Visuals, apply the selected project baseline and read [VISUAL_AUDIT.md](references/VISUAL_AUDIT.md). A required substantial-frontend visual review is an independent gate even when code-risk classification alone would not trigger one. Do not load or impose unselected optional modules. Existing stricter project requirements still apply.
+
 Do not load generated inventories, full test logs, unrelated maps, or the builder conversation by default.
 
 ## Audit

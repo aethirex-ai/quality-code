@@ -348,7 +348,7 @@ class QualityIntegrationTests(unittest.TestCase):
         agents = self.project / 'AGENTS.md'
         current = agents.read_text()
         start = current.index('## Efficient delegation and model selection')
-        end = current.index('For review, diagnosis, or planning', start)
+        end = current.index('<!-- quality-code:end -->', start)
         agents.write_text('# Project-specific note\nKeep this note.\n' + current[:start] +
                           '## Efficient delegation and model selection\nStale policy.\n\n' + current[end:])
         config = (self.project / '.quality/quality.toml').read_bytes()
@@ -368,7 +368,7 @@ class QualityIntegrationTests(unittest.TestCase):
         agents = self.project / 'AGENTS.md'
         old = (ROOT / 'assets/project/AGENTS.md').read_text()
         start = old.index('## Efficient delegation and model selection')
-        end = old.index('For review, diagnosis, or planning', start)
+        end = old.index('<!-- quality-code:end -->', start)
         old = old[:start] + old[end:]
         agents.write_text('Before managed block.\n\n' + old + '\nAfter managed block.\n')
         config = self.project / '.quality/quality.toml'

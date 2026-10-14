@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.aethdesign.com/"><img src="docs/assets/quality-code-banner.svg" alt="Quality Code by AethDesign — engineering discipline for coding agents" width="100%"></a></p>
+<p align="center"><a href="https://www.aethdesign.com/"><img src="docs/assets/quality-code-banner.svg" alt="AethDesign Quality Standards: Quality Code, Quality Visuals and Quality Swarms" width="100%"></a></p>
 
 <p align="center">
   <a href="https://github.com/aethirex-ai/quality-code/actions/workflows/verify.yml"><img alt="Verify toolkit" src="https://github.com/aethirex-ai/quality-code/actions/workflows/verify.yml/badge.svg"></a>
@@ -8,17 +8,19 @@
   <a href="https://www.aethdesign.com/"><img alt="Built by AethDesign" src="https://img.shields.io/badge/by-AethDesign-C0C0C0"></a>
 </p>
 
-# Quality Code
+# AethDesign Quality Standards
 
-**Make the quality bar explicit before a coding agent writes the first line.**
+Three composable standards for agent-assisted software work, published with the Quality Code bootstrap toolkit.
 
-Quality Code is AethDesign’s open workflow and bootstrap toolkit for agent-assisted software work. It gives each project a compact architectural map, observable acceptance criteria, executable verification profiles, and a risk-based independent audit gate.
+| Standard | Purpose | Instruction download |
+| --- | --- | --- |
+| **Quality Code by AethDesign** | Risk lanes, project context, behavioral verification and independent audits | [Code ZIP](docs/downloads/quality-code-by-aethdesign.zip) |
+| **Quality Visuals by AethDesign** | Useful content, intentional composition, complete interfaces and a blocking independent visual gate | [Visuals ZIP](docs/downloads/quality-visuals-by-aethdesign.zip) |
+| **Quality Swarms by AethDesign** | Native model selection, coherent task owners, bounded teams and shared context/usage budgets | [Swarms ZIP](docs/downloads/quality-swarms-by-aethdesign.zip) |
 
-Small changes stay small. Higher-risk changes earn stronger evidence.
+[Download all three without duplicates](docs/downloads/quality-standards-by-aethdesign.zip). Each ZIP contains one composed AGENTS.md, a manifest, instructions and the MIT license. These are **instruction-only packs**; clone this repository for the executable CLI and audit skill. Do not stack downloaded AGENTS files: choose the combined pack or compose your selection with the CLI. All selections include one shared foundation and preserve stricter existing requirements.
 
-[Read the visual case study](https://aethirex-ai.github.io/quality-code/) · [Read the standard](docs/STANDARD.md) · [Technical case study](docs/CASE_STUDY.md) · [Start using it](#quick-start)
-
-The reader edition uses AethDesign’s dark editorial design language, with self-hosted fonts and no tracking or scripting. GitHub renders this Markdown with its own interface; the styled edition lives in [docs/index.html](docs/index.html).
+[Choose modules and understand installation](docs/MODULES.md) · [Read the case study](https://aethirex-ai.github.io/quality-code/) · [Visual baseline and audit](docs/QUALITY_VISUALS.md) · [Technical case study](docs/CASE_STUDY.md)
 
 ## The quality contract
 
@@ -29,7 +31,7 @@ The reader edition uses AethDesign’s dark editorial design language, with self
 | **High** · public contracts, persistence, shared components | Focused tests and full verification | Required |
 | **Critical** · security, payments, destructive operations | Full and release profiles, relevant failure and recovery evidence | Required |
 
-The highest applicable risk wins. A passing command does not prove the product is correct. Missing required evidence stays visible.
+This table describes Quality Code. Selected Quality Visuals additionally requires independent visual review for new frontends/pages and substantial redesigns; isolated low-risk copy/static-style changes retain the focused lane. The highest applicable risk wins. A passing command does not prove the product is correct. Missing required evidence stays visible.
 
 ## Quick start
 
@@ -39,10 +41,13 @@ Requires **Python 3.11+**, **Git**, and a POSIX shell for the `./quality` wrappe
 git clone https://github.com/aethirex-ai/quality-code.git
 cd quality-code
 
-# Bootstrap a project:
+# Bootstrap with all three standards (the default):
 python3 scripts/quality_code.py init /path/to/new-project
 # Or preserve and adopt an existing project:
 python3 scripts/quality_code.py adopt /path/to/existing-project
+
+# Or choose just the modules you need:
+python3 scripts/quality_code.py adopt /path/to/another-project --modules code,visuals
 
 cd /path/to/your-project
 ./quality validate
@@ -78,9 +83,13 @@ Give the packet, explicit diff scope, and this repository’s audit skill to a f
 
 Existing instruction text is merged. Existing map and testing sections are preserved. An unrelated `quality` executable or pre-existing runtime/schema/license under `.quality/` is a collision, not permission to overwrite it. A parent Git repository is reused.
 
-## Efficient delegation
+## Quality Visuals
 
-Standard v3 adds provider-neutral subagent guidance. Agents use native runtime discovery and capability metadata to select accessible models and supported effort controls for each bounded task. No model names or fixed rankings are prescribed. Selection considers expected total usage, latency, retries, skill requirements, and product risk. Helper counts and spawn timing follow ready independent work, native capacity, shared resources, and coordination budget; unavailable discovery falls back to the current model.
+The [starting visual baseline](docs/QUALITY_VISUALS.md) rejects unjustified slogan eyebrows, arrows on every redirect, decorative numbering, half-empty containers and filler sections. It requires specific content, coherent desktop/mobile composition, usable states and accurate ownership/privacy information. Fresh independent visual review blocks completion on evidenced defects; missing review evidence stays BLOCKED. These rules require judgment and are not a complete design system or a claim to detect AI authorship.
+
+## Quality Swarms
+
+The selected Swarms module supplies provider-neutral subagent guidance. Agents use native runtime discovery and capability metadata to select accessible models and supported effort controls for each bounded task. No model names or fixed rankings are prescribed. Selection considers expected total usage, latency, retries, skill requirements, and product risk. Helper counts and spawn timing follow ready independent work, native capacity, shared resources, and coordination budget; unavailable discovery falls back to the current model.
 
 Optional workstream hierarchies share one budget across all descendants. Every handoff uses the smallest sufficient context, with full-history inheritance avoided when supported; context-window settings are used only when the runtime exposes them.
 

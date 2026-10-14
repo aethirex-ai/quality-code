@@ -65,3 +65,5 @@ This file records project-specific test intent and known limitations. Commands a
 - Never rerun a flaky required test until green; record and resolve the instability.
 - Update this profile when product risks, environments, or test responsibilities change.
 - Keep command definitions only in `.quality/quality.toml` to prevent drift.
+
+When Quality Visuals is selected, new frontends/pages and substantial visual redesigns also require fresh independent desktop/mobile visual review. Use `./quality audit-packet --visual --criteria "Observable visual and product outcomes"`. Fix and re-review blocking baseline findings before completion; unavailable evidence stays BLOCKED. Isolated low-risk copy/static-style work retains the focused builder lane.

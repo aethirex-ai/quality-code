@@ -1,5 +1,7 @@
 # Getting started
 
+Choose [modules or instruction-only downloads](MODULES.md): Quality Code, Quality Visuals and Quality Swarms by AethDesign. The toolkit defaults to all three; use `--modules code,visuals` on init/adopt or explicit selection changes on upgrade. Without that flag, upgrades preserve the project selection.
+
 ## Try the toolkit without changing your agent configuration
 
 From this repository, run `python3 scripts/quality_code.py init /path/to/new-project` or `python3 scripts/quality_code.py adopt /path/to/existing-project`. Adoption preserves existing documentation sections; tailor them to the product before behavioral work.
@@ -29,7 +31,7 @@ You can inspect installation in an isolated directory first:
 python3 scripts/install.py --home /tmp/quality-code-demo-home
 ```
 
-The generated global blocks instruct agents to run `quality-code init .` for new projects and `quality-code adopt .` for projects missing `.quality/quality.toml`. They also deliver the delegation, shared swarm budget, and scoped-context policy, and require checking the installed template before implementation and upgrading stale managed project instructions. Reinstall refreshes both blocks while preserving surrounding user instructions; malformed global markers are rejected before either global instruction file is written.
+The generated global blocks instruct agents to run `quality-code init .` for new projects and `quality-code adopt .` for projects missing `.quality/quality.toml`. With the default all-module selection they also deliver visual review, delegation, shared swarm budget and scoped-context guidance, and require checking the installed template before implementation and upgrading stale managed project instructions. Reinstall refreshes both blocks while preserving surrounding user instructions; malformed global markers are rejected before either global instruction file is written.
 
 ## Invoke the audit skill
 
@@ -39,7 +41,7 @@ After required builder checks pass, generate a packet with a clear base:
 ./quality audit-packet --base HEAD --criteria "Observable acceptance criteria" > /tmp/quality-audit-packet.json
 ```
 
-Use a fresh agent and explicitly invoke `$audit-code-change` in Codex or `/audit-code-change` in Claude Code. Give it the packet, repository root, and raw diff scope. The CLI does not start the agent. Low and normal work requires `--force` only when the user explicitly requested an independent audit.
+Use a fresh agent and explicitly invoke `$audit-code-change` in Codex or `/audit-code-change` in Claude Code. Give it the packet, repository root, and raw diff scope. The CLI does not start the agent. For selected Quality Visuals new/substantial frontend scope, use `--visual` to declare its independent gate even when code risk is normal. Low/normal code-only voluntary reviews use `--force`. Scope requirements apply even if the flag is omitted.
 
 ## Upgrade an adopted project
 

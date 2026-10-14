@@ -31,6 +31,7 @@ When the independent gate applies, its audit supplements rather than replaces bu
 - **Normal:** builder validation and the smallest changed-scope verification by default. Do not start an independent audit unless the user asks or unresolved evidence raises the actual risk to high.
 - **High and critical:** independent audit is mandatory after the builder completes the configured higher verification profiles.
 - **Explicit request:** a user may force an independent audit at any risk level.
+- **Selected visual gate:** Quality Visuals requires fresh independent visual review for new pages/frontends and substantial visual redesigns. Use `VISUAL_AUDIT.md`; baseline failures and unavailable required rendered/interaction evidence cannot be offset by a high average visual score. Isolated low-risk copy/static-style work retains its focused builder lane.
 - **Delivery mechanics:** a routine local build, install, packaging step, or version bump that only delivers or confirms an otherwise low- or normal-risk change inherits that change's risk. Actual changes to build, signing, deployment, migration, rollback, security, or release behavior are classified on their own impact.
 - **Completeness after entry:** once an audit is triggered, finding one defect does not end it; the auditor continues all applicable in-scope activities and reports every distinct evidence-backed issue.
 

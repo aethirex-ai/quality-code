@@ -17,6 +17,8 @@ from typing import Any
 
 
 STANDARD_VERSION = 3
+MODULE_NAMES = ("code", "visuals", "swarms")
+ALL_MODULES = list(MODULE_NAMES)
 RISK_ORDER = {"low": 0, "normal": 1, "high": 2, "critical": 3}
 REQUIRED_PROJECT_FILES = (
     "AGENTS.md",
@@ -81,7 +83,73 @@ def load_config(root: Path) -> dict[str, Any]:
         raise QualityError(f"cannot read {path}: {exc}") from exc
     if config.get("version") != 1:
         raise QualityError("quality.toml version must be 1")
+    if "quality_modules" in config:
+        configured_modules(config)
     return config
+
+
+def parse_modules(value: str) -> list[str]:
+    """Parse a CLI module list and return it in the standard canonical order."""
+    if value == "all":
+        return list(ALL_MODULES)
+    values = value.split(",")
+    if not value or any(not item for item in values) or "all" in values:
+        raise QualityError("--modules must be 'all' or a comma-separated list of code, visuals, swarms")
+    unknown = [item for item in values if item not in MODULE_NAMES]
+    if unknown:
+        raise QualityError(f"unknown quality module(s): {', '.join(unknown)}")
+    selected = set(values)
+    return [name for name in MODULE_NAMES if name in selected]
+
+
+def configured_modules(config: dict[str, Any]) -> list[str]:
+    raw = config.get("quality_modules")
+    if not isinstance(raw, list) or not all(isinstance(item, str) for item in raw):
+        raise QualityError("quality_modules must be an array of module name strings")
+    if not raw:
+        raise QualityError("quality_modules must select at least one module")
+    if len(raw) != len(set(raw)):
+        raise QualityError("quality_modules must not contain duplicate selections")
+    unknown = [item for item in raw if item not in MODULE_NAMES]
+    if unknown:
+        raise QualityError(f"quality_modules contains unknown module(s): {', '.join(unknown)}")
+    return [name for name in MODULE_NAMES if name in raw]
+
+
+def project_modules(config: dict[str, Any]) -> list[str]:
+    """Legacy configurations without a selection retain the historical full bundle."""
+    return configured_modules(config) if "quality_modules" in config else list(ALL_MODULES)
+
+
+def compose_instructions(master: Path, modules: list[str]) -> str:
+    """Compose the shared foundation and selected module fragments as one managed block."""
+    if not isinstance(modules, list) or not all(isinstance(name, str) for name in modules):
+        raise QualityError("instruction modules must be a list of module names")
+    if not modules:
+        raise QualityError("instruction modules must select at least one module")
+    selected = parse_modules(",".join(modules))
+    folder = master / "assets" / "modules"
+    expected_headings = {
+        "foundation": "## Shared quality foundation",
+        "code": "## Quality Code by AethDesign",
+        "visuals": "## Quality Visuals by AethDesign",
+        "swarms": "## Quality Swarms by AethDesign",
+    }
+    names = ["foundation", *(name for name in MODULE_NAMES if name in selected)]
+    fragments: list[str] = []
+    for name in names:
+        try:
+            fragment = (folder / f"{name}.md").read_text(encoding="utf-8").strip()
+        except OSError as exc:
+            raise QualityError(f"cannot read quality instruction module {name!r}: {exc}") from exc
+        heading = expected_headings[name]
+        if fragment != heading and not fragment.startswith(heading + "\n"):
+            raise QualityError(f"quality instruction module {name!r} is malformed")
+        if MANAGED_START in fragment or MANAGED_END in fragment:
+            raise QualityError(f"quality instruction module {name!r} is malformed")
+        fragments.append(fragment)
+    content = "\n\n".join(fragment for fragment in fragments if fragment)
+    return f"{MANAGED_START}\n{content}\n{MANAGED_END}\n"
 
 
 def headings(markdown: str) -> set[str]:
@@ -268,13 +336,29 @@ def independent_audit_required(config: dict[str, Any], risk: str) -> bool:
     return RISK_ORDER[risk] >= RISK_ORDER[audit_threshold(config)]
 
 
-def packet(root: Path, config: dict[str, Any], base: str, criteria: str, *, force: bool = False) -> dict[str, Any]:
+def packet(
+    root: Path,
+    config: dict[str, Any],
+    base: str,
+    criteria: str,
+    *,
+    force: bool = False,
+    visual: bool = False,
+) -> dict[str, Any]:
     files, has_base, untracked = changed_files(root, base)
     if not files:
         raise QualityError("no changed files found for the requested audit scope")
     areas = matching_areas(files, configured_areas(config))
     risk = highest_risk(areas)
-    required = independent_audit_required(config, risk)
+    profiles = select_profiles(config, risk, areas)
+    commands = command_profiles(config)
+    map_sections = unique_strings([section for area in areas for section in area.get("map_sections", [])])
+    tests = unique_strings([test for area in areas for test in area.get("tests", [])])
+    selected_modules = project_modules(config)
+    if visual and "visuals" not in selected_modules:
+        raise QualityError("--visual requires the visuals instruction module; upgrade with --modules to enable it")
+    risk_requires_audit = independent_audit_required(config, risk)
+    required = risk_requires_audit or visual
     if not required and not force:
         threshold = audit_threshold(config)
         raise QualityError(
@@ -282,10 +366,27 @@ def packet(root: Path, config: dict[str, Any], base: str, criteria: str, *, forc
             "do not generate an audit packet unless the user explicitly requested an audit; "
             "use --force only for that explicit request"
         )
-    profiles = select_profiles(config, risk, areas)
-    commands = command_profiles(config)
-    map_sections = unique_strings([section for area in areas for section in area.get("map_sections", [])])
-    tests = unique_strings([test for area in areas for test in area.get("tests", [])])
+    visual_policy: dict[str, Any] | None = None
+    if "visuals" in selected_modules:
+        instructions_path = root / "AGENTS.md"
+        instruction_text = instructions_path.read_text(encoding="utf-8") if instructions_path.is_file() else ""
+        if MANAGED_START in instruction_text and MANAGED_END in instruction_text:
+            marker_start = instruction_text.index(MANAGED_START) + len(MANAGED_START)
+            marker_end = instruction_text.index(MANAGED_END, marker_start)
+            instruction_text = instruction_text[marker_start:marker_end]
+        heading = "## Quality Visuals by AethDesign"
+        if heading in instruction_text:
+            start = instruction_text.index(heading)
+            end = instruction_text.find("\n## ", start + len(heading))
+            policy_text = instruction_text[start:] if end == -1 else instruction_text[start:end]
+        else:
+            policy_text = ""
+        visual_policy = {
+            "source": "AGENTS.md",
+            "available": bool(policy_text),
+            "requirements": policy_text,
+            "applicability": "The selected visual baseline remains in force. Use --visual to declare new or substantial user-visible UI scope and require independent visual review; a CSS filename alone does not establish that scope.",
+        }
     diff_command = ["git", "diff", "--relative", "--find-renames"]
     if has_base:
         diff_command.append(base)
@@ -301,9 +402,14 @@ def packet(root: Path, config: dict[str, Any], base: str, criteria: str, *, forc
         "base": base,
         "base_exists": has_base,
         "acceptance_criteria": criteria,
+        "quality_modules": {
+            "selected": selected_modules,
+            **({"visual_policy": visual_policy} if visual_policy is not None else {}),
+        },
         "changed_files": files,
         "risk": risk,
         "independent_audit_required": required,
+        "visual_review_required": visual,
         "audit_forced": force and not required,
         "matched_areas": [area.get("name", "unnamed") for area in areas],
         "required_profiles": profiles,
@@ -454,7 +560,7 @@ def render_template(path: Path, replacements: dict[str, str]) -> str:
     return text
 
 
-def render_project(master: Path, root: Path) -> dict[str, str]:
+def render_project(master: Path, root: Path, modules: list[str] | None = None) -> dict[str, str]:
     profiles, test_commands, notes = detect_profiles(root)
     source_paths = detected_paths(root, ("src", "app", "lib", "Sources", "packages", "webapp"))
     test_paths = detected_paths(root, ("tests", "test", "Tests", "spec", "__tests__"))
@@ -517,7 +623,7 @@ def render_project(master: Path, root: Path) -> dict[str, str]:
     quality_toml = quality_toml.replace('project = "PROJECT_NAME"', f"project = {json.dumps(project_name)}")
     quality_toml = quality_toml.replace("VERIFY_PROFILES", profile_toml)
     return {
-        "AGENTS.md": (assets / "AGENTS.md").read_text(encoding="utf-8"),
+        "AGENTS.md": compose_instructions(master, ALL_MODULES if modules is None else modules),
         "CLAUDE.md": (assets / "CLAUDE.md").read_text(encoding="utf-8"),
         "MAP.md": render_template(assets / "MAP.md", replacements),
         "TESTING.md": render_template(assets / "TESTING.md", replacements),
@@ -570,6 +676,53 @@ def merge_missing_sections(existing: str, template: str) -> str:
     return existing.rstrip() + "\n\n" + "\n\n".join(additions) + "\n"
 
 
+def merge_project_map(
+    existing: str,
+    template: str,
+    required_sections: set[str],
+    word_limit: int,
+) -> str:
+    """Add required MAP sections, then optional defaults only while they fit the budget."""
+    if not existing.strip():
+        lines = template.splitlines(keepends=True)
+        first_section = next((index for index, line in enumerate(lines)
+                              if re.match(r"^##\s+", line)), len(lines))
+        preamble = "".join(lines[:first_section]).rstrip()
+        existing = preamble + "\n" if preamble else ""
+    sections = level_two_sections(template)
+    available = {name for name, _ in sections}
+    known = headings(existing)
+    missing_routes = required_sections - available - known
+    if missing_routes:
+        raise QualityError(
+            "cannot upgrade MAP.md: configured routes reference sections absent from the template: "
+            + ", ".join(sorted(missing_routes))
+        )
+
+    required = [(name, content) for name, content in sections
+                if name in required_sections and name not in known]
+    optional = [(name, content) for name, content in sections
+                if name not in required_sections and name not in known]
+
+    def append(base: str, additions: list[tuple[str, str]]) -> str:
+        if not additions:
+            return base
+        return base.rstrip() + "\n\n" + "\n\n".join(content for _, content in additions) + "\n"
+
+    required_result = append(existing, required)
+    if len(required_result.split()) > word_limit:
+        raise QualityError(
+            f"cannot safely add required MAP.md section(s) within the {word_limit}-word budget: "
+            + ", ".join(name for name, _ in required)
+        )
+    complete_result = append(required_result, optional)
+    if len(complete_result.split()) <= word_limit:
+        return complete_result
+    # Optional boilerplate must not make a valid established map exceed its
+    # context budget. Preserve all existing content and every configured route.
+    return required_result
+
+
 def ensure_claude_import(existing: str) -> str:
     if CLAUDE_IMPORT in existing:
         return existing.rstrip() + "\n"
@@ -602,7 +755,8 @@ def preflight_wrapper(root: Path, wrapper: str) -> None:
         raise QualityError(f"{path} already exists and is not managed by quality-code; rename it before adoption")
 
 
-def bootstrap(root_arg: str, mode: str) -> None:
+def bootstrap(root_arg: str, mode: str, modules_arg: str | None = None) -> None:
+    selected_modules = parse_modules(modules_arg) if modules_arg is not None else list(ALL_MODULES)
     root = Path(root_arg).expanduser().resolve()
     root.mkdir(parents=True, exist_ok=True)
     master = find_master_root()
@@ -610,11 +764,16 @@ def bootstrap(root_arg: str, mode: str) -> None:
     if config_path.exists():
         if mode == "init":
             raise QualityError(f"{root} is already initialized; run quality-code upgrade or validate")
-        validate(root, load_config(root))
+        config = load_config(root)
+        existing_modules = project_modules(config)
+        if modules_arg is not None and parse_modules(modules_arg) != existing_modules:
+            raise QualityError("project is already adopted with a different quality module selection; use upgrade to change it")
+        validate(root, config)
         print(f"PASS: {root} was already adopted")
         return
 
-    rendered = render_project(master, root)
+    rendered = render_project(master, root, selected_modules)
+    rendered[".quality/quality.toml"] = set_quality_modules(rendered[".quality/quality.toml"], selected_modules)
     preflight_wrapper(root, rendered["quality"])
     # A project with no quality.toml has no established managed runtime boundary.
     # Refuse collisions before Git initialization or any project file writes.
@@ -686,6 +845,51 @@ def update_standard_version(text: str) -> str:
     raise QualityError("cannot safely migrate standard_version formatting; normalize its root assignment before upgrade")
 
 
+def set_quality_modules(text: str, modules: list[str]) -> str:
+    """Set the root TOML selection while preserving unrelated formatting and comments."""
+    try:
+        original = tomllib.loads(text)
+    except tomllib.TOMLDecodeError as exc:
+        raise QualityError(f"cannot parse quality.toml before module update: {exc}") from exc
+    expected = {**original, "quality_modules": list(modules)}
+    key_pattern = re.compile(r"^[ \t]*(?:quality_modules|\"quality_modules\"|'quality_modules')[ \t]*=")
+    lines = text.splitlines(keepends=True)
+    for index, line in enumerate(lines):
+        if not key_pattern.match(line):
+            continue
+        # A module list must be a single root assignment. Verify both location and
+        # complete parsed equivalence before accepting the textual replacement.
+        match = re.match(r"^([ \t]*(?:quality_modules|\"quality_modules\"|'quality_modules')[ \t]*=[ \t]*)(\[[^\r\n]*\])([ \t]*(?:#[^\r\n]*)?\r?\n?)$", line)
+        if not match:
+            raise QualityError("cannot safely update quality_modules formatting; normalize it to a one-line root array before upgrade")
+        candidate_lines = list(lines)
+        candidate_lines[index] = match.group(1) + json.dumps(modules) + match.group(3)
+        candidate = "".join(candidate_lines)
+        try:
+            if tomllib.loads(candidate) == expected:
+                return candidate
+        except tomllib.TOMLDecodeError:
+            continue
+    if "quality_modules" in original:
+        raise QualityError("cannot safely locate the root quality_modules assignment before upgrade")
+    # Prepending avoids changing the association or contents of existing comments.
+    return f"quality_modules = {json.dumps(modules)}\n" + text
+
+
+def update_quality_modules(text: str, modules_arg: str | None) -> tuple[str, list[str]]:
+    try:
+        config = tomllib.loads(text)
+    except tomllib.TOMLDecodeError as exc:
+        raise QualityError(f"cannot parse quality.toml before module update: {exc}") from exc
+    existing = project_modules(config)
+    selected = parse_modules(modules_arg) if modules_arg is not None else existing
+    # Legacy projects without a stored choice continue to mean the historical full
+    # bundle. Preserve their config exactly unless the caller makes a new choice.
+    if modules_arg is None and "quality_modules" not in config:
+        return text, selected
+    return set_quality_modules(text, selected), selected
+
+
 def ensure_audit_threshold(text: str) -> str:
     if re.search(r"^independent_audit_min_risk\s*=", text, re.MULTILINE):
         return text
@@ -715,21 +919,48 @@ def migrate_project_policy(name: str, text: str) -> str:
     return text
 
 
-def upgrade(root_arg: str, dry_run: bool) -> None:
+def upgrade(root_arg: str, dry_run: bool, modules_arg: str | None = None) -> None:
     master = find_master_root()
     root = find_project_root(Path(root_arg).expanduser())
-    rendered = render_project(master, root)
     config_path = root / ".quality" / "quality.toml"
     # Preflight migration before dry-run output or any managed-file writes.
-    config_text = ensure_audit_threshold(update_standard_version(config_path.read_text(encoding="utf-8")))
+    config_text, selected_modules = update_quality_modules(config_path.read_text(encoding="utf-8"), modules_arg)
+    config_text = ensure_audit_threshold(update_standard_version(config_text))
+    rendered = render_project(master, root, selected_modules)
+    current_config = tomllib.loads(config_path.read_text(encoding="utf-8"))
+    map_limit = current_config.get("policy", {}).get("map_word_limit", 900)
+    if type(map_limit) is not int or map_limit < 100:
+        raise QualityError("policy.map_word_limit must be an integer of at least 100 before upgrade")
+    required_map_sections = {
+        section for area in configured_areas(current_config) for section in area.get("map_sections", [])
+    }
+    documentation_updates: dict[str, str] = {}
+    for name in ("MAP.md", "TESTING.md"):
+        path = root / name
+        original = path.read_text(encoding="utf-8") if path.is_file() else ""
+        migrated = migrate_project_policy(name, original)
+        if name == "MAP.md":
+            updated = merge_project_map(migrated, rendered[name], required_map_sections, map_limit)
+            if len(updated.split()) > map_limit:
+                raise QualityError(
+                    f"existing MAP.md exceeds the {map_limit}-word budget; preserve it and resolve the budget before upgrading"
+                )
+        elif not migrated:
+            updated = rendered[name]
+        else:
+            updated = merge_missing_sections(migrated, rendered[name])
+        documentation_updates[name] = updated
     actions = [
         "refresh managed AGENTS.md block",
         "ensure CLAUDE.md imports AGENTS.md",
-        "add missing MAP.md and TESTING.md standard sections without replacing project content",
+        "add required MAP.md sections and budget-fitting defaults; preserve existing content and the word limit",
+        "add missing TESTING.md sections without replacing project content",
         "refresh project-local quality engine, schema, and wrapper",
         f"set standard_version to {STANDARD_VERSION}",
         "set the independent audit threshold to high when missing",
     ]
+    if modules_arg is not None or "quality_modules" in tomllib.loads(config_path.read_text(encoding="utf-8")):
+        actions.append(f"set quality_modules to {', '.join(selected_modules) or '(foundation only)'}")
     if dry_run:
         print(json.dumps({"project": str(root), "dry_run": True, "actions": actions}, indent=2))
         return
@@ -749,11 +980,10 @@ def upgrade(root_arg: str, dry_run: bool) -> None:
         claude_path,
         ensure_claude_import(claude_path.read_text(encoding="utf-8") if claude_path.is_file() else ""),
     )
-    for name in ("MAP.md", "TESTING.md"):
+    for name, updated in documentation_updates.items():
         path = root / name
-        existing = path.read_text(encoding="utf-8") if path.is_file() else ""
-        existing = migrate_project_policy(name, existing)
-        write_text(path, merge_missing_sections(existing, rendered[name]) if existing else rendered[name])
+        if not path.is_file() or path.read_text(encoding="utf-8") != updated:
+            write_text(path, updated)
 
     write_text(config_path, config_text)
     shutil.copy2(master / "scripts" / "quality_code.py", root / ".quality" / "quality.py")
@@ -774,11 +1004,14 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers = parser.add_subparsers(dest="command", required=True)
     initialize = subparsers.add_parser("init", help="initialize a new project and its Git boundary")
     initialize.add_argument("path", nargs="?", default=".")
+    initialize.add_argument("--modules", help="instruction modules: all or comma-separated code,visuals,swarms")
     adopt = subparsers.add_parser("adopt", help="adopt an existing project without replacing its content")
     adopt.add_argument("path", nargs="?", default=".")
+    adopt.add_argument("--modules", help="instruction modules: all or comma-separated code,visuals,swarms")
     upgrade_parser = subparsers.add_parser("upgrade", help="upgrade managed standard files")
     upgrade_parser.add_argument("path", nargs="?", default=".")
     upgrade_parser.add_argument("--dry-run", action="store_true")
+    upgrade_parser.add_argument("--modules", help="replace the instruction module selection")
     subparsers.add_parser("validate", help="validate project quality files")
     verify = subparsers.add_parser("verify", help="run a configured verification profile")
     verify.add_argument("profile")
@@ -791,6 +1024,11 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="allow a low- or normal-risk packet only when the user explicitly requested an audit",
     )
+    audit_packet.add_argument(
+        "--visual",
+        action="store_true",
+        help="declare new or substantial user-visible UI scope and require an independent visual review",
+    )
     criteria_group = audit_packet.add_mutually_exclusive_group(required=True)
     criteria_group.add_argument("--criteria")
     criteria_group.add_argument("--criteria-file")
@@ -801,10 +1039,10 @@ def main() -> int:
     args = build_parser().parse_args()
     try:
         if args.command in {"init", "adopt"}:
-            bootstrap(args.path, args.command)
+            bootstrap(args.path, args.command, args.modules)
             return 0
         if args.command == "upgrade":
-            upgrade(args.path, args.dry_run)
+            upgrade(args.path, args.dry_run, args.modules)
             return 0
 
         root = find_project_root(Path(args.project))
@@ -834,7 +1072,8 @@ def main() -> int:
             )
         elif args.command == "audit-packet":
             base = args.base or config.get("audit", {}).get("default_base", "HEAD")
-            print(json.dumps(packet(root, config, base, read_criteria(args), force=args.force), indent=2))
+            print(json.dumps(packet(root, config, base, read_criteria(args), force=args.force,
+                                    visual=args.visual), indent=2))
         return 0
     except QualityError as exc:
         print(f"ERROR: {exc}", file=sys.stderr)

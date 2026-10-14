@@ -1,6 +1,6 @@
-# The Quality Code standard
+# AethDesign quality standards
 
-A project’s quality contract should be readable by both people and coding agents. Standard version 3 combines a mandatory builder layer with an independent layer triggered by product risk.
+Choose [Quality Code, Quality Visuals and Quality Swarms](MODULES.md) individually or together. One shared foundation preserves acceptance criteria, existing requirements and truthful evidence. Quality Code supplies the builder workflow and code-risk gates below; selected Quality Visuals also requires fresh independent visual review for new pages/frontends and substantial redesigns. Isolated low-risk copy/static-style work retains its focused builder lane.
 
 ## 1. Define the outcome
 
@@ -54,3 +54,7 @@ Optimize expected total completion cost, including coordination, retries, and re
 ## Scope and limitations
 
 This is an engineering workflow, not a certification or a security boundary. Instructions rely on agent cooperation. Path routes need maintenance; bootstrap detection cannot judge test quality. The CLI does not launch auditors, validate final verdict files, or enforce a merge gate. Configure your own repository protections and human review where needed.
+
+## Quality Visuals
+
+Apply the [visual baseline](QUALITY_VISUALS.md) and [visual audit protocol](../references/VISUAL_AUDIT.md). Content must be useful and specific, composition intentional, interactions complete and ownership/privacy information accurate. Fix blocking findings and independently re-review before completion. Missing required evidence stays BLOCKED. The baseline is a starting point, not an exhaustive design system or an authorship detector.
