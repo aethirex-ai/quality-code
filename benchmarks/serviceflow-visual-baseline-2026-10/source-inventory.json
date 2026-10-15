@@ -1,0 +1,246 @@
+{
+  "projection": "Exact UI-only file inventory; all files in index.html, src/client and public. Runtime harness and private logs excluded.",
+  "stages": [
+    {
+      "condition": "single",
+      "stage": "before",
+      "files": [
+        {
+          "path": "index.html",
+          "sha256": "cbaa8aba0b0ee088b5b87633190e99a3961d0677760348704a23e02ab6d1f8f9"
+        },
+        {
+          "path": "src/client/api.ts",
+          "sha256": "eefc944d0d72a8fa85ea38c0860970b0d1468be6f45305d38a4d343fada76e92"
+        },
+        {
+          "path": "src/client/catalogue.tsx",
+          "sha256": "ca4b37ab6d3bf9e51e6e6624509f085dd36892ff7e0f8292d3c46b7b3ceba2a9"
+        },
+        {
+          "path": "src/client/components.tsx",
+          "sha256": "ec33e55bc4698ab45ca35714bfca50878247d1a25fb0a8c108c3f91bf571189f"
+        },
+        {
+          "path": "src/client/dashboard.tsx",
+          "sha256": "5b28b0d98069caed398297c01aaf9ebc15600186a5184935aa6fe9252a04489f"
+        },
+        {
+          "path": "src/client/detail.tsx",
+          "sha256": "46f9484d8ff6199ae14e4f162461c39b4086b6b2c3cef62d966056e2ae596570"
+        },
+        {
+          "path": "src/client/forms.tsx",
+          "sha256": "50a7b621bfff2b4a682de726eb7f73b0c181ecb653d6ccdc1df7828a80523e84"
+        },
+        {
+          "path": "src/client/landing.tsx",
+          "sha256": "d16984e3b53be087be93e7bdb3ffb3ddcb24ec8f4142ddc8f16223f06ed62982"
+        },
+        {
+          "path": "src/client/main.tsx",
+          "sha256": "79ad31ea9343be834d705115423242ef3035c58f4045a0576abb68057fb05b3e"
+        },
+        {
+          "path": "src/client/styles.css",
+          "sha256": "04a7c3574292cc6d24e89c234c549bdbaa66aa0baebb8ab7924c196b5b562691"
+        }
+      ]
+    },
+    {
+      "condition": "single",
+      "stage": "initial",
+      "files": [
+        {
+          "path": "index.html",
+          "sha256": "9e9bff71d404b1cc3e75c2c670b658ec9eb8781c58c050474fd32580e4365f31"
+        },
+        {
+          "path": "public/images/home-interior.jpg",
+          "sha256": "fc54748529665adeed5c543569070740f45c119431c973b3460bf53c5a1aeee1"
+        },
+        {
+          "path": "src/client/api.ts",
+          "sha256": "eefc944d0d72a8fa85ea38c0860970b0d1468be6f45305d38a4d343fada76e92"
+        },
+        {
+          "path": "src/client/catalogue.tsx",
+          "sha256": "03858b388e6f10ec63d5bcaa7d17a714a4a8bd3e02b4bca1b7b51377e0360c4e"
+        },
+        {
+          "path": "src/client/components.tsx",
+          "sha256": "919742fe130cf9f723da0d32ce2f01a575bc483603e2e3a71de05e60ee49fdde"
+        },
+        {
+          "path": "src/client/dashboard.tsx",
+          "sha256": "a47a8f368101eb67745671fd6bcae4d28783dbefe8381c4701c58aee7abf5bdf"
+        },
+        {
+          "path": "src/client/detail.tsx",
+          "sha256": "136a3320d028cfa039ad7c77191bedc2696070f8d763aa4db167a6deeba43349"
+        },
+        {
+          "path": "src/client/forms.tsx",
+          "sha256": "ae3e015560f62f4cc7988dea33e5f9415d2cea3789be5cc796e52bf8752c4f77"
+        },
+        {
+          "path": "src/client/information.tsx",
+          "sha256": "b8d8a5a2ec3c6d062d8844c23c5d7deb573bd246b075657cce4c064b6ea6b48e"
+        },
+        {
+          "path": "src/client/landing.tsx",
+          "sha256": "c5e09986da78076da963e292b9d09b8fd78802ac0aca0bf770c9131178652682"
+        },
+        {
+          "path": "src/client/main.tsx",
+          "sha256": "b51930e530a485d3132a797deefbb9ccc61a4a299353866775f4a6ee063c25a6"
+        },
+        {
+          "path": "src/client/styles.css",
+          "sha256": "77affc4b64e4d2c7e1955d38f083bc1ae6ada6109a7196dded2f72624e5859bf"
+        }
+      ]
+    },
+    {
+      "condition": "adaptive",
+      "stage": "before",
+      "files": [
+        {
+          "path": "index.html",
+          "sha256": "f3872da67973c41ea3094d8ab6ac35b45cd384486ce83dad299bb8967ed3a1a9"
+        },
+        {
+          "path": "src/client/api.ts",
+          "sha256": "1445de3c22ca9af0ecaabd0ffbafc2d57addc2304a22eb63d65130320f30a7fb"
+        },
+        {
+          "path": "src/client/main.tsx",
+          "sha256": "553ed18e85eab335d966919f2a070332fcdffe4b6bfeb7d015af127184651adb"
+        },
+        {
+          "path": "src/client/styles.css",
+          "sha256": "ddff667a7f19340ebc23b3201385c9f20f56df51e575e7b707944df79a5d54d6"
+        }
+      ]
+    },
+    {
+      "condition": "adaptive",
+      "stage": "initial",
+      "files": [
+        {
+          "path": "index.html",
+          "sha256": "316e3efad90a03317850c7e051d23be95f0cc108e4686867b3a8250739a99e46"
+        },
+        {
+          "path": "public/images/README.md",
+          "sha256": "99463c40947e6b378d6f807326c9ecf402fc422f895544d2f74aeb21b5ea04f7"
+        },
+        {
+          "path": "public/images/bristol-home.jpg",
+          "sha256": "ac4c840378cfa228be0ab482aa3cd206a69c9a6ae18eb36cefb3ef5b36fdd743"
+        },
+        {
+          "path": "src/client/api.ts",
+          "sha256": "1445de3c22ca9af0ecaabd0ffbafc2d57addc2304a22eb63d65130320f30a7fb"
+        },
+        {
+          "path": "src/client/main.tsx",
+          "sha256": "cbe20bcee178a1138d08e557b97cd80f75f752e634558d9e9e85ab4a5afb7585"
+        },
+        {
+          "path": "src/client/styles.css",
+          "sha256": "2d9b991942b76c594806b324a18abdfa60b5e4d195702acef5a258d0e6122e8a"
+        }
+      ]
+    },
+    {
+      "condition": "single",
+      "stage": "accepted",
+      "gate_status": "PASS",
+      "source_stage": "Late shared-account disclosure correction; independently re-reviewed",
+      "files": [
+        {
+          "path": "index.html",
+          "sha256": "9e9bff71d404b1cc3e75c2c670b658ec9eb8781c58c050474fd32580e4365f31"
+        },
+        {
+          "path": "public/images/home-interior.jpg",
+          "sha256": "fc54748529665adeed5c543569070740f45c119431c973b3460bf53c5a1aeee1"
+        },
+        {
+          "path": "src/client/api.ts",
+          "sha256": "eefc944d0d72a8fa85ea38c0860970b0d1468be6f45305d38a4d343fada76e92"
+        },
+        {
+          "path": "src/client/catalogue.tsx",
+          "sha256": "e4b1a35cce040c13d4e68f8ee34120f81c7472c2e02c127501338e1f6066bda9"
+        },
+        {
+          "path": "src/client/components.tsx",
+          "sha256": "fd631de7485daa86291f228041cdc0e3d355365a0e321d469513c621d07fac91"
+        },
+        {
+          "path": "src/client/dashboard.tsx",
+          "sha256": "91fa3ad86aada349ca10ee798a26d43f7ce193a15edee2967943591a9d785274"
+        },
+        {
+          "path": "src/client/detail.tsx",
+          "sha256": "e1186638d85462684e874c3084e8541d3bdcafd1054ee4abe541f0ad3a32d3fa"
+        },
+        {
+          "path": "src/client/forms.tsx",
+          "sha256": "df15de7fa05a37aaa5266c4b70740815c1d75150367447d3062c04d5e34d4e50"
+        },
+        {
+          "path": "src/client/information.tsx",
+          "sha256": "214c17852fceceb3b58c840cd067a6b51d8f3b22173af128a2d08d94e14d9839"
+        },
+        {
+          "path": "src/client/landing.tsx",
+          "sha256": "df2b160d3c07b2f99df0260843bfe3b813ca488f908b5a7047f752510ea7f625"
+        },
+        {
+          "path": "src/client/main.tsx",
+          "sha256": "e321977b62dbf16a556a28f43d6501aabe5627733198f0dd249bba1bec2e1132"
+        },
+        {
+          "path": "src/client/styles.css",
+          "sha256": "9fdef1a684da557398dd26005702f8a4b95ae2c987e6cca7d8f9dbb61d47e807"
+        }
+      ]
+    },
+    {
+      "condition": "adaptive",
+      "stage": "accepted",
+      "gate_status": "PASS",
+      "source_stage": "Post-handoff supplemental content correction",
+      "files": [
+        {
+          "path": "index.html",
+          "sha256": "316e3efad90a03317850c7e051d23be95f0cc108e4686867b3a8250739a99e46"
+        },
+        {
+          "path": "public/images/README.md",
+          "sha256": "99463c40947e6b378d6f807326c9ecf402fc422f895544d2f74aeb21b5ea04f7"
+        },
+        {
+          "path": "public/images/bristol-home.jpg",
+          "sha256": "ac4c840378cfa228be0ab482aa3cd206a69c9a6ae18eb36cefb3ef5b36fdd743"
+        },
+        {
+          "path": "src/client/api.ts",
+          "sha256": "1445de3c22ca9af0ecaabd0ffbafc2d57addc2304a22eb63d65130320f30a7fb"
+        },
+        {
+          "path": "src/client/main.tsx",
+          "sha256": "e004714f1f894a9bff30dea9eb1635fc332a2786061d28ab3e8f87754622252f"
+        },
+        {
+          "path": "src/client/styles.css",
+          "sha256": "2d9b991942b76c594806b324a18abdfa60b5e4d195702acef5a258d0e6122e8a"
+        }
+      ]
+    }
+  ],
+  "private_presentation_source_basis_sha256": "689db51990cd606b03c634ebc9f7c19b2c701e347eeb8327c3ab5e7ca3cf59f6"
+}

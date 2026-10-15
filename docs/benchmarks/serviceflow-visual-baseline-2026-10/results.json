@@ -1,0 +1,1234 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "publication_status": "Both app workflows accepted including the late Single disclosure correction; assembled-publication re-audit remains separate.",
+  "prompt": "Fully remake the frontend of this ServiceFlow app.\n",
+  "prompt_sha256": "ac741b838e4c1cf81a1a40f072dd41795b411062b4428ea96562f9f1a72733de",
+  "apps": [
+    {
+      "id": "single",
+      "label": "Single",
+      "initial_seconds": 961.4324147090083,
+      "initial_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 5325056,
+        "input_tokens": 5714008,
+        "output_tokens": 43822,
+        "reasoning_output_tokens": 11742,
+        "total_tokens": 5757830
+      },
+      "initial_text_proxy_usd": 1.7486296,
+      "initial_verdict": "FAIL after handoff",
+      "total_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 55572224,
+        "input_tokens": 58155117,
+        "output_tokens": 219456,
+        "reasoning_output_tokens": 81904,
+        "total_tokens": 58374573
+      },
+      "acceptance_wall_seconds": 11092.38959312439,
+      "final_verdict": "PASS",
+      "total_text_proxy_usd": 24.2602914,
+      "image_calls_initial": 1,
+      "findings": [
+        "First parent audit found a long-content layout defect and redundant supporting labels. Browser submission evidence was initially blocked; a later re-review also encountered unavailable preview capability. Prior broad acceptance followed recovery.",
+        "The supplemental content review initially failed with 4 finding families. One coherent correction batch was independently re-reviewed and passed. This narrow PASS supplements the earlier broad gate; its reviewer inspected the delta and builder check logs without repeating the full functional/security investigation.",
+        "The assembled-publication reviewer then found a missed Single shared-account privacy assurance. Earlier supplemental PASS remains historical and did not close this defect. The exact builder corrected the request and privacy copy; a focused independent reviewer inspected current source and four affected renders and passed it. This app-delta PASS does not approve the assembled publication.",
+        "Retained evidence now supports lower bounds of four distinct Single product-defect families and four correction/recheck cycles. The added family is inaccurate shared-account access assurance; the late correction and focused re-review form one added cycle. These counts are not quality scores."
+      ],
+      "captures": [
+        {
+          "condition": "single",
+          "stage": "before",
+          "screen": "landing",
+          "css_viewport_width": 1440,
+          "url": "captures/single/before/1440/landing.png",
+          "sha256": "dc857bc45dd519fbe125c9c482bdf0618a1d69334699550af18cd3c8393c7b01",
+          "capture_time": "2026-10-14T01:30:42.384Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "single",
+          "stage": "before",
+          "screen": "login",
+          "css_viewport_width": 1440,
+          "url": "captures/single/before/1440/login.png",
+          "sha256": "92db040185cd307e719469241b400c82428cd559654a3e268b7e1dd12e1e01e4",
+          "capture_time": "2026-10-14T01:30:43.198Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "single",
+          "stage": "before",
+          "screen": "request",
+          "css_viewport_width": 1440,
+          "url": "captures/single/before/1440/request.png",
+          "sha256": "508605275b58526326508c90da92b0735af49433cf28e52e129872896c0c7f23",
+          "capture_time": "2026-10-14T01:30:44.205Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "single",
+          "stage": "before",
+          "screen": "customer",
+          "css_viewport_width": 1440,
+          "url": "captures/single/before/1440/customer.png",
+          "sha256": "39fa0fab1d2e26bf18d973bf2169807f2076409e05a16a773725555af21a61dc",
+          "capture_time": "2026-10-14T01:30:45.037Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "single",
+          "stage": "before",
+          "screen": "landing",
+          "css_viewport_width": 375,
+          "url": "captures/single/before/375/landing.png",
+          "sha256": "3cd96bf88ef1719443dfb5d0c10a5aa6d445312f6ddbd9818098085b7e93dec6",
+          "capture_time": "2026-10-14T01:30:49.198Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "single",
+          "stage": "before",
+          "screen": "login",
+          "css_viewport_width": 375,
+          "url": "captures/single/before/375/login.png",
+          "sha256": "4584ba24676adae4d4424a797c1f51411f4a0c37e73e8732bfb00fcb2ebfdba8",
+          "capture_time": "2026-10-14T01:30:50.039Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "single",
+          "stage": "before",
+          "screen": "request",
+          "css_viewport_width": 375,
+          "url": "captures/single/before/375/request.png",
+          "sha256": "5de3fb83acbf3b0efe167ad56611046fc8f8a68a569b571fb7d9d884d31ba60f",
+          "capture_time": "2026-10-14T01:30:50.869Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "single",
+          "stage": "before",
+          "screen": "customer",
+          "css_viewport_width": 375,
+          "url": "captures/single/before/375/customer.png",
+          "sha256": "9cc04dd98163bdf6bdf31671948508b4c9b6f84eee432dc5761c513def0e7819",
+          "capture_time": "2026-10-14T01:30:51.714Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "single",
+          "stage": "initial",
+          "screen": "landing",
+          "css_viewport_width": 1440,
+          "url": "captures/single/initial/1440/landing.jpg",
+          "sha256": "fafd8878667859cd3d58dbbaec4df27fceb836c941774b6ece7857013d96938c",
+          "capture_time": "2026-10-14T22:05:58.712000+00:00",
+          "display_canvas_ratio": 0.75,
+          "note": "Retained first-builder render, before independent audit feedback. Verified empty capture-canvas margins are clipped for display; raw bytes are linked."
+        },
+        {
+          "condition": "single",
+          "stage": "initial",
+          "screen": "landing",
+          "css_viewport_width": 375,
+          "url": "captures/single/initial/375/landing.jpg",
+          "sha256": "9abdeaa791c48e251bce9212fa528f3e4d1e3f572d80f80477748a16484a4eeb",
+          "capture_time": "2026-10-14T22:06:21.018000+00:00",
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Retained first-builder render, before independent audit feedback. Verified empty capture-canvas margins are clipped for display; raw bytes are linked."
+        },
+        {
+          "condition": "single",
+          "stage": "initial",
+          "screen": "login",
+          "css_viewport_width": 1440,
+          "url": "captures/single/initial/1440/login.jpg",
+          "sha256": "1f91df1fb7ddfeb90fe708431c0e2654109f699382d428b8655910789518af19",
+          "capture_time": "2026-10-14T21:58:13.837000+00:00",
+          "display_canvas_ratio": 0.75,
+          "note": "Retained first-builder render, before independent audit feedback. Verified empty capture-canvas margins are clipped for display; raw bytes are linked."
+        },
+        {
+          "condition": "single",
+          "stage": "initial",
+          "screen": "login",
+          "css_viewport_width": 375,
+          "url": "captures/single/initial/375/login.jpg",
+          "sha256": "6de6f4e033c55674023b053453a34d0a7d74eac36613e6a2588d337641b0d1a0",
+          "capture_time": "2026-10-14T21:59:19.403000+00:00",
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Retained first-builder render, before independent audit feedback. Verified empty capture-canvas margins are clipped for display; raw bytes are linked."
+        },
+        {
+          "condition": "single",
+          "stage": "initial",
+          "screen": "request",
+          "css_viewport_width": 1440,
+          "url": "captures/single/initial/1440/request.jpg",
+          "sha256": "48497db7572fa82608a03599dff22850d78efe1ca106e332270079655ccd009b",
+          "capture_time": "2026-10-14T21:59:30.677000+00:00",
+          "display_canvas_ratio": 0.75,
+          "note": "Retained first-builder render, before independent audit feedback. Verified empty capture-canvas margins are clipped for display; raw bytes are linked."
+        },
+        {
+          "condition": "single",
+          "stage": "initial",
+          "screen": "request",
+          "css_viewport_width": 375,
+          "url": "captures/single/initial/375/request.jpg",
+          "sha256": "9205f2b78d4935d248a03b81e17b4ccdd8455f783028abc3ffd3086697303a15",
+          "capture_time": "2026-10-14T21:59:33.444000+00:00",
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Retained first-builder render, before independent audit feedback. Verified empty capture-canvas margins are clipped for display; raw bytes are linked."
+        },
+        {
+          "condition": "single",
+          "stage": "initial",
+          "screen": "customer",
+          "css_viewport_width": 1440,
+          "url": "captures/single/initial/1440/customer-dashboard.jpg",
+          "sha256": "0f7c86b4b0834ae12908dcd5a9200120c27ba0678ed138a140085efb85745ad7",
+          "capture_time": "2026-10-14T21:59:22.523000+00:00",
+          "display_canvas_ratio": 0.75,
+          "note": "Retained first-builder render, before independent audit feedback. Verified empty capture-canvas margins are clipped for display; raw bytes are linked."
+        },
+        {
+          "condition": "single",
+          "stage": "initial",
+          "screen": "customer",
+          "css_viewport_width": 375,
+          "url": "captures/single/initial/375/customer-dashboard.jpg",
+          "sha256": "917758310c8ecd4bcaeb1e490be7e6900ab0fcb3047aa6cd841465189dae0495",
+          "capture_time": "2026-10-14T21:59:25.199000+00:00",
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Retained first-builder render, before independent audit feedback. Verified empty capture-canvas margins are clipped for display; raw bytes are linked."
+        },
+        {
+          "condition": "single",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "landing",
+          "css_viewport_width": 1440,
+          "url": "captures/single/accepted/1440/landing.jpg",
+          "sha256": "37b30cd1ad831ebd853c937f07cbbbd57b54981826c217ba060b7d1fd191751e",
+          "capture_time": "2026-10-15T00:34:29.003Z",
+          "raster_width": 1920,
+          "raster_height": 2281,
+          "document_width": 1440,
+          "document_height": 1711,
+          "display_canvas_ratio": 0.75,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged.",
+          "source_basis_note": "Capture retained unchanged: late correction affected request disclosure and privacy content only; source applicability of this screen is preserved."
+        },
+        {
+          "condition": "single",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "login",
+          "css_viewport_width": 1440,
+          "url": "captures/single/accepted/1440/login.jpg",
+          "sha256": "8513728bf1245d1b167ff36c71e45d31e4300dfdf196b13facc6feb7910c4a06",
+          "capture_time": "2026-10-15T00:34:42.105Z",
+          "raster_width": 1920,
+          "raster_height": 1284,
+          "document_width": 1440,
+          "document_height": 963,
+          "display_canvas_ratio": 0.75,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged.",
+          "source_basis_note": "Capture retained unchanged: late correction affected request disclosure and privacy content only; source applicability of this screen is preserved."
+        },
+        {
+          "condition": "single",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "request",
+          "css_viewport_width": 1440,
+          "url": "captures/single/accepted/1440/request.jpg",
+          "sha256": "72e6e977b62faa774bdd061b82f4eb34895058b23b8d4db5ddb1df7f66826c99",
+          "capture_time": "2026-10-15T00:55:05.008Z",
+          "raster_width": 1920,
+          "raster_height": 2288,
+          "document_width": 1440,
+          "document_height": 1717,
+          "display_canvas_ratio": 0.75,
+          "note": "Late shared-account disclosure correction; focused independent re-review PASS. This app-delta review does not approve the assembled publication.",
+          "supersedes_sha256": "6f62fae7738d66d40fd33a8e239d46df5c57f2166ba3f83baaf7a4aa34b607db"
+        },
+        {
+          "condition": "single",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "customer",
+          "css_viewport_width": 1440,
+          "url": "captures/single/accepted/1440/customer.jpg",
+          "sha256": "4a2a1b6dfb0d490f3bb6cd8138dad6c2e61528bcf1d7a0139589d1fb46546498",
+          "capture_time": "2026-10-15T00:34:59.980Z",
+          "raster_width": 1920,
+          "raster_height": 1571,
+          "document_width": 1440,
+          "document_height": 1179,
+          "display_canvas_ratio": 0.75,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged.",
+          "source_basis_note": "Capture retained unchanged: late correction affected request disclosure and privacy content only; source applicability of this screen is preserved."
+        },
+        {
+          "condition": "single",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "landing",
+          "css_viewport_width": 375,
+          "url": "captures/single/accepted/375/landing.jpg",
+          "sha256": "cde15696a527040b03652bd51353c59bb07611b17cfba06850ff5b44b5eba32e",
+          "capture_time": "2026-10-15T00:34:30.181Z",
+          "raster_width": 499,
+          "raster_height": 3989,
+          "document_width": 375,
+          "document_height": 2992,
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged.",
+          "source_basis_note": "Capture retained unchanged: late correction affected request disclosure and privacy content only; source applicability of this screen is preserved."
+        },
+        {
+          "condition": "single",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "login",
+          "css_viewport_width": 375,
+          "url": "captures/single/accepted/375/login.jpg",
+          "sha256": "ffef0e9788237c831d37808af335c5bd7096fd4e4434cef87d914ff306166258",
+          "capture_time": "2026-10-15T00:34:40.975Z",
+          "raster_width": 499,
+          "raster_height": 1581,
+          "document_width": 375,
+          "document_height": 1186,
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged.",
+          "source_basis_note": "Capture retained unchanged: late correction affected request disclosure and privacy content only; source applicability of this screen is preserved."
+        },
+        {
+          "condition": "single",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "request",
+          "css_viewport_width": 375,
+          "url": "captures/single/accepted/375/request.jpg",
+          "sha256": "78f9657dbc7b3ee036d80292690a4c873f9ee257ee47dd87e37f2e55b30b404e",
+          "capture_time": "2026-10-15T00:55:06.143Z",
+          "raster_width": 499,
+          "raster_height": 3243,
+          "document_width": 375,
+          "document_height": 2432,
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Late shared-account disclosure correction; focused independent re-review PASS. This app-delta review does not approve the assembled publication.",
+          "supersedes_sha256": "6448f91682aa1a6ea8a97c755d795751cf3a679003e6233ee194f21ef252572b"
+        },
+        {
+          "condition": "single",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "customer",
+          "css_viewport_width": 375,
+          "url": "captures/single/accepted/375/customer.jpg",
+          "sha256": "29e6454b7608a380d77e9ce579198ca00585ee8cfae41c8273aa979f047334f1",
+          "capture_time": "2026-10-15T00:35:01.084Z",
+          "raster_width": 499,
+          "raster_height": 2221,
+          "document_width": 375,
+          "document_height": 1667,
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged.",
+          "source_basis_note": "Capture retained unchanged: late correction affected request disclosure and privacy content only; source applicability of this screen is preserved."
+        }
+      ],
+      "final_capture_status": "PASS",
+      "native_phase_seconds": 5951.955907792784,
+      "parent_interphase_gap_seconds": 5140.433685331605,
+      "broad_gate_verdict": "PASS",
+      "supplemental_review_verdict": "PASS",
+      "phase_breakdown": [
+        {
+          "phase": 1,
+          "label": "First workflow",
+          "kind": "initial",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 961.4324147090083,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 5325056,
+            "input_tokens": 5714008,
+            "output_tokens": 43822,
+            "reasoning_output_tokens": 11742,
+            "total_tokens": 5757830
+          },
+          "text_proxy_usd": 1.7486296,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "734f638737ac8baa94d8d231786d6d095c257b2773bbd718bb2fc669086fbfa7"
+        },
+        {
+          "phase": 2,
+          "label": "First independent broad audit",
+          "kind": "audit",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 960.779291999992,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 12341248,
+            "input_tokens": 12622256,
+            "output_tokens": 39933,
+            "reasoning_output_tokens": 16588,
+            "total_tokens": 12662189
+          },
+          "text_proxy_usd": 2.3085408,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "2c2df5eafad1a1544795a4359995ffe1e9a480d2f8500fbdc57a6296872dc907"
+        },
+        {
+          "phase": 3,
+          "label": "Broad-finding correction",
+          "kind": "repair",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 474.17543945799116,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 6000768,
+            "input_tokens": 6081807,
+            "output_tokens": 21613,
+            "reasoning_output_tokens": 10461,
+            "total_tokens": 6103420
+          },
+          "text_proxy_usd": 1.1076196,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "2d2cad5ee574b3f786cbc0ca2ba079384cbe61399a685015d57355a00837c566"
+        },
+        {
+          "phase": 4,
+          "label": "Broad re-review, initially blocked",
+          "kind": "audit",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 2012.917517291964,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 20927744,
+            "input_tokens": 21598889,
+            "output_tokens": 59153,
+            "reasoning_output_tokens": 30550,
+            "total_tokens": 21658042
+          },
+          "text_proxy_usd": 6.0649406,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "f3211862c2827bb50199cf49e39514437517fbe55bce843db12020c3d8d5602b"
+        },
+        {
+          "phase": 5,
+          "label": "Broad review continuation and recovery",
+          "kind": "audit-continuation",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 646.8176582079614,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 2989952,
+            "input_tokens": 3418591,
+            "output_tokens": 15654,
+            "reasoning_output_tokens": 1499,
+            "total_tokens": 3434245
+          },
+          "text_proxy_usd": 1.9873182,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": true,
+          "source_phase_metadata_sha256": "a299211b6d85a2166a351660fb56d2268b1e942eace774f36f317f28cf2ddca3"
+        },
+        {
+          "phase": 6,
+          "label": "Supplemental content review",
+          "kind": "audit",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6-astra"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6-astra",
+              "reasoning_effort": "medium",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 229.2518752089236,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 1076736,
+            "input_tokens": 1207329,
+            "output_tokens": 9884,
+            "reasoning_output_tokens": 1435,
+            "total_tokens": 1217213
+          },
+          "text_proxy_usd": 2.876866,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "11d61e37634e8d798038ba2d37bd263e332f9a96091b5495cf8fb9535a934353"
+        },
+        {
+          "phase": 7,
+          "label": "Supplemental content correction",
+          "kind": "repair",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 294.92242141696624,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 2696320,
+            "input_tokens": 2998999,
+            "output_tokens": 12788,
+            "reasoning_output_tokens": 6813,
+            "total_tokens": 3011787
+          },
+          "text_proxy_usd": 1.9418,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "3946570fc560905822bfc0653a66099f855403aa462deeed7617cdaa11585ae8"
+        },
+        {
+          "phase": 8,
+          "label": "Supplemental content re-review",
+          "kind": "audit-continuation",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6-astra"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6-astra",
+              "reasoning_effort": "medium",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 151.7937871669419,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 1327104,
+            "input_tokens": 1517981,
+            "output_tokens": 6384,
+            "reasoning_output_tokens": 196,
+            "total_tokens": 1524365
+          },
+          "text_proxy_usd": 3.555074,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "4e8f4b36e46deee46a735c3b88064b863a96a91c729b365bd22522fa14aa96e7"
+        },
+        {
+          "phase": 9,
+          "label": "Late shared-account disclosure correction",
+          "kind": "repair",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 135.0798380000051,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 1902848,
+            "input_tokens": 1915268,
+            "output_tokens": 6053,
+            "reasoning_output_tokens": 2498,
+            "total_tokens": 1921321
+          },
+          "text_proxy_usd": 0.5210446,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "45ee359d0c0b2acce2c390258b3f8bf15e48dea27bfa4e5e8f9ffa20958f19b6"
+        },
+        {
+          "phase": 10,
+          "label": "Late shared-account focused re-review",
+          "kind": "audit-continuation",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6-astra"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6-astra",
+              "reasoning_effort": "medium",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 84.78566433303058,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 984448,
+            "input_tokens": 1079989,
+            "output_tokens": 4172,
+            "reasoning_output_tokens": 122,
+            "total_tokens": 1084161
+          },
+          "text_proxy_usd": 2.148458,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "9bbc39eab6fba99f12da6990ff912bf7bcf692835ca8fa1d7293491b0fce7582"
+        }
+      ],
+      "observed_defect_families_lower_bound": 4,
+      "evidenced_fix_recheck_cycles_lower_bound": 4,
+      "broad_gate_result_sha256": "8b8c371165fd1fb34c561bb330202b5740a62d13a9b0e39f86a873655a14f393",
+      "supplemental_review_result_sha256": "4328f2ed914c5b284c77e4ccc82c06866d59e21f1c8bb7e8476fa863e8b7921e",
+      "publication_followup_verdict": "PASS",
+      "publication_followup_result_sha256": "20eeb1d3ee709559d8b417eef871dd17a8dccaf53c102407170203d50d4865d6",
+      "root_model": "gpt-6.1-sol",
+      "root_reasoning_effort": "high",
+      "initial_helper_settings": []
+    },
+    {
+      "id": "adaptive",
+      "label": "Adaptive",
+      "initial_seconds": 1853.2883970409166,
+      "initial_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 31803392,
+        "input_tokens": 32293898,
+        "output_tokens": 101117,
+        "reasoning_output_tokens": 41230,
+        "total_tokens": 32395015
+      },
+      "initial_text_proxy_usd": 5.1725212,
+      "initial_verdict": "Internal broad gate PASS; supplemental content later FAIL",
+      "total_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 36614016,
+        "input_tokens": 37340879,
+        "output_tokens": 131437,
+        "reasoning_output_tokens": 50984,
+        "total_tokens": 37472316
+      },
+      "acceptance_wall_seconds": 4337.697427988052,
+      "final_verdict": "PASS",
+      "total_text_proxy_usd": 11.1585184,
+      "image_calls_initial": 1,
+      "findings": [
+        "One chosen internal reviewer and its repairs preceded the reported first handoff. A later parent review validated the broad gate evidence. No implementation swarm or cheaper implementation tier was used.",
+        "The supplemental content review initially failed with 5 finding families. One coherent correction batch was independently re-reviewed and passed. This narrow PASS supplements the earlier broad gate; its reviewer inspected the delta and builder check logs without repeating the full functional/security investigation.",
+        "Retained evidence supports lower bounds of 6 distinct product-defect families and 5 correction/recheck cycles. Repeated copy findings belong to one family. These counts are not quality scores."
+      ],
+      "captures": [
+        {
+          "condition": "adaptive",
+          "stage": "before",
+          "screen": "landing",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/before/1440/landing.png",
+          "sha256": "e829b91854220ca41ec8b942fbca05ab1d631fa0f01a67011e6843d2ecbc376b",
+          "capture_time": "2026-10-14T01:30:55.647Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "before",
+          "screen": "login",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/before/1440/login.png",
+          "sha256": "bf92b6e66726e9dc294c257f51912c8f8b05e1cba92a31e7462ee5e7e1af1138",
+          "capture_time": "2026-10-14T01:30:56.504Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "before",
+          "screen": "request",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/before/1440/request.png",
+          "sha256": "0d23d49269410b0b404234dc57a422aa2514d2d8f79a4677662b7903167844a0",
+          "capture_time": "2026-10-14T01:30:57.470Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "before",
+          "screen": "customer",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/before/1440/customer.png",
+          "sha256": "c3c51b6fd8e89b1c681e1129073d7fa7991ce6388ef0711249ed705dd47af8af",
+          "capture_time": "2026-10-14T01:30:58.315Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "before",
+          "screen": "landing",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/before/375/landing.png",
+          "sha256": "e70a4171f381ee09a490dce6526d4a2cc44c45ae1cedce4edc67b85c33e3eed8",
+          "capture_time": "2026-10-14T01:31:02.529Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "before",
+          "screen": "login",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/before/375/login.png",
+          "sha256": "58c31dc6a5afc6b2024283c784a844da78ecd934b4ae6a475529e071d8c7b19a",
+          "capture_time": "2026-10-14T01:31:03.340Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "before",
+          "screen": "request",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/before/375/request.png",
+          "sha256": "4560264c5ca401d53e17d78921eedc2e5de9ca6aa68232d34d0398445579838a",
+          "capture_time": "2026-10-14T01:31:04.163Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "before",
+          "screen": "customer",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/before/375/customer.png",
+          "sha256": "700687b31dcedf91f9a7914172abc4c493c5b26a5b2b1f46c8130d05f19c1508",
+          "capture_time": "2026-10-14T01:31:04.977Z",
+          "display_canvas_ratio": 1,
+          "note": "Unchanged original benchmark capture. Synthetic records and browser capture pipeline differ from the new run."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "initial",
+          "screen": "landing",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/initial/1440/landing.jpg",
+          "sha256": "074860ac1aa3e13563df263fc69cb9046c9a3ddd64893d58d6dad594e9dbcaeb",
+          "capture_time": "2026-10-15T00:04:52.598Z",
+          "display_canvas_ratio": 0.75,
+          "note": "Later presentation capture of frozen first-handoff source, using newly seeded synthetic data. Empty capture-canvas margin is clipped only in the gallery display; raw capture is unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "initial",
+          "screen": "login",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/initial/1440/login.jpg",
+          "sha256": "976f8f708226992bc0afc3ceb1f3da03b1417e15eb2583070104220a5e865f22",
+          "capture_time": "2026-10-15T00:05:03.375Z",
+          "display_canvas_ratio": 0.75,
+          "note": "Later presentation capture of frozen first-handoff source, using newly seeded synthetic data. Empty capture-canvas margin is clipped only in the gallery display; raw capture is unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "initial",
+          "screen": "request",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/initial/1440/request.jpg",
+          "sha256": "d2a8c915102759b1b32cf29d67f12c22b581d85a706a5c1a2a54cdd79a0a2318",
+          "capture_time": "2026-10-15T00:05:59.850Z",
+          "display_canvas_ratio": 0.75,
+          "note": "Later presentation capture of frozen first-handoff source, using newly seeded synthetic data. Empty capture-canvas margin is clipped only in the gallery display; raw capture is unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "initial",
+          "screen": "customer",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/initial/1440/customer.jpg",
+          "sha256": "e0a89086b93659f40260d0b5bfb4bf9d32f46bb45f2a5685d75307360dc19a58",
+          "capture_time": "2026-10-15T00:05:21.390Z",
+          "display_canvas_ratio": 0.75,
+          "note": "Later presentation capture of frozen first-handoff source, using newly seeded synthetic data. Empty capture-canvas margin is clipped only in the gallery display; raw capture is unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "initial",
+          "screen": "landing",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/initial/375/landing.jpg",
+          "sha256": "d1d52006d9339f96c2c4537e6124de2ac89d7adf860a5043831db85aed91d59e",
+          "capture_time": "2026-10-15T00:04:53.813Z",
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Later presentation capture of frozen first-handoff source, using newly seeded synthetic data. Empty capture-canvas margin is clipped only in the gallery display; raw capture is unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "initial",
+          "screen": "login",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/initial/375/login.jpg",
+          "sha256": "eed472abfa0dcb79e759bb0dccf78a021031f44f6eaf37b1e86438b28e94bdc3",
+          "capture_time": "2026-10-15T00:05:04.498Z",
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Later presentation capture of frozen first-handoff source, using newly seeded synthetic data. Empty capture-canvas margin is clipped only in the gallery display; raw capture is unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "initial",
+          "screen": "request",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/initial/375/request.jpg",
+          "sha256": "79baca6739dfc869378bfc49ebf7f7fcbf02e701d42bfbd5c893b8d75b9f1c19",
+          "capture_time": "2026-10-15T00:06:01.081Z",
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Later presentation capture of frozen first-handoff source, using newly seeded synthetic data. Empty capture-canvas margin is clipped only in the gallery display; raw capture is unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "initial",
+          "screen": "customer",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/initial/375/customer.jpg",
+          "sha256": "372e566fdf3c9aa89becfba9908c186241b7e701f32a91e0d5b6d2af603ff4b0",
+          "capture_time": "2026-10-15T00:05:22.498Z",
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Later presentation capture of frozen first-handoff source, using newly seeded synthetic data. Empty capture-canvas margin is clipped only in the gallery display; raw capture is unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "landing",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/accepted/1440/landing.jpg",
+          "sha256": "f5eba03e9bb347c6e110e1b82ef18c65de431b94745629d6236cc7e955df735d",
+          "capture_time": "2026-10-15T00:30:45.838Z",
+          "raster_width": 1920,
+          "raster_height": 2608,
+          "document_width": 1440,
+          "document_height": 1956,
+          "display_canvas_ratio": 0.75,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "login",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/accepted/1440/login.jpg",
+          "sha256": "bf094ff5566ac2af1881428c03c476dd52dbcab8c87800b44566b33e06c806d0",
+          "capture_time": "2026-10-15T00:31:17.939Z",
+          "raster_width": 1920,
+          "raster_height": 1515,
+          "document_width": 1440,
+          "document_height": 1136,
+          "display_canvas_ratio": 0.75,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "request",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/accepted/1440/request.jpg",
+          "sha256": "15e4f56f3c59c9e61046450f1a13dca20eca20b3b842304016c34acd0b422919",
+          "capture_time": "2026-10-15T00:31:40.611Z",
+          "raster_width": 1920,
+          "raster_height": 2080,
+          "document_width": 1440,
+          "document_height": 1561,
+          "display_canvas_ratio": 0.75,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "customer",
+          "css_viewport_width": 1440,
+          "url": "captures/adaptive/accepted/1440/customer.jpg",
+          "sha256": "94a3eede968a2a498574929dda4cac8301159d549a66bdbced5713fd95f4a3b5",
+          "capture_time": "2026-10-15T00:31:33.201Z",
+          "raster_width": 1920,
+          "raster_height": 1653,
+          "document_width": 1440,
+          "document_height": 1240,
+          "display_canvas_ratio": 0.75,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "landing",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/accepted/375/landing.jpg",
+          "sha256": "e02cea54e28bc741ba088cf6d6485fc3adaa608daddbd75a8b47d81076981056",
+          "capture_time": "2026-10-15T00:30:47.052Z",
+          "raster_width": 499,
+          "raster_height": 4227,
+          "document_width": 375,
+          "document_height": 3171,
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "login",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/accepted/375/login.jpg",
+          "sha256": "98505d0d75c7e7ff8283cccc1c84d9f32fe4e35e0f7ac56335483a4ad6531f95",
+          "capture_time": "2026-10-15T00:31:19.092Z",
+          "raster_width": 499,
+          "raster_height": 1716,
+          "document_width": 375,
+          "document_height": 1287,
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "request",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/accepted/375/request.jpg",
+          "sha256": "523f2fd5d11e28156d051d87d36a01571b6ec57f7acbf8e89833080cd5e6c544",
+          "capture_time": "2026-10-15T00:31:41.832Z",
+          "raster_width": 499,
+          "raster_height": 3219,
+          "document_width": 375,
+          "document_height": 2414,
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged."
+        },
+        {
+          "condition": "adaptive",
+          "stage": "accepted",
+          "gate_status": "PASS",
+          "screen": "customer",
+          "css_viewport_width": 375,
+          "url": "captures/adaptive/accepted/375/customer.jpg",
+          "sha256": "1ec6c44816b8305c606aa54a526a8e17c3870564a56460080f9fc475563cde97",
+          "capture_time": "2026-10-15T00:31:31.981Z",
+          "raster_width": 499,
+          "raster_height": 1773,
+          "document_width": 375,
+          "document_height": 1331,
+          "display_canvas_ratio": 0.751503006012024,
+          "note": "Post-handoff supplemental content correction, independently re-reviewed. Fresh synthetic presentation data; loading settled before DOM and screenshot. Only known empty capture-canvas margin is clipped in display; raw bytes unchanged."
+        }
+      ],
+      "final_capture_status": "PASS",
+      "native_phase_seconds": 2534.6180705419974,
+      "parent_interphase_gap_seconds": 1803.079357446055,
+      "broad_gate_verdict": "PASS",
+      "supplemental_review_verdict": "PASS",
+      "phase_breakdown": [
+        {
+          "phase": 1,
+          "label": "First workflow, including chosen reviewer",
+          "kind": "initial",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "native_seconds": 1853.2883970409166,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 31803392,
+            "input_tokens": 32293898,
+            "output_tokens": 101117,
+            "reasoning_output_tokens": 41230,
+            "total_tokens": 32395015
+          },
+          "text_proxy_usd": 5.1725212,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "5f5250c332370e48306e1165cf2f687ba09639fd3faa4b6e9cfb691e4fd7ae73",
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ]
+        },
+        {
+          "phase": 2,
+          "label": "Supplemental content review",
+          "kind": "audit",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6-astra"
+          ],
+          "native_seconds": 256.4915475420421,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 996224,
+            "input_tokens": 1137739,
+            "output_tokens": 11300,
+            "reasoning_output_tokens": 2165,
+            "total_tokens": 1149039
+          },
+          "text_proxy_usd": 2.976374,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "8fdc71cc11db979aa7fbb2565a34c691f2c310fd70a0c48790fe73b185cdd4f8",
+          "model_settings": [
+            {
+              "model": "gpt-6-astra",
+              "reasoning_effort": "medium",
+              "basis": "Observed in native records"
+            }
+          ]
+        },
+        {
+          "phase": 3,
+          "label": "Supplemental content correction",
+          "kind": "repair",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "native_seconds": 259.37858591706026,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 2163712,
+            "input_tokens": 2198269,
+            "output_tokens": 12010,
+            "reasoning_output_tokens": 7071,
+            "total_tokens": 2210279
+          },
+          "text_proxy_usd": 0.4055852,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "950737197ee75a6865ccdfa5e74a4f6c9dc0ab5901c4912369a064dabfbac899",
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ]
+        },
+        {
+          "phase": 4,
+          "label": "Supplemental content re-review",
+          "kind": "audit-continuation",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6-astra"
+          ],
+          "native_seconds": 165.45954004197847,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 1650688,
+            "input_tokens": 1710973,
+            "output_tokens": 7010,
+            "reasoning_output_tokens": 518,
+            "total_tokens": 1717983
+          },
+          "text_proxy_usd": 2.604038,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "e119b9ce4b02276d768ec95ffdf13431a3061d896dbf1465d4c0469cf86e6930",
+          "model_settings": [
+            {
+              "model": "gpt-6-astra",
+              "reasoning_effort": "medium",
+              "basis": "Observed in native records"
+            }
+          ]
+        }
+      ],
+      "observed_defect_families_lower_bound": 6,
+      "evidenced_fix_recheck_cycles_lower_bound": 5,
+      "broad_gate_result_sha256": "0343675891d82499f0b60ae8019180eabff44fd6c34986eff73d2d1764cff655",
+      "supplemental_review_result_sha256": "301d33d256db6bf769d85dab1fb931c9dc334cfafaec25f1c395c50e649eded9",
+      "root_model": "gpt-6.1-sol",
+      "root_reasoning_effort": "high",
+      "initial_helper_settings": [
+        {
+          "role": "independent reviewer",
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "high",
+          "basis": "Observed in native records"
+        }
+      ]
+    }
+  ],
+  "screens": [
+    {
+      "id": "landing",
+      "label": "Public landing page"
+    },
+    {
+      "id": "login",
+      "label": "Sign in"
+    },
+    {
+      "id": "request",
+      "label": "Service request"
+    },
+    {
+      "id": "customer",
+      "label": "Customer overview"
+    }
+  ],
+  "method": [
+    "Each builder received exactly one initial instruction: \u201cFully remake the frontend of this ServiceFlow app.\u201d A trailing newline is included in the recorded prompt hash. The installed standards and existing app context were available. No reference design, requested layout, visual annotations or list of desired fixes was supplied.",
+    "Both roots used gpt-6.1-sol at high reasoning effort. The single condition did its initial implementation without a helper. The adaptive condition chose one independent reviewer inside its initial workflow. It did not choose a swarm or a cheaper implementation model. Its internal review, repairs and reviewer usage belong to the initial workflow, before the parent received its first reported handoff.",
+    "Original apps and first reported handoffs were frozen. Subsequent audit feedback and corrections resumed the exact builder roots and are counted separately. There were no phase deadlines, audit-round limit or elapsed cap. A controller/browser interruption and its recovery remain part of the recorded correction history.",
+    "The predeclared after-handoff gate sequence did not anticipate an adaptive builder choosing a valid independent review before handoff. A recorded observation addendum permits reuse of evidenced gates rather than repeating a whole investigation. Missing or invalidated evidence still requires review. This decision is disclosed without rewriting the frozen protocol.",
+    "Prior broad gates passed after correction and browser-evidence recovery. A fresh independent supplemental content review then failed both apps. Each exact builder root corrected the narrow findings, and the same respective independent reviewer rechecked the frozen source and fresh desktop/mobile renders. Both supplemental re-reviews passed with no remaining findings. They supplement the prior functional/security gates rather than repeating them; delta check logs were inspected, not independently rerun.",
+    "The adaptive first-stage screenshots were captured later from its frozen first-handoff source, using a fresh presentation database. They are not handoff-time screenshots. Private DOM snapshots were collected just before their screenshots and can contain a transient loading state absent from the image; screenshot and source evidence govern visual claims. Final capture collection waited for loading to settle.",
+    "The known token proxy uses the recorded Standard API price reference, not an actual invoice or subscription usage. Cached input is a subset of input; reasoning output is a subset of output. Uncached input is input minus cached input. Repeated cumulative records are deduplicated across resumed roots and descendants. Per-request context thresholds determine applicable prices.",
+    "Image generation was observed once in each initial workflow, but billed image usage is unknown and excluded. Parent orchestration, browser-service, setup, publication and comparison work are outside the measured native trees and excluded, not assumed free. Cache-write classification is unavailable; the disclosed proxy treats noncached input as normal input.",
+    "The two starting apps differ, runs occurred in a fixed order, and there are no repeats. This is a pair of within-app observations, with no untreated control for the installed baseline. It cannot establish baseline causality, a swarm effect, a general speed/cost winner or subscription savings.",
+    "Observed native settings were gpt-6-astra at medium effort for all parent supplemental/focused reviewers, and gpt-6.1-sol at high effort for builder roots and the adaptive initial reviewer. Phase-level model attribution and conditional prices are shown below the totals. Single waited while adaptive ran during the parent-controlled sequence. End-to-end elapsed time includes that wait, browser recovery and other coordination gaps, so it is not a fair model-speed ranking.",
+    "The first assembled-publication review returned FAIL after finding an additional Single shared-account access assurance missed by the earlier supplemental content PASS. The exact builder corrected only request/privacy copy. Fresh desktop/mobile request and privacy captures and a focused same-reviewer PASS establish that app correction; a fresh assembled-publication re-audit remains separate. Earlier screenshots, patches and verdicts were preserved before replacement. The late repair and reviewer are included in final accounting."
+  ],
+  "measurement_note": "Known text-token Standard API-equivalent proxies include builder roots, descendants, corrections and independent reviews. Image billing and parent orchestration usage are unknown and excluded. End-to-end wall intervals include parent/interphase gaps; single waited while adaptive ran. These intervals do not establish a model-speed ranking or subscription savings.",
+  "price_reference": {
+    "checked_utc": "2026-10-14T21:57:35.638696+00:00",
+    "processing_tier": "Standard conditional API-equivalent proxy",
+    "sources": [
+      "https://developers.openai.com/api/docs/pricing",
+      "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "https://developers.openai.com/api/docs/models/gpt-6-astra"
+    ],
+    "short_context_per_million_usd": {
+      "input": 2,
+      "cached_input": 0.1,
+      "output": 10
+    },
+    "long_context_threshold_input_tokens": 272000,
+    "long_context_per_million_usd": {
+      "input": 4,
+      "cached_input": 0.2,
+      "output": 15
+    },
+    "models": {
+      "gpt-6.1-sol": {
+        "short": {
+          "input": 2,
+          "cached_input": 0.1,
+          "cache_write": 2.5,
+          "output": 10
+        },
+        "long": {
+          "input": 4,
+          "cached_input": 0.2,
+          "cache_write": 5,
+          "output": 15
+        }
+      },
+      "gpt-6-astra": {
+        "short": {
+          "input": 10,
+          "cached_input": 1,
+          "cache_write": 12.5,
+          "output": 50
+        },
+        "long": {
+          "input": 20,
+          "cached_input": 2,
+          "cache_write": 25,
+          "output": 75
+        }
+      }
+    }
+  },
+  "supplemental_review_summary": "https://github.com/aethirex-ai/quality-code/blob/main/benchmarks/serviceflow-visual-baseline-2026-10/reviews/supplemental-content.json"
+}

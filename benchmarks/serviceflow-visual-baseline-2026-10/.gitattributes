@@ -1,0 +1,3 @@
+# Unified-diff payloads intentionally contain a space on blank context lines.
+# Exact patch hashes, git apply and reconstructed UI hashes validate these bytes.
+source/**/*.patch whitespace=-blank-at-eol

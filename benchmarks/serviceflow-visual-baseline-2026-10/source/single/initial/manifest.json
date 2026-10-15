@@ -1,0 +1,67 @@
+{
+  "projection": "UI source delta only; excludes private runtime, standards, native transcripts and measurement helpers",
+  "patch": "single-initial.patch",
+  "patch_sha256": "111bb4f73405479c3ceb3342774dec63686fa52962da4e1ffeaf830779bd7950",
+  "source_changes": [
+    {
+      "path": "index.html",
+      "before_sha256": "cbaa8aba0b0ee088b5b87633190e99a3961d0677760348704a23e02ab6d1f8f9",
+      "after_sha256": "9e9bff71d404b1cc3e75c2c670b658ec9eb8781c58c050474fd32580e4365f31"
+    },
+    {
+      "path": "src/client/catalogue.tsx",
+      "before_sha256": "ca4b37ab6d3bf9e51e6e6624509f085dd36892ff7e0f8292d3c46b7b3ceba2a9",
+      "after_sha256": "03858b388e6f10ec63d5bcaa7d17a714a4a8bd3e02b4bca1b7b51377e0360c4e"
+    },
+    {
+      "path": "src/client/components.tsx",
+      "before_sha256": "ec33e55bc4698ab45ca35714bfca50878247d1a25fb0a8c108c3f91bf571189f",
+      "after_sha256": "919742fe130cf9f723da0d32ce2f01a575bc483603e2e3a71de05e60ee49fdde"
+    },
+    {
+      "path": "src/client/dashboard.tsx",
+      "before_sha256": "5b28b0d98069caed398297c01aaf9ebc15600186a5184935aa6fe9252a04489f",
+      "after_sha256": "a47a8f368101eb67745671fd6bcae4d28783dbefe8381c4701c58aee7abf5bdf"
+    },
+    {
+      "path": "src/client/detail.tsx",
+      "before_sha256": "46f9484d8ff6199ae14e4f162461c39b4086b6b2c3cef62d966056e2ae596570",
+      "after_sha256": "136a3320d028cfa039ad7c77191bedc2696070f8d763aa4db167a6deeba43349"
+    },
+    {
+      "path": "src/client/forms.tsx",
+      "before_sha256": "50a7b621bfff2b4a682de726eb7f73b0c181ecb653d6ccdc1df7828a80523e84",
+      "after_sha256": "ae3e015560f62f4cc7988dea33e5f9415d2cea3789be5cc796e52bf8752c4f77"
+    },
+    {
+      "path": "src/client/information.tsx",
+      "before_sha256": null,
+      "after_sha256": "b8d8a5a2ec3c6d062d8844c23c5d7deb573bd246b075657cce4c064b6ea6b48e"
+    },
+    {
+      "path": "src/client/landing.tsx",
+      "before_sha256": "d16984e3b53be087be93e7bdb3ffb3ddcb24ec8f4142ddc8f16223f06ed62982",
+      "after_sha256": "c5e09986da78076da963e292b9d09b8fd78802ac0aca0bf770c9131178652682"
+    },
+    {
+      "path": "src/client/main.tsx",
+      "before_sha256": "79ad31ea9343be834d705115423242ef3035c58f4045a0576abb68057fb05b3e",
+      "after_sha256": "b51930e530a485d3132a797deefbb9ccc61a4a299353866775f4a6ee063c25a6"
+    },
+    {
+      "path": "src/client/styles.css",
+      "before_sha256": "04a7c3574292cc6d24e89c234c549bdbaa66aa0baebb8ab7924c196b5b562691",
+      "after_sha256": "77affc4b64e4d2c7e1955d38f083bc1ae6ada6109a7196dded2f72624e5859bf"
+    }
+  ],
+  "assets": [
+    {
+      "path": "public/images/home-interior.jpg",
+      "before_sha256": null,
+      "after_sha256": "fc54748529665adeed5c543569070740f45c119431c973b3460bf53c5a1aeee1",
+      "asset": "assets/single/public/images/home-interior.jpg"
+    }
+  ],
+  "textual_ui_apply_reconstruction_verified": true,
+  "asset_paths_relative_to": "case directory"
+}

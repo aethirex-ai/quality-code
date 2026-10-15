@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "verdict": "PASS",
+  "scope": {
+    "kind": "Independent assembled-publication re-audit following the earlier AUD-001 FAIL",
+    "changed_files": [
+      ".quality/quality.toml",
+      "MAP.md",
+      "TESTING.md",
+      "docs/index.html",
+      "benchmarks/serviceflow-visual-baseline-2026-10/**",
+      "docs/benchmarks/serviceflow-visual-baseline-2026-10/**"
+    ],
+    "app_acceptance_and_publication_acceptance_are_separate": true
+  },
+  "risk": "high",
+  "checks": [
+    {
+      "kind": "Disclosure correction",
+      "result": "PASS",
+      "evidence": "Accurate shared-account wording verified independently in current source and four affected desktop/mobile request/privacy captures."
+    },
+    {
+      "kind": "Configured full and release",
+      "result": "PASS",
+      "evidence": "Independent runs passed, including the new case integrity checks."
+    },
+    {
+      "kind": "Publication integrity and accounting",
+      "result": "PASS",
+      "evidence": "Nine publication controls, 50 capture hashes, four UI source replays, 129 original source hashes, native phase accounting/settings, historical verdicts and narrow patch whitespace metadata verified."
+    },
+    {
+      "kind": "Gallery visual and interaction evidence",
+      "result": "PASS",
+      "evidence": "Readable desktop/mobile comparison and ownership renders inspected; all 32 parent-observed comparison combinations have the correct stages and no document overflow."
+    }
+  ],
+  "findings": [],
+  "resolved_finding": "AUD-001: Single shared-credential privacy assurance",
+  "untested": [
+    "The auditor used parent-supplied browser evidence; no auditor-controlled live browser, native model session, database operation or hosted deployment.",
+    "This gate is not comprehensive accessibility, cross-browser or production-security certification."
+  ],
+  "worktree_unchanged": true,
+  "conditional_text_proxy_usd": {
+    "single": 24.2602914,
+    "adaptive": 11.1585184
+  },
+  "unmeasured": [
+    "Image billing",
+    "Parent orchestration usage",
+    "Subscription consumption"
+  ],
+  "source_report_sha256": "a68f9ac8aea0a750c13d97f162e20dad747c0a158e9c3e1d65d4ef4ccea34510",
+  "publication_note": "Sanitized from the retained independent verdict; local paths and private native identifiers omitted. The earlier publication FAIL is preserved in publication-followup.json."
+}

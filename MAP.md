@@ -42,3 +42,7 @@ Bootstrap, upgrade, installer, configuration defaults, agent policy, and CI affe
 ## Context routing
 
 `.quality/quality.toml` routes tooling and instructions to high risk and CI to critical risk. Default documentation is normal. Audit packets are temporary handoffs outside committed source.
+
+## ServiceFlow visual baseline follow-up
+
+`benchmarks/serviceflow-visual-baseline-2026-10/` owns sanitized method, UI-only source deltas, review summaries and offline publication checks. Its `docs/benchmarks/` gallery separates originals, first reported handoffs and final accepted results. Final status stays pending through supplemental content corrections and independent re-review. Different starting apps and one observation each prevent causal baseline, swarm or winner claims. Raw native sessions and runtime harness remain private; public hashes and projections are explicit.

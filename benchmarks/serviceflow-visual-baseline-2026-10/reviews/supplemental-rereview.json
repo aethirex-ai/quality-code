@@ -1,0 +1,33 @@
+[
+  {
+    "condition": "single",
+    "stage": "supplemental-content-rereview",
+    "verdict": "PASS",
+    "raw_review_sha256": "4328f2ed914c5b284c77e4ccc82c06866d59e21f1c8bb7e8476fa863e8b7921e",
+    "closed_findings": [
+      "AUD-101",
+      "AUD-102",
+      "AUD-103",
+      "AUD-104"
+    ],
+    "scope": "Same independent reviewer inspected the frozen correction, fresh desktop/mobile renders, source applicability and builder full/release logs. This supplements prior broad functional/security gates; those unchanged contracts were not independently rerun in this narrow review.",
+    "remaining_findings": [],
+    "worktree_unchanged": true
+  },
+  {
+    "condition": "adaptive",
+    "stage": "supplemental-content-rereview",
+    "verdict": "PASS",
+    "raw_review_sha256": "301d33d256db6bf769d85dab1fb931c9dc334cfafaec25f1c395c50e649eded9",
+    "closed_findings": [
+      "AUD-101",
+      "AUD-102",
+      "AUD-103",
+      "AUD-104",
+      "AUD-105"
+    ],
+    "scope": "Same independent reviewer inspected the frozen correction, fresh desktop/mobile renders, source applicability and builder full/release logs. This supplements prior broad functional/security gates; those unchanged contracts were not independently rerun in this narrow review.",
+    "remaining_findings": [],
+    "worktree_unchanged": true
+  }
+]

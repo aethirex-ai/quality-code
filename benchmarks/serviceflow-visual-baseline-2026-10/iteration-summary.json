@@ -1,0 +1,43 @@
+{
+  "source_classification_sha256": "0b32efa35f33761664bf1110c71d0e7814be635ad176b35b07058c2346a158af",
+  "definition": "Conservative observed lower bounds. Count one coherent correction batch only when retained evidence links it to focused checking. Model turns, reviewer resumes, raw finding totals, build-only reruns and tooling failures are not cycles.",
+  "conditions": [
+    {
+      "condition": "single",
+      "defect_families": 4,
+      "fix_recheck_cycles": 4,
+      "families": [
+        "mobile word spacing",
+        "content-driven card height",
+        "redundant or generic supporting copy",
+        "inaccurate shared-account access assurance"
+      ],
+      "cycles": {
+        "before_handoff": 1,
+        "after_handoff_broad_correction": 1,
+        "supplemental_content_correction": 1,
+        "late_publication_disclosure_correction": 1
+      }
+    },
+    {
+      "condition": "adaptive",
+      "defect_families": 6,
+      "fix_recheck_cycles": 5,
+      "families": [
+        "content-driven card height",
+        "redundant or generic supporting copy",
+        "small-text contrast",
+        "modal scroll lock",
+        "inaccurate shared-account access assurance",
+        "unsupported quote-viewing claim"
+      ],
+      "cycles": {
+        "inside_initial_workflow": 4,
+        "supplemental_content_correction": 1
+      }
+    }
+  ],
+  "limits": "Additional copy instances stay in the existing copy family. Shared-account and quote-copy findings are accuracy defects, not newly inferred authorization failures or a requirement to implement quotation. Counts are not quality scores or comparative efficacy estimates.",
+  "late_addendum": "The first publication review found a missed Single accuracy defect; one exact-root correction plus fresh affected renders and focused independent re-review adds one family and one evidenced cycle to Single. Earlier lower bounds remain historical.",
+  "prior_classification_sha256": "1847808d0b80fb5fc42f0cca33648b58f78fbcd7ad404fd7d0107e24fc73f402"
+}

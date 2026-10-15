@@ -1,0 +1,76 @@
+[
+  {
+    "condition": "single",
+    "stage": "supplemental-content-review",
+    "verdict": "FAIL",
+    "raw_review_sha256": "4b7bdfc8b3fe227803ee1104f538cae976dda116a364851ca751da031d2036c2",
+    "scope": "Independent supporting-content review of current source and supplied desktop/mobile evidence. Prior functional and security gates were not repeated.",
+    "findings": [
+      {
+        "id": "AUD-101",
+        "severity": "normal",
+        "title": "Stat captions repeat labels or add generic reassurance",
+        "required_action": "Remove redundant/slogan stat captions or retain only genuinely distinguishing metric information. Preserve counts, statuses and filter behavior. Re-render customer/staff overview at both widths for independent re-review."
+      },
+      {
+        "id": "AUD-102",
+        "severity": "normal",
+        "title": "Secondary ornament repeats branding or supplies generic greeting and slogan text",
+        "required_action": "Remove the identified ornamental supporting text while retaining primary brand expression, the illustrative-image disclosure, sign-in heading and ownership disclosures. Verify affected public screens at desktop/mobile widths; no replacement design is required."
+      },
+      {
+        "id": "AUD-103",
+        "severity": "normal",
+        "title": "Supporting prose repeats nearby instructions instead of adding information",
+        "required_action": "Remove these redundant supporting sentences or give them a distinct, verified informational purpose. Preserve concrete workflow steps, dashboard access, service details, access restrictions and deactivation consequences. Check both widths, including the unselected request state."
+      },
+      {
+        "id": "AUD-104",
+        "severity": "normal",
+        "title": "Workspace sidebar duplicates visible demonstration messaging",
+        "required_action": "Consolidate duplicated sidebar demo messaging while preserving clear demo identification, any necessary account-use instruction, ownership disclosures and About/Privacy access. Confirm desktop and any affected mobile-navigation state during re-review."
+      }
+    ],
+    "status": "Historical FAIL. A subsequent correction and same-reviewer re-review passed; see supplemental-rereview.json."
+  },
+  {
+    "condition": "adaptive",
+    "stage": "supplemental-content-review",
+    "verdict": "FAIL",
+    "raw_review_sha256": "3dba267bed7874668dbed57955f95c9d8ab5ff8d7780718e3bba119dd9bebd74",
+    "scope": "Independent supporting-content review of current source and supplied desktop/mobile evidence. Prior functional and security gates were not repeated.",
+    "findings": [
+      {
+        "id": "AUD-101",
+        "severity": "normal",
+        "title": "Supporting slogans add no information or specific justified brand purpose",
+        "required_action": "Remove the identified ornamental fragments or supply useful, supported content where needed. Preserve primary brand/headlines, service context, meaningful sidebar guidance and disclosures. Re-render affected desktop/mobile regions and obtain independent re-review."
+      },
+      {
+        "id": "AUD-102",
+        "severity": "normal",
+        "title": "Section introductions repeat purposes already established by headings and controls",
+        "required_action": "Remove or consolidate these redundant introductions. Preserve section/field labels, meaningful counts and status distinctions, validation help and booking constraints. Repetition of a related term alone is not grounds to remove useful task information."
+      },
+      {
+        "id": "AUD-103",
+        "severity": "normal",
+        "title": "Sign-in duplicates its welcome and supporting workspace pitch",
+        "required_action": "Eliminate the duplicated welcome and redundant supporting pitch/context. Retain a clear sign-in purpose, field labels, synthetic-account instructions, credentials and demo disclosures. Validate both viewports without imposing a replacement layout."
+      },
+      {
+        "id": "AUD-104",
+        "severity": "normal",
+        "title": "Adjacent disclosure defect: exclusive-access assurances contradict shared accounts",
+        "required_action": "Make the point-of-use access statements accurate for shared demo accounts and preserve sample-information guidance. Remove unqualified only-you/service-team promises without inventing new legal or service claims."
+      },
+      {
+        "id": "AUD-105",
+        "severity": "normal",
+        "title": "Landing promises quote inspection that the workspace does not provide",
+        "required_action": "Align the instruction with the actual workspace capability. Preserve accurate status/history and indicative-price guidance. Do not implement a new quotation feature merely to justify the copy; recheck the landing instruction against its existing destination."
+      }
+    ],
+    "status": "Historical FAIL. A subsequent correction and same-reviewer re-review passed; see supplemental-rereview.json."
+  }
+]

@@ -1,0 +1,467 @@
+{
+  "basis": "Conditional Standard API text-token proxy; not actual bill, complete service cost or subscription consumption. Cached input is included in input; reasoning is included in output.",
+  "conditions": [
+    {
+      "condition": "single",
+      "source_accounting_sha256": "9153c1fc60bbcfab46a3791fe5d81728a5ca395dd94bda81f799f0a211647190",
+      "source_timing_sha256": "410d47e00af123e0887c38d608af5802c8563720e67d5c655f634574bbb900c6",
+      "aggregate_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 55572224,
+        "input_tokens": 58155117,
+        "output_tokens": 219456,
+        "reasoning_output_tokens": 81904,
+        "total_tokens": 58374573
+      },
+      "known_standard_proxy_usd": 24.2602914,
+      "phase_breakdown": [
+        {
+          "phase": 1,
+          "label": "First workflow",
+          "kind": "initial",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 961.4324147090083,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 5325056,
+            "input_tokens": 5714008,
+            "output_tokens": 43822,
+            "reasoning_output_tokens": 11742,
+            "total_tokens": 5757830
+          },
+          "text_proxy_usd": 1.7486296,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "734f638737ac8baa94d8d231786d6d095c257b2773bbd718bb2fc669086fbfa7"
+        },
+        {
+          "phase": 2,
+          "label": "First independent broad audit",
+          "kind": "audit",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 960.779291999992,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 12341248,
+            "input_tokens": 12622256,
+            "output_tokens": 39933,
+            "reasoning_output_tokens": 16588,
+            "total_tokens": 12662189
+          },
+          "text_proxy_usd": 2.3085408,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "2c2df5eafad1a1544795a4359995ffe1e9a480d2f8500fbdc57a6296872dc907"
+        },
+        {
+          "phase": 3,
+          "label": "Broad-finding correction",
+          "kind": "repair",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 474.17543945799116,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 6000768,
+            "input_tokens": 6081807,
+            "output_tokens": 21613,
+            "reasoning_output_tokens": 10461,
+            "total_tokens": 6103420
+          },
+          "text_proxy_usd": 1.1076196,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "2d2cad5ee574b3f786cbc0ca2ba079384cbe61399a685015d57355a00837c566"
+        },
+        {
+          "phase": 4,
+          "label": "Broad re-review, initially blocked",
+          "kind": "audit",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 2012.917517291964,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 20927744,
+            "input_tokens": 21598889,
+            "output_tokens": 59153,
+            "reasoning_output_tokens": 30550,
+            "total_tokens": 21658042
+          },
+          "text_proxy_usd": 6.0649406,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "f3211862c2827bb50199cf49e39514437517fbe55bce843db12020c3d8d5602b"
+        },
+        {
+          "phase": 5,
+          "label": "Broad review continuation and recovery",
+          "kind": "audit-continuation",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 646.8176582079614,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 2989952,
+            "input_tokens": 3418591,
+            "output_tokens": 15654,
+            "reasoning_output_tokens": 1499,
+            "total_tokens": 3434245
+          },
+          "text_proxy_usd": 1.9873182,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": true,
+          "source_phase_metadata_sha256": "a299211b6d85a2166a351660fb56d2268b1e942eace774f36f317f28cf2ddca3"
+        },
+        {
+          "phase": 6,
+          "label": "Supplemental content review",
+          "kind": "audit",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6-astra"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6-astra",
+              "reasoning_effort": "medium",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 229.2518752089236,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 1076736,
+            "input_tokens": 1207329,
+            "output_tokens": 9884,
+            "reasoning_output_tokens": 1435,
+            "total_tokens": 1217213
+          },
+          "text_proxy_usd": 2.876866,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "11d61e37634e8d798038ba2d37bd263e332f9a96091b5495cf8fb9535a934353"
+        },
+        {
+          "phase": 7,
+          "label": "Supplemental content correction",
+          "kind": "repair",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 294.92242141696624,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 2696320,
+            "input_tokens": 2998999,
+            "output_tokens": 12788,
+            "reasoning_output_tokens": 6813,
+            "total_tokens": 3011787
+          },
+          "text_proxy_usd": 1.9418,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "3946570fc560905822bfc0653a66099f855403aa462deeed7617cdaa11585ae8"
+        },
+        {
+          "phase": 8,
+          "label": "Supplemental content re-review",
+          "kind": "audit-continuation",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6-astra"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6-astra",
+              "reasoning_effort": "medium",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 151.7937871669419,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 1327104,
+            "input_tokens": 1517981,
+            "output_tokens": 6384,
+            "reasoning_output_tokens": 196,
+            "total_tokens": 1524365
+          },
+          "text_proxy_usd": 3.555074,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "4e8f4b36e46deee46a735c3b88064b863a96a91c729b365bd22522fa14aa96e7"
+        },
+        {
+          "phase": 9,
+          "label": "Late shared-account disclosure correction",
+          "kind": "repair",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 135.0798380000051,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 1902848,
+            "input_tokens": 1915268,
+            "output_tokens": 6053,
+            "reasoning_output_tokens": 2498,
+            "total_tokens": 1921321
+          },
+          "text_proxy_usd": 0.5210446,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "45ee359d0c0b2acce2c390258b3f8bf15e48dea27bfa4e5e8f9ffa20958f19b6"
+        },
+        {
+          "phase": 10,
+          "label": "Late shared-account focused re-review",
+          "kind": "audit-continuation",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6-astra"
+          ],
+          "model_settings": [
+            {
+              "model": "gpt-6-astra",
+              "reasoning_effort": "medium",
+              "basis": "Observed in native records"
+            }
+          ],
+          "native_seconds": 84.78566433303058,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 984448,
+            "input_tokens": 1079989,
+            "output_tokens": 4172,
+            "reasoning_output_tokens": 122,
+            "total_tokens": 1084161
+          },
+          "text_proxy_usd": 2.148458,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "9bbc39eab6fba99f12da6990ff912bf7bcf692835ca8fa1d7293491b0fce7582"
+        }
+      ],
+      "wall_seconds": 11092.38959312439,
+      "native_phase_seconds": 5951.955907792784,
+      "parent_interphase_gap_seconds": 5140.433685331605,
+      "image_generation_cost": "Unknown and excluded; billed image token amount unavailable.",
+      "parent_orchestration_cost": "Unknown and excluded; outside measured native trees."
+    },
+    {
+      "condition": "adaptive",
+      "source_accounting_sha256": "a903f7dbbfec2803f351f49c66f22052f6b10934c731214e262196c1541ea2a4",
+      "source_timing_sha256": "2641669ad90c62f43017cccf04ea80660ca974754bc6fc8e0a906f3d8cba03a4",
+      "aggregate_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 36614016,
+        "input_tokens": 37340879,
+        "output_tokens": 131437,
+        "reasoning_output_tokens": 50984,
+        "total_tokens": 37472316
+      },
+      "known_standard_proxy_usd": 11.1585184,
+      "phase_breakdown": [
+        {
+          "phase": 1,
+          "label": "First workflow, including chosen reviewer",
+          "kind": "initial",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "native_seconds": 1853.2883970409166,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 31803392,
+            "input_tokens": 32293898,
+            "output_tokens": 101117,
+            "reasoning_output_tokens": 41230,
+            "total_tokens": 32395015
+          },
+          "text_proxy_usd": 5.1725212,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "5f5250c332370e48306e1165cf2f687ba09639fd3faa4b6e9cfb691e4fd7ae73",
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ]
+        },
+        {
+          "phase": 2,
+          "label": "Supplemental content review",
+          "kind": "audit",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6-astra"
+          ],
+          "native_seconds": 256.4915475420421,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 996224,
+            "input_tokens": 1137739,
+            "output_tokens": 11300,
+            "reasoning_output_tokens": 2165,
+            "total_tokens": 1149039
+          },
+          "text_proxy_usd": 2.976374,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "8fdc71cc11db979aa7fbb2565a34c691f2c310fd70a0c48790fe73b185cdd4f8",
+          "model_settings": [
+            {
+              "model": "gpt-6-astra",
+              "reasoning_effort": "medium",
+              "basis": "Observed in native records"
+            }
+          ]
+        },
+        {
+          "phase": 3,
+          "label": "Supplemental content correction",
+          "kind": "repair",
+          "role": "builder",
+          "models": [
+            "gpt-6.1-sol"
+          ],
+          "native_seconds": 259.37858591706026,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 2163712,
+            "input_tokens": 2198269,
+            "output_tokens": 12010,
+            "reasoning_output_tokens": 7071,
+            "total_tokens": 2210279
+          },
+          "text_proxy_usd": 0.4055852,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "950737197ee75a6865ccdfa5e74a4f6c9dc0ab5901c4912369a064dabfbac899",
+          "model_settings": [
+            {
+              "model": "gpt-6.1-sol",
+              "reasoning_effort": "high",
+              "basis": "Observed in native records"
+            }
+          ]
+        },
+        {
+          "phase": 4,
+          "label": "Supplemental content re-review",
+          "kind": "audit-continuation",
+          "role": "independent_audit",
+          "models": [
+            "gpt-6-astra"
+          ],
+          "native_seconds": 165.45954004197847,
+          "usage": {
+            "cache_write_input_tokens": 0,
+            "cached_input_tokens": 1650688,
+            "input_tokens": 1710973,
+            "output_tokens": 7010,
+            "reasoning_output_tokens": 518,
+            "total_tokens": 1717983
+          },
+          "text_proxy_usd": 2.604038,
+          "usage_complete": true,
+          "conditional_price_proxy_complete": true,
+          "transport_recovery_recorded": false,
+          "source_phase_metadata_sha256": "e119b9ce4b02276d768ec95ffdf13431a3061d896dbf1465d4c0469cf86e6930",
+          "model_settings": [
+            {
+              "model": "gpt-6-astra",
+              "reasoning_effort": "medium",
+              "basis": "Observed in native records"
+            }
+          ]
+        }
+      ],
+      "wall_seconds": 4337.697427988052,
+      "native_phase_seconds": 2534.6180705419974,
+      "parent_interphase_gap_seconds": 1803.079357446055,
+      "image_generation_cost": "Unknown and excluded; billed image token amount unavailable.",
+      "parent_orchestration_cost": "Unknown and excluded; outside measured native trees."
+    }
+  ]
+}

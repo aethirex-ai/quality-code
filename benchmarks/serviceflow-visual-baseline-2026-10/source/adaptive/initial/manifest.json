@@ -1,0 +1,37 @@
+{
+  "projection": "UI source delta only; excludes private runtime, standards, native transcripts and measurement helpers",
+  "patch": "adaptive-initial.patch",
+  "patch_sha256": "db33551626637f0edd8de6e72c23b9cbc5d8a30d8080d4e4bb56bd48850a0f16",
+  "source_changes": [
+    {
+      "path": "index.html",
+      "before_sha256": "f3872da67973c41ea3094d8ab6ac35b45cd384486ce83dad299bb8967ed3a1a9",
+      "after_sha256": "316e3efad90a03317850c7e051d23be95f0cc108e4686867b3a8250739a99e46"
+    },
+    {
+      "path": "public/images/README.md",
+      "before_sha256": null,
+      "after_sha256": "99463c40947e6b378d6f807326c9ecf402fc422f895544d2f74aeb21b5ea04f7"
+    },
+    {
+      "path": "src/client/main.tsx",
+      "before_sha256": "553ed18e85eab335d966919f2a070332fcdffe4b6bfeb7d015af127184651adb",
+      "after_sha256": "cbe20bcee178a1138d08e557b97cd80f75f752e634558d9e9e85ab4a5afb7585"
+    },
+    {
+      "path": "src/client/styles.css",
+      "before_sha256": "ddff667a7f19340ebc23b3201385c9f20f56df51e575e7b707944df79a5d54d6",
+      "after_sha256": "2d9b991942b76c594806b324a18abdfa60b5e4d195702acef5a258d0e6122e8a"
+    }
+  ],
+  "assets": [
+    {
+      "path": "public/images/bristol-home.jpg",
+      "before_sha256": null,
+      "after_sha256": "ac4c840378cfa228be0ab482aa3cd206a69c9a6ae18eb36cefb3ef5b36fdd743",
+      "asset": "assets/adaptive/public/images/bristol-home.jpg"
+    }
+  ],
+  "textual_ui_apply_reconstruction_verified": true,
+  "asset_paths_relative_to": "case directory"
+}

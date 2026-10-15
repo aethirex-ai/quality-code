@@ -1,0 +1,21 @@
+{
+  "historical_publication_review": {
+    "verdict": "FAIL",
+    "raw_review_sha256": "c222d91e75e7ec03d0fbb3d39a054f3a13a486a91a39c3200d8ddbaa91675133",
+    "finding": {
+      "id": "AUD-001",
+      "severity": "normal",
+      "title": "Accepted Single request still promises individual privacy with shared demo credentials",
+      "evidence": "Single accepted request screenshots and source promised access only to the individual and authorised team, despite shared demo credentials. Earlier broad and supplemental PASS artifacts were authentic but missed this accuracy defect. No new authorization failure was inferred."
+    }
+  },
+  "app_correction_review": {
+    "verdict": "PASS",
+    "raw_review_sha256": "20eeb1d3ee709559d8b417eef871dd17a8dccaf53c102407170203d50d4865d6",
+    "closed_finding": "Publication AUD-001",
+    "scope": "Current Single request/privacy copy and four fresh affected desktop/mobile renders. Builder full/release logs inspected; no independent rerun of unchanged functional/security contracts. This is not approval of the assembled publication.",
+    "remaining_findings": []
+  },
+  "publication_reaudit": "Required separately after assembly",
+  "supplemental_capture_inventory_repo_path": "docs/benchmarks/serviceflow-visual-baseline-2026-10/supplemental-capture-provenance.json"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "condition": "single",
+    "stage": "publication-followup",
+    "gate_status": "PASS",
+    "screen": "privacy",
+    "css_viewport_width": 1440,
+    "url": "captures/single/verification/1440/privacy.jpg",
+    "sha256": "464ae6527ce5d773fd4b2f95b3ff167cce7435cba1fb80f5987f8a7048608e12",
+    "capture_time": "2026-10-15T00:55:08.561Z",
+    "raster_width": 1920,
+    "raster_height": 1680,
+    "document_width": 1440,
+    "document_height": 1260,
+    "display_canvas_ratio": 0.75,
+    "note": "Late shared-account disclosure correction; focused independent re-review PASS. This app-delta review does not approve the assembled publication."
+  },
+  {
+    "condition": "single",
+    "stage": "publication-followup",
+    "gate_status": "PASS",
+    "screen": "privacy",
+    "css_viewport_width": 375,
+    "url": "captures/single/verification/375/privacy.jpg",
+    "sha256": "d24e96439353ef08dbff29924ab72f515419c19b4176ec6e8b9de71df8542320",
+    "capture_time": "2026-10-15T00:55:07.347Z",
+    "raster_width": 499,
+    "raster_height": 2188,
+    "document_width": 375,
+    "document_height": 1641,
+    "display_canvas_ratio": 0.751503006012024,
+    "note": "Late shared-account disclosure correction; focused independent re-review PASS. This app-delta review does not approve the assembled publication."
+  }
+]

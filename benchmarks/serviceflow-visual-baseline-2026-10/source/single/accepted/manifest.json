@@ -1,0 +1,72 @@
+{
+  "projection": "UI source delta only; excludes private runtime, standards, native transcripts and measurement helpers",
+  "patch": "single-accepted.patch",
+  "patch_sha256": "7a3bde264e569062097ba5a3fa579f3aa81ed5adb8217fc8ff1e05ba5a205fff",
+  "source_changes": [
+    {
+      "path": "index.html",
+      "before_sha256": "cbaa8aba0b0ee088b5b87633190e99a3961d0677760348704a23e02ab6d1f8f9",
+      "after_sha256": "9e9bff71d404b1cc3e75c2c670b658ec9eb8781c58c050474fd32580e4365f31"
+    },
+    {
+      "path": "src/client/catalogue.tsx",
+      "before_sha256": "ca4b37ab6d3bf9e51e6e6624509f085dd36892ff7e0f8292d3c46b7b3ceba2a9",
+      "after_sha256": "e4b1a35cce040c13d4e68f8ee34120f81c7472c2e02c127501338e1f6066bda9"
+    },
+    {
+      "path": "src/client/components.tsx",
+      "before_sha256": "ec33e55bc4698ab45ca35714bfca50878247d1a25fb0a8c108c3f91bf571189f",
+      "after_sha256": "fd631de7485daa86291f228041cdc0e3d355365a0e321d469513c621d07fac91"
+    },
+    {
+      "path": "src/client/dashboard.tsx",
+      "before_sha256": "5b28b0d98069caed398297c01aaf9ebc15600186a5184935aa6fe9252a04489f",
+      "after_sha256": "91fa3ad86aada349ca10ee798a26d43f7ce193a15edee2967943591a9d785274"
+    },
+    {
+      "path": "src/client/detail.tsx",
+      "before_sha256": "46f9484d8ff6199ae14e4f162461c39b4086b6b2c3cef62d966056e2ae596570",
+      "after_sha256": "e1186638d85462684e874c3084e8541d3bdcafd1054ee4abe541f0ad3a32d3fa"
+    },
+    {
+      "path": "src/client/forms.tsx",
+      "before_sha256": "50a7b621bfff2b4a682de726eb7f73b0c181ecb653d6ccdc1df7828a80523e84",
+      "after_sha256": "df15de7fa05a37aaa5266c4b70740815c1d75150367447d3062c04d5e34d4e50"
+    },
+    {
+      "path": "src/client/information.tsx",
+      "before_sha256": null,
+      "after_sha256": "214c17852fceceb3b58c840cd067a6b51d8f3b22173af128a2d08d94e14d9839"
+    },
+    {
+      "path": "src/client/landing.tsx",
+      "before_sha256": "d16984e3b53be087be93e7bdb3ffb3ddcb24ec8f4142ddc8f16223f06ed62982",
+      "after_sha256": "df2b160d3c07b2f99df0260843bfe3b813ca488f908b5a7047f752510ea7f625"
+    },
+    {
+      "path": "src/client/main.tsx",
+      "before_sha256": "79ad31ea9343be834d705115423242ef3035c58f4045a0576abb68057fb05b3e",
+      "after_sha256": "e321977b62dbf16a556a28f43d6501aabe5627733198f0dd249bba1bec2e1132"
+    },
+    {
+      "path": "src/client/styles.css",
+      "before_sha256": "04a7c3574292cc6d24e89c234c549bdbaa66aa0baebb8ab7924c196b5b562691",
+      "after_sha256": "9fdef1a684da557398dd26005702f8a4b95ae2c987e6cca7d8f9dbb61d47e807"
+    }
+  ],
+  "assets": [
+    {
+      "path": "public/images/home-interior.jpg",
+      "before_sha256": null,
+      "after_sha256": "fc54748529665adeed5c543569070740f45c119431c973b3460bf53c5a1aeee1",
+      "asset": "assets/single/public/images/home-interior.jpg"
+    }
+  ],
+  "textual_ui_apply_reconstruction_verified": true,
+  "asset_paths_relative_to": "case directory",
+  "gate_status": "PASS",
+  "source_stage": "Late shared-account disclosure correction, focused independent re-review PASS; assembled publication review separate",
+  "supplemental_review_result_sha256": "20eeb1d3ee709559d8b417eef871dd17a8dccaf53c102407170203d50d4865d6",
+  "superseded_accepted_manifest_sha256": "55934a8cb8d9a540b881aaa0e61a91dd230295ec4ce0b0c66ec28496a903485d",
+  "superseded_accepted_patch_sha256": "15f458505124c068b837f6746eae7581bac68367acc4c294bcb9ed686ffd4210"
+}
