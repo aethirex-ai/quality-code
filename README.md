@@ -85,7 +85,7 @@ Existing instruction text is merged. Existing map and testing sections are prese
 
 ## Quality Visuals
 
-The [starting visual baseline](docs/QUALITY_VISUALS.md) rejects unjustified slogan eyebrows, arrows on every redirect, decorative numbering, half-empty containers and filler sections. It requires specific content, coherent desktop/mobile composition, usable states and accurate ownership/privacy information. Fresh independent visual review blocks completion on evidenced defects; missing review evidence stays BLOCKED. These rules require judgment and are not a complete design system or a claim to detect AI authorship.
+The [starting visual baseline](docs/QUALITY_VISUALS.md) rejects unjustified slogan eyebrows, arrows on every redirect, decorative numbering, half-empty containers and filler sections. It requires specific content, coherent desktop/mobile composition, usable states and accurate ownership/privacy information. Fresh independent visual review blocks completion on evidenced defects; missing review evidence stays BLOCKED. These rules require judgment and are not a complete design system or a claim to detect AI authorship. Full remakes must reconsider content hierarchy and composition, with original/final comparison in the independent review. See [the ServiceFlow diagnosis](docs/VISUAL_REMAKE_REVIEW.md) for the gap this addresses.
 
 ## Quality Swarms
 

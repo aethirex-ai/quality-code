@@ -21,3 +21,11 @@ New frontends/pages and substantial redesigns require fresh independent visual r
 Findings need the requirement, screen, viewport/state and observable evidence. Blocking baseline issues must be fixed, re-rendered and independently re-reviewed before completion. An average score cannot conceal blockers. Missing required render, interaction or review evidence is BLOCKED. Legal/privacy requirements depend on the actual context; agents must not fabricate business facts to clear a gate.
 
 Purposeful whitespace, useful cards, necessary category labels, genuine numbered steps and deliberate brand expression remain valid. User-approved exceptions must be explicit. The standard should improve judgment rather than replace one generic template with another.
+
+## A full remake reconsiders the frontend
+
+For a full remake, agents establish a short product-grounded design basis and reconsider information order, composition, copy and the visual system. Existing capabilities and permissions remain contracts; existing section templates do not. A new palette, font and photograph alone do not establish that the request was fulfilled. Familiar structures can remain when the content/task justifies them.
+
+The reviewer compares original/final desktop and mobile views, examines repeated patterns across the whole page and records separate evidence for functionality, baseline content/composition and remake intent. Changing filler to sentence case or calling decorative arrows consistent navigation does not resolve the underlying issue. Missing required comparison evidence remains BLOCKED.
+
+[Why the first ServiceFlow remake improved but remained generic](VISUAL_REMAKE_REVIEW.md) records the observed omissions, owner feedback and limits. This policy follow-up does not regrade the frozen experiment or demonstrate that the revised rules improve future outputs.
