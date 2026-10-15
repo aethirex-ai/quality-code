@@ -14,11 +14,13 @@ Inspect every changed screen at representative desktop and mobile sizes. Review 
 
 Evaluate these dimensions together:
 
-- Content usefulness and specificity: real offer/task, meaningful distinctions, no redundant slogan eyebrows, reassurance, decorative numbering or filler sections.
-- Composition: appropriate containers, purposeful whitespace, coherent hierarchy/type/imagery, content-proportionate cards and CTAs, meaningful icons/arrows, authored UI prose punctuation.
-- Responsive and accessible operation: readable contrast/type, semantic labels, visible focus, keyboard/touch operation, sensible mobile order, no clipping or cramped controls.
-- Product completeness: real destinations/actions, applicable states, realistic content, appropriate page titles/assets/not-found behavior and loading performance.
+- Content usefulness and specificity: real offer/task, meaningful distinctions and section-level questions/answers, no redundant slogan eyebrows, reassurance, decorative numbering or filler sections.
+- Composition: clear focal hierarchy, alignment/grouping and full-page rhythm; coherent type/color/spacing roles, loaded fonts, readable line breaks/measure, appropriate containers and content-proportionate CTAs. Check imagery purpose, rights/accuracy, crop and legibility; meaningful icons/arrows and authored UI prose punctuation.
+- Responsive and accessible operation: readable contrast/type including enlarged text, semantic labels, unobscured focus and dialog/error focus handling, keyboard/touch and gesture alternatives, sensible mobile order and layout-change widths, no clipping or cramped controls. Apply relevant web/platform criteria; do not invent universal dimensions.
+- Product completeness: real destinations/actions and link behavior, relevant navigation state, autofill/paste and retained form values, applicable states with exercised recovery, realistic content, appropriate page titles/assets/not-found behavior and loading performance. Essential content remains available with reduced motion.
 - Ownership and trust: accurate relevant ownership/contact/privacy information and working links, actual data/deployment context, no fabricated testimonials/business/legal facts. Missing owner-approved information required for public launch blocks that launch; never invent text to clear the gate.
+
+Inspect the rendered focal hierarchy, alignment, rhythm, substance and mobile composition separately from mechanical compliance. Explain concrete strengths to preserve as well as defects; no fixed aesthetic score, image count or novelty quota establishes quality. Automated checks flag measurable risks and support inspection; they do not establish good design. Reuse unchanged passing evidence when its source/state coverage still applies; recheck fixes and relevant integration effects instead of repeating unrelated investigations.
 
 These are a starting baseline. Deliberate brand choices, necessary category labels, actual ordered steps, meaningful cards and purposeful whitespace are valid. Identify an observable failure instead of declaring an aesthetic preference a defect. Conversely, a baseline violation does not become optional just because it concerns appearance or content.
 

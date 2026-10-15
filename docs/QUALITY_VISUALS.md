@@ -29,3 +29,9 @@ For a full remake, agents establish a short product-grounded design basis and re
 The reviewer compares original/final desktop and mobile views, examines repeated patterns across the whole page and records separate evidence for functionality, baseline content/composition and remake intent. Changing filler to sentence case or calling decorative arrows consistent navigation does not resolve the underlying issue. Missing required comparison evidence remains BLOCKED.
 
 [Why the first ServiceFlow remake improved but remained generic](VISUAL_REMAKE_REVIEW.md) records the observed omissions, owner feedback and limits. This policy follow-up does not regrade the frozen experiment or demonstrate that the revised rules improve future outputs.
+
+## Positive design and practical review
+
+Ground visual decisions in verified product characteristics and available assets. Choose content before containers; use coherent type/color/spacing roles and purposeful, accurately represented imagery. Inspect enlarged text, layout-change widths, focus, form retention and real recovery. Review focal hierarchy, alignment, rhythm and substance separately from mechanical compliance. Quiet utilities and typography-led pages remain valid; there are no compulsory image, animation, font or novelty quotas.
+
+[Research and adoption decisions](VISUAL_SOURCES.md) records pinned sources and limits. Automated checks support review and cannot establish design quality.

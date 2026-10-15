@@ -20,6 +20,8 @@ Three composable standards for agent-assisted software work, published with the 
 
 [Download all three without duplicates](docs/downloads/quality-standards-by-aethdesign.zip). Each ZIP contains one composed AGENTS.md, a manifest, instructions and the MIT license. These are **instruction-only packs**; clone this repository for the executable CLI and audit skill. Do not stack downloaded AGENTS files: choose the combined pack or compose your selection with the CLI. All selections include one shared foundation and preserve stricter existing requirements.
 
+Production recommendation: select `code,visuals` explicitly. Quality Swarms is experimental and not recommended for production; legacy/default `all` still includes it for compatibility. Existing selections are not changed automatically.
+
 [Choose modules and understand installation](docs/MODULES.md) · [Read the case study](https://aethirex-ai.github.io/quality-code/) · [Visual baseline and audit](docs/QUALITY_VISUALS.md) · [Technical case study](docs/CASE_STUDY.md)
 
 ## The quality contract

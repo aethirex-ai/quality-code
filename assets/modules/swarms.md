@@ -1,5 +1,7 @@
 ## Quality Swarms by AethDesign
 
+Experimental research module, not recommended for production use. Select Code + Visuals for current production work; use Swarms only in explicitly opted-in experiments. A required independent reviewer is a verification gate, not a swarm.
+
 ## Efficient delegation and model selection
 
 1. Preserve applicable project risk lanes and verification requirements. Difficulty and product risk are separate; delegation never lowers verification or replaces a required independent audit. Do not introduce helpers for small, low-impact work unless the user requests them or an applicable project requirement or concrete uncertainty justifies them.

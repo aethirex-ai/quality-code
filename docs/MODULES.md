@@ -8,6 +8,8 @@
 
 A small shared foundation is always composed once. It preserves existing requirements, acceptance criteria, truthful evidence and independent-review integrity. Selecting one module does not silently enable the others. Removing a module cannot waive a stricter existing project or user requirement.
 
+Production recommendation: select `code,visuals` explicitly. Quality Swarms is experimental and not recommended for production; legacy/default `all` still includes it for compatibility. Existing selections are not changed automatically.
+
 ## Instruction-only downloads
 
 [Code](downloads/quality-code-by-aethdesign.zip), [Visuals](downloads/quality-visuals-by-aethdesign.zip), [Swarms](downloads/quality-swarms-by-aethdesign.zip), or [all three](downloads/quality-standards-by-aethdesign.zip).
