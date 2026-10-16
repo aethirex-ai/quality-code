@@ -18,13 +18,15 @@ The authoritative [visual module](../assets/modules/visuals.md) supplies the rul
 
 New frontends/pages and substantial redesigns require fresh independent visual review. Declare that scope with `./quality audit-packet --visual --criteria "Observable product and visual outcomes"`; instruction-only users supply the raw scope and evidence directly. Actual scope governs even when the flag is omitted. Isolated low-risk copy/static-style changes retain their focused builder lane.
 
-Findings need the requirement, screen, viewport/state and observable evidence. Blocking baseline issues must be fixed, re-rendered and independently re-reviewed before completion. An average score cannot conceal blockers. Missing required render, interaction or review evidence is BLOCKED. Legal/privacy requirements depend on the actual context; agents must not fabricate business facts to clear a gate.
+Every observed weakness is classified as a baseline violation, justified treatment, preference or missing required evidence. Known violations cannot remain only in scoring commentary. Findings need the requirement, screen, viewport/state and observable evidence. Blocking baseline issues must be fixed, re-rendered and independently re-reviewed before completion. An average score cannot conceal blockers. Missing required render, interaction or review evidence is BLOCKED. Legal/privacy requirements depend on the actual context; agents must not fabricate business facts to clear a gate.
 
 Purposeful whitespace, useful cards, necessary category labels, genuine numbered steps and deliberate brand expression remain valid. User-approved exceptions must be explicit. The standard should improve judgment rather than replace one generic template with another.
 
-## A full remake reconsiders the frontend
+## Choose the composition before polishing
 
-For a full remake, agents establish a short product-grounded design basis and reconsider information order, composition, copy and the visual system. Existing capabilities and permissions remain contracts; existing section templates do not. A new palette, font and photograph alone do not establish that the request was fulfilled. Familiar structures can remain when the content/task justifies them.
+New frontends and substantial redesigns require a short product-grounded design basis before implementation, a credible alternative considered against the actual task, and an early rendered desktop/mobile hierarchy check. These are concise working evidence, not multiple full builds or a novelty quota. Review concept/product fit separately from functional correctness.
+
+For a full remake, additionally reconsider information order, composition, copy and the visual system. Existing capabilities and permissions remain contracts; existing section templates do not. A new palette, font and photograph alone do not establish that the request was fulfilled. Familiar structures can remain when the content/task justifies them.
 
 The reviewer compares original/final desktop and mobile views, examines repeated patterns across the whole page and records separate evidence for functionality, baseline content/composition and remake intent. Changing filler to sentence case or calling decorative arrows consistent navigation does not resolve the underlying issue. Missing required comparison evidence remains BLOCKED.
 
@@ -34,4 +36,4 @@ The reviewer compares original/final desktop and mobile views, examines repeated
 
 Ground visual decisions in verified product characteristics and available assets. Choose content before containers; use coherent type/color/spacing roles and purposeful, accurately represented imagery. Inspect enlarged text, layout-change widths, focus, form retention and real recovery. Review focal hierarchy, alignment, rhythm and substance separately from mechanical compliance. Quiet utilities and typography-led pages remain valid; there are no compulsory image, animation, font or novelty quotas.
 
-[Research and adoption decisions](VISUAL_SOURCES.md) records pinned sources and limits. Automated checks support review and cannot establish design quality.
+[Research and adoption decisions](VISUAL_SOURCES.md) records pinned sources and limits. Automated checks support review and cannot establish design quality. Reuse valid unchanged evidence, batch related checks and recheck affected states after changes; screenshot or packet volume is not a quality target.
