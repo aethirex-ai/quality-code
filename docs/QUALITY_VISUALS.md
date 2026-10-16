@@ -8,7 +8,8 @@ The authoritative [visual module](../assets/modules/visuals.md) supplies the rul
 | --- | --- |
 | Slogan eyebrows that restate a heading | Specific headings; labels only when they add needed context |
 | Arrows on every redirect, decorative icons/numbers | Meaningful affordances and genuine sequences |
-| Half-empty cards, nested boxes, automatic bento grids | Containers chosen for the information and task |
+| Default boxes around objects, actions and fields | Unboxed content and integrated controls; purposeful, proportionate containers |
+| Automatic light/dark bands and contrasting backplates | An uninterrupted canvas; surface changes justified by the actual experience |
 | Reassurance bands, generic process/FAQ/closing sections | Content that resolves a decision or enables an action |
 | Oversized gaps and repeated CTAs filling thin pages | Deliberate rhythm and proportionate useful content |
 | Generic slogans, unrelated artwork, fabricated trust | Business-specific language, relevant imagery and verified facts |
